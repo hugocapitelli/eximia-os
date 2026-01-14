@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "CMO Growth Input",
+    "type": "object",
+    "properties": {
+        "request_type": {
+            "type": "string",
+            "enum": [
+                "DIAGNOSIS",
+                "STRATEGY",
+                "EXECUTION_COPY",
+                "EXECUTION_PLAN"
+            ]
+        },
+        "objective": {
+            "type": "string",
+            "description": "Objetivo SMART (ex: +20% Leads em 30d)"
+        },
+        "current_constraints": {
+            "type": "object",
+            "properties": {
+                "budget": {
+                    "type": "number"
+                },
+                "timeline": {
+                    "type": "string"
+                },
+                "team_available": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "channel_focus": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "PAID_META",
+                    "PAID_GOOGLE",
+                    "SEO_BLOG",
+                    "CRM_EMAIL",
+                    "SOCIAL_ORGANIC",
+                    "INFLUENCER",
+                    "OFFLINE"
+                ]
+            }
+        }
+    },
+    "required": [
+        "request_type",
+        "objective"
+    ]
+}

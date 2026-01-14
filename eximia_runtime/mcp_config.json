@@ -1,0 +1,16 @@
+{
+    "mcpServers": {
+        "eximia_runtime": {
+            "command": "C:\\Windows\\py.exe",
+            "args": [
+                "-m",
+                "eximia_runtime.interfaces.mcp_server_v2"
+            ],
+            "cwd": "c:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS",
+            "env": {
+                "PYTHONPATH": "c:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS",
+                "PYTHONUNBUFFERED": "1"
+            }
+        }
+    }
+}

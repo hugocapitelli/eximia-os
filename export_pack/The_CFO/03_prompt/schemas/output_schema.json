@@ -1,0 +1,177 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "CFO Agent Output Schema",
+    "description": "Schema for outputs from the CFO Agent",
+    "type": "object",
+    "required": [
+        "analysis_type",
+        "summary",
+        "recommendation"
+    ],
+    "properties": {
+        "analysis_type": {
+            "type": "string",
+            "enum": [
+                "DCF",
+                "Comps",
+                "M&A",
+                "KPIs",
+                "Fundraising",
+                "General"
+            ],
+            "description": "Type of analysis performed"
+        },
+        "summary": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 500,
+            "description": "Executive summary of the analysis"
+        },
+        "assumptions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "parameter",
+                    "value",
+                    "rationale"
+                ],
+                "properties": {
+                    "parameter": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    },
+                    "rationale": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "analysis": {
+            "type": "object",
+            "description": "Flexible object containing analysis details based on type"
+        },
+        "scenarios": {
+            "type": "object",
+            "properties": {
+                "bull": {
+                    "type": "object",
+                    "properties": {
+                        "probability": {
+                            "type": "string"
+                        },
+                        "value": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "base": {
+                    "type": "object",
+                    "properties": {
+                        "probability": {
+                            "type": "string"
+                        },
+                        "value": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "bear": {
+                    "type": "object",
+                    "properties": {
+                        "probability": {
+                            "type": "string"
+                        },
+                        "value": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "risks": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "risk",
+                    "severity"
+                ],
+                "properties": {
+                    "risk": {
+                        "type": "string"
+                    },
+                    "severity": {
+                        "type": "string",
+                        "enum": [
+                            "CRITICAL",
+                            "HIGH",
+                            "MEDIUM",
+                            "LOW"
+                        ]
+                    },
+                    "mitigation": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "recommendation": {
+            "type": "object",
+            "required": [
+                "decision",
+                "confidence",
+                "rationale"
+            ],
+            "properties": {
+                "decision": {
+                    "type": "string",
+                    "enum": [
+                        "GO",
+                        "NO-GO",
+                        "HOLD",
+                        "NEED_MORE_DATA"
+                    ]
+                },
+                "confidence": {
+                    "type": "string",
+                    "enum": [
+                        "HIGH",
+                        "MEDIUM",
+                        "LOW"
+                    ]
+                },
+                "rationale": {
+                    "type": "string",
+                    "minLength": 20
+                }
+            }
+        },
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "timestamp": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "agent_version": {
+                    "type": "string"
+                },
+                "data_freshness": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

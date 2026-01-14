@@ -1,0 +1,133 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "CFO Agent Input Schema",
+    "description": "Schema for inputs to the CFO Agent",
+    "type": "object",
+    "required": [
+        "request_type",
+        "query"
+    ],
+    "properties": {
+        "request_type": {
+            "type": "string",
+            "enum": [
+                "valuation",
+                "ma_analysis",
+                "kpi_analysis",
+                "fundraising",
+                "general_question"
+            ],
+            "description": "Type of financial analysis requested"
+        },
+        "query": {
+            "type": "string",
+            "minLength": 10,
+            "description": "The user's question or request"
+        },
+        "context": {
+            "type": "object",
+            "properties": {
+                "company_name": {
+                    "type": "string"
+                },
+                "industry": {
+                    "type": "string"
+                },
+                "stage": {
+                    "type": "string",
+                    "enum": [
+                        "pre-seed",
+                        "seed",
+                        "series_a",
+                        "series_b",
+                        "growth",
+                        "mature"
+                    ]
+                },
+                "financials": {
+                    "type": "object",
+                    "properties": {
+                        "revenue": {
+                            "type": "number"
+                        },
+                        "revenue_growth": {
+                            "type": "number"
+                        },
+                        "ebitda": {
+                            "type": "number"
+                        },
+                        "ebitda_margin": {
+                            "type": "number"
+                        },
+                        "mrr": {
+                            "type": "number"
+                        },
+                        "arr": {
+                            "type": "number"
+                        },
+                        "churn_rate": {
+                            "type": "number"
+                        },
+                        "cac": {
+                            "type": "number"
+                        },
+                        "ltv": {
+                            "type": "number"
+                        }
+                    }
+                },
+                "deal_context": {
+                    "type": "object",
+                    "properties": {
+                        "deal_type": {
+                            "type": "string",
+                            "enum": [
+                                "acquisition",
+                                "merger",
+                                "fundraise",
+                                "exit"
+                            ]
+                        },
+                        "target_company": {
+                            "type": "string"
+                        },
+                        "deal_value_range": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "preferences": {
+            "type": "object",
+            "properties": {
+                "output_format": {
+                    "type": "string",
+                    "enum": [
+                        "json",
+                        "markdown",
+                        "table"
+                    ],
+                    "default": "json"
+                },
+                "detail_level": {
+                    "type": "string",
+                    "enum": [
+                        "summary",
+                        "detailed",
+                        "comprehensive"
+                    ],
+                    "default": "detailed"
+                },
+                "language": {
+                    "type": "string",
+                    "enum": [
+                        "pt-BR",
+                        "en-US"
+                    ],
+                    "default": "pt-BR"
+                }
+            }
+        }
+    }
+}

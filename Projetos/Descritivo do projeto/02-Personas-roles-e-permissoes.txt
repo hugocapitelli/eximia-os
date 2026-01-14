@@ -1,0 +1,424 @@
+================================================================================
+PERSONAS, ROLES E PERMISSÕES - HARVEN.AI
+================================================================================
+
+================================================================================
+1. ROLES DO SISTEMA
+================================================================================
+
+O HARVEN.AI possui 4 roles principais definidos no enum UserRole:
+
+1. STUDENT (aluno)
+2. TEACHER (professor)
+3. ADMIN (administrador)
+
+Fonte: backend/models.py, linha 11-15
+
+================================================================================
+2. PERSONAS DETALHADAS
+================================================================================
+
+2.1. ALUNO (STUDENT)
+-------------------
+
+PERFIL:
+- Estudante universitário em curso híbrido ou EAD
+- Acesso via RA (Registro Acadêmico) e senha
+- Pode ter cursos atribuídos ou ver todos (dependendo de configuração)
+
+CAPACIDADES:
+✅ Visualizar cursos atribuídos (ou todos se não houver atribuição)
+✅ Ler conteúdo dos capítulos
+✅ Selecionar pergunta socrática (1 de 3 opções)
+✅ Iniciar chat socrático (limite de 3 interações)
+✅ Visualizar histórico próprio de conversas
+✅ Excluir própria sessão de chat (soft delete)
+✅ Ver progresso nos cursos
+
+RESTRIÇÕES:
+❌ Não pode criar/editar cursos
+❌ Não pode ver conversas de outros alunos
+❌ Não pode acessar painel do professor
+❌ Não pode gerenciar usuários
+
+FONTE DE IMPLEMENTAÇÃO:
+- Frontend: frontend/src/routes/index.tsx (rotas protegidas)
+- Backend: backend/rbac.py (função can_view_course)
+- Backend: backend/routers/socratic_chat.py (validação de acesso)
+
+2.2. PROFESSOR (TEACHER)
+-----------------------
+
+PERFIL:
+- Professor atribuído a uma ou mais disciplinas
+- Acesso via RA e senha
+- Pode visualizar e gerenciar conteúdo das disciplinas atribuídas
+
+CAPACIDADES:
+✅ Visualizar disciplinas atribuídas
+✅ Ver cursos das disciplinas atribuídas (ou todos se is_published_global)
+✅ Criar e editar cursos nas disciplinas atribuídas
+✅ Upload e processamento de conteúdo
+✅ Visualizar todas as conversas dos alunos
+✅ Exportar conversas para Moodle
+✅ Gerenciar capítulos e conteúdo
+✅ Aprovar/reprocessar conteúdo inteligente
+
+RESTRIÇÕES:
+❌ Não pode criar disciplinas (apenas admin)
+❌ Não pode atribuir professores a disciplinas
+❌ Não pode gerenciar usuários
+❌ Não pode ver cursos de outras disciplinas (exceto se is_published_global)
+
+ATRIBUIÇÃO:
+- Professores são atribuídos a disciplinas via tabela discipline_teachers
+- Role pode ser 'owner' ou 'editor'
+- Fonte: backend/migrations/add_disciplines_and_rbac.sql
+
+FONTE DE IMPLEMENTAÇÃO:
+- Backend: backend/rbac.py (is_teacher_of_discipline, can_edit_course)
+- Frontend: frontend/src/pages/teacher/ (páginas do professor)
+
+2.3. ADMINISTRADOR (ADMIN)
+--------------------------
+
+PERFIL:
+- Acesso completo ao sistema
+- Pode gerenciar todos os aspectos da plataforma
+- Credenciais padrão: RA=ADMIN001, email=admin@harven.ai, senha=admin123
+
+CAPACIDADES:
+✅ Todas as capacidades do professor
+✅ Criar e gerenciar disciplinas
+✅ Atribuir professores a disciplinas
+✅ Criar e gerenciar usuários
+✅ Atribuir cursos a grupos/turmas
+✅ Gerenciar todos os cursos (mesmo sem disciplina)
+✅ Acessar utilitários de sistema
+✅ Visualizar todas as conversas
+✅ Exportar qualquer conversa para Moodle
+✅ Gerenciar categorias
+✅ Acessar todas as rotas (bypass de permissões)
+
+RESTRIÇÕES:
+❌ Nenhuma (acesso total)
+
+FONTE DE IMPLEMENTAÇÃO:
+- Backend: backend/rbac.py (is_admin)
+- Frontend: frontend/src/components/ProtectedRoute.tsx (linha 43)
+
+2.4. VISITANTE (VISITOR)
+-----------------------
+
+PERFIL:
+- Acesso limitado sem autenticação
+- Visualização apenas de conteúdo público
+
+CAPACIDADES:
+✅ Visualizar página inicial (landing)
+✅ Ver informações básicas sobre a plataforma
+
+RESTRIÇÕES:
+❌ Não pode acessar cursos
+❌ Não pode usar chat socrático
+❌ Não pode fazer login (apenas visualização)
+
+NOTA: Role definido no código mas pouco utilizado atualmente.
+
+================================================================================
+3. MATRIZ DE PERMISSÕES
+================================================================================
+
+FUNCIONALIDADE                    | STUDENT | TEACHER | ADMIN | VISITOR
+----------------------------------|---------|---------|-------|--------
+Visualizar cursos atribuídos     |    ✅   |    ✅   |   ✅  |    ❌
+Visualizar todos os cursos       |    ❌   |    ⚠️*  |   ✅  |    ❌
+Criar cursos                      |    ❌   |    ⚠️** |   ✅  |    ❌
+Editar cursos                     |    ❌   |    ⚠️** |   ✅  |    ❌
+Criar disciplinas                 |    ❌   |    ❌   |   ✅  |    ❌
+Atribuir professores              |    ❌   |    ❌   |   ✅  |    ❌
+Upload de conteúdo                |    ❌   |    ✅   |   ✅  |    ❌
+Processar conteúdo                |    ❌   |    ✅   |   ✅  |    ❌
+Chat socrático                    |    ✅   |    ❌   |   ✅  |    ❌
+Ver conversas próprias            |    ✅   |    ❌   |   ✅  |    ❌
+Ver conversas de alunos           |    ❌   |    ✅   |   ✅  |    ❌
+Exportar para Moodle              |    ❌   |    ✅   |   ✅  |    ❌
+Gerenciar usuários                |    ❌   |    ❌   |   ✅  |    ❌
+Gerenciar grupos/turmas           |    ❌   |    ❌   |   ✅  |    ❌
+Acessar utilitários sistema       |    ❌   |    ❌   |   ✅  |    ❌
+
+* ⚠️ Teacher pode ver cursos publicados globalmente (is_published_global=true)
+** ⚠️ Teacher pode editar apenas cursos das disciplinas atribuídas
+
+================================================================================
+4. REGRAS DE ACESSO DETALHADAS
+================================================================================
+
+4.1. VISUALIZAÇÃO DE CURSOS
+---------------------------
+
+STUDENT:
+- Vê cursos atribuídos via course_visibility_assignments
+- Se não houver atribuição, vê todos os cursos ativos
+- Fonte: backend/routers/courses.py, linha 83-91
+
+TEACHER:
+- Vê cursos das disciplinas atribuídas
+- Vê cursos com is_published_global=true
+- Fonte: backend/rbac.py, função can_view_course
+
+ADMIN:
+- Vê todos os cursos
+
+4.2. EDIÇÃO DE CURSOS
+--------------------
+
+STUDENT:
+- Sem permissão
+
+TEACHER:
+- Pode editar apenas cursos das disciplinas atribuídas
+- Verificação: backend/rbac.py, função can_edit_course
+- Se curso não tem disciplina_id, apenas admin pode editar
+
+ADMIN:
+- Pode editar qualquer curso
+
+4.3. CHAT SOCRÁTICO
+------------------
+
+STUDENT:
+- Pode iniciar chat apenas para próprio RA
+- Pode ver apenas próprio histórico
+- Pode excluir apenas próprias sessões
+- Limite: 3 interações por sessão
+- Fonte: backend/routers/socratic_chat.py, função _ensure_student_or_admin
+
+TEACHER:
+- Não pode usar chat (não é aluno)
+- Pode visualizar conversas dos alunos
+- Pode exportar conversas para Moodle
+
+ADMIN:
+- Pode usar chat (para testes)
+- Pode ver todas as conversas
+- Pode exportar qualquer conversa
+
+4.4. PROCESSAMENTO DE CONTEÚDO
+------------------------------
+
+STUDENT:
+- Sem permissão
+
+TEACHER:
+- Pode fazer upload de conteúdo
+- Pode processar conteúdo
+- Pode aprovar/reprocessar conteúdo
+- Apenas para cursos das disciplinas atribuídas
+- Fonte: backend/routers/content_imports.py, linha 85
+
+ADMIN:
+- Pode processar qualquer conteúdo
+- Pode gerenciar todo o conteúdo
+
+================================================================================
+5. ATRIBUIÇÕES E RELACIONAMENTOS
+================================================================================
+
+5.1. DISCIPLINE → TEACHER (N:N)
+------------------------------
+
+Tabela: discipline_teachers
+- discipline_id (FK)
+- teacher_user_id (FK)
+- role ('owner' | 'editor')
+- UNIQUE(discipline_id, teacher_user_id)
+
+Fonte: backend/migrations/add_disciplines_and_rbac.sql
+
+5.2. COURSE → DISCIPLINE (N:1)
+----------------------------
+
+Tabela: courses
+- discipline_id (FK, nullable)
+- is_published_global (boolean)
+
+Regras:
+- Curso pode não ter disciplina (apenas admin gerencia)
+- Curso pode ser publicado globalmente (todos professores veem)
+- Fonte: backend/migrations/add_disciplines_and_rbac.sql
+
+5.3. COURSE → GROUPS/COHORTS (N:N)
+---------------------------------
+
+Tabelas:
+- course_visibility_assignments (curso → grupo)
+- discipline_groups (disciplina → grupo)
+- discipline_cohorts (disciplina → turma)
+
+Fonte: backend/migrations/add_disciplines_and_rbac.sql
+
+5.4. USER → COURSE (N:N via assignments)
+----------------------------------------
+
+Tabela: course_visibility_assignments
+- course_id (FK)
+- group_id ou academic_class_id
+- Usuários do grupo/turma veem o curso
+
+================================================================================
+6. VALIDAÇÕES DE SEGURANÇA
+================================================================================
+
+6.1. AUTENTICAÇÃO
+---------------
+
+- JWT tokens com expiração
+- Senhas hasheadas com bcrypt
+- Verificação de token em todas as rotas protegidas
+- Fonte: backend/auth.py
+
+6.2. AUTORIZAÇÃO
+--------------
+
+- Verificação de role em cada endpoint
+- Validação de propriedade (aluno só acessa próprio RA)
+- Verificação de atribuição (professor só acessa disciplinas atribuídas)
+- Fonte: backend/rbac.py, backend/routers/*.py
+
+6.3. VALIDAÇÃO DE DADOS
+----------------------
+
+- Pydantic schemas para validação de entrada
+- Sanitização de inputs
+- Validação de tipos e formatos
+- Fonte: backend/schemas.py
+
+================================================================================
+7. CASOS DE USO POR ROLE
+================================================================================
+
+7.1. CASOS DE USO DO ALUNO
+-------------------------
+
+UC-ALUNO-001: Visualizar cursos disponíveis
+- Aluno acessa /inicio
+- Sistema lista cursos atribuídos ou todos
+- Aluno clica em curso para ver detalhes
+
+UC-ALUNO-002: Ler conteúdo de capítulo
+- Aluno acessa capítulo
+- Sistema exibe conteúdo raw_text (verbatim)
+- Aluno pode alternar entre modo leitura e modo socrático
+
+UC-ALUNO-003: Iniciar chat socrático
+- Aluno seleciona modo socrático
+- Sistema exibe 3 perguntas
+- Aluno seleciona uma pergunta
+- Sistema cria sessão com 3 interações restantes
+
+UC-ALUNO-004: Interagir no chat
+- Aluno envia mensagem
+- IA responde com pergunta provocativa
+- Contador de interações decrementa
+- Após 3 interações, sessão finaliza automaticamente
+
+UC-ALUNO-005: Visualizar histórico
+- Aluno acessa histórico de conversas
+- Sistema lista sessões do aluno
+- Aluno pode ver mensagens de sessões anteriores
+
+UC-ALUNO-006: Excluir sessão
+- Aluno exclui sessão (soft delete)
+- Pergunta fica disponível novamente
+- Aluno pode iniciar nova sessão
+
+7.2. CASOS DE USO DO PROFESSOR
+-----------------------------
+
+UC-PROF-001: Visualizar disciplinas
+- Professor acessa /teacher/disciplines
+- Sistema lista disciplinas atribuídas
+- Professor clica em disciplina para ver cursos
+
+UC-PROF-002: Gerenciar cursos
+- Professor acessa curso da disciplina
+- Pode criar/editar capítulos
+- Pode fazer upload de conteúdo
+
+UC-PROF-003: Processar conteúdo
+- Professor faz upload de PDF
+- Sistema processa em background
+- Professor revisa capítulos gerados
+- Professor aprova ou reprocessa
+
+UC-PROF-004: Visualizar conversas
+- Professor acessa curso
+- Sistema lista alunos e suas conversas
+- Professor clica para ver histórico completo
+
+UC-PROF-005: Exportar para Moodle
+- Professor seleciona conversa
+- Sistema exporta para portfólio Moodle
+- Sistema confirma exportação
+
+7.3. CASOS DE USO DO ADMIN
+-------------------------
+
+UC-ADMIN-001: Gerenciar usuários
+- Admin acessa /admin/system/users
+- Cria/edita/exclui usuários
+- Atribui roles
+
+UC-ADMIN-002: Gerenciar disciplinas
+- Admin cria disciplinas
+- Atribui professores
+- Gerencia hierarquia
+
+UC-ADMIN-003: Gerenciar cursos
+- Admin cria cursos
+- Atribui a disciplinas
+- Configura visibilidade
+
+UC-ADMIN-004: Atribuir cursos a grupos
+- Admin acessa gerenciamento de grupos
+- Atribui cursos a grupos/turmas
+- Controla visibilidade
+
+UC-ADMIN-005: Acessar utilitários
+- Admin acessa /admin/system
+- Visualiza logs, métricas
+- Executa operações de manutenção
+
+================================================================================
+8. FLUXOS DE PERMISSÃO
+================================================================================
+
+8.1. FLUXO DE ATRIBUIÇÃO DE PROFESSOR
+------------------------------------
+
+1. Admin cria disciplina
+2. Admin atribui professor à disciplina (discipline_teachers)
+3. Professor recebe acesso aos cursos da disciplina
+4. Professor pode criar/editar cursos na disciplina
+
+8.2. FLUXO DE ATRIBUIÇÃO DE CURSO A ALUNO
+----------------------------------------
+
+1. Admin cria curso
+2. Admin atribui curso a grupo/turma (course_visibility_assignments)
+3. Alunos do grupo/turma veem o curso
+4. Alunos podem acessar conteúdo e usar chat
+
+8.3. FLUXO DE VISIBILIDADE GLOBAL
+--------------------------------
+
+1. Admin marca curso como is_published_global=true
+2. Todos os professores veem o curso
+3. Professores podem visualizar mas não editar (a menos que atribuídos)
+4. Apenas professores atribuídos podem editar
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+

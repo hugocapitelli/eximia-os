@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "SEO Content Output",
+    "type": "object",
+    "properties": {
+        "seo_content_brief": {
+            "type": "object",
+            "properties": {
+                "target_keyword": {
+                    "type": "string"
+                },
+                "search_intent": {
+                    "type": "string"
+                },
+                "competition_level": {
+                    "type": "string"
+                },
+                "differentiation_angle": {
+                    "type": "string"
+                },
+                "structure_outline": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "internal_links_to_add": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "target_keyword",
+                "structure_outline"
+            ]
+        }
+    },
+    "required": [
+        "seo_content_brief"
+    ]
+}

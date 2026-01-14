@@ -1,0 +1,153 @@
+# Learning Loop Template — Z5 Evolver
+
+# ============================================
+# INSTRUÇÕES
+# ============================================
+# Este arquivo configura o Learning Loop do agente.
+# Métricas são coletadas pós-deploy e usadas para evolução.
+# ============================================
+
+agent: "[NOME_DO_AGENTE]"
+version: "1.0.0"
+created_at: "[YYYY-MM-DD]"
+review_cycle: "quarterly"
+
+# ============================================
+# MÉTRICAS CORE
+# ============================================
+
+metrics:
+  accuracy:
+    description: "% de decisões corretas (validado post-facto)"
+    target: ">90%"
+    measurement: "30d + 90d post-decision validation"
+    
+  false_positive:
+    description: "% de GO que foram errados"
+    target: "<5%"
+    measurement: "GO decisions that failed"
+    
+  false_negative:
+    description: "% de NO-GO que eram oportunidades"
+    target: "<10%"
+    measurement: "NO-GO decisions that would have succeeded"
+    
+  hallucination_rate:
+    description: "% de respostas com dados inventados"
+    target: "<3%"
+    measurement: "Spot-check by human review"
+    
+  user_satisfaction:
+    description: "NPS ou rating do usuário"
+    target: ">4.5/5"
+    measurement: "Post-interaction survey"
+
+# ============================================
+# PROCESSO DE COLETA
+# ============================================
+
+collection:
+  frequency: "continuous"
+  
+  data_points:
+    - decision_id: "ID único da decisão"
+    - timestamp: "Data/hora"
+    - decision_type: "GO | NO-GO | HOLD"
+    - confidence: "HIGH | MEDIUM | LOW"
+    - outcome_30d: "SUCCESS | FAIL | PENDING"
+    - outcome_90d: "SUCCESS | FAIL | PENDING"
+    - user_feedback: "1-5 rating"
+    - notes: "Observações"
+
+# ============================================
+# PROCESSO DE VALIDAÇÃO
+# ============================================
+
+validation:
+  checkpoints:
+    - period: "30 dias"
+      action: "Primeira validação de outcome"
+      
+    - period: "90 dias"
+      action: "Validação final, calcular accuracy"
+      
+  process:
+    1. "Coletar outcomes reais das decisões"
+    2. "Comparar com recomendação do agente"
+    3. "Categorizar: True Positive, True Negative, False Positive, False Negative"
+    4. "Calcular métricas"
+
+# ============================================
+# PROCESSO DE ANÁLISE
+# ============================================
+
+analysis:
+  frequency: "quarterly"
+  
+  steps:
+    1. "Agregar métricas do trimestre"
+    2. "Identificar padrões de erro"
+    3. "Root cause analysis dos False Positives"
+    4. "Root cause analysis dos False Negatives"
+    5. "Identificar invariantes violados"
+    
+  outputs:
+    - "Quarterly Performance Report"
+    - "Error Pattern Analysis"
+    - "Improvement Recommendations"
+
+# ============================================
+# PROCESSO DE MELHORIA
+# ============================================
+
+improvement:
+  cycle: "quarterly"
+  
+  targets:
+    accuracy_improvement: "+2-5pp/cycle"
+    
+  actions:
+    - category: "ESTRATEGIA"
+      description: "Atualizar playbooks baseado em erros"
+      
+    - category: "INVARIANTES"
+      description: "Adicionar novos circuit breakers"
+      
+    - category: "TEORIA"
+      description: "Atualizar benchmarks e base rates"
+      
+    - category: "PROMPT"
+      description: "Ajustar exemplos few-shot"
+
+# ============================================
+# DASHBOARD
+# ============================================
+
+dashboard:
+  kpis:
+    - name: "Accuracy"
+      current: 0
+      target: 90
+      trend: "—"
+      
+    - name: "False Positive Rate"
+      current: 0
+      target: 5
+      trend: "—"
+      
+    - name: "False Negative Rate"
+      current: 0
+      target: 10
+      trend: "—"
+      
+  last_updated: "[YYYY-MM-DD]"
+  next_review: "[YYYY-MM-DD + 3 months]"
+
+# ============================================
+# GOVERNANCE
+# ============================================
+
+governance:
+  owner: "Z5 Evolver"
+  review_board: ["Z1", "Z4"]
+  escalation: "Human review if accuracy < 80%"

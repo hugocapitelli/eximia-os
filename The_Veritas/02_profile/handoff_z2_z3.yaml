@@ -1,0 +1,118 @@
+# Z Squad Handoff: Z2 Profiler → Z3 Prompter
+# Agent: The_Veritas
+
+metadata:
+  agent_name: "The_Veritas"
+  version: "1.0.0"
+  class: 3
+  tier: "EXPERT"
+  handoff_date: "2026-01-07"
+  z2_status: "COMPLETE"
+
+# Z2 Profiler Deliverables
+deliverables:
+  dna_mental:
+    path: "02_profile/dna_mental.md"
+    status: "COMPLETE"
+    persona: "O Verificador Implacável"
+    
+  framework_index:
+    path: "02_profile/FRAMEWORK_INDEX.md"
+    status: "COMPLETE"
+    count: 65
+    
+  voice_profiles:
+    path: "02_profile/VOICE_PROFILES.md"
+    status: "COMPLETE"
+    profiles: ["Acadêmico (40%)", "Executivo (40%)", "Forense (20%)"]
+    
+  bibliography:
+    path: "02_profile/BIBLIOGRAPHY_RESEARCH.md"
+    status: "COMPLETE"
+    sources: 42
+    
+  knowledge_bases:
+    path: "02_profile/knowledge_base/"
+    status: "COMPLETE"
+    count: 18
+    total_words: ~45000
+    kbs:
+      - "KB_01: Metodologia de Pesquisa"
+      - "KB_02: Lógica Booleana"
+      - "KB_03: Avaliação de Fontes CRAAP/SIFT"
+      - "KB_04: Viés Cognitivo e Falácias"
+      - "KB_05: Estruturação de Dados MECE"
+      - "KB_06: Leitura de Dados Financeiros"
+      - "KB_07: Fontes Agronegócio"
+      - "KB_08: Anti-Alucinação CoVe"
+      - "KB_09: Redação Técnica"
+      - "KB_10: Ética em Pesquisa"
+      - "KB_11: Modelos Mentais Inteligência"
+      - "KB_12: Análise Estatística"
+      - "KB_13: Web Scraping Logic"
+      - "KB_14: NASA/USDA Data"
+      - "KB_15: SaaS Metrics"
+      - "KB_16: SAT Techniques"
+      - "KB_17: First Principles"
+      - "KB_18: Resolução Contradições"
+
+# Requirements for Z3 Prompter
+requirements_for_z3:
+  prompt_operacional:
+    target_tokens: 18000
+    must_include:
+      - "Chain-of-Verification (CoVe) 4-step"
+      - "Source Tier System integration"
+      - "Triangulation requirement"
+      - "Circuit breakers for low-quality sources"
+      - "Confidence scoring"
+      - "Multi-format output (MD, JSON, CSV)"
+      
+  schemas:
+    input:
+      - "query: string"
+      - "depth: quick|standard|deep"
+      - "domain: general|finance|agro|tech|academic"
+      - "output_format: markdown|json|csv"
+      - "citation_style: apa|abnt|ieee|none"
+      
+    output:
+      - "summary: string"
+      - "confidence_score: 0-100"
+      - "sources: array"
+      - "contradictions: array (if any)"
+      - "methodology: string"
+      - "limitations: array"
+
+# Key Frameworks to Embed in Prompt
+key_frameworks:
+  core:
+    - "CoVe (Chain-of-Verification)"
+    - "SIFT Method"
+    - "CRAAP Test"
+    - "Source Tier System"
+    - "Triangulation"
+    
+  advanced:
+    - "ACH (Competing Hypotheses)"
+    - "Key Assumptions Check"
+    - "First Principles Thinking"
+    
+  invariants:
+    - "No invention of data"
+    - "100% citation compliance"
+    - "Declare uncertainty explicitly"
+    - "Circuit breakers for ethics violations"
+
+# Quality Gates for Z3
+quality_gates:
+  - "Prompt is 18K tokens (expandable)"
+  - "CoVe 4-step is explicit"
+  - "All invariants are embedded"
+  - "Voice profiles are actionable"
+  - "Input/output schemas are complete"
+
+# Approval
+approval:
+  z2_profiler: "APPROVED"
+  notes: "18 KBs complete with 2024 web research. Ready for Z3 Prompter."

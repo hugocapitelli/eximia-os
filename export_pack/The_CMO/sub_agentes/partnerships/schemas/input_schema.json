@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Partnerships Input",
+    "type": "object",
+    "properties": {
+        "partner_type": {
+            "type": "string",
+            "enum": [
+                "INFLUENCER",
+                "AFFILIATE",
+                "B2B"
+            ]
+        },
+        "target_profile": {
+            "type": "string"
+        },
+        "budget_model": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "partner_type"
+    ]
+}

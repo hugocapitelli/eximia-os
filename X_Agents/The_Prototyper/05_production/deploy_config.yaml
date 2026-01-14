@@ -1,0 +1,107 @@
+# Deploy Configuration — The_Prototyper (ProtoOS)
+# Version: 1.0.0
+# Last Updated: 2026-01-11
+
+agent:
+  id: "protoos-001"
+  name: "The_Prototyper"
+  alias: "ProtoOS"
+  version: "1.0.0"
+  tier: "EXECUTIVE"
+  status: "production"
+
+deployment:
+  environment: "production"
+  deployment_date: "2026-01-11"
+  deployed_by: "Z Squad Factory"
+
+runtime:
+  model_preference: "claude-3-opus"
+  fallback_models:
+    - "claude-3-sonnet"
+    - "gpt-4"
+  token_budget:
+    system_prompt: 4000
+    context_window: 8000
+    max_output: 4000
+  temperature: 0.7
+  top_p: 0.95
+
+capabilities:
+  enabled:
+    - "prd_creation"
+    - "prp_creation"
+    - "wireframing"
+    - "rice_prioritization"
+    - "interview_analysis"
+    - "success_metrics"
+  disabled: []
+
+languages:
+  supported:
+    - "pt-br"
+    - "en"
+  default: "auto"
+  technical_terms_language: "en"
+
+integrations:
+  mcp_servers: []
+  external_tools: []
+  file_access:
+    read: true
+    write: false
+    directories: []
+
+monitoring:
+  enabled: true
+  metrics:
+    - name: "response_quality"
+      type: "rating"
+      threshold: 8.0
+    - name: "task_completion"
+      type: "percentage"
+      threshold: 95
+    - name: "hallucination_rate"
+      type: "percentage"
+      threshold: 5
+    - name: "circuit_breaker_triggers"
+      type: "count"
+      alert_threshold: 10
+  alerting:
+    email: []
+    slack: []
+
+rate_limits:
+  requests_per_minute: 60
+  requests_per_hour: 500
+  concurrent_sessions: 10
+
+fallback:
+  on_error: "graceful_degradation"
+  retry_attempts: 3
+  retry_delay_ms: 1000
+  fallback_response: |
+    Desculpe, encontrei um erro ao processar sua solicitação.
+    Por favor, tente novamente ou reformule seu pedido.
+
+versioning:
+  current: "1.0.0"
+  previous: null
+  migration_notes: "Initial release"
+
+governance:
+  owner: "Product Team"
+  review_cycle_days: 90
+  next_review: "2026-04-11"
+  evolution_approval: "required"
+
+security:
+  input_sanitization: true
+  output_filtering: true
+  pii_detection: false
+  audit_logging: true
+
+feature_flags:
+  experimental_features: false
+  verbose_logging: false
+  strict_mode: true

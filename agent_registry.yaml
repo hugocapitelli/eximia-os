@@ -1,0 +1,578 @@
+# ExímIA.OS — Central Agent Registry
+# Consolidação de todos os agentes do ecossistema
+# Mantido por: The_Maestro | Última atualização: 2026-01-08
+
+registry_version: "1.0.0"
+last_updated: "2026-01-08T11:45:00-03:00"
+maintained_by: "The_Maestro"
+
+# ============================================================================
+# INSTRUÇÕES DE USO
+# ============================================================================
+# Este arquivo é a FONTE ÚNICA DE VERDADE para todos os agentes.
+# O Maestro deve consultar este registro antes de rotear qualquer tarefa.
+# 
+# Status possíveis:
+#   - production: Agente em uso ativo
+#   - validated: Testado e aprovado, pronto para produção
+#   - draft: Em desenvolvimento
+#   - deprecated: Marcado para remoção
+# 
+# Tiers:
+#   - 1 (Tactical): 4-8h criação, 3-5 KBs, quick wins
+#   - 2 (Executive): 6-12h criação, 5-8 KBs, C-level
+#   - 3 (Expert): 25-40h criação, 12-20 KBs, consultoria premium
+# ============================================================================
+
+# ============================================================================
+# EXECUTIVE AGENTS — C-Suite do Ecossistema
+# ============================================================================
+executive_agents:
+
+  - id: the_maestro
+    name: "The Maestro"
+    alias: "Supreme Orchestrator"
+    version: "1.0.0"
+    tier: 3
+    status: production
+    domain: "Multi-Agent Orchestration"
+    description: "Cérebro central que coordena todos os agentes especialistas"
+    competencies:
+      - "Task Decomposition"
+      - "Agent Routing"
+      - "Conflict Resolution"
+      - "Veritas First Protocol"
+      - "Multi-Agent Synthesis"
+    dependencies:
+      required: ["the_veritas"]
+      optional: ["the_cfo", "the_clo", "the_cmo"]
+    paths:
+      root: "The_Maestro/"
+      spec: "The_Maestro/01_spec/spec_tecnica_maestro.json"
+      profile: "The_Maestro/02_profile/"
+      prompt: "The_Maestro/03_prompt/prompt_operacional.md"
+      validation: "The_Maestro/04_validation/"
+    metrics:
+      token_budget: 20000
+      knowledge_bases: 20
+      frameworks: 75
+      last_score: null
+      last_validated: "2026-01-07"
+
+  - id: the_veritas
+    name: "The Veritas"
+    alias: "Research Engine"
+    version: "1.0.0"
+    tier: 3
+    status: production
+    domain: "Deep Research & Fact Verification"
+    description: "Agente de pesquisa profunda com anti-hallucination protocols"
+    competencies:
+      - "Multi-Source Research"
+      - "Fact Verification"
+      - "Source Grading"
+      - "Anti-Hallucination"
+      - "Temporal Data"
+    dependencies:
+      required: []
+      optional: []
+    paths:
+      root: "The_Veritas/"
+      spec: "The_Veritas/01_spec/"
+      profile: "The_Veritas/02_profile/"
+      prompt: "The_Veritas/03_prompt/prompt_operacional.md"
+      validation: "The_Veritas/04_validation/"
+    metrics:
+      token_budget: 18000
+      knowledge_bases: 18
+      last_validated: "2026-01-07"
+
+  - id: intellex
+    name: "Intellex"
+    alias: "Intellectual Production Engine"
+    version: "1.0.0"
+    tier: 3
+    status: production
+    domain: "Intellectual Production & Framework Creation"
+    description: "Motor de produção intelectual: livros, artigos científicos, frameworks de impacto"
+    competencies:
+      - "Book Processing"
+      - "Paper Generation"
+      - "Framework Creation"
+      - "Knowledge Synthesis"
+      - "Academic Writing"
+    dependencies:
+      required: ["the_veritas"]
+      optional: []
+    sub_modules:
+      - "Book_Processor"
+      - "Paper_Generator"
+      - "Framework_Creator"
+    paths:
+      root: "Intellex/"
+      core: "Intellex/core/"
+      modules: "Intellex/modules/"
+      templates: "Intellex/templates/"
+    metrics:
+      token_budget: 16000
+      knowledge_bases: 8
+      last_validated: "2026-01-11"
+    created_by: "Maestro Planning Session"
+    created_at: "2026-01-08"
+
+  - id: the_ceo
+    name: "The CEO"
+    alias: "Chief of Staff"
+    version: "2.1.0"
+    tier: 2
+    status: production
+    domain: "Executive Management & Research Gatekeeper"
+    description: "Chefe de gabinete pessoal, segundo cérebro do fundador"
+    competencies:
+      - "Focus Protection"
+      - "Research Gatekeeping"
+      - "Executive Synthesis"
+      - "Agent Delegation"
+      - "Strategic Planning"
+    dependencies:
+      required: []
+      optional: ["x_agents"]
+    paths:
+      root: "The_CEO/"
+      prompt: "The_CEO/agente_core.md"
+      kbs: "The_CEO/knowledge_base/"
+    metrics:
+      knowledge_bases: 5
+      last_validated: "2026-01-06"
+
+  - id: the_cfo
+    name: "The CFO"
+    alias: "Fiscus"
+    version: "1.0.0"
+    tier: 3
+    status: production
+    domain: "Corporate Finance"
+    description: "Chief Financial Officer para valuation, M&A e estratégia financeira"
+    competencies:
+      - "DCF Valuation"
+      - "Comparable Analysis"
+      - "M&A Due Diligence"
+      - "Financial Modeling"
+      - "Fundraising Strategy"
+    dependencies:
+      required: ["the_veritas"]
+      optional: []
+    paths:
+      root: "The_CFO/"
+      prompt: "The_CFO/agente_core.md"
+      kbs: "The_CFO/knowledge_base/"
+    metrics:
+      knowledge_bases: 15
+      last_validated: "2026-01-07"
+
+  - id: the_clo
+    name: "The CLO"
+    alias: "Justitia"
+    version: "1.0.0"
+    tier: 3
+    status: production
+    domain: "Legal & Compliance"
+    description: "Chief Legal Officer com análise de risco e compliance"
+    competencies:
+      - "Contract Analysis"
+      - "Risk Assessment"
+      - "Regulatory Compliance"
+      - "LGPD/GDPR"
+      - "Corporate Law"
+    dependencies:
+      required: ["the_veritas"]
+      optional: []
+    sub_agents:
+      - "corporate_contracts"
+      - "digital_compliance"
+      - "labor_relations"
+      - "litigation_sniper"
+      - "tax_strategist"
+    paths:
+      root: "The_CLO/"
+      prompt: "The_CLO/agente_core.md"
+      kbs: "The_CLO/knowledge_base/"
+      sub_agents: "The_CLO/sub_agentes/"
+    metrics:
+      knowledge_bases: 12
+      last_validated: "2026-01-07"
+
+  - id: the_cmo
+    name: "The CMO"
+    alias: "Mercator"
+    version: "1.0.0"
+    tier: 3
+    status: production
+    domain: "Marketing & Growth"
+    description: "Chief Marketing Officer para brand, growth e performance"
+    competencies:
+      - "Brand Positioning"
+      - "Growth Marketing"
+      - "Content Strategy"
+      - "Performance Marketing"
+      - "CRM Lifecycle"
+    dependencies:
+      required: ["the_veritas"]
+      optional: ["the_clo"]
+    sub_agents:
+      - "brand_positioning"
+      - "copywriting_engine"
+      - "crm_lifecycle"
+      - "partnerships"
+      - "performance_growth"
+      - "seo_content"
+    paths:
+      root: "The_CMO/"
+      prompt: "The_CMO/agente_core.md"
+      kbs: "The_CMO/knowledge_base/"
+      sub_agents: "The_CMO/sub_agentes/"
+    metrics:
+      knowledge_bases: 8
+      last_validated: "2026-01-06"
+
+# ============================================================================
+# Z SQUAD OUTPUTS — Agentes criados pelo pipeline Z Squad
+# ============================================================================
+z_squad_outputs:
+
+  - id: cfo_agent
+    name: "CFO Agent"
+    version: "1.1.0"
+    tier: 2
+    status: production
+    domain: "Corporate Finance"
+    description: "Versão Z Squad do CFO com 8K token budget"
+    competencies:
+      - "DCF Valuation"
+      - "Comparable Companies"
+      - "M&A Due Diligence"
+    sub_agents:
+      - "treasury_manager"
+      - "fpa_architect"
+      - "controller_guardian"
+    paths:
+      root: "Z_Squad/outputs/CFO_Agent/"
+      spec: "Z_Squad/outputs/CFO_Agent/01_spec/"
+      profile: "Z_Squad/outputs/CFO_Agent/02_profile/"
+      prompt: "Z_Squad/outputs/CFO_Agent/03_prompt/"
+      validation: "Z_Squad/outputs/CFO_Agent/04_validation/"
+    metrics:
+      token_budget: 8000
+      knowledge_bases: 5
+      last_score: 9.6
+      last_validated: "2026-01-06"
+    created_by: "Z Squad Pipeline"
+
+  - id: lxd_architect
+    name: "LXD Architect"
+    version: "1.0.0"
+    tier: 3
+    status: production
+    domain: "Learning Experience Design"
+    description: "Expert em design instrucional com Kolb, Andragogia e LXD"
+    competencies:
+      - "Andragogia"
+      - "Kolb Cycle"
+      - "ADDIE/SAM"
+      - "Kirkpatrick Evaluation"
+      - "Gamification"
+    paths:
+      root: "X_Agents/LXD_Architect/"
+      spec: "X_Agents/LXD_Architect/01_spec/"
+      profile: "X_Agents/LXD_Architect/02_profile/"
+      prompt: "X_Agents/LXD_Architect/03_prompt/"
+      validation: "X_Agents/LXD_Architect/04_validation/"
+    metrics:
+      token_budget: 16000
+      knowledge_bases: 16
+      frameworks: 61
+      last_score: 9.2
+      last_validated: "2026-01-07"
+    created_by: "Z Squad Pipeline"
+
+  - id: stratos_hoshin
+    name: "StratOS"
+    version: "1.0.0"
+    tier: 3
+    status: production
+    domain: "Strategic Planning & Lean Management"
+    description: "Expert em Hoshin Kanri Deployment sem X-Matrix (Cascade Logic Only)"
+    competencies:
+      - "Hoshin Kanri"
+      - "Strategic Catchball"
+      - "KPI Design"
+      - "A3 Problem Solving"
+      - "Strategic Governance"
+    paths:
+      root: "Z_Squad/outputs/StratOS/"
+      spec: "Z_Squad/outputs/StratOS/01_spec/spec_tecnica.json"
+      profile: "Z_Squad/outputs/StratOS/02_profile/dna_mental.md"
+      prompt: "Z_Squad/outputs/StratOS/03_prompt/prompt_operacional.md"
+      kbs: "Z_Squad/outputs/StratOS/02_profile/knowledge_base/"
+    metrics:
+      token_budget: 16000
+      knowledge_bases: 2
+      last_validated: "2026-01-11"
+    created_by: "Z Squad Manual Fallback"
+
+
+
+  - id: marketplace_seller
+    name: "Marketplace Seller"
+    version: "1.0.0"
+    tier: 1
+    status: production
+    domain: "E-commerce"
+    description: "Agente tático para vendas em marketplaces"
+    paths:
+      root: "Z_Squad/outputs/x_agente_marketplace_seller/"
+      prompt: "Z_Squad/outputs/x_agente_marketplace_seller/agente_core.md"
+    created_by: "Z Squad Pipeline"
+
+  - id: harven_socrates
+    name: "Harven Socrates"
+    alias: "SocratOS"
+    version: "1.0.0"
+    tier: 1
+    status: production
+    domain: "Socratic Education"
+    description: "Orientador Socrático para Harven.AI"
+    paths:
+      root: "Z_Squad/outputs/Harven_Socrates/"
+      spec: "Z_Squad/outputs/Harven_Socrates/01_spec/spec_tecnica.json"
+      profile: "Z_Squad/outputs/Harven_Socrates/02_profile/dna_mental.md"
+      prompt: "Z_Squad/outputs/Harven_Socrates/03_prompt/prompt_operacional.md"
+    created_by: "Z Squad Pipeline"
+
+  - id: harven_creator
+    name: "Harven Creator"
+    alias: "CreatorOS"
+    version: "1.0.0"
+    tier: 1
+    status: production
+    domain: "Socratic Question Generation"
+    description: "Gerador de Perguntas Socráticas para Harven.AI"
+    paths:
+      root: "Z_Squad/outputs/Harven_Creator/"
+      spec: "Z_Squad/outputs/Harven_Creator/01_spec/spec_tecnica.json"
+      profile: "Z_Squad/outputs/Harven_Creator/02_profile/dna_mental.md"
+      prompt: "Z_Squad/outputs/Harven_Creator/03_prompt/prompt_operacional.md"
+    created_by: "Z Squad Pipeline"
+
+
+
+# ============================================================================
+# X AGENTS — Agentes Táticos de Propósito Específico
+# ============================================================================
+# X_Agents will be populated with Knowledge Agents
+
+  - id: the_prototyper
+    name: "The Prototyper"
+    version: "2.0.0"
+    tier: 3
+    status: production
+    domain: "Product Architecture & Prototyping"
+    description: "Architect agent for PRDs, RFCs, and Wireframes (Tier 3)"
+    competencies:
+      - "PRD/RFC Creation"
+      - "Mobile UX Patterns"
+      - "WCAG 3.0 Accessibility"
+      - "Domain Driven Design"
+    paths:
+      root: "X_Agents/The_Prototyper/"
+      spec: "X_Agents/The_Prototyper/01_spec/spec_tecnica.json"
+      profile: "X_Agents/The_Prototyper/02_profile/"
+      prompt: "X_Agents/The_Prototyper/03_prompt/prompt_operacional.md"
+    metrics:
+      token_budget: 16000
+      knowledge_bases: 12
+      frameworks: 12
+      last_validated: "2026-01-11"
+    created_by: "Z Squad Pipeline (Promoted)"
+
+
+
+
+
+# ============================================================================
+# CLONES — Personalidades clonadas pelo Clone Factory
+# ============================================================================
+clones:
+
+  - id: david_goggins
+    name: "David Goggins"
+    version: "v4.1"
+    status: production
+    domain: "Performance Mental"
+    description: "Clone de alta fidelidade focado em disciplina extrema e mental toughness"
+    tags:
+      - "reference_model"
+      - "high_fidelity"
+      - "production_ready"
+    paths:
+      root: "Clones/david_goggins 1/"
+    metrics:
+      turing_score: 9.5
+      final_score: 9.4
+      total_sources: 51
+      qna_pairs: 105
+    validated_by: "C4_Auditor"
+    created_at: "2025-12-19"
+
+  - id: elon_musk
+    name: "Elon Musk"
+    version: "2.0.0"
+    status: validated
+    domain: "Tech Entrepreneurship & Innovation"
+    description: "Clone de alta fidelidade focado em first principles thinking e visão multi-planetária"
+    tags:
+      - "high_fidelity"
+      - "production_ready"
+    paths:
+      root: "Clones/elon_musk/"
+    metrics:
+      turing_score: 9.2
+      final_score: 9.4
+      total_sources: 72
+      knowledge_bases: 9
+    validated_by: "C4_Auditor"
+    created_at: "2026-01-08"
+
+  - id: richard_feynman
+    name: "Richard Feynman"
+    version: "draft"
+    status: draft
+    domain: "Physics & Teaching"
+    paths:
+      root: "Clones/Richard_feynman/"
+    notes: "Em desenvolvimento"
+
+# ============================================================================
+# Z SQUAD — Pipeline de Criação de Agentes
+# ============================================================================
+z_squad_pipeline:
+
+  - id: z1_architect
+    name: "Z1 Architect"
+    version: "1.0.0"
+    status: production
+    role: "Specification & Architecture"
+    paths:
+      prompt: "Z_Squad/Z1_Architect/agente_core.md"
+
+  - id: z2_profiler
+    name: "Z2 Profiler"
+    version: "1.0.0"
+    status: production
+    role: "Profile & Knowledge Base Creation"
+    paths:
+      prompt: "Z_Squad/Z2_Profiler/agente_core.md"
+
+  - id: z3_engineer
+    name: "Z3 Engineer"
+    version: "1.0.0"
+    status: production
+    role: "Prompt Engineering"
+    paths:
+      prompt: "Z_Squad/Z3_Engineer/agente_core.md"
+
+  - id: z4_auditor
+    name: "Z4 Auditor"
+    version: "1.0.0"
+    status: production
+    role: "Validation & Testing"
+    paths:
+      prompt: "Z_Squad/Z4_Auditor/agente_core.md"
+
+  - id: z5_evolver
+    name: "Z5 Evolver"
+    version: "1.0.0"
+    status: production
+    role: "Evolution & Maintenance"
+    paths:
+      prompt: "Z_Squad/Z5_Evolver/agente_core.md"
+      registry: "Z_Squad/Z5_Evolver/agent_registry.yaml"  # Legacy, migrate to root
+
+# ============================================================================
+# CLONE FACTORY — Pipeline de Clonagem de Personalidades
+# ============================================================================
+clone_factory_pipeline:
+
+  - id: c1_hunter
+    name: "C1 Hunter"
+    status: production
+    role: "Research & Data Collection"
+    paths:
+      prompt: "Clone_Factory/C1_Hunter/agente_core.md"
+
+  - id: c2_extractor
+    name: "C2 Extractor"
+    status: production
+    role: "ETL & Data Structuring"
+    paths:
+      prompt: "Clone_Factory/C2_Extractor/agente_core.md"
+
+  - id: c3_creator
+    name: "C3 Creator"
+    status: production
+    role: "Clone Generation"
+    paths:
+      prompt: "Clone_Factory/C3_Creator/agente_core.md"
+
+  - id: c4_auditor
+    name: "C4 Auditor"
+    status: production
+    role: "Validation & Turing Test"
+    paths:
+      prompt: "Clone_Factory/C4_Auditor/agente_core.md"
+
+# ============================================================================
+# DEPRECATED — Agentes marcados para remoção
+# ============================================================================
+deprecated:
+
+  - id: the_cloner
+    name: "The Cloner"
+    status: deprecated
+    reason: "Funcionalidade migrada para Clone_Factory"
+    deprecated_at: "2026-01-08"
+    paths:
+      root: "The_Cloner/"  # A ser removido
+
+# ============================================================================
+# STATISTICS
+# ============================================================================
+statistics:
+  total_agents: 24  # Updated count after cleanup
+  by_category:
+    executive_agents: 6
+    z_squad_outputs: 2 # CFO, Marketplace
+    x_agents: 1        # LXD Architect moved here (conceptually, though kept in Z Squad section in text for now, should move section too if strict)
+    clones: 3
+    z_squad_pipeline: 5
+    clone_factory_pipeline: 4
+    deprecated: 1
+  by_tier:
+    tier_1: 0 # Removed X agents + KolbFlow
+    tier_2: 3 # CEO + CFO Agents
+    tier_3: 8 # Execs + LXD + Intellex
+    pipeline: 9
+  by_status:
+    production: 21
+    validated: 1
+    draft: 1
+    deprecated: 1
+  average_score: 9.5
+
+# ============================================================================
+# MAINTENANCE LOG
+# ============================================================================
+maintenance_log:
+  - date: "2026-01-08"
+    action: "Registry central criado, consolidando Z5_Evolver e Clone_Factory registries"
+    by: "System Improvement Initiative"

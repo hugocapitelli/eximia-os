@@ -1,0 +1,464 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "protoos-output-schema",
+  "title": "The_Prototyper Output Schema",
+  "description": "Schema for validating outputs from The_Prototyper (ProtoOS) agent",
+  "type": "object",
+  "properties": {
+    "response_type": {
+      "type": "string",
+      "enum": [
+        "prd",
+        "prp",
+        "wireframe",
+        "prioritization",
+        "interview_analysis",
+        "clarification_request",
+        "general_response"
+      ],
+      "description": "Type of response generated"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+$",
+          "description": "Document version (e.g., '1.0')"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "in_review", "approved"],
+          "default": "draft"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "language": {
+          "type": "string",
+          "enum": ["pt-br", "en"]
+        },
+        "confidence_level": {
+          "type": "string",
+          "enum": ["high", "medium", "low"],
+          "description": "Agent's confidence in the output quality"
+        }
+      },
+      "required": ["version", "status"]
+    },
+    "prd_output": {
+      "type": "object",
+      "description": "Structured PRD output",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "PRD title"
+        },
+        "problem_statement": {
+          "type": "string",
+          "description": "Clear problem statement (2-3 sentences)"
+        },
+        "goals": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "In-scope goals"
+        },
+        "non_goals": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Out-of-scope items"
+        },
+        "user_stories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "title": { "type": "string" },
+              "persona": { "type": "string" },
+              "action": { "type": "string" },
+              "benefit": { "type": "string" },
+              "acceptance_criteria": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "priority": {
+                "type": "string",
+                "enum": ["P0", "P1", "P2"]
+              }
+            },
+            "required": ["id", "persona", "action", "benefit", "acceptance_criteria"]
+          }
+        },
+        "success_metrics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "metric": { "type": "string" },
+              "baseline": { "type": "string" },
+              "target": { "type": "string" },
+              "timeframe": { "type": "string" },
+              "measurement_method": { "type": "string" }
+            },
+            "required": ["metric", "target"]
+          }
+        },
+        "wireframes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "ascii_representation": { "type": "string" },
+              "elements": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "string" },
+                    "element": { "type": "string" },
+                    "type": { "type": "string" },
+                    "action": { "type": "string" },
+                    "notes": { "type": "string" }
+                  }
+                }
+              },
+              "related_user_stories": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        },
+        "open_questions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "risks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "risk": { "type": "string" },
+              "probability": { "type": "string", "enum": ["high", "medium", "low"] },
+              "impact": { "type": "string", "enum": ["high", "medium", "low"] },
+              "mitigation": { "type": "string" }
+            }
+          }
+        },
+        "full_markdown": {
+          "type": "string",
+          "description": "Complete PRD in markdown format"
+        }
+      },
+      "required": ["title", "problem_statement", "goals", "non_goals", "user_stories", "success_metrics"]
+    },
+    "prp_output": {
+      "type": "object",
+      "description": "Structured PRP output",
+      "properties": {
+        "title": { "type": "string" },
+        "context": {
+          "type": "object",
+          "properties": {
+            "system_context": { "type": "string" },
+            "tech_stack": { "type": "object" },
+            "existing_patterns": { "type": "string" },
+            "file_structure": { "type": "string" }
+          }
+        },
+        "task": {
+          "type": "object",
+          "properties": {
+            "objective": { "type": "string" },
+            "user_story": {
+              "type": "object",
+              "properties": {
+                "persona": { "type": "string" },
+                "action": { "type": "string" },
+                "benefit": { "type": "string" }
+              }
+            },
+            "scope_in": { "type": "array", "items": { "type": "string" } },
+            "scope_out": { "type": "array", "items": { "type": "string" } },
+            "assumptions": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "requirements": {
+          "type": "object",
+          "properties": {
+            "functional": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": { "type": "string" },
+                  "requirement": { "type": "string" },
+                  "priority": { "type": "string", "enum": ["must", "should", "could"] }
+                }
+              }
+            },
+            "non_functional": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": { "type": "string" },
+                  "requirement": { "type": "string" },
+                  "target": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "constraints": {
+          "type": "object",
+          "properties": {
+            "must_not": { "type": "array", "items": { "type": "string" } },
+            "should": { "type": "array", "items": { "type": "string" } },
+            "may": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "validation_criteria": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "description": { "type": "string" },
+              "input": { "type": "string" },
+              "expected_output": { "type": "string" }
+            }
+          }
+        },
+        "full_markdown": {
+          "type": "string",
+          "description": "Complete PRP in markdown format"
+        }
+      },
+      "required": ["title", "context", "task", "requirements", "constraints", "validation_criteria"]
+    },
+    "wireframe_output": {
+      "type": "object",
+      "description": "Structured wireframe output",
+      "properties": {
+        "screen_name": { "type": "string" },
+        "ascii_wireframe": { "type": "string" },
+        "elements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "element": { "type": "string" },
+              "type": { "type": "string" },
+              "action": { "type": "string" },
+              "destination": { "type": "string" },
+              "notes": { "type": "string" }
+            },
+            "required": ["id", "element", "type"]
+          }
+        },
+        "states": {
+          "type": "object",
+          "properties": {
+            "default": { "type": "string" },
+            "empty": { "type": "string" },
+            "loading": { "type": "string" },
+            "error": { "type": "string" }
+          }
+        },
+        "responsive_variations": {
+          "type": "object",
+          "properties": {
+            "desktop": { "type": "string" },
+            "tablet": { "type": "string" },
+            "mobile": { "type": "string" }
+          }
+        },
+        "prd_references": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "User story IDs this wireframe addresses"
+        }
+      },
+      "required": ["screen_name", "ascii_wireframe", "elements"]
+    },
+    "prioritization_output": {
+      "type": "object",
+      "description": "Feature prioritization analysis output",
+      "properties": {
+        "framework_used": {
+          "type": "string",
+          "enum": ["rice", "value_effort", "moscow", "weighted"]
+        },
+        "features_analyzed": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "reach": { "type": "integer" },
+              "impact": { "type": "number" },
+              "confidence": { "type": "number" },
+              "effort": { "type": "number" },
+              "score": { "type": "number" },
+              "quadrant": {
+                "type": "string",
+                "enum": ["quick_win", "big_bet", "fill_in", "time_sink"]
+              },
+              "rank": { "type": "integer" }
+            },
+            "required": ["name", "score", "rank"]
+          }
+        },
+        "recommendations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "priority": { "type": "string", "enum": ["do_now", "plan", "backlog", "dont_do"] },
+              "feature": { "type": "string" },
+              "rationale": { "type": "string" }
+            }
+          }
+        },
+        "assumptions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "confidence_notes": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["framework_used", "features_analyzed", "recommendations"]
+    },
+    "interview_analysis_output": {
+      "type": "object",
+      "description": "Customer interview analysis output",
+      "properties": {
+        "interviewee_profile": {
+          "type": "object",
+          "properties": {
+            "role": { "type": "string" },
+            "context": { "type": "string" }
+          }
+        },
+        "pain_points": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "pain_point": { "type": "string" },
+              "severity": { "type": "string", "enum": ["high", "medium", "low"] },
+              "frequency": { "type": "string" },
+              "evidence": { "type": "string" }
+            }
+          }
+        },
+        "jobs_to_be_done": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "job": { "type": "string" },
+              "context": { "type": "string" },
+              "current_solution": { "type": "string" }
+            }
+          }
+        },
+        "feature_requests": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "request": { "type": "string" },
+              "underlying_need": { "type": "string" },
+              "priority_perception": { "type": "string" }
+            }
+          }
+        },
+        "key_quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "quote": { "type": "string" },
+              "topic": { "type": "string" },
+              "sentiment": { "type": "string", "enum": ["positive", "negative", "neutral"] }
+            }
+          }
+        },
+        "sentiment_summary": {
+          "type": "object",
+          "properties": {
+            "overall": { "type": "string", "enum": ["very_positive", "positive", "neutral", "negative", "very_negative"] },
+            "by_topic": { "type": "object" }
+          }
+        },
+        "themes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "competitor_mentions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "competitor": { "type": "string" },
+              "context": { "type": "string" },
+              "sentiment": { "type": "string" }
+            }
+          }
+        },
+        "recommendations": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["pain_points", "jobs_to_be_done", "key_quotes", "themes"]
+    },
+    "clarification_request": {
+      "type": "object",
+      "description": "Questions for clarification before proceeding",
+      "properties": {
+        "trigger": {
+          "type": "string",
+          "description": "What triggered the need for clarification"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": { "type": "string" },
+              "context": { "type": "string" },
+              "options": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "required": ["question"]
+          },
+          "minItems": 1
+        },
+        "can_proceed_with_assumptions": {
+          "type": "boolean",
+          "description": "Whether the agent can proceed with stated assumptions if user doesn't respond"
+        },
+        "stated_assumptions": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["trigger", "questions"]
+    }
+  },
+  "required": ["response_type", "metadata"]
+}

@@ -1,0 +1,228 @@
+================================================================================
+VISÃO DO PRODUTO E OBJETIVOS - HARVEN.AI
+================================================================================
+
+================================================================================
+1. VISÃO DO PRODUTO
+================================================================================
+
+O HARVEN.AI é uma plataforma de Ambiente Virtual de Aprendizagem (AVA) que 
+transforma o ensino tradicional em uma experiência ativa e adaptativa, 
+utilizando o método socrático e inteligência artificial.
+
+PROPOSTA DE VALOR:
+"Aprender não é decorar respostas — é descobrir perguntas melhores."
+
+O sistema cria diálogos personalizados que questionam, orientam e guiam o 
+aluno até a compreensão profunda do conteúdo, oferecendo feedback 
+individualizado que seria impossível de escalar apenas com professores humanos.
+
+================================================================================
+2. PROBLEMA QUE RESOLVE
+================================================================================
+
+PROBLEMAS IDENTIFICADOS:
+1. Ensino digital ainda centrado em conteúdo, não no raciocínio
+   - Plataformas tradicionais focam em apresentar informação
+   - Falta de interação que desenvolva pensamento crítico
+
+2. Falta de feedback individualizado
+   - Professores têm limitações de tempo
+   - Impossível dar atenção personalizada a cada aluno em escala
+
+3. Plataformas sem interação inteligente
+   - AVAs tradicionais são estáticos
+   - Sem adaptabilidade ao nível de compreensão do aluno
+
+================================================================================
+3. SOLUÇÃO OFERECIDA
+================================================================================
+
+COMPONENTES PRINCIPAIS:
+
+A) CHAT SOCRÁTICO INTELIGENTE
+- Diálogos guiados por IA que questionam o aluno
+- Limite de 3 interações por sessão (força síntese)
+- Perguntas provocativas que desenvolvem raciocínio
+- Histórico persistente para análise do professor
+
+B) PROCESSAMENTO INTELIGENTE DE CONTEÚDO
+- Upload de material educacional (PDF, texto)
+- Particionamento automático em capítulos lógicos
+- Geração automática de perguntas socráticas enriquecidas
+- Preservação do texto original (verbatim) para integridade
+
+C) PAINEL DO PROFESSOR
+- Visualização de todas as conversas dos alunos
+- Métricas de engajamento e compreensão
+- Exportação para Moodle (integração com portfólio)
+- Gerenciamento de conteúdo e cursos
+
+D) HIERARQUIA CANÔNICA
+- Disciplinas → Cursos → Capítulos
+- Atribuição de professores a disciplinas
+- Atribuição de cursos a grupos/turmas
+- Controle de visibilidade e acesso
+
+================================================================================
+4. OBJETIVOS DO PRODUTO
+================================================================================
+
+OBJETIVOS PRIMÁRIOS:
+
+1. AUTOMATIZAR AVALIAÇÕES SOCRÁTICAS
+   - Reduzir carga de trabalho do professor
+   - Permitir avaliação em escala
+   - Manter qualidade pedagógica
+
+2. DESENVOLVER PENSAMENTO CRÍTICO
+   - Forçar aluno a raciocinar, não decorar
+   - Limite de interações força síntese
+   - Perguntas provocativas desenvolvem análise
+
+3. INTEGRAR COM ECOSSISTEMA EDUCACIONAL
+   - Integração com Moodle (exportação de portfólio)
+   - Microsoft OAuth (login unificado)
+   - Compatibilidade com estruturas acadêmicas existentes
+
+OBJETIVOS SECUNDÁRIOS:
+
+1. ESCALABILIDADE
+   - Suportar múltiplas disciplinas e cursos
+   - Processar grandes volumes de conteúdo
+   - Atender muitos alunos simultaneamente
+
+2. OBSERVABILIDADE
+   - Métricas de engajamento
+   - Análise de compreensão
+   - Relatórios para professores
+
+3. FLEXIBILIDADE
+   - Múltiplos modos de importação (manual, automático)
+   - Edição de conteúdo processado
+   - Reprocessamento quando necessário
+
+================================================================================
+5. PÚBLICO-ALVO
+================================================================================
+
+PRIMÁRIO:
+- Estudantes universitários em cursos híbridos ou EAD
+- Professores que buscam automatizar avaliações
+- Coordenadores que querem métricas de aprendizado
+
+SECUNDÁRIO:
+- Instituições de ensino que querem modernizar AVAs
+- Empresas de educação corporativa
+- Plataformas de ensino online
+
+================================================================================
+6. DIFERENCIAL COMPETITIVO
+================================================================================
+
+1. MÉTODO SOCRÁTICO AUTOMATIZADO
+   - Não é apenas Q&A, é diálogo guiado
+   - IA adapta perguntas ao nível do aluno
+   - Força desenvolvimento de raciocínio
+
+2. PROCESSAMENTO INTELIGENTE
+   - Não requer formatação manual
+   - Gera perguntas contextualizadas automaticamente
+   - Preserva integridade do conteúdo original
+
+3. INTEGRAÇÃO COM ECOSSISTEMA
+   - Moodle para portfólio
+   - Microsoft 365 para autenticação
+   - Estrutura hierárquica familiar (disciplinas/cursos)
+
+4. LIMITAÇÃO INTENCIONAL
+   - 3 interações forçam síntese
+   - Previne dependência do aluno
+   - Ensina eficiência comunicativa
+
+================================================================================
+7. RESTRIÇÕES E LIMITAÇÕES
+================================================================================
+
+TÉCNICAS:
+- Dependência de API externa (OpenAI/Azure OpenAI)
+- Processamento pode ser lento para arquivos grandes
+- Limite de 3 interações pode frustrar alguns alunos
+
+PEDAGÓGICAS:
+- Requer que aluno já tenha lido o conteúdo
+- Não substitui explicação inicial do professor
+- Foco em análise, não em memorização
+
+OPERACIONAIS:
+- Requer configuração inicial (disciplinas, cursos)
+- Professores precisam revisar conteúdo processado
+- Exportação para Moodle requer configuração
+
+================================================================================
+8. RESULTADOS ESPERADOS
+================================================================================
+
+PARA ALUNOS:
+- Maior engajamento com o conteúdo
+- Desenvolvimento de pensamento crítico
+- Feedback imediato sobre compreensão
+- Preparação para avaliações
+
+PARA PROFESSORES:
+- Redução de tempo em avaliações
+- Visibilidade sobre compreensão dos alunos
+- Dados para ajustar ensino
+- Integração com ferramentas existentes (Moodle)
+
+PARA INSTITUIÇÃO:
+- Modernização do AVA
+- Métricas de aprendizado
+- Escalabilidade do ensino
+- Diferencial competitivo
+
+================================================================================
+9. ROADMAP DE EVOLUÇÃO
+================================================================================
+
+FASE 1: MVP (ATUAL)
+✅ Chat socrático funcional
+✅ Processamento inteligente básico
+✅ Painel do professor
+✅ Integração Moodle (exportação)
+
+FASE 2: MELHORIAS (PRÓXIMOS 3 MESES)
+- Microsoft OAuth completo
+- Importação do Moodle
+- TTS (Text-to-Speech)
+- Dashboard de analytics
+
+FASE 3: ESCALA (6-12 MESES)
+- Processamento de vídeo/áudio
+- Múltiplos idiomas
+- API pública
+- Mobile app
+
+================================================================================
+10. MÉTRICAS DE SUCESSO
+================================================================================
+
+ENGAGEMENT:
+- Número de sessões de chat por aluno
+- Taxa de conclusão de capítulos
+- Tempo médio de interação
+
+QUALIDADE:
+- Qualidade das respostas dos alunos (análise do professor)
+- Taxa de aprovação em avaliações
+- Feedback dos alunos sobre a plataforma
+
+OPERACIONAL:
+- Tempo de processamento de conteúdo
+- Taxa de sucesso de exportação Moodle
+- Uptime da plataforma
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+

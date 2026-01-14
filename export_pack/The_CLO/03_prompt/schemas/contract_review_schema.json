@@ -1,0 +1,292 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Contract Review Output Schema",
+    "description": "Schema for Themis Sentinel CLO contract review outputs",
+    "type": "object",
+    "required": [
+        "document_type",
+        "contract_type",
+        "parties",
+        "overall_risk",
+        "recommendation"
+    ],
+    "properties": {
+        "document_type": {
+            "type": "string",
+            "const": "contract_review"
+        },
+        "contract_type": {
+            "type": "string",
+            "enum": [
+                "SPA",
+                "APA",
+                "NDA",
+                "MSA",
+                "SLA",
+                "JVA",
+                "SHA",
+                "LOI",
+                "MOU",
+                "Employment",
+                "Service",
+                "License",
+                "Lease",
+                "Loan",
+                "Other"
+            ],
+            "description": "Type of contract being reviewed"
+        },
+        "parties": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "role": {
+                        "type": "string",
+                        "enum": [
+                            "Buyer",
+                            "Seller",
+                            "Lessor",
+                            "Lessee",
+                            "Licensor",
+                            "Licensee",
+                            "Service Provider",
+                            "Client",
+                            "Employer",
+                            "Employee",
+                            "Lender",
+                            "Borrower",
+                            "Party A",
+                            "Party B"
+                        ]
+                    }
+                },
+                "required": [
+                    "name",
+                    "role"
+                ]
+            },
+            "minItems": 2
+        },
+        "key_terms": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string",
+                    "description": "Contract value or consideration"
+                },
+                "term": {
+                    "type": "string",
+                    "description": "Duration/term of contract"
+                },
+                "effective_date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "termination": {
+                    "type": "string",
+                    "description": "Termination conditions"
+                },
+                "renewal": {
+                    "type": "string",
+                    "description": "Renewal mechanism"
+                },
+                "governing_law": {
+                    "type": "string"
+                },
+                "dispute_resolution": {
+                    "type": "string",
+                    "enum": [
+                        "Courts",
+                        "Arbitration",
+                        "Mediation",
+                        "Hybrid"
+                    ]
+                }
+            }
+        },
+        "red_flags": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "issue": {
+                        "type": "string",
+                        "description": "Description of the red flag"
+                    },
+                    "clause": {
+                        "type": "string",
+                        "description": "Reference to specific clause"
+                    },
+                    "severity": {
+                        "type": "string",
+                        "enum": [
+                            "CRITICAL",
+                            "HIGH",
+                            "MEDIUM",
+                            "LOW"
+                        ]
+                    },
+                    "recommendation": {
+                        "type": "string",
+                        "description": "Recommended action"
+                    },
+                    "market_standard": {
+                        "type": "string",
+                        "description": "What is market standard"
+                    }
+                },
+                "required": [
+                    "issue",
+                    "severity",
+                    "recommendation"
+                ]
+            }
+        },
+        "missing_clauses": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Important clauses that are missing from the contract"
+        },
+        "negotiation_points": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "point": {
+                        "type": "string"
+                    },
+                    "priority": {
+                        "type": "string",
+                        "enum": [
+                            "REDLINE",
+                            "HIGH",
+                            "MEDIUM",
+                            "NICE_TO_HAVE"
+                        ]
+                    },
+                    "current": {
+                        "type": "string",
+                        "description": "Current position in contract"
+                    },
+                    "target": {
+                        "type": "string",
+                        "description": "Desired position"
+                    },
+                    "fallback": {
+                        "type": "string",
+                        "description": "Acceptable fallback"
+                    }
+                },
+                "required": [
+                    "point",
+                    "priority"
+                ]
+            }
+        },
+        "reps_and_warranties": {
+            "type": "object",
+            "properties": {
+                "coverage": {
+                    "type": "string",
+                    "enum": [
+                        "Comprehensive",
+                        "Standard",
+                        "Limited",
+                        "Minimal"
+                    ]
+                },
+                "survival_period": {
+                    "type": "string"
+                },
+                "basket": {
+                    "type": "string"
+                },
+                "cap": {
+                    "type": "string"
+                },
+                "carve_outs": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "indemnification": {
+            "type": "object",
+            "properties": {
+                "scope": {
+                    "type": "string"
+                },
+                "basket_type": {
+                    "type": "string",
+                    "enum": [
+                        "Deductible",
+                        "Tipping",
+                        "First Dollar"
+                    ]
+                },
+                "basket_amount": {
+                    "type": "string"
+                },
+                "cap_amount": {
+                    "type": "string"
+                },
+                "cap_as_percentage": {
+                    "type": "string"
+                },
+                "survival": {
+                    "type": "string"
+                },
+                "exceptions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "overall_risk": {
+            "type": "string",
+            "enum": [
+                "CRITICAL",
+                "HIGH",
+                "MEDIUM",
+                "LOW",
+                "MINIMAL"
+            ],
+            "description": "Overall risk assessment of the contract"
+        },
+        "recommendation": {
+            "type": "string",
+            "enum": [
+                "SIGN_AS_IS",
+                "NEGOTIATE",
+                "REJECT",
+                "ESCALATE"
+            ],
+            "description": "Overall recommendation"
+        },
+        "executive_summary": {
+            "type": "string",
+            "description": "1-2 paragraph summary for executives"
+        },
+        "next_steps": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Recommended next steps"
+        },
+        "disclaimer": {
+            "type": "string",
+            "default": "This analysis is informational and does not constitute formal legal advice."
+        }
+    }
+}

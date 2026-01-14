@@ -1,0 +1,205 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "LXD Architect Input Schema",
+    "description": "Input parameters for LXD Architect training design requests",
+    "type": "object",
+    "required": [
+        "tema",
+        "publico_alvo",
+        "duracao_total"
+    ],
+    "properties": {
+        "tema": {
+            "type": "string",
+            "description": "Tema principal do treinamento",
+            "examples": [
+                "Liderança Situacional",
+                "Feedback Eficaz",
+                "IA Generativa para Produtividade"
+            ]
+        },
+        "publico_alvo": {
+            "type": "object",
+            "description": "Descrição do público-alvo",
+            "required": [
+                "descricao"
+            ],
+            "properties": {
+                "descricao": {
+                    "type": "string",
+                    "description": "Descrição do público (cargo, nível, área)",
+                    "examples": [
+                        "Gestores de nível médio da área comercial"
+                    ]
+                },
+                "quantidade": {
+                    "type": "integer",
+                    "description": "Número estimado de participantes",
+                    "minimum": 1,
+                    "maximum": 500
+                },
+                "nivel_conhecimento": {
+                    "type": "string",
+                    "enum": [
+                        "iniciante",
+                        "intermediario",
+                        "avancado",
+                        "misto"
+                    ],
+                    "description": "Nível de conhecimento prévio sobre o tema"
+                },
+                "perfil_predominante": {
+                    "type": "string",
+                    "enum": [
+                        "divergente",
+                        "assimilador",
+                        "convergente",
+                        "acomodador",
+                        "misto"
+                    ],
+                    "description": "Perfil de aprendizagem predominante (opcional)"
+                }
+            }
+        },
+        "duracao_total": {
+            "type": "string",
+            "description": "Duração total disponível",
+            "examples": [
+                "2 horas",
+                "4 encontros de 2h",
+                "8 horas em 2 dias"
+            ]
+        },
+        "formato": {
+            "type": "string",
+            "enum": [
+                "presencial",
+                "virtual_sincrono",
+                "assincrono",
+                "blended"
+            ],
+            "default": "presencial",
+            "description": "Formato de entrega do treinamento"
+        },
+        "contexto_organizacional": {
+            "type": "object",
+            "description": "Contexto da organização (opcional)",
+            "properties": {
+                "empresa": {
+                    "type": "string",
+                    "description": "Nome ou tipo da empresa"
+                },
+                "setor": {
+                    "type": "string",
+                    "description": "Setor de atuação",
+                    "examples": [
+                        "Tecnologia",
+                        "Varejo",
+                        "Indústria",
+                        "Serviços"
+                    ]
+                },
+                "desafio_atual": {
+                    "type": "string",
+                    "description": "Problema ou desafio que motivou o treinamento"
+                },
+                "objetivo_negocio": {
+                    "type": "string",
+                    "description": "Resultado de negócio esperado",
+                    "examples": [
+                        "Reduzir turnover em 20%",
+                        "Aumentar NPS de clientes"
+                    ]
+                }
+            }
+        },
+        "objetivos_aprendizagem": {
+            "type": "array",
+            "description": "Objetivos de aprendizagem desejados (opcional, serão propostos se não fornecidos)",
+            "items": {
+                "type": "string"
+            },
+            "maxItems": 5
+        },
+        "recursos_disponiveis": {
+            "type": "object",
+            "description": "Recursos disponíveis para o treinamento",
+            "properties": {
+                "sala_fisica": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "projetor": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "flipchart": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "computadores_participantes": {
+                    "type": "boolean",
+                    "default": false
+                },
+                "plataforma_virtual": {
+                    "type": "string",
+                    "description": "Nome da plataforma virtual se aplicável",
+                    "examples": [
+                        "Zoom",
+                        "Teams",
+                        "Google Meet"
+                    ]
+                },
+                "lms": {
+                    "type": "string",
+                    "description": "LMS disponível se aplicável"
+                },
+                "outros": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "restricoes": {
+            "type": "object",
+            "description": "Restrições ou limitações",
+            "properties": {
+                "orcamento": {
+                    "type": "string",
+                    "description": "Orçamento disponível"
+                },
+                "conteudo_obrigatorio": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Tópicos que devem ser incluídos obrigatoriamente"
+                },
+                "conteudo_proibido": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Tópicos que devem ser evitados"
+                }
+            }
+        },
+        "nivel_autonomia_desejado": {
+            "type": "string",
+            "enum": [
+                "pedagogico",
+                "andragogico",
+                "heutagogico"
+            ],
+            "default": "andragogico",
+            "description": "Nível de autonomia esperado para os participantes"
+        },
+        "idioma": {
+            "type": "string",
+            "default": "pt-BR",
+            "description": "Idioma do treinamento"
+        }
+    }
+}

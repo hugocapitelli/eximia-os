@@ -1,0 +1,246 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "protoos-input-schema",
+  "title": "The_Prototyper Input Schema",
+  "description": "Schema for validating inputs to The_Prototyper (ProtoOS) agent",
+  "type": "object",
+  "properties": {
+    "request_type": {
+      "type": "string",
+      "enum": [
+        "create_prd",
+        "create_prp",
+        "create_wireframe",
+        "prioritize_features",
+        "analyze_interview",
+        "scope_feature",
+        "general_question"
+      ],
+      "description": "The type of request being made to the agent"
+    },
+    "context": {
+      "type": "object",
+      "properties": {
+        "product_name": {
+          "type": "string",
+          "description": "Name of the product or project"
+        },
+        "domain": {
+          "type": "string",
+          "description": "Industry or domain context (e.g., 'fintech', 'healthcare', 'e-commerce')"
+        },
+        "target_users": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Primary user personas"
+        },
+        "tech_stack": {
+          "type": "object",
+          "properties": {
+            "frontend": { "type": "string" },
+            "backend": { "type": "string" },
+            "database": { "type": "string" },
+            "other": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "description": "Technology stack information (relevant for PRPs)"
+        },
+        "existing_patterns": {
+          "type": "string",
+          "description": "Description of existing code patterns or conventions"
+        }
+      }
+    },
+    "prd_request": {
+      "type": "object",
+      "description": "Details for PRD creation requests",
+      "properties": {
+        "feature_name": {
+          "type": "string",
+          "description": "Name of the feature"
+        },
+        "problem_description": {
+          "type": "string",
+          "description": "Description of the problem to solve"
+        },
+        "user_stories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "persona": { "type": "string" },
+              "action": { "type": "string" },
+              "benefit": { "type": "string" }
+            }
+          },
+          "description": "User stories if already defined"
+        },
+        "constraints": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Known constraints or limitations"
+        },
+        "template_preference": {
+          "type": "string",
+          "enum": ["standard", "one_page", "feature_brief", "agile_epic"],
+          "default": "standard",
+          "description": "Preferred PRD template format"
+        }
+      },
+      "required": ["feature_name"]
+    },
+    "prp_request": {
+      "type": "object",
+      "description": "Details for PRP creation requests",
+      "properties": {
+        "feature_name": {
+          "type": "string",
+          "description": "Name of the feature"
+        },
+        "objective": {
+          "type": "string",
+          "description": "Clear objective for the AI implementation"
+        },
+        "complexity": {
+          "type": "string",
+          "enum": ["simple", "medium", "complex"],
+          "default": "medium"
+        },
+        "target_system": {
+          "type": "string",
+          "enum": ["claude", "gpt", "copilot", "custom"],
+          "default": "claude",
+          "description": "Target AI system for the PRP"
+        },
+        "files_context": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          },
+          "description": "Relevant existing files for context"
+        }
+      },
+      "required": ["feature_name", "objective"]
+    },
+    "wireframe_request": {
+      "type": "object",
+      "description": "Details for wireframe creation requests",
+      "properties": {
+        "screen_name": {
+          "type": "string",
+          "description": "Name of the screen or view"
+        },
+        "screen_type": {
+          "type": "string",
+          "enum": ["page", "modal", "component", "flow"],
+          "description": "Type of wireframe needed"
+        },
+        "fidelity": {
+          "type": "string",
+          "enum": ["low", "mid"],
+          "default": "mid",
+          "description": "Wireframe fidelity level"
+        },
+        "elements_required": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of elements that must be included"
+        },
+        "responsive": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether to show responsive variations"
+        },
+        "related_prd": {
+          "type": "string",
+          "description": "Reference to related PRD for validation"
+        }
+      },
+      "required": ["screen_name"]
+    },
+    "prioritization_request": {
+      "type": "object",
+      "description": "Details for feature prioritization requests",
+      "properties": {
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "description": { "type": "string" },
+              "reach": {
+                "type": "integer",
+                "description": "Number of users impacted per quarter"
+              },
+              "impact": {
+                "type": "string",
+                "enum": ["massive", "high", "medium", "low", "minimal"]
+              },
+              "confidence": {
+                "type": "string",
+                "enum": ["high", "medium", "low"]
+              },
+              "effort": {
+                "type": "string",
+                "enum": ["xs", "s", "m", "l", "xl"]
+              }
+            },
+            "required": ["name"]
+          },
+          "description": "Features to prioritize"
+        },
+        "framework": {
+          "type": "string",
+          "enum": ["rice", "value_effort", "moscow", "weighted"],
+          "default": "rice",
+          "description": "Prioritization framework to use"
+        },
+        "capacity": {
+          "type": "number",
+          "description": "Team capacity in person-months per quarter"
+        }
+      },
+      "required": ["features"]
+    },
+    "interview_analysis_request": {
+      "type": "object",
+      "description": "Details for interview analysis requests",
+      "properties": {
+        "transcript": {
+          "type": "string",
+          "description": "Interview transcript text"
+        },
+        "interviewee_role": {
+          "type": "string",
+          "description": "Role of the interviewee"
+        },
+        "interview_goal": {
+          "type": "string",
+          "description": "Primary goal of the interview"
+        },
+        "output_format": {
+          "type": "string",
+          "enum": ["summary", "detailed", "synthesis"],
+          "default": "detailed"
+        }
+      },
+      "required": ["transcript"]
+    },
+    "language_preference": {
+      "type": "string",
+      "enum": ["pt-br", "en", "auto"],
+      "default": "auto",
+      "description": "Preferred response language (auto = match input language)"
+    }
+  },
+  "required": ["request_type"]
+}

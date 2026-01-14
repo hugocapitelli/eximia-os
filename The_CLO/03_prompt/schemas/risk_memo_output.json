@@ -1,0 +1,322 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Risk Memo Output Schema",
+    "description": "Schema for Themis Sentinel CLO risk assessment memo outputs",
+    "type": "object",
+    "required": [
+        "document_type",
+        "subject",
+        "overall_risk",
+        "recommendations"
+    ],
+    "properties": {
+        "document_type": {
+            "type": "string",
+            "const": "risk_memo"
+        },
+        "subject": {
+            "type": "string",
+            "description": "Title/subject of the risk assessment"
+        },
+        "date": {
+            "type": "string",
+            "format": "date"
+        },
+        "requestor": {
+            "type": "string",
+            "description": "Who requested the assessment"
+        },
+        "executive_summary": {
+            "type": "string",
+            "description": "1-2 paragraph summary for executives"
+        },
+        "irac": {
+            "type": "object",
+            "properties": {
+                "issue": {
+                    "type": "string",
+                    "description": "Legal issue being analyzed"
+                },
+                "rule": {
+                    "type": "object",
+                    "properties": {
+                        "legislation": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "Applicable laws (e.g., 'Lei 6.404/76, Art. 158')"
+                        },
+                        "jurisprudence": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "Relevant case law"
+                        },
+                        "doctrine": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "Relevant legal doctrine"
+                        }
+                    }
+                },
+                "analysis": {
+                    "type": "string",
+                    "description": "Application of rules to the specific case"
+                },
+                "conclusion": {
+                    "type": "string",
+                    "description": "Legal conclusion and recommendation"
+                }
+            },
+            "required": [
+                "issue",
+                "rule",
+                "analysis",
+                "conclusion"
+            ]
+        },
+        "risk_assessment": {
+            "type": "object",
+            "properties": {
+                "risk_items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "risk_name": {
+                                "type": "string"
+                            },
+                            "category": {
+                                "type": "string",
+                                "enum": [
+                                    "Regulatory",
+                                    "Contractual",
+                                    "Litigation",
+                                    "Labor",
+                                    "Tax",
+                                    "Reputational",
+                                    "Financial",
+                                    "Criminal",
+                                    "Environmental",
+                                    "IP",
+                                    "Data Privacy"
+                                ]
+                            },
+                            "probability": {
+                                "type": "string",
+                                "enum": [
+                                    "VERY_HIGH (>70%)",
+                                    "HIGH (40-70%)",
+                                    "MEDIUM (20-40%)",
+                                    "LOW (5-20%)",
+                                    "REMOTE (<5%)"
+                                ]
+                            },
+                            "impact": {
+                                "type": "string",
+                                "enum": [
+                                    "CATASTROPHIC",
+                                    "SEVERE",
+                                    "MODERATE",
+                                    "MINOR",
+                                    "NEGLIGIBLE"
+                                ]
+                            },
+                            "risk_level": {
+                                "type": "string",
+                                "enum": [
+                                    "CRITICAL",
+                                    "HIGH",
+                                    "MEDIUM",
+                                    "LOW",
+                                    "MINIMAL"
+                                ]
+                            },
+                            "exposure": {
+                                "type": "object",
+                                "properties": {
+                                    "low": {
+                                        "type": "string"
+                                    },
+                                    "base": {
+                                        "type": "string"
+                                    },
+                                    "high": {
+                                        "type": "string"
+                                    },
+                                    "currency": {
+                                        "type": "string",
+                                        "default": "BRL"
+                                    }
+                                }
+                            },
+                            "mitigation": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "description": "Mitigation actions"
+                            }
+                        },
+                        "required": [
+                            "risk_name",
+                            "probability",
+                            "impact",
+                            "risk_level"
+                        ]
+                    }
+                },
+                "risk_heatmap": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string",
+                        "enum": [
+                            "CRITICAL",
+                            "HIGH",
+                            "MEDIUM",
+                            "LOW",
+                            "MINIMAL"
+                        ]
+                    },
+                    "description": "Summary heatmap of risks by category"
+                }
+            }
+        },
+        "total_exposure": {
+            "type": "object",
+            "properties": {
+                "low": {
+                    "type": "string"
+                },
+                "base": {
+                    "type": "string"
+                },
+                "high": {
+                    "type": "string"
+                },
+                "weighted_p_loss": {
+                    "type": "string",
+                    "description": "Weighted probability of loss"
+                }
+            }
+        },
+        "overall_risk": {
+            "type": "string",
+            "enum": [
+                "CRITICAL",
+                "HIGH",
+                "MEDIUM",
+                "LOW",
+                "MINIMAL"
+            ]
+        },
+        "recommendation": {
+            "type": "string",
+            "enum": [
+                "GO",
+                "NO_GO",
+                "CONDITIONAL",
+                "ESCALATE",
+                "MONITOR"
+            ]
+        },
+        "conditions": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Conditions for conditional recommendation"
+        },
+        "recommendations": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "action": {
+                        "type": "string"
+                    },
+                    "priority": {
+                        "type": "string",
+                        "enum": [
+                            "IMMEDIATE",
+                            "HIGH",
+                            "MEDIUM",
+                            "LOW"
+                        ]
+                    },
+                    "owner": {
+                        "type": "string"
+                    },
+                    "deadline": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "action",
+                    "priority"
+                ]
+            }
+        },
+        "monitoring": {
+            "type": "object",
+            "properties": {
+                "kpis": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "review_frequency": {
+                    "type": "string"
+                },
+                "escalation_triggers": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "provisioning": {
+            "type": "object",
+            "properties": {
+                "recommended_provision": {
+                    "type": "string"
+                },
+                "accounting_treatment": {
+                    "type": "string",
+                    "enum": [
+                        "Probable",
+                        "Possible",
+                        "Remote"
+                    ]
+                },
+                "disclosure_required": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "limitations": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Limitations of this analysis"
+        },
+        "sources": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Sources consulted"
+        },
+        "disclaimer": {
+            "type": "string",
+            "default": "This analysis is informational and does not constitute formal legal advice. Consult qualified legal counsel before making decisions."
+        }
+    }
+}

@@ -1,0 +1,152 @@
+# Agent Registry — Z5 Evolver
+
+agent_registry_version: "1.0.0"
+last_updated: "2026-01-06T23:30:00Z"
+
+# ========================================
+# INSTRUÇÕES DE USO
+# ========================================
+# Este arquivo é mantido pelo Z5 Evolver.
+# Cada agente criado pelo Z Squad deve ter uma entrada aqui.
+# 
+# Campos obrigatórios:
+#   - agent_id: Slug único (snake_case)
+#   - nome: Nome legível
+#   - versao: Semver (X.Y.Z)
+#   - status: draft | validated | production | deprecated
+#   - dominio: Área de atuação
+#   - nota_global: Nota do Z4 (0-10)
+#   - created_at: Data de criação
+#   - last_validated: Última validação
+#
+# Campos opcionais:
+#   - next_review: Próxima revisão agendada
+#   - evolution_tickets: IDs de tickets de evolução
+#   - deprecated_reason: Motivo se deprecado
+# ========================================
+
+agents:
+  # ========================================
+  # Template (copiar para novos agentes)
+  # ========================================
+  # - agent_id: agent_slug
+  #   nome: "Agent Name"
+  #   versao: "1.0.0"
+  #   status: draft
+  #   dominio: "Domain"
+  #   competencias:
+  #     - "Competency 1"
+  #     - "Competency 2"
+  #   clones_mentores:
+  #     - "Clone 1"
+  #   nota_global: 0.0
+  #   risco: baixo | medio | alto
+  #   created_at: "YYYY-MM-DD"
+  #   created_by: "Z Squad"
+  #   last_validated: null
+  #   next_review: null
+  #   evolution_tickets: []
+  #   paths:
+  #     spec: "outputs/agent_slug/spec_tecnica.json"
+  #     dna: "outputs/agent_slug/dna_mental.md"
+  #     prompt: "outputs/agent_slug/prompt_operacional.md"
+  #   notas: ""
+
+  # ========================================
+  # Agentes Registrados
+  # ========================================
+  
+  - agent_id: cfo_agent
+    nome: "CFO Agent"
+    versao: "1.1.0"
+    status: validated
+    dominio: "Corporate Finance"
+    competencias:
+      - "DCF Valuation"
+      - "Comparable Companies Analysis"
+      - "M&A Due Diligence"
+      - "Financial KPIs"
+      - "Fundraising Strategy"
+    clones_mentores:
+      - "Ray Dalio"
+      - "Warren Buffett"
+      - "Peter Drucker"
+    nota_global: 9.6
+    risco: baixo
+    token_budget: 8000
+    created_at: "2026-01-06"
+    created_by: "Z Squad Pipeline"
+    last_validated: "2026-01-06"
+    next_review: "2026-04-06"
+    evolution_tickets: []
+    paths:
+      spec: "outputs/CFO_Agent/01_spec/spec_tecnica.json"
+      dna: "outputs/CFO_Agent/02_profile/dna_mental.md"
+      prompt: "outputs/CFO_Agent/03_prompt/prompt_operacional.md"
+      validation: "outputs/CFO_Agent/04_validation/validation_report.md"
+    notas: "v1.1 com 8K budget. Inline KB, 5 exemplos, 4 adversarial. Score melhorou de 9.2 para 9.6."
+
+  - agent_id: lxd_architect
+    nome: "LXD Architect"
+    versao: "1.0.0"
+    tier: 3
+    status: validated
+    dominio: "Learning Experience Design"
+    competencias:
+      - "Aprendizagem Adulta (Andragogia)"
+      - "Heutagogia e Autonomia"
+      - "Ciclo de Kolb"
+      - "Design Instrucional (ADDIE/SAM/Action Mapping)"
+      - "Neurociência da Aprendizagem"
+      - "Avaliação Kirkpatrick + Phillips ROI"
+      - "ATD/CPTD Standards"
+      - "LXD Moderno"
+      - "Gamificação"
+      - "IA em L&D"
+    clones_mentores:
+      - "David Kolb"
+      - "Malcolm Knowles"
+      - "Hase & Kenyon"
+      - "Cathy Moore"
+      - "Donald Kirkpatrick"
+    nota_global: 9.2
+    risco: baixo
+    token_budget: 16000
+    knowledge_bases: 16
+    frameworks: 61
+    created_at: "2026-01-07"
+    created_by: "Z Squad Pipeline"
+    last_validated: "2026-01-07"
+    next_review: "2026-04-07"
+    evolution_tickets: []
+    paths:
+      spec: "outputs/LXD_Architect/01_spec/spec_tecnica.json"
+      dna: "outputs/LXD_Architect/02_profile/dna_mental.md"
+      prompt: "outputs/LXD_Architect/03_prompt/prompt_operacional.md"
+      kbs: "outputs/LXD_Architect/02_profile/knowledge_base/"
+      validation: "outputs/LXD_Architect/04_validation/validation_report.md"
+    notas: "Upgrade de KolbFlow Designer Tier 1 para Tier 3 Expert. 16 KBs, 61 frameworks. Score: 92/100 (Grade A)."
+
+# ========================================
+# ESTATÍSTICAS
+# ========================================
+stats:
+  total_agents: 2
+  by_status:
+    draft: 0
+    validated: 2
+    production: 0
+    deprecated: 0
+  by_risk:
+    baixo: 2
+    medio: 0
+    alto: 0
+  average_nota: 9.4
+
+# ========================================
+# LOGS DE MANUTENÇÃO
+# ========================================
+maintenance_log:
+  - date: "2026-01-06"
+    action: "Registry created"
+    by: "Z Squad Setup"

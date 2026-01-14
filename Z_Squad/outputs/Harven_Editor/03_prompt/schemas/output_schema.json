@@ -1,0 +1,124 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://harven.ai/schemas/editor_output.json",
+    "title": "Harven Editor Output Schema",
+    "description": "Schema de saida do agente EditorOS - resposta editada",
+    "type": "object",
+    "required": [
+        "edited_response"
+    ],
+    "properties": {
+        "edited_response": {
+            "type": "object",
+            "description": "Resposta editada e polida",
+            "required": ["content", "paragraph_count", "ends_with_question"],
+            "properties": {
+                "content": {
+                    "type": "string",
+                    "description": "Texto editado completo (2 paragrafos separados por \\n\\n)",
+                    "minLength": 80,
+                    "maxLength": 1500
+                },
+                "paragraph_1": {
+                    "type": "string",
+                    "description": "Primeiro paragrafo (feedback)"
+                },
+                "paragraph_2": {
+                    "type": "string",
+                    "description": "Segundo paragrafo (pergunta)",
+                    "pattern": ".*\\?$"
+                },
+                "paragraph_count": {
+                    "type": "integer",
+                    "const": 2,
+                    "description": "Numero de paragrafos (sempre 2)"
+                },
+                "word_count": {
+                    "type": "integer",
+                    "minimum": 80,
+                    "maximum": 200,
+                    "description": "Contagem de palavras"
+                },
+                "ends_with_question": {
+                    "type": "boolean",
+                    "const": true,
+                    "description": "Se termina com pergunta (sempre true)"
+                }
+            }
+        },
+        "changes_made": {
+            "type": "object",
+            "description": "Resumo das mudancas feitas",
+            "properties": {
+                "labels_removed": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Rotulos que foram removidos"
+                },
+                "formatting_removed": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Formatacoes removidas"
+                },
+                "paragraphs_restructured": {
+                    "type": "boolean",
+                    "description": "Se a estrutura de paragrafos foi ajustada"
+                },
+                "content_condensed": {
+                    "type": "boolean",
+                    "description": "Se o conteudo foi condensado"
+                },
+                "words_removed": {
+                    "type": "integer",
+                    "description": "Quantidade aproximada de palavras removidas"
+                }
+            }
+        },
+        "quality_checks": {
+            "type": "object",
+            "description": "Verificacoes de qualidade",
+            "properties": {
+                "no_labels": {
+                    "type": "boolean",
+                    "description": "Nenhum rotulo restante"
+                },
+                "two_paragraphs": {
+                    "type": "boolean",
+                    "description": "Exatamente 2 paragrafos"
+                },
+                "ends_with_question": {
+                    "type": "boolean",
+                    "description": "Termina com ?"
+                },
+                "within_word_limit": {
+                    "type": "boolean",
+                    "description": "Entre 80-200 palavras"
+                },
+                "meaning_preserved": {
+                    "type": "boolean",
+                    "description": "Significado original preservado"
+                }
+            }
+        },
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "original_word_count": {
+                    "type": "integer",
+                    "description": "Palavras no input original"
+                },
+                "edited_word_count": {
+                    "type": "integer",
+                    "description": "Palavras no output editado"
+                },
+                "compression_ratio": {
+                    "type": "number",
+                    "description": "Razao de compressao (edited/original)"
+                },
+                "processing_time_ms": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

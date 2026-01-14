@@ -1,0 +1,609 @@
+================================================================================
+BANCO DE DADOS - MODELO DE ENTIDADES E RELAÇÕES - HARVEN.AI
+================================================================================
+
+Fonte: backend/migrations/, backend/create_tables_supabase.sql
+
+================================================================================
+1. ENTIDADES PRINCIPAIS
+================================================================================
+
+1.1. USERS (Usuários)
+--------------------
+
+Tabela: users
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- ra: TEXT UNIQUE NOT NULL (Registro Acadêmico)
+- name: TEXT NOT NULL
+- email: TEXT UNIQUE NOT NULL
+- role: TEXT NOT NULL DEFAULT 'student' (student|teacher|admin|visitor)
+- password_hash: TEXT (nullable, para OAuth users)
+- is_active: BOOLEAN DEFAULT TRUE
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+- updated_at: TIMESTAMPTZ DEFAULT NOW()
+
+Índices:
+- idx_users_ra ON users(ra)
+- idx_users_email ON users(email)
+- idx_users_role ON users(role)
+
+Relacionamentos:
+- 1:N com chat_sessions (aluno_ra)
+- 1:N com discipline_teachers (teacher_user_id)
+- 1:N com course_visibility_assignments (user_id)
+
+1.2. DISCIPLINES (Disciplinas)
+------------------------------
+
+Tabela: disciplines
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- name: TEXT NOT NULL
+- course_id: TEXT REFERENCES courses(id) ON DELETE SET NULL (nullable)
+- created_by: TEXT REFERENCES users(id) ON DELETE SET NULL (nullable)
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+- updated_at: TIMESTAMPTZ DEFAULT NOW()
+
+Índices:
+- idx_disciplines_course ON disciplines(course_id)
+- idx_disciplines_created_by ON disciplines(created_by)
+
+Relacionamentos:
+- 1:N com courses (discipline_id)
+- N:N com users via discipline_teachers
+- N:N com course_groups via discipline_groups
+- N:N com academic_classes via discipline_cohorts
+
+1.3. COURSES (Cursos)
+--------------------
+
+Tabela: courses
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- name: TEXT NOT NULL
+- code: TEXT UNIQUE NOT NULL
+- semester: TEXT NOT NULL
+- period: TEXT NOT NULL
+- description: TEXT (nullable)
+- category: TEXT (nullable)
+- cover_image: TEXT (nullable, URL)
+- is_active: BOOLEAN DEFAULT TRUE
+- is_published_global: BOOLEAN DEFAULT FALSE
+- discipline_id: TEXT REFERENCES disciplines(id) ON DELETE SET NULL (nullable)
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+
+Índices:
+- idx_courses_code ON courses(code)
+- idx_courses_active ON courses(is_active)
+- idx_courses_discipline ON courses(discipline_id)
+- idx_courses_published_global ON courses(is_published_global)
+
+Relacionamentos:
+- N:1 com disciplines (discipline_id)
+- 1:N com modules (sistema antigo)
+- 1:N com content_chapters (sistema novo)
+- 1:N com intelligent_contents (course_id)
+- N:N com users via course_visibility_assignments
+- N:N com course_groups via course_visibility_assignments
+- N:N com academic_classes via course_visibility_assignments
+
+1.4. MODULES (Módulos - Sistema Antigo)
+--------------------------------------
+
+Tabela: modules
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- course_id: TEXT NOT NULL REFERENCES courses(id) ON DELETE CASCADE
+- title: TEXT NOT NULL
+- order: INTEGER NOT NULL
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+
+Índices:
+- idx_modules_course ON modules(course_id)
+- idx_modules_order ON modules(course_id, order)
+
+Relacionamentos:
+- N:1 com courses (course_id)
+- 1:N com chapters (module_id)
+
+NOTA: Sistema antigo, mantido para compatibilidade.
+
+1.5. CHAPTERS (Capítulos - Sistema Antigo)
+------------------------------------------
+
+Tabela: chapters
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- module_id: TEXT NOT NULL REFERENCES modules(id) ON DELETE CASCADE
+- course_id: TEXT NOT NULL REFERENCES courses(id) ON DELETE CASCADE
+- title: TEXT NOT NULL
+- content: TEXT (nullable)
+- order: INTEGER NOT NULL
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+
+Índices:
+- idx_chapters_module ON chapters(module_id)
+- idx_chapters_order ON chapters(module_id, order)
+
+Relacionamentos:
+- N:1 com modules (module_id)
+- N:1 com courses (course_id)
+- 1:N com socratic_questions (chapter_id)
+
+NOTA: Sistema antigo, mantido para compatibilidade.
+
+1.6. CONTENT_CHAPTERS (Capítulos - Sistema Novo)
+-----------------------------------------------
+
+Tabela: content_chapters
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- course_id: TEXT NOT NULL REFERENCES courses(id) ON DELETE CASCADE
+- title: TEXT NOT NULL
+- content: TEXT (nullable)
+- order: INTEGER NOT NULL
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+- updated_at: TIMESTAMPTZ DEFAULT NOW()
+
+Índices:
+- idx_content_chapters_course ON content_chapters(course_id)
+
+Relacionamentos:
+- N:1 com courses (course_id)
+- 1:N com content_socratic_questions (chapter_id)
+
+1.7. INTELLIGENT_CONTENTS (Conteúdos Importados)
+-----------------------------------------------
+
+Tabela: intelligent_contents
+Tipo: UUID
+
+Campos:
+- id: UUID PRIMARY KEY DEFAULT gen_random_uuid()
+- title: TEXT NOT NULL
+- original_file: TEXT (caminho do arquivo)
+- mode: TEXT ('manual' | 'auto')
+- status: TEXT ('manual' | 'processing' | 'completed' | 'approved' | 'error')
+- process_all: BOOLEAN DEFAULT TRUE
+- interval: JSONB (nullable, { inicio: int, fim: int })
+- error_message: TEXT (nullable)
+- raw_text: TEXT (nullable, texto verbatim)
+- raw_text_hash: TEXT (nullable, SHA256)
+- extraction_method: TEXT (nullable, 'pdf' | 'text')
+- extraction_metadata: JSONB (nullable)
+- model_version: TEXT (nullable)
+- prompt_version: TEXT (nullable)
+- course_id: TEXT REFERENCES courses(id) ON DELETE CASCADE (nullable)
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+- updated_at: TIMESTAMPTZ DEFAULT NOW()
+
+Índices:
+- idx_intelligent_contents_course ON intelligent_contents(course_id)
+
+Relacionamentos:
+- N:1 com courses (course_id)
+- 1:N com intelligent_chapters (content_id)
+
+1.8. INTELLIGENT_CHAPTERS (Capítulos Gerados)
+--------------------------------------------
+
+Tabela: intelligent_chapters
+Tipo: UUID
+
+Campos:
+- id: UUID PRIMARY KEY DEFAULT gen_random_uuid()
+- content_id: UUID NOT NULL REFERENCES intelligent_contents(id) ON DELETE CASCADE
+- title: TEXT NOT NULL
+- order_index: INTEGER NOT NULL
+- body: TEXT (nullable, texto processado)
+- raw_text: TEXT (nullable, texto verbatim)
+- raw_text_hash: TEXT (nullable, SHA256)
+- blocks: JSONB (nullable, blocos estruturais)
+- outline: JSONB (nullable, estrutura de tópicos)
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+
+Índices:
+- idx_intelligent_chapters_content ON intelligent_chapters(content_id)
+- idx_intelligent_chapters_raw_hash ON intelligent_chapters(raw_text_hash)
+
+Relacionamentos:
+- N:1 com intelligent_contents (content_id)
+- 1:1 com chapter_processing (chapter_id)
+- 1:1 com chapter_insights (chapter_id)
+- 1:N com chapter_socratic_questions (chapter_id)
+
+1.9. CHAPTER_PROCESSING (Metadados de Processamento)
+---------------------------------------------------
+
+Tabela: chapter_processing
+Tipo: UUID
+
+Campos:
+- id: UUID PRIMARY KEY DEFAULT gen_random_uuid()
+- chapter_id: UUID NOT NULL REFERENCES intelligent_chapters(id) ON DELETE CASCADE
+- status: TEXT NOT NULL CHECK (status IN ('pending', 'processing', 'completed', 'failed'))
+- model_version: TEXT (nullable)
+- prompt_version: TEXT (nullable)
+- started_at: TIMESTAMPTZ (nullable)
+- finished_at: TIMESTAMPTZ (nullable)
+- token_usage: JSONB (nullable, { input: int, output: int })
+- latency_ms: INTEGER (nullable)
+- error_message: TEXT (nullable)
+- retry_count: INTEGER DEFAULT 0
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+- updated_at: TIMESTAMPTZ DEFAULT NOW()
+
+Índices:
+- idx_chapter_processing_chapter ON chapter_processing(chapter_id)
+- idx_chapter_processing_status ON chapter_processing(status)
+
+Relacionamentos:
+- N:1 com intelligent_chapters (chapter_id)
+- 1:1 com chapter_insights (processing_id)
+- 1:N com chapter_socratic_questions (processing_id)
+
+1.10. CHAPTER_INSIGHTS (Understanding Pack)
+------------------------------------------
+
+Tabela: chapter_insights
+Tipo: UUID
+
+Campos:
+- id: UUID PRIMARY KEY DEFAULT gen_random_uuid()
+- chapter_id: UUID NOT NULL REFERENCES intelligent_chapters(id) ON DELETE CASCADE UNIQUE
+- processing_id: UUID REFERENCES chapter_processing(id) ON DELETE SET NULL (nullable)
+- metadata: JSONB (nullable, { title, theme, learning_objective, difficulty, bloom_levels })
+- structured_summary: JSONB (nullable, { executive_summary, key_points })
+- concepts: JSONB (nullable, array de { concept, definition, citations })
+- relationships: JSONB (nullable, array de { from, to, evidence })
+- common_misconceptions: JSONB (nullable, array de { misconception, explanation, citations })
+- examples: JSONB (nullable, array de { example, explanation, citations })
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+- updated_at: TIMESTAMPTZ DEFAULT NOW()
+
+Índices:
+- idx_chapter_insights_chapter ON chapter_insights(chapter_id)
+
+Relacionamentos:
+- N:1 com intelligent_chapters (chapter_id)
+- N:1 com chapter_processing (processing_id)
+
+1.11. CHAPTER_SOCRATIC_QUESTIONS (Perguntas Enriquecidas)
+--------------------------------------------------------
+
+Tabela: chapter_socratic_questions
+Tipo: UUID
+
+Campos:
+- id: UUID PRIMARY KEY DEFAULT gen_random_uuid()
+- chapter_id: UUID NOT NULL REFERENCES intelligent_chapters(id) ON DELETE CASCADE
+- processing_id: UUID REFERENCES chapter_processing(id) ON DELETE SET NULL (nullable)
+- question_text: TEXT NOT NULL
+- skill: TEXT (nullable, 'analysis' | 'synthesis' | 'application' | 'reflection')
+- intention: TEXT (nullable)
+- expected_depth: TEXT (nullable)
+- common_shallow_answer: TEXT (nullable)
+- followup_prompts: JSONB (nullable, array de strings)
+- citations: JSONB NOT NULL (array de block IDs)
+- order_index: INTEGER (nullable)
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+- updated_at: TIMESTAMPTZ DEFAULT NOW()
+
+Índices:
+- idx_chapter_socratic_questions_chapter ON chapter_socratic_questions(chapter_id)
+- idx_chapter_socratic_questions_order ON chapter_socratic_questions(chapter_id, order_index)
+
+Relacionamentos:
+- N:1 com intelligent_chapters (chapter_id)
+- N:1 com chapter_processing (processing_id)
+- 1:N com chat_sessions (pergunta_id)
+
+1.12. CONTENT_SOCRATIC_QUESTIONS (Perguntas - Sistema Antigo)
+------------------------------------------------------------
+
+Tabela: content_socratic_questions
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- chapter_id: TEXT NOT NULL REFERENCES content_chapters(id) ON DELETE CASCADE
+- question: TEXT NOT NULL
+- order: INTEGER NOT NULL
+- is_active: BOOLEAN DEFAULT TRUE
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+
+Índices:
+- idx_content_socratic_questions_chapter ON content_socratic_questions(chapter_id)
+
+Relacionamentos:
+- N:1 com content_chapters (chapter_id)
+
+NOTA: Sistema antigo, mantido para compatibilidade.
+
+================================================================================
+2. ENTIDADES DE CHAT
+================================================================================
+
+2.1. CHAT_SESSIONS (Sessões de Chat)
+-----------------------------------
+
+Tabela: chat_sessions
+Tipo: UUID
+
+Campos:
+- id: UUID PRIMARY KEY DEFAULT gen_random_uuid()
+- aluno_ra: VARCHAR(50) NOT NULL
+- capitulo_id: VARCHAR(100) NOT NULL
+- pergunta_id: TEXT NOT NULL REFERENCES content_socratic_questions(id) ON DELETE CASCADE
+- interacoes_restantes: INT NOT NULL DEFAULT 3 CHECK (interacoes_restantes >= 0)
+- status: VARCHAR(20) NOT NULL DEFAULT 'active' ('active' | 'completed' | 'deleted')
+- created_at: TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT NOW()
+- updated_at: TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT NOW()
+
+Índices:
+- idx_chat_sessions_capitulo ON chat_sessions(capitulo_id, status)
+- idx_chat_sessions_aluno ON chat_sessions(aluno_ra, status)
+
+Relacionamentos:
+- N:1 com content_socratic_questions (pergunta_id)
+- 1:N com chat_messages (chat_session_id)
+- 1:1 com moodle_export_queue (chat_session_id)
+
+2.2. CHAT_MESSAGES (Mensagens)
+-----------------------------
+
+Tabela: chat_messages
+Tipo: UUID
+
+Campos:
+- id: UUID PRIMARY KEY DEFAULT gen_random_uuid()
+- chat_session_id: UUID NOT NULL REFERENCES chat_sessions(id) ON DELETE CASCADE
+- autor: VARCHAR(20) NOT NULL CHECK (autor IN ('aluno', 'ia'))
+- conteudo: TEXT NOT NULL
+- agente_responsavel: VARCHAR(50) (nullable, 'ORIENTADOR', 'EDITOR', etc.)
+- metadata: JSONB DEFAULT '{}'::jsonb (métricas, timestamps)
+- created_at: TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT NOW()
+
+Índices:
+- idx_chat_messages_session ON chat_messages(chat_session_id, created_at)
+
+Relacionamentos:
+- N:1 com chat_sessions (chat_session_id)
+
+2.3. MOODLE_EXPORT_QUEUE (Fila de Exportação)
+--------------------------------------------
+
+Tabela: moodle_export_queue
+Tipo: UUID
+
+Campos:
+- id: UUID PRIMARY KEY DEFAULT gen_random_uuid()
+- chat_session_id: UUID NOT NULL REFERENCES chat_sessions(id) ON DELETE CASCADE
+- payload: JSONB NOT NULL
+- status: TEXT NOT NULL DEFAULT 'pending' ('pending' | 'processing' | 'completed' | 'failed')
+- error_message: TEXT (nullable)
+- retries: INTEGER NOT NULL DEFAULT 0
+- created_at: TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT NOW()
+- updated_at: TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT NOW()
+
+Índices:
+- idx_moodle_export_queue_status ON moodle_export_queue(status)
+
+Relacionamentos:
+- N:1 com chat_sessions (chat_session_id)
+
+================================================================================
+3. ENTIDADES DE RELACIONAMENTO
+================================================================================
+
+3.1. DISCIPLINE_TEACHERS (Professores-Disciplinas)
+-------------------------------------------------
+
+Tabela: discipline_teachers
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- discipline_id: TEXT NOT NULL REFERENCES disciplines(id) ON DELETE CASCADE
+- teacher_user_id: TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE
+- role: TEXT DEFAULT 'editor' CHECK (role IN ('owner', 'editor'))
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+- UNIQUE(discipline_id, teacher_user_id)
+
+Índices:
+- idx_discipline_teachers_discipline ON discipline_teachers(discipline_id)
+- idx_discipline_teachers_teacher ON discipline_teachers(teacher_user_id)
+
+Relacionamentos:
+- N:1 com disciplines (discipline_id)
+- N:1 com users (teacher_user_id)
+
+3.2. COURSE_VISIBILITY_ASSIGNMENTS (Atribuições de Cursos)
+---------------------------------------------------------
+
+Tabela: course_visibility_assignments
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- course_id: TEXT NOT NULL REFERENCES courses(id) ON DELETE CASCADE
+- target_type: TEXT NOT NULL ('user' | 'group' | 'class' | 'all')
+- target_id: TEXT (nullable, FK para users, course_groups, ou academic_classes)
+- assigned_by: TEXT REFERENCES users(id) ON DELETE SET NULL (nullable)
+- assigned_at: TIMESTAMPTZ DEFAULT NOW()
+
+Índices:
+- idx_course_visibility_assignments_course ON course_visibility_assignments(course_id)
+- idx_course_visibility_assignments_target ON course_visibility_assignments(target_type, target_id)
+
+Relacionamentos:
+- N:1 com courses (course_id)
+- N:1 com users (target_id quando target_type='user')
+- N:1 com course_groups (target_id quando target_type='group')
+- N:1 com academic_classes (target_id quando target_type='class')
+
+3.3. COURSE_GROUPS (Grupos de Cursos)
+------------------------------------
+
+Tabela: course_groups
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- name: TEXT NOT NULL
+- description: TEXT (nullable)
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+
+Relacionamentos:
+- N:N com users via course_group_members
+- N:N com disciplines via discipline_groups
+- N:N com courses via course_visibility_assignments
+
+3.4. COURSE_GROUP_MEMBERS (Membros de Grupos)
+--------------------------------------------
+
+Tabela: course_group_members
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- group_id: TEXT NOT NULL REFERENCES course_groups(id) ON DELETE CASCADE
+- user_id: TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE
+- added_at: TIMESTAMPTZ DEFAULT NOW()
+- UNIQUE(group_id, user_id)
+
+Relacionamentos:
+- N:1 com course_groups (group_id)
+- N:1 com users (user_id)
+
+3.5. ACADEMIC_CLASSES (Turmas Acadêmicas)
+----------------------------------------
+
+Tabela: academic_classes
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- name: TEXT NOT NULL
+- code: TEXT (nullable, único)
+- description: TEXT (nullable)
+- is_active: BOOLEAN DEFAULT TRUE
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+- updated_at: TIMESTAMPTZ DEFAULT NOW()
+
+Relacionamentos:
+- N:N com users via class_members
+- N:N com disciplines via discipline_cohorts
+- N:N com courses via course_visibility_assignments
+
+3.6. CLASS_MEMBERS (Membros de Turmas)
+-------------------------------------
+
+Tabela: class_members
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- class_id: TEXT NOT NULL REFERENCES academic_classes(id) ON DELETE CASCADE
+- user_id: TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE
+- added_at: TIMESTAMPTZ DEFAULT NOW()
+- UNIQUE(class_id, user_id)
+
+Relacionamentos:
+- N:1 com academic_classes (class_id)
+- N:1 com users (user_id)
+
+3.7. DISCIPLINE_GROUPS (Disciplinas-Grupos)
+------------------------------------------
+
+Tabela: discipline_groups
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- discipline_id: TEXT NOT NULL REFERENCES disciplines(id) ON DELETE CASCADE
+- group_id: TEXT NOT NULL REFERENCES course_groups(id) ON DELETE CASCADE
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+- UNIQUE(discipline_id, group_id)
+
+Relacionamentos:
+- N:1 com disciplines (discipline_id)
+- N:1 com course_groups (group_id)
+
+3.8. DISCIPLINE_COHORTS (Disciplinas-Turmas)
+-------------------------------------------
+
+Tabela: discipline_cohorts
+Tipo: TEXT (UUID como string)
+
+Campos:
+- id: TEXT PRIMARY KEY
+- discipline_id: TEXT NOT NULL REFERENCES disciplines(id) ON DELETE CASCADE
+- cohort_id: TEXT NOT NULL REFERENCES academic_classes(id) ON DELETE CASCADE
+- created_at: TIMESTAMPTZ DEFAULT NOW()
+- UNIQUE(discipline_id, cohort_id)
+
+Relacionamentos:
+- N:1 com disciplines (discipline_id)
+- N:1 com academic_classes (cohort_id)
+
+================================================================================
+4. DIAGRAMA DE RELACIONAMENTOS
+================================================================================
+
+HIERARQUIA CANÔNICA:
+Disciplines (1) ──< (N) Courses (1) ──< (N) Intelligent_Contents
+                                              └─< (N) Intelligent_Chapters
+                                                    ├─ (1:1) Chapter_Processing
+                                                    ├─ (1:1) Chapter_Insights
+                                                    └─< (N) Chapter_Socratic_Questions
+
+ATRIBUIÇÕES:
+Users (1) ──< (N) Discipline_Teachers ──> (N) Disciplines
+Courses (1) ──< (N) Course_Visibility_Assignments ──> (N) Users/Groups/Classes
+
+CHAT:
+Content_Socratic_Questions (1) ──< (N) Chat_Sessions ──< (N) Chat_Messages
+                                                      └─ (1:1) Moodle_Export_Queue
+
+================================================================================
+5. FUNÇÕES E TRIGGERS
+================================================================================
+
+5.1. UPDATE_UPDATED_AT_COLUMN()
+-------------------------------
+
+Função que atualiza updated_at automaticamente.
+Aplicada via triggers em várias tabelas.
+
+5.2. IS_TEACHER_OF_DISCIPLINE()
+------------------------------
+
+Função helper que verifica se professor está atribuído a disciplina.
+Parâmetros: p_teacher_id, p_discipline_id
+Retorna: BOOLEAN
+
+5.3. GET_TEACHER_DISCIPLINES()
+----------------------------
+
+Função que retorna disciplinas de um professor.
+Parâmetro: p_teacher_id
+Retorna: TABLE(discipline_id, discipline_name)
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+

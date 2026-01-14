@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(PYTHONPATH=\"c:/Users/hugoc/OneDrive/Área de Trabalho/exímIA Ventures/eximIA.OS\" py -c:*)",
+      "WebFetch(domain:antigravity.google)",
+      "Bash(where:*)",
+      "Bash(PYTHONPATH=\"c:/Users/hugoc/OneDrive/Área de Trabalho/exímIA Ventures/eximIA.OS\" py:*)",
+      "Bash(PYTHONPATH=\".\" py -m eximia_runtime.interfaces.mcp_server_v2:*)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(mkdir:*)",
+      "Bash(python:*)",
+      "Bash(py:*)",
+      "Bash(del \"C:\\\\Users\\\\hugoc\\\\OneDrive\\\\Área de Trabalho\\\\Exím[IA] Ventures Tecnologia LTDA\\\\eximIA.OS\\\\eximIA.OS\\\\Z_Squad\\\\outputs\\\\StratOS\\\\PRPs\\\\01_Foundation\\\\PRP_01_Auth_Onboarding.md\")"
+    ]
+  }
+}

@@ -1,0 +1,230 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Harven_Organizer Output Schema",
+    "description": "Schema para saida do agente OrganizerOS (Gerenciador de Persistencia e Exportacao)",
+    "type": "object",
+    "required": ["success", "action"],
+    "properties": {
+        "success": {
+            "type": "boolean",
+            "description": "Se a operacao foi bem sucedida"
+        },
+        "action": {
+            "type": "string",
+            "enum": ["save_message", "finalize_session", "export_to_moodle", "retry_export", "get_session_status"],
+            "description": "Acao executada"
+        },
+        "result": {
+            "type": "object",
+            "description": "Resultado da operacao (se sucesso)"
+        },
+        "error": {
+            "type": "object",
+            "description": "Detalhes do erro (se falha)",
+            "properties": {
+                "code": {
+                    "type": "string",
+                    "enum": [
+                        "SESSION_NOT_FOUND",
+                        "SESSION_NOT_ACTIVE",
+                        "SESSION_NOT_COMPLETED",
+                        "INVALID_TURN",
+                        "DUPLICATE_MESSAGE",
+                        "DB_ERROR",
+                        "MOODLE_UNAVAILABLE",
+                        "MOODLE_TIMEOUT",
+                        "MOODLE_AUTH_ERROR",
+                        "MOODLE_INVALID_PAYLOAD",
+                        "VALIDATION_ERROR"
+                    ],
+                    "description": "Codigo do erro"
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Mensagem descritiva"
+                },
+                "details": {
+                    "type": "object",
+                    "description": "Detalhes adicionais"
+                },
+                "retryable": {
+                    "type": "boolean",
+                    "description": "Se o erro permite retry"
+                }
+            }
+        },
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "timestamp": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "duration_ms": {
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
+        }
+    },
+    "if": {
+        "properties": { "success": { "const": true } }
+    },
+    "then": {
+        "required": ["result"]
+    },
+    "else": {
+        "required": ["error"]
+    },
+    "definitions": {
+        "save_message_result": {
+            "type": "object",
+            "properties": {
+                "message_id": { "type": "string", "format": "uuid" },
+                "session_id": { "type": "string", "format": "uuid" },
+                "session_status": {
+                    "type": "string",
+                    "enum": ["active", "completed"]
+                },
+                "interactions_remaining": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 3
+                },
+                "export_initiated": { "type": "boolean" }
+            }
+        },
+        "finalize_session_result": {
+            "type": "object",
+            "properties": {
+                "session_id": { "type": "string", "format": "uuid" },
+                "status": { "type": "string" },
+                "export_payload": { "type": "object" },
+                "export_initiated": { "type": "boolean" }
+            }
+        },
+        "export_result": {
+            "type": "object",
+            "properties": {
+                "session_id": { "type": "string", "format": "uuid" },
+                "status": {
+                    "type": "string",
+                    "enum": ["exported", "export_failed"]
+                },
+                "moodle_response": { "type": "object" },
+                "exported_at": { "type": "string", "format": "date-time" },
+                "queued": { "type": "boolean" },
+                "queue_id": { "type": "string" },
+                "retry_count": { "type": "integer" },
+                "next_retry_at": { "type": "string", "format": "date-time" }
+            }
+        },
+        "session_status_result": {
+            "type": "object",
+            "properties": {
+                "session_id": { "type": "string", "format": "uuid" },
+                "status": {
+                    "type": "string",
+                    "enum": ["active", "completed", "exported", "export_failed", "abandoned"]
+                },
+                "interactions_remaining": { "type": "integer" },
+                "created_at": { "type": "string", "format": "date-time" },
+                "completed_at": { "type": "string", "format": "date-time" },
+                "exported_at": { "type": "string", "format": "date-time" },
+                "messages": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id": { "type": "string" },
+                            "turn_number": { "type": "integer" },
+                            "role": { "type": "string" },
+                            "content": { "type": "string" },
+                            "created_at": { "type": "string" }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "examples": [
+        {
+            "success": true,
+            "action": "save_message",
+            "result": {
+                "message_id": "msg_456",
+                "session_id": "sess_123",
+                "session_status": "active",
+                "interactions_remaining": 2
+            },
+            "metadata": {
+                "timestamp": "2026-01-12T10:30:00Z",
+                "duration_ms": 45
+            }
+        },
+        {
+            "success": true,
+            "action": "save_message",
+            "result": {
+                "message_id": "msg_789",
+                "session_id": "sess_123",
+                "session_status": "completed",
+                "interactions_remaining": 0,
+                "export_initiated": true
+            },
+            "metadata": {
+                "timestamp": "2026-01-12T10:35:00Z",
+                "duration_ms": 52
+            }
+        },
+        {
+            "success": true,
+            "action": "export_to_moodle",
+            "result": {
+                "session_id": "sess_123",
+                "status": "exported",
+                "moodle_response": {
+                    "success": true,
+                    "submission_id": "12345"
+                },
+                "exported_at": "2026-01-12T10:35:30Z"
+            },
+            "metadata": {
+                "timestamp": "2026-01-12T10:35:30Z",
+                "duration_ms": 1250
+            }
+        },
+        {
+            "success": false,
+            "action": "export_to_moodle",
+            "error": {
+                "code": "MOODLE_UNAVAILABLE",
+                "message": "503 Service Unavailable",
+                "retryable": true
+            },
+            "result": {
+                "queued": true,
+                "queue_id": "queue_abc",
+                "retry_count": 1,
+                "next_retry_at": "2026-01-12T10:36:00Z"
+            },
+            "metadata": {
+                "timestamp": "2026-01-12T10:35:00Z",
+                "duration_ms": 30500
+            }
+        },
+        {
+            "success": false,
+            "action": "save_message",
+            "error": {
+                "code": "SESSION_NOT_FOUND",
+                "message": "Sessao 'sess_invalid' nao encontrada",
+                "retryable": false
+            },
+            "metadata": {
+                "timestamp": "2026-01-12T10:30:00Z",
+                "duration_ms": 15
+            }
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "SEO Content Input",
+    "type": "object",
+    "properties": {
+        "topic": {
+            "type": "string"
+        },
+        "target_keyword": {
+            "type": "string"
+        },
+        "funnel_stage": {
+            "type": "string",
+            "enum": [
+                "TOFU",
+                "MOFU",
+                "BOFU"
+            ]
+        }
+    },
+    "required": [
+        "topic"
+    ]
+}

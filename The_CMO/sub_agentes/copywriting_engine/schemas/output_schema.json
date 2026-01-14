@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Copywriting Output",
+    "type": "object",
+    "properties": {
+        "copy_block": {
+            "type": "object",
+            "properties": {
+                "target_awareness": {
+                    "type": "string"
+                },
+                "headline": {
+                    "type": "string"
+                },
+                "lead_paragraph": {
+                    "type": "string"
+                },
+                "bullets": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "cta": {
+                    "type": "string"
+                },
+                "micro_copy_objection_killer": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "headline",
+                "cta"
+            ]
+        }
+    },
+    "required": [
+        "copy_block"
+    ]
+}

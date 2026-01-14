@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Treasury Manager Input",
+    "type": "object",
+    "properties": {
+        "request_type": {
+            "type": "string",
+            "enum": [
+                "EXPENSE_APPROVAL",
+                "CASH_CHECK"
+            ]
+        },
+        "amount_needed": {
+            "type": "number"
+        },
+        "due_date": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "request_type"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Brand Positioning Input",
+    "type": "object",
+    "properties": {
+        "content_draft": {
+            "type": "string",
+            "description": "The textual content or campaign idea to be validated."
+        },
+        "channel_context": {
+            "type": "string",
+            "enum": [
+                "Social",
+                "Email",
+                "Ads",
+                "Blog",
+                "Internal"
+            ]
+        },
+        "intended_audience": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "content_draft"
+    ]
+}

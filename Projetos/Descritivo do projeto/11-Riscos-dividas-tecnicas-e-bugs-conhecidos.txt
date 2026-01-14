@@ -1,0 +1,432 @@
+================================================================================
+RISCOS, DÍVIDAS TÉCNICAS E BUGS CONHECIDOS - HARVEN.AI
+================================================================================
+
+Fonte: Análise do código, grep por TODO/FIXME/BUG, testes
+
+================================================================================
+1. DÍVIDAS TÉCNICAS
+================================================================================
+
+1.1. ARQUITETURA
+---------------
+
+DT-001: Dois Sistemas de Capítulos Coexistem
+Severidade: ALTA
+Localização: backend/routers/content.py, frontend/src/pages/
+Descrição:
+- Sistema antigo: Course → Modules → Chapters
+- Sistema novo: Course → ContentChapters (flexível)
+- Causa confusão e duplicação de código
+Impacto: Manutenibilidade, complexidade, bugs potenciais
+Solução: Migrar tudo para intelligent_chapters
+
+DT-002: Migrations SQL Manuais
+Severidade: ALTA
+Localização: backend/migrations/
+Descrição:
+- Sem versionamento automatizado
+- Execução manual no Supabase SQL Editor
+- Sem rollback
+Impacto: Risco em deploys, dificulta colaboração
+Solução: Alembic ou similar
+
+DT-003: Sem Cache
+Severidade: MÉDIA
+Localização: Todo o backend
+Descrição:
+- Queries repetidas ao banco
+- Sem otimização de leitura
+Impacto: Performance, custos
+Solução: Redis para cache
+
+DT-004: Sem Rate Limiting
+Severidade: MÉDIA
+Localização: backend/main.py
+Descrição:
+- Vulnerável a abuso
+- Sem proteção contra DDoS
+Impacto: Segurança, disponibilidade
+Solução: Rate limiting middleware
+
+DT-005: Frontend Não Segue Atomic Design
+Severidade: BAIXA
+Localização: frontend/src/components/
+Descrição:
+- Componentes desorganizados
+- Sem hierarquia clara
+Impacto: Manutenibilidade, reusabilidade
+Solução: Reorganizar com Atomic Design
+
+1.2. SEGURANÇA
+-------------
+
+DT-006: Sem RLS (Row Level Security) Documentado
+Severidade: ALTA
+Localização: Supabase
+Descrição:
+- Políticas RLS não documentadas
+- Pode haver vazamento de dados
+Impacto: Segurança, compliance
+Solução: Implementar e documentar RLS policies
+
+DT-007: CORS Apenas para Localhost
+Severidade: MÉDIA
+Localização: backend/main.py, linha 36
+Descrição:
+- CORS hardcoded para localhost
+- Não funciona em produção
+Impacto: Deploy em produção
+Solução: Configurar via variáveis de ambiente
+
+DT-008: Senha Padrão de Admin Exposta
+Severidade: ALTA
+Localização: README.md, linha 292
+Descrição:
+- Credenciais padrão documentadas
+- admin@harven.ai / admin123
+Impacto: Segurança crítica
+Solução: Remover do README, forçar mudança no primeiro login
+
+1.3. OBSERVABILIDADE
+-------------------
+
+DT-009: Logs Básicos (Print Statements)
+Severidade: MÉDIA
+Localização: Todo o backend
+Descrição:
+- Sem logging estruturado
+- Apenas print() statements
+Impacto: Dificulta debugging e monitoramento
+Solução: Logging estruturado (JSON)
+
+DT-010: Sem Métricas Estruturadas
+Severidade: MÉDIA
+Localização: Todo o sistema
+Descrição:
+- Sem métricas de performance
+- Sem alertas
+Impacto: Dificulta identificação de problemas
+Solução: Sistema de métricas (Prometheus, DataDog, etc.)
+
+DT-011: Sem Monitoramento de Erros
+Severidade: MÉDIA
+Localização: Todo o sistema
+Descrição:
+- Erros não rastreados
+- Sem notificações
+Impacto: Problemas não detectados
+Solução: Sentry ou similar
+
+1.4. TESTES
+----------
+
+DT-012: Cobertura de Testes Baixa
+Severidade: ALTA
+Localização: backend/tests/, frontend/src/components/__tests__/
+Descrição:
+- Poucos testes implementados
+- Cobertura estimada < 30%
+Impacto: Risco de regressões
+Solução: Aumentar cobertura para 60%+
+
+DT-013: Sem Testes E2E
+Severidade: MÉDIA
+Localização: N/A
+Descrição:
+- Apenas testes unitários
+- Sem testes end-to-end
+Impacto: Fluxos críticos não testados
+Solução: Cypress ou Playwright
+
+1.5. INTEGRAÇÕES
+----------------
+
+DT-014: Microsoft OAuth Não Funcional
+Severidade: MÉDIA
+Localização: backend/routers/auth.py, backend/routers/sso.py
+Descrição:
+- Endpoint existe mas callback não implementado
+- TODO no código
+Impacto: Funcionalidade prometida não funciona
+Solução: Implementar callback completo
+
+DT-015: SSO Moodle Parcial
+Severidade: BAIXA
+Localização: backend/routers/sso.py
+Descrição:
+- Início de SSO implementado
+- Callback não implementado
+Impacto: Integração incompleta
+Solução: Implementar callback
+
+DT-016: TTS Não Implementado
+Severidade: BAIXA
+Localização: backend/routers/content.py, linha 758
+Descrição:
+- Endpoint existe mas retorna TODO
+Impacto: Funcionalidade não disponível
+Solução: Integrar Azure Speech Services
+
+================================================================================
+2. BUGS CONHECIDOS
+================================================================================
+
+2.1. CRÍTICOS
+------------
+
+BUG-001: Reconstrução de Texto Pode Diferir do Original
+Severidade: MÉDIA
+Localização: backend/app/services/processing_pipeline.py, linha 74
+Descrição:
+- Warning quando texto reconstruído difere > 10% do original
+- Pode indicar bug no parsing estrutural
+Impacto: Integridade de dados
+Status: Conhecido, monitorado
+
+BUG-002: Timestamp Parsing Pode Falhar
+Severidade: BAIXA
+Localização: backend/routers/socratic_chat.py, linha 248-271
+Descrição:
+- Parsing de timestamp com múltiplos formatos
+- Try-catch com fallback
+- Pode causar timestamps incorretos
+Impacto: UX (timestamps errados)
+Status: Conhecido, tem fallback
+
+2.2. MÉDIOS
+----------
+
+BUG-003: Navbar Deprecated Mas Ainda no Código
+Severidade: BAIXA
+Localização: frontend/src/components/Navbar.tsx
+Descrição:
+- Componente deprecated mas não removido
+- Pode causar confusão
+Impacto: Manutenibilidade
+Solução: Remover ou documentar claramente
+
+BUG-004: Debug Prints em Código de Produção
+Severidade: BAIXA
+Localização: backend/routers/disciplines.py, linhas 98-112
+Descrição:
+- print() statements de debug
+- Não devem estar em produção
+Impacto: Performance, logs poluídos
+Solução: Remover ou usar logging adequado
+
+2.3. MENORES
+-----------
+
+BUG-005: Erro ao Carregar Logo (Fallback)
+Severidade: BAIXA
+Localização: frontend/src/components/Sidebar.tsx, linha 124-135
+Descrição:
+- onError handler tenta alternativas
+- Indica problema com caminho da logo
+Impacto: UX (logo pode não aparecer)
+Solução: Corrigir caminho ou usar import
+
+BUG-006: Confirmação de Exclusão com window.confirm
+Severidade: BAIXA
+Localização: frontend/src/pages/admin/CoursesManagementPage.tsx, linha 87
+Descrição:
+- Usa window.confirm (não estilizado)
+- Inconsistente com resto da UI
+Impacto: UX
+Solução: Usar ConfirmDialog component
+
+================================================================================
+3. RISCOS
+================================================================================
+
+3.1. RISCOS TÉCNICOS
+------------------
+
+RISCO-001: Processamento de Conteúdo Pode Falhar Silenciosamente
+Severidade: MÉDIA
+Descrição:
+- Processamento em background
+- Erros podem não ser notificados
+- Status pode ficar "processing" indefinidamente
+Mitigação: Implementar retry com notificação, timeout
+
+RISCO-002: Exportação Moodle Pode Falhar Sem Retry
+Severidade: MÉDIA
+Descrição:
+- Fila de exportação existe mas retry pode não funcionar
+- Conversas podem não ser exportadas
+Mitigação: Monitorar fila, implementar retry robusto
+
+RISCO-003: Limite de 3 Interações Pode Frustrar Alunos
+Severidade: BAIXA
+Descrição:
+- Limite intencional mas pode ser muito restritivo
+- Alunos podem não conseguir completar pensamento
+Mitigação: Avaliar feedback, considerar aumento opcional
+
+RISCO-004: Dependência de API Externa (OpenAI)
+Severidade: MÉDIA
+Descrição:
+- Sistema depende de OpenAI/Azure OpenAI
+- Falhas na API quebram funcionalidades críticas
+Mitigação: Retry, fallback, cache de respostas
+
+RISCO-005: Sem Backup Automatizado Documentado
+Severidade: ALTA
+Descrição:
+- Supabase tem backup mas processo não documentado
+- Restauração não testada
+Mitigação: Documentar processo, testar restauração
+
+3.2. RISCOS DE SEGURANÇA
+-----------------------
+
+RISCO-006: Tokens JWT Sem Refresh
+Severidade: MÉDIA
+Descrição:
+- Apenas access tokens
+- Sem refresh tokens
+- Usuários precisam fazer login novamente
+Mitigação: Implementar refresh tokens
+
+RISCO-007: Senhas Sem Política de Complexidade
+Severidade: BAIXA
+Descrição:
+- Sem validação de força de senha
+- Senhas fracas permitidas
+Mitigação: Adicionar validação de senha
+
+RISCO-008: Sem Proteção CSRF
+Severidade: BAIXA
+Descrição:
+- FastAPI tem proteção básica mas não documentada
+- Pode haver vulnerabilidades
+Mitigação: Documentar e testar proteção CSRF
+
+3.3. RISCOS DE PERFORMANCE
+-------------------------
+
+RISCO-009: Queries N+1 Possíveis
+Severidade: MÉDIA
+Descrição:
+- Sem eager loading
+- Múltiplas queries para relacionamentos
+Mitigação: Otimizar queries, usar joins
+
+RISCO-010: Processamento Síncrono em Alguns Casos
+Severidade: BAIXA
+Descrição:
+- Alguns processamentos podem ser síncronos
+- Pode bloquear requisições
+Mitigação: Garantir que tudo seja assíncrono
+
+RISCO-011: Sem Paginação em Algumas Listagens
+Severidade: BAIXA
+Descrição:
+- Listagens grandes podem ser lentas
+- Pode causar timeout
+Mitigação: Implementar paginação em todas as listagens
+
+================================================================================
+4. TODOs NO CÓDIGO
+================================================================================
+
+4.1. BACKEND
+-----------
+
+TODO-001: Implementar get_chapter_by_id
+Localização: backend/routers/teacher.py, linha 200
+Prioridade: MÉDIA
+
+TODO-002: Implementar get_socratic_question_by_id
+Localização: backend/routers/teacher.py, linha 235
+Prioridade: MÉDIA
+
+TODO-003: Implementar sistema de mensagens
+Localização: backend/routers/teacher.py, linha 290
+Prioridade: BAIXA
+
+TODO-004: Integrar processamento IA para conteúdo não-texto
+Localização: backend/supabase_db.py, linha 1239
+Prioridade: BAIXA
+
+TODO-005: Implementar SSO real
+Localização: backend/routers/sso.py, linha 28
+Prioridade: MÉDIA
+
+TODO-006: Validar token e criar sessão no Moodle
+Localização: backend/routers/sso.py, linha 49
+Prioridade: BAIXA
+
+TODO-007: Implementar Azure Speech TTS
+Localização: backend/routers/content.py, linha 758
+Prioridade: BAIXA
+
+TODO-008: Implementar Microsoft OAuth flow
+Localização: backend/routers/auth.py, linha 257
+Prioridade: MÉDIA
+
+TODO-009: Integrar com serviços externos (Azure Cognitive Search)
+Localização: backend/app/agents/roles/research.py, linha 13
+Prioridade: BAIXA
+
+TODO-010: Integrar parser específico (PyPDF, python-pptx)
+Localização: backend/app/agents/roles/extraction.py, linha 31
+Prioridade: BAIXA
+
+4.2. FRONTEND
+-----------
+
+TODO-011: Implementar edição de disciplina
+Localização: frontend/src/pages/admin/DisciplinesManagementPage.tsx, linha 186
+Prioridade: MÉDIA
+
+TODO-012: Navegar para página de gerenciamento de alunos
+Localização: frontend/src/pages/teacher/TeacherGroupsPage.tsx, linha 196
+Prioridade: BAIXA
+
+TODO-013: Implementar página de configurações
+Localização: frontend/src/components/AccountButton.tsx, linha 122
+Prioridade: BAIXA
+
+TODO-014: Implementar upload para storage
+Localização: frontend/src/components/EditCourseModal.tsx, linha 106
+Prioridade: MÉDIA
+
+TODO-015: Integrar com Azure OpenAI para gerar perguntas
+Localização: frontend/src/pages/admin/ContentChapterEditPage.tsx, linha 1180
+Prioridade: BAIXA
+
+================================================================================
+5. AÇÕES RECOMENDADAS
+================================================================================
+
+IMEDIATAS (Esta Semana):
+1. Remover senha padrão do README
+2. Configurar CORS via variáveis de ambiente
+3. Remover debug prints
+4. Documentar processo de backup
+
+CURTO PRAZO (Este Mês):
+1. Implementar migrations automatizadas
+2. Adicionar RLS policies
+3. Implementar rate limiting
+4. Corrigir Microsoft OAuth
+
+MÉDIO PRAZO (Próximos 3 Meses):
+1. Unificar sistema de capítulos
+2. Implementar cache
+3. Adicionar logging estruturado
+4. Aumentar cobertura de testes
+
+LONGO PRAZO (6+ Meses):
+1. Reorganizar frontend (Atomic Design)
+2. Implementar monitoramento completo
+3. Sistema de mensagens
+4. Processamento de conteúdo não-texto
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+

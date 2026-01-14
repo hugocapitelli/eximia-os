@@ -1,0 +1,136 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://harven.ai/schemas/socrates_output.json",
+    "title": "Harven Socrates Output Schema",
+    "description": "Schema de saida do agente SocratOS - a resposta socratica",
+    "type": "object",
+    "required": [
+        "response"
+    ],
+    "properties": {
+        "response": {
+            "type": "object",
+            "description": "A resposta socratica gerada",
+            "required": ["content", "has_question", "is_final_interaction"],
+            "properties": {
+                "content": {
+                    "type": "string",
+                    "description": "Texto completo da resposta (1-2 paragrafos, feedback + pergunta)",
+                    "minLength": 50,
+                    "maxLength": 1500
+                },
+                "feedback_summary": {
+                    "type": "string",
+                    "description": "Resumo do feedback dado (para logs)"
+                },
+                "question_asked": {
+                    "type": "string",
+                    "description": "A pergunta feita ao final (extraida do content)"
+                },
+                "question_type": {
+                    "type": "string",
+                    "enum": [
+                        "clarificacao",
+                        "suposicoes",
+                        "evidencias",
+                        "perspectivas",
+                        "consequencias",
+                        "aplicacao",
+                        "metacognicao"
+                    ],
+                    "description": "Tipo da pergunta segundo taxonomia socratica"
+                },
+                "has_question": {
+                    "type": "boolean",
+                    "description": "Se a resposta termina com uma pergunta aberta"
+                },
+                "is_final_interaction": {
+                    "type": "boolean",
+                    "description": "Se esta e a ultima interacao da sessao"
+                },
+                "depth_level": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 6,
+                    "description": "Nivel de profundidade da pergunta (1=clarificacao, 6=metacognicao)"
+                }
+            }
+        },
+        "quality_checks": {
+            "type": "object",
+            "description": "Verificacoes de qualidade automaticas",
+            "properties": {
+                "no_direct_answer": {
+                    "type": "boolean",
+                    "description": "Nao contem resposta direta"
+                },
+                "no_artificial_labels": {
+                    "type": "boolean",
+                    "description": "Nao contem rotulos como [Feedback]"
+                },
+                "ends_with_question": {
+                    "type": "boolean",
+                    "description": "Termina com ponto de interrogacao"
+                },
+                "connected_to_chapter": {
+                    "type": "boolean",
+                    "description": "Esta conectado ao tema do capitulo"
+                },
+                "references_student_input": {
+                    "type": "boolean",
+                    "description": "Faz referencia a algo que o aluno disse"
+                },
+                "within_length_limit": {
+                    "type": "boolean",
+                    "description": "Esta dentro do limite de 1-2 paragrafos"
+                }
+            }
+        },
+        "analytics": {
+            "type": "object",
+            "description": "Dados para analise",
+            "properties": {
+                "response_length": {
+                    "type": "integer",
+                    "description": "Tamanho da resposta em caracteres"
+                },
+                "processing_time_ms": {
+                    "type": "integer",
+                    "description": "Tempo de processamento em millisegundos"
+                },
+                "model_used": {
+                    "type": "string",
+                    "description": "Modelo de IA usado"
+                },
+                "tokens_used": {
+                    "type": "object",
+                    "properties": {
+                        "prompt": {"type": "integer"},
+                        "completion": {"type": "integer"},
+                        "total": {"type": "integer"}
+                    }
+                }
+            }
+        },
+        "session_status": {
+            "type": "object",
+            "description": "Status da sessao apos esta interacao",
+            "properties": {
+                "interactions_remaining": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 2
+                },
+                "should_finalize": {
+                    "type": "boolean",
+                    "description": "Se a sessao deve ser finalizada apos esta resposta"
+                },
+                "finalization_reason": {
+                    "type": "string",
+                    "enum": ["max_interactions_reached", "student_concluded", "error"],
+                    "description": "Motivo da finalizacao, se aplicavel"
+                }
+            }
+        }
+    }
+}

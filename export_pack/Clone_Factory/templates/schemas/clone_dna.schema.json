@@ -1,0 +1,524 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "clone_dna.schema.json",
+    "title": "Clone DNA Schema",
+    "description": "Schema for high-fidelity persona clone cognitive profile",
+    "type": "object",
+    "required": [
+        "metadata",
+        "cognitive_profile",
+        "value_hierarchy",
+        "heuristics"
+    ],
+    "properties": {
+        "metadata": {
+            "type": "object",
+            "description": "Clone identification and versioning",
+            "properties": {
+                "clone_id": {
+                    "type": "string",
+                    "pattern": "^[a-z_]+_v[0-9]+\\.[0-9]+$",
+                    "examples": [
+                        "elon_musk_v2.1",
+                        "david_goggins_v4.1"
+                    ]
+                },
+                "subject_name": {
+                    "type": "string",
+                    "description": "Full name of the cloned individual"
+                },
+                "version": {
+                    "type": "string",
+                    "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+                    "description": "Semantic versioning"
+                },
+                "created_at": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "created_by": {
+                    "type": "string",
+                    "description": "Agent or user that created the clone"
+                },
+                "primary_domain": {
+                    "type": "string",
+                    "description": "Main expertise area",
+                    "examples": [
+                        "Technology",
+                        "Finance",
+                        "Performance",
+                        "Philosophy"
+                    ]
+                },
+                "temporal_snapshot": {
+                    "type": "string",
+                    "enum": [
+                        "age_20",
+                        "age_25",
+                        "age_30",
+                        "age_35",
+                        "age_40",
+                        "age_45",
+                        "age_50",
+                        "age_55",
+                        "age_60",
+                        "current"
+                    ],
+                    "description": "Life stage for temporal evolution"
+                },
+                "fidelity_score": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 100,
+                    "description": "Overall clone accuracy score from validation"
+                }
+            },
+            "required": [
+                "clone_id",
+                "subject_name",
+                "version"
+            ]
+        },
+        "cognitive_profile": {
+            "type": "object",
+            "description": "Psychological and cognitive traits",
+            "properties": {
+                "mbti_type": {
+                    "type": "string",
+                    "pattern": "^[EI][SN][TF][JP]$",
+                    "description": "Myers-Briggs Type Indicator",
+                    "examples": [
+                        "INTJ",
+                        "ENTJ",
+                        "ENTP"
+                    ]
+                },
+                "dominant_function": {
+                    "type": "string",
+                    "enum": [
+                        "Ni",
+                        "Ne",
+                        "Si",
+                        "Se",
+                        "Ti",
+                        "Te",
+                        "Fi",
+                        "Fe"
+                    ],
+                    "description": "Primary cognitive function"
+                },
+                "auxiliary_function": {
+                    "type": "string",
+                    "enum": [
+                        "Ni",
+                        "Ne",
+                        "Si",
+                        "Se",
+                        "Ti",
+                        "Te",
+                        "Fi",
+                        "Fe"
+                    ],
+                    "description": "Secondary cognitive function"
+                },
+                "big_five": {
+                    "type": "object",
+                    "description": "Big Five personality traits (0-100 scale)",
+                    "properties": {
+                        "openness": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 100,
+                            "description": "Curiosity, creativity, openness to new ideas"
+                        },
+                        "conscientiousness": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 100,
+                            "description": "Organization, discipline, goal-orientation"
+                        },
+                        "extraversion": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 100,
+                            "description": "Social energy, assertiveness"
+                        },
+                        "agreeableness": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 100,
+                            "description": "Cooperation, empathy, conflict avoidance"
+                        },
+                        "neuroticism": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 100,
+                            "description": "Emotional instability, anxiety, stress sensitivity"
+                        }
+                    },
+                    "required": [
+                        "openness",
+                        "conscientiousness",
+                        "extraversion",
+                        "agreeableness",
+                        "neuroticism"
+                    ]
+                },
+                "disc_profile": {
+                    "type": "object",
+                    "description": "DISC behavioral profile (0-100 scale)",
+                    "properties": {
+                        "dominance": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 100,
+                            "description": "Direct, results-oriented, decisive"
+                        },
+                        "influence": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 100,
+                            "description": "Enthusiastic, collaborative, persuasive"
+                        },
+                        "steadiness": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 100,
+                            "description": "Patient, reliable, team-oriented"
+                        },
+                        "conscientiousness": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 100,
+                            "description": "Analytical, precise, systematic"
+                        }
+                    }
+                }
+            },
+            "required": [
+                "mbti_type",
+                "dominant_function",
+                "big_five"
+            ]
+        },
+        "value_hierarchy": {
+            "type": "array",
+            "description": "Ordered list of values with weights for conflict resolution",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "rank": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "description": "Priority rank (1 = highest)"
+                    },
+                    "value": {
+                        "type": "string",
+                        "description": "Name of the value",
+                        "examples": [
+                            "Mission Impact",
+                            "Financial Returns",
+                            "Innovation",
+                            "Legacy"
+                        ]
+                    },
+                    "weight": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1,
+                        "description": "Relative importance (0.0 to 1.0)"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "How this value manifests in decisions"
+                    },
+                    "trade_off_behavior": {
+                        "type": "string",
+                        "description": "What the individual sacrifices for this value"
+                    }
+                },
+                "required": [
+                    "rank",
+                    "value",
+                    "weight"
+                ]
+            },
+            "minItems": 3
+        },
+        "heuristics": {
+            "type": "array",
+            "description": "Decision rules and mental models",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "pattern": "^H[0-9]{3}$",
+                        "description": "Unique heuristic identifier"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Human-readable name",
+                        "examples": [
+                            "First Principles Thinking",
+                            "Atomic Pricing Rule",
+                            "Simplification Test"
+                        ]
+                    },
+                    "trigger": {
+                        "type": "string",
+                        "description": "When this heuristic activates"
+                    },
+                    "action": {
+                        "type": "string",
+                        "description": "What the heuristic does"
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "explicit",
+                            "implicit",
+                            "veto",
+                            "priority"
+                        ],
+                        "description": "Classification of the rule"
+                    },
+                    "confidence": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1,
+                        "description": "Confidence in extraction accuracy"
+                    },
+                    "source": {
+                        "type": "string",
+                        "description": "Source evidence for this heuristic"
+                    },
+                    "counter_examples": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "Known exceptions to this rule"
+                    }
+                },
+                "required": [
+                    "id",
+                    "name",
+                    "trigger",
+                    "action",
+                    "confidence"
+                ]
+            }
+        },
+        "perception_filters": {
+            "type": "object",
+            "description": "What the clone notices first in situations",
+            "properties": {
+                "primary_focus": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "trigger": {
+                                "type": "string"
+                            },
+                            "notices_first": {
+                                "type": "string"
+                            },
+                            "weight": {
+                                "type": "number",
+                                "minimum": 0,
+                                "maximum": 1
+                            }
+                        },
+                        "required": [
+                            "trigger",
+                            "notices_first",
+                            "weight"
+                        ]
+                    }
+                },
+                "blind_spots": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "area": {
+                                "type": "string"
+                            },
+                            "severity": {
+                                "type": "string",
+                                "enum": [
+                                    "LOW",
+                                    "MEDIUM",
+                                    "HIGH"
+                                ]
+                            },
+                            "evidence": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "area",
+                            "severity"
+                        ]
+                    }
+                }
+            }
+        },
+        "cognitive_biases": {
+            "type": "array",
+            "description": "Known cognitive biases of the individual",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "bias": {
+                        "type": "string",
+                        "description": "Name of the bias",
+                        "examples": [
+                            "Optimism Bias",
+                            "Confirmation Bias",
+                            "Survivorship Bias",
+                            "Sunk Cost Fallacy"
+                        ]
+                    },
+                    "magnitude": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1,
+                        "description": "Strength of the bias"
+                    },
+                    "manifestation": {
+                        "type": "string",
+                        "description": "How this bias appears in behavior"
+                    },
+                    "mitigating_factor": {
+                        "type": "string",
+                        "description": "What reduces this bias"
+                    }
+                },
+                "required": [
+                    "bias",
+                    "magnitude",
+                    "manifestation"
+                ]
+            }
+        },
+        "moral_foundations": {
+            "type": "object",
+            "description": "Haidt's Moral Foundations Theory weights",
+            "properties": {
+                "care_harm": {
+                    "$ref": "#/definitions/moral_foundation"
+                },
+                "fairness_cheating": {
+                    "$ref": "#/definitions/moral_foundation"
+                },
+                "loyalty_betrayal": {
+                    "$ref": "#/definitions/moral_foundation"
+                },
+                "authority_subversion": {
+                    "$ref": "#/definitions/moral_foundation"
+                },
+                "sanctity_degradation": {
+                    "$ref": "#/definitions/moral_foundation"
+                },
+                "liberty_oppression": {
+                    "$ref": "#/definitions/moral_foundation"
+                }
+            }
+        },
+        "voice_profile": {
+            "type": "object",
+            "description": "Communication style and patterns",
+            "properties": {
+                "tone": {
+                    "type": "string",
+                    "examples": [
+                        "Confrontational",
+                        "Empathetic",
+                        "Technical",
+                        "Visionary"
+                    ]
+                },
+                "vocabulary_signature": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Characteristic words and phrases"
+                },
+                "analogy_sources": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Where analogies come from",
+                    "examples": [
+                        "Military",
+                        "Sports",
+                        "Physics",
+                        "History"
+                    ]
+                },
+                "response_structure": {
+                    "type": "string",
+                    "description": "How arguments are organized"
+                }
+            }
+        },
+        "validation_baseline": {
+            "type": "array",
+            "description": "Historical decisions for backtesting",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "scenario": {
+                        "type": "string"
+                    },
+                    "historical_decision": {
+                        "type": "string"
+                    },
+                    "test_input": {
+                        "type": "string"
+                    },
+                    "expected_direction": {
+                        "type": "string"
+                    },
+                    "pass_criteria": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "scenario",
+                    "historical_decision",
+                    "expected_direction"
+                ]
+            }
+        }
+    },
+    "definitions": {
+        "moral_foundation": {
+            "type": "object",
+            "properties": {
+                "weight": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "Importance of this foundation"
+                },
+                "bias": {
+                    "type": "string",
+                    "description": "How this foundation is expressed"
+                }
+            },
+            "required": [
+                "weight"
+            ]
+        }
+    }
+}

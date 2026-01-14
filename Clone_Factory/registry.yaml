@@ -1,0 +1,185 @@
+# CLONE FACTORY REGISTRY
+# Registro central de todos os clones criados pelo Clone Factory
+# Mantido automaticamente pelo C4_Auditor
+
+metadata:
+  factory_version: "2.0"
+  last_updated: "2026-01-08"
+  total_clones: 2
+  average_score: 9.4
+  
+# Cognitive Architecture Agents
+agents:
+  extraction_subagents:
+    - id: "C2A_JunguianAnalyst"
+      type: "Extraction Sub-Agent"
+      function: "MBTI / Cognitive Functions extraction"
+      path: "C2_Extractor/C2A_JunguianAnalyst/"
+      
+    - id: "C2B_PsychometricAnalyst"
+      type: "Extraction Sub-Agent"
+      function: "Big Five / DISC scoring"
+      path: "C2_Extractor/C2B_PsychometricAnalyst/"
+      
+    - id: "C2C_HeuristicMiner"
+      type: "Extraction Sub-Agent"
+      function: "Decision rules / Mental models"
+      path: "C2_Extractor/C2C_HeuristicMiner/"
+      
+    - id: "C2D_BiographicAnalyst"
+      type: "Extraction Sub-Agent"
+      function: "Context / Formative events"
+      path: "C2_Extractor/C2D_BiographicAnalyst/"
+      
+  runtime:
+    - id: "C5_RuntimeEngine"
+      type: "Runtime Agent"
+      function: "Decision simulation with CoT"
+      path: "C5_RuntimeEngine/"
+
+# Estatísticas
+statistics:
+  by_status:
+    validated: 1
+    conditional: 0
+    deprecated: 0
+    in_progress: 0
+  by_domain:
+    performance_mental: 1
+  by_score:
+    excellent_95_plus: 0
+    pass_90_94: 1
+    conditional_80_89: 0
+
+# Clones Registrados
+clones:
+
+  # CLONE DE REFERÊNCIA (Modelo David Goggins v4.1)
+  - clone_id: "david_goggins"
+    nome: "David Goggins"
+    versao: "v4.1"
+    status: "validated"
+    
+    domain:
+      primary: "performance_mental"
+      secondary: ["ultra_endurance", "motivational", "military"]
+    
+    scores:
+      phase_1_research: 9.5
+      phase_2_etl: 9.3
+      phase_3_generation: 9.3
+      phase_4_validation:
+        turing_test: 9.5
+        style_compliance: 9.4
+        ethics_compliance: 10.0
+        jailbreak_resistance: 10.0
+      final: 9.4
+    
+    metrics:
+      total_sources: 51
+      knowledge_bases: 9
+      qna_pairs: 105
+      system_prompt_chars: 5547
+      turing_scenarios: 20
+    
+    artifacts:
+      path: "clones/david_goggins/"
+      system_prompt: "3_clone_output/SYSTEM_PROMPT.md"
+      dna_mental: "3_clone_output/04_dna_mental.md"
+      main_file: "3_clone_output/david_goggins_main.md"
+    
+    dates:
+      created: "2025-12-19T00:00:00Z"
+      validated: "2025-12-19T21:35:00Z"
+      last_updated: "2025-12-19T21:35:00Z"
+    
+    validated_by: "C4_Auditor"
+    risco: "baixo"
+    
+    observacoes: |
+      Clone de alta fidelidade focado em disciplina extrema, mental toughness
+      e quebra de limites pessoais. Especialista em ultra-endurance e 
+      accountability. Modelo de referência para Clone Factory.
+    
+    tags:
+      - "reference_model"
+      - "high_fidelity"
+      - "production_ready"
+
+  # ELON MUSK (Cognitive Architecture v2.0)
+  - clone_id: "elon_musk"
+    nome: "Elon Musk"
+    versao: "v2.0"
+    status: "ready_for_validation"
+    architecture: "cognitive_simulation_v2"
+    
+    domain:
+      primary: "technology_innovation"
+      secondary: ["first_principles", "entrepreneurship", "space", "ai"]
+    
+    scores:
+      phase_1_research: 9.2
+      phase_2_etl: 9.3
+      phase_3_generation: 9.0
+      phase_4_validation:
+        turing_test: null
+        style_compliance: null
+        ethics_compliance: null
+        jailbreak_resistance: null
+      final: null
+    
+    metrics:
+      total_sources: 50
+      knowledge_bases: 7
+      qna_pairs: 20
+      system_prompt_chars: 4823
+      turing_scenarios: 0
+    
+    artifacts:
+      path: "Clones/elon_musk/"
+      system_prompt: "3_clone_output/SYSTEM_PROMPT.md"
+      dna_mental: "3_clone_output/04_dna_mental.md"
+      main_file: null
+    
+    dates:
+      created: "2026-01-08T11:35:00Z"
+      validated: null
+      last_updated: "2026-01-08T11:40:00Z"
+    
+    validated_by: null
+    risco: "medio"
+    
+    observacoes: |
+      Clone focado em First Principles Thinking, inovação e visão de longo
+      prazo para humanidade. Especialista em tecnologia, espaço, EVs e IA.
+      Estilo direto e técnico com humor ocasional.
+    
+    tags:
+      - "innovation"
+      - "first_principles"
+      - "technology"
+
+# Template para novos clones
+# _template:
+#   - clone_id: "{slug}"
+#     nome: "{Nome Completo}"
+#     versao: "v1.0"
+#     status: "draft"
+#     domain:
+#       primary: "{domínio}"
+#       secondary: []
+#     scores:
+#       phase_1_research: null
+#       phase_2_etl: null
+#       phase_3_generation: null
+#       phase_4_validation:
+#         turing_test: null
+#         style_compliance: null
+#         ethics_compliance: null
+#         jailbreak_resistance: null
+#       final: null
+#     dates:
+#       created: "YYYY-MM-DDTHH:MM:SSZ"
+#       validated: null
+#     validated_by: null
+#     observacoes: ""

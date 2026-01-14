@@ -1,0 +1,277 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Harven_Analyst Output Schema",
+    "description": "Schema para saida do agente AnalystOS (Analista de Metricas e Deteccao de IA)",
+    "type": "object",
+    "required": ["analysis_id", "timestamp", "ai_detection", "metrics", "flags", "observations", "recommendation"],
+    "properties": {
+        "analysis_id": {
+            "type": "string",
+            "description": "Identificador unico da analise",
+            "pattern": "^analysis_[0-9]{8}_[0-9]{6}_[a-z0-9]+$",
+            "examples": ["analysis_20260112_103000_abc123"]
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Momento da analise"
+        },
+        "ai_detection": {
+            "type": "object",
+            "description": "Resultado da deteccao de IA",
+            "required": ["probability", "confidence", "verdict", "indicators", "flag"],
+            "properties": {
+                "probability": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "Probabilidade de texto gerado por IA (0.0 a 1.0)"
+                },
+                "confidence": {
+                    "type": "string",
+                    "enum": ["high", "medium", "low"],
+                    "description": "Confianca na analise baseada no tamanho do texto"
+                },
+                "verdict": {
+                    "type": "string",
+                    "enum": ["likely_human", "uncertain", "likely_ai"],
+                    "description": "Classificacao baseada na probabilidade"
+                },
+                "indicators": {
+                    "type": "array",
+                    "description": "Lista de indicadores detectados",
+                    "items": {
+                        "type": "object",
+                        "required": ["type", "description", "weight"],
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "description": "Tipo do indicador",
+                                "enum": [
+                                    "artificial_connectors",
+                                    "formal_vocabulary",
+                                    "perfect_structure",
+                                    "impersonal_tone",
+                                    "excessive_fluency",
+                                    "no_typos",
+                                    "formulaic_conclusion",
+                                    "informal_language",
+                                    "personal_expression",
+                                    "typing_patterns",
+                                    "hesitations",
+                                    "personal_experience"
+                                ]
+                            },
+                            "description": {
+                                "type": "string",
+                                "description": "Descricao do que foi detectado"
+                            },
+                            "weight": {
+                                "type": "number",
+                                "minimum": -1,
+                                "maximum": 1,
+                                "description": "Peso do indicador (positivo = IA, negativo = humano)"
+                            }
+                        }
+                    }
+                },
+                "flag": {
+                    "type": ["string", "null"],
+                    "description": "Flag aplicada se probabilidade > 0.70",
+                    "enum": ["alta_probabilidade_texto_IA", null]
+                }
+            }
+        },
+        "metrics": {
+            "type": "object",
+            "description": "Metricas coletadas da interacao",
+            "properties": {
+                "text": {
+                    "type": "object",
+                    "properties": {
+                        "message_length_chars": {
+                            "type": "integer",
+                            "minimum": 0
+                        },
+                        "message_length_words": {
+                            "type": "integer",
+                            "minimum": 0
+                        },
+                        "sentence_count": {
+                            "type": "integer",
+                            "minimum": 0
+                        },
+                        "avg_words_per_sentence": {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "has_question": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "time": {
+                    "type": "object",
+                    "properties": {
+                        "timestamp": {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "response_time_seconds": {
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "context": {
+                    "type": "object",
+                    "properties": {
+                        "turn_number": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 3
+                        },
+                        "chapter_id": {
+                            "type": "string"
+                        },
+                        "session_id": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "quality": {
+                    "type": "object",
+                    "properties": {
+                        "topic_relevance": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 1
+                        },
+                        "depth_of_thought": {
+                            "type": "string",
+                            "enum": ["superficial", "moderate", "deep"]
+                        },
+                        "engagement_level": {
+                            "type": "string",
+                            "enum": ["low", "medium", "high"]
+                        }
+                    }
+                }
+            }
+        },
+        "flags": {
+            "type": "array",
+            "description": "Lista de todos os flags aplicados",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "alta_probabilidade_texto_IA",
+                    "resposta_muito_rapida",
+                    "resposta_muito_curta",
+                    "off_topic",
+                    "padrao_copy_paste"
+                ]
+            }
+        },
+        "observations": {
+            "type": "array",
+            "description": "Observacoes em linguagem natural para o professor",
+            "items": {
+                "type": "string"
+            }
+        },
+        "recommendation": {
+            "type": "string",
+            "description": "Acao recomendada",
+            "examples": [
+                "Nenhuma acao necessaria.",
+                "Revisar manualmente. Considerar conversar com aluno sobre uso de IA.",
+                "Texto muito curto para analise. Monitorar engajamento."
+            ]
+        }
+    },
+    "examples": [
+        {
+            "analysis_id": "analysis_20260112_103000_abc123",
+            "timestamp": "2026-01-12T10:30:00Z",
+            "ai_detection": {
+                "probability": 0.85,
+                "confidence": "high",
+                "verdict": "likely_ai",
+                "indicators": [
+                    {
+                        "type": "artificial_connectors",
+                        "description": "Detectado: 'E importante ressaltar', 'Nesse sentido'",
+                        "weight": 0.30
+                    },
+                    {
+                        "type": "formal_vocabulary",
+                        "description": "Vocabulario formal: 'engloba', 'imperativa'",
+                        "weight": 0.20
+                    }
+                ],
+                "flag": "alta_probabilidade_texto_IA"
+            },
+            "metrics": {
+                "text": {
+                    "message_length_chars": 520,
+                    "message_length_words": 82,
+                    "sentence_count": 4,
+                    "avg_words_per_sentence": 20.5,
+                    "has_question": false
+                },
+                "quality": {
+                    "topic_relevance": 0.92,
+                    "depth_of_thought": "moderate"
+                }
+            },
+            "flags": ["alta_probabilidade_texto_IA"],
+            "observations": [
+                "Texto apresenta caracteristicas compativeis com geracao por LLM",
+                "Detectados multiplos conectores tipicos de ChatGPT"
+            ],
+            "recommendation": "Revisar manualmente. Considerar conversar com aluno sobre uso de IA."
+        },
+        {
+            "analysis_id": "analysis_20260112_104500_def456",
+            "timestamp": "2026-01-12T10:45:00Z",
+            "ai_detection": {
+                "probability": 0.15,
+                "confidence": "high",
+                "verdict": "likely_human",
+                "indicators": [
+                    {
+                        "type": "informal_language",
+                        "description": "Linguagem informal: 'ne', 'tbm'",
+                        "weight": -0.20
+                    },
+                    {
+                        "type": "personal_expression",
+                        "description": "Expressao pessoal: 'eu acho'",
+                        "weight": -0.15
+                    }
+                ],
+                "flag": null
+            },
+            "metrics": {
+                "text": {
+                    "message_length_chars": 245,
+                    "message_length_words": 52,
+                    "sentence_count": 4,
+                    "avg_words_per_sentence": 13,
+                    "has_question": false
+                },
+                "quality": {
+                    "topic_relevance": 0.85,
+                    "depth_of_thought": "moderate"
+                }
+            },
+            "flags": [],
+            "observations": [
+                "Texto apresenta caracteristicas tipicamente humanas",
+                "Linguagem informal e abreviacoes presentes"
+            ],
+            "recommendation": "Nenhuma acao necessaria."
+        }
+    ]
+}

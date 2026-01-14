@@ -1,0 +1,104 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "KolbFlow Designer Input",
+    "description": "Schema de entrada para o agente KolbFlow Designer",
+    "type": "object",
+    "required": [
+        "tema",
+        "publico_alvo",
+        "duracao_minutos"
+    ],
+    "properties": {
+        "tema": {
+            "type": "string",
+            "description": "Tema central do treinamento",
+            "examples": [
+                "Comunicação Não-Violenta",
+                "LGPD para TI",
+                "Feedback Construtivo"
+            ]
+        },
+        "publico_alvo": {
+            "type": "string",
+            "description": "Descrição do público-alvo (cargo, experiência, quantidade)",
+            "examples": [
+                "Líderes de equipe (5-15 pessoas)",
+                "Desenvolvedores júnior"
+            ]
+        },
+        "duracao_minutos": {
+            "type": "integer",
+            "minimum": 30,
+            "maximum": 480,
+            "description": "Duração total do treinamento em minutos",
+            "examples": [
+                60,
+                120,
+                240
+            ]
+        },
+        "contexto_organizacional": {
+            "type": "string",
+            "description": "Contexto da empresa ou situação que motivou o treinamento",
+            "examples": [
+                "Empresa de tecnologia com conflitos entre squads"
+            ]
+        },
+        "recursos_disponiveis": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Lista de recursos disponíveis para o treinamento",
+            "examples": [
+                [
+                    "Flipchart",
+                    "Projetor",
+                    "Sala ampla",
+                    "Post-its"
+                ]
+            ]
+        },
+        "objetivos_aprendizagem": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Objetivos de aprendizagem esperados",
+            "examples": [
+                [
+                    "Identificar padrões de comunicação violenta",
+                    "Aplicar os 4 passos da CNV"
+                ]
+            ]
+        },
+        "formato": {
+            "type": "string",
+            "enum": [
+                "presencial",
+                "online",
+                "hibrido"
+            ],
+            "default": "presencial",
+            "description": "Formato do treinamento"
+        }
+    },
+    "examples": [
+        {
+            "tema": "Comunicação Não-Violenta",
+            "publico_alvo": "Líderes de equipe (10 pessoas)",
+            "duracao_minutos": 240,
+            "contexto_organizacional": "Startup com problemas de comunicação entre áreas",
+            "recursos_disponiveis": [
+                "Flipchart",
+                "Projetor",
+                "Sala ampla"
+            ],
+            "objetivos_aprendizagem": [
+                "Identificar padrões de comunicação violenta",
+                "Aplicar os 4 passos da CNV em conflitos"
+            ],
+            "formato": "presencial"
+        }
+    ]
+}

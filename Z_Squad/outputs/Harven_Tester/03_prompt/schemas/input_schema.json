@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Harven_Tester Input Schema",
+    "description": "Schema para entrada do agente TesterOS (Validador de Qualidade)",
+    "type": "object",
+    "required": ["edited_response"],
+    "properties": {
+        "edited_response": {
+            "type": "string",
+            "description": "Resposta editada pelo EDITOR a ser validada",
+            "minLength": 10,
+            "examples": [
+                "Voce levanta um ponto interessante sobre a relacao entre tecnologia e produtividade. Essa conexao existe, mas nem sempre e direta ou garantida - varios fatores podem influenciar o resultado.\n\nEm que situacoes voce acha que investir em tecnologia poderia NAO trazer o retorno esperado?"
+            ]
+        },
+        "context": {
+            "type": "object",
+            "description": "Contexto opcional da conversa para validacao",
+            "properties": {
+                "chapter_title": {
+                    "type": "string",
+                    "description": "Titulo do capitulo sendo estudado"
+                },
+                "chapter_summary": {
+                    "type": "string",
+                    "description": "Resumo do conteudo do capitulo"
+                },
+                "student_message": {
+                    "type": "string",
+                    "description": "Ultima mensagem do aluno"
+                },
+                "conversation_turn": {
+                    "type": "integer",
+                    "description": "Numero do turno na conversa",
+                    "minimum": 1
+                },
+                "original_response": {
+                    "type": "string",
+                    "description": "Resposta original do ORIENTADOR antes da edicao"
+                }
+            }
+        },
+        "validation_config": {
+            "type": "object",
+            "description": "Configuracoes opcionais de validacao",
+            "properties": {
+                "strict_mode": {
+                    "type": "boolean",
+                    "description": "Se true, aplica criterios mais rigorosos",
+                    "default": false
+                },
+                "include_observations": {
+                    "type": "boolean",
+                    "description": "Se true, inclui observacoes mesmo em aprovacao",
+                    "default": true
+                }
+            }
+        }
+    },
+    "examples": [
+        {
+            "edited_response": "Voce levanta um ponto interessante sobre a relacao entre tecnologia e produtividade. Essa conexao existe, mas nem sempre e direta ou garantida.\n\nEm que situacoes voce acha que investir em tecnologia poderia NAO trazer o retorno esperado?",
+            "context": {
+                "chapter_title": "Gestao de Tecnologia no Agronegocio",
+                "student_message": "Acho que tecnologia sempre aumenta a produtividade",
+                "conversation_turn": 2
+            }
+        },
+        {
+            "edited_response": "Boa observacao! A gestao de riscos no agronegocio envolve tres areas principais: riscos climaticos, riscos de mercado e riscos sanitarios.\n\nQual desses voce acha mais importante?",
+            "context": {
+                "chapter_title": "Gestao de Riscos",
+                "student_message": "Como funciona a gestao de riscos?",
+                "conversation_turn": 1
+            }
+        }
+    ]
+}

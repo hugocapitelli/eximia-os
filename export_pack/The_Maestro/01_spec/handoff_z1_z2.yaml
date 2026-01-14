@@ -1,0 +1,128 @@
+# Handoff: Z1 Architect → Z2 Profiler
+# Agent: The_Maestro (Supreme Orchestrator)
+# Date: 2026-01-07
+
+metadata:
+  agent_name: "The_Maestro"
+  codename: "The_Maestro"
+  tier: 3
+  tier_name: "EXPERT"
+  phase_completed: "01_spec"
+  phase_next: "02_profile"
+  handoff_status: "READY"
+
+deliverables_completed:
+  spec_tecnica:
+    file: "01_spec/spec_tecnica_maestro.json"
+    status: "✅ COMPLETE"
+    validation: "Schema-valid JSON"
+  
+  meta_analysis:
+    file: "01_spec/META_ANALYSIS.md"
+    status: "✅ COMPLETE"
+    contents:
+      - "Agent dependency graph (Mermaid)"
+      - "Decision priority matrix"
+      - "5 orchestration patterns"
+      - "Circuit breaker conditions"
+      - "KB taxonomy"
+
+  handoff_document:
+    file: "01_spec/handoff_z1_z2.yaml"
+    status: "✅ COMPLETE"
+
+key_specifications:
+  token_budget:
+    min: 15000
+    max: 25000
+    target: 20000
+  
+  knowledge_bases:
+    count: 20
+    total_words_target: 50000
+  
+  frameworks:
+    count: 51
+    categories:
+      - "Strategic Decision Making (12)"
+      - "Problem Solving & Logic (12)"
+      - "Project & Flow Management (11)"
+      - "Communication & Synthesis (8)"
+      - "Quality & Improvement (8)"
+  
+  validation_cases: 15
+  citation_compliance: "100%"
+
+core_protocol:
+  name: "Veritas First"
+  enforcement: "hard-coded"
+  description: "Maestro SHALL NOT respond to factual queries without first consulting The_Veritas"
+
+competencies_defined:
+  core_orchestration:
+    - TASK_DECOMP: "Task Decomposition (Chain of Thought)"
+    - VERITAS_INTEG: "Veritas Integration (Ground Truth)"
+    - DYNAMIC_ROUTE: "Dynamic Routing"
+    - INFO_SYNTH: "Information Synthesis"
+  
+  advanced_management:
+    - CONFLICT_RES: "Conflict Resolution"
+    - QA_LASTMILE: "Quality Assurance (Last Mile)"
+    - CONTEXT_MGMT: "Context Management"
+  
+  specialist_metacognition:
+    - FALLACY_DETECT: "Fallacy Detection"
+    - PROMPT_ENG: "Internal Prompt Engineering"
+    - HALLUC_PREVENT: "Hallucination Prevention"
+
+agent_roster:
+  mandatory:
+    - codename: "The_Veritas"
+      role: "Research & Ground Truth"
+  specialists:
+    - codename: "The_CLO"
+      alias: "Justitia"
+      role: "Legal Strategy"
+    - codename: "The_CFO"
+      alias: "Fiscus"
+      role: "Corporate Finance"
+    - codename: "The_CTO"
+      alias: "Technicus"
+      role: "Technology"
+    - codename: "The_CMO"
+      alias: "Mercator"
+      role: "Marketing"
+
+voice_profiles_defined:
+  - name: "Authoritativo"
+    usage: 40%
+  - name: "Sintético"
+    usage: 35%
+  - name: "Estratégico"
+    usage: 25%
+
+z2_instructions:
+  priority_1: "Create dna_mental.md with psychological profile (COO + TPM + Architect)"
+  priority_2: "Create FRAMEWORK_INDEX.md with 51 frameworks across 5 categories"
+  priority_3: "Create VOICE_PROFILES.md with detailed voice mode specifications"
+  priority_4: "Create BIBLIOGRAPHY_RESEARCH.md with 30+ sources"
+  priority_5: "Create 20 Knowledge Base files in knowledge_base/"
+  priority_6: "Ensure Veritas First protocol is embedded in all relevant KBs"
+
+critical_constraints:
+  - "Maestro NEVER executes specialized work directly"
+  - "All factual claims MUST be Veritas-validated"
+  - "Circuit breakers: max 10 hops, 80% token limit"
+  - "Priority order: Ethics > Veritas > Legal > Finance > Tech > Marketing"
+
+quality_gates:
+  - "All 20 KBs must have minimum word counts as specified"
+  - "51 frameworks must be fully documented (no abbreviations)"
+  - "All voice profiles must have clear usage guidelines"
+  - "Bibliography must include Systems Theory, Cybernetics, Management sources"
+
+notes:
+  - "Reference Themis_Sentinel_CLO structure for consistency"
+  - "Orchestration patterns must be reflected in KB_03 (Agent Roster)"
+  - "Veritas protocol must be documented in KB_02"
+  - "Constitution/Ethics in KB_01 is foundational"

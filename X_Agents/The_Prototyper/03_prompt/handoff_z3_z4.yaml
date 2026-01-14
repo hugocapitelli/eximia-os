@@ -1,0 +1,96 @@
+handoff_id: "HO-20260111-003"
+timestamp: "2026-01-11T14:00:00Z"
+from_module: "Z3_Engineer"
+to_module: "Z4_Auditor"
+
+summary: |
+  Created production-ready system prompt (prompt_operacional.md) for
+  The_Prototyper (ProtoOS) at ~2800 tokens, well under the 4000 token budget.
+  Prompt includes ProtoOS Logic Loop, circuit breakers, output format templates
+  for PRD/PRP/wireframes/prioritization, and clear workflow triggers.
+  Input and output JSON schemas created for structured validation.
+
+artifacts_produced:
+  - path: "03_prompt/prompt_operacional.md"
+    type: "prompt"
+    status: "complete"
+    token_count: "~2800"
+  - path: "03_prompt/schemas/input_schema.json"
+    type: "schema"
+    status: "complete"
+  - path: "03_prompt/schemas/output_schema.json"
+    type: "schema"
+    status: "complete"
+
+key_decisions:
+  - decision: "Prompt at ~2800 tokens"
+    rationale: "Leaves room for context injection while staying well under 4K limit"
+  - decision: "Explicit workflow triggers table"
+    rationale: "Maps user intents to agent behaviors clearly"
+  - decision: "Circuit breakers in prompt"
+    rationale: "Prevents common anti-patterns (vague problems, solution-first, infinite scope)"
+  - decision: "Output format templates embedded"
+    rationale: "Ensures consistent output structure without requiring KB lookup for basics"
+  - decision: "6 invariants defined"
+    rationale: "Hard rules that should never be broken regardless of input"
+
+open_questions:
+  - "None - ready for validation"
+
+prompt_structure:
+  sections:
+    - name: "Identity"
+      purpose: "Who the agent is, core belief, mentor influences"
+    - name: "Core Competencies"
+      purpose: "6 capabilities listed explicitly"
+    - name: "ProtoOS Logic Loop"
+      purpose: "4-step decision framework for all requests"
+    - name: "Circuit Breakers"
+      purpose: "Triggers that pause processing and ask questions"
+    - name: "Output Formats"
+      purpose: "Templates for PRD, PRP, wireframe, prioritization outputs"
+    - name: "Communication Style"
+      purpose: "Voice, tone, language handling"
+    - name: "Workflow Triggers"
+      purpose: "Intent-to-action mapping"
+    - name: "Invariants"
+      purpose: "Rules that can never be broken"
+    - name: "Knowledge Reference"
+      purpose: "Pointer to KB files for detailed templates"
+
+constraints_for_next:
+  - "Validate prompt against all 4 mentor DNA principles"
+  - "Test all 6 competencies with sample inputs"
+  - "Verify circuit breakers trigger appropriately"
+  - "Confirm output formats match schema definitions"
+  - "Test bilingual capability (PT-BR and EN inputs)"
+
+validation_criteria:
+  - "Token count verified < 4000"
+  - "All 6 competencies testable from prompt"
+  - "Logic Loop steps are actionable"
+  - "Circuit breakers prevent anti-patterns"
+  - "Output templates are complete and parseable"
+  - "Schemas validate expected inputs/outputs"
+
+test_scenarios_suggested:
+  - id: "TC-001"
+    type: "happy_path"
+    input: "Create PRD for user authentication feature"
+    expected: "Complete PRD following template"
+  - id: "TC-002"
+    type: "circuit_breaker"
+    input: "Build me a dashboard"
+    expected: "Agent asks clarifying questions about problem"
+  - id: "TC-003"
+    type: "wireframe"
+    input: "Create wireframe for login page with email/password"
+    expected: "ASCII wireframe with element annotations"
+  - id: "TC-004"
+    type: "prioritization"
+    input: "Prioritize: Feature A (5000 users, high impact, medium confidence, medium effort)"
+    expected: "RICE calculation with recommendation"
+  - id: "TC-005"
+    type: "bilingual"
+    input: "Crie um PRD para funcionalidade de notificações"
+    expected: "PRD in Portuguese with English technical terms"

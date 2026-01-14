@@ -1,0 +1,569 @@
+================================================================================
+FRONT-END - ATOMIC DESIGN E COMPONENTIZAÇÃO - HARVEN.AI
+================================================================================
+
+Fonte: frontend/src/components/, frontend/src/pages/, frontend/src/features/
+
+================================================================================
+1. METODOLOGIA ATOMIC DESIGN
+================================================================================
+
+O HARVEN.AI atualmente NÃO segue Atomic Design de forma estruturada. Os 
+componentes estão organizados de forma ad-hoc na pasta components/, sem 
+hierarquia clara de Atoms → Molecules → Organisms → Templates → Pages.
+
+Este documento propõe uma reorganização seguindo Atomic Design (Brad Frost).
+
+================================================================================
+2. COMPONENTES ATUAIS - INVENTÁRIO
+================================================================================
+
+Localização: frontend/src/components/ (39 arquivos)
+
+2.1. COMPONENTES BÁSICOS (ATOMS)
+-------------------------------
+
+Button.tsx
+- Botão reutilizável
+- Variantes: primary, secondary, outline, danger
+- Estados: loading, disabled
+- Classificação: ATOM
+
+Input.tsx
+- Campo de entrada de texto
+- Suporta diferentes tipos
+- Classificação: ATOM
+
+Select.tsx
+- Dropdown de seleção
+- Classificação: ATOM
+
+Checkbox.tsx
+- Checkbox
+- Classificação: ATOM
+
+LoadingSpinner.tsx
+- Spinner de carregamento
+- Tamanhos: sm, md, lg
+- Classificação: ATOM
+
+Alert.tsx
+- Mensagem de alerta
+- Variantes: success, error, warning, info
+- Classificação: ATOM
+
+Card.tsx
+- Container de card
+- Suporta hover e onClick
+- Classificação: ATOM (poderia ser MOLECULE se tiver conteúdo complexo)
+
+RatingStars.tsx
+- Estrelas de avaliação
+- Classificação: ATOM
+
+2.2. COMPONENTES COMPOSTOS (MOLECULES)
+--------------------------------------
+
+Modal.tsx
+- Modal genérico
+- Header, body, footer
+- Classificação: MOLECULE
+
+ConfirmDialog.tsx
+- Diálogo de confirmação
+- Usa Modal
+- Classificação: MOLECULE
+
+FileUpload.tsx
+- Upload de arquivo
+- Drag & drop
+- Classificação: MOLECULE
+
+ImageUpload.tsx
+- Upload de imagem
+- Preview
+- Classificação: MOLECULE
+
+Breadcrumb.tsx
+- Navegação breadcrumb
+- Classificação: MOLECULE
+
+ChatMessage.tsx
+- Mensagem de chat
+- Autor, conteúdo, timestamp
+- Classificação: MOLECULE
+
+ActionMenu.tsx
+- Menu de ações
+- Dropdown com opções
+- Classificação: MOLECULE
+
+2.3. COMPONENTES COMPLEXOS (ORGANISMS)
+--------------------------------------
+
+Navbar.tsx
+- Barra de navegação (DEPRECATED)
+- Substituído por Topbar
+- Classificação: ORGANISM
+
+Topbar.tsx
+- Barra superior
+- Logo, notificações, tema, menu do usuário
+- Classificação: ORGANISM
+
+Sidebar.tsx
+- Barra lateral
+- Menu de navegação por role
+- Classificação: ORGANISM
+
+HomeDashboardView.tsx
+- Dashboard com cards e listas
+- Classificação: ORGANISM
+
+HomePanelView.tsx
+- Painel com grid de cursos
+- Classificação: ORGANISM
+
+SocraticChatHistory.tsx
+- Histórico de chat socrático
+- Lista de mensagens
+- Classificação: ORGANISM
+
+AccountButton.tsx
+- Botão de conta do usuário
+- Dropdown com opções
+- Classificação: ORGANISM (poderia ser MOLECULE)
+
+ViewToggle.tsx
+- Toggle entre dashboard e painel
+- Classificação: MOLECULE (poderia ser ATOM)
+
+2.4. MODAIS ESPECÍFICOS (MOLECULES/ORGANISMS)
+--------------------------------------------
+
+CreateCourseModal.tsx
+- Modal de criação de curso
+- Formulário completo
+- Classificação: ORGANISM
+
+EditCourseModal.tsx
+- Modal de edição de curso
+- Formulário completo
+- Classificação: ORGANISM
+
+CreateDisciplineModal.tsx
+- Modal de criação de disciplina
+- Classificação: MOLECULE
+
+CreateModuleModal.tsx
+- Modal de criação de módulo
+- Classificação: MOLECULE
+
+CreateChapterModal.tsx
+- Modal de criação de capítulo
+- Classificação: MOLECULE
+
+EditChapterModal.tsx
+- Modal de edição de capítulo
+- Classificação: MOLECULE
+
+EditModuleModal.tsx
+- Modal de edição de módulo
+- Classificação: MOLECULE
+
+ManageDisciplineCoursesModal.tsx
+- Modal de gerenciamento de cursos da disciplina
+- Lista e seleção
+- Classificação: ORGANISM
+
+2.5. VIEWERS (MOLECULES)
+-----------------------
+
+PDFViewer.tsx
+- Visualizador de PDF
+- Classificação: MOLECULE
+
+VideoPlayer.tsx
+- Player de vídeo
+- Classificação: MOLECULE
+
+AudioPlayer.tsx
+- Player de áudio
+- Classificação: MOLECULE
+
+2.6. UTILITÁRIOS
+---------------
+
+ErrorBoundary.tsx
+- Boundary de erro React
+- Classificação: UTILITY (não é componente visual)
+
+ProtectedRoute.tsx
+- Rota protegida
+- Classificação: UTILITY (não é componente visual)
+
+================================================================================
+3. PÁGINAS (PAGES)
+================================================================================
+
+Localização: frontend/src/pages/
+
+3.1. PÁGINAS DE AUTENTICAÇÃO
+---------------------------
+
+LoginPage.tsx (em features/auth/)
+- Página de login
+- Formulário completo
+
+RegisterPage.tsx (em features/auth/)
+- Página de registro
+- Formulário completo
+
+3.2. PÁGINAS DO ALUNO
+--------------------
+
+HomePage.tsx
+- Página inicial
+- Alterna entre Dashboard e Painel
+- Usa HomeDashboardView e HomePanelView
+
+StudentPage.tsx
+- Página do aluno (deprecated?)
+
+CourseDetailPage.tsx
+- Detalhes do curso
+- Lista de capítulos
+
+3.3. PÁGINAS DO PROFESSOR
+------------------------
+
+TeacherPage.tsx
+- Dashboard do professor
+- Views: overview, courses, groups
+
+TeacherDisciplinesPage.tsx
+- Lista de disciplinas
+
+DisciplineDetailPage.tsx
+- Detalhes da disciplina
+- Lista de cursos
+
+TeacherCourseDetailPage.tsx
+- Detalhes do curso (visão professor)
+
+ChapterDetailPage.tsx
+- Detalhes do capítulo
+
+TeacherCoursesPage.tsx
+- Lista de cursos do professor
+
+TeacherGroupsPage.tsx
+- Lista de grupos/turmas
+
+TeacherOverviewPage.tsx
+- Visão geral do professor
+
+3.4. PÁGINAS DO ADMIN
+--------------------
+
+AdminPage.tsx
+- Dashboard do admin
+
+CoursesManagementPage.tsx
+- Gerenciamento de cursos
+
+DisciplinesManagementPage.tsx
+- Gerenciamento de disciplinas
+
+ContentManagementPage.tsx
+- Gerenciamento de conteúdo
+
+ContentChaptersPage.tsx
+- Lista de capítulos
+
+ContentChapterEditPage.tsx
+- Edição de capítulo
+
+IntelligentContentReviewPage.tsx
+- Revisão de conteúdo processado
+
+SiteAdministrationPage.tsx
+- Administração do site
+- Sections: users, groups, classes, utilities
+
+3.5. FEATURES (PAGES)
+--------------------
+
+Localização: frontend/src/features/
+
+auth/
+- LoginPage.tsx
+- RegisterPage.tsx
+
+content/
+- ContentReaderPage.tsx
+- SocraticMode.tsx
+
+student/
+- StudentDashboard.tsx
+
+teacher/
+- TeacherDashboard.tsx
+- TeacherDashboardPage.tsx
+
+================================================================================
+4. PROPOSTA DE REORGANIZAÇÃO - ATOMIC DESIGN
+================================================================================
+
+4.1. ESTRUTURA PROPOSTA
+---------------------
+
+src/
+├── components/
+│   ├── atoms/
+│   │   ├── Button/
+│   │   │   ├── Button.tsx
+│   │   │   └── Button.test.tsx
+│   │   ├── Input/
+│   │   ├── Select/
+│   │   ├── Checkbox/
+│   │   ├── LoadingSpinner/
+│   │   ├── Alert/
+│   │   ├── Card/
+│   │   ├── RatingStars/
+│   │   └── index.ts
+│   ├── molecules/
+│   │   ├── Modal/
+│   │   ├── ConfirmDialog/
+│   │   ├── FileUpload/
+│   │   ├── ImageUpload/
+│   │   ├── Breadcrumb/
+│   │   ├── ChatMessage/
+│   │   ├── ActionMenu/
+│   │   ├── ViewToggle/
+│   │   ├── PDFViewer/
+│   │   ├── VideoPlayer/
+│   │   ├── AudioPlayer/
+│   │   └── index.ts
+│   ├── organisms/
+│   │   ├── Topbar/
+│   │   ├── Sidebar/
+│   │   ├── HomeDashboardView/
+│   │   ├── HomePanelView/
+│   │   ├── SocraticChatHistory/
+│   │   ├── AccountButton/
+│   │   ├── CreateCourseModal/
+│   │   ├── EditCourseModal/
+│   │   ├── ManageDisciplineCoursesModal/
+│   │   └── index.ts
+│   └── templates/
+│       ├── DashboardLayout/
+│       ├── AuthLayout/
+│       └── index.ts
+├── pages/
+│   ├── auth/
+│   ├── student/
+│   ├── teacher/
+│   ├── admin/
+│   └── shared/
+├── features/
+│   ├── auth/
+│   ├── content/
+│   ├── courses/
+│   ├── socratic-chat/
+│   └── ...
+├── hooks/
+├── services/
+├── context/
+├── utils/
+├── types/
+└── routes/
+
+4.2. MAPEAMENTO DE COMPONENTES ATUAIS
+------------------------------------
+
+ATOMS:
+- Button.tsx → atoms/Button/Button.tsx
+- Input.tsx → atoms/Input/Input.tsx
+- Select.tsx → atoms/Select/Select.tsx
+- Checkbox.tsx → atoms/Checkbox/Checkbox.tsx
+- LoadingSpinner.tsx → atoms/LoadingSpinner/LoadingSpinner.tsx
+- Alert.tsx → atoms/Alert/Alert.tsx
+- Card.tsx → atoms/Card/Card.tsx
+- RatingStars.tsx → atoms/RatingStars/RatingStars.tsx
+
+MOLECULES:
+- Modal.tsx → molecules/Modal/Modal.tsx
+- ConfirmDialog.tsx → molecules/ConfirmDialog/ConfirmDialog.tsx
+- FileUpload.tsx → molecules/FileUpload/FileUpload.tsx
+- ImageUpload.tsx → molecules/ImageUpload/ImageUpload.tsx
+- Breadcrumb.tsx → molecules/Breadcrumb/Breadcrumb.tsx
+- ChatMessage.tsx → molecules/ChatMessage/ChatMessage.tsx
+- ActionMenu.tsx → molecules/ActionMenu/ActionMenu.tsx
+- ViewToggle.tsx → molecules/ViewToggle/ViewToggle.tsx
+- PDFViewer.tsx → molecules/PDFViewer/PDFViewer.tsx
+- VideoPlayer.tsx → molecules/VideoPlayer/VideoPlayer.tsx
+- AudioPlayer.tsx → molecules/AudioPlayer/AudioPlayer.tsx
+- CreateDisciplineModal.tsx → molecules/CreateDisciplineModal/CreateDisciplineModal.tsx
+- CreateModuleModal.tsx → molecules/CreateModuleModal/CreateModuleModal.tsx
+- CreateChapterModal.tsx → molecules/CreateChapterModal/CreateChapterModal.tsx
+- EditChapterModal.tsx → molecules/EditChapterModal/EditChapterModal.tsx
+- EditModuleModal.tsx → molecules/EditModuleModal/EditModuleModal.tsx
+
+ORGANISMS:
+- Topbar.tsx → organisms/Topbar/Topbar.tsx
+- Sidebar.tsx → organisms/Sidebar/Sidebar.tsx
+- HomeDashboardView.tsx → organisms/HomeDashboardView/HomeDashboardView.tsx
+- HomePanelView.tsx → organisms/HomePanelView/HomePanelView.tsx
+- SocraticChatHistory.tsx → organisms/SocraticChatHistory/SocraticChatHistory.tsx
+- AccountButton.tsx → organisms/AccountButton/AccountButton.tsx
+- CreateCourseModal.tsx → organisms/CreateCourseModal/CreateCourseModal.tsx
+- EditCourseModal.tsx → organisms/EditCourseModal/EditCourseModal.tsx
+- ManageDisciplineCoursesModal.tsx → organisms/ManageDisciplineCoursesModal/ManageDisciplineCoursesModal.tsx
+
+TEMPLATES:
+- Criar DashboardLayout (usa Topbar + Sidebar)
+- Criar AuthLayout (layout para login/register)
+
+UTILITIES:
+- ErrorBoundary.tsx → utils/ErrorBoundary.tsx
+- ProtectedRoute.tsx → routes/ProtectedRoute.tsx
+
+4.3. COMPONENTES DUPLICADOS
+---------------------------
+
+Navbar.tsx:
+- DEPRECATED
+- Substituído por Topbar
+- Ação: Remover ou manter apenas para compatibilidade
+
+4.4. COMPONENTES FALTANTES
+-------------------------
+
+ATOMS que poderiam ser criados:
+- Badge (para status, tags)
+- Avatar (para usuários)
+- Icon (wrapper para ícones SVG)
+- Separator (divisor visual)
+- Skeleton (loading states)
+
+MOLECULES que poderiam ser criados:
+- SearchBar (busca com filtros)
+- Pagination (paginação)
+- DataTable (tabela de dados)
+- FormField (Input + Label + Error)
+- Dropdown (menu dropdown reutilizável)
+
+ORGANISMS que poderiam ser criados:
+- CourseCard (card de curso reutilizável)
+- ChapterList (lista de capítulos)
+- ChatInterface (interface completa de chat)
+- ContentEditor (editor de conteúdo)
+
+================================================================================
+5. REGRAS DE COMPONENTIZAÇÃO
+================================================================================
+
+5.1. PRINCÍPIOS
+--------------
+
+- Um componente por arquivo
+- Props tipadas com TypeScript
+- Export default quando possível
+- Barrels (index.ts) para exports organizados
+- Testes junto com componente (quando aplicável)
+
+5.2. NOMENCLATURA
+----------------
+
+- PascalCase para componentes
+- camelCase para props e variáveis
+- Nomes descritivos e específicos
+- Evitar abreviações desnecessárias
+
+5.3. ESTRUTURA DE PASTA
+----------------------
+
+Cada componente em sua própria pasta:
+ComponentName/
+├── ComponentName.tsx
+├── ComponentName.test.tsx
+├── ComponentName.stories.tsx (opcional, Storybook)
+└── index.ts
+
+5.4. DEPENDÊNCIAS
+-----------------
+
+- Atoms não dependem de outros componentes
+- Molecules podem usar Atoms
+- Organisms podem usar Molecules e Atoms
+- Templates podem usar Organisms, Molecules e Atoms
+- Pages podem usar tudo
+
+================================================================================
+6. MELHORIAS RECOMENDADAS
+================================================================================
+
+6.1. IMEDIATAS
+-------------
+
+1. Reorganizar componentes em estrutura Atomic Design
+2. Criar barrels (index.ts) para exports
+3. Remover componentes deprecated (Navbar)
+4. Consolidar componentes similares
+
+6.2. MÉDIO PRAZO
+---------------
+
+1. Criar Storybook para documentação de componentes
+2. Adicionar testes para todos os componentes
+3. Criar design system documentado
+4. Implementar variantes consistentes
+
+6.3. LONGO PRAZO
+---------------
+
+1. Migrar para biblioteca de componentes (ex: shadcn/ui)
+2. Implementar theming avançado
+3. Criar componentes acessíveis (WCAG 2.1 AA)
+4. Otimizar bundle size (tree-shaking)
+
+================================================================================
+7. EXEMPLO DE REFATORAÇÃO
+================================================================================
+
+ANTES:
+components/
+├── Button.tsx
+├── Input.tsx
+├── Modal.tsx
+└── ...
+
+DEPOIS:
+components/
+├── atoms/
+│   ├── Button/
+│   │   ├── Button.tsx
+│   │   └── index.ts
+│   └── Input/
+│       ├── Input.tsx
+│       └── index.ts
+├── molecules/
+│   └── Modal/
+│       ├── Modal.tsx
+│       └── index.ts
+└── index.ts (barrel principal)
+
+USO:
+// Antes
+import { Button } from '@/components/Button'
+import { Modal } from '@/components/Modal'
+
+// Depois
+import { Button } from '@/components/atoms'
+import { Modal } from '@/components/molecules'
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+

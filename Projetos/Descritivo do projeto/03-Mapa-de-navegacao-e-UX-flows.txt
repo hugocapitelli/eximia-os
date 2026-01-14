@@ -1,0 +1,442 @@
+================================================================================
+MAPA DE NAVEGAÇÃO E UX FLOWS - HARVEN.AI
+================================================================================
+
+Fonte: frontend/src/routes/index.tsx, frontend/src/components/Sidebar.tsx
+
+================================================================================
+1. ESTRUTURA DE NAVEGAÇÃO GERAL
+================================================================================
+
+LAYOUT PRINCIPAL:
+- Sidebar (esquerda): Navegação principal, logo, menu por role
+- Topbar (topo): Logo clicável, notificações, tema, menu do usuário
+- Main Content (centro): Conteúdo da página atual
+
+COMPONENTES DE NAVEGAÇÃO:
+- Sidebar: frontend/src/components/Sidebar.tsx
+- Topbar: frontend/src/components/Topbar.tsx
+- ProtectedRoute: frontend/src/components/ProtectedRoute.tsx
+
+================================================================================
+2. ROTAS PÚBLICAS (SEM AUTENTICAÇÃO)
+================================================================================
+
+/login
+- Página de login
+- Componente: LoginPage (frontend/src/features/auth/LoginPage.tsx)
+- Redireciona se já autenticado
+- Suporta login com RA/senha e Microsoft OAuth (parcial)
+- Query params: ?redirect=<path> (redireciona após login)
+
+/register
+- Página de registro
+- Componente: RegisterPage (frontend/src/features/auth/RegisterPage.tsx)
+- Redireciona se já autenticado
+
+/
+- Rota raiz
+- Redireciona para /inicio se autenticado, /login se não
+
+================================================================================
+3. ROTAS DO ALUNO (STUDENT)
+================================================================================
+
+/inicio
+- Página inicial com duas visualizações alternáveis:
+  - Dashboard: cards com contadores e listas rápidas
+  - Painel: grid de cards grandes de cursos com imagem de capa
+- Componente: HomePage (frontend/src/pages/HomePage.tsx)
+- View toggle: alterna entre 'dashboard' e 'panel'
+- Preferência salva por role no localStorage
+
+/dashboard
+- Dashboard do aluno (mantido para compatibilidade)
+- Componente: StudentDashboard (frontend/src/features/student/StudentDashboard.tsx)
+- Redireciona para /inicio (deprecated)
+
+/content/:courseId/:chapterId
+- Leitor de conteúdo (sistema antigo, vinculado a módulos)
+- Componente: ContentReaderPage (frontend/src/features/content/ContentReaderPage.tsx)
+- Modos: leitura e socrático
+
+/content/flexible/:chapterId
+- Leitor de conteúdo (sistema novo, capítulos flexíveis)
+- Componente: ContentReaderPage com isFlexibleChapter={true}
+- Modos: leitura e socrático
+
+/courses/:courseId
+/courses/:courseId/content
+- Detalhes do curso
+- Componente: CourseDetailPage (frontend/src/pages/CourseDetailPage.tsx)
+- Lista capítulos e permite acesso
+
+MENU SIDEBAR (ALUNO):
+- Início (/inicio)
+- Portal do Aluno (dropdown):
+  - Portal Acadêmico (JACAD) - link externo
+  - AVA Harven (Moodle) - link externo com SSO
+
+================================================================================
+4. ROTAS DO PROFESSOR (TEACHER)
+================================================================================
+
+/inicio
+- Mesma página do aluno, mas com conteúdo de professor
+- Visualiza cursos das disciplinas atribuídas
+
+/teacher
+- Dashboard do professor
+- Componente: TeacherPage (frontend/src/pages/TeacherPage.tsx)
+- Query params: ?view=courses | ?view=groups
+- Views: overview, courses, groups
+
+/teacher/disciplines
+- Lista de disciplinas atribuídas
+- Componente: TeacherDisciplinesPage (frontend/src/pages/teacher/TeacherDisciplinesPage.tsx)
+- Mostra apenas se professor tem disciplinas atribuídas
+
+/teacher/disciplines/:disciplineId
+- Detalhes da disciplina
+- Componente: DisciplineDetailPage (frontend/src/pages/teacher/DisciplineDetailPage.tsx)
+- Lista cursos da disciplina
+
+/teacher/disciplines/:disciplineId/courses/:courseId
+- Detalhes do curso (visão professor)
+- Componente: TeacherCourseDetailPage (frontend/src/pages/teacher/CourseDetailPage.tsx)
+- Gerencia conteúdo e visualiza conversas
+
+/teacher/disciplines/:disciplineId/courses/:courseId/chapters/:chapterId
+- Detalhes do capítulo
+- Componente: ChapterDetailPage (frontend/src/pages/teacher/ChapterDetailPage.tsx)
+
+/teacher/courses/:courseId/content
+- Gerenciamento de conteúdo do curso
+- Componente: ContentManagementPage (frontend/src/pages/admin/ContentManagementPage.tsx)
+- Upload, processamento, listagem de capítulos
+
+/teacher/content/:chapterId
+- Edição de capítulo
+- Componente: ContentChapterEditPage (frontend/src/pages/admin/ContentChapterEditPage.tsx)
+
+/teacher/content/import/:contentId
+- Revisão de conteúdo processado
+- Componente: IntelligentContentReviewPage (frontend/src/pages/admin/IntelligentContentReviewPage.tsx)
+- Aprovação, reprocessamento, edição de particionamento
+
+MENU SIDEBAR (PROFESSOR):
+- Início (/inicio)
+- Meus Cursos (/teacher?view=courses) - apenas se tem disciplinas
+- Minhas Turmas (/teacher?view=groups) - apenas se tem disciplinas
+
+================================================================================
+5. ROTAS DO ADMINISTRADOR (ADMIN)
+================================================================================
+
+/inicio
+- Mesma página, mas com acesso total
+
+/admin
+- Página inicial do admin
+- Componente: AdminPage (frontend/src/pages/AdminPage.tsx)
+- Dashboard com estatísticas
+
+/admin/courses
+- Gerenciamento de cursos
+- Componente: CoursesManagementPage (frontend/src/pages/admin/CoursesManagementPage.tsx)
+- CRUD completo de cursos
+
+/admin/courses/:courseId/content
+- Gerenciamento de conteúdo do curso
+- Componente: ContentManagementPage (mesmo do professor)
+
+/admin/disciplines
+- Gerenciamento de disciplinas
+- Componente: DisciplinesManagementPage (frontend/src/pages/admin/DisciplinesManagementPage.tsx)
+- CRUD de disciplinas, atribuição de professores
+
+/admin/system
+- Redireciona para /admin/system/users
+
+/admin/system/:section
+- Administração do site
+- Componente: SiteAdministrationPage (frontend/src/pages/admin/SiteAdministrationPage.tsx)
+- Sections: users, groups, classes, utilities
+- Gerenciamento de usuários, grupos, turmas, utilitários
+
+/admin/content
+- Lista de capítulos (sistema novo)
+- Componente: ContentChaptersPage (frontend/src/pages/admin/ContentChaptersPage.tsx)
+
+/admin/content/:chapterId
+- Edição de capítulo
+- Componente: ContentChapterEditPage (mesmo do professor)
+
+/admin/content/import/:contentId
+- Revisão de conteúdo processado
+- Componente: IntelligentContentReviewPage (mesmo do professor)
+
+MENU SIDEBAR (ADMIN):
+- Início (/inicio)
+- Gerenciar Cursos (/admin/courses)
+- Disciplinas (/admin/disciplines)
+- Usuários (/admin/system/users)
+
+MENU TOPBAR (ADMIN):
+- Ícone de administração (link para /admin/system/users)
+- Toggle de tema
+- Menu do usuário:
+  - Meu Perfil (/profile - não implementado)
+  - Painel Admin (/admin)
+  - Gerenciar Cursos (/admin/courses)
+  - Sair
+
+================================================================================
+6. FLUXOS UX PRINCIPAIS
+================================================================================
+
+6.1. FLUXO DE LOGIN
+-------------------
+
+1. Usuário acessa /login
+2. Preenche RA (ou email) e senha
+3. Clica em "Entrar"
+4. Sistema valida credenciais
+5. Gera JWT token
+6. Armazena token no localStorage
+7. Redireciona baseado em role:
+   - Admin → /admin/courses
+   - Teacher → /teacher
+   - Student → /dashboard
+8. Ou redireciona para ?redirect=<path> se presente
+
+ALTERNATIVA: Microsoft OAuth (parcial, não funcional)
+- Botão "Entrar com Microsoft"
+- Redireciona para Microsoft OAuth
+- Retorna com token
+- TODO: Implementar callback
+
+6.2. FLUXO DO ALUNO: LEITURA E CHAT SOCRÁTICO
+--------------------------------------------
+
+1. Aluno acessa /inicio
+2. Visualiza cursos disponíveis (dashboard ou painel)
+3. Clica em curso
+4. Acessa /courses/:courseId
+5. Visualiza lista de capítulos
+6. Clica em capítulo
+7. Acessa /content/flexible/:chapterId
+8. Visualiza conteúdo (modo leitura)
+9. Alterna para modo socrático
+10. Sistema exibe 3 perguntas
+11. Aluno seleciona uma pergunta
+12. Sistema cria sessão de chat (3 interações restantes)
+13. Aluno envia primeira mensagem
+14. IA responde com pergunta provocativa
+15. Interações restantes: 2
+16. Aluno envia segunda mensagem
+17. IA responde
+18. Interações restantes: 1
+19. Aluno envia terceira mensagem
+20. IA responde
+21. Interações restantes: 0
+22. Sessão finaliza automaticamente
+23. Histórico é exportado para Moodle (se configurado)
+24. Aluno pode ver histórico em /inicio
+
+6.3. FLUXO DO PROFESSOR: UPLOAD E PROCESSAMENTO
+----------------------------------------------
+
+1. Professor acessa /teacher/disciplines
+2. Clica em disciplina
+3. Acessa /teacher/disciplines/:disciplineId
+4. Visualiza cursos da disciplina
+5. Clica em curso
+6. Acessa /teacher/disciplines/:disciplineId/courses/:courseId
+7. Clica em "Gerenciar Conteúdo"
+8. Acessa /teacher/courses/:courseId/content
+9. Clica em "Importar Conteúdo"
+10. Seleciona modo:
+    - Manual: cola JSON estruturado
+    - Inteligente: upload de PDF/TXT
+11. Se inteligente:
+    - Seleciona arquivo
+    - Define processamento (todo ou intervalo)
+    - Envia
+    - Sistema processa em background
+    - Status: "processing"
+12. Professor aguarda processamento
+13. Status muda para "completed"
+14. Professor clica em "Revisar"
+15. Acessa /teacher/content/import/:contentId
+16. Visualiza capítulos gerados
+17. Pode:
+    - Aprovar estrutura
+    - Reprocessar (todo ou intervalo)
+    - Editar particionamento
+    - Ver perguntas geradas
+18. Após aprovação, capítulos ficam disponíveis para alunos
+
+6.4. FLUXO DO PROFESSOR: VISUALIZAR CONVERSAS
+--------------------------------------------
+
+1. Professor acessa curso
+2. Acessa /teacher/disciplines/:disciplineId/courses/:courseId
+3. Visualiza lista de alunos
+4. Clica em aluno
+5. Visualiza conversas do aluno
+6. Clica em conversa
+7. Visualiza histórico completo
+8. Pode exportar para Moodle
+9. Sistema exporta via API Moodle
+10. Confirma exportação
+
+6.5. FLUXO DO ADMIN: GERENCIAR DISCIPLINAS E PROFESSORES
+--------------------------------------------------------
+
+1. Admin acessa /admin/disciplines
+2. Clica em "Criar Disciplina"
+3. Preenche nome
+4. Salva
+5. Disciplina criada
+6. Clica em disciplina
+7. Acessa detalhes
+8. Clica em "Atribuir Professores"
+9. Seleciona professores
+10. Define role (owner/editor)
+11. Salva
+12. Professores recebem acesso
+
+6.6. FLUXO DO ADMIN: ATRIBUIR CURSOS A GRUPOS
+--------------------------------------------
+
+1. Admin acessa /admin/system/groups
+2. Visualiza grupos
+3. Clica em grupo
+4. Visualiza cursos disponíveis
+5. Seleciona cursos
+6. Atribui ao grupo
+7. Alunos do grupo veem cursos
+
+================================================================================
+7. COMPONENTES DE NAVEGAÇÃO
+================================================================================
+
+7.1. SIDEBAR
+-----------
+
+Localização: frontend/src/components/Sidebar.tsx
+
+Características:
+- Largura fixa: 256px (w-64)
+- Fundo escuro: #0b0b0b
+- Logo no topo
+- Menu dinâmico baseado em role
+- Itens ativos destacados em #a6976b
+- Hover effects com transição
+
+Itens por role:
+- Student: Início, Portal do Aluno (dropdown)
+- Teacher: Início, Meus Cursos, Minhas Turmas (se tem disciplinas)
+- Admin: Início, Gerenciar Cursos, Disciplinas, Usuários
+
+7.2. TOPBAR
+----------
+
+Localização: frontend/src/components/Topbar.tsx
+
+Características:
+- Fundo: #1a2d1c
+- Logo clicável (volta para /dashboard)
+- Notificações (ícone, não funcional)
+- Toggle de tema (claro/escuro)
+- Menu do usuário (dropdown):
+  - Informações do usuário
+  - Meu Perfil (não implementado)
+  - Painel Admin (se admin)
+  - Gerenciar Cursos (se admin)
+  - Sair
+
+7.3. PROTECTED ROUTE
+-------------------
+
+Localização: frontend/src/components/ProtectedRoute.tsx
+
+Funcionalidade:
+- Verifica autenticação
+- Verifica role (se requiredRole especificado)
+- Redireciona para /login se não autenticado
+- Redireciona baseado em role se não tem permissão
+- Admin tem bypass (pode acessar qualquer rota)
+
+================================================================================
+8. ESTADOS E TRANSITIONS
+================================================================================
+
+8.1. LOADING STATES
+------------------
+
+- LoadingSpinner durante carregamento
+- Skeleton screens em algumas listagens
+- Estados de loading em botões (isLoading prop)
+
+8.2. ERROR STATES
+----------------
+
+- Alert component para erros
+- ErrorBoundary para erros não tratados
+- Mensagens de erro específicas por contexto
+
+8.3. EMPTY STATES
+----------------
+
+- Empty states quando não há dados
+- Mensagens contextuais
+- CTAs para ações (ex: "Criar primeira disciplina")
+
+8.4. SUCCESS STATES
+------------------
+
+- Mensagens de sucesso temporárias
+- Confirmações de ações
+- Feedback visual (ex: badge de status)
+
+================================================================================
+9. RESPONSIVIDADE
+================================================================================
+
+BREAKPOINTS (Tailwind):
+- sm: 640px
+- md: 768px
+- lg: 1024px
+- xl: 1280px
+
+ADAPTAÇÕES:
+- Sidebar: fixa em desktop, pode colapsar em mobile
+- Topbar: adapta tamanho de texto
+- Cards: grid responsivo
+- Tabelas: scroll horizontal em mobile
+
+================================================================================
+10. ACESSIBILIDADE
+================================================================================
+
+- Navegação por teclado
+- ARIA labels
+- Focus visível
+- Contraste WCAG 2.1 AA
+- Semântica HTML adequada
+- Roles apropriados
+
+================================================================================
+11. PREFERÊNCIAS DO USUÁRIO
+================================================================================
+
+- Tema (claro/escuro): salvo no localStorage
+- View mode (dashboard/panel): salvo por role no localStorage
+- Fonte: frontend/src/utils/viewPreferences.ts
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+

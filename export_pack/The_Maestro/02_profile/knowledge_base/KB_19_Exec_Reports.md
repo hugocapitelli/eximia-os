@@ -1,0 +1,68 @@
+# KB_19: Executive Report Standards
+
+> **Category**: BRAND  
+> **Purpose**: Standards for C-level communication
+
+---
+
+## 🎯 Executive Communication Principles
+
+### 1. BLUF Always
+Bottom Line Up Front. Executives are busy.
+
+### 2. One Page Maximum
+If it can't fit on one page, summarize.
+
+### 3. Quantify
+Numbers over adjectives. "15% increase" not "significant growth."
+
+### 4. Actionable
+End with clear next steps and owners.
+
+---
+
+## 📋 Report Templates
+
+### Executive Summary
+```markdown
+## Summary
+[One paragraph with key conclusion]
+
+## Key Metrics
+| Metric | Current | Target | Status |
+|:---|:---:|:---:|:---:|
+| [X] | [Y] | [Z] | 🟢/🟡/🔴 |
+
+## Recommendation
+[Clear action]
+
+## Next Steps
+1. [Action] — [Owner] — [Date]
+```
+
+### Decision Memo
+```markdown
+## Decision Required
+[One sentence]
+
+## Options
+| Option | Pros | Cons | Risk |
+|:---|:---|:---|:---:|
+| A | ... | ... | Low |
+| B | ... | ... | Medium |
+
+## Recommendation
+Option [X] because [reason].
+
+## Approval
+[ ] Approved [ ] Rejected [ ] More Info
+```
+
+---
+
+## 📊 Visualization Guidelines
+
+- Use tables for comparisons
+- Use bullets for lists
+- Use status indicators (🟢🟡🔴)
+- Avoid dense paragraphs

@@ -1,0 +1,215 @@
+# Fallback Chains — Maestro Recovery Protocol
+# Chains de recuperação quando um agente falha
+# Mantido por: The_Maestro
+
+version: "1.0.0"
+last_updated: "2026-01-08"
+
+# ============================================================================
+# INSTRUÇÕES
+# ============================================================================
+# Quando um agente principal falha ou está indisponível, o Maestro
+# deve seguir estas chains de fallback para garantir continuidade.
+#
+# Cada chain define:
+#   - primary: O agente principal para a tarefa
+#   - fallbacks: Lista ordenada de agentes alternativos
+#   - degradation: O que se perde com cada fallback
+#   - action_on_complete_failure: O que fazer se todos falharem
+# ============================================================================
+
+# ============================================================================
+# FALLBACK CHAINS POR DOMÍNIO
+# ============================================================================
+
+chains:
+
+  # === LEGAL DOMAIN ===
+  legal:
+    primary: the_clo
+    fallbacks:
+      - agent: the_veritas
+        degradation: "Sem análise jurídica especializada, apenas pesquisa factual"
+        capabilities_retained: ["fact_finding", "regulation_lookup"]
+        capabilities_lost: ["legal_opinion", "risk_assessment", "contract_drafting"]
+      
+      - agent: the_ceo
+        degradation: "Apenas triagem básica, sem qualquer análise legal"
+        capabilities_retained: ["task_delegation", "basic_triage"]
+        capabilities_lost: ["all_legal_functions"]
+    
+    action_on_complete_failure:
+      response: |
+        ⚠️ **Limitação Detectada**
+        
+        Não consigo fornecer análise legal neste momento. 
+        Para questões jurídicas, recomendo consultar um advogado qualificado.
+        
+        Posso ajudar com:
+        - Pesquisa factual sobre leis e regulamentos
+        - Perguntas gerais sobre processos
+      escalation: "flag_for_human_review"
+
+  # === FINANCE DOMAIN ===
+  finance:
+    primary: the_cfo
+    fallbacks:
+      - agent: cfo_agent
+        degradation: "Versão Z Squad com token budget menor (8K vs full)"
+        capabilities_retained: ["dcf", "comparables", "basic_modeling"]
+        capabilities_lost: ["complex_modeling", "extended_context"]
+      
+      - agent: the_veritas
+        degradation: "Apenas pesquisa de dados financeiros, sem modelagem"
+        capabilities_retained: ["market_data", "benchmark_lookup"]
+        capabilities_lost: ["valuation", "financial_modeling", "strategic_advice"]
+      
+      - agent: business_modeler
+        degradation: "Business model canvas apenas, sem análise financeira profunda"
+        capabilities_retained: ["business_model_canvas", "revenue_streams"]
+        capabilities_lost: ["dcf", "investor_relations"]
+    
+    action_on_complete_failure:
+      response: |
+        ⚠️ **Limitação Detectada**
+        
+        Análise financeira completa não disponível. 
+        Posso fornecer pesquisa de mercado e dados públicos.
+      escalation: "suggest_external_cfo"
+
+  # === MARKETING DOMAIN ===
+  marketing:
+    primary: the_cmo
+    fallbacks:
+      - agent: the_veritas
+        degradation: "Apenas pesquisa de mercado, sem estratégia de marketing"
+        capabilities_retained: ["market_research", "competitor_analysis"]
+        capabilities_lost: ["brand_strategy", "campaign_design", "copy"]
+      
+      - agent: x10_icp_sniper
+        degradation: "Apenas ICP, sem estratégia completa"
+        capabilities_retained: ["icp_definition", "persona_building"]
+        capabilities_lost: ["gtm", "brand", "content_strategy"]
+      
+      - agent: x11_narrative_architect
+        degradation: "Apenas narrativa, sem métricas de growth"
+        capabilities_retained: ["storytelling", "messaging"]
+        capabilities_lost: ["growth_metrics", "campaign_tracking"]
+    
+    action_on_complete_failure:
+      response: |
+        Posso ajudar com pesquisa de mercado e definição de público-alvo,
+        mas estratégia de marketing completa requer o CMO.
+
+  # === RESEARCH DOMAIN ===
+  research:
+    primary: the_veritas
+    fallbacks:
+      - agent: researcher
+        degradation: "Versão X-Agent com menos protocolos anti-hallucination"
+        capabilities_retained: ["web_search", "data_synthesis"]
+        capabilities_lost: ["source_grading", "temporal_verification"]
+      
+      - agent: the_ceo
+        degradation: "Pesquisa básica via gatekeeping workflow"
+        capabilities_retained: ["basic_research_delegation"]
+        capabilities_lost: ["deep_research", "fact_verification"]
+    
+    action_on_complete_failure:
+      response: |
+        ⚠️ **Pesquisa Limitada**
+        
+        Sistemas de pesquisa indisponíveis. Qualquer informação factual
+        que eu fornecer deve ser verificada manualmente.
+      escalation: "mark_as_unverified"
+
+# ============================================================================
+# SUB-AGENT FALLBACKS
+# ============================================================================
+
+sub_agent_fallbacks:
+
+  # CLO Sub-agents
+  corporate_contracts:
+    fallback: the_clo
+    note: "CLO principal assume contratos societários"
+  
+  digital_compliance:
+    fallback: the_clo
+    note: "CLO principal assume LGPD/GDPR"
+  
+  tax_strategist:
+    fallback: the_cfo
+    note: "CFO pode cobrir aspectos fiscais básicos"
+  
+  # CMO Sub-agents
+  copywriting_engine:
+    fallback: x11_narrative_architect
+    note: "Narrative Architect pode gerar copy básica"
+  
+  brand_positioning:
+    fallback: the_cmo
+    note: "CMO principal assume branding"
+
+  performance_growth:
+    fallback: the_cmo
+    note: "CMO principal assume growth"
+
+# ============================================================================
+# CIRCUIT BREAKERS
+# ============================================================================
+
+circuit_breakers:
+  
+  max_fallback_depth: 3
+  description: "Após 3 fallbacks, não tente mais e retorne erro amigável"
+  
+  timeout_per_agent: 30
+  unit: "seconds"
+  description: "Tempo máximo de espera por resposta de cada agente"
+  
+  retry_policy:
+    max_retries: 2
+    backoff_seconds: 5
+    description: "Tentar 2x com 5s entre tentativas antes de ir para fallback"
+
+# ============================================================================
+# RECOVERY ACTIONS
+# ============================================================================
+
+recovery_actions:
+
+  partial_response:
+    enabled: true
+    description: "Retornar resposta parcial do que foi possível completar"
+    template: |
+      ## Resposta Parcial
+      
+      Consegui completar parte da sua solicitação:
+      
+      ### Completo ✅
+      [Partes que funcionaram]
+      
+      ### Pendente ⚠️
+      [Partes que não puderam ser completadas e por quê]
+
+  graceful_degradation:
+    enabled: true
+    description: "Oferecer alternativas quando funcionalidade principal indisponível"
+    template: |
+      A funcionalidade solicitada está temporariamente limitada.
+      
+      **O que posso fazer agora:**
+      - [Alternativa 1]
+      - [Alternativa 2]
+      
+      **O que requer espera:**
+      - [Funcionalidade indisponível]
+
+  human_escalation:
+    triggers:
+      - "legal_critical"
+      - "financial_material"
+      - "ethics_concern"
+    action: "notify_user"
+    message: "Esta questão requer revisão humana antes de prosseguir."

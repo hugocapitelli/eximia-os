@@ -1,0 +1,83 @@
+{
+    "metadata": {
+        "persona_name": "{Nome do Especialista}",
+        "persona_slug": "{slug}",
+        "version": "1.0",
+        "created_at": "YYYY-MM-DDTHH:MM:SSZ",
+        "last_updated": "YYYY-MM-DDTHH:MM:SSZ",
+        "completed_at": null
+    },
+    "current_state": {
+        "phase": 1,
+        "phase_name": "RESEARCH",
+        "status": "in_progress",
+        "step": "collecting_sources",
+        "step_progress": "0/50"
+    },
+    "phase_1_research": {
+        "status": "in_progress",
+        "total_sources": 0,
+        "total_data_size": "0KB",
+        "quality_score": null,
+        "coverage": {
+            "identity": "pending",
+            "cognition": "pending",
+            "voice": "pending",
+            "behavior": "pending",
+            "expertise": "pending",
+            "context": "pending"
+        }
+    },
+    "phase_2_etl": {
+        "status": "pending",
+        "quotes_extracted": 0,
+        "timeline_events": 0,
+        "entities_mapped": 0,
+        "voice_signature": "pending",
+        "quality_score": null
+    },
+    "phase_3_generation": {
+        "status": "pending",
+        "domain_detected": null,
+        "knowledge_bases_created": 0,
+        "system_prompt_chars": 0,
+        "system_prompt_limit": 8000,
+        "files_created": 0,
+        "antijailbreak_kb": false,
+        "turing_scenarios": 0,
+        "quality_score": null
+    },
+    "phase_4_validation": {
+        "status": "pending",
+        "turing_score": null,
+        "style_compliance": null,
+        "ethics_compliance": null,
+        "jailbreak_resistance": null,
+        "final_score": null,
+        "decision": null
+    },
+    "final_status": {
+        "clone_ready": false,
+        "turing_test_ready": false,
+        "deployment_ready": false,
+        "overall_quality": null,
+        "fidelity_level": null
+    },
+    "deliverables": {
+        "system_prompt": null,
+        "system_prompt_compact": null,
+        "main_file": null,
+        "knowledge_bases": null,
+        "tests": null,
+        "report": null
+    },
+    "history": [
+        {
+            "timestamp": "YYYY-MM-DDTHH:MM:SSZ",
+            "phase": 1,
+            "action": "started",
+            "agent": "C1_Hunter",
+            "notes": "Iniciando coleta de fontes"
+        }
+    ]
+}

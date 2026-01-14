@@ -1,0 +1,112 @@
+# Evolution Ticket — [AGENTE] [TICKET_ID]
+
+ticket_id: "[EVO-YYYY-NNN]"
+created_at: "[TIMESTAMP]"
+created_by: "Z5 Evolver"
+status: "PENDING_APPROVAL"  # PENDING_APPROVAL | APPROVED | IN_PROGRESS | COMPLETED | REJECTED
+
+---
+
+## 📋 Agente Afetado
+
+```yaml
+nome: "[NOME DO AGENTE]"
+versao_atual: "[X.Y.Z]"
+localizacao: "[Path para pasta do agente]"
+ultimo_deploy: "[DATA]"
+owner: "[Responsável]"
+```
+
+---
+
+## 🔍 Drift Detectado
+
+```yaml
+tipo: "[Context | Performance | Relevance | Knowledge]"
+severidade: "[CRITICAL | HIGH | MEDIUM | LOW]"
+detectado_em: "[DATA]"
+janela_analise: "[Período analisado]"
+```
+
+### Descrição
+[Descrição detalhada do problema ou oportunidade detectada]
+
+### Evidências
+1. [Evidência 1 - métrica, log, feedback]
+2. [Evidência 2]
+3. [Evidência 3]
+
+---
+
+## 🔬 Análise de Causa Raiz
+
+### Hipóteses
+1. [Hipótese 1]
+2. [Hipótese 2]
+
+### Causa Confirmada
+[Descrição da causa raiz confirmada]
+
+---
+
+## 💡 Proposta de Evolução
+
+```yaml
+tipo_evolucao: "[HOTFIX | MINOR | MAJOR | DEPRECATION]"
+versao_proposta: "[X.Y.Z]"
+esforco_estimado: "[Horas/Dias]"
+```
+
+### Mudanças Propostas
+
+| Módulo | Ação | Descrição | Prioridade |
+| :--- | :--- | :--- | :--- |
+| Z1 | [Ação] | [Descrição] | [P1/P2/P3] |
+| Z2 | [Ação] | [Descrição] | [P1/P2/P3] |
+| Z3 | [Ação] | [Descrição] | [P1/P2/P3] |
+| Z4 | [Ação] | [Descrição] | [P1/P2/P3] |
+
+### Riscos da Mudança
+1. [Risco 1] → Mitigação: [Como mitigar]
+2. [Risco 2] → Mitigação: [Como mitigar]
+
+### Riscos de NÃO Mudar
+1. [Consequência de deixar como está]
+
+---
+
+## ✅ Aprovação
+
+```yaml
+requer_aprovacao: true
+aprovadores:
+  - nome: "[Nome]"
+    role: "[CEO/Owner/Stakeholder]"
+    status: "[PENDING | APPROVED | REJECTED]"
+    data: "[DATA]"
+    comentarios: "[Comentários]"
+
+deadline_aprovacao: "[DATA]"
+```
+
+---
+
+## 📅 Timeline de Execução
+
+| Fase | Responsável | Data Início | Data Fim | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| Aprovação | CEO | [Data] | [Data] | ⏳/✅/❌ |
+| Update KB (Z2) | Z Squad | [Data] | [Data] | ⏳/✅ |
+| Update Prompt (Z3) | Z Squad | [Data] | [Data] | ⏳/✅ |
+| Validação (Z4) | Z Squad | [Data] | [Data] | ⏳/✅ |
+| Deploy | Z Squad | [Data] | [Data] | ⏳/✅ |
+| Monitoramento | Z5 | [Data] | [Data] | ⏳/✅ |
+
+---
+
+## 📝 Log de Atualizações
+
+| Data | Autor | Ação |
+| :--- | :--- | :--- |
+| [Data] | Z5 | Ticket criado |
+| [Data] | [Nome] | [Ação] |

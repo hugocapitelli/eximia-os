@@ -1,0 +1,449 @@
+================================================================================
+ARQUITETURA ATUAL, STACK E DEPENDÊNCIAS - HARVEN.AI
+================================================================================
+
+================================================================================
+1. ARQUITETURA GERAL
+================================================================================
+
+O HARVEN.AI segue uma arquitetura de 3 camadas:
+
+┌─────────────────────────────────────┐
+│      Frontend (React + TypeScript)  │
+│      Interface do usuário           │
+└──────────────┬──────────────────────┘
+               │ HTTP/JSON
+┌──────────────▼──────────────────────┐
+│      Backend API (FastAPI)           │
+│      Lógica de negócio               │
+└──────────────┬──────────────────────┘
+               │
+    ┌──────────┴──────────┐
+    │                     │
+┌───▼────┐         ┌──────▼──────┐
+│        │         │             │
+│Supabase│    ┌────▼─────┐       │
+│(DB)    │    │  OpenAI  │       │
+│        │    │   API    │       │
+└────────┘    └──────────┘       │
+                                  │
+                          ┌───────▼──────┐
+                          │   Moodle      │
+                          │   MS Graph    │
+                          └───────────────┘
+
+================================================================================
+2. FRONTEND
+================================================================================
+
+2.1. STACK
+---------
+
+Framework: React 18.2.0
+- Biblioteca UI declarativa
+- Hooks para gerenciamento de estado
+- Context API para estado global
+
+Linguagem: TypeScript 5.2.2
+- Tipagem estática
+- Melhor DX e detecção de erros
+
+Build Tool: Vite 5.0.8
+- Build rápido
+- HMR (Hot Module Replacement)
+- Otimização de produção
+
+Estilização: Tailwind CSS 3.3.6
+- Utility-first CSS
+- Design system consistente
+- Responsividade mobile-first
+
+Roteamento: React Router DOM 6.20.0
+- Client-side routing
+- Protected routes
+- Query params
+
+HTTP Client: Axios 1.6.2
+- Requisições HTTP
+- Interceptors
+- Error handling
+
+2.2. ESTRUTURA DE PASTAS
+-----------------------
+
+frontend/src/
+├── components/       # Componentes reutilizáveis
+├── features/        # Features organizadas por domínio
+│   ├── auth/       # Autenticação
+│   ├── content/    # Leitor de conteúdo
+│   ├── courses/    # Cursos
+│   ├── student/    # Dashboard do aluno
+│   ├── teacher/    # Dashboard do professor
+│   ├── landing/    # Página inicial
+│   └── visitor/    # Acesso visitante
+├── context/         # Context API (Auth, Theme, Mode)
+├── services/        # Serviços de API
+├── types/           # Tipos TypeScript
+├── utils/           # Utilitários
+├── routes/          # Configuração de rotas
+└── pages/           # Páginas (componentes de rota)
+
+2.3. DEPENDÊNCIAS PRINCIPAIS
+---------------------------
+
+Produção:
+- react: ^18.2.0
+- react-dom: ^18.2.0
+- react-router-dom: ^6.20.0
+- axios: ^1.6.2
+
+Desenvolvimento:
+- @types/react: ^18.2.43
+- @types/react-dom: ^18.2.17
+- typescript: ^5.2.2
+- vite: ^5.0.8
+- tailwindcss: ^3.3.6
+- eslint: ^8.55.0
+- vitest: ^1.0.4
+
+2.4. CONFIGURAÇÕES
+-----------------
+
+vite.config.ts:
+- Plugin React
+- Path aliases (@/ para src/)
+- Configuração de build
+
+tailwind.config.js:
+- Cores customizadas (Harven palette)
+- Breakpoints responsivos
+
+tsconfig.json:
+- Strict mode
+- Path aliases
+- Target ES2020
+
+================================================================================
+3. BACKEND
+================================================================================
+
+3.1. STACK
+---------
+
+Framework: FastAPI 0.104.1
+- Framework web assíncrono
+- Documentação automática (Swagger/OpenAPI)
+- Validação com Pydantic
+- Type hints
+
+Linguagem: Python 3.10+
+- Tipagem com type hints
+- Async/await para operações assíncronas
+
+Banco de Dados: Supabase (PostgreSQL)
+- Cliente: supabase-py 2.0.0
+- PostgreSQL gerenciado
+- PostgREST para API REST automática
+
+IA: LangChain 0.0.350 + OpenAI 1.3.0
+- Abstração para LLMs
+- Suporte OpenAI e Azure OpenAI
+- Chains e agents
+
+Autenticação: python-jose[cryptography] 3.3.0
+- JWT tokens
+- Validação e decodificação
+
+Segurança: bcrypt 5.0.0
+- Hash de senhas
+- Verificação segura
+
+Processamento: PyPDF2 3.0.1
+- Extração de texto de PDFs
+
+3.2. ESTRUTURA DE PASTAS
+-----------------------
+
+backend/
+├── app/
+│   ├── agents/          # Agentes de IA
+│   │   ├── ceo.py     # Orquestrador
+│   │   └── roles/      # Agentes especializados
+│   ├── api/
+│   │   └── routes/     # Rotas de integração
+│   ├── prompts/        # Prompts para IA
+│   ├── services/       # Serviços de negócio
+│   │   ├── ai_client.py
+│   │   ├── processing_pipeline.py
+│   │   ├── intelligent_processing.py
+│   │   ├── moodle_chat_exporter.py
+│   │   └── evaluation_harness.py
+│   └── utils/          # Utilitários
+├── routers/            # Rotas da API
+│   ├── auth.py
+│   ├── courses.py
+│   ├── content.py
+│   ├── socratic_chat.py
+│   ├── teacher.py
+│   ├── admin_users.py
+│   └── ...
+├── migrations/          # Migrations SQL
+├── tests/              # Testes
+├── main.py             # Entry point
+├── config.py           # Configurações
+├── models.py           # Modelos Pydantic
+├── schemas.py          # Schemas de validação
+├── auth.py             # Autenticação
+├── rbac.py             # Controle de acesso
+├── supabase_client.py  # Cliente Supabase
+└── supabase_db.py      # Camada de abstração DB
+
+3.3. DEPENDÊNCIAS PRINCIPAIS
+---------------------------
+
+Core:
+- fastapi==0.104.1
+- uvicorn[standard]==0.24.0
+- pydantic==2.5.0
+- pydantic-settings==2.1.0
+
+Banco de Dados:
+- supabase==2.0.0
+
+IA:
+- langchain==0.0.350
+- openai==1.3.0
+
+Autenticação/Segurança:
+- python-jose[cryptography]==3.3.0
+- bcrypt==5.0.0
+
+HTTP:
+- httpx==0.24.1
+
+Processamento:
+- PyPDF2==3.0.1
+- PyYAML==6.0.1
+
+Utilitários:
+- python-dotenv==1.0.0
+- python-multipart==0.0.6
+- email-validator==2.1.0
+
+Testes:
+- pytest==7.4.3
+- pytest-asyncio==0.21.1
+- pytest-cov==4.1.0
+
+3.4. CONFIGURAÇÕES
+-----------------
+
+config.py:
+- Settings com Pydantic Settings
+- Variáveis de ambiente
+- Secret key para JWT
+- Configurações de Supabase
+- Configurações de OpenAI
+
+Variáveis de ambiente necessárias:
+- SUPABASE_URL
+- SUPABASE_KEY
+- SECRET_KEY
+- ALGORITHM (JWT)
+- OPENAI_API_KEY (ou Azure OpenAI)
+- DATABASE_URL (opcional)
+
+================================================================================
+4. BANCO DE DADOS
+================================================================================
+
+4.1. SUPABASE
+------------
+
+Tipo: PostgreSQL gerenciado
+- Hosting: Supabase Cloud
+- API: PostgREST (REST automático)
+- Storage: Supabase Storage (para arquivos)
+
+Cliente:
+- supabase-py 2.0.0
+- Cliente Python oficial
+
+4.2. ESTRUTURA
+-------------
+
+Tabelas principais:
+- users: usuários do sistema
+- courses: cursos
+- disciplines: disciplinas
+- intelligent_contents: conteúdos importados
+- intelligent_chapters: capítulos gerados
+- content_chapters: capítulos manuais (sistema antigo)
+- chat_sessions: sessões de chat
+- chat_messages: mensagens de chat
+- chapter_socratic_questions: perguntas socráticas
+- chapter_processing: metadados de processamento
+- chapter_insights: understanding packs
+- discipline_teachers: atribuição professores-disciplinas
+- course_visibility_assignments: atribuição cursos-grupos
+- course_groups: grupos de cursos
+- academic_classes: turmas acadêmicas
+
+4.3. MIGRATIONS
+--------------
+
+Localização: backend/migrations/
+
+Formato: SQL scripts
+- Não usa Alembic ou similar
+- Execução manual no Supabase SQL Editor
+- Ordem de execução importante
+
+Principais migrations:
+- create_tables_supabase.sql: tabelas base
+- add_disciplines_and_rbac.sql: disciplinas e RBAC
+- add_intelligent_processing_schema.sql: processamento inteligente
+- add_chat_sessions.sql: chat socrático
+
+================================================================================
+5. INTEGRAÇÕES
+================================================================================
+
+5.1. OPENAI / AZURE OPENAI
+--------------------------
+
+Tipo: API REST
+- Endpoint configurável
+- Autenticação via API key
+- Modelos: GPT-4, GPT-3.5-turbo
+
+Uso:
+- Geração de perguntas socráticas
+- Processamento inteligente de conteúdo
+- Diálogos socráticos
+
+5.2. MOODLE
+----------
+
+Tipo: API REST
+- Endpoint configurável
+- Autenticação via token
+- Exportação de portfólios
+
+Uso:
+- Exportar conversas socráticas
+- Enfileiramento em caso de falha
+
+5.3. MICROSOFT OAUTH (PARCIAL)
+------------------------------
+
+Status: Não implementado
+- Endpoint existe mas não funcional
+- TODO no código
+
+================================================================================
+6. DEPLOYMENT
+================================================================================
+
+6.1. FRONTEND
+------------
+
+Build:
+- npm run build
+- Output: dist/
+- Static files
+
+Deployment:
+- Netlify (configurado em netlify.toml)
+- Ou qualquer static host
+
+6.2. BACKEND
+------------
+
+Servidor:
+- uvicorn (ASGI server)
+- Porta: 8000 (desenvolvimento)
+
+Deployment:
+- Não configurado
+- Pode usar: Railway, Render, AWS, etc.
+
+6.3. BANCO DE DADOS
+------------------
+
+Hosting: Supabase Cloud
+- Gerenciado
+- Backup automático
+- Escalável
+
+================================================================================
+7. DESENVOLVIMENTO
+================================================================================
+
+7.1. SETUP LOCAL
+---------------
+
+Frontend:
+1. cd frontend
+2. npm install
+3. npm run dev (porta 5173)
+
+Backend:
+1. cd backend
+2. python -m venv venv
+3. source venv/bin/activate (ou venv\Scripts\activate no Windows)
+4. pip install -r requirements.txt
+5. uvicorn main:app --reload (porta 8000)
+
+7.2. TESTES
+----------
+
+Frontend:
+- Vitest
+- npm test
+
+Backend:
+- Pytest
+- pytest tests/
+
+7.3. LINTING
+-----------
+
+Frontend:
+- ESLint
+- npm run lint
+
+Backend:
+- Sem linter configurado
+- Type hints como validação
+
+================================================================================
+8. LIMITAÇÕES E MELHORIAS
+================================================================================
+
+8.1. LIMITAÇÕES ATUAIS
+---------------------
+
+- Sem migrations automatizadas
+- Sem cache (Redis não implementado)
+- Sem rate limiting
+- Sem monitoramento estruturado
+- CORS apenas para localhost
+- Sem RLS (Row Level Security) documentado
+
+8.2. MELHORIAS RECOMENDADAS
+---------------------------
+
+- Migrations com Alembic
+- Cache com Redis
+- Rate limiting
+- Logging estruturado (JSON)
+- Monitoramento (Sentry, DataDog, etc.)
+- CORS configurável
+- RLS no Supabase
+- Testes automatizados (cobertura baixa)
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+

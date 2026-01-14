@@ -1,0 +1,192 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://thiagomanzi.ai/schemas/cfo/input/v4.0",
+  "title": "CFO Agent Input Schema",
+  "description": "Schema de validação para inputs do CFO Agent v4.0",
+  "type": "object",
+  "required": [
+    "tipo_analise",
+    "dados_baseline",
+    "contexto"
+  ],
+  "properties": {
+    "tipo_analise": {
+      "type": "string",
+      "enum": [
+        "M&A",
+        "CAPEX",
+        "Valuation",
+        "Debt_Decision",
+        "Forecast_Review",
+        "Business_Case"
+      ],
+      "description": "Tipo de análise financeira requisitada"
+    },
+    "dados_baseline": {
+      "type": "object",
+      "description": "Dados financeiros baseline da empresa/projeto",
+      "required": ["revenue", "ebitda"],
+      "properties": {
+        "revenue": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Revenue anual (R$ milhões)"
+        },
+        "ebitda": {
+          "type": "number",
+          "description": "EBITDA anual (R$ milhões, pode ser negativo)"
+        },
+        "growth_rate": {
+          "type": "number",
+          "minimum": -1.0,
+          "maximum": 5.0,
+          "description": "Taxa de crescimento anual (-100% a +500%)"
+        },
+        "churn_rate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1.0,
+          "description": "Taxa de churn anual (0-100%)"
+        },
+        "customer_base": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Número total de clientes"
+        },
+        "customer_concentration": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1.0,
+          "description": "Concentração top 3 clientes (0-100%)"
+        },
+        "debt": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Dívida total (R$ milhões)"
+        },
+        "cash": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Caixa disponível (R$ milhões)"
+        }
+      }
+    },
+    "contexto": {
+      "type": "object",
+      "description": "Contexto da decisão",
+      "required": ["deadline_dias", "valor_decisao"],
+      "properties": {
+        "deadline_dias": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 90,
+          "description": "Prazo para decisão (dias)"
+        },
+        "valor_decisao": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Valor da decisão (R$ milhões)"
+        },
+        "urgencia": {
+          "type": "string",
+          "enum": ["baixa", "media", "alta", "critica"],
+          "description": "Nível de urgência"
+        },
+        "reversibilidade": {
+          "type": "string",
+          "enum": ["reversivel", "parcialmente_reversivel", "irreversivel"],
+          "description": "Reversibilidade da decisão"
+        }
+      }
+    },
+    "dados_MA": {
+      "type": "object",
+      "description": "Dados específicos para análise M&A (obrigatório se tipo_analise=M&A)",
+      "properties": {
+        "preco_pedido": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Preço pedido pelo seller (R$ milhões)"
+        },
+        "sinergias_projetadas": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Sinergias projetadas management (R$ milhões/ano)"
+        },
+        "tipo_sinergias": {
+          "type": "string",
+          "enum": ["revenue", "cost", "mixed"],
+          "description": "Tipo predominante de sinergias"
+        },
+        "due_diligence_days": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Dias disponíveis para DD"
+        }
+      }
+    },
+    "dados_CAPEX": {
+      "type": "object",
+      "description": "Dados específicos para análise CAPEX (obrigatório se tipo_analise=CAPEX)",
+      "properties": {
+        "investimento_inicial": {
+          "type": "number",
+          "minimum": 0,
+          "description": "CAPEX inicial (R$ milhões)"
+        },
+        "cash_flows_projetados": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 10,
+          "description": "Cash flows projetados (R$ milhões/ano)"
+        },
+        "wacc": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 0.50,
+          "description": "WACC para desconto (1-50%)"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "solicitante": {
+          "type": "string",
+          "description": "Nome do solicitante (CEO, Board, etc)"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp do request (ISO 8601)"
+        },
+        "request_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9]{8}$",
+          "description": "Request ID único (8 chars alfanumérico)"
+        }
+      }
+    }
+  },
+  "if": {
+    "properties": {
+      "tipo_analise": {"const": "M&A"}
+    }
+  },
+  "then": {
+    "required": ["dados_MA"]
+  },
+  "else": {
+    "if": {
+      "properties": {
+        "tipo_analise": {"const": "CAPEX"}
+      }
+    },
+    "then": {
+      "required": ["dados_CAPEX"]
+    }
+  }
+}

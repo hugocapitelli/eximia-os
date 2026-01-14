@@ -1,0 +1,182 @@
+# C0 Validator — Validation Criteria
+# Critérios quantitativos para gate decision
+
+version: "1.0.0"
+
+# ============================================================================
+# SCORING SYSTEM
+# ============================================================================
+scoring:
+  
+  # Fontes de vídeo
+  video_sources:
+    podcasts_long:  # 1h+
+      points_each: 10
+      weight: 0.30
+      minimum: 5
+      ideal: 10
+      
+    interviews:
+      points_each: 8
+      weight: 0.15
+      minimum: 3
+      ideal: 8
+      
+    talks_tedx:
+      points_each: 6
+      weight: 0.05
+      minimum: 0
+      ideal: 3
+
+  # Fontes escritas
+  written_sources:
+    books:
+      points_each: 15
+      weight: 0.20
+      minimum: 1
+      ideal: 3
+      
+    articles_long:  # >500 palavras
+      points_each: 2
+      weight: 0.10
+      minimum: 10
+      ideal: 20
+      
+    newsletters:
+      points_each: 3
+      weight: 0.05
+      minimum: 0
+      ideal: 10
+
+  # Outros fatores
+  modifiers:
+    social_media_active:
+      points: 5
+      condition: "Active accounts with regular content"
+      
+    content_in_portuguese:
+      points: 10
+      condition: "Native PT-BR content available"
+      
+    transcriptions_available:
+      points: 10
+      condition: "Pre-made transcriptions exist"
+      
+    recent_content:  # < 2 anos
+      points: 5
+      condition: "Content from last 2 years"
+
+# ============================================================================
+# THRESHOLDS
+# ============================================================================
+thresholds:
+  
+  approved:
+    min_score: 80
+    description: "Pipeline liberado sem condições"
+    
+  conditional:
+    min_score: 50
+    max_score: 79
+    description: "Aprovado com gaps que precisam ser endereçados"
+    
+  rejected:
+    max_score: 49
+    description: "Material insuficiente para clone de alta fidelidade"
+
+# ============================================================================
+# DIMENSION COVERAGE
+# ============================================================================
+dimensions:
+  
+  identity:
+    description: "Valores, crenças, experiências formativas"
+    required_sources:
+      - "autobiografia ou biografia"
+      - "entrevistas pessoais longa"
+    minimum_sources: 2
+    
+  cognition:
+    description: "Como pensa, frameworks mentais, processos"
+    required_sources:
+      - "podcasts onde explica raciocínio"
+      - "debates ou discussões"
+    minimum_sources: 3
+    
+  voice:
+    description: "Como fala, vocabulário, tom, expressões"
+    required_sources:
+      - "vídeos com fala natural"
+      - "transcrições"
+    minimum_sources: 5
+    critical: true  # Clone FALHA se esta dimensão não tiver cobertura
+    
+  behavior:
+    description: "Como age, histórias, cases"
+    required_sources:
+      - "cases documentados"
+      - "relatos de interações"
+    minimum_sources: 2
+
+# ============================================================================
+# COMPLEXITY LEVELS
+# ============================================================================
+complexity:
+  
+  standard:
+    hours_min: 12
+    hours_max: 19
+    conditions:
+      - "Score >= 80"
+      - "Materiais abundantes"
+      - "Língua única (PT ou EN)"
+      
+  complex:
+    hours_min: 20
+    hours_max: 30
+    conditions:
+      - "Score 60-79"
+      - "Materiais moderados"
+      - "Multi-língua"
+      
+  extreme:
+    hours_min: 30
+    hours_max: 50
+    conditions:
+      - "Score 50-59"
+      - "Materiais escassos"
+      - "Pessoa com pouca exposição pública"
+
+# ============================================================================
+# RISK FLAGS
+# ============================================================================
+risk_flags:
+  
+  ethical:
+    triggers:
+      - "persona controversa"
+      - "histórico de declarações problemáticas"
+      - "processos judiciais públicos"
+    action: "flag_for_human_review"
+    
+  availability:
+    triggers:
+      - "conteúdo majoritariamente privado"
+      - "takedowns recentes de vídeos"
+      - "pessoa falecida com pouco registro"
+    action: "conditional_approval"
+    
+  freshness:
+    triggers:
+      - "todo conteúdo > 5 anos"
+      - "pessoa mudou muito desde conteúdo"
+    action: "warn_user"
+
+# ============================================================================
+# AUTOMATIC REJECTION CRITERIA
+# ============================================================================
+auto_reject:
+  - "Menos de 3 podcasts/entrevistas longas disponíveis"
+  - "Dimensão VOICE sem nenhuma fonte"
+  - "Nenhum conteúdo em vídeo encontrado"
+  - "Risk flags éticos sem aprovação humana"

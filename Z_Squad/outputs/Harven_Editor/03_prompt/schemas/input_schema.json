@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://harven.ai/schemas/editor_input.json",
+    "title": "Harven Editor Input Schema",
+    "description": "Schema de entrada para o agente EditorOS refinar respostas do ORIENTADOR",
+    "type": "object",
+    "required": [
+        "orientador_response"
+    ],
+    "properties": {
+        "orientador_response": {
+            "type": "string",
+            "description": "Resposta bruta do ORIENTADOR (pode conter rotulos e formatacao)",
+            "minLength": 30
+        },
+        "context": {
+            "type": "object",
+            "description": "Contexto da conversa (opcional, para referencia)",
+            "properties": {
+                "session_id": {
+                    "type": "string",
+                    "description": "ID da sessao de chat"
+                },
+                "chapter_title": {
+                    "type": "string",
+                    "description": "Titulo do capitulo sendo estudado"
+                },
+                "student_message": {
+                    "type": "string",
+                    "description": "Mensagem do aluno que gerou a resposta"
+                },
+                "interaction_number": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 3,
+                    "description": "Numero da interacao na sessao"
+                }
+            }
+        },
+        "preferences": {
+            "type": "object",
+            "description": "Preferencias de edicao (opcional)",
+            "properties": {
+                "max_words": {
+                    "type": "integer",
+                    "default": 200,
+                    "description": "Limite maximo de palavras"
+                },
+                "min_words": {
+                    "type": "integer",
+                    "default": 80,
+                    "description": "Limite minimo de palavras"
+                },
+                "tone": {
+                    "type": "string",
+                    "enum": ["acolhedor", "neutro", "provocativo"],
+                    "default": "acolhedor",
+                    "description": "Tom desejado (preservar do original se nao especificado)"
+                }
+            }
+        },
+        "metadata": {
+            "type": "object",
+            "description": "Metadados da requisicao",
+            "properties": {
+                "request_id": {
+                    "type": "string"
+                },
+                "timestamp": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        }
+    }
+}

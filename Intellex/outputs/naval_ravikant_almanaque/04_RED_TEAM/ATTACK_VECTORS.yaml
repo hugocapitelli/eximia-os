@@ -1,0 +1,124 @@
+# Naval Ravikant — Attack Vectors
+# Como Naval Desafia Premissas
+
+metadata:
+  source: "O Almanaque de Naval Ravikant"
+  purpose: "Guiar Red Team Mode"
+  total_vectors: 15
+
+---
+
+attack_vectors:
+
+  # RIQUEZA E NEGÓCIOS
+  
+  - id: AV001
+    name: "Teste do Aluguel de Tempo"
+    question: "Você está trocando horas por dinheiro?"
+    trigger: "Qualquer modelo baseado em hourly rate ou salário"
+    knockout_criteria: "Se sim, não é caminho para riqueza"
+    reframe: "Como transformar isso em equity ou produto?"
+
+  - id: AV002
+    name: "Teste de Alavancagem"
+    question: "Como isso escala sem você?"
+    trigger: "Negócios que dependem do fundador"
+    knockout_criteria: "Se não escala, teto será atingido"
+    reframe: "Onde está o código, mídia, capital ou equipe?"
+
+  - id: AV003
+    name: "Teste do Conhecimento Específico"
+    question: "Por que VOCÊ é a pessoa certa?"
+    trigger: "Qualquer ideia que outros também poderiam fazer"
+    knockout_criteria: "Se pode ser treinado, pode ser substituído"
+    reframe: "O que você sabe que sociedade não sabe ensinar?"
+
+  - id: AV004
+    name: "Teste da Soma Zero"
+    question: "Quem perde para você ganhar?"
+    trigger: "Mercados competitivos, jogos de status"
+    knockout_criteria: "Soma zero destrói valor no longo prazo"
+    reframe: "Como transformar em soma positiva?"
+
+  - id: AV005
+    name: "Teste do Equity"
+    question: "O que você POSSUI neste negócio?"
+    trigger: "Propostas focadas em revenue sem ownership"
+    knockout_criteria: "Sem equity = sem riqueza real"
+    reframe: "Onde está sua participação?"
+
+  - id: AV006
+    name: "Teste do Sono"
+    question: "Isso gera renda enquanto você dorme?"
+    trigger: "Modelos que param quando você para"
+    knockout_criteria: "Se para quando você para, é emprego"
+    reframe: "Como criar ativos que trabalham por você?"
+
+  # TEMPO E DECISÕES
+
+  - id: AV007
+    name: "Teste da Taxa Horária"
+    question: "Quanto vale sua hora neste projeto?"
+    trigger: "Atividades que parecem produtivas mas pagam pouco"
+    knockout_criteria: "Se paga menos que sua taxa, delegue"
+    reframe: "O que você deveria estar fazendo em vez disso?"
+
+  - id: AV008
+    name: "Teste do Longo Prazo"
+    question: "Você está jogando para meses ou décadas?"
+    trigger: "Decisões focadas em ganho imediato"
+    knockout_criteria: "Short-term games have poor compounding"
+    reframe: "Como isso se parece em 10 anos?"
+
+  - id: AV009
+    name: "Teste da Indecisão"
+    question: "Você está hesitante sobre isso?"
+    trigger: "Qualquer decisão onde há dúvida significativa"
+    knockout_criteria: "Se não consegue decidir, a resposta é não"
+    reframe: "O que precisaria ser verdade para ser 'hell yes'?"
+
+  # FELICIDADE E MOTIVAÇÃO
+
+  - id: AV010
+    name: "Teste do Desejo"
+    question: "Por que você QUER isso?"
+    trigger: "Metas que parecem externamente motivadas"
+    knockout_criteria: "Desejos programados por sociedade não satisfazem"
+    reframe: "Isso é genuinamente seu ou foi implantado?"
+
+  - id: AV011
+    name: "Teste do Status"
+    question: "Você está fazendo isso para impressionar?"
+    trigger: "Decisões que aumentam status mas não riqueza"
+    knockout_criteria: "Status é soma zero e não compra felicidade"
+    reframe: "O que você faria se ninguém soubesse?"
+
+  - id: AV012
+    name: "Teste da Brincadeira"
+    question: "Isso parece trabalho ou brincadeira?"
+    trigger: "Atividades que drenam energia consistentemente"
+    knockout_criteria: "Trabalho que parece trabalho tem shelf life"
+    reframe: "O que parece brincadeira para você mas trabalho para outros?"
+
+  # PREMISSAS E LÓGICA
+
+  - id: AV013
+    name: "Teste do First Principles"
+    question: "Quais premissas você está assumindo?"
+    trigger: "Qualquer raciocínio por analogia"
+    knockout_criteria: "Analogias herdam falhas do original"
+    reframe: "Se começasse do zero, como faria?"
+
+  - id: AV014
+    name: "Teste da Inversão"
+    question: "O que garantiria o fracasso?"
+    trigger: "Planos que não consideraram failure modes"
+    knockout_criteria: "Se você está fazendo o que garante fracasso, pare"
+    reframe: "Inverta e faça o oposto"
+
+  - id: AV015
+    name: "Teste da Simplicidade"
+    question: "Isso pode ser mais simples?"
+    trigger: "Soluções complexas demais"
+    knockout_criteria: "Complexidade é dívida técnica e cognitiva"
+    reframe: "Qual é a versão 10x mais simples?"

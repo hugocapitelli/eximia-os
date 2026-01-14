@@ -1,0 +1,132 @@
+# Handoff Z2 → Z3: Profiler → Engineer
+# Themis Sentinel CLO — Tier 3 Expert
+
+handoff:
+  from_module: Z2_Profiler
+  to_module: Z3_Engineer
+  timestamp: "2026-01-07T12:30:00-03:00"
+  agent_name: Themis_Sentinel_CLO
+  tier: 3
+  status: READY_FOR_ENGINEERING
+
+summary:
+  description: |
+    Perfil completo do agente Themis Sentinel CLO, incluindo DNA jurídico,
+    62 frameworks catalogados, 3 voice profiles, 35 fontes bibliográficas,
+    e 15 Knowledge Bases densos.
+  
+  key_artifacts:
+    - file: dna_juridico.md
+      purpose: Persona core, mentores, crenças, IRAC, invariantes
+    - file: FRAMEWORK_INDEX.md
+      purpose: 62 frameworks jurídicos catalogados por categoria
+    - file: VOICE_PROFILES.md
+      purpose: 3 vozes (Conselheiro, Litigante, Negociador)
+    - file: BIBLIOGRAPHY_RESEARCH.md
+      purpose: 35 fontes (Brasil + Internacional)
+    - file: knowledge_base/
+      purpose: 15 KBs densos (~40K palavras total)
+
+knowledge_base_summary:
+  total_kbs: 15
+  total_words_estimated: 38000
+  categories:
+    TEORIA:
+      - KB_01_CorpLaw_BR
+      - KB_04_Contracts
+      - KB_06_Labor
+      - KB_09_CorpGovernance
+      - KB_14_Arbitration
+    ESTRATEGIA:
+      - KB_02_Compliance
+      - KB_03_Privacy
+      - KB_05_Risk
+      - KB_07_Tax
+      - KB_08_MA_DueDiligence
+      - KB_10_CrisisManagement
+      - KB_11_ESG_Law
+      - KB_12_IP_Strategy
+      - KB_13_LegalOps
+    INVARIANTES:
+      - KB_15_Brazilian_Regulatory
+
+framework_summary:
+  total: 62
+  categories:
+    - "Raciocínio Jurídico (8): IRAC, CREAC, Balancing Test"
+    - "Gestão de Risco (10): COSO ERM, ISO 31000, Three Lines"
+    - "Compliance (8): DOJ, FCPA, Lei 12.846"
+    - "Contratos (8): Reps & Warranties, Indemnification, MAC"
+    - "Negociação (6): BATNA/ZOPA, Harvard"
+    - "M&A (6): DD Checklist, Red Flags, Escrow"
+    - "Governança (6): IBGC, Novo Mercado, SHA"
+    - "Litígio (5): NPV, Settlement, ICC"
+    - "Privacidade (3): LGPD, GDPR, Incident Response"
+    - "ESG (2): TCFD, EU Taxonomy"
+
+voice_profiles_summary:
+  - name: Conselheiro Estratégico
+    percent: 40
+    when: Board, C-level, governança
+    
+  - name: Litigante Estratégico
+    percent: 30
+    when: Risk assessment, litigation, precedentes
+    
+  - name: Negociador Comercial
+    percent: 30
+    when: Contratos, M&A, dealmaking
+
+key_decisions:
+  - decision: 15 KBs (no máximo requerido)
+    rationale: Cobertura completa dos domínios, sem overload
+    
+  - decision: 62 frameworks (acima do mínimo de 50)
+    rationale: Abrangência jurídica com foco em aplicabilidade
+    
+  - decision: IRAC como meta-reasoning
+    rationale: Padrão jurídico universal, execução clara
+    
+  - decision: 3 voice profiles distintos
+    rationale: Adaptar tom ao contexto e audiência
+
+requirements_for_z3:
+  prompt_operacional:
+    target_tokens: 18000-22000
+    sections_required:
+      - Identidade e Persona Core
+      - Mentores e Crenças Fundamentais
+      - Processo Cognitivo (IRAC)
+      - Source Tier System (legislação, doutrina, jurisprudência)
+      - Classificação de Risco
+      - Voice Profiles (3)
+      - Invariantes e Circuit Breakers
+      - Output Formats (parecer, risk memo, contract review)
+      - Exemplos Few-Shot (8-12)
+      - Disclaimers Legais
+      - Domínios de Conhecimento (15 KBs)
+      - Frameworks Dominados (62)
+      
+  schemas:
+    - contract_review_schema.json
+    - risk_memo_output.json
+    
+  quality_requirements:
+    - 100% citation compliance
+    - IRAC obrigatório para análise jurídica
+    - Disclaimers em todos outputs
+    - Voice switching automático por contexto
+
+next_steps:
+  1: Criar prompt_operacional_clo.md (18-22K tokens)
+  2: Criar contract_review_schema.json
+  3: Criar risk_memo_output.json
+  4: Criar handoff_z3_z4.yaml
+
+quality_gates:
+  - Prompt token count within 18K-22K range
+  - All 15 KB domains referenced
+  - All 62 frameworks accessible
+  - Voice profile examples for each
+  - Circuit breakers clearly defined
+  - Few-shot examples cover key scenarios

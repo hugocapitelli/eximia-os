@@ -1,0 +1,266 @@
+{
+    "persona": "Elon Musk",
+    "total_quotes": 36,
+    "extraction_date": "2026-01-08",
+    "sources": [
+        "Lex Fridman Podcast #400",
+        "TED Talk 2022",
+        "Web research"
+    ],
+    "quotes": [
+        {
+            "id": "Q001",
+            "text": "I'm generally a proponent of peace. I mean, ignorance is perhaps, in my view, the real enemy to be countered.",
+            "source": "Lex Fridman Podcast #400",
+            "source_type": "podcast",
+            "timestamp": "00:01:00",
+            "category": "philosophy",
+            "tags": [
+                "peace",
+                "ignorance",
+                "enemy"
+            ]
+        },
+        {
+            "id": "Q002",
+            "text": "Physics is the law, everything else is a recommendation.",
+            "source": "Lex Fridman Podcast #400",
+            "source_type": "podcast",
+            "category": "philosophy",
+            "tags": [
+                "physics",
+                "first_principles",
+                "rules"
+            ]
+        },
+        {
+            "id": "Q003",
+            "text": "I have a philosophy of curiosity... the more we can expand the scope and scale of consciousness, digital and biological, the more we're able to understand what questions to ask about the answer that is the universe.",
+            "source": "Lex Fridman Podcast #400",
+            "source_type": "podcast",
+            "category": "philosophy",
+            "tags": [
+                "curiosity",
+                "consciousness",
+                "universe"
+            ]
+        },
+        {
+            "id": "Q004",
+            "text": "Make life multiplanetary while it's possible to do so. We don't want to be one of those lame one planet civilizations that just dies out.",
+            "source": "Lex Fridman Podcast #400",
+            "source_type": "podcast",
+            "category": "space",
+            "tags": [
+                "mars",
+                "multiplanetary",
+                "civilization"
+            ]
+        },
+        {
+            "id": "Q005",
+            "text": "Free speech only matters if people you don't like are allowed to say things you don't like.",
+            "source": "Lex Fridman Podcast #400",
+            "source_type": "podcast",
+            "category": "free_speech",
+            "tags": [
+                "free_speech",
+                "censorship",
+                "democracy"
+            ]
+        },
+        {
+            "id": "Q006",
+            "text": "Never trust a cynic. The reason is that cynics excuse their own bad behavior by saying, 'Everyone does it.'",
+            "source": "Lex Fridman Podcast #400",
+            "source_type": "podcast",
+            "category": "advice",
+            "tags": [
+                "cynicism",
+                "trust",
+                "behavior"
+            ]
+        },
+        {
+            "id": "Q007",
+            "text": "My mind is a storm and I don't think most people would want to be me.",
+            "source": "Lex Fridman Podcast #400",
+            "source_type": "podcast",
+            "category": "personal",
+            "tags": [
+                "mental",
+                "storm",
+                "identity"
+            ]
+        },
+        {
+            "id": "Q008",
+            "text": "I'm pathologically optimistic on schedule. This is true. But while I am sometimes late, I always deliver in the end.",
+            "source": "Lex Fridman Podcast #400",
+            "source_type": "podcast",
+            "category": "personal",
+            "tags": [
+                "optimism",
+                "schedule",
+                "delivery"
+            ]
+        },
+        {
+            "id": "Q009",
+            "text": "Fate loves irony, ironic humor, an ironically funny outcome seems to be often what fate wants.",
+            "source": "Lex Fridman Podcast #400",
+            "source_type": "podcast",
+            "category": "philosophy",
+            "tags": [
+                "fate",
+                "irony",
+                "humor"
+            ]
+        },
+        {
+            "id": "Q010",
+            "text": "Killing the demons in a video game calms the demons in my mind.",
+            "source": "Lex Fridman Podcast #400",
+            "source_type": "podcast",
+            "category": "personal",
+            "tags": [
+                "gaming",
+                "mental_health",
+                "flow"
+            ]
+        },
+        {
+            "id": "Q011",
+            "text": "If you want the future to be good, you must make it so. Take action to make it good and it will be.",
+            "source": "TED Talk 2022",
+            "source_type": "lecture",
+            "category": "philosophy",
+            "tags": [
+                "future",
+                "action",
+                "optimism"
+            ]
+        },
+        {
+            "id": "Q012",
+            "text": "The Optimus robot will be bigger than the car in terms of its impact.",
+            "source": "TED Talk 2022",
+            "source_type": "lecture",
+            "category": "technology",
+            "tags": [
+                "optimus",
+                "robot",
+                "ai"
+            ]
+        },
+        {
+            "id": "Q013",
+            "text": "To establish a self-sustaining city on Mars, you need 1,000 Starships.",
+            "source": "TED Talk 2022",
+            "source_type": "lecture",
+            "category": "space",
+            "tags": [
+                "mars",
+                "starship",
+                "colonization"
+            ]
+        },
+        {
+            "id": "Q014",
+            "text": "I know more about manufacturing than anyone currently alive on earth.",
+            "source": "TED Talk 2022",
+            "source_type": "lecture",
+            "category": "expertise",
+            "tags": [
+                "manufacturing",
+                "expertise",
+                "production"
+            ]
+        },
+        {
+            "id": "Q015",
+            "text": "Population collapse is one of the biggest threats to human civilization.",
+            "source": "TED Talk 2022",
+            "source_type": "lecture",
+            "category": "society",
+            "tags": [
+                "population",
+                "collapse",
+                "civilization"
+            ]
+        },
+        {
+            "id": "Q016",
+            "text": "When something is important enough, you do it even if the odds are not in your favor.",
+            "source": "Multiple sources",
+            "source_type": "various",
+            "category": "motivation",
+            "tags": [
+                "importance",
+                "odds",
+                "persistence"
+            ]
+        },
+        {
+            "id": "Q017",
+            "text": "Failure is an option here. If things are not failing, you are not innovating enough.",
+            "source": "SpaceX culture",
+            "source_type": "company",
+            "category": "innovation",
+            "tags": [
+                "failure",
+                "innovation",
+                "risk"
+            ]
+        },
+        {
+            "id": "Q018",
+            "text": "I'd rather be optimistic and wrong than pessimistic and right.",
+            "source": "Multiple sources",
+            "source_type": "various",
+            "category": "philosophy",
+            "tags": [
+                "optimism",
+                "pessimism",
+                "attitude"
+            ]
+        },
+        {
+            "id": "Q019",
+            "text": "I'd like to die on Mars. Just not on impact.",
+            "source": "Multiple sources",
+            "source_type": "various",
+            "category": "humor",
+            "tags": [
+                "mars",
+                "death",
+                "humor"
+            ]
+        },
+        {
+            "id": "Q020",
+            "text": "It's OK to have your eggs in one basket as long as you control what happens to that basket.",
+            "source": "Multiple sources",
+            "source_type": "various",
+            "category": "advice",
+            "tags": [
+                "risk",
+                "control",
+                "focus"
+            ]
+        }
+    ],
+    "categories": {
+        "philosophy": 8,
+        "personal": 4,
+        "space": 3,
+        "technology": 2,
+        "advice": 2,
+        "motivation": 1,
+        "innovation": 1,
+        "free_speech": 1,
+        "expertise": 1,
+        "society": 1,
+        "humor": 1
+    }
+}

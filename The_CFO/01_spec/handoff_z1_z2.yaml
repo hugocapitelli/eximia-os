@@ -1,0 +1,36 @@
+# Handoff: Z1 → Z2
+
+handoff_id: "HO-20260106-001"
+timestamp: "2026-01-06T23:38:00Z"
+from_module: "Z1_Architect"
+to_module: "Z2_Profiler"
+
+## Summary
+Especificação técnica do CFO Agent concluída. Domínio: Corporate Finance com foco em Valuation e M&A para PMEs/Startups. 5 competências definidas (DCF, Comps, M&A DD, KPIs, Fundraising). Clones sugeridos: Ray Dalio, Warren Buffett, Peter Drucker.
+
+## Artifacts Produced
+| Path | Type | Status |
+| :--- | :--- | :--- |
+| `outputs/CFO_Agent/spec_tecnica.json` | spec | complete |
+
+## Key Decisions
+| Decision | Rationale |
+| :--- | :--- |
+| Foco em Corporate Finance | Usuário-alvo são fundadores, não traders |
+| Excluir Tax Planning | Complexidade jurídica, requer especialista |
+| Nível Expert para Valuation | Core competency, alta precisão necessária |
+| 3 Clones Mentores | Diversidade: macro (Dalio), value (Buffett), management (Drucker) |
+
+## Constraints for Next
+- Não incluir skills de contabilidade operacional
+- Ray Dalio obrigatório para risk management mindset
+- Tom conservador em incerteza
+
+## Open Questions
+- Qual tom preferido? (Técnico vs Acessível) → Sugestão: Técnico mas explicativo
+- Incluir frameworks de Dalio (All Weather)? → Sugestão: Sim, para risk management
+
+## Validation Criteria for Z2
+- DNA Mental deve cobrir os 5 domínios da spec
+- Knowledge Base deve incluir frameworks de Valuation
+- Style guide deve refletir conservadorismo em incerteza

@@ -1,0 +1,120 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://harven.ai/schemas/creator_input.json",
+    "title": "Harven Creator Input Schema",
+    "description": "Schema de entrada para o agente CreatorOS gerar perguntas socraticas",
+    "type": "object",
+    "required": [
+        "chapter_content"
+    ],
+    "properties": {
+        "chapter_id": {
+            "type": "string",
+            "description": "Identificador unico do capitulo"
+        },
+        "chapter_title": {
+            "type": "string",
+            "description": "Titulo do capitulo"
+        },
+        "chapter_content": {
+            "type": "string",
+            "description": "Conteudo completo do capitulo (texto, HTML ou markdown)",
+            "minLength": 100
+        },
+        "content_blocks": {
+            "type": "array",
+            "description": "Conteudo estruturado em blocos (opcional, para citations)",
+            "items": {
+                "type": "object",
+                "required": ["id", "content"],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "ID unico do bloco"
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum": ["title", "paragraph", "list", "table", "quote"],
+                        "description": "Tipo do bloco"
+                    },
+                    "content": {
+                        "type": "string",
+                        "description": "Conteudo do bloco"
+                    }
+                }
+            }
+        },
+        "learning_objective": {
+            "type": "string",
+            "description": "Objetivo de aprendizagem do capitulo (opcional mas recomendado)"
+        },
+        "difficulty": {
+            "type": "string",
+            "enum": ["iniciante", "intermediario", "avancado"],
+            "default": "intermediario",
+            "description": "Nivel de dificuldade desejado para as perguntas"
+        },
+        "max_questions": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3,
+            "default": 3,
+            "description": "Numero maximo de perguntas a gerar"
+        },
+        "course_context": {
+            "type": "object",
+            "description": "Contexto adicional do curso (opcional)",
+            "properties": {
+                "course_name": {
+                    "type": "string"
+                },
+                "discipline": {
+                    "type": "string"
+                },
+                "target_audience": {
+                    "type": "string",
+                    "description": "Perfil dos alunos (ex: graduacao, pos, profissionais)"
+                },
+                "prerequisites": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Conhecimentos previos esperados"
+                }
+            }
+        },
+        "skill_preference": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": ["analise", "sintese", "aplicacao", "reflexao"]
+            },
+            "description": "Skills preferidas para as perguntas (opcional)"
+        },
+        "avoid_topics": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Topicos a evitar nas perguntas (opcional)"
+        },
+        "additional_context": {
+            "type": "string",
+            "description": "Arquivo ou texto adicional para contexto (opcional)"
+        },
+        "metadata": {
+            "type": "object",
+            "description": "Metadados adicionais",
+            "properties": {
+                "request_id": {
+                    "type": "string"
+                },
+                "requested_by": {
+                    "type": "string",
+                    "description": "ID do professor que solicitou"
+                },
+                "timestamp": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        }
+    }
+}

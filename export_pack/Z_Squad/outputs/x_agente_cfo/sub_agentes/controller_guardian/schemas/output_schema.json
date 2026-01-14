@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Controller Guardian Output",
+    "type": "object",
+    "properties": {
+        "financial_statement_analysis": {
+            "type": "object",
+            "properties": {
+                "integrity_check": {
+                    "type": "string"
+                },
+                "anomalies_detected": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "compliance_flags": {
+                    "type": "object"
+                }
+            },
+            "required": [
+                "integrity_check"
+            ]
+        }
+    },
+    "required": [
+        "financial_statement_analysis"
+    ]
+}

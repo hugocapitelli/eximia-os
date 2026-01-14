@@ -1,0 +1,179 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Marketplace Seller Orchestrator Output",
+    "description": "Schema padrão de output do orquestrador de vendas em marketplaces",
+    "type": "object",
+    "properties": {
+        "diagnostico": {
+            "type": "object",
+            "description": "Diagnóstico do estado atual do vendedor",
+            "properties": {
+                "estagio_atual": {
+                    "type": "string",
+                    "enum": [
+                        "0 - Pré-Venda",
+                        "1 - Aquisição",
+                        "2 - Conversão",
+                        "3 - Retenção",
+                        "4 - Escala"
+                    ],
+                    "description": "Estágio atual do vendedor no funil de maturidade"
+                },
+                "gargalo_principal": {
+                    "type": "string",
+                    "description": "Principal problema identificado"
+                },
+                "plataformas": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Plataformas onde o vendedor atua"
+                },
+                "nivel_experiencia": {
+                    "type": "string",
+                    "enum": [
+                        "iniciante",
+                        "intermediario",
+                        "avancado"
+                    ],
+                    "description": "Nível de experiência do vendedor"
+                }
+            },
+            "required": [
+                "estagio_atual",
+                "gargalo_principal"
+            ]
+        },
+        "orquestracao": {
+            "type": "object",
+            "description": "Definição de quais subagentes serão acionados",
+            "properties": {
+                "subagentes_acionados": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "Product_Research",
+                            "Persona_Builder",
+                            "Listing_Optimizer",
+                            "Copy_Engine",
+                            "Visual_Strategist",
+                            "Pricing_Engine",
+                            "Ads_Manager",
+                            "Inventory_Ops",
+                            "Customer_Success",
+                            "Growth_Engine"
+                        ]
+                    },
+                    "description": "Lista de subagentes a serem acionados"
+                },
+                "ordem": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Ordem de execução dos subagentes"
+                },
+                "justificativa": {
+                    "type": "string",
+                    "description": "Explicação de por que estes subagentes foram escolhidos"
+                }
+            },
+            "required": [
+                "subagentes_acionados",
+                "justificativa"
+            ]
+        },
+        "plano_acao": {
+            "type": "object",
+            "description": "Plano de ação consolidado",
+            "properties": {
+                "quick_wins": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Ações que podem ser feitas hoje"
+                },
+                "proximos_passos": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Próximos passos priorizados"
+                },
+                "metricas_acompanhar": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Métricas para monitorar progresso"
+                },
+                "prazo_revisao": {
+                    "type": "string",
+                    "description": "Quando revisar os resultados"
+                }
+            },
+            "required": [
+                "proximos_passos"
+            ]
+        },
+        "educacao": {
+            "type": "object",
+            "description": "Conteúdo educativo para o vendedor",
+            "properties": {
+                "conceito_ensinado": {
+                    "type": "string",
+                    "description": "Conceito-chave explicado nesta interação"
+                },
+                "analogia": {
+                    "type": "string",
+                    "description": "Analogia usada para explicar o conceito"
+                },
+                "recursos": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Recursos adicionais para aprofundamento"
+                }
+            }
+        },
+        "alertas": {
+            "type": "array",
+            "description": "Alertas e avisos importantes",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "tipo": {
+                        "type": "string",
+                        "enum": [
+                            "info",
+                            "warning",
+                            "critical"
+                        ],
+                        "description": "Severidade do alerta"
+                    },
+                    "mensagem": {
+                        "type": "string",
+                        "description": "Mensagem do alerta"
+                    },
+                    "acao_sugerida": {
+                        "type": "string",
+                        "description": "Ação sugerida para resolver"
+                    }
+                },
+                "required": [
+                    "tipo",
+                    "mensagem"
+                ]
+            }
+        }
+    },
+    "required": [
+        "diagnostico",
+        "orquestracao",
+        "plano_acao"
+    ]
+}

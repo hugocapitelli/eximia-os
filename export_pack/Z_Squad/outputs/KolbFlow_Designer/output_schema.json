@@ -1,0 +1,279 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "KolbFlow Designer Output",
+    "description": "Schema de saída do agente KolbFlow Designer - Roteiro estruturado de treinamento",
+    "type": "object",
+    "required": [
+        "titulo_programa",
+        "duracao_total",
+        "objetivos_aprendizagem",
+        "roteiro",
+        "materiais_necessarios"
+    ],
+    "properties": {
+        "titulo_programa": {
+            "type": "string",
+            "description": "Nome do programa de treinamento"
+        },
+        "duracao_total": {
+            "type": "string",
+            "description": "Duração total formatada (ex: '4 horas', '90 minutos')"
+        },
+        "objetivos_aprendizagem": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Lista de objetivos de aprendizagem"
+        },
+        "roteiro": {
+            "type": "object",
+            "required": [
+                "experiencia_concreta",
+                "observacao_reflexiva",
+                "conceituacao_abstrata",
+                "experimentacao_ativa"
+            ],
+            "properties": {
+                "experiencia_concreta": {
+                    "$ref": "#/$defs/etapa"
+                },
+                "observacao_reflexiva": {
+                    "$ref": "#/$defs/etapa"
+                },
+                "conceituacao_abstrata": {
+                    "$ref": "#/$defs/etapa"
+                },
+                "experimentacao_ativa": {
+                    "$ref": "#/$defs/etapa"
+                }
+            }
+        },
+        "materiais_necessarios": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Lista de todos os materiais necessários"
+        },
+        "metricas_avaliacao": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Métricas para avaliar o sucesso do treinamento"
+        },
+        "observacoes_facilitador": {
+            "type": "string",
+            "description": "Notas e dicas para o facilitador"
+        }
+    },
+    "$defs": {
+        "etapa": {
+            "type": "object",
+            "required": [
+                "sigla",
+                "duracao_minutos",
+                "objetivo",
+                "atividades"
+            ],
+            "properties": {
+                "sigla": {
+                    "type": "string",
+                    "enum": [
+                        "EC",
+                        "OR",
+                        "CA",
+                        "EA"
+                    ],
+                    "description": "Sigla da etapa do Ciclo de Kolb"
+                },
+                "duracao_minutos": {
+                    "type": "integer",
+                    "description": "Duração da etapa em minutos"
+                },
+                "objetivo": {
+                    "type": "string",
+                    "description": "Objetivo desta etapa"
+                },
+                "atividades": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/atividade"
+                    }
+                },
+                "perguntas_chave": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Perguntas para reflexão (especialmente para OR)"
+                },
+                "conceitos_chave": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Conceitos principais (especialmente para CA)"
+                },
+                "criterios_sucesso": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Critérios de sucesso (especialmente para EA)"
+                },
+                "dicas_facilitador": {
+                    "type": "string",
+                    "description": "Dicas para conduzir esta etapa"
+                }
+            }
+        },
+        "atividade": {
+            "type": "object",
+            "required": [
+                "nome",
+                "duracao_minutos",
+                "descricao"
+            ],
+            "properties": {
+                "nome": {
+                    "type": "string",
+                    "description": "Nome da atividade"
+                },
+                "duracao_minutos": {
+                    "type": "integer",
+                    "description": "Duração da atividade em minutos"
+                },
+                "descricao": {
+                    "type": "string",
+                    "description": "Descrição detalhada da atividade"
+                },
+                "materiais": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Materiais necessários para esta atividade"
+                },
+                "perfil_favorecido": {
+                    "type": "string",
+                    "enum": [
+                        "Divergente",
+                        "Assimilador",
+                        "Convergente",
+                        "Acomodador"
+                    ],
+                    "description": "Perfil de aprendizagem mais beneficiado"
+                }
+            }
+        }
+    },
+    "examples": [
+        {
+            "titulo_programa": "Workshop de Comunicação Não-Violenta para Líderes",
+            "duracao_total": "4 horas",
+            "objetivos_aprendizagem": [
+                "Identificar padrões de comunicação violenta",
+                "Aplicar os 4 passos da CNV em conflitos"
+            ],
+            "roteiro": {
+                "experiencia_concreta": {
+                    "sigla": "EC",
+                    "duracao_minutos": 60,
+                    "objetivo": "Vivenciar um conflito simulado",
+                    "atividades": [
+                        {
+                            "nome": "Simulação de Conflito",
+                            "duracao_minutos": 45,
+                            "descricao": "Dinâmica onde duplas encenam um conflito entre líder e colaborador",
+                            "materiais": [
+                                "Cenários impressos",
+                                "Cronômetro"
+                            ],
+                            "perfil_favorecido": "Acomodador"
+                        }
+                    ]
+                },
+                "observacao_reflexiva": {
+                    "sigla": "OR",
+                    "duracao_minutos": 48,
+                    "objetivo": "Refletir sobre sentimentos e reações",
+                    "atividades": [
+                        {
+                            "nome": "Debriefing Estruturado",
+                            "duracao_minutos": 30,
+                            "descricao": "Discussão guiada sobre a experiência vivida",
+                            "materiais": [
+                                "Flipchart"
+                            ],
+                            "perfil_favorecido": "Divergente"
+                        }
+                    ],
+                    "perguntas_chave": [
+                        "O que vocês sentiram durante o conflito?",
+                        "O que poderiam ter feito diferente?"
+                    ]
+                },
+                "conceituacao_abstrata": {
+                    "sigla": "CA",
+                    "duracao_minutos": 72,
+                    "objetivo": "Aprender os 4 passos da CNV",
+                    "atividades": [
+                        {
+                            "nome": "Aula Expositiva",
+                            "duracao_minutos": 50,
+                            "descricao": "Apresentação dos 4 passos: Observação, Sentimento, Necessidade, Pedido",
+                            "materiais": [
+                                "Slides",
+                                "Projetor"
+                            ],
+                            "perfil_favorecido": "Assimilador"
+                        }
+                    ],
+                    "conceitos_chave": [
+                        "Observação vs Julgamento",
+                        "Sentimentos vs Pensamentos",
+                        "Necessidades universais",
+                        "Pedido vs Exigência"
+                    ]
+                },
+                "experimentacao_ativa": {
+                    "sigla": "EA",
+                    "duracao_minutos": 60,
+                    "objetivo": "Aplicar CNV no conflito original",
+                    "atividades": [
+                        {
+                            "nome": "Roleplay com CNV",
+                            "duracao_minutos": 45,
+                            "descricao": "Reencenar o conflito inicial usando a técnica aprendida",
+                            "materiais": [
+                                "Cenários",
+                                "Cards de CNV"
+                            ],
+                            "perfil_favorecido": "Convergente"
+                        }
+                    ],
+                    "criterios_sucesso": [
+                        "Usar os 4 passos da CNV",
+                        "Manter tom respeitoso",
+                        "Chegar a um pedido claro"
+                    ]
+                }
+            },
+            "materiais_necessarios": [
+                "Cenários impressos",
+                "Flipchart",
+                "Slides",
+                "Projetor",
+                "Cards de CNV",
+                "Cronômetro"
+            ],
+            "metricas_avaliacao": [
+                "Reação: Avaliação de satisfação pós-workshop",
+                "Aprendizagem: Quiz sobre os 4 passos da CNV",
+                "Comportamento: Acompanhamento 30 dias depois"
+            ]
+        }
+    ]
+}

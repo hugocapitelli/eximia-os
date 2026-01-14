@@ -1,0 +1,293 @@
+# Handoff: Z1 Architect → Z2 Profiler
+# Agent: LXD Architect
+# Date: 2026-01-07
+
+metadata:
+  agent_name: "LXD Architect"
+  tier: 3
+  source_phase: "01_spec"
+  target_phase: "02_profile"
+  handoff_version: "1.0"
+
+# Specification Summary
+spec_summary:
+  domain: "Learning Experience Design"
+  human_equivalent: "Senior Learning Architect + ATD Master ID"
+  competencies_count: 11
+  knowledge_bases_required: 16
+  frameworks_count: 61
+  bibliography_sources: 35
+  
+# Core Competencies for Profiling
+competencies_to_profile:
+  core:
+    - id: C01
+      name: "Adult Learning Theory"
+      key_authors: ["Malcolm Knowles", "Jack Mezirow", "Albert Bandura"]
+      
+    - id: C02
+      name: "Heutagogy & Learner Autonomy"
+      key_authors: ["Stewart Hase", "Chris Kenyon", "Chris Argyris", "Deci & Ryan"]
+      priority: HIGH
+      note: "Critical differentiator - focus on PAH Continuum and Capability development"
+      
+    - id: C03
+      name: "Experiential Learning"
+      key_authors: ["David Kolb", "Donald Schön", "Lombardo & Eichinger"]
+      
+    - id: C04
+      name: "Instructional Design Frameworks"
+      key_authors: ["Cathy Moore", "Michael Allen", "Wiggins & McTighe", "Dick & Carey"]
+      
+    - id: C05
+      name: "Neuroscience of Learning"
+      key_authors: ["Renate & Geoffrey Caine", "John Sweller", "John Medina"]
+      
+  advanced:
+    - id: C06
+      name: "Training Evaluation"
+      key_authors: ["Donald Kirkpatrick", "Jim Kirkpatrick"]
+      
+    - id: C07
+      name: "Learning ROI Measurement"
+      key_authors: ["Jack Phillips", "Patricia Phillips", "Robert Brinkerhoff"]
+      
+    - id: C08
+      name: "Learner-Centered Design"
+      key_authors: ["CAST (UDL)", "Niels Floor"]
+      
+    - id: C09
+      name: "Learning Technologies"
+      key_authors: ["Ruben Puentedura", "Elliott Masie", "Josh Bersin"]
+      
+  specialist:
+    - id: C10
+      name: "ATD Professional Standards"
+      source: "ATD Capability Model"
+      
+    - id: C11
+      name: "Strategic L&D Alignment"
+      key_authors: ["Rothwell & Kazanas", "Nick van Dam"]
+
+# Knowledge Bases to Create
+kbs_required:
+  - id: KB_01
+    topic: "Aprendizagem Adulta (Knowles + Mezirow)"
+    research_focus:
+      - "6 Princípios de Knowles"
+      - "Transformative Learning Theory"
+      - "Self-Directed Learning"
+    estimated_words: 3000
+    
+  - id: KB_02
+    topic: "Heutagogia e Autonomia (Hase/Kenyon)"
+    research_focus:
+      - "PAH Continuum original paper"
+      - "7 Heutagogical Principles"
+      - "Double-Loop Learning (Argyris)"
+      - "Capability vs Competency distinction"
+      - "Self-Determination Theory integration"
+    estimated_words: 3500
+    priority: HIGH
+    
+  - id: KB_03
+    topic: "Kolb Experiential Learning (Avançado)"
+    research_focus:
+      - "ELT Theory completo"
+      - "4 Learning Styles detailed"
+      - "Criticism and responses"
+    estimated_words: 2000
+    
+  - id: KB_04
+    topic: "Frameworks de Design Instrucional"
+    research_focus:
+      - "ADDIE phases detailed"
+      - "SAM (Allen) process"
+      - "Action Mapping 4 steps"
+      - "Backward Design (UbD)"
+      - "5 Moments of Need"
+    estimated_words: 4000
+    
+  - id: KB_05
+    topic: "Neurociência da Aprendizagem"
+    research_focus:
+      - "12 Brain/Mind Principles (Caine)"
+      - "Cognitive Load Theory"
+      - "AGES Model"
+      - "Spaced Repetition"
+    estimated_words: 3000
+    
+  - id: KB_06
+    topic: "Kirkpatrick 4 Levels"
+    research_focus:
+      - "Original model"
+      - "New World Kirkpatrick Model"
+      - "Practical implementation"
+    estimated_words: 2500
+    
+  - id: KB_07
+    topic: "Phillips ROI Methodology"
+    research_focus:
+      - "5 Levels including ROI"
+      - "Isolation techniques"
+      - "Intangible benefits"
+    estimated_words: 2500
+    
+  - id: KB_08
+    topic: "ATD/CPTD Competencies"
+    research_focus:
+      - "10 ATD Areas of Expertise"
+      - "Talent Development Capability Model"
+      - "CPTD certification requirements"
+    estimated_words: 3000
+    
+  - id: KB_09
+    topic: "Modern LXD (2024+)"
+    research_focus:
+      - "LXD vs ID distinction"
+      - "AI in L&D trends"
+      - "Personalization and adaptive"
+      - "UDL principles"
+    estimated_words: 3000
+    
+  - id: KB_10
+    topic: "Learning Taxonomies"
+    research_focus:
+      - "Bloom Original and Revised"
+      - "Marzano's New Taxonomy"
+      - "Webb's DOK"
+      - "SOLO Taxonomy"
+    estimated_words: 2500
+    
+  - id: KB_11
+    topic: "Activity Strategies by Modality"
+    research_focus:
+      - "Presencial activities matrix"
+      - "Online/virtual activities"
+      - "Blended design patterns"
+      - "Async vs sync strategies"
+    estimated_words: 4000
+    
+  - id: KB_12
+    topic: "Gagne's 9 Events"
+    research_focus:
+      - "9 Events detailed"
+      - "Application per modality"
+    estimated_words: 2000
+    
+  - id: KB_13
+    topic: "Microlearning & Mobile"
+    research_focus:
+      - "Microlearning principles"
+      - "Mobile-first design"
+      - "Just-in-time learning"
+    estimated_words: 2000
+    
+  - id: KB_14
+    topic: "Gamification & Engagement"
+    research_focus:
+      - "Octalysis Framework (Yu-kai Chou)"
+      - "ARCS Model (Keller)"
+      - "Flow Theory application"
+    estimated_words: 2500
+    
+  - id: KB_15
+    topic: "IA & Adaptive Learning"
+    research_focus:
+      - "AI tutoring systems"
+      - "Adaptive learning platforms"
+      - "Learning analytics"
+      - "xAPI and data standards"
+    estimated_words: 3000
+    
+  - id: KB_16
+    topic: "Brasil T&D Context"
+    research_focus:
+      - "ABTD data"
+      - "Brazilian L&D market"
+      - "Cultural considerations"
+      - "Portuguese terminology"
+    estimated_words: 2000
+
+# Voice Profile Requirements
+voice_profiles_required:
+  - name: "Consultor Estratégico"
+    usage: "40%"
+    context: "C-level, CLO, strategic planning"
+    
+  - name: "Facilitador Didático"
+    usage: "40%"
+    context: "Training delivery, workshops, default"
+    
+  - name: "Especialista Técnico"
+    usage: "20%"
+    context: "ID standards, evaluation, ROI calculation"
+
+# Framework Index Requirements
+framework_index:
+  categories:
+    - name: "Adult Learning Theories"
+      frameworks: 5
+    - name: "Heutagogy & Autonomy"
+      frameworks: 6
+    - name: "Experiential Learning"
+      frameworks: 5
+    - name: "Instructional Design"
+      frameworks: 7
+    - name: "Neuroscience & Cognition"
+      frameworks: 6
+    - name: "Evaluation & Measurement"
+      frameworks: 5
+    - name: "Learning Taxonomies"
+      frameworks: 5
+    - name: "Engagement & Motivation"
+      frameworks: 5
+    - name: "Technology & Innovation"
+      frameworks: 4
+    - name: "Activities & Techniques"
+      frameworks: 13
+  total: 61
+
+# Research Requirements
+research_requirements:
+  use_agent: "The_Veritas"
+  source_tiers:
+    tier1: ["Peer-reviewed journals", "Official publications (ATD, SHRM)"]
+    tier2: ["Industry reports (Gartner, Josh Bersin)", "Major consultancies"]
+  citation_format: "[Author, Title, Year]"
+  compliance: "100%"
+
+# Deliverables Checklist
+deliverables:
+  - file: "dna_mental.md"
+    description: "Agent persona, beliefs, mental models"
+    
+  - file: "FRAMEWORK_INDEX.md"
+    description: "61+ frameworks catalogued by category"
+    
+  - file: "VOICE_PROFILES.md"
+    description: "3 voice registers with examples"
+    
+  - file: "BIBLIOGRAPHY_RESEARCH.md"
+    description: "35+ sources with citations"
+    
+  - folder: "knowledge_base/"
+    description: "16 KB files (KB_01 to KB_16)"
+    
+  - file: "handoff_z2_z3.yaml"
+    description: "Handoff to Z3 Engineer"
+
+# Quality Gates
+quality_gates:
+  - "All KBs have proper citations"
+  - "Framework Index has 61+ entries"
+  - "Bibliography has 35+ sources"
+  - "Voice Profiles have concrete examples"
+  - "Heutagogy KB is comprehensive (3.5K+ words)"
+
+# Notes
+notes:
+  - "Priority: KB_02 (Heutagogy) is critical differentiator"
+  - "Use The_Veritas for all factual research"
+  - "Maintain citation compliance at 100%"
+  - "Focus on practical application, not just theory"

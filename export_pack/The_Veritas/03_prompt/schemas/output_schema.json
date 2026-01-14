@@ -1,0 +1,265 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "The_Veritas Output Schema",
+    "description": "Schema for research responses from The_Veritas agent",
+    "type": "object",
+    "required": [
+        "summary",
+        "confidence_score",
+        "sources",
+        "methodology"
+    ],
+    "properties": {
+        "summary": {
+            "type": "string",
+            "description": "Concise answer to the research query"
+        },
+        "key_findings": {
+            "type": "array",
+            "description": "List of key findings with sources",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "finding": {
+                        "type": "string",
+                        "description": "The finding statement"
+                    },
+                    "source": {
+                        "type": "string",
+                        "description": "Source citation"
+                    },
+                    "confidence": {
+                        "type": "integer",
+                        "description": "Confidence for this specific finding (0-100)"
+                    }
+                }
+            }
+        },
+        "confidence_score": {
+            "type": "integer",
+            "description": "Overall confidence score (0-100)",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "confidence_justification": {
+            "type": "string",
+            "description": "Explanation for the confidence score"
+        },
+        "sources": {
+            "type": "array",
+            "description": "List of sources used",
+            "items": {
+                "type": "object",
+                "required": [
+                    "title",
+                    "tier"
+                ],
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "description": "Source title"
+                    },
+                    "author": {
+                        "type": "string",
+                        "description": "Author or organization"
+                    },
+                    "url": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Source URL if available"
+                    },
+                    "tier": {
+                        "type": "integer",
+                        "description": "Source tier (1-4)",
+                        "minimum": 1,
+                        "maximum": 4
+                    },
+                    "date": {
+                        "type": "string",
+                        "description": "Publication date (YYYY or YYYY-MM)"
+                    },
+                    "reliability_score": {
+                        "type": "string",
+                        "description": "Reliability grade (A-F)",
+                        "enum": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E",
+                            "F"
+                        ]
+                    }
+                }
+            }
+        },
+        "contradictions": {
+            "type": "array",
+            "description": "List of contradictions found between sources",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "topic": {
+                        "type": "string",
+                        "description": "Topic of contradiction"
+                    },
+                    "source_a": {
+                        "type": "object",
+                        "properties": {
+                            "source": {
+                                "type": "string"
+                            },
+                            "claim": {
+                                "type": "string"
+                            },
+                            "tier": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "source_b": {
+                        "type": "object",
+                        "properties": {
+                            "source": {
+                                "type": "string"
+                            },
+                            "claim": {
+                                "type": "string"
+                            },
+                            "tier": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "analysis": {
+                        "type": "string",
+                        "description": "Analysis of the contradiction"
+                    },
+                    "recommendation": {
+                        "type": "string",
+                        "description": "Recommended interpretation"
+                    }
+                }
+            }
+        },
+        "methodology": {
+            "type": "string",
+            "description": "Description of research methodology used"
+        },
+        "limitations": {
+            "type": "array",
+            "description": "List of limitations and caveats",
+            "items": {
+                "type": "string"
+            }
+        },
+        "searches_performed": {
+            "type": "array",
+            "description": "List of searches performed",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string"
+                    },
+                    "source": {
+                        "type": "string"
+                    },
+                    "results_count": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        "data_tables": {
+            "type": "array",
+            "description": "Structured data tables if applicable",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string"
+                    },
+                    "columns": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "rows": {
+                        "type": "array",
+                        "items": {
+                            "type": "array"
+                        }
+                    }
+                }
+            }
+        },
+        "next_steps": {
+            "type": "array",
+            "description": "Recommended next steps or further research",
+            "items": {
+                "type": "string"
+            }
+        },
+        "disclaimers": {
+            "type": "array",
+            "description": "Any required disclaimers",
+            "items": {
+                "type": "string"
+            }
+        },
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "agent": {
+                    "type": "string",
+                    "const": "The_Veritas"
+                },
+                "version": {
+                    "type": "string"
+                },
+                "timestamp": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "processing_time_ms": {
+                    "type": "integer"
+                },
+                "cove_steps_completed": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 4
+                }
+            }
+        }
+    },
+    "examples": [
+        {
+            "summary": "O benchmark de NRR para SaaS B2B em 2024 varia de 101-110% dependendo do segmento.",
+            "confidence_score": 85,
+            "confidence_justification": "3 fontes Tier 2 convergem com metodologias diferentes",
+            "sources": [
+                {
+                    "title": "SaaS Benchmarks 2024",
+                    "author": "BenchmarkIT",
+                    "url": "https://benchmarkit.ai/reports/2024",
+                    "tier": 2,
+                    "date": "2024",
+                    "reliability_score": "B"
+                }
+            ],
+            "contradictions": [],
+            "methodology": "CoVe 4-step, triangulation with 3 sources",
+            "limitations": [
+                "Data is from US-centric sources",
+                "Brasil-specific benchmarks not available"
+            ],
+            "metadata": {
+                "agent": "The_Veritas",
+                "version": "1.0.0",
+                "cove_steps_completed": 4
+            }
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+# Z Squad Handoff: Z3 Prompter → Z4 Validator
+# Agent: The_Veritas
+
+metadata:
+  agent_name: "The_Veritas"
+  version: "1.0.0"
+  class: 3
+  tier: "EXPERT"
+  handoff_date: "2026-01-07"
+  z3_status: "COMPLETE"
+
+# Z3 Prompter Deliverables
+deliverables:
+  prompt_operacional:
+    path: "03_prompt/prompt_operacional.md"
+    status: "COMPLETE"
+    tokens: ~18000
+    features:
+      - "CoVe 4-step process"
+      - "Source Tier System (4 tiers + blacklist)"
+      - "SIFT/CRAAP evaluation"
+      - "3 Voice Profiles (Academic, Executive, Forensic)"
+      - "Triangulation requirement"
+      - "Circuit breakers"
+      - "Confidence scoring"
+      - "Contradiction resolution protocol"
+      - "15 core beliefs"
+      - "6 invariants"
+      - "3 output format examples"
+      
+  input_schema:
+    path: "03_prompt/schemas/input_schema.json"
+    status: "COMPLETE"
+    parameters:
+      - "query (required)"
+      - "depth: quick|standard|deep"
+      - "domain: general|finance|agro|tech|academic|saas"
+      - "output_format: markdown|json|csv"
+      - "citation_style: apa|abnt|ieee|inline|none"
+      - "voice: academic|executive|forensic|auto"
+      - "language: pt-BR|en-US"
+      
+  output_schema:
+    path: "03_prompt/schemas/output_schema.json"
+    status: "COMPLETE"
+    fields:
+      - "summary"
+      - "key_findings"
+      - "confidence_score"
+      - "sources (with tier, date, reliability)"
+      - "contradictions"
+      - "methodology"
+      - "limitations"
+      - "disclaimers"
+      - "metadata"
+
+# Requirements for Z4 Validator
+requirements_for_z4:
+  validation_cases:
+    count: 15
+    categories:
+      - "Conflict Resolution (2-3)"
+      - "Anti-Hallucination (2-3)"
+      - "Deep Dive (2)"
+      - "Domain-Specific: SaaS (2)"
+      - "Domain-Specific: Agro (2)"
+      - "Ethics/Safety (2)"
+      - "Edge Cases (2)"
+      
+  expected_behaviors:
+    - "CoVe process is followed"
+    - "All sources are Tier 1-2 or properly flagged"
+    - "Contradictions are exposed, not hidden"
+    - "Confidence scores are calibrated"
+    - "Fake citations are rejected"
+    - "Unverifiable data is declared as such"
+    - "Circuit breakers activate appropriately"
+    
+  comparative_analysis:
+    compare_with:
+      - "GPT-4o with Web Search"
+      - "Perplexity Pro"
+      - "Current X_Agents/Researcher"
+    metrics:
+      - "Citation accuracy (target: 100%)"
+      - "Hallucination rate (target: 0%)"
+      - "Source tier compliance"
+      - "Contradiction detection"
+      
+  handover_document:
+    must_include:
+      - "Integration instructions"
+      - "API usage examples"
+      - "Maintenance schedule"
+      - "Known limitations"
+
+# Quality Gates for Z4
+quality_gates:
+  - "15 validation cases created"
+  - "All cases pass with score ≥8/10"
+  - "Average score ≥9.0/10"
+  - "100% citation accuracy"
+  - "Zero hallucinations in testing"
+  - "Comparative analysis complete"
+
+# Approval
+approval:
+  z3_prompter: "APPROVED"
+  notes: "18K token prompt with full CoVe integration. Ready for Z4 Validation."

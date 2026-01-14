@@ -1,0 +1,237 @@
+================================================================================
+RESUMO EXECUTIVO - HARVEN.AI
+================================================================================
+
+Data de Geração: 27/12/2025
+Versão do Sistema: 1.0.0
+
+================================================================================
+1. VISÃO GERAL DO PROJETO
+================================================================================
+
+O HARVEN.AI é uma plataforma de Ambiente Virtual de Aprendizagem (AVA) 
+desenvolvida pela exímIA Ventures para a Harven Agribusiness School. A 
+plataforma utiliza inteligência artificial para criar uma experiência de 
+aprendizagem baseada no método socrático, onde alunos interagem com um 
+assistente de IA que os guia através de perguntas provocativas.
+
+PRINCIPAIS CARACTERÍSTICAS:
+- Chat socrático com limite de 3 interações por sessão
+- Processamento inteligente de conteúdo (PDF, texto) com particionamento 
+  automático em capítulos
+- Geração automática de perguntas socráticas enriquecidas
+- Sistema de disciplinas → cursos → capítulos (hierarquia canônica)
+- Painel do professor com visibilidade de conversas dos alunos
+- Integração com Moodle para exportação de portfólios
+- Autenticação via RA/senha e Microsoft OAuth (parcial)
+
+================================================================================
+2. ESTADO ATUAL DO SISTEMA
+================================================================================
+
+ARQUITETURA:
+- Frontend: React 18 + TypeScript + Vite + Tailwind CSS
+- Backend: FastAPI (Python) + Supabase (PostgreSQL)
+- IA: OpenAI API (Azure OpenAI) via LangChain
+- Autenticação: JWT tokens + bcrypt
+
+STATUS GERAL:
+✅ FUNCIONANDO:
+- Autenticação básica (RA/senha)
+- CRUD de cursos, disciplinas, capítulos
+- Upload e processamento inteligente de conteúdo
+- Chat socrático com limite de 3 interações
+- Geração de perguntas socráticas
+- Painel do professor (visualização de conversas)
+- Exportação para Moodle (parcial)
+
+⚠️ PARCIALMENTE IMPLEMENTADO:
+- Integração completa com Moodle (apenas exportação de chat)
+- Sistema de mensagens entre usuários (professor e aluno)
+- TTS (Text-to-Speech) com Azure Speech Services
+- Processamento de conteúdo não-texto (vídeo, áudio)
+
+❌ NÃO IMPLEMENTADO / QUEBRADO:
+- Alguns endpoints de teacher retornam "TODO: Implement"
+- SSO real com Microsoft (apenas placeholder)
+- Sistema de mensagens
+- Cache com Redis
+- Rate limiting
+- Migrations automatizadas (Alembic)
+
+================================================================================
+3. ESTRUTURA DE DADOS PRINCIPAL
+================================================================================
+
+HIERARQUIA CANÔNICA:
+Disciplinas → Cursos → Capítulos → Perguntas Socráticas
+
+ENTIDADES PRINCIPAIS:
+- users (alunos, professores, admins)
+- disciplines (disciplinas acadêmicas)
+- courses (cursos vinculados a disciplinas)
+- intelligent_contents (conteúdos importados para processamento)
+- intelligent_chapters (capítulos gerados automaticamente)
+- content_chapters (capítulos manuais do sistema antigo)
+- chat_sessions (sessões de chat socrático)
+- chat_messages (mensagens das conversas)
+- chapter_socratic_questions (perguntas enriquecidas geradas por IA)
+
+================================================================================
+4. FLUXOS PRINCIPAIS
+================================================================================
+
+FLUXO DO ALUNO:
+1. Login com RA/senha
+2. Visualiza cursos atribuídos
+3. Acessa capítulo de conteúdo
+4. Seleciona uma pergunta socrática (de 3 opções)
+5. Inicia chat com limite de 3 interações
+6. Após 3 interações, sessão é finalizada automaticamente
+7. Histórico é exportado para Moodle (se configurado)
+
+FLUXO DO PROFESSOR:
+1. Login com RA/senha
+2. Acessa disciplinas atribuídas
+3. Visualiza cursos da disciplina
+4. Gerencia conteúdo (upload, edição)
+5. Visualiza conversas dos alunos
+6. Exporta conversas para Moodle
+
+FLUXO DO ADMIN:
+1. Login com RA/senha
+2. Gerencia usuários, disciplinas, cursos
+3. Atribui professores a disciplinas
+4. Atribui cursos a grupos/turmas
+5. Visualiza e gerencia todo o conteúdo
+6. Acessa utilitários de sistema
+
+FLUXO DE PROCESSAMENTO INTELIGENTE:
+1. Upload de arquivo (PDF, TXT) vinculado a um curso
+2. Extração de texto (PyPDF2)
+3. Particionamento inteligente em capítulos (IA)
+4. Processamento de cada capítulo:
+   - Parsing estrutural (determinístico)
+   - Geração de "understanding pack" (metadados, conceitos, relações)
+   - Geração de 3 perguntas socráticas enriquecidas
+5. Armazenamento de texto raw (verbatim) + hash para integridade
+6. Status de processamento rastreável
+
+================================================================================
+5. TECNOLOGIAS E DEPENDÊNCIAS
+================================================================================
+
+BACKEND:
+- FastAPI 0.104.1
+- Supabase Client 2.0.0
+- LangChain 0.0.350
+- OpenAI 1.3.0
+- PyPDF2 3.0.1
+- python-jose[cryptography] 3.3.0
+- bcrypt 5.0.0
+
+FRONTEND:
+- React 18.2.0
+- TypeScript 5.2.2
+- Vite 5.0.8
+- Tailwind CSS 3.3.6
+- React Router DOM 6.20.0
+- Axios 1.6.2
+
+BANCO DE DADOS:
+- Supabase (PostgreSQL gerenciado)
+- Tabelas principais: users, courses, disciplines, intelligent_contents, 
+  intelligent_chapters, chat_sessions, chat_messages
+
+================================================================================
+6. PRINCIPAIS DESAFIOS E LIMITAÇÕES
+================================================================================
+
+ARQUITETURA:
+- Mistura de sistemas antigos (content_chapters) e novos 
+  (intelligent_chapters)
+- Falta de migrations automatizadas (scripts SQL manuais)
+- Sem cache (Redis não implementado)
+- Sem rate limiting
+
+SEGURANÇA:
+- CORS configurado apenas para localhost
+- Sem políticas RLS (Row Level Security) documentadas no Supabase
+- Senhas padrão de admin expostas no código
+
+PERFORMANCE:
+- Processamento de conteúdo é síncrono em alguns casos
+- Sem otimização de queries (N+1 possíveis)
+- Sem paginação em algumas listagens
+
+INTEGRAÇÕES:
+- Moodle: apenas exportação de chat (importação não implementada)
+- Microsoft OAuth: placeholder, não funcional
+- Azure Speech Services: não implementado
+
+================================================================================
+7. RECOMENDAÇÕES PARA REBUILD
+================================================================================
+
+PRIORIDADE ALTA:
+1. Unificar sistema de capítulos (remover content_chapters, usar apenas 
+   intelligent_chapters)
+2. Implementar migrations automatizadas (Alembic ou similar)
+3. Adicionar políticas RLS no Supabase
+4. Implementar rate limiting
+5. Adotar Atomic Design no frontend (componentização)
+
+PRIORIDADE MÉDIA:
+1. Implementar cache (Redis)
+2. Adicionar paginação em todas as listagens
+3. Implementar Microsoft OAuth completo
+4. Melhorar tratamento de erros e logging estruturado
+5. Adicionar testes automatizados (cobertura atual é baixa)
+
+PRIORIDADE BAIXA:
+1. Implementar TTS
+2. Processamento de conteúdo não-texto
+3. Sistema de mensagens entre usuários
+4. Dashboard de analytics avançado
+
+================================================================================
+8. MÉTRICAS E OBSERVABILIDADE
+================================================================================
+
+ATUALMENTE:
+- Logs básicos no console (print statements)
+- Sem métricas estruturadas
+- Sem monitoramento de performance
+- Sem alertas
+
+RECOMENDADO:
+- Logging estruturado (JSON)
+- Métricas de processamento (latência, tokens usados)
+- Rastreamento de erros (Sentry ou similar)
+- Health checks mais robustos
+
+================================================================================
+9. CONCLUSÃO
+================================================================================
+
+O HARVEN.AI é uma plataforma funcional com um MVP completo que atende às 
+necessidades básicas de um AVA socrático. O sistema demonstra capacidade de:
+- Processar conteúdo educacional automaticamente
+- Gerar perguntas socráticas de qualidade
+- Conduzir diálogos educacionais limitados
+- Gerenciar hierarquia de disciplinas/cursos
+
+No entanto, há espaço significativo para melhorias em arquitetura, segurança, 
+performance e integrações. O rebuild recomendado deve focar em:
+1. Limpeza arquitetural
+2. Componentização adequada (Atomic Design)
+3. Segurança e observabilidade
+4. Performance e escalabilidade
+
+O sistema atual serve como base sólida para um rebuild mais robusto e 
+escalável.
+
+================================================================================
+FIM DO RESUMO EXECUTIVO
+================================================================================
+

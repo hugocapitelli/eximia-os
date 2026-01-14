@@ -1,0 +1,288 @@
+# Maestro Routing Rules
+# Regras dinâmicas de quando acionar cada agente
+# Mantido por: The_Maestro | Baseado em: agent_registry.yaml
+
+version: "1.0.0"
+last_updated: "2026-01-08"
+
+# ============================================================================
+# INSTRUÇÕES
+# ============================================================================
+# O Maestro consulta estas regras ANTES de rotear qualquer tarefa.
+# A ordem importa: regras mais específicas devem vir primeiro.
+# Cada regra tem:
+#   - trigger: regex pattern para match com o input do usuário
+#   - agent: ID do agente a acionar (conforme agent_registry.yaml)
+#   - priority: 1 = mais alto
+#   - veritas_required: se deve invocar The_Veritas primeiro
+#   - description: explicação da regra
+# ============================================================================
+
+# ============================================================================
+# VERITAS FIRST — Triggers que SEMPRE requerem pesquisa prévia
+# ============================================================================
+veritas_triggers:
+  patterns:
+    - "taxa.*selic|selic.*taxa"
+    - "cotação|preço.*dólar|dólar.*hoje"
+    - "lei.*\\d+|regulamento|regulamentação"
+    - "estatística|dado.*oficial|percentual.*mercado"
+    - "\\d{4}.*ano|ano.*\\d{4}"  # Datas específicas
+    - "atual|hoje|agora|corrente"
+    - "BACEN|CVM|ANPD|CADE|LGPD"
+  action: "invoke_veritas_first"
+  description: "Padrões que requerem verificação factual antes de qualquer resposta"
+
+# ============================================================================
+# ROUTING RULES — Por Domínio
+# ============================================================================
+rules:
+
+  # === PRIORIDADE 1: LEGAL ===
+  - id: legal_contract
+    trigger: "contrato|contract|cláusula|clause|termo.*uso|terms"
+    agent: the_clo
+    priority: 1
+    veritas_required: true
+    description: "Análise de contratos e termos"
+
+  - id: legal_compliance
+    trigger: "compliance|conformidade|LGPD|GDPR|regulatório|regulatory"
+    agent: the_clo
+    priority: 1
+    veritas_required: true
+    description: "Questões de conformidade e regulação"
+
+  - id: legal_risk
+    trigger: "risco.*legal|legal.*risk|processo|lawsuit|litígio"
+    agent: the_clo
+    priority: 1
+    veritas_required: true
+    sub_agent: litigation_sniper
+    description: "Avaliação de riscos jurídicos"
+
+  - id: legal_corporate
+    trigger: "abertura.*empresa|constituição.*empresa|LTDA|S\\.?A\\.|MEI|CNPJ"
+    agent: the_clo
+    priority: 1
+    veritas_required: true
+    sub_agent: corporate_contracts
+    description: "Estruturação societária"
+
+  - id: legal_tax
+    trigger: "imposto|tributário|tax|fiscal|IR|ICMS|PIS|COFINS"
+    agent: the_clo
+    priority: 1
+    veritas_required: true
+    sub_agent: tax_strategist
+    description: "Estratégia tributária"
+
+  # === PRIORIDADE 2: FINANCE ===
+  - id: finance_valuation
+    trigger: "valuation|DCF|fluxo.*caixa.*descontado|avaliação.*empresa"
+    agent: the_cfo
+    priority: 2
+    veritas_required: true
+    description: "Valuation de empresas"
+
+  - id: finance_ma
+    trigger: "M&A|fusão|aquisição|merger|acquisition|due.*diligence"
+    agent: the_cfo
+    priority: 2
+    veritas_required: true
+    description: "Fusões e aquisições"
+
+  - id: finance_fundraising
+    trigger: "investimento|captação|seed|series.*[A-D]|venture|VC|angel"
+    agent: the_cfo
+    priority: 2
+    veritas_required: true
+    description: "Estratégia de captação"
+
+  - id: finance_modeling
+    trigger: "modelo.*financeiro|projeção|forecast|P&L|DRE|balanço"
+    agent: the_cfo
+    priority: 2
+    veritas_required: false
+    description: "Modelagem financeira"
+
+  - id: finance_kpi
+    trigger: "KPI|métrica.*financeira|EBITDA|margem|ROI|ROE|ROIC"
+    agent: the_cfo
+    priority: 2
+    veritas_required: false
+    description: "KPIs financeiros"
+
+  # === PRIORIDADE 3: MARKETING ===
+  - id: marketing_brand
+    trigger: "marca|brand|posicionamento|positioning|identidade.*visual"
+    agent: the_cmo
+    priority: 3
+    veritas_required: false
+    sub_agent: brand_positioning
+    description: "Estratégia de marca"
+
+  - id: marketing_growth
+    trigger: "growth|crescimento|aquisição.*cliente|CAC|LTV|churn"
+    agent: the_cmo
+    priority: 3
+    veritas_required: true
+    sub_agent: performance_growth
+    description: "Growth marketing"
+
+  - id: marketing_content
+    trigger: "conteúdo|copy|copywriting|SEO|blog|artigo|post"
+    agent: the_cmo
+    priority: 3
+    veritas_required: false
+    sub_agent: copywriting_engine
+    description: "Marketing de conteúdo"
+
+  - id: marketing_gtm
+    trigger: "go.*to.*market|GTM|lançamento|launch|campanha"
+    agent: the_cmo
+    priority: 3
+    veritas_required: true
+    description: "Estratégia de lançamento"
+
+  # === PRIORIDADE 4: RESEARCH & ANALYSIS ===
+  - id: research_market
+    trigger: "pesquisa.*mercado|market.*research|TAM|SAM|SOM|concorrência"
+    agent: the_veritas
+    priority: 4
+    description: "Pesquisa de mercado"
+
+  - id: research_deep
+    trigger: "pesquise|research|investigue|busque.*informação"
+    agent: the_veritas
+    priority: 4
+    description: "Pesquisa profunda geral"
+
+  # === PRIORIDADE 5: EXECUTIVE & STRATEGY ===
+  - id: exec_validation
+    trigger: "valide.*ideia|validação|idea.*validation|viabilidade"
+    agent: the_ceo
+    priority: 5
+    veritas_required: true
+    description: "Validação de ideias via CEO workflow"
+
+  - id: exec_planning
+    trigger: "planejamento|roadmap|estratégia.*negócio|OKR|objetivo"
+    agent: the_ceo
+    priority: 5
+    description: "Planejamento estratégico"
+
+  # === PRIORIDADE 6: TACTICAL (X-AGENTS) ===
+  - id: tactical_decision
+    trigger: "decidir|decisão|escolher.*entre|qual.*melhor"
+    agent: x01_decision_killer
+    priority: 6
+    description: "Suporte a decisões"
+
+  - id: tactical_tradeoff
+    trigger: "trade.?off|compensação|prós.*contras|vantagem.*desvantagem"
+    agent: x02_tradeoff_analyzer
+    priority: 6
+    description: "Análise de trade-offs"
+
+  - id: tactical_consequences
+    trigger: "segunda.*ordem|consequência|long.*term|longo.*prazo"
+    agent: x03_second_order_thinker
+    priority: 6
+    description: "Pensamento de segunda ordem"
+
+  - id: tactical_sop
+    trigger: "processo|SOP|procedimento|passo.*passo|workflow"
+    agent: x06_sop_builder
+    priority: 6
+    description: "Criação de SOPs"
+
+  - id: tactical_business_model
+    trigger: "modelo.*negócio|business.*model|canvas|proposta.*valor"
+    agent: business_modeler
+    priority: 6
+    veritas_required: true
+    description: "Modelagem de negócio"
+
+# ============================================================================
+# MULTI-AGENT PATTERNS — Quando acionar múltiplos agentes
+# ============================================================================
+multi_agent_patterns:
+
+  - id: startup_feasibility
+    trigger: "criar.*empresa|abrir.*negócio|startup|novo.*negócio|fintech|saas"
+    agents:
+      - agent: the_veritas
+        task: "Pesquisar mercado e regulação"
+        order: 1
+      - agent: the_clo
+        task: "Estrutura legal e compliance"
+        order: 2
+      - agent: the_cfo
+        task: "Modelo financeiro e captação"
+        order: 3
+      - agent: the_cmo
+        task: "GTM e posicionamento"
+        order: 4
+    synthesis: "Roadmap integrado de viabilidade"
+    description: "Análise completa de viabilidade de novo negócio"
+
+  - id: product_launch
+    trigger: "lançar.*produto|product.*launch|go.*live"
+    agents:
+      - agent: the_veritas
+        task: "Pesquisa de mercado e competidores"
+        order: 1
+      - agent: the_clo
+        task: "Compliance e termos de uso"
+        order: 2
+      - agent: the_cmo
+        task: "Estratégia de lançamento"
+        order: 3
+    description: "Preparação para lançamento de produto"
+
+  - id: ma_analysis
+    trigger: "comprar.*empresa|adquirir|acquisition.*target"
+    agents:
+      - agent: the_veritas
+        task: "Due diligence facts"
+        order: 1
+      - agent: the_cfo
+        task: "Valuation e modelagem"
+        order: 2
+      - agent: the_clo
+        task: "Due diligence legal"
+        order: 3
+    description: "Análise de M&A"
+
+# ============================================================================
+# CONFLICT RESOLUTION — Hierarquia de Prioridades
+# ============================================================================
+conflict_resolution:
+  priority_order:
+    - the_clo     # Legal sempre tem prioridade máxima
+    - the_cfo     # Finance em segundo
+    - the_cmo     # Marketing em terceiro
+    - the_veritas # Research para desempate
+  
+  resolution_template: |
+    ## Conflito Detectado
+    
+    **[Agent A] recomenda:** [X]
+    **[Agent B] recomenda:** [Y]
+    
+    **Resolução:** Seguindo hierarquia KB_05, recomendo [X] 
+    porque [razão baseada na prioridade].
+    
+    **Trade-off:** Isso significa [o que o usuário abre mão].
+
+# ============================================================================
+# FALLBACK RULES — Quando nenhuma regra específica aplica
+# ============================================================================
+fallback:
+  default_agent: the_ceo
+  unknown_domain_agent: the_veritas
+  clarification_required:
+    - "contrato"  # Precisa saber qual contrato
+    - "analise"   # Precisa saber o que analisar
+    - "revise"    # Precisa do documento

@@ -1,0 +1,233 @@
+{
+  "documents": [
+    {
+      "type": "tax",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Impostos",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Impostos\\Geral\\01\\2026-01-09_Desconhecido_0.00_TAX.pdf",
+      "status": "processed",
+      "id": "tax_2026-01-09_Desconhecido_0",
+      "added_at": "2026-01-09T19:27:51.179254"
+    },
+    {
+      "type": "tax",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Impostos",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Impostos\\Geral\\01\\2026-01-09_Desconhecido_0.00_TAX.pdf",
+      "status": "processed",
+      "id": "tax_2026-01-09_Desconhecido_1",
+      "added_at": "2026-01-09T19:27:53.917373"
+    },
+    {
+      "type": "tax",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Impostos",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Impostos\\Geral\\01\\2026-01-09_Desconhecido_0.00_TAX.pdf",
+      "status": "processed",
+      "id": "tax_2026-01-09_Desconhecido_2",
+      "added_at": "2026-01-09T19:27:54.971125"
+    },
+    {
+      "type": "tax",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Impostos",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Impostos\\Geral\\01\\2026-01-09_Desconhecido_0.00_TAX.pdf",
+      "status": "processed",
+      "id": "tax_2026-01-09_Desconhecido_3",
+      "added_at": "2026-01-09T19:27:56.493827"
+    },
+    {
+      "type": "tax",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Impostos",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Impostos\\Geral\\01\\2026-01-09_Desconhecido_0.00_TAX.pdf",
+      "status": "processed",
+      "id": "tax_2026-01-09_Desconhecido_4",
+      "added_at": "2026-01-09T19:27:59.902993"
+    },
+    {
+      "type": "unknown",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Outros",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Outros\\01\\2026-01-09_Desconhecido_0.00_UNKNOWN.pdf",
+      "status": "processed",
+      "id": "unknown_2026-01-09_Desconhecido_5",
+      "added_at": "2026-01-09T19:28:02.113328"
+    },
+    {
+      "type": "tax",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Impostos",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Impostos\\Geral\\01\\2026-01-09_Desconhecido_0.00_TAX.pdf",
+      "status": "processed",
+      "id": "tax_2026-01-09_Desconhecido_6",
+      "added_at": "2026-01-09T19:28:03.303078"
+    },
+    {
+      "type": "unknown",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Outros",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Outros\\01\\2026-01-09_Desconhecido_0.00_UNKNOWN.pdf",
+      "status": "processed",
+      "id": "unknown_2026-01-09_Desconhecido_7",
+      "added_at": "2026-01-09T19:28:04.452201"
+    },
+    {
+      "type": "tax",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Impostos",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Impostos\\Geral\\01\\2026-01-09_Desconhecido_0.00_TAX.jpg",
+      "status": "processed",
+      "id": "tax_2026-01-09_Desconhecido_8",
+      "added_at": "2026-01-09T19:28:04.929929"
+    },
+    {
+      "type": "unknown",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 200.0,
+      "category": "Outros",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Outros\\01\\2026-01-09_Desconhecido_200.00_UNKNOWN.pdf",
+      "status": "processed",
+      "id": "unknown_2026-01-09_Desconhecido_9",
+      "added_at": "2026-01-09T19:28:06.429262"
+    },
+    {
+      "type": "unknown",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 200.0,
+      "category": "Outros",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Outros\\01\\2026-01-09_Desconhecido_200.00_UNKNOWN.pdf",
+      "status": "processed",
+      "id": "unknown_2026-01-09_Desconhecido_10",
+      "added_at": "2026-01-09T19:28:07.930317"
+    },
+    {
+      "type": "invoice",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Notas_Fiscais",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Notas_Fiscais\\Desconhecido\\01\\2026-01-09_Desconhecido_0.00_INVOICE.pdf",
+      "status": "processed",
+      "id": "invoice_2026-01-09_Desconhecido_11",
+      "added_at": "2026-01-09T19:28:09.828534"
+    },
+    {
+      "type": "tax",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Impostos",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Impostos\\Geral\\01\\2026-01-09_Desconhecido_0.00_TAX.pdf",
+      "status": "processed",
+      "id": "tax_2026-01-09_Desconhecido_12",
+      "added_at": "2026-01-09T19:28:11.204698"
+    },
+    {
+      "type": "tax",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Impostos",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Impostos\\Geral\\01\\2026-01-09_Desconhecido_0.00_TAX.pdf",
+      "status": "processed",
+      "id": "tax_2026-01-09_Desconhecido_13",
+      "added_at": "2026-01-09T19:28:15.483754"
+    },
+    {
+      "type": "unknown",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Outros",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Outros\\01\\2026-01-09_Desconhecido_0.00_UNKNOWN.pdf",
+      "status": "processed",
+      "id": "unknown_2026-01-09_Desconhecido_14",
+      "added_at": "2026-01-09T19:28:17.978446"
+    },
+    {
+      "type": "unknown",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Outros",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Outros\\01\\2026-01-09_Desconhecido_0.00_UNKNOWN.pdf",
+      "status": "processed",
+      "id": "unknown_2026-01-09_Desconhecido_15",
+      "added_at": "2026-01-09T19:28:19.490920"
+    },
+    {
+      "type": "unknown",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Outros",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Outros\\01\\2026-01-09_Desconhecido_0.00_UNKNOWN.pdf",
+      "status": "processed",
+      "id": "unknown_2026-01-09_Desconhecido_16",
+      "added_at": "2026-01-09T19:28:21.476224"
+    },
+    {
+      "type": "unknown",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Outros",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Outros\\01\\2026-01-09_Desconhecido_0.00_UNKNOWN.pdf",
+      "status": "processed",
+      "id": "unknown_2026-01-09_Desconhecido_17",
+      "added_at": "2026-01-09T19:28:23.023993"
+    },
+    {
+      "type": "tax",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Impostos",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Impostos\\Geral\\01\\2026-01-09_Desconhecido_0.00_TAX.pdf",
+      "status": "processed",
+      "id": "tax_2026-01-09_Desconhecido_18",
+      "added_at": "2026-01-09T19:28:24.160344"
+    },
+    {
+      "type": "unknown",
+      "date": "2026-01-09",
+      "entity": "Desconhecido",
+      "amount": 0.0,
+      "category": "Outros",
+      "file_path": "C:\\Users\\hugoc\\OneDrive\\Área de Trabalho\\exímIA Ventures\\eximIA.OS\\FINANCE\\2026\\Outros\\01\\2026-01-09_Desconhecido_0.00_UNKNOWN.pdf",
+      "status": "processed",
+      "id": "unknown_2026-01-09_Desconhecido_19",
+      "added_at": "2026-01-09T19:28:25.340885"
+    }
+  ],
+  "categories": [
+    "Notas_Fiscais",
+    "Impostos",
+    "Boletos",
+    "Comprovantes",
+    "Outros"
+  ],
+  "correlations": [],
+  "last_updated": "2026-01-09T19:28:25.340885"
+}

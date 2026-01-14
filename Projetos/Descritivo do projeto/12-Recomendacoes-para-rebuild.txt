@@ -1,0 +1,627 @@
+================================================================================
+RECOMENDAÇÕES PARA REBUILD - HARVEN.AI
+================================================================================
+
+Este documento contém recomendações para um rebuild completo do HARVEN.AI,
+focando em arquitetura limpa, escalabilidade e manutenibilidade.
+
+================================================================================
+1. VISÃO GERAL DO REBUILD
+================================================================================
+
+OBJETIVO:
+Criar uma versão 2.0 do HARVEN.AI com arquitetura limpa, código organizado,
+e base sólida para crescimento futuro.
+
+PRINCÍPIOS:
+- Clean Architecture
+- Domain-Driven Design (DDD)
+- Atomic Design no frontend
+- Test-Driven Development (TDD)
+- Infrastructure as Code
+- Observability First
+
+================================================================================
+2. ARQUITETURA RECOMENDADA
+================================================================================
+
+2.1. BACKEND
+-----------
+
+ESTRUTURA PROPOSTA:
+
+backend/
+├── src/
+│   ├── domain/              # Entidades de domínio
+│   │   ├── user/
+│   │   ├── course/
+│   │   ├── content/
+│   │   └── chat/
+│   ├── application/         # Casos de uso
+│   │   ├── use_cases/
+│   │   │   ├── auth/
+│   │   │   ├── courses/
+│   │   │   ├── content/
+│   │   │   └── chat/
+│   │   └── services/
+│   ├── infrastructure/       # Implementações
+│   │   ├── database/
+│   │   │   ├── repositories/
+│   │   │   └── migrations/
+│   │   ├── external/
+│   │   │   ├── openai/
+│   │   │   ├── moodle/
+│   │   │   └── microsoft/
+│   │   └── cache/
+│   └── presentation/        # API
+│       ├── api/
+│       │   └── v1/
+│       │       ├── routes/
+│       │       └── schemas/
+│       └── middleware/
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── e2e/
+└── alembic/                 # Migrations
+
+MELHORIAS:
+- Separação clara de responsabilidades
+- Dependency Injection
+- Repository pattern
+- Use cases isolados e testáveis
+- Migrations automatizadas (Alembic)
+
+2.2. FRONTEND
+------------
+
+ESTRUTURA PROPOSTA:
+
+frontend/
+├── src/
+│   ├── components/
+│   │   ├── atoms/
+│   │   ├── molecules/
+│   │   ├── organisms/
+│   │   └── templates/
+│   ├── features/            # Feature-based
+│   │   ├── auth/
+│   │   │   ├── components/
+│   │   │   ├── hooks/
+│   │   │   └── services/
+│   │   ├── courses/
+│   │   ├── content/
+│   │   └── chat/
+│   ├── pages/
+│   ├── hooks/               # Shared hooks
+│   ├── services/            # API clients
+│   ├── store/               # State management (Zustand/Redux)
+│   ├── utils/
+│   └── types/
+├── public/
+└── tests/
+
+MELHORIAS:
+- Atomic Design implementado
+- Feature-based organization
+- State management centralizado
+- Testes de componentes (Vitest + Testing Library)
+
+================================================================================
+3. TECNOLOGIAS RECOMENDADAS
+================================================================================
+
+3.1. BACKEND
+-----------
+
+MANTER:
+- FastAPI (excelente para APIs)
+- Python 3.10+
+- Supabase (PostgreSQL)
+- Pydantic (validação)
+
+ADICIONAR:
+- Alembic (migrations)
+- Redis (cache)
+- Celery (tasks assíncronas)
+- pytest (testes)
+- structlog (logging estruturado)
+- prometheus-client (métricas)
+
+CONSIDERAR:
+- SQLAlchemy (ORM, se necessário abstração)
+- Dependency Injector (DI)
+- Pydantic Settings (configuração)
+
+3.2. FRONTEND
+------------
+
+MANTER:
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+
+ADICIONAR:
+- Zustand ou Redux Toolkit (state management)
+- React Query (data fetching)
+- React Hook Form (formulários)
+- Storybook (documentação de componentes)
+- Vitest (testes)
+- Playwright (E2E)
+
+CONSIDERAR:
+- shadcn/ui (componentes)
+- TanStack Router (roteamento avançado)
+- Zod (validação de schemas)
+
+3.3. INFRAESTRUTURA
+------------------
+
+ADICIONAR:
+- Docker (containerização)
+- Docker Compose (desenvolvimento local)
+- GitHub Actions (CI/CD)
+- Terraform (IaC, opcional)
+- Sentry (error tracking)
+- DataDog ou New Relic (APM)
+
+================================================================================
+4. MUDANÇAS ARQUITETURAIS ESPECÍFICAS
+================================================================================
+
+4.1. UNIFICAR SISTEMA DE CAPÍTULOS
+----------------------------------
+
+PROBLEMA ATUAL:
+- Dois sistemas coexistem (content_chapters e intelligent_chapters)
+
+SOLUÇÃO:
+1. Migrar todos os dados para intelligent_chapters
+2. Remover content_chapters e modules
+3. Manter apenas intelligent_chapters como fonte única
+4. Criar migration script cuidadoso
+
+IMPLEMENTAÇÃO:
+- Script de migração de dados
+- Atualizar todos os endpoints
+- Atualizar frontend
+- Testes extensivos
+
+4.2. IMPLEMENTAR CLEAN ARCHITECTURE
+----------------------------------
+
+CAMADAS:
+
+Domain (Core):
+- Entidades puras (sem dependências)
+- Value Objects
+- Domain Events
+- Interfaces (ports)
+
+Application:
+- Use Cases (orquestração)
+- DTOs
+- Interfaces de serviços
+
+Infrastructure:
+- Implementações concretas
+- Repositories
+- External services
+- Database
+
+Presentation:
+- Controllers
+- Schemas
+- Middleware
+
+4.3. REPOSITORY PATTERN
+----------------------
+
+INTERFACE:
+```python
+class CourseRepository(ABC):
+    @abstractmethod
+    async def get_by_id(self, course_id: str) -> Course:
+        pass
+    
+    @abstractmethod
+    async def create(self, course: Course) -> Course:
+        pass
+```
+
+IMPLEMENTAÇÃO:
+```python
+class SupabaseCourseRepository(CourseRepository):
+    def __init__(self, client: Client):
+        self.client = client
+    
+    async def get_by_id(self, course_id: str) -> Course:
+        # Implementação
+        pass
+```
+
+BENEFÍCIOS:
+- Testabilidade (mocks fáceis)
+- Flexibilidade (trocar implementação)
+- Isolamento de lógica de negócio
+
+4.4. USE CASES
+-------------
+
+EXEMPLO:
+```python
+class CreateCourseUseCase:
+    def __init__(
+        self,
+        course_repo: CourseRepository,
+        discipline_repo: DisciplineRepository,
+        rbac: RBACService
+    ):
+        self.course_repo = course_repo
+        self.discipline_repo = discipline_repo
+        self.rbac = rbac
+    
+    async def execute(
+        self,
+        user: User,
+        data: CreateCourseDTO
+    ) -> Course:
+        # Validações
+        if not self.rbac.can_create_course(user, data.discipline_id):
+            raise PermissionDenied()
+        
+        # Lógica de negócio
+        course = Course.create(...)
+        
+        # Persistência
+        return await self.course_repo.create(course)
+```
+
+4.5. EVENT-DRIVEN (OPCIONAL)
+----------------------------
+
+Para operações assíncronas:
+- Domain Events
+- Event Bus
+- Handlers assíncronos
+
+Exemplo:
+- CourseCreated event
+- Handlers: NotifyTeachers, UpdateCache, etc.
+
+================================================================================
+5. MELHORIAS DE SEGURANÇA
+================================================================================
+
+5.1. AUTENTICAÇÃO
+---------------
+
+IMPLEMENTAR:
+- Refresh tokens
+- Token rotation
+- Rate limiting por usuário
+- 2FA (opcional)
+
+5.2. AUTORIZAÇÃO
+--------------
+
+IMPLEMENTAR:
+- RLS policies no Supabase
+- Policy-based authorization
+- Permissions granular
+- Audit log
+
+5.3. VALIDAÇÃO
+-------------
+
+IMPLEMENTAR:
+- Input validation rigorosa
+- Sanitização de dados
+- SQL injection prevention (já feito via Supabase)
+- XSS prevention
+
+5.4. SEGREDOS
+-----------
+
+IMPLEMENTAR:
+- Secrets management (HashiCorp Vault, AWS Secrets Manager)
+- Rotação de secrets
+- Não commitar secrets
+
+================================================================================
+6. OBSERVABILIDADE
+================================================================================
+
+6.1. LOGGING
+-----------
+
+IMPLEMENTAR:
+- Structured logging (JSON)
+- Log levels apropriados
+- Correlation IDs
+- Context em todos os logs
+
+EXEMPLO:
+```python
+logger.info(
+    "course_created",
+    extra={
+        "course_id": course.id,
+        "user_id": user.id,
+        "discipline_id": course.discipline_id
+    }
+)
+```
+
+6.2. MÉTRICAS
+------------
+
+IMPLEMENTAR:
+- Prometheus metrics
+- Business metrics
+- Performance metrics
+- Error rates
+
+EXEMPLO:
+- http_requests_total
+- course_created_total
+- chat_sessions_active
+- processing_duration_seconds
+
+6.3. TRACING
+-----------
+
+IMPLEMENTAR:
+- Distributed tracing (OpenTelemetry)
+- Request tracing
+- Database query tracing
+
+6.4. ALERTAS
+-----------
+
+IMPLEMENTAR:
+- Error rate alerts
+- Performance degradation alerts
+- Business metric alerts
+- Integration failure alerts
+
+================================================================================
+7. TESTES
+================================================================================
+
+7.1. PIRÂMIDE DE TESTES
+---------------------
+
+UNITÁRIOS (70%):
+- Testes de use cases
+- Testes de domain logic
+- Testes de utilities
+
+INTEGRAÇÃO (20%):
+- Testes de repositories
+- Testes de serviços externos
+- Testes de APIs
+
+E2E (10%):
+- Fluxos críticos
+- User journeys
+
+7.2. FERRAMENTAS
+---------------
+
+BACKEND:
+- pytest
+- pytest-asyncio
+- pytest-cov
+- factory-boy (fixtures)
+- faker (dados fake)
+
+FRONTEND:
+- Vitest
+- Testing Library
+- Playwright (E2E)
+- MSW (mock API)
+
+7.3. COBERTURA
+-------------
+
+META:
+- 80%+ cobertura de código
+- 100% cobertura de use cases críticos
+- 100% cobertura de segurança
+
+================================================================================
+8. PERFORMANCE
+================================================================================
+
+8.1. CACHE
+---------
+
+ESTRATÉGIA:
+- Cache de queries frequentes (Redis)
+- Cache de respostas de API externa
+- Cache de conteúdo processado
+- TTLs apropriados
+- Invalidação inteligente
+
+8.2. OTIMIZAÇÃO DE QUERIES
+-------------------------
+
+IMPLEMENTAR:
+- Eager loading
+- Query optimization
+- Índices adequados
+- Paginação em tudo
+
+8.3. ASSINCRONISMO
+-----------------
+
+GARANTIR:
+- Todas as operações pesadas assíncronas
+- Background tasks (Celery)
+- Queue para processamento
+- Retry com backoff
+
+8.4. CDN
+-------
+
+PARA:
+- Assets estáticos
+- Imagens de capa
+- PDFs processados
+
+================================================================================
+9. DEPLOYMENT
+================================================================================
+
+9.1. CONTAINERIZAÇÃO
+-------------------
+
+Dockerfile otimizado:
+- Multi-stage build
+- Non-root user
+- Health checks
+- Proper caching
+
+9.2. CI/CD
+---------
+
+PIPELINE:
+1. Lint
+2. Type check
+3. Testes
+4. Build
+5. Deploy (staging)
+6. Testes E2E
+7. Deploy (production)
+
+9.3. ENVIRONMENTS
+----------------
+
+DESENVOLVIMENTO:
+- Local com Docker Compose
+- Hot reload
+- Debug tools
+
+STAGING:
+- Ambiente de teste
+- Dados de teste
+- Integração com serviços externos (sandbox)
+
+PRODUÇÃO:
+- Alta disponibilidade
+- Auto-scaling
+- Monitoring completo
+
+================================================================================
+10. MIGRAÇÃO DE DADOS
+================================================================================
+
+10.1. ESTRATÉGIA
+--------------
+
+FASE 1: Preparação
+- Backup completo
+- Scripts de migração
+- Testes em ambiente isolado
+
+FASE 2: Migração
+- Migração de dados
+- Validação
+- Rollback plan
+
+FASE 3: Validação
+- Verificação de integridade
+- Testes de regressão
+- Monitoramento intensivo
+
+10.2. DADOS CRÍTICOS
+-------------------
+
+PRIORIDADE ALTA:
+- Users
+- Courses
+- Chat sessions
+- Processed content
+
+PRIORIDADE MÉDIA:
+- Disciplines
+- Groups
+- Classes
+
+PRIORIDADE BAIXA:
+- Logs antigos
+- Cache
+
+================================================================================
+11. PLANO DE EXECUÇÃO
+================================================================================
+
+FASE 1: FUNDAÇÃO (Semanas 1-4)
+- Setup de estrutura
+- Migrations automatizadas
+- Repository pattern
+- Testes básicos
+
+FASE 2: CORE (Semanas 5-12)
+- Use cases principais
+- API v2
+- Frontend reorganizado
+- Integrações básicas
+
+FASE 3: MELHORIAS (Semanas 13-20)
+- Cache
+- Observabilidade
+- Performance
+- Segurança
+
+FASE 4: POLISH (Semanas 21-24)
+- Testes completos
+- Documentação
+- Deploy
+- Migração de dados
+
+================================================================================
+12. CHECKLIST DE REBUILD
+================================================================================
+
+ARQUITETURA:
+[ ] Clean Architecture implementada
+[ ] Repository pattern
+[ ] Use cases isolados
+[ ] Dependency Injection
+
+FRONTEND:
+[ ] Atomic Design
+[ ] Feature-based organization
+[ ] State management
+[ ] Component library
+
+SEGURANÇA:
+[ ] RLS policies
+[ ] Rate limiting
+[ ] Refresh tokens
+[ ] Audit log
+
+OBSERVABILIDADE:
+[ ] Structured logging
+[ ] Métricas
+[ ] Tracing
+[ ] Alertas
+
+TESTES:
+[ ] 80%+ cobertura
+[ ] Testes E2E
+[ ] Testes de performance
+
+DEPLOYMENT:
+[ ] Docker
+[ ] CI/CD
+[ ] Environments
+[ ] Monitoring
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+

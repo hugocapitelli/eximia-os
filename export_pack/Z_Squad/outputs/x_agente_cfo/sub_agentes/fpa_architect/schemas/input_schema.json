@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "FPA Architect Input",
+    "type": "object",
+    "properties": {
+        "scenario_name": {
+            "type": "string"
+        },
+        "key_assumptions": {
+            "type": "object"
+        }
+    },
+    "required": [
+        "scenario_name"
+    ]
+}

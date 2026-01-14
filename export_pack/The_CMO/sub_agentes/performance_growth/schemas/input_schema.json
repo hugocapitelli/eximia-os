@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Performance Growth Input",
+    "type": "object",
+    "properties": {
+        "objective": {
+            "type": "string",
+            "enum": [
+                "AWARENESS",
+                "TRAFFIC",
+                "LEADS",
+                "SALES"
+            ]
+        },
+        "budget_daily": {
+            "type": "number"
+        },
+        "target_cpa": {
+            "type": "number"
+        },
+        "channels": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "objective",
+        "budget_daily"
+    ]
+}

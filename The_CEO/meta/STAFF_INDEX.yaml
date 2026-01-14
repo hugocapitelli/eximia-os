@@ -1,0 +1,114 @@
+staff:
+  # --- CORE MANAGEMENT ---
+  - nome: Researcher V3 (PraisonAI)
+    funcao: Inteligência Profunda, Web Search e Data Analysis
+    path_relativo: "../X_Agents/Researcher"
+    status: Ativo
+    competencias: [Deep Research, Web Scraping, Data Cleaning, Market Analysis]
+
+  - nome: Legal Counsel V2
+    funcao: Blindagem Jurídica e Contratos
+    path_relativo: "../X_Agents/Legal_Counsel"
+    status: Ativo
+    competencias: [Risk Assessment, Contract Drafting, Compliance Brazil]
+
+  - nome: The Cloner (Builder)
+    funcao: Fábrica de Agentes e Manutenção de Arquitetura
+    path_relativo: "../The_Cloner"
+    status: Ativo
+    competencias: [Agent Generation, File Management, Architecture Enforcement]
+
+  - nome: CMO Orchestrator
+    funcao: Growth, Branding e Estratégia de Mercado
+    path_relativo: "../The_CMO"
+    status: Ativo
+    competencias: [Marketing Strategy, Copywriting, Campaign Management]
+
+  # --- STRATEGIC INTELLIGENCE ---
+  - nome: Strategic Challenger
+    funcao: O "Advogado do Diabo" (Red Teaming)
+    path_relativo: "../X_Agents/Strategic_Challenger"
+    status: Ativo
+    competencias: [Pre-Mortem, Bias Detection, Risk Analysis]
+
+  - nome: Business Intelligence (Vortex)
+    funcao: Radar de Sinais e Anomalias
+    path_relativo: "../X_Agents/Business_Intelligence"
+    status: Ativo
+    competencias: [Trend Detection, Anomaly alerting, Pirate Metrics]
+
+  - nome: Business Modeler
+    funcao: Arquiteto de Modelos de Negócios (Canvas)
+    path_relativo: "../X_Agents/Business_Modeler"
+    status: Ativo
+    competencias: [Business Model Generation, Value Prop Design, Pivot Strategy]
+
+  # --- SQUAD 1: DECISÃO & CLAREZA ---
+  - nome: X-01 Decision Killer
+    funcao: Eliminação de ruído e opções de baixo ROI
+    path_relativo: "../X_Agents/X01_Decision_Killer"
+    status: On-Demand
+    competencias: [Filtering, Prioritization, Hell Yeah or No]
+
+  - nome: X-02 Trade-off Analyzer
+    funcao: Cálculo de custo de oportunidade
+    path_relativo: "../X_Agents/X02_TradeOff_Analyzer"
+    status: On-Demand
+    competencias: [Cost Benefit Analysis, Resource Mapping]
+
+  - nome: X-03 Second-Order Thinker
+    funcao: Simulação de consequências futuras
+    path_relativo: "../X_Agents/X03_Second_Order_Thinker"
+    status: On-Demand
+    competencias: [System Dynamics, Long-term Forecasting]
+
+  # --- SQUAD 2: EXECUÇÃO & PRODUTIVIDADE ---
+  - nome: X-04 Time Compression
+    funcao: Redução drástica de prazos (Warp Speed)
+    path_relativo: "../X_Agents/X04_Time_Compression"
+    status: On-Demand
+    competencias: [Critical Path Analysis, MVP Scoping]
+
+  - nome: X-06 SOP Builder
+    funcao: Criação de Processos Operacionais Padrão
+    path_relativo: "../X_Agents/X06_SOP_Builder"
+    status: On-Demand
+    competencias: [Process Mapping, Documentation, Checklist Creation]
+
+  # --- SQUAD 3: CONHECIMENTO & APRENDIZADO ---
+  - nome: X-07 Concept Translator
+    funcao: Tradução de teoria para prática
+    path_relativo: "../X_Agents/X07_Concept_Translator"
+    status: On-Demand
+    competencias: [Abstraction Reduction, Pragmatism]
+
+  - nome: X-08 Mental Model Builder
+    funcao: Criação de frameworks visuais e mentais
+    path_relativo: "../X_Agents/X08_Mental_Model_Builder"
+    status: On-Demand
+    competencias: [Analogy, Framework Design, Visual Thinking]
+
+  - nome: X-09 Learning Loop
+    funcao: Extração de lições e melhoria contínua
+    path_relativo: "../X_Agents/X09_Learning_Loop"
+    status: On-Demand
+    competencias: [Post-Mortem, Feedback Analysis, Iteration]
+
+  # --- SQUAD 4: NEGÓCIO & INFLUÊNCIA ---
+  - nome: X-10 ICP Sniper
+    funcao: Definição cirúrgica de público-alvo
+    path_relativo: "../X_Agents/X10_ICP_Sniper"
+    status: On-Demand
+    competencias: [Persona Definition, Value Prop Design]
+
+  - nome: X-11 Narrative Architect
+    funcao: Storytelling e Pitch Design
+    path_relativo: "../X_Agents/X11_Narrative_Architect"
+    status: On-Demand
+    competencias: [Storytelling, Pitch Deck, Emotional logic]
+
+  - nome: X-12 Negotiation Shadow
+    funcao: Suporte tático para negociações
+    path_relativo: "../X_Agents/X12_Negotiation_Shadow"
+    status: On-Demand
+    competencias: [BATNA Calc, Objection Handling, Deal Structuring]

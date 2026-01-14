@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "CRM Lifecycle Input",
+    "type": "object",
+    "properties": {
+        "customer_segment": {
+            "type": "string"
+        },
+        "trigger_event": {
+            "type": "string"
+        },
+        "goal": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "customer_segment",
+        "trigger_event"
+    ]
+}

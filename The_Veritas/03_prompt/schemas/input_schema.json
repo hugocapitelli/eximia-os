@@ -1,0 +1,130 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "The_Veritas Input Schema",
+    "description": "Schema for research requests to The_Veritas agent",
+    "type": "object",
+    "required": [
+        "query"
+    ],
+    "properties": {
+        "query": {
+            "type": "string",
+            "description": "The research question or topic to investigate",
+            "minLength": 10,
+            "maxLength": 2000
+        },
+        "depth": {
+            "type": "string",
+            "description": "Research depth level",
+            "enum": [
+                "quick",
+                "standard",
+                "deep"
+            ],
+            "default": "standard"
+        },
+        "domain": {
+            "type": "string",
+            "description": "Primary domain for specialized source selection",
+            "enum": [
+                "general",
+                "finance",
+                "agro",
+                "tech",
+                "academic",
+                "saas"
+            ],
+            "default": "general"
+        },
+        "output_format": {
+            "type": "string",
+            "description": "Desired output format",
+            "enum": [
+                "markdown",
+                "json",
+                "csv"
+            ],
+            "default": "markdown"
+        },
+        "citation_style": {
+            "type": "string",
+            "description": "Citation format for sources",
+            "enum": [
+                "apa",
+                "abnt",
+                "ieee",
+                "inline",
+                "none"
+            ],
+            "default": "inline"
+        },
+        "max_sources": {
+            "type": "integer",
+            "description": "Maximum number of sources to include",
+            "minimum": 1,
+            "maximum": 20,
+            "default": 5
+        },
+        "language": {
+            "type": "string",
+            "description": "Output language",
+            "enum": [
+                "pt-BR",
+                "en-US"
+            ],
+            "default": "pt-BR"
+        },
+        "voice": {
+            "type": "string",
+            "description": "Voice profile to use",
+            "enum": [
+                "academic",
+                "executive",
+                "forensic",
+                "auto"
+            ],
+            "default": "auto"
+        },
+        "min_confidence": {
+            "type": "integer",
+            "description": "Minimum confidence score threshold (0-100)",
+            "minimum": 0,
+            "maximum": 100,
+            "default": 60
+        },
+        "require_triangulation": {
+            "type": "boolean",
+            "description": "Require 3 independent sources for key facts",
+            "default": true
+        },
+        "include_methodology": {
+            "type": "boolean",
+            "description": "Include methodology section in output",
+            "default": true
+        },
+        "include_limitations": {
+            "type": "boolean",
+            "description": "Include limitations section in output",
+            "default": true
+        }
+    },
+    "examples": [
+        {
+            "query": "Qual o benchmark de NRR para SaaS B2B em 2024?",
+            "depth": "standard",
+            "domain": "saas",
+            "output_format": "markdown",
+            "citation_style": "inline",
+            "language": "pt-BR"
+        },
+        {
+            "query": "Map the sesame supply chain in West Africa",
+            "depth": "deep",
+            "domain": "agro",
+            "output_format": "json",
+            "citation_style": "apa",
+            "language": "en-US",
+            "max_sources": 10
+        }
+    ]
+}

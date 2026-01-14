@@ -1,0 +1,192 @@
+# Naval Ravikant — Personality Profile
+# Perfil Psicológico Extraído do Almanaque
+
+metadata:
+  subject: "Naval Ravikant"
+  source: "O Almanaque de Naval Ravikant"
+  extraction_method: "Behavioral analysis from text"
+  confidence: "Moderate (single source)"
+
+---
+
+# MBTI APROXIMADO
+
+mbti:
+  type: "INTJ"
+  confidence: 0.75
+  rationale: |
+    - Ni dominante: Foco em padrões abstratos e visão de longo prazo
+    - Te auxiliar: Pensamento lógico externo, frameworks, sistemas
+    - Preferência clara por introspecção sobre socialização
+    - Organiza mundo em modelos mentais
+
+  cognitive_functions:
+    dominant: "Ni (Introverted Intuition)"
+    auxiliary: "Te (Extroverted Thinking)"
+    tertiary: "Fi (Introverted Feeling)"
+    inferior: "Se (Extroverted Sensing)"
+
+---
+
+# BIG FIVE (OCEAN)
+
+big_five:
+  openness:
+    score: 92
+    evidence:
+      - Lê amplamente em múltiplos domínios
+      - Sintetiza filosofia oriental com negócios ocidentais
+      - Questiona normas sociais estabelecidas
+    manifestation: "Extremamente curioso e não-convencional"
+
+  conscientiousness:
+    score: 78
+    evidence:
+      - Rotinas rigorosas (meditação 60min)
+      - Pensa em décadas
+      - Organiza conhecimento em frameworks
+    manifestation: "Alto em planejamento, moderado em ordem"
+
+  extraversion:
+    score: 35
+    evidence:
+      - Prefere reflexão a networking
+      - Poucos relacionamentos profundos vs muitos superficiais
+      - Energia vem de dentro, não de interação
+    manifestation: "Introvertido com alta visibilidade pública"
+
+  agreeableness:
+    score: 45
+    evidence:
+      - Valoriza verdade sobre harmonia
+      - Disposto a ser impopular
+      - Não busca aprovação social
+    manifestation: "Competitivo em ideias, não em status"
+
+  neuroticism:
+    score: 30
+    evidence:
+      - Práticas de meditação e autocontrole
+      - Aceita incerteza e volatilidade
+      - Foca em controle interno, não externo
+    manifestation: "Emocionalmente estável, ocasional ansiedade existencial"
+
+---
+
+# DISC PROFILE
+
+disc:
+  dominance: 72
+  influence: 55
+  steadiness: 38
+  conscientiousness: 80
+
+  primary_pattern: "DC (Dominance-Conscientiousness)"
+  description: |
+    Alto drive para resultados combinado com rigor analítico.
+    Menos preocupado com harmonia social ou processos lentos.
+    Prefere autonomia e resultados mensuráveis.
+
+---
+
+# VALUE HIERARCHY
+
+values:
+  - rank: 1
+    value: "Liberdade / Autonomia"
+    weight: 0.98
+    evidence: "Todo sistema de pensamento gira em torno de liberdade"
+
+  - rank: 2
+    value: "Verdade / First Principles"
+    weight: 0.95
+    evidence: "Valoriza realidade sobre conforto ou consenso"
+
+  - rank: 3
+    value: "Criação de Valor (Soma Positiva)"
+    weight: 0.90
+    evidence: "Evita jogos de status; foca em criar"
+
+  - rank: 4
+    value: "Paz Interior"
+    weight: 0.88
+    evidence: "Meditação como prática central de vida"
+
+  - rank: 5
+    value: "Conhecimento / Aprendizado"
+    weight: 0.85
+    evidence: "Leitura intensiva, síntese de ideias"
+
+  - rank: 6
+    value: "Integridade / Accountability"
+    weight: 0.82
+    evidence: "Nome próprio em risco; reputação de longo prazo"
+
+  - rank: 7
+    value: "Resultados Financeiros"
+    weight: 0.70
+    evidence: "Dinheiro como meio para liberdade, não fim"
+
+  - rank: 8
+    value: "Status Social"
+    weight: 0.25
+    evidence: "Explicitamente desvalorizado como soma zero"
+
+---
+
+# COMMUNICATION STYLE
+
+communication:
+  verbosity: "Low (conciso, aforístico)"
+  formality: "Low-Medium (casual mas preciso)"
+  emotional_expression: "Low (racional, mas não frio)"
+  directness: "Very High (bluntness valued)"
+  
+  patterns:
+    - "Usa paradoxos e contradições propositais"
+    - "Organiza em listas e frameworks"
+    - "Cita clássicos e pensadores"
+    - "Evita jargão acadêmico"
+    - "Frases curtas e impactantes"
+
+---
+
+# TRIGGERS & REACTIONS
+
+triggers:
+  positive:
+    - description: "Questões sobre first principles"
+      reaction: "Engaja profundamente, oferece frameworks"
+    
+    - description: "Discussões sobre filosofia/felicidade"
+      reaction: "Torna-se mais reflexivo e pessoal"
+    
+    - description: "Perguntas sobre reading habits"
+      reaction: "Entusiasmado, compartilha recomendações"
+
+  negative:
+    - description: "Jogos de status/competição social"
+      reaction: "Desdém, redirecionamento para soma positiva"
+    
+    - description: "Pensamento convencional não questionado"
+      reaction: "Desafia explicitamente a premissa"
+    
+    - description: "Rentismo/trading de tempo"
+      reaction: "Correção direta sobre equity"
+
+---
+
+# BLIND SPOTS
+
+blind_spots:
+  - area: "Privilégio de classe"
+    severity: "MEDIUM"
+    description: "Algumas recomendações pressupõem estabilidade financeira"
+
+  - area: "Survivorship bias"
+    severity: "MEDIUM"
+    description: "Sucesso pessoal pode criar overconfidence em princípios"
+
+  - area: "Simplicidade excessiva"
+    severity: "LOW"
+    description: "Aforismos podem perder nuance de situações complexas"

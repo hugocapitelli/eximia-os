@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Data & Private Docs
+FINANCE/2026/
+00_Codex/eximia_data/
+*.pdf
+*.log
+
+# System
+.DS_Store
+Thumbs.db
+
+# Temporary
+z_temporary/
+tmp/
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+
+# Binaries (Optional - taking a middle ground: ignoring specific large binaries but keeping structure)
+# FINANCE/bin/ # Uncomment if we want to download binaries via script

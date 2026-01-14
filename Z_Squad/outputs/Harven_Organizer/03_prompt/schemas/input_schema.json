@@ -1,0 +1,197 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Harven_Organizer Input Schema",
+    "description": "Schema para entrada do agente OrganizerOS (Gerenciador de Persistencia e Exportacao)",
+    "type": "object",
+    "required": ["action", "payload"],
+    "properties": {
+        "action": {
+            "type": "string",
+            "enum": ["save_message", "finalize_session", "export_to_moodle", "retry_export", "get_session_status"],
+            "description": "Acao a ser executada"
+        },
+        "payload": {
+            "type": "object",
+            "description": "Dados especificos da acao"
+        },
+        "metadata": {
+            "type": "object",
+            "description": "Metadados adicionais (flags, metricas do ANALYST)"
+        }
+    },
+    "allOf": [
+        {
+            "if": {
+                "properties": { "action": { "const": "save_message" } }
+            },
+            "then": {
+                "properties": {
+                    "payload": {
+                        "type": "object",
+                        "required": ["session_id", "role", "content", "turn_number"],
+                        "properties": {
+                            "session_id": {
+                                "type": "string",
+                                "format": "uuid",
+                                "description": "ID da sessao"
+                            },
+                            "role": {
+                                "type": "string",
+                                "enum": ["student", "tutor"],
+                                "description": "Autor da mensagem"
+                            },
+                            "content": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "Conteudo da mensagem"
+                            },
+                            "turn_number": {
+                                "type": "integer",
+                                "minimum": 1,
+                                "maximum": 3,
+                                "description": "Numero do turno (1-3)"
+                            }
+                        }
+                    },
+                    "metadata": {
+                        "type": "object",
+                        "properties": {
+                            "ai_probability": {
+                                "type": "number",
+                                "minimum": 0,
+                                "maximum": 1,
+                                "description": "Probabilidade de IA (do ANALYST)"
+                            },
+                            "ai_verdict": {
+                                "type": "string",
+                                "enum": ["likely_human", "uncertain", "likely_ai"]
+                            },
+                            "ai_confidence": {
+                                "type": "string",
+                                "enum": ["high", "medium", "low"]
+                            },
+                            "flags": {
+                                "type": "array",
+                                "items": { "type": "string" }
+                            },
+                            "metrics": {
+                                "type": "object"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": { "action": { "const": "finalize_session" } }
+            },
+            "then": {
+                "properties": {
+                    "payload": {
+                        "type": "object",
+                        "required": ["session_id"],
+                        "properties": {
+                            "session_id": {
+                                "type": "string",
+                                "format": "uuid",
+                                "description": "ID da sessao a finalizar"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": { "action": { "const": "export_to_moodle" } }
+            },
+            "then": {
+                "properties": {
+                    "payload": {
+                        "type": "object",
+                        "required": ["session_id"],
+                        "properties": {
+                            "session_id": {
+                                "type": "string",
+                                "format": "uuid",
+                                "description": "ID da sessao a exportar"
+                            },
+                            "export_payload": {
+                                "type": "object",
+                                "description": "Payload pre-compilado (opcional)"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": { "action": { "const": "get_session_status" } }
+            },
+            "then": {
+                "properties": {
+                    "payload": {
+                        "type": "object",
+                        "required": ["session_id"],
+                        "properties": {
+                            "session_id": {
+                                "type": "string",
+                                "format": "uuid"
+                            },
+                            "include_messages": {
+                                "type": "boolean",
+                                "default": false
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "examples": [
+        {
+            "action": "save_message",
+            "payload": {
+                "session_id": "sess_123",
+                "role": "student",
+                "content": "Eu acho que sustentabilidade e importante...",
+                "turn_number": 1
+            },
+            "metadata": {
+                "ai_probability": 0.15,
+                "ai_verdict": "likely_human",
+                "flags": []
+            }
+        },
+        {
+            "action": "save_message",
+            "payload": {
+                "session_id": "sess_123",
+                "role": "tutor",
+                "content": "Voce levanta um ponto interessante...",
+                "turn_number": 1
+            }
+        },
+        {
+            "action": "finalize_session",
+            "payload": {
+                "session_id": "sess_123"
+            }
+        },
+        {
+            "action": "export_to_moodle",
+            "payload": {
+                "session_id": "sess_123"
+            }
+        },
+        {
+            "action": "get_session_status",
+            "payload": {
+                "session_id": "sess_123",
+                "include_messages": true
+            }
+        }
+    ]
+}

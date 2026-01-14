@@ -1,0 +1,218 @@
+# KB_03: Heuristics
+# Naval Ravikant — Regras de Decisão Extraídas
+
+metadata:
+  source: "O Almanaque de Naval Ravikant"
+  author: "Naval Ravikant (compilado por Eric Jorgenson)"
+  extraction_date: "2026-01-09"
+  total_heuristics: 25
+
+---
+
+# DECISÕES GERAIS
+
+heuristics:
+  - id: H001
+    name: "Regra da Indecisão"
+    trigger: "Não conseguir decidir entre opções"
+    action: "A resposta é NÃO"
+    rationale: "Em mundo de abundância, indecisão indica opção subótima"
+    confidence: 0.95
+    domain: decisions
+
+  - id: H002
+    name: "Dor de Curto Prazo"
+    trigger: "Duas opções igualmente atraentes"
+    action: "Escolher a que dá dor imediata"
+    rationale: "Escolhas difíceis, vida fácil. Escolhas fáceis, vida difícil"
+    confidence: 0.90
+    domain: decisions
+
+  - id: H003
+    name: "Equanimidade"
+    trigger: "Conflito interpessoal"
+    action: "Escolher opção que deixa mais em paz"
+    rationale: "Paz interna é mais valiosa que vitória externa"
+    confidence: 0.85
+    domain: decisions
+
+---
+
+# CRIAÇÃO DE RIQUEZA
+
+  - id: H010
+    name: "Não Alugar Tempo"
+    trigger: "Avaliar oportunidade de trabalho"
+    action: "Rejeitar se for apenas troca de tempo por dinheiro"
+    rationale: "Tempo tem teto; equity não tem"
+    confidence: 0.95
+    domain: wealth
+
+  - id: H011
+    name: "Buscar Equity"
+    trigger: "Negociar compensação"
+    action: "Priorizar participação sobre salário"
+    rationale: "Propriedade gera liberdade; salário gera dependência"
+    confidence: 0.90
+    domain: wealth
+
+  - id: H012
+    name: "Alavancagem Permissionless"
+    trigger: "Iniciar novo projeto"
+    action: "Preferir código ou mídia como alavanca"
+    rationale: "Não precisa de permissão de ninguém para criar"
+    confidence: 0.92
+    domain: wealth
+
+  - id: H013
+    name: "Jogos de Longo Prazo"
+    trigger: "Avaliar parceria ou investimento"
+    action: "Priorizar quem joga para décadas, não meses"
+    rationale: "Juros compostos requerem tempo"
+    confidence: 0.95
+    domain: wealth
+
+  - id: H014
+    name: "Construir + Vender"
+    trigger: "Desenvolver habilidades"
+    action: "Dominar ambos lados, não apenas um"
+    rationale: "Quem domina ambos é imparável"
+    confidence: 0.88
+    domain: wealth
+
+  - id: H015
+    name: "Taxa Horária Pessoal"
+    trigger: "Avaliar como gastar tempo"
+    action: "Definir taxa alta e recusar tudo abaixo"
+    rationale: "Tempo é mais valioso que dinheiro"
+    confidence: 0.85
+    domain: wealth
+
+---
+
+# CONHECIMENTO E APRENDIZADO
+
+  - id: H020
+    name: "Leia por Prazer"
+    trigger: "Escolher próximo livro"
+    action: "Ler o que genuinamente interessa, não o que 'deveria'"
+    rationale: "Prazer sustenta hábito; obrigação o destrói"
+    confidence: 0.95
+    domain: learning
+
+  - id: H021
+    name: "Abandono Sem Culpa"
+    trigger: "Livro não engaja após 50 páginas"
+    action: "Abandonar imediatamente"
+    rationale: "Vida é curta demais para livros ruins"
+    confidence: 0.90
+    domain: learning
+
+  - id: H022
+    name: "Múltiplos Simultâneos"
+    trigger: "Lendo apenas um livro"
+    action: "Adicionar 2-3 livros em paralelo"
+    rationale: "Evita tédio e cria conexões inesperadas"
+    confidence: 0.85
+    domain: learning
+
+  - id: H023
+    name: "Preferência por Clássicos"
+    trigger: "Escolher entre livro novo e clássico"
+    action: "Preferir o clássico"
+    rationale: "Sobreviveu ao tempo por razão"
+    confidence: 0.88
+    domain: learning
+
+  - id: H024
+    name: "Releitura dos Melhores"
+    trigger: "Terminar livro excelente"
+    action: "Adicionar à lista de releitura anual"
+    rationale: "Cada releitura revela novas camadas"
+    confidence: 0.85
+    domain: learning
+
+---
+
+# FELICIDADE E BEM-ESTAR
+
+  - id: H030
+    name: "Felicidade como Padrão"
+    trigger: "Sentir-se infeliz"
+    action: "Questionar qual desejo está causando turbulência"
+    rationale: "Paz é o estado natural; desejo é a perturbação"
+    confidence: 0.90
+    domain: happiness
+
+  - id: H031
+    name: "Meditação Diária"
+    trigger: "Início do dia"
+    action: "60 minutos de silêncio observando pensamentos"
+    rationale: "Mente calma é mente feliz"
+    confidence: 0.85
+    domain: happiness
+
+  - id: H032
+    name: "Limite de Desejos"
+    trigger: "Sentir muitos desejos simultâneos"
+    action: "Reduzir para máximo 1-2 desejos ativos"
+    rationale: "Muitos desejos = muita infelicidade"
+    confidence: 0.88
+    domain: happiness
+
+  - id: H033
+    name: "Não Buscar Status"
+    trigger: "Tentação de impressionar outros"
+    action: "Lembrar que status é soma zero"
+    rationale: "Para você subir, outro desce"
+    confidence: 0.92
+    domain: happiness
+
+  - id: H034
+    name: "Aceitar Realidade"
+    trigger: "Ressentimento sobre situação"
+    action: "Aceitar completamente ou mudar ativamente"
+    rationale: "Resistir à realidade causa sofrimento desnecessário"
+    confidence: 0.90
+    domain: happiness
+
+---
+
+# RELACIONAMENTOS
+
+  - id: H040
+    name: "Poucos e Profundos"
+    trigger: "Networking superficial"
+    action: "Investir em 5-10 relacionamentos profundos"
+    rationale: "Confiança compõe; conhecidos não"
+    confidence: 0.90
+    domain: relationships
+
+  - id: H041
+    name: "Pessoas de Longo Prazo"
+    trigger: "Escolher com quem trabalhar"
+    action: "Preferir quem pensa em décadas"
+    rationale: "Retornos vêm de jogos iterados"
+    confidence: 0.92
+    domain: relationships
+
+---
+
+# VETO RULES (O que NUNCA fazer)
+
+veto_rules:
+  - id: V001
+    rule: "Nunca trabalhar apenas por dinheiro"
+    rationale: "Dinheiro não compensa falta de propósito"
+
+  - id: V002
+    rule: "Nunca jogar jogos de status"
+    rationale: "Soma zero destrói valor"
+
+  - id: V003
+    rule: "Nunca comprometer integridade por ganho"
+    rationale: "Reputação leva anos para construir, segundos para destruir"
+
+  - id: V004
+    rule: "Nunca terminar livro ruim por obrigação"
+    rationale: "Custo de oportunidade muito alto"

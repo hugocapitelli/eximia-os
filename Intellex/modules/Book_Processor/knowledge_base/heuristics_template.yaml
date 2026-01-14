@@ -1,0 +1,119 @@
+# KB_03_HEURISTICS — Template de Referência
+# Use este template como EXEMPLO do nível de qualidade esperado
+
+metadata:
+  source: "O Almanaque de Naval Ravikant"
+  author: "Naval Ravikant (compilado por Eric Jorgenson)"
+  extraction_date: "2026-01-09"
+  total_heuristics: 25
+  quality_level: "CLAUDE_REFERENCE"
+
+---
+
+# EXEMPLO DE HEURÍSTICAS DE ALTA QUALIDADE
+
+## DECISÕES GERAIS
+
+heuristics:
+  - id: H001
+    name: "Regra da Indecisão"
+    trigger: "Não conseguir decidir entre opções"
+    action: "A resposta é NÃO"
+    rationale: "Em mundo de abundância, indecisão indica opção subótima"
+    confidence: 0.95
+    domain: decisions
+
+  - id: H002
+    name: "Dor de Curto Prazo"
+    trigger: "Duas opções igualmente atraentes"
+    action: "Escolher a que dá dor imediata"
+    rationale: "Escolhas difíceis, vida fácil. Escolhas fáceis, vida difícil"
+    confidence: 0.90
+    domain: decisions
+
+  - id: H003
+    name: "Equanimidade"
+    trigger: "Conflito interpessoal"
+    action: "Escolher opção que deixa mais em paz"
+    rationale: "Paz interna é mais valiosa que vitória externa"
+    confidence: 0.85
+    domain: decisions
+
+---
+
+# CRIAÇÃO DE RIQUEZA
+
+  - id: H010
+    name: "Não Alugar Tempo"
+    trigger: "Avaliar oportunidade de trabalho"
+    action: "Rejeitar se for apenas troca de tempo por dinheiro"
+    rationale: "Tempo tem teto; equity não tem"
+    confidence: 0.95
+    domain: wealth
+
+  - id: H011
+    name: "Buscar Equity"
+    trigger: "Negociar compensação"
+    action: "Priorizar participação sobre salário"
+    rationale: "Propriedade gera liberdade; salário gera dependência"
+    confidence: 0.90
+    domain: wealth
+
+  - id: H012
+    name: "Alavancagem Permissionless"
+    trigger: "Iniciar novo projeto"
+    action: "Preferir código ou mídia como alavanca"
+    rationale: "Não precisa de permissão de ninguém para criar"
+    confidence: 0.92
+    domain: wealth
+
+---
+
+# INSTRUÇÕES PARA GERAÇÃO
+
+Ao gerar KB_03_HEURISTICS.yaml, você DEVE:
+
+1. **Quantidade:** Mínimo 25 heurísticas, idealmente 30+
+2. **Formato:** Exatamente como exemplos acima
+3. **Campos obrigatórios:**
+   - id: Código único (H001, H002, etc)
+   - name: Nome descritivo da heurística
+   - trigger: Situação específica que ativa a regra
+   - action: Ação concreta a tomar
+   - rationale: Justificativa (por que funciona)
+   - confidence: Nível de confiança (0.0-1.0)
+   - domain: Categoria (decisions, wealth, learning, happiness, etc)
+
+4. **Qualidade:**
+   - Trigger específico (não vago)
+   - Action executável (não abstrata)
+   - Rationale com lógica clara
+
+5. **Organização:**
+   - Agrupar por domínios
+   - Usar separadores `---` entre seções
+   - Incluir seção "VETO RULES" no final (regras do que NUNCA fazer)
+
+---
+
+# ANTI-PADRÕES (O QUE NÃO FAZER)
+
+❌ RUIM:
+```yaml
+- id: H001
+  name: "Seja positivo"
+  trigger: "Sempre"
+  action: "Pense positivo"
+  rationale: "É bom"
+```
+
+✅ BOM:
+```yaml
+- id: H031
+  name: "Meditação Diária"
+  trigger: "Início do dia"
+  action: "60 minutos de silêncio observando pensamentos"
+  rationale: "Mente calma é mente feliz"
+  confidence: 0.85
+  domain: happiness
+```

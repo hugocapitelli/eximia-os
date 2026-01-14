@@ -1,0 +1,220 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Harven_Tester Output Schema",
+    "description": "Schema para saida do agente TesterOS (Validador de Qualidade)",
+    "type": "object",
+    "required": ["verdict", "score", "criteria_results", "summary", "recommendation"],
+    "properties": {
+        "verdict": {
+            "type": "string",
+            "enum": ["APPROVED", "REJECTED"],
+            "description": "Veredicto final da validacao"
+        },
+        "score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Score de qualidade (0.0 a 1.0). Score >= 0.7 para aprovacao"
+        },
+        "criteria_results": {
+            "type": "object",
+            "description": "Resultado detalhado de cada criterio",
+            "required": [
+                "C1_no_direct_answer",
+                "C2_open_question",
+                "C3_constructive_feedback",
+                "C4_no_labels",
+                "C5_natural_flow",
+                "C6_topic_connection"
+            ],
+            "properties": {
+                "C1_no_direct_answer": {
+                    "$ref": "#/definitions/criterion_result",
+                    "description": "Criterio 1: Sem Resposta Direta (CRITICAL)"
+                },
+                "C2_open_question": {
+                    "$ref": "#/definitions/criterion_result",
+                    "description": "Criterio 2: Pergunta Aberta ao Final (CRITICAL)"
+                },
+                "C3_constructive_feedback": {
+                    "$ref": "#/definitions/criterion_result",
+                    "description": "Criterio 3: Feedback Construtivo Presente (MAJOR)"
+                },
+                "C4_no_labels": {
+                    "$ref": "#/definitions/criterion_result",
+                    "description": "Criterio 4: Sem Rotulos Artificiais (MAJOR)"
+                },
+                "C5_natural_flow": {
+                    "$ref": "#/definitions/criterion_result",
+                    "description": "Criterio 5: Texto Fluido e Natural (MINOR)"
+                },
+                "C6_topic_connection": {
+                    "$ref": "#/definitions/criterion_result",
+                    "description": "Criterio 6: Conexao com Tema (MINOR)"
+                }
+            }
+        },
+        "summary": {
+            "type": "object",
+            "description": "Resumo executivo da validacao",
+            "required": ["passed_count", "failed_count", "critical_failures", "major_failures", "minor_issues"],
+            "properties": {
+                "passed_count": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 6,
+                    "description": "Numero de criterios aprovados"
+                },
+                "failed_count": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 6,
+                    "description": "Numero de criterios reprovados"
+                },
+                "critical_failures": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Lista de falhas CRITICAL (C1, C2)"
+                },
+                "major_failures": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Lista de falhas MAJOR (C3, C4)"
+                },
+                "minor_issues": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Lista de problemas MINOR (C5, C6)"
+                }
+            }
+        },
+        "recommendation": {
+            "type": "string",
+            "description": "Acao recomendada baseada no veredicto",
+            "examples": [
+                "Pronto para envio ao aluno",
+                "Reprocessar via ORIENTADOR - nao listar tipos de risco, fazer aluno descobrir",
+                "Reprocessar via EDITOR - adicionar pergunta aberta ao final"
+            ]
+        },
+        "observations": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Observacoes adicionais para melhoria continua",
+            "default": []
+        }
+    },
+    "definitions": {
+        "criterion_result": {
+            "type": "object",
+            "required": ["passed", "severity", "notes"],
+            "properties": {
+                "passed": {
+                    "type": "boolean",
+                    "description": "Se o criterio foi atendido"
+                },
+                "severity": {
+                    "type": "string",
+                    "enum": ["CRITICAL", "MAJOR", "MINOR"],
+                    "description": "Nivel de severidade do criterio"
+                },
+                "notes": {
+                    "type": "string",
+                    "description": "Explicacao do resultado da avaliacao"
+                }
+            }
+        }
+    },
+    "examples": [
+        {
+            "verdict": "APPROVED",
+            "score": 1.0,
+            "criteria_results": {
+                "C1_no_direct_answer": {
+                    "passed": true,
+                    "severity": "CRITICAL",
+                    "notes": "Resposta oferece nuance sem entregar informacao"
+                },
+                "C2_open_question": {
+                    "passed": true,
+                    "severity": "CRITICAL",
+                    "notes": "Pergunta aberta presente: 'Em que situacoes...'"
+                },
+                "C3_constructive_feedback": {
+                    "passed": true,
+                    "severity": "MAJOR",
+                    "notes": "Feedback especifico sobre ponto do aluno"
+                },
+                "C4_no_labels": {
+                    "passed": true,
+                    "severity": "MAJOR",
+                    "notes": "Texto limpo"
+                },
+                "C5_natural_flow": {
+                    "passed": true,
+                    "severity": "MINOR",
+                    "notes": "Texto fluido e natural"
+                },
+                "C6_topic_connection": {
+                    "passed": true,
+                    "severity": "MINOR",
+                    "notes": "Conectado ao tema"
+                }
+            },
+            "summary": {
+                "passed_count": 6,
+                "failed_count": 0,
+                "critical_failures": [],
+                "major_failures": [],
+                "minor_issues": []
+            },
+            "recommendation": "Pronto para envio ao aluno",
+            "observations": []
+        },
+        {
+            "verdict": "REJECTED",
+            "score": 0,
+            "criteria_results": {
+                "C1_no_direct_answer": {
+                    "passed": false,
+                    "severity": "CRITICAL",
+                    "notes": "VIOLACAO: Lista os tres tipos de risco diretamente"
+                },
+                "C2_open_question": {
+                    "passed": true,
+                    "severity": "CRITICAL",
+                    "notes": "Pergunta presente"
+                },
+                "C3_constructive_feedback": {
+                    "passed": true,
+                    "severity": "MAJOR",
+                    "notes": "Feedback presente"
+                },
+                "C4_no_labels": {
+                    "passed": true,
+                    "severity": "MAJOR",
+                    "notes": "Sem rotulos"
+                },
+                "C5_natural_flow": {
+                    "passed": true,
+                    "severity": "MINOR",
+                    "notes": "Texto fluido"
+                },
+                "C6_topic_connection": {
+                    "passed": true,
+                    "severity": "MINOR",
+                    "notes": "Conectado"
+                }
+            },
+            "summary": {
+                "passed_count": 5,
+                "failed_count": 1,
+                "critical_failures": ["C1: Resposta direta - listou tipos de risco"],
+                "major_failures": [],
+                "minor_issues": []
+            },
+            "recommendation": "Reprocessar via ORIENTADOR - nao listar tipos de risco, fazer aluno descobrir",
+            "observations": ["Os tipos de risco deveriam ser descobertos pelo aluno atraves de perguntas"]
+        }
+    ]
+}

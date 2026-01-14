@@ -1,0 +1,279 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://eximia.ai/schemas/z_squad_shared_state.json",
+    "title": "Z Squad Shared State",
+    "description": "Schema do estado compartilhado entre todos os módulos do Z Squad durante a criação de um agente",
+    "type": "object",
+    "required": [
+        "pipeline_id",
+        "status",
+        "current_module",
+        "objective",
+        "artifacts"
+    ],
+    "properties": {
+        "pipeline_id": {
+            "type": "string",
+            "pattern": "^ZSQUAD-[0-9]{8}-[0-9]{3}$",
+            "description": "ID único do pipeline de criação (ex: ZSQUAD-20260106-001)"
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "IN_PROGRESS",
+                "BLOCKED",
+                "COMPLETED",
+                "FAILED"
+            ],
+            "description": "Status atual do pipeline"
+        },
+        "current_module": {
+            "type": "string",
+            "enum": [
+                "Z1_Architect",
+                "Z2_Profiler",
+                "Z3_Engineer",
+                "Z4_Auditor",
+                "Z5_Evolver",
+                "DELIVERED"
+            ],
+            "description": "Módulo atualmente responsável pelo pipeline"
+        },
+        "objective": {
+            "type": "object",
+            "required": [
+                "user_request",
+                "agent_name",
+                "domain"
+            ],
+            "properties": {
+                "user_request": {
+                    "type": "string",
+                    "description": "O pedido original do usuário"
+                },
+                "agent_name": {
+                    "type": "string",
+                    "description": "Nome do agente sendo criado"
+                },
+                "domain": {
+                    "type": "string",
+                    "description": "Domínio técnico principal"
+                },
+                "priority": {
+                    "type": "string",
+                    "enum": [
+                        "LOW",
+                        "MEDIUM",
+                        "HIGH",
+                        "CRITICAL"
+                    ],
+                    "default": "MEDIUM"
+                }
+            }
+        },
+        "plan": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "step",
+                    "module",
+                    "status"
+                ],
+                "properties": {
+                    "step": {
+                        "type": "integer"
+                    },
+                    "module": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "string",
+                        "enum": [
+                            "PENDING",
+                            "IN_PROGRESS",
+                            "COMPLETED",
+                            "SKIPPED",
+                            "FAILED"
+                        ]
+                    },
+                    "started_at": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "completed_at": {
+                        "type": "string",
+                        "format": "date-time"
+                    }
+                }
+            },
+            "description": "Lista de passos planejados"
+        },
+        "artifacts": {
+            "type": "object",
+            "description": "Artefatos produzidos por cada módulo",
+            "properties": {
+                "Z1_Architect": {
+                    "type": "object",
+                    "properties": {
+                        "spec_tecnica": {
+                            "type": "string",
+                            "description": "Path para spec_tecnica.json"
+                        },
+                        "handoff_payload": {
+                            "type": "string",
+                            "description": "Path para handoff_payload.yaml"
+                        }
+                    }
+                },
+                "Z2_Profiler": {
+                    "type": "object",
+                    "properties": {
+                        "dna_mental": {
+                            "type": "string"
+                        },
+                        "knowledge_base": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "style_guide": {
+                            "type": "string"
+                        },
+                        "handoff_payload": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "Z3_Engineer": {
+                    "type": "object",
+                    "properties": {
+                        "system_prompt": {
+                            "type": "string"
+                        },
+                        "input_schema": {
+                            "type": "string"
+                        },
+                        "output_schema": {
+                            "type": "string"
+                        },
+                        "tools_config": {
+                            "type": "string"
+                        },
+                        "handoff_payload": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "Z4_Auditor": {
+                    "type": "object",
+                    "properties": {
+                        "test_plan": {
+                            "type": "string"
+                        },
+                        "test_results": {
+                            "type": "string"
+                        },
+                        "validation_report": {
+                            "type": "string"
+                        },
+                        "decision": {
+                            "type": "string",
+                            "enum": [
+                                "APPROVED",
+                                "APPROVED_WITH_CONDITIONS",
+                                "REJECTED"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "handoffs": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "from",
+                    "to",
+                    "timestamp"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "from": {
+                        "type": "string"
+                    },
+                    "to": {
+                        "type": "string"
+                    },
+                    "timestamp": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "payload_path": {
+                        "type": "string"
+                    }
+                }
+            },
+            "description": "Histórico de handoffs entre módulos"
+        },
+        "blockers": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "description",
+                    "raised_by",
+                    "timestamp"
+                ],
+                "properties": {
+                    "description": {
+                        "type": "string"
+                    },
+                    "raised_by": {
+                        "type": "string"
+                    },
+                    "timestamp": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "resolved": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "resolution": {
+                        "type": "string"
+                    }
+                }
+            },
+            "description": "Bloqueios encontrados durante o pipeline"
+        },
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "created_at": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "updated_at": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "created_by": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string",
+                    "default": "1.0.0"
+                }
+            }
+        }
+    }
+}

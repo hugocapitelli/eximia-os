@@ -1,0 +1,818 @@
+================================================================================
+APIs, ROTAS, CONTRATOS E INTEGRAÇÕES - HARVEN.AI
+================================================================================
+
+Fonte: backend/routers/, backend/main.py
+
+Base URL: http://localhost:8000 (desenvolvimento)
+Documentação: http://localhost:8000/docs (Swagger UI)
+
+================================================================================
+1. AUTENTICAÇÃO
+================================================================================
+
+1.1. POST /auth/login
+--------------------
+
+Autentica usuário e retorna JWT token.
+
+Request:
+{
+  "ra": "string",  // RA ou email
+  "password": "string"
+}
+
+Response: 200 OK
+{
+  "access_token": "string",
+  "token_type": "bearer",
+  "user": {
+    "id": "string",
+    "ra": "string",
+    "name": "string",
+    "email": "string",
+    "role": "student|teacher|admin",
+    "is_active": true
+  }
+}
+
+Erros:
+- 401: Credenciais inválidas
+- 400: Campos obrigatórios faltando
+
+1.2. POST /auth/register
+----------------------
+
+Registra novo usuário.
+
+Request:
+{
+  "ra": "string",
+  "name": "string",
+  "email": "string",
+  "password": "string",
+  "role": "student" (opcional, padrão: student)
+}
+
+Response: 200 OK
+{
+  "id": "string",
+  "ra": "string",
+  "name": "string",
+  "email": "string",
+  "role": "student",
+  "is_active": true
+}
+
+Erros:
+- 400: RA ou email já existe
+- 400: Campos inválidos
+
+1.3. GET /auth/me
+----------------
+
+Retorna usuário atual (requer autenticação).
+
+Headers:
+Authorization: Bearer <token>
+
+Response: 200 OK
+{
+  "id": "string",
+  "ra": "string",
+  "name": "string",
+  "email": "string",
+  "role": "student|teacher|admin",
+  "is_active": true
+}
+
+1.4. GET /auth/microsoft
+------------------------
+
+Inicia OAuth com Microsoft (NÃO IMPLEMENTADO).
+
+Status: TODO - Não funcional
+
+================================================================================
+2. CURSOS
+================================================================================
+
+2.1. GET /courses
+----------------
+
+Lista cursos (com filtros opcionais).
+
+Query Params:
+- course_code: string (opcional)
+- period: string (opcional)
+- search: string (opcional)
+
+Headers:
+Authorization: Bearer <token>
+
+Response: 200 OK
+[
+  {
+    "id": "string",
+    "name": "string",
+    "code": "string",
+    "semester": "string",
+    "period": "string",
+    "description": "string",
+    "category": "string",
+    "cover_image": "string",
+    "is_published_global": false,
+    "discipline_id": "string",
+    "is_active": true,
+    "created_at": "2025-01-01T00:00:00Z"
+  }
+]
+
+Permissões:
+- Admin: todos os cursos
+- Teacher: cursos das disciplinas atribuídas + publicados globalmente
+- Student: cursos atribuídos
+
+2.2. GET /courses/{course_id}
+----------------------------
+
+Detalhes de um curso.
+
+Response: 200 OK
+{
+  "id": "string",
+  "name": "string",
+  // ... campos do curso
+}
+
+2.3. POST /courses
+-----------------
+
+Cria novo curso.
+
+Request:
+{
+  "name": "string",
+  "code": "string",
+  "semester": "string",
+  "period": "string",
+  "description": "string" (opcional),
+  "category": "string" (opcional),
+  "cover_image": "string" (opcional),
+  "is_published_global": false,
+  "discipline_id": "string" (opcional)
+}
+
+Permissões: Admin, Teacher (apenas disciplinas atribuídas)
+
+2.4. PUT /courses/{course_id}
+----------------------------
+
+Atualiza curso.
+
+Permissões: Admin, Teacher (apenas disciplinas atribuídas)
+
+2.5. DELETE /courses/{course_id}
+-------------------------------
+
+Exclui curso.
+
+Permissões: Admin, Teacher (apenas disciplinas atribuídas)
+
+2.6. GET /courses/teacher/my-courses
+-----------------------------------
+
+Lista cursos do professor (apenas teacher).
+
+Response: 200 OK
+[
+  {
+    // ... campos do curso
+  }
+]
+
+2.7. POST /courses/{course_id}/assign
+------------------------------------
+
+Atribui curso a usuário/grupo/turma.
+
+Request:
+{
+  "target_type": "user|group|all",
+  "target_id": "string" (opcional, se target_type != "all")
+}
+
+Permissões: Admin
+
+================================================================================
+3. DISCIPLINAS
+================================================================================
+
+3.1. GET /disciplines
+--------------------
+
+Lista disciplinas.
+
+Permissões: Admin (todas), Teacher (atribuídas)
+
+3.2. POST /disciplines
+---------------------
+
+Cria disciplina.
+
+Request:
+{
+  "name": "string"
+}
+
+Permissões: Admin
+
+3.3. DELETE /disciplines/{discipline_id}
+---------------------------------------
+
+Exclui disciplina.
+
+Permissões: Admin
+
+3.4. GET /disciplines/{discipline_id}/courses
+--------------------------------------------
+
+Lista cursos da disciplina.
+
+3.5. POST /disciplines/{discipline_id}/courses
+---------------------------------------------
+
+Atribui curso à disciplina.
+
+3.6. POST /disciplines/{discipline_id}/teachers/{teacher_id}
+-----------------------------------------------------------
+
+Atribui professor à disciplina.
+
+Request:
+{
+  "role": "owner|editor" (opcional, padrão: "editor")
+}
+
+Permissões: Admin
+
+3.7. DELETE /disciplines/{discipline_id}/teachers/{teacher_id}
+-------------------------------------------------------------
+
+Remove professor da disciplina.
+
+Permissões: Admin
+
+================================================================================
+4. CONTEÚDO
+================================================================================
+
+4.1. GET /content/chapters
+-------------------------
+
+Lista capítulos (sistema novo).
+
+Query Params:
+- course_id: string (opcional)
+
+4.2. POST /content/chapters
+--------------------------
+
+Cria capítulo.
+
+Request:
+{
+  "course_id": "string",
+  "title": "string",
+  "content": "string",
+  "order": 0
+}
+
+4.3. GET /content/chapters/{chapter_id}
+--------------------------------------
+
+Detalhes do capítulo.
+
+4.4. PUT /content/chapters/{chapter_id}
+--------------------------------------
+
+Atualiza capítulo.
+
+4.5. DELETE /content/chapters/{chapter_id}
+-----------------------------------------
+
+Exclui capítulo.
+
+4.6. GET /content/courses/{course_id}/modules
+--------------------------------------------
+
+Lista módulos do curso (sistema antigo).
+
+4.7. POST /content/modules
+-------------------------
+
+Cria módulo.
+
+4.8. POST /content/modules/{module_id}/chapters
+----------------------------------------------
+
+Cria capítulo no módulo (sistema antigo).
+
+================================================================================
+5. PROCESSAMENTO INTELIGENTE
+================================================================================
+
+5.1. POST /content/import/upload
+--------------------------------
+
+Upload e inicia processamento.
+
+Request: multipart/form-data
+- file: File (PDF ou TXT)
+- course_id: string (obrigatório)
+- mode: "manual" | "auto" (padrão: "manual")
+- process_all: boolean (padrão: true)
+- interval_start: int (opcional, se process_all=false)
+- interval_end: int (opcional, se process_all=false)
+
+Response: 200 OK
+{
+  "content_id": "uuid",
+  "status": "processing|manual"
+}
+
+Permissões: Admin, Teacher
+
+5.2. GET /content/import/
+-----------------------
+
+Lista conteúdos importados.
+
+Query Params:
+- course_id: string (opcional)
+- status: string (opcional)
+
+5.3. GET /content/import/status/{content_id}
+-------------------------------------------
+
+Status do processamento.
+
+Response: 200 OK
+{
+  "id": "uuid",
+  "status": "processing|completed|approved|error",
+  "error_message": "string" (se error)
+}
+
+5.4. GET /content/import/{content_id}/chapters
+---------------------------------------------
+
+Capítulos gerados.
+
+Response: 200 OK
+[
+  {
+    "id": "uuid",
+    "title": "string",
+    "order_index": 0,
+    "body": "string"
+  }
+]
+
+5.5. POST /content/import/{content_id}/reprocess
+----------------------------------------------
+
+Reprocessa conteúdo.
+
+Request:
+{
+  "process_all": boolean,
+  "interval": { "inicio": int, "fim": int } (opcional)
+}
+
+5.6. POST /content/import/{content_id}/approve
+--------------------------------------------
+
+Aprova estrutura gerada.
+
+Response: 200 OK
+{
+  "status": "approved"
+}
+
+5.7. DELETE /content/import/{content_id}
+---------------------------------------
+
+Exclui conteúdo importado.
+
+================================================================================
+6. CHAT SOCRÁTICO
+================================================================================
+
+6.1. POST /socratic-chat/start
+-----------------------------
+
+Inicia sessão de chat.
+
+Request:
+{
+  "aluno_ra": "string",
+  "capitulo_id": "string",
+  "question_id": "string" (opcional, se não fornecido retorna perguntas)
+}
+
+Response: 200 OK
+{
+  "needs_selection": boolean,
+  "questions": [
+    {
+      "id": "string",
+      "pergunta": "string",
+      "order": 0
+    }
+  ],
+  "session": {
+    "id": "uuid",
+    "aluno_ra": "string",
+    "capitulo_id": "string",
+    "pergunta_id": "string",
+    "pergunta_texto": "string",
+    "interacoes_restantes": 3,
+    "status": "active"
+  },
+  "history": []
+}
+
+Permissões: Student (próprio RA), Admin
+
+6.2. POST /socratic-chat/message
+--------------------------------
+
+Envia mensagem no chat.
+
+Request:
+{
+  "chat_session_id": "uuid",
+  "aluno_ra": "string",
+  "mensagem": "string"
+}
+
+Response: 200 OK
+{
+  "mensagem": "string",  // Resposta da IA
+  "interacoes_restantes": 2,
+  "finalizado": false,
+  "status": "active|completed",
+  "history": [
+    {
+      "autor": "aluno|ia",
+      "mensagem": "string",
+      "timestamp": "2025-01-01T00:00:00Z",
+      "agente_responsavel": "ORIENTADOR",
+      "metricas": {},
+      "qa_report": {}
+    }
+  ],
+  "metricas": {},
+  "qa_report": {}
+}
+
+Erros:
+- 400: Limite de interações atingido
+- 400: Sessão não encontrada
+- 400: Sessão não pertence ao aluno
+
+6.3. POST /socratic-chat/finalize
+--------------------------------
+
+Finaliza sessão manualmente.
+
+Request:
+{
+  "chat_session_id": "uuid"
+}
+
+Response: 200 OK
+{
+  "session": {},
+  "history": []
+}
+
+6.4. GET /socratic-chat/history/{session_id}
+-------------------------------------------
+
+Histórico completo da sessão.
+
+Permissões: Student (própria sessão), Admin, Teacher
+
+6.5. GET /socratic-chat/student-history
+---------------------------------------
+
+Histórico do aluno para um capítulo.
+
+Query Params:
+- alunoRa: string
+- capituloId: string
+
+Response: 200 OK
+{
+  "session": {},
+  "mensagens": [
+    {
+      "autor": "aluno|ia",
+      "conteudo": "string",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  ]
+}
+
+6.6. GET /socratic-chat/has-session
+----------------------------------
+
+Verifica se há sessão existente.
+
+Query Params:
+- alunoRa: string
+- capituloId: string
+
+Response: 200 OK
+{
+  "hasSession": true,
+  "session": {
+    "id": "uuid",
+    "status": "active|completed"
+  }
+}
+
+6.7. DELETE /socratic-chat/session/{session_id}
+----------------------------------------------
+
+Exclui sessão (soft delete).
+
+Response: 200 OK
+{
+  "success": true,
+  "status": "deleted"
+}
+
+6.8. POST /socratic-chat/export-to-moodle/{session_id}
+-----------------------------------------------------
+
+Exporta conversa para Moodle.
+
+Permissões: Admin, Teacher
+
+Response: 200 OK
+{
+  "success": true,
+  "status": "exported",
+  "details": {}
+}
+
+================================================================================
+7. PERGUNTAS SOCRÁTICAS
+================================================================================
+
+7.1. POST /ia/generate-questions
+--------------------------------
+
+Gera perguntas socráticas via IA.
+
+Request:
+{
+  "chapterId": "string",
+  "contentId": "string" (opcional),
+  "rawContent": "string" (opcional),
+  "learningObjective": "string",
+  "difficulty": "iniciante|intermediario|avancado",
+  "numberOfQuestions": 5
+}
+
+Response: 200 OK
+{
+  "questions": [
+    {
+      "id": "string",
+      "question": "string",
+      "order": 0
+    }
+  ]
+}
+
+7.2. GET /socratic/chapters/{chapter_id}/questions
+--------------------------------------------------
+
+Lista perguntas do capítulo.
+
+7.3. POST /socratic
+-------------------
+
+Cria perguntas manualmente.
+
+7.4. POST /socratic/auto-generate
+---------------------------------
+
+Gera perguntas automaticamente.
+
+7.5. POST /socratic/questions/{question_id}/regenerate
+-----------------------------------------------------
+
+Regenera pergunta específica.
+
+7.6. POST /socratic/{chapter_id}/regenerate-all
+----------------------------------------------
+
+Regenera todas as perguntas do capítulo.
+
+7.7. DELETE /socratic/questions/{question_id}
+-------------------------------------------
+
+Exclui pergunta.
+
+================================================================================
+8. PROFESSOR
+================================================================================
+
+8.1. GET /teacher/overview
+-------------------------
+
+Visão geral do professor.
+
+Response: 200 OK
+{
+  "disciplines": [],
+  "courses": [],
+  "groups": [],
+  "cohorts": []
+}
+
+8.2. GET /teacher/disciplines
+----------------------------
+
+Lista disciplinas do professor.
+
+8.3. GET /teacher/progress
+-------------------------
+
+Progresso dos alunos.
+
+8.4. GET /teacher/socratic-responses
+-----------------------------------
+
+Respostas socráticas dos alunos.
+
+8.5. POST /teacher/responses/{response_id}/rate
+----------------------------------------------
+
+Avalia resposta do aluno.
+
+Request:
+{
+  "rating": 1-5,
+  "comment": "string" (opcional)
+}
+
+================================================================================
+9. ADMINISTRAÇÃO
+================================================================================
+
+9.1. GET /admin/users
+--------------------
+
+Lista usuários (com paginação).
+
+Query Params:
+- page: int (padrão: 1)
+- limit: int (padrão: 10)
+- role: string (opcional)
+- search: string (opcional)
+
+Response: 200 OK
+{
+  "users": [],
+  "total": 100,
+  "page": 1,
+  "limit": 10
+}
+
+9.2. GET /admin/users/teachers
+------------------------------
+
+Lista professores.
+
+9.3. PATCH /admin/users/{user_id}
+--------------------------------
+
+Atualiza usuário.
+
+Request:
+{
+  "name": "string" (opcional),
+  "email": "string" (opcional),
+  "role": "string" (opcional),
+  "is_active": boolean (opcional)
+}
+
+9.4. POST /admin/users/{user_id}/reset-password
+----------------------------------------------
+
+Reseta senha do usuário.
+
+Response: 200 OK
+{
+  "new_password": "string"
+}
+
+================================================================================
+10. GRUPOS E TURMAS
+================================================================================
+
+10.1. GET /course-groups
+-----------------------
+
+Lista grupos.
+
+10.2. POST /course-groups
+------------------------
+
+Cria grupo.
+
+10.3. GET /course-groups/{group_id}/members
+------------------------------------------
+
+Membros do grupo.
+
+10.4. POST /course-groups/{group_id}/members
+-------------------------------------------
+
+Adiciona membro ao grupo.
+
+10.5. GET /academic-classes
+--------------------------
+
+Lista turmas.
+
+10.6. POST /academic-classes
+---------------------------
+
+Cria turma.
+
+10.7. GET /academic-classes/{class_id}/members
+---------------------------------------------
+
+Membros da turma.
+
+================================================================================
+11. INTEGRAÇÕES
+================================================================================
+
+11.1. POST /moodle/export/{session_id}
+------------------------------------
+
+Exporta conversa para Moodle.
+
+Permissões: Admin, Teacher
+
+11.2. GET /sso/moodle/start
+---------------------------
+
+Inicia SSO com Moodle (PARCIAL).
+
+11.3. POST /imports/jacad
+------------------------
+
+Importa turmas do JACAD.
+
+11.4. POST /imports/moodle
+-------------------------
+
+Importa turmas do Moodle.
+
+================================================================================
+12. AUTENTICAÇÃO E SEGURANÇA
+================================================================================
+
+12.1. HEADERS OBRIGATÓRIOS
+-------------------------
+
+Para rotas protegidas:
+Authorization: Bearer <jwt_token>
+
+12.2. CORS
+---------
+
+Configurado apenas para:
+- http://localhost:3000
+- http://localhost:5173
+
+12.3. VALIDAÇÃO
+--------------
+
+- Pydantic schemas para validação
+- Type hints em todos os endpoints
+- Error handling padronizado
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+

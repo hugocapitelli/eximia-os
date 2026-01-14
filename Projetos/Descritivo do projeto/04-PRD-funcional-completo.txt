@@ -1,0 +1,612 @@
+================================================================================
+PRD FUNCIONAL COMPLETO - HARVEN.AI
+================================================================================
+
+Este documento descreve todas as funcionalidades do sistema HARVEN.AI conforme
+implementadas no código atual.
+
+================================================================================
+1. MÓDULO DE AUTENTICAÇÃO
+================================================================================
+
+1.1. LOGIN COM RA/SENHA
+-----------------------
+Fonte: backend/routers/auth.py, frontend/src/features/auth/LoginPage.tsx
+
+Funcionalidade:
+- Login com RA (Registro Acadêmico) ou email
+- Validação de senha com bcrypt
+- Geração de JWT token
+- Armazenamento de token no localStorage
+- Redirecionamento baseado em role após login
+
+Endpoints:
+- POST /auth/login
+  - Request: { ra: string, password: string }
+  - Response: { access_token: string, token_type: "bearer", user: UserResponse }
+
+Fluxo:
+1. Usuário preenche RA/email e senha
+2. Sistema valida credenciais no Supabase
+3. Gera JWT token com expiração
+4. Retorna token e dados do usuário
+5. Frontend armazena token
+6. Redireciona baseado em role
+
+1.2. REGISTRO DE USUÁRIO
+------------------------
+Fonte: backend/routers/auth.py, frontend/src/features/auth/RegisterPage.tsx
+
+Funcionalidade:
+- Criação de novo usuário
+- Validação de RA único
+- Validação de email único
+- Hash de senha com bcrypt
+- Role padrão: student
+
+Endpoints:
+- POST /auth/register
+  - Request: { ra: string, name: string, email: string, password: string, role?: UserRole }
+  - Response: UserResponse
+
+1.3. MICROSOFT OAUTH (PARCIAL)
+------------------------------
+Fonte: backend/routers/auth.py, backend/routers/sso.py
+
+Status: TODO - Não funcional
+- Endpoint existe: GET /auth/microsoft
+- Callback não implementado
+- Redirecionamento para Microsoft OAuth configurado mas incompleto
+
+1.4. VALIDAÇÃO DE SESSÃO
+------------------------
+Fonte: backend/auth.py
+
+Funcionalidade:
+- Middleware de autenticação em todas as rotas protegidas
+- Validação de JWT token
+- Verificação de usuário ativo
+- Dependency injection: get_current_active_user
+
+================================================================================
+2. MÓDULO DE CURSOS
+================================================================================
+
+2.1. CRUD DE CURSOS
+------------------
+Fonte: backend/routers/courses.py
+
+Funcionalidades:
+- Listar cursos (com filtros)
+- Criar curso
+- Atualizar curso
+- Excluir curso
+- Visualizar curso por ID
+
+Endpoints:
+- GET /courses - Lista cursos (filtros: course_code, period, search)
+- GET /courses/{course_id} - Detalhes do curso
+- POST /courses - Criar curso
+- PUT /courses/{course_id} - Atualizar curso
+- DELETE /courses/{course_id} - Excluir curso
+
+Campos do Curso:
+- name: string (obrigatório)
+- code: string (obrigatório, único)
+- semester: string (obrigatório)
+- period: string (obrigatório)
+- description: string (opcional)
+- category: string (opcional)
+- cover_image: string (opcional, URL)
+- is_published_global: boolean (padrão: false)
+- discipline_id: string (opcional, FK para disciplines)
+- is_active: boolean (padrão: true)
+
+Permissões:
+- Admin: acesso total
+- Teacher: pode criar/editar apenas cursos das disciplinas atribuídas
+- Student: apenas visualização de cursos atribuídos
+
+2.2. ATRIBUIÇÃO DE CURSOS
+-------------------------
+Fonte: backend/routers/courses.py
+
+Funcionalidade:
+- Atribuir curso a usuário individual
+- Atribuir curso a grupo
+- Atribuir curso a turma (academic_class)
+- Atribuir curso a todos os usuários
+
+Endpoints:
+- GET /courses/{course_id}/assignments - Lista atribuições
+- POST /courses/{course_id}/assign - Criar atribuição
+- DELETE /courses/{course_id}/assign/{assignment_id} - Remover atribuição
+
+Tipos de atribuição:
+- user: atribui a usuário específico
+- group: atribui a grupo
+- all: disponibiliza para todos
+
+================================================================================
+3. MÓDULO DE DISCIPLINAS
+================================================================================
+
+3.1. CRUD DE DISCIPLINAS
+-----------------------
+Fonte: backend/routers/disciplines.py
+
+Funcionalidades:
+- Criar disciplina
+- Listar disciplinas
+- Excluir disciplina
+- Visualizar cursos da disciplina
+- Atribuir cursos à disciplina
+
+Endpoints:
+- GET /disciplines - Lista disciplinas
+- POST /disciplines - Criar disciplina
+- DELETE /disciplines/{discipline_id} - Excluir disciplina
+- GET /disciplines/{discipline_id}/courses - Cursos da disciplina
+- POST /disciplines/{discipline_id}/courses - Atribuir curso
+- PUT /disciplines/{discipline_id}/courses - Atualizar cursos
+
+Permissões:
+- Apenas Admin pode criar/excluir disciplinas
+- Teacher pode visualizar disciplinas atribuídas
+
+3.2. ATRIBUIÇÃO DE PROFESSORES
+------------------------------
+Fonte: backend/routers/disciplines.py
+
+Funcionalidade:
+- Atribuir professor a disciplina
+- Definir role (owner/editor)
+- Remover professor de disciplina
+
+Endpoints:
+- GET /disciplines/{discipline_id}/teachers - Lista professores
+- POST /disciplines/{discipline_id}/teachers/{teacher_id} - Atribuir professor
+- DELETE /disciplines/{discipline_id}/teachers/{teacher_id} - Remover professor
+
+Roles:
+- owner: proprietário da disciplina
+- editor: pode editar conteúdo
+
+3.3. ATRIBUIÇÃO DE GRUPOS E TURMAS
+----------------------------------
+Fonte: backend/routers/disciplines.py
+
+Funcionalidade:
+- Atribuir grupos à disciplina
+- Atribuir turmas (cohorts) à disciplina
+- Gerenciar alunos em grupos/turmas
+
+Endpoints:
+- GET /disciplines/{discipline_id}/groups - Lista grupos
+- POST /disciplines/{discipline_id}/groups/{group_id}/students/{student_id}
+- DELETE /disciplines/{discipline_id}/groups/{group_id}/students/{student_id}
+- GET /disciplines/{discipline_id}/cohorts - Lista turmas
+- POST /disciplines/{discipline_id}/cohorts/{cohort_id}/students/{student_id}
+- DELETE /disciplines/{discipline_id}/cohorts/{cohort_id}/students/{student_id}
+
+================================================================================
+4. MÓDULO DE CONTEÚDO
+================================================================================
+
+4.1. SISTEMA ANTIGO (MÓDULOS E CAPÍTULOS)
+-----------------------------------------
+Fonte: backend/routers/content.py
+
+Estrutura:
+- Course → Modules → Chapters
+
+Funcionalidades:
+- CRUD de módulos
+- CRUD de capítulos
+- Ordenação de módulos e capítulos
+- Conteúdo em texto markdown/HTML
+
+Endpoints:
+- GET /content/courses/{course_id}/modules
+- POST /content/modules
+- PUT /content/modules/{module_id}
+- DELETE /content/modules/{module_id}
+- GET /content/modules/{module_id}/chapters/{chapter_id}
+- POST /content/modules/{module_id}/chapters
+- PUT /content/modules/{module_id}/chapters/{chapter_id}
+- DELETE /content/modules/{module_id}/chapters/{chapter_id}
+
+4.2. SISTEMA NOVO (CAPÍTULOS FLEXÍVEIS)
+---------------------------------------
+Fonte: backend/routers/content.py
+
+Estrutura:
+- Course → ContentChapters (sem módulos)
+
+Funcionalidades:
+- CRUD de capítulos independentes
+- Vinculação direta a curso
+- Ordenação flexível
+
+Endpoints:
+- GET /content/chapters - Lista capítulos
+- POST /content/chapters - Criar capítulo
+- GET /content/chapters/{chapter_id} - Detalhes
+- PUT /content/chapters/{chapter_id} - Atualizar
+- DELETE /content/chapters/{chapter_id} - Excluir
+
+4.3. PROCESSAMENTO INTELIGENTE
+------------------------------
+Fonte: backend/routers/content_imports.py, backend/app/services/processing_pipeline.py
+
+Funcionalidade:
+- Upload de arquivo (PDF, TXT)
+- Processamento assíncrono em background
+- Particionamento inteligente em capítulos
+- Geração automática de perguntas socráticas
+- Preservação de texto original (verbatim)
+
+Endpoints:
+- POST /content/import/upload - Upload e iniciar processamento
+- GET /content/import/ - Lista conteúdos importados
+- GET /content/import/status/{content_id} - Status do processamento
+- GET /content/import/{content_id}/chapters - Capítulos gerados
+- POST /content/import/{content_id}/reprocess - Reprocessar
+- POST /content/import/{content_id}/approve - Aprovar estrutura
+- DELETE /content/import/{content_id} - Excluir
+
+Modos de processamento:
+- manual: upload sem processamento automático
+- auto: processamento automático com IA
+
+Opções:
+- process_all: true/false (processar todo ou intervalo)
+- interval: { inicio: int, fim: int } (quando process_all=false)
+
+Status possíveis:
+- manual: aguardando processamento manual
+- processing: processando em background
+- completed: processamento concluído
+- approved: estrutura aprovada
+- error: erro no processamento
+
+4.4. IMPORTAÇÃO DE CONTEÚDO
+---------------------------
+Fonte: backend/routers/content.py
+
+Funcionalidade:
+- Importação de conteúdo estruturado (JSON)
+- Preview antes de commit
+- Validação de estrutura
+
+Endpoints:
+- POST /content/import/preview - Preview da importação
+- POST /content/import/commit - Confirmar importação
+
+================================================================================
+5. MÓDULO DE CHAT SOCRÁTICO
+================================================================================
+
+5.1. INICIALIZAÇÃO DE SESSÃO
+----------------------------
+Fonte: backend/routers/socratic_chat.py, backend/app/agents/ceo.py
+
+Funcionalidade:
+- Seleção de pergunta socrática (1 de 3 opções)
+- Criação de sessão de chat
+- Limite de 3 interações por sessão
+- Verificação de sessão existente
+
+Endpoints:
+- POST /socratic-chat/start
+  - Request: { aluno_ra: string, capitulo_id: string, question_id?: string }
+  - Response: { needs_selection: boolean, questions: [], session: {}, history: [] }
+
+Fluxo:
+1. Aluno acessa capítulo
+2. Sistema exibe 3 perguntas
+3. Aluno seleciona uma pergunta
+4. Sistema cria sessão com 3 interações restantes
+5. Sistema registra primeira mensagem da IA (pergunta selecionada)
+
+5.2. INTERAÇÃO NO CHAT
+----------------------
+Fonte: backend/routers/socratic_chat.py, backend/app/agents/roles/socratic.py
+
+Funcionalidade:
+- Envio de mensagem do aluno
+- Geração de resposta da IA (pergunta provocativa)
+- Decremento de interações restantes
+- Finalização automática após 3 interações
+
+Endpoints:
+- POST /socratic-chat/message
+  - Request: { chat_session_id: string, aluno_ra: string, mensagem: string }
+  - Response: { mensagem: string, interacoes_restantes: int, finalizado: boolean, history: [] }
+
+Agentes envolvidos:
+- ORIENTADOR: gera resposta socrática
+- EDITOR: refina linguagem
+- TESTADOR: valida qualidade pedagógica
+- ANALISTA: registra métricas
+- ORGANIZADOR: persiste e decrementa contador
+
+5.3. FINALIZAÇÃO DE SESSÃO
+-------------------------
+Fonte: backend/routers/socratic_chat.py
+
+Funcionalidade:
+- Finalização manual ou automática
+- Exportação para Moodle (se configurado)
+- Marcação de status como "completed"
+
+Endpoints:
+- POST /socratic-chat/finalize
+  - Request: { chat_session_id: string }
+  - Response: { session: {}, history: [] }
+
+5.4. HISTÓRICO DE CONVERSAS
+--------------------------
+Fonte: backend/routers/socratic_chat.py
+
+Funcionalidade:
+- Visualização de histórico completo
+- Histórico do aluno (próprio)
+- Histórico para professor (todos os alunos)
+
+Endpoints:
+- GET /socratic-chat/history/{session_id} - Histórico de sessão específica
+- GET /socratic-chat/student-history?alunoRa=...&capituloId=... - Histórico do aluno
+
+5.5. GERENCIAMENTO DE SESSÕES
+-----------------------------
+Fonte: backend/routers/socratic_chat.py
+
+Funcionalidade:
+- Verificar se existe sessão ativa/concluída
+- Excluir sessão (soft delete)
+- Desbloquear pergunta após exclusão
+
+Endpoints:
+- GET /socratic-chat/has-session?alunoRa=...&capituloId=...
+- DELETE /socratic-chat/session/{session_id}
+
+5.6. EXPORTAÇÃO PARA MOODLE
+---------------------------
+Fonte: backend/routers/socratic_chat.py, backend/app/services/moodle_chat_exporter.py
+
+Funcionalidade:
+- Exportar conversa concluída para portfólio Moodle
+- Enfileiramento em caso de falha
+- Retry automático
+
+Endpoints:
+- POST /socratic-chat/export-to-moodle/{session_id}
+- POST /moodle/export/{session_id}
+
+================================================================================
+6. MÓDULO DE PERGUNTAS SOCRÁTICAS
+================================================================================
+
+6.1. GERAÇÃO DE PERGUNTAS
+------------------------
+Fonte: backend/routers/ia.py, backend/routers/socratic.py
+
+Funcionalidade:
+- Geração automática de perguntas socráticas
+- Geração manual via IA
+- Regeneração de perguntas
+
+Endpoints:
+- POST /ia/generate-questions - Geração via IA
+- GET /socratic/chapters/{chapter_id}/questions - Lista perguntas
+- POST /socratic - Criar perguntas manualmente
+- POST /socratic/import - Importar perguntas
+- POST /socratic/auto-generate - Gerar automaticamente
+- POST /socratic/questions/{question_id}/regenerate - Regenerar pergunta
+- POST /socratic/{chapter_id}/regenerate-all - Regenerar todas
+- DELETE /socratic/questions/{question_id} - Excluir pergunta
+
+6.2. PERGUNTAS ENRIQUECIDAS
+--------------------------
+Fonte: backend/migrations/add_intelligent_processing_schema.sql
+
+Estrutura de pergunta enriquecida:
+- question_text: string
+- skill: string (analysis/synthesis/application/reflection)
+- intention: string
+- expected_depth: string
+- common_shallow_answer: string
+- followup_prompts: jsonb
+- citations: jsonb (block IDs)
+- order_index: int
+
+================================================================================
+7. MÓDULO DE PROFESSOR
+================================================================================
+
+7.1. DASHBOARD DO PROFESSOR
+---------------------------
+Fonte: backend/routers/teacher.py, frontend/src/pages/TeacherPage.tsx
+
+Funcionalidade:
+- Visão geral das disciplinas atribuídas
+- Estatísticas de cursos
+- Estatísticas de grupos/turmas
+
+Endpoints:
+- GET /teacher/overview - Visão geral
+- GET /teacher/disciplines - Lista disciplinas
+
+7.2. VISUALIZAÇÃO DE PROGRESSO
+------------------------------
+Fonte: backend/routers/teacher.py
+
+Funcionalidade:
+- Visualizar progresso dos alunos
+- Métricas de engajamento
+
+Endpoints:
+- GET /teacher/progress - Lista progresso
+
+7.3. VISUALIZAÇÃO DE RESPOSTAS SOCRÁTICAS
+-----------------------------------------
+Fonte: backend/routers/teacher.py
+
+Funcionalidade:
+- Ver todas as conversas dos alunos
+- Avaliar respostas
+- Comentar respostas
+
+Endpoints:
+- GET /teacher/socratic-responses - Lista respostas
+- POST /teacher/responses/{response_id}/rate - Avaliar resposta
+
+7.4. MENSAGENS (NÃO IMPLEMENTADO)
+---------------------------------
+Fonte: backend/routers/teacher.py, linha 290
+
+Status: TODO
+- Endpoint existe mas não implementado
+- POST /teacher/students/{student_id}/message
+
+================================================================================
+8. MÓDULO DE ADMINISTRAÇÃO
+================================================================================
+
+8.1. GERENCIAMENTO DE USUÁRIOS
+------------------------------
+Fonte: backend/routers/admin_users.py
+
+Funcionalidade:
+- Listar usuários (com paginação)
+- Atualizar usuário
+- Resetar senha
+- Filtrar por role
+
+Endpoints:
+- GET /admin/users - Lista usuários (paginação)
+- GET /admin/users/teachers - Lista professores
+- GET /admin/users/options - Opções para selects
+- PATCH /admin/users/{user_id} - Atualizar usuário
+- POST /admin/users/{user_id}/reset-password - Resetar senha
+
+8.2. GERENCIAMENTO DE GRUPOS
+---------------------------
+Fonte: backend/routers/course_groups.py
+
+Funcionalidade:
+- CRUD de grupos de cursos
+- Adicionar/remover membros
+
+Endpoints:
+- GET /course-groups - Lista grupos
+- POST /course-groups - Criar grupo
+- PUT /course-groups/{group_id} - Atualizar
+- DELETE /course-groups/{group_id} - Excluir
+- GET /course-groups/{group_id}/members - Membros
+- POST /course-groups/{group_id}/members - Adicionar membro
+- DELETE /course-groups/{group_id}/members/{membership_id} - Remover membro
+
+8.3. GERENCIAMENTO DE TURMAS
+---------------------------
+Fonte: backend/routers/academic_classes.py
+
+Funcionalidade:
+- CRUD de turmas acadêmicas
+- Gerenciar membros
+- Vincular cursos
+- Vincular grupos
+
+Endpoints:
+- GET /academic-classes - Lista turmas
+- POST /academic-classes - Criar turma
+- PUT /academic-classes/{class_id} - Atualizar
+- DELETE /academic-classes/{class_id} - Excluir
+- GET /academic-classes/{class_id}/members - Membros
+- POST /academic-classes/{class_id}/members - Adicionar membro
+- DELETE /academic-classes/{class_id}/members/{membership_id} - Remover
+- GET /academic-classes/{class_id}/courses - Cursos vinculados
+- POST /academic-classes/{class_id}/courses - Vincular curso
+- DELETE /academic-classes/{class_id}/courses/{link_id} - Desvincular
+
+================================================================================
+9. MÓDULO DE INTEGRAÇÕES
+================================================================================
+
+9.1. MOODLE
+----------
+Fonte: backend/routers/moodle.py, backend/app/services/moodle_chat_exporter.py
+
+Funcionalidade:
+- Exportação de conversas para portfólio Moodle
+- Enfileiramento em caso de falha
+- Retry automático
+
+Endpoints:
+- POST /moodle/export/{session_id} - Exportar conversa
+
+9.2. SSO MOODLE (PARCIAL)
+-------------------------
+Fonte: backend/routers/sso.py
+
+Status: Parcial
+- GET /sso/moodle/start - Inicia SSO
+- GET /sso/moodle/callback - Callback (não implementado)
+
+9.3. IMPORTAÇÃO JACAD/MOODLE
+---------------------------
+Fonte: backend/routers/imports.py
+
+Funcionalidade:
+- Importação de turmas do JACAD
+- Importação de turmas do Moodle
+
+Endpoints:
+- POST /imports/jacad - Importar do JACAD
+- POST /imports/moodle - Importar do Moodle
+
+================================================================================
+10. REQUISITOS NÃO-FUNCIONAIS
+================================================================================
+
+10.1. PERFORMANCE
+-----------------
+- Processamento assíncrono de conteúdo
+- Paginação em listagens (parcial)
+- Sem cache implementado
+- Sem otimização de queries (N+1 possíveis)
+
+10.2. SEGURANÇA
+--------------
+- JWT tokens com expiração
+- Senhas hasheadas (bcrypt)
+- Validação de permissões por role
+- CORS configurado (apenas localhost)
+- Sem RLS (Row Level Security) documentado
+
+10.3. OBSERVABILIDADE
+--------------------
+- Logs básicos (print statements)
+- Sem métricas estruturadas
+- Sem monitoramento de performance
+- Sem alertas
+
+10.4. ESCALABILIDADE
+--------------------
+- Processamento em background
+- Sem rate limiting
+- Sem cache
+- Sem load balancing configurado
+
+10.5. ACESSIBILIDADE
+-------------------
+- Contraste WCAG 2.1 AA
+- Navegação por teclado
+- ARIA labels
+- Focus visível
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+

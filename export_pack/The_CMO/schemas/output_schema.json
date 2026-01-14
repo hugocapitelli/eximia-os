@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "CMO Growth Plan Output",
+    "type": "object",
+    "properties": {
+        "growth_plan": {
+            "type": "object",
+            "properties": {
+                "objective": {
+                    "type": "string"
+                },
+                "diagnosis": {
+                    "type": "string"
+                },
+                "strategy_core": {
+                    "type": "string"
+                },
+                "actions": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "channel": {
+                                "type": "string"
+                            },
+                            "action": {
+                                "type": "string"
+                            },
+                            "effort": {
+                                "type": "string",
+                                "enum": [
+                                    "LOW",
+                                    "MEDIUM",
+                                    "HIGH"
+                                ]
+                            },
+                            "impact_hypothesis": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "channel",
+                            "action"
+                        ]
+                    }
+                },
+                "metrics_success": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "risks": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "objective",
+                "strategy_core",
+                "actions"
+            ]
+        }
+    },
+    "required": [
+        "growth_plan"
+    ]
+}

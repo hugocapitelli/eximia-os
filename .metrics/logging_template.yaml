@@ -1,0 +1,78 @@
+# Logging Template — ExímIA.OS
+# Use este template para documentar execuções de agentes
+
+version: "1.0.0"
+
+# ============================================================================
+# LOG ENTRY TEMPLATE
+# ============================================================================
+entry_template:
+  timestamp: "YYYY-MM-DDTHH:MM:SSZ"
+  agent_id: "string"  # ID do agente conforme agent_registry.yaml
+  action: "string"    # O que foi feito (benchmark, validation, execution)
+  
+  input:
+    user_request: "string"
+    context_length: 0  # tokens de contexto
+    
+  output:
+    success: true
+    response_summary: "string"
+    tokens_used: 0
+    duration_seconds: 0
+    
+  metrics:
+    score: null        # Se aplicável
+    hallucination: 0   # Número de hallucinations detectadas
+    citations: 0       # Número de citações incluídas
+    agents_invoked: [] # IDs de agentes secundários
+    
+  errors:
+    count: 0
+    types: []
+    
+  notes: "string"
+
+# ============================================================================
+# EXAMPLE LOG ENTRY
+# ============================================================================
+example:
+  - timestamp: "2026-01-08T14:30:00Z"
+    agent_id: "the_maestro"
+    action: "multi_agent_orchestration"
+    
+    input:
+      user_request: "Valide a viabilidade de criar um SaaS para restaurantes"
+      context_length: 2400
+      
+    output:
+      success: true
+      response_summary: "Roadmap integrado gerado com pesquisa, legal, finance e marketing"
+      tokens_used: 8500
+      duration_seconds: 45
+      
+    metrics:
+      score: null
+      hallucination: 0
+      citations: 4
+      agents_invoked:
+        - "the_veritas"
+        - "the_clo"
+        - "the_cfo"
+        - "the_cmo"
+        
+    errors:
+      count: 0
+      types: []
+      
+    notes: "Execução normal, todos os agentes responderam"
+
+# ============================================================================
+# LOG CATEGORIES
+# ============================================================================
+categories:
+  - benchmark: "Testes comparativos de performance"
+  - validation: "Casos de validação (Z4/C4)"
+  - execution: "Execuções normais de produção"
+  - error: "Logs de erro e recuperação"
+  - optimization: "Testes de otimização"

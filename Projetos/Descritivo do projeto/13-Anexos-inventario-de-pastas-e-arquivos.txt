@@ -1,0 +1,421 @@
+================================================================================
+ANEXOS - INVENTÁRIO DE PASTAS E ARQUIVOS - HARVEN.AI
+================================================================================
+
+Data de Geração: 27/12/2025
+Workspace: C:\Users\hugoc\OneDrive\Área de Trabalho\Exím[IA] Ventures Tecnologia LTDA\PROJETOS\HARVEN.AI
+
+================================================================================
+1. ESTRUTURA DE DIRETÓRIOS PRINCIPAL
+================================================================================
+
+HARVEN.AI/
+├── Arquivos/                    # Arquivos de teste/conteúdo
+│   └── Livros/
+├── assets/                      # Assets estáticos
+│   └── Harven-Logo.png
+├── backend/                     # Backend Python/FastAPI
+├── docs/                        # Documentação do projeto
+├── frontend/                    # Frontend React/TypeScript
+├── supabase/                    # Configuração Supabase
+├── Descritivo do projeto/       # Esta documentação
+├── INTEGRACAO_SUPABASE.md
+├── LICENSE
+├── netlify.toml
+└── README.md
+
+================================================================================
+2. BACKEND - ESTRUTURA DETALHADA
+================================================================================
+
+backend/
+├── __pycache__/                 # Cache Python
+├── app/
+│   ├── __init__.py
+│   ├── __pycache__/
+│   ├── agents/                  # Agentes de IA
+│   │   ├── __init__.py
+│   │   ├── ceo.py              # Orquestrador principal
+│   │   └── roles/              # Agentes especializados
+│   │       ├── __init__.py
+│   │       ├── socratic.py     # Agente socrático
+│   │       ├── extraction.py   # Extração de conteúdo
+│   │       ├── evaluation.py   # Avaliação
+│   │       ├── research.py     # Pesquisa
+│   │       ├── criador.py      # Criação de perguntas
+│   │       ├── orientador.py   # Orientação socrática
+│   │       ├── editor.py       # Edição de texto
+│   │       ├── analista.py     # Análise e métricas
+│   │       ├── testador.py     # Teste de qualidade
+│   │       └── organizador.py   # Organização e persistência
+│   ├── api/
+│   │   ├── __init__.py
+│   │   └── routes/
+│   │       └── integration.py  # Rotas de integração
+│   ├── prompts/                # Prompts para IA
+│   │   ├── intelligent_partition.py
+│   │   ├── socratic_agent.py
+│   │   └── socratic_chat.py
+│   ├── services/               # Serviços de negócio
+│   │   ├── __init__.py
+│   │   ├── ai_client.py        # Cliente OpenAI
+│   │   ├── evaluation_harness.py
+│   │   ├── intelligent_processing.py
+│   │   ├── moodle_chat_exporter.py
+│   │   └── processing_pipeline.py
+│   └── utils/
+│       └── pdf_utils.py
+├── migrations/                  # Migrations SQL
+│   ├── 20241110_create_chat_tables.sql
+│   ├── add_academic_classes.sql
+│   ├── add_ai_detection_fields.sql
+│   ├── add_chat_sessions.sql
+│   ├── add_course_id_to_content_chapters.sql
+│   ├── add_course_id_to_intelligent_contents.sql
+│   ├── add_course_visibility_assignments.sql
+│   ├── add_cover_image_to_courses.sql
+│   ├── add_discipline_id_to_courses.sql
+│   ├── add_disciplines_and_rbac.sql
+│   ├── add_intelligent_partitioning.sql
+│   ├── add_intelligent_processing_schema.sql
+│   ├── add_moodle_export_fields.sql
+│   ├── create_content_tables.sql
+│   ├── ensure_disciplines_table_correct.sql
+│   ├── fix_course_id_intelligent_contents.sql
+│   ├── fix_discipline_course_hierarchy.sql
+│   ├── fix_disciplines_table.sql
+│   └── make_discipline_id_required.sql
+├── routers/                    # Rotas da API
+│   ├── __init__.py
+│   ├── academic_classes.py
+│   ├── admin_users.py
+│   ├── auth.py
+│   ├── categories.py
+│   ├── content_imports.py
+│   ├── content.py
+│   ├── course_contents.py
+│   ├── course_groups.py
+│   ├── courses.py
+│   ├── disciplines.py
+│   ├── ia.py
+│   ├── imports.py
+│   ├── moodle.py
+│   ├── socratic_chat.py
+│   ├── socratic.py
+│   ├── sso.py
+│   └── teacher.py
+├── services/                   # Serviços de integração
+│   ├── __init__.py
+│   ├── jacad_import.py
+│   └── moodle_import.py
+├── tests/                      # Testes
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── README.md
+│   ├── run_tests.py
+│   ├── sql/
+│   ├── test_chat_socratico.py
+│   ├── test_postgrest_connection.py
+│   └── test_smoke_test.py
+├── venv/                       # Ambiente virtual Python
+├── auth.py                     # Autenticação
+├── config.py                   # Configurações
+├── corrigir_env.ps1
+├── create_admin_sql.sql
+├── create_admin.py
+├── create_storage_buckets.py
+├── create_tables_supabase.sql
+├── fix_admin_password.py
+├── generate_password_hash.py
+├── init_db.py
+├── INTELLIGENT_PROCESSING_IMPLEMENTATION.md
+├── main.py                     # Entry point
+├── models.py                   # Modelos Pydantic
+├── password.py
+├── rbac.py                     # Controle de acesso
+├── README.md
+├── requirements.txt            # Dependências Python
+├── schemas.py                  # Schemas de validação
+├── supabase_client.py          # Cliente Supabase
+├── supabase_db.py              # Camada de abstração DB
+└── update_env_with_new_keys.ps1
+
+================================================================================
+3. FRONTEND - ESTRUTURA DETALHADA
+================================================================================
+
+frontend/
+├── node_modules/               # Dependências npm
+├── public/
+│   └── Harven-Logo.png
+├── src/
+│   ├── components/             # Componentes reutilizáveis (39 arquivos)
+│   │   ├── __tests__/
+│   │   │   ├── Button.test.tsx
+│   │   │   ├── ChatMessage.test.tsx
+│   │   │   └── ProtectedRoute.test.tsx
+│   │   ├── AccountButton.tsx
+│   │   ├── ActionMenu.tsx
+│   │   ├── Alert.tsx
+│   │   ├── AudioPlayer.tsx
+│   │   ├── Breadcrumb.tsx
+│   │   ├── Button.tsx
+│   │   ├── Card.tsx
+│   │   ├── ChatMessage.tsx
+│   │   ├── Checkbox.tsx
+│   │   ├── ConfirmDialog.tsx
+│   │   ├── CreateChapterModal.tsx
+│   │   ├── CreateCourseModal.tsx
+│   │   ├── CreateDisciplineModal.tsx
+│   │   ├── CreateModuleModal.tsx
+│   │   ├── EditChapterModal.tsx
+│   │   ├── EditCourseModal.tsx
+│   │   ├── EditModuleModal.tsx
+│   │   ├── ErrorBoundary.tsx
+│   │   ├── FileUpload.tsx
+│   │   ├── HomeDashboardView.tsx
+│   │   ├── HomePanelView.tsx
+│   │   ├── ImageUpload.tsx
+│   │   ├── Input.tsx
+│   │   ├── LoadingSpinner.tsx
+│   │   ├── ManageDisciplineCoursesModal.tsx
+│   │   ├── Modal.tsx
+│   │   ├── Navbar.tsx          # DEPRECATED
+│   │   ├── PDFViewer.tsx
+│   │   ├── ProtectedRoute.tsx
+│   │   ├── RatingStars.tsx
+│   │   ├── Select.tsx
+│   │   ├── Sidebar.tsx
+│   │   ├── SocraticChatHistory.tsx
+│   │   ├── Topbar.tsx
+│   │   ├── VideoPlayer.tsx
+│   │   └── ViewToggle.tsx
+│   ├── config/
+│   │   └── ai.ts
+│   ├── context/                # Context API
+│   │   ├── AuthContext.tsx
+│   │   ├── ModeContext.tsx
+│   │   └── ThemeContext.tsx
+│   ├── features/               # Features organizadas por domínio
+│   │   ├── auth/
+│   │   │   ├── __tests__/
+│   │   │   │   └── LoginPage.test.tsx
+│   │   │   ├── LoginPage.tsx
+│   │   │   └── RegisterPage.tsx
+│   │   ├── content/
+│   │   │   ├── ContentReaderPage.tsx
+│   │   │   └── SocraticMode.tsx
+│   │   ├── courses/
+│   │   │   └── DashboardPage.tsx
+│   │   ├── landing/
+│   │   │   └── LandingPage.tsx
+│   │   ├── student/
+│   │   │   ├── __tests__/
+│   │   │   │   └── StudentDashboard.test.tsx
+│   │   │   └── StudentDashboard.tsx
+│   │   ├── teacher/
+│   │   │   ├── TeacherDashboard.tsx
+│   │   │   └── TeacherDashboardPage.tsx
+│   │   └── visitor/
+│   │       └── VisitorPage.tsx
+│   ├── hooks/
+│   │   └── useDebounce.ts
+│   ├── pages/                  # Páginas (componentes de rota)
+│   │   ├── admin/
+│   │   │   ├── ContentChapterEditPage.tsx
+│   │   │   ├── ContentChaptersPage.tsx
+│   │   │   ├── ContentManagementPage.tsx
+│   │   │   ├── CoursesManagementPage.tsx
+│   │   │   ├── DisciplinesManagementPage.tsx
+│   │   │   ├── IntelligentContentReviewPage.tsx
+│   │   │   └── SiteAdministrationPage.tsx
+│   │   ├── teacher/
+│   │   │   ├── ChapterDetailPage.tsx
+│   │   │   ├── CourseDetailPage.tsx
+│   │   │   ├── DisciplineDetailPage.tsx
+│   │   │   ├── TeacherCoursesPage.tsx
+│   │   │   ├── TeacherDisciplinesPage.tsx
+│   │   │   ├── TeacherGroupsPage.tsx
+│   │   │   └── TeacherOverviewPage.tsx
+│   │   ├── AdminPage.tsx
+│   │   ├── CourseDetailPage.tsx
+│   │   ├── HomePage.tsx
+│   │   ├── StudentPage.tsx
+│   │   └── TeacherPage.tsx
+│   ├── routes/
+│   │   └── index.tsx           # Configuração de rotas
+│   ├── services/               # Serviços de API (15 arquivos)
+│   │   ├── adminUsersService.ts
+│   │   ├── api.ts
+│   │   ├── authService.ts
+│   │   ├── categoryService.ts
+│   │   ├── classService.ts
+│   │   ├── contentApi.ts
+│   │   ├── contentService.ts
+│   │   ├── courseService.ts
+│   │   ├── disciplineService.ts
+│   │   ├── groupService.ts
+│   │   ├── iaService.ts
+│   │   ├── importService.ts
+│   │   ├── integrationService.ts
+│   │   ├── socraticService.ts
+│   │   └── teacherService.ts
+│   ├── test/
+│   │   └── setup.ts
+│   ├── types/
+│   │   └── index.ts
+│   ├── utils/
+│   │   ├── viewPreferences.ts
+│   │   └── ...
+│   ├── App.tsx                 # Componente raiz
+│   ├── index.css
+│   └── main.tsx                # Entry point
+├── index.html
+├── IMPLEMENTACAO.md
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+├── tsconfig.build.json
+├── tsconfig.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── vitest.config.ts
+
+================================================================================
+4. DOCS - ESTRUTURA
+================================================================================
+
+docs/
+├── 10-10 Reunião_ MVP do AVA Socrático com IA, Integrações Moodle e Microsoft-Summary (1).pdf
+├── ARQUITETURA.md
+├── CONTRIBUINDO.md
+└── ROADMAP.md
+
+================================================================================
+5. SUPABASE - ESTRUTURA
+================================================================================
+
+supabase/
+├── config.toml
+└── migrations/
+    ├── 20250822151653_7c8259d7-c13b-4660-9bca-f6c5808f811e.sql
+    └── 20250822151728_4bf3cd8d-a83a-4fad-aa9e-2201e25afc2e.sql
+
+================================================================================
+6. ARQUIVOS DE CONFIGURAÇÃO
+================================================================================
+
+ROOT:
+- .gitignore (assumido)
+- LICENSE
+- netlify.toml (deploy frontend)
+- README.md (documentação principal)
+- INTEGRACAO_SUPABASE.md
+
+BACKEND:
+- requirements.txt (dependências Python)
+- .env (não versionado, variáveis de ambiente)
+
+FRONTEND:
+- package.json (dependências npm)
+- package-lock.json
+- vite.config.ts (configuração Vite)
+- tailwind.config.js (configuração Tailwind)
+- tsconfig.json (configuração TypeScript)
+- postcss.config.js (configuração PostCSS)
+- vitest.config.ts (configuração testes)
+
+================================================================================
+7. ESTATÍSTICAS
+================================================================================
+
+BACKEND:
+- Rotas: ~117 endpoints
+- Agentes: 9 agentes especializados
+- Services: 5 serviços principais
+- Migrations: 20+ arquivos SQL
+- Testes: 3 arquivos de teste
+
+FRONTEND:
+- Componentes: 39 componentes
+- Páginas: 19 páginas
+- Features: 6 features principais
+- Services: 15 serviços de API
+- Rotas: ~30 rotas configuradas
+
+================================================================================
+8. ARQUIVOS DE DOCUMENTAÇÃO GERADOS
+================================================================================
+
+Descritivo do projeto/
+├── 00-Resumo-executivo.txt
+├── 01-Visao-produto-e-objetivos.txt
+├── 02-Personas-roles-e-permissoes.txt
+├── 03-Mapa-de-navegacao-e-UX-flows.txt
+├── 04-PRD-funcional-completo.txt
+├── 05-IA-processamento-inteligente-e-chat-socratico.txt
+├── 06-Arquitetura-atual-stack-e-dependencias.txt
+├── 07-Banco-de-dados-modelo-entidades-e-relacoes.txt
+├── 08-APIs-rotas-contratos-e-integracoes.txt
+├── 09-Front-end-atomic-design-componentizacao.txt
+├── 10-Backlog-macro-e-roadmap-tecnico.txt
+├── 11-Riscos-dividas-tecnicas-e-bugs-conhecidos.txt
+├── 12-Recomendacoes-para-rebuild.txt
+└── 13-Anexos-inventario-de-pastas-e-arquivos.txt (este arquivo)
+
+================================================================================
+9. NOTAS IMPORTANTES
+================================================================================
+
+ARQUIVOS NÃO VERSIONADOS (assumidos):
+- .env (backend e frontend)
+- node_modules/
+- venv/
+- __pycache__/
+- *.pyc
+
+ARQUIVOS DEPRECATED:
+- frontend/src/components/Navbar.tsx (substituído por Topbar)
+
+ARQUIVOS DE TESTE:
+- Arquivos/Livros/ (conteúdo de teste)
+- backend/tests/ (testes automatizados)
+- frontend/src/components/__tests__/ (testes de componentes)
+
+CONFIGURAÇÕES DE DEPLOY:
+- netlify.toml (deploy frontend no Netlify)
+- Backend não tem configuração de deploy documentada
+
+================================================================================
+10. DEPENDÊNCIAS PRINCIPAIS
+================================================================================
+
+BACKEND (requirements.txt):
+- fastapi==0.104.1
+- uvicorn[standard]==0.24.0
+- supabase==2.0.0
+- langchain==0.0.350
+- openai==1.3.0
+- python-jose[cryptography]==3.3.0
+- bcrypt==5.0.0
+- PyPDF2==3.0.1
+- pytest==7.4.3
+- (ver requirements.txt completo)
+
+FRONTEND (package.json):
+- react: ^18.2.0
+- react-dom: ^18.2.0
+- react-router-dom: ^6.20.0
+- axios: ^1.6.2
+- typescript: ^5.2.2
+- vite: ^5.0.8
+- tailwindcss: ^3.3.6
+- vitest: ^1.0.4
+- (ver package.json completo)
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+

@@ -1,0 +1,253 @@
+================================================================================
+BACKLOG MACRO E ROADMAP TÉCNICO - HARVEN.AI
+================================================================================
+
+================================================================================
+1. BACKLOG MACRO
+================================================================================
+
+1.1. PRIORIDADE ALTA (P0)
+------------------------
+
+P0-001: Unificar Sistema de Capítulos
+- Problema: Dois sistemas coexistem (content_chapters e intelligent_chapters)
+- Solução: Migrar tudo para intelligent_chapters
+- Impacto: Reduz complexidade, melhora manutenibilidade
+- Esforço: Alto
+- Fonte: backend/routers/content.py
+
+P0-002: Implementar Migrations Automatizadas
+- Problema: Migrations SQL manuais, sem versionamento
+- Solução: Alembic ou similar
+- Impacto: Facilita deploy, versionamento de schema
+- Esforço: Médio
+- Fonte: backend/migrations/
+
+P0-003: Adicionar Políticas RLS no Supabase
+- Problema: Sem Row Level Security documentado
+- Solução: Implementar RLS policies
+- Impacto: Segurança melhorada
+- Esforço: Médio
+
+P0-004: Implementar Rate Limiting
+- Problema: Sem proteção contra abuso
+- Solução: Rate limiting por IP/usuário
+- Impacto: Segurança e performance
+- Esforço: Baixo-Médio
+
+P0-005: Reorganizar Frontend com Atomic Design
+- Problema: Componentes desorganizados
+- Solução: Estrutura Atomic Design
+- Impacto: Manutenibilidade, reusabilidade
+- Esforço: Médio
+- Fonte: frontend/src/components/
+
+P0-006: Corrigir Microsoft OAuth
+- Problema: Endpoint existe mas não funcional
+- Solução: Implementar callback completo
+- Impacto: Melhora UX de login
+- Esforço: Médio
+- Fonte: backend/routers/auth.py, backend/routers/sso.py
+
+1.2. PRIORIDADE MÉDIA (P1)
+-------------------------
+
+P1-001: Implementar Cache (Redis)
+- Problema: Sem cache, queries repetidas
+- Solução: Redis para cache de queries frequentes
+- Impacto: Performance melhorada
+- Esforço: Médio
+
+P1-002: Adicionar Paginação em Todas as Listagens
+- Problema: Algumas listagens sem paginação
+- Solução: Paginação consistente
+- Impacto: Performance, UX
+- Esforço: Baixo-Médio
+
+P1-003: Melhorar Tratamento de Erros
+- Problema: Logs básicos, sem estrutura
+- Solução: Logging estruturado (JSON)
+- Impacto: Observabilidade
+- Esforço: Médio
+
+P1-004: Adicionar Testes Automatizados
+- Problema: Cobertura de testes baixa
+- Solução: Testes unitários e de integração
+- Impacto: Qualidade, confiança
+- Esforço: Alto
+
+P1-005: Implementar Sistema de Mensagens
+- Problema: Endpoint existe mas não implementado
+- Solução: Sistema completo de mensagens
+- Impacto: Comunicação professor-aluno
+- Esforço: Alto
+- Fonte: backend/routers/teacher.py, linha 290
+
+P1-006: Processamento de Conteúdo Não-Texto
+- Problema: Apenas PDF/TXT suportados
+- Solução: Vídeo, áudio, imagens
+- Impacto: Funcionalidade expandida
+- Esforço: Alto
+- Fonte: backend/supabase_db.py, linha 1239
+
+1.3. PRIORIDADE BAIXA (P2)
+-------------------------
+
+P2-001: Implementar TTS (Text-to-Speech)
+- Problema: Endpoint existe mas não implementado
+- Solução: Azure Speech Services
+- Impacto: Acessibilidade
+- Esforço: Médio
+- Fonte: backend/routers/content.py, linha 758
+
+P2-002: Dashboard de Analytics Avançado
+- Problema: Métricas básicas
+- Solução: Dashboard com gráficos e insights
+- Impacto: Visibilidade para professores
+- Esforço: Alto
+
+P2-003: Múltiplos Idiomas
+- Problema: Apenas português
+- Solução: i18n
+- Impacto: Internacionalização
+- Esforço: Alto
+
+P2-004: API Pública
+- Problema: Apenas uso interno
+- Solução: API pública documentada
+- Impacto: Integrações externas
+- Esforço: Médio
+
+P2-005: Mobile App
+- Problema: Apenas web
+- Solução: App nativo ou PWA
+- Impacto: Acessibilidade mobile
+- Esforço: Muito Alto
+
+================================================================================
+2. ROADMAP TÉCNICO
+================================================================================
+
+2.1. FASE 1: ESTABILIZAÇÃO (0-3 MESES)
+-------------------------------------
+
+Objetivo: Corrigir problemas críticos e melhorar arquitetura
+
+Sprint 1-2:
+- P0-001: Unificar sistema de capítulos
+- P0-002: Implementar migrations automatizadas
+- P0-003: Adicionar RLS policies
+
+Sprint 3-4:
+- P0-004: Rate limiting
+- P0-005: Reorganizar frontend (Atomic Design)
+- P0-006: Corrigir Microsoft OAuth
+
+Sprint 5-6:
+- P1-002: Paginação consistente
+- P1-003: Logging estruturado
+- Melhorias de performance
+
+2.2. FASE 2: EXPANSÃO (3-6 MESES)
+--------------------------------
+
+Objetivo: Adicionar funcionalidades e melhorar observabilidade
+
+Sprint 7-8:
+- P1-001: Cache com Redis
+- P1-004: Testes automatizados (cobertura 60%+)
+- Monitoramento básico
+
+Sprint 9-10:
+- P1-005: Sistema de mensagens
+- P1-006: Processamento de conteúdo não-texto (vídeo)
+- Melhorias de UX
+
+Sprint 11-12:
+- P2-001: TTS
+- Dashboard de analytics
+- Otimizações de performance
+
+2.3. FASE 3: ESCALA (6-12 MESES)
+-------------------------------
+
+Objetivo: Preparar para escala e internacionalização
+
+Sprint 13-16:
+- P2-002: Dashboard avançado
+- P2-003: i18n
+- Melhorias de acessibilidade
+
+Sprint 17-20:
+- P2-004: API pública
+- Documentação completa
+- Integrações adicionais
+
+Sprint 21-24:
+- P2-005: Mobile app (PWA primeiro)
+- Otimizações avançadas
+- Preparação para escala
+
+================================================================================
+3. DEPENDÊNCIAS ENTRE TAREFAS
+================================================================================
+
+DEPENDÊNCIAS CRÍTICAS:
+
+P0-001 (Unificar capítulos) → P1-006 (Conteúdo não-texto)
+- Precisa unificar antes de adicionar novos tipos
+
+P0-002 (Migrations) → P0-003 (RLS)
+- Migrations facilitam implementação de RLS
+
+P0-005 (Atomic Design) → P1-004 (Testes)
+- Estrutura organizada facilita testes
+
+P1-001 (Cache) → P1-002 (Paginação)
+- Cache funciona melhor com paginação
+
+P1-003 (Logging) → P2-002 (Analytics)
+- Logs estruturados alimentam analytics
+
+================================================================================
+4. MÉTRICAS DE SUCESSO
+================================================================================
+
+FASE 1:
+- 0 bugs críticos
+- 100% das migrations automatizadas
+- RLS implementado em todas as tabelas sensíveis
+- Frontend reorganizado
+
+FASE 2:
+- Cache reduz queries em 50%+
+- Cobertura de testes > 60%
+- Sistema de mensagens funcional
+- Processamento de vídeo funcional
+
+FASE 3:
+- Dashboard com 10+ métricas
+- Suporte a 2+ idiomas
+- API pública documentada
+- PWA funcional
+
+================================================================================
+5. RISCOS E MITIGAÇÕES
+================================================================================
+
+RISCO 1: Migração de capítulos quebrar dados existentes
+Mitigação: Script de migração cuidadoso, backup completo, testes extensivos
+
+RISCO 2: RLS impactar performance
+Mitigação: Índices adequados, políticas otimizadas, testes de carga
+
+RISCO 3: Atomic Design aumentar complexidade inicial
+Mitigação: Migração gradual, documentação clara, treinamento da equipe
+
+RISCO 4: Cache causar inconsistências
+Mitigação: Estratégia de invalidação clara, TTLs apropriados
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+

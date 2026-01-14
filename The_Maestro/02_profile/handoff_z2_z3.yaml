@@ -1,0 +1,109 @@
+# Handoff: Z2 Profiler → Z3 Engineer
+# Agent: The_Maestro (Supreme Orchestrator)
+# Date: 2026-01-07
+
+metadata:
+  agent_name: "The_Maestro"
+  codename: "The_Maestro"
+  tier: 3
+  tier_name: "EXPERT"
+  phase_completed: "02_profile"
+  phase_next: "03_prompt"
+  handoff_status: "READY"
+
+deliverables_completed:
+  dna_mental:
+    file: "02_profile/dna_mental.md"
+    status: "✅ COMPLETE"
+    contents:
+      - "Archetype fusion (COO + TPM + Architect)"
+      - "Big Five personality mapping"
+      - "Cognitive style and decision flow"
+      - "Communication philosophy"
+      - "Professional ethos and boundaries"
+
+  framework_index:
+    file: "02_profile/FRAMEWORK_INDEX.md"
+    status: "✅ COMPLETE"
+    count: 51
+    categories:
+      - "Strategic Decision Making: 12"
+      - "Problem Solving & Logic: 12"
+      - "Project & Flow Management: 11"
+      - "Communication & Synthesis: 8"
+      - "Quality & Improvement: 8"
+
+  voice_profiles:
+    file: "02_profile/VOICE_PROFILES.md"
+    status: "✅ COMPLETE"
+    profiles:
+      - "Authoritativo (40%)"
+      - "Sintético (35%)"
+      - "Estratégico (25%)"
+
+  bibliography:
+    file: "02_profile/BIBLIOGRAPHY_RESEARCH.md"
+    status: "✅ COMPLETE"
+    count: 38
+    categories:
+      - "Systems & Cybernetics: 10"
+      - "Management & Decision-Making: 12"
+      - "AI & Multi-Agent Systems: 8"
+      - "Brazil-Specific & Applied: 8"
+
+  knowledge_bases:
+    directory: "02_profile/knowledge_base/"
+    status: "✅ COMPLETE"
+    count: 20
+    files:
+      - KB_01_Constitution.md (INVARIANT)
+      - KB_02_Veritas_Proto.md (PROTOCOL)
+      - KB_03_Agent_Roster.md (REGISTRY)
+      - KB_04_Task_Decomp.md (STRATEGY)
+      - KB_05_Decision_Matrix.md (STRATEGY)
+      - KB_06_Style_Guide.md (BRAND)
+      - KB_07_QA_Checklists.md (PROTOCOL)
+      - KB_08_Error_Handling.md (PROTOCOL)
+      - KB_09_User_Intent.md (STRATEGY)
+      - KB_10_Synthesis.md (STRATEGY)
+      - KB_11_Security.md (INVARIANT)
+      - KB_12_API_Docs.md (TECHNICAL)
+      - KB_13_Feedback_Opt.md (STRATEGY)
+      - KB_14_Crisis_Mgmt.md (PROTOCOL)
+      - KB_15_Inter_Agent.md (PROTOCOL)
+      - KB_16_Proj_Mgmt.md (STRATEGY)
+      - KB_17_Logic_Fallacy.md (STRATEGY)
+      - KB_18_Innovation.md (STRATEGY)
+      - KB_19_Exec_Reports.md (BRAND)
+      - KB_20_System_Log.md (REGISTRY)
+
+z3_instructions:
+  priority_1: "Create prompt_operacional.md with full operational logic (15-25k tokens)"
+  priority_2: "Embed Veritas First protocol in core prompt"
+  priority_3: "Include routing decision tree"
+  priority_4: "Add synthesis templates"
+  priority_5: "Create input_schema.json for request parsing"
+  priority_6: "Create routing_schema.json for tool calling"
+
+prompt_requirements:
+  token_budget: "15,000-25,000 tokens"
+  sections_required:
+    - "Identity and role definition"
+    - "Veritas First protocol (hard-coded)"
+    - "Agent roster and routing table"
+    - "Task decomposition logic"
+    - "Conflict resolution protocol (KB_05)"
+    - "Synthesis templates"
+    - "Voice calibration"
+    - "Circuit breakers"
+    - "QA checklist"
+    - "Error handling"
+  few_shot_examples: 5
+  decision_tree: "Required"
+
+critical_constraints:
+  - "Prompt MUST enforce Veritas First with no exceptions"
+  - "Prompt MUST include circuit breaker logic"
+  - "Prompt MUST reference all 20 KBs"
+  - "Prompt MUST define voice switching logic"
+  - "Prompt MUST include few-shot CoT examples"

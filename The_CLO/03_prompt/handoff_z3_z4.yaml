@@ -1,0 +1,100 @@
+# Handoff Z3 → Z4: Engineer → Auditor
+# Themis Sentinel CLO — Tier 3 Expert
+
+handoff:
+  from_module: Z3_Engineer
+  to_module: Z4_Auditor
+  timestamp: "2026-01-07T12:45:00-03:00"
+  agent_name: Themis_Sentinel_CLO
+  tier: 3
+  status: READY_FOR_VALIDATION
+
+summary:
+  description: |
+    Prompt operacional completo do Themis Sentinel CLO (~18K tokens),
+    incluindo persona, IRAC, voice profiles, circuit breakers, exemplos
+    few-shot, e schemas de output.
+  
+  key_artifacts:
+    - file: prompt_operacional_clo.md
+      purpose: Prompt operacional principal (~18K tokens)
+      sections:
+        - Identidade e Persona Core
+        - Mentores e Crenças (20)
+        - Processo IRAC
+        - Source Tier System
+        - Classificação de Risco
+        - Voice Profiles (3)
+        - Invariantes (7)
+        - Circuit Breakers (6)
+        - Output Formats (3)
+        - Exemplos Few-Shot (4)
+        - Disclaimers (4)
+        - Conhecimento Embutido (15 KBs, 62 frameworks)
+        
+    - file: schemas/contract_review_schema.json
+      purpose: Schema JSON para revisão de contratos
+      
+    - file: schemas/risk_memo_output.json
+      purpose: Schema JSON para memos de risco com IRAC
+
+prompt_metrics:
+  estimated_tokens: 18000
+  voice_profiles: 3
+  few_shot_examples: 4
+  circuit_breakers: 6
+  invariants: 7
+  output_formats: 3
+  disclaimers: 4
+
+key_decisions:
+  - decision: IRAC como meta-reasoning obrigatório
+    rationale: Padrão jurídico universal, execução clara
+    
+  - decision: 3 voice profiles com templates
+    rationale: Adaptar tom ao contexto (Board, Litígio, Deal)
+    
+  - decision: 6 circuit breakers explícitos
+    rationale: Proteção ética e legal (crime, lavagem, evasão)
+    
+  - decision: 4 exemplos few-shot completos
+    rationale: Cobrir cenários: governança, M&A, crise, recusa
+
+requirements_for_z4:
+  validation_cases:
+    count: 15
+    categories:
+      - Competency (core skills)
+      - Anti-hallucination (recusa de inventar)
+      - Ethics (recusa de ilegalidade)
+      - Edge cases (ambiguidade)
+      - Voice switching (adaptação)
+      
+  validation_report:
+    - Score por categoria
+    - Score agregado
+    - Issues identificados
+    - Comparação vs benchmark
+    
+  handover_document:
+    - Disclaimers legais
+    - Limites do agente
+    - Instruções de uso
+    
+  comparative_analysis:
+    - vs CLO humano (Big Law)
+    - vs Legal AI (outras ferramentas)
+
+next_steps:
+  1: Criar VALIDATION_CASES_LEGAL.yaml (15 casos)
+  2: Executar validação com prompt
+  3: Criar validation_report_compliance.md
+  4: Criar HANDOVER_DOCUMENT.md
+  5: Criar COMPARATIVE_ANALYSIS.md
+
+quality_gates:
+  - All 15 validation cases executed
+  - Score >= 90/100 for approval
+  - No critical failures on ethics/circuit breakers
+  - All disclaimers properly triggered
+  - Voice switching working correctly

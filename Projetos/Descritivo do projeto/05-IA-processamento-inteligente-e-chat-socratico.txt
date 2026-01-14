@@ -1,0 +1,464 @@
+================================================================================
+IA, PROCESSAMENTO INTELIGENTE E CHAT SOCRÁTICO - HARVEN.AI
+================================================================================
+
+================================================================================
+1. ARQUITETURA DE AGENTES
+================================================================================
+
+O sistema utiliza uma arquitetura hierárquica de agentes especializados,
+orquestrados por um AgentCEO central.
+
+Fonte: backend/app/agents/ceo.py
+
+1.1. AGENT CEO (ORQUESTRADOR)
+-----------------------------
+
+Responsabilidades:
+- Roteamento de tarefas para agentes especializados
+- Coordenação do fluxo de processamento
+- Gerenciamento do ciclo de vida de sessões de chat
+
+Agentes gerenciados:
+- CRIADOR: Geração de perguntas socráticas
+- ORIENTADOR: Condução do diálogo socrático
+- EDITOR: Refinamento de linguagem
+- TESTADOR: Validação de qualidade pedagógica
+- ANALISTA: Registro de métricas
+- ORGANIZADOR: Persistência e exportação
+- EXTRACTION: Extração de conteúdo
+- EVALUATION: Avaliação de qualidade
+- RESEARCH: Pesquisa de contexto
+
+1.2. AGENTES ESPECIALIZADOS
+---------------------------
+
+Fonte: backend/app/agents/roles/
+
+CRIADOR (CriadorAgent):
+- Gera 3 perguntas socráticas provocativas por capítulo
+- Utiliza contexto do capítulo e understanding pack
+- Garante qualidade e não-genericidade
+
+ORIENTADOR (OrientadorAgent):
+- Conduz diálogo socrático em cada turno
+- Gera perguntas provocativas baseadas na resposta do aluno
+- Mantém foco pedagógico
+
+EDITOR (EditorAgent):
+- Refina linguagem da resposta do ORIENTADOR
+- Melhora clareza e fluência
+- Mantém tom socrático
+
+TESTADOR (TestadorAgent):
+- Valida se a resposta segue método socrático
+- Verifica foco pedagógico
+- Pode reprovar e solicitar regeneração
+
+ANALISTA (AnalistaAgent):
+- Registra métricas de cada turno
+- Tamanho da mensagem
+- Presença de pergunta
+- Timestamp
+- Observações pedagógicas
+
+ORGANIZADOR (OrganizadorAgent):
+- Persiste histórico de conversa
+- Decrementa contador de interações
+- Exporta para Moodle quando sessão finaliza
+- Gerencia enfileiramento em caso de falha
+
+================================================================================
+2. PROCESSAMENTO INTELIGENTE DE CONTEÚDO
+================================================================================
+
+Fonte: backend/app/services/processing_pipeline.py
+Fonte: backend/app/services/intelligent_processing.py
+
+2.1. PIPELINE DE PROCESSAMENTO
+-----------------------------
+
+O pipeline processa conteúdo em 4 etapas principais:
+
+ETAPA 0: INGESTÃO E ARMAZENAMENTO CANÔNICO
+- Upload de arquivo (PDF, TXT)
+- Extração de texto (PyPDF2 para PDFs)
+- Cálculo de hash SHA256 do texto raw
+- Armazenamento verbatim em intelligent_contents.raw_text
+- Campos: raw_text, raw_text_hash, extraction_method, extraction_metadata
+
+ETAPA 1: PARSING ESTRUTURAL (DETERMINÍSTICO)
+- Não usa LLM
+- Detecta headings, paragraphs, lists automaticamente
+- Cria blocos com IDs estáveis (b_0001, b_0002, ...)
+- Gera outline a partir de headings
+- Preserva ordem e estrutura
+- Fonte: StructuralParser em intelligent_processing.py
+
+Tipos de blocos:
+- HEADING: Títulos e seções
+- PARAGRAPH: Parágrafos de texto
+- LIST: Listas ordenadas/não ordenadas
+- TABLE: Tabelas (futuro)
+- CODE: Blocos de código (futuro)
+
+ETAPA 2: GERAÇÃO DE UNDERSTANDING PACK (LLM)
+- Extração de metadados (título, tema, objetivo, dificuldade)
+- Resumo estruturado (executivo, pontos-chave)
+- Conceitos (10-25 com definições e citações)
+- Relacionamentos (mapa de conceitos com evidências)
+- Equívocos comuns (3-7 com explicações e citações)
+- Exemplos (3-5 com citações)
+- Fonte: UnderstandingPackGenerator
+
+ETAPA 3: GERAÇÃO DE PERGUNTAS SOCRÁTICAS (LLM)
+- Gera exatamente 3 perguntas por capítulo
+- Cada pergunta inclui:
+  - Texto da pergunta (provocativo, não genérico)
+  - Skill (analysis/synthesis/application/reflection)
+  - Intention (o que desbloqueia no aluno)
+  - Expected depth
+  - Common shallow answer
+  - Followup prompts (2-4)
+  - Citations (block IDs que suportam a pergunta)
+- Fonte: EnrichedSocraticQuestionGenerator
+
+ETAPA 4: ARMAZENAMENTO
+- Todos os artefatos armazenados em tabelas separadas
+- Metadados de processamento (model_version, prompt_version)
+- Token usage e latency
+- Status de processamento
+
+2.2. TABELAS DE PROCESSAMENTO
+-----------------------------
+
+chapter_processing:
+- Rastreia status, versões de modelo, latência, erros
+- Campos: status, model_version, prompt_version, started_at, finished_at, 
+  token_usage, latency_ms, error_message, retry_count
+
+chapter_insights:
+- Armazena understanding pack
+- Campos: metadata, structured_summary, concepts, relationships, 
+  common_misconceptions, examples
+
+chapter_socratic_questions:
+- Armazena perguntas enriquecidas
+- Campos: question_text, skill, intention, expected_depth, 
+  common_shallow_answer, followup_prompts, citations, order_index
+
+intelligent_chapters:
+- Capítulos gerados
+- Campos: raw_text, raw_text_hash, blocks (JSONB), outline (JSONB)
+
+2.3. MODOS DE PROCESSAMENTO
+---------------------------
+
+MANUAL:
+- Upload sem processamento automático
+- Status: "manual"
+- Requer processamento manual posterior
+
+AUTO:
+- Processamento automático em background
+- Status: "processing" → "completed" → "approved"
+- Processamento assíncrono via BackgroundTasks
+
+OPÇÕES:
+- process_all: true (processar arquivo inteiro) ou false (intervalo)
+- interval: { inicio: int, fim: int } (quando process_all=false)
+
+2.4. REPROCESSAMENTO
+-------------------
+
+Funcionalidade:
+- Reprocessar todo o arquivo
+- Reprocessar intervalo específico
+- Editar estrutura de particionamento
+- Regenerar perguntas
+
+Endpoints:
+- POST /content/import/{content_id}/reprocess
+- POST /content/import/{content_id}/approve
+
+2.5. VALIDAÇÃO E QUALIDADE
+--------------------------
+
+Evaluation Harness verifica:
+- Integridade: texto exibido corresponde ao raw_text_hash
+- Grounding: 100% dos conceitos/perguntas têm citações
+- Coverage: seções-chave estão representadas
+- Quality: perguntas não são genéricas e têm campos obrigatórios
+
+Fonte: backend/app/services/evaluation_harness.py
+
+================================================================================
+3. CHAT SOCRÁTICO
+================================================================================
+
+Fonte: backend/routers/socratic_chat.py
+Fonte: backend/app/agents/ceo.py
+
+3.1. INICIALIZAÇÃO DE SESSÃO
+----------------------------
+
+Fluxo:
+1. Aluno acessa capítulo
+2. Sistema verifica se há sessão existente (ativa ou concluída)
+3. Se não há sessão, exibe 3 perguntas socráticas
+4. Aluno seleciona uma pergunta
+5. Sistema cria sessão com:
+   - aluno_ra
+   - capitulo_id
+   - pergunta_id (pergunta selecionada)
+   - interacoes_restantes: 3
+   - status: "active"
+6. Sistema registra primeira mensagem da IA (pergunta selecionada)
+7. Agente responsável: ORIENTADOR
+
+Validações:
+- Não permite criar nova sessão se já existe sessão concluída
+- Não permite criar nova sessão ativa se já existe uma ativa
+- Aluno pode excluir sessão para desbloquear pergunta
+
+3.2. INTERAÇÃO NO CHAT
+---------------------
+
+Fluxo por turno:
+1. Aluno envia mensagem
+2. AgentCEO roteia para ORIENTADOR
+3. ORIENTADOR gera resposta socrática (pergunta provocativa)
+4. EDITOR refina linguagem
+5. TESTADOR valida qualidade (com fallback seguro se reprovar)
+6. ANALISTA anexa métricas
+7. ORGANIZADOR:
+   - Persiste mensagem do aluno
+   - Persiste resposta da IA
+   - Decrementa interacoes_restantes
+8. Se interacoes_restantes = 0:
+   - Marca sessão como "completed"
+   - Dispara exportação para Moodle (via ORGANIZADOR)
+
+Limite:
+- 3 interações completas (3 mensagens do aluno + 3 respostas da IA)
+- Após 3 interações, sessão finaliza automaticamente
+- Não permite mais mensagens após finalização
+
+3.3. ESTRUTURA DE MENSAGENS
+---------------------------
+
+Tabela: chat_messages
+- chat_session_id (FK)
+- autor: 'aluno' | 'ia'
+- conteudo: texto da mensagem
+- agente_responsavel: 'ORIENTADOR' | 'EDITOR' | etc.
+- metadata: JSONB (métricas, timestamps)
+- created_at: timestamp
+
+Tabela: chat_sessions
+- id: UUID
+- aluno_ra: string
+- capitulo_id: string
+- pergunta_id: FK para content_socratic_questions
+- interacoes_restantes: int (0-3)
+- status: 'active' | 'completed' | 'deleted'
+- created_at, updated_at: timestamps
+
+3.4. FINALIZAÇÃO
+---------------
+
+Automática:
+- Quando interacoes_restantes chega a 0
+- ORGANIZADOR marca status como "completed"
+- Dispara exportação para Moodle
+
+Manual:
+- Aluno pode finalizar antecipadamente
+- Endpoint: POST /socratic-chat/finalize
+
+3.5. EXPORTAÇÃO PARA MOODLE
+---------------------------
+
+Fonte: backend/app/services/moodle_chat_exporter.py
+
+Fluxo:
+1. ORGANIZADOR detecta finalização
+2. Chama MoodleChatExporter.export_chat_session_to_moodle()
+3. Converte histórico para formato Moodle Portfolio
+4. Envia via API Moodle
+5. Se falhar, enfileira em moodle_export_queue
+6. Retry automático posterior
+
+Estrutura de exportação:
+- Título: "Diálogo Socrático - [Nome do Capítulo]"
+- Conteúdo: histórico formatado
+- Metadados: aluno, capítulo, data
+
+Enfileiramento:
+- Tabela: moodle_export_queue
+- Campos: chat_session_id, payload (JSONB), status, error_message, retries
+- Retry com backoff exponencial
+
+3.6. VISUALIZAÇÃO DE HISTÓRICO
+-----------------------------
+
+Para Aluno:
+- GET /socratic-chat/student-history?alunoRa=...&capituloId=...
+- Retorna apenas próprio histórico
+- Validação: aluno só vê próprio histórico
+
+Para Professor:
+- Acesso via endpoints de teacher
+- Pode ver todas as conversas dos alunos
+- Pode exportar para Moodle
+
+3.7. GERENCIAMENTO DE SESSÕES
+-----------------------------
+
+Verificar sessão existente:
+- GET /socratic-chat/has-session?alunoRa=...&capituloId=...
+- Retorna se há sessão ativa ou concluída
+
+Excluir sessão:
+- DELETE /socratic-chat/session/{session_id}
+- Soft delete (status = "deleted")
+- Desbloqueia pergunta para nova sessão
+- Aluno só pode excluir próprias sessões
+
+================================================================================
+4. GERAÇÃO DE PERGUNTAS SOCRÁTICAS
+================================================================================
+
+Fonte: backend/routers/ia.py
+Fonte: backend/routers/socratic.py
+
+4.1. GERAÇÃO AUTOMÁTICA
+----------------------
+
+Endpoint: POST /ia/generate-questions
+
+Input:
+- chapterId: ID do capítulo
+- contentId: ID do conteúdo (opcional)
+- rawContent: texto livre (opcional)
+- learningObjective: objetivo de aprendizado
+- difficulty: iniciante | intermediario | avancado
+- numberOfQuestions: número de perguntas (padrão: 5)
+
+Processo:
+1. Busca capítulo e conteúdo
+2. Chama AgentCEO com task "generate_socratic_questions"
+3. CRIADOR gera perguntas usando IA
+4. Persiste perguntas em content_socratic_questions
+5. Retorna lista de perguntas geradas
+
+4.2. PERGUNTAS ENRIQUECIDAS
+--------------------------
+
+Estrutura completa (chapter_socratic_questions):
+- question_text: texto da pergunta
+- skill: analysis | synthesis | application | reflection
+- intention: o que a pergunta desbloqueia no aluno
+- expected_depth: nível esperado de profundidade
+- common_shallow_answer: resposta superficial comum
+- followup_prompts: array de prompts de seguimento (2-4)
+- citations: array de block IDs que suportam a pergunta
+- order_index: ordem da pergunta (1, 2, 3)
+
+4.3. REGENERAÇÃO
+---------------
+
+Endpoints:
+- POST /socratic/questions/{question_id}/regenerate
+- POST /socratic/{chapter_id}/regenerate-all
+
+Funcionalidade:
+- Regenera pergunta específica
+- Regenera todas as perguntas do capítulo
+- Mantém estrutura enriquecida
+
+================================================================================
+5. INTEGRAÇÃO COM IA (OPENAI/AZURE OPENAI)
+================================================================================
+
+Fonte: backend/app/services/ai_client.py
+
+5.1. CLIENTE DE IA
+-----------------
+
+Configuração:
+- Usa LangChain para abstração
+- Suporta OpenAI e Azure OpenAI
+- Configuração via variáveis de ambiente
+
+Modelos utilizados:
+- GPT-4 ou GPT-3.5-turbo para geração
+- Modelo configurável via settings
+
+5.2. OPERAÇÕES DE IA
+--------------------
+
+generate_intelligent_partition:
+- Particiona texto em capítulos lógicos
+- Usa IA para identificar quebras naturais
+
+generate_understanding_pack:
+- Gera understanding pack completo
+- Extrai metadados, conceitos, relações, equívocos, exemplos
+
+generate_enriched_socratic_questions:
+- Gera 3 perguntas enriquecidas
+- Com todas as metadados e citações
+
+generate_socratic_response:
+- Gera resposta socrática para diálogo
+- Baseada em contexto do capítulo e histórico
+
+5.3. RETRY E TRATAMENTO DE ERROS
+--------------------------------
+
+- Retry com backoff exponencial
+- Timeout configurável
+- Logging de erros
+- Fallback seguro em caso de falha
+
+================================================================================
+6. MÉTRICAS E OBSERVAÇÃO
+================================================================================
+
+6.1. MÉTRICAS DE PROCESSAMENTO
+-----------------------------
+
+Armazenadas em chapter_processing:
+- token_usage: tokens usados (input + output)
+- latency_ms: latência do processamento
+- model_version: versão do modelo usado
+- prompt_version: versão do prompt usado
+
+6.2. MÉTRICAS DE CHAT
+--------------------
+
+Armazenadas em metadata de chat_messages:
+- tamanho_mensagem: tamanho da mensagem
+- tem_pergunta: se contém pergunta
+- timestamp: timestamp da mensagem
+- qa_report: relatório de qualidade (do TESTADOR)
+
+6.3. OBSERVABILIDADE
+------------------
+
+Atualmente:
+- Logs básicos (print statements)
+- Sem métricas estruturadas
+- Sem monitoramento de performance
+
+Recomendado:
+- Logging estruturado (JSON)
+- Métricas de processamento
+- Rastreamento de erros
+- Alertas
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+

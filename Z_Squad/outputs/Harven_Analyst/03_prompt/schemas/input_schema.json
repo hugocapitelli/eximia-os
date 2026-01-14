@@ -1,0 +1,133 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Harven_Analyst Input Schema",
+    "description": "Schema para entrada do agente AnalystOS (Analista de Metricas e Deteccao de IA)",
+    "type": "object",
+    "required": ["student_message"],
+    "properties": {
+        "student_message": {
+            "type": "string",
+            "description": "Mensagem do aluno a ser analisada",
+            "minLength": 1,
+            "examples": [
+                "Eu acho que sustentabilidade e importante porque protege o meio ambiente",
+                "E importante ressaltar que a sustentabilidade engloba tres dimensoes fundamentais..."
+            ]
+        },
+        "context": {
+            "type": "object",
+            "description": "Contexto da conversa para analise mais precisa",
+            "properties": {
+                "chapter_id": {
+                    "type": "string",
+                    "description": "ID do capitulo sendo estudado"
+                },
+                "chapter_title": {
+                    "type": "string",
+                    "description": "Titulo do capitulo"
+                },
+                "chapter_content": {
+                    "type": "string",
+                    "description": "Conteudo do capitulo para verificar copy/paste"
+                },
+                "conversation_history": {
+                    "type": "array",
+                    "description": "Historico de mensagens da sessao",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "role": {
+                                "type": "string",
+                                "enum": ["student", "tutor"]
+                            },
+                            "content": {
+                                "type": "string"
+                            },
+                            "timestamp": {
+                                "type": "string",
+                                "format": "date-time"
+                            }
+                        }
+                    }
+                },
+                "turn_number": {
+                    "type": "integer",
+                    "description": "Numero do turno atual (1-3)",
+                    "minimum": 1,
+                    "maximum": 3
+                }
+            }
+        },
+        "interaction_metadata": {
+            "type": "object",
+            "description": "Metadados da interacao",
+            "properties": {
+                "session_id": {
+                    "type": "string",
+                    "description": "ID da sessao de chat"
+                },
+                "student_id": {
+                    "type": "string",
+                    "description": "ID do aluno"
+                },
+                "timestamp": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Momento do envio da mensagem"
+                },
+                "previous_message_timestamp": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Timestamp da mensagem anterior (para calcular tempo de resposta)"
+                }
+            }
+        },
+        "analysis_config": {
+            "type": "object",
+            "description": "Configuracoes opcionais de analise",
+            "properties": {
+                "strict_mode": {
+                    "type": "boolean",
+                    "description": "Se true, aplica criterios mais rigorosos",
+                    "default": false
+                },
+                "include_quality_metrics": {
+                    "type": "boolean",
+                    "description": "Se true, inclui metricas de qualidade",
+                    "default": true
+                },
+                "check_copy_paste": {
+                    "type": "boolean",
+                    "description": "Se true, verifica se texto foi copiado do material",
+                    "default": true
+                }
+            }
+        }
+    },
+    "examples": [
+        {
+            "student_message": "Bom, eu acho que sustentabilidade no agro e bem complicado ne. Tipo, o produtor precisa ganhar dinheiro pra sobreviver, mas tbm nao pode destruir tudo.",
+            "context": {
+                "chapter_id": "ch_123",
+                "chapter_title": "Sustentabilidade no Agronegocio",
+                "turn_number": 2
+            },
+            "interaction_metadata": {
+                "session_id": "sess_456",
+                "student_id": "student_789",
+                "timestamp": "2026-01-12T10:30:00Z"
+            }
+        },
+        {
+            "student_message": "E importante ressaltar que a sustentabilidade no agronegocio engloba tres dimensoes fundamentais: economica, social e ambiental. Nesse sentido, os produtores rurais devem buscar um equilibrio.",
+            "context": {
+                "chapter_id": "ch_123",
+                "turn_number": 1
+            },
+            "interaction_metadata": {
+                "session_id": "sess_457",
+                "timestamp": "2026-01-12T11:00:00Z"
+            }
+        }
+    ]
+}

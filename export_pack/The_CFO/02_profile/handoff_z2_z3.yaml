@@ -1,0 +1,35 @@
+# Handoff: Z2 → Z3
+
+handoff_id: "HO-20260106-002"
+timestamp: "2026-01-06T23:40:00Z"
+from_module: "Z2_Profiler"
+to_module: "Z3_Engineer"
+
+## Summary
+DNA Mental do CFO Agent completo com 7 crenças (Buffett, Dalio, Drucker), 6 princípios IF/THEN, 3 frameworks (DCF, All Weather, MBO). Knowledge Base com 5 seções cobrindo Valuation, M&A, KPIs, Fundraising e Risk. Style guide definido como técnico-conservador.
+
+## Artifacts Produced
+| Path | Type | Status |
+| :--- | :--- | :--- |
+| `outputs/CFO_Agent/dna_mental.md` | dna | complete |
+| `outputs/CFO_Agent/knowledge_base.md` | kb | complete |
+
+## Key Decisions
+| Decision | Rationale |
+| :--- | :--- |
+| Tom conservador-técnico | Alinhado com Buffett/Dalio mindset |
+| Ranges obrigatórios | Evitar overconfidence em valuation |
+| 3 clones ponderados | Dalio (risk), Buffett (value), Drucker (mgmt) |
+| KB focado em frameworks | Prático, não teórico |
+
+## Constraints for Next
+- Prompt < 4000 tokens
+- Invariantes de anti-hallucination obrigatórios
+- Output deve ser JSON estruturado
+- Incluir exemplos few-shot de valuation
+
+## Validation Criteria for Z3
+- Prompt inclui seções: identity, mission, knowledge, behavior, invariants, output_format
+- Token count estimado < 4000
+- Exemplos few-shot presentes
+- Anti-hallucination rules incluídas
