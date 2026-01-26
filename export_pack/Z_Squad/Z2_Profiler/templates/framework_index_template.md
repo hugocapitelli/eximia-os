@@ -99,3 +99,18 @@ Preencha este template com todos os frameworks que o agente utiliza.
 | 1 (Tactical) | 5-10 | 1-2 |
 | 2 (Executive) | 15-25 | 3-4 |
 | 3 (Expert) | 50-100 | 5+ |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -200,3 +200,18 @@ Interessante observacao, embora voce parececa confiar bastante na tecnologia com
 
 E se a tecnologia criasse mais problemas do que resolvesse em certas situacoes?
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

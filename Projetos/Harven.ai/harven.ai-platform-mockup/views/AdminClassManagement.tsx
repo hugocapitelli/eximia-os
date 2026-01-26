@@ -1,16 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ViewType } from '../types';
-import { disciplinesApi, usersApi } from '../services/api';
+import { useNavigate } from 'react-router-dom';
+import { disciplinesApi, usersApi, coursesApi } from '../services/api';
 
-interface AdminClassManagementProps {
-    onNavigate: (view: ViewType) => void;
-}
-
-const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate }) => {
+const AdminClassManagement: React.FC = () => {
+    const navigate = useNavigate();
     const [showModal, setShowModal] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
-    const [modalTab, setModalTab] = useState<'info' | 'professors' | 'students'>('info');
+    const [modalTab, setModalTab] = useState<'info' | 'professors' | 'students' | 'courses'>('info');
 
     const [classes, setClasses] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
@@ -24,17 +21,30 @@ const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate 
     const [availableStudents, setAvailableStudents] = useState<any[]>([]);
     const [studentSearch, setStudentSearch] = useState('');
 
+    // States para controlar dropdowns de busca
+    const [professorDropdownOpen, setProfessorDropdownOpen] = useState(false);
+    const [studentDropdownOpen, setStudentDropdownOpen] = useState(false);
+
+    // States for courses management
+    const [assignedCourses, setAssignedCourses] = useState<any[]>([]);
+    const [showCourseModal, setShowCourseModal] = useState(false);
+    const [newCourseData, setNewCourseData] = useState({ title: '', description: '' });
+    const [editingCourseId, setEditingCourseId] = useState<string | null>(null);
+    const [instructors, setInstructors] = useState<any[]>([]);
+
     const fetchData = async () => {
         try {
             setLoading(true);
-            const [disciplinesData, professorsData, studentsData] = await Promise.all([
+            const [disciplinesData, professorsData, studentsData, usersData] = await Promise.all([
                 disciplinesApi.list(),
                 usersApi.list('teacher'),
-                usersApi.list('student')
+                usersApi.list('student'),
+                usersApi.list()
             ]);
             setClasses(disciplinesData || []);
             setAvailableProfessors(professorsData || []);
             setAvailableStudents(studentsData || []);
+            setInstructors(usersData || []);
         } catch (error) {
             console.error("Erro ao carregar dados:", error);
         } finally {
@@ -89,6 +99,7 @@ const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate 
         setFormData({ name: '', code: '', department: 'Engenharia' });
         setSelectedClass(null);
         setAssignedProfessors([]);
+        setAssignedCourses([]);
         setModalTab('info');
     };
 
@@ -100,13 +111,16 @@ const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate 
             department: cls.department
         });
 
-        // Fetch assigned professors and students
+        // Fetch assigned professors, students, and courses
         try {
-            const teachers = await disciplinesApi.getTeachers(cls.id);
+            const [teachers, students, courses] = await Promise.all([
+                disciplinesApi.getTeachers(cls.id),
+                disciplinesApi.getStudents(cls.id),
+                coursesApi.listByClass(cls.id)
+            ]);
             setAssignedProfessors(teachers || []);
-
-            const students = await disciplinesApi.getStudents(cls.id);
             setAssignedStudents(students || []);
+            setAssignedCourses(courses || []);
         } catch (e) {
             console.error("Erro ao buscar dados:", e);
         }
@@ -172,11 +186,15 @@ const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate 
         }
     };
 
-    // Existing filters...
-    const filteredAvailableProfessors = availableProfessors.filter(p =>
-        p.name.toLowerCase().includes(professorSearch.toLowerCase()) &&
-        !assignedProfessors.some(ap => ap.id === p.id)
-    );
+    // Filtros de professores e alunos disponíveis
+    const filteredAvailableProfessors = availableProfessors.filter(p => {
+        const notAssigned = !assignedProfessors.some(ap => ap.id === p.id);
+        if (!professorSearch) return notAssigned; // Mostrar todos não atribuídos se busca vazia
+        return notAssigned && (
+            p.name?.toLowerCase().includes(professorSearch.toLowerCase()) ||
+            p.email?.toLowerCase().includes(professorSearch.toLowerCase())
+        );
+    });
 
     // CSV Upload Logic
     const fileInputRef = useRef<HTMLInputElement>(null);
@@ -256,11 +274,16 @@ const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate 
         reader.readAsText(file);
     };
 
-    // Filter available students for search
-    const filteredAvailableStudents = availableStudents.filter(s =>
-        s.name.toLowerCase().includes(studentSearch.toLowerCase()) &&
-        !assignedStudents.some(as => as.id === s.id)
-    );
+    // Filtro de alunos disponíveis
+    const filteredAvailableStudents = availableStudents.filter(s => {
+        const notAssigned = !assignedStudents.some(as => as.id === s.id);
+        if (!studentSearch) return notAssigned; // Mostrar todos não atribuídos se busca vazia
+        return notAssigned && (
+            s.name?.toLowerCase().includes(studentSearch.toLowerCase()) ||
+            s.email?.toLowerCase().includes(studentSearch.toLowerCase()) ||
+            s.ra?.toLowerCase().includes(studentSearch.toLowerCase())
+        );
+    });
 
 
 
@@ -301,22 +324,41 @@ const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate 
             {viewMode === 'grid' ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {classes.map((cls) => (
-                        <div key={cls.id} className="bg-white dark:bg-gray-800 rounded-xl border border-harven-border dark:border-gray-700 p-6 shadow-sm hover:border-primary transition-all group cursor-pointer relative overflow-hidden">
-                            {/* ... Card Content ... */}
-                            <div className="absolute top-0 right-0 p-4 opacity-5 dark:opacity-10"><span className="material-symbols-outlined text-6xl dark:text-white">school</span></div>
-                            <div className="flex justify-between items-start mb-4">
-                                <span className="bg-harven-bg dark:bg-gray-900 text-harven-dark dark:text-white font-mono font-bold text-xs px-2 py-1 rounded border border-harven-border dark:border-gray-600">{cls.code}</span>
-                                <span className={`text-[9px] font-bold px-2 py-0.5 rounded uppercase border ${cls.status === 'active' || cls.status === 'Ativa' ? 'bg-green-100 text-green-700 border-green-200 dark:bg-green-900/30 dark:text-green-400 dark:border-green-800' : 'bg-gray-100 text-gray-600 border-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600'}`}>{cls.status || 'Ativa'}</span>
+                        <div key={cls.id} className="bg-white dark:bg-gray-800 rounded-xl border border-harven-border dark:border-gray-700 shadow-sm hover:border-primary transition-all group cursor-pointer overflow-hidden">
+                            {/* Cover Image Header */}
+                            <div className="h-24 bg-gradient-to-br from-harven-dark to-harven-dark/80 relative overflow-hidden">
+                                {cls.image && (
+                                    <img src={cls.image} alt={cls.title} className="absolute inset-0 w-full h-full object-cover" />
+                                )}
+                                <div className={`absolute inset-0 ${cls.image ? 'bg-gradient-to-t from-black/60 via-black/20 to-transparent' : ''}`}></div>
+                                <div className="absolute top-3 left-3">
+                                    <span className="bg-black/30 backdrop-blur-sm text-white font-mono font-bold text-xs px-2 py-1 rounded">{cls.code}</span>
+                                </div>
+                                <div className="absolute top-3 right-3">
+                                    <span className={`text-[9px] font-bold px-2 py-0.5 rounded uppercase backdrop-blur-sm ${cls.status === 'active' || cls.status === 'Ativa' ? 'bg-green-500/80 text-white' : 'bg-gray-500/80 text-white'}`}>{cls.status || 'Ativa'}</span>
+                                </div>
+                                <div className="absolute bottom-3 left-3 bg-white dark:bg-gray-800 size-10 rounded-lg shadow-lg flex items-center justify-center">
+                                    <span className="material-symbols-outlined text-harven-dark dark:text-white">school</span>
+                                </div>
                             </div>
-                            <h3 className="text-lg font-bold text-harven-dark dark:text-white group-hover:text-primary-dark dark:group-hover:text-primary transition-colors mb-1">{cls.title}</h3>
-                            <p className="text-xs text-gray-500 font-medium mb-4">{cls.department}</p>
+                            {/* Card Content */}
+                            <div className="p-5">
+                                <h3 className="text-lg font-bold text-harven-dark dark:text-white group-hover:text-primary-dark dark:group-hover:text-primary transition-colors mb-1">{cls.title}</h3>
+                                <p className="text-xs text-gray-500 font-medium mb-4">{cls.department}</p>
 
-                            <div className="grid grid-cols-2 gap-4 border-t border-harven-bg dark:border-gray-700 pt-4">
-                                <div><p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Alunos</p><p className="text-xl font-display font-bold text-harven-dark dark:text-white">{cls.students || 0}</p></div>
-                                <div><p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Disciplinas</p><p className="text-xl font-display font-bold text-harven-dark dark:text-white">{cls.disciplines || 0}</p></div>
-                            </div>
-                            <div className="mt-4 flex gap-2">
-                                <button onClick={() => handleManage(cls)} className="flex-1 py-2 bg-harven-bg dark:bg-gray-700 hover:bg-primary group-hover:bg-primary group-hover:text-harven-dark rounded-lg text-xs font-bold text-harven-dark dark:text-white transition-all">Gerenciar</button>
+                                <div className="grid grid-cols-2 gap-4 border-t border-harven-bg dark:border-gray-700 pt-4">
+                                    <div><p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Cursos</p><p className="text-xl font-display font-bold text-harven-dark dark:text-white">{cls.courses_count || 0}</p></div>
+                                    <div><p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Alunos</p><p className="text-xl font-display font-bold text-harven-dark dark:text-white">{cls.students || 0}</p></div>
+                                </div>
+                                <div className="mt-4 flex gap-2">
+                                    <button onClick={() => navigate(`/admin/class/${cls.id}`)} className="flex-1 py-2 bg-primary hover:bg-primary-dark rounded-lg text-xs font-bold text-harven-dark transition-all flex items-center justify-center gap-1">
+                                        <span className="material-symbols-outlined text-[16px]">menu_book</span>
+                                        Ver Cursos
+                                    </button>
+                                    <button onClick={() => handleManage(cls)} className="px-3 py-2 bg-harven-bg dark:bg-gray-700 hover:bg-gray-200 rounded-lg text-xs font-bold text-harven-dark dark:text-white transition-all" title="Editar Turma">
+                                        <span className="material-symbols-outlined text-[16px]">settings</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -331,8 +373,8 @@ const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate 
                                 <th className="p-4">Código</th>
                                 <th className="p-4">Nome da Turma</th>
                                 <th className="p-4">Ano/Semestre</th>
+                                <th className="p-4">Cursos</th>
                                 <th className="p-4">Alunos</th>
-                                <th className="p-4">Disciplinas</th>
                                 <th className="p-4">Status</th>
                                 <th className="p-4 text-right">Ações</th>
                             </tr>
@@ -343,11 +385,18 @@ const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate 
                                     <td className="p-4 font-mono text-xs font-bold text-gray-600 dark:text-gray-400">{cls.code}</td>
                                     <td className="p-4 text-sm font-bold text-harven-dark dark:text-white">{cls.title}</td>
                                     <td className="p-4 text-sm text-gray-500">{cls.year || '2024.1'}</td>
+                                    <td className="p-4 text-sm text-gray-500">{cls.courses_count || 0}</td>
                                     <td className="p-4 text-sm text-gray-500">{cls.students || 0}</td>
-                                    <td className="p-4 text-sm text-gray-500">{cls.disciplines || 0}</td>
                                     <td className="p-4"><span className={`text-[9px] font-bold px-2 py-0.5 rounded uppercase border ${cls.status === 'active' || cls.status === 'Ativa' ? 'bg-green-100 text-green-700 border-green-200 dark:bg-green-900/30 dark:text-green-400 dark:border-green-800' : 'bg-gray-100 text-gray-600 border-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600'}`}>{cls.status || 'Ativa'}</span></td>
                                     <td className="p-4 text-right">
-                                        <button onClick={() => handleManage(cls)} className="text-gray-400 hover:text-primary-dark transition-colors"><span className="material-symbols-outlined">edit</span></button>
+                                        <div className="flex items-center justify-end gap-2">
+                                            <button onClick={() => navigate(`/admin/class/${cls.id}`)} className="text-gray-400 hover:text-primary-dark transition-colors" title="Ver Cursos">
+                                                <span className="material-symbols-outlined">menu_book</span>
+                                            </button>
+                                            <button onClick={() => handleManage(cls)} className="text-gray-400 hover:text-harven-dark transition-colors" title="Editar Turma">
+                                                <span className="material-symbols-outlined">edit</span>
+                                            </button>
+                                        </div>
                                     </td>
                                 </tr>
                             ))}
@@ -368,9 +417,10 @@ const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate 
                         </div>
 
                         {/* Tabs do Modal */}
-                        <div className="flex border-b border-harven-border px-6">
+                        <div className="flex border-b border-harven-border px-6 overflow-x-auto">
                             {[
                                 { id: 'info', label: 'Dados Gerais' },
+                                { id: 'courses', label: 'Cursos' },
                                 { id: 'professors', label: 'Professores' },
                                 { id: 'students', label: 'Alunos' }
                             ].map(tab => (
@@ -379,7 +429,7 @@ const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate 
                                     onClick={() => setModalTab(tab.id as any)}
                                     // Disable tabs if creating new class
                                     disabled={!selectedClass && tab.id !== 'info'}
-                                    className={`px-4 py-3 text-xs font-bold uppercase tracking-widest border-b-2 transition-colors ${modalTab === tab.id ? 'border-primary text-harven-dark' : 'border-transparent text-gray-400 hover:text-harven-dark'} ${!selectedClass && tab.id !== 'info' ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                    className={`px-4 py-3 text-xs font-bold uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${modalTab === tab.id ? 'border-primary text-harven-dark' : 'border-transparent text-gray-400 hover:text-harven-dark'} ${!selectedClass && tab.id !== 'info' ? 'opacity-50 cursor-not-allowed' : ''}`}
                                 >
                                     {tab.label}
                                 </button>
@@ -410,39 +460,154 @@ const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate 
                                     </div>
                                     {!selectedClass && (
                                         <div className="bg-yellow-50 p-4 rounded-lg text-xs text-yellow-700">
-                                            Salve a turma antes de adicionar professores e alunos.
+                                            Salve a turma antes de adicionar professores, alunos e cursos.
                                         </div>
                                     )}
                                 </div>
                             )}
 
+                            {modalTab === 'courses' && selectedClass && (
+                                <div className="space-y-4 animate-in fade-in slide-in-from-right-2 duration-300">
+                                    {/* Link para gestão completa */}
+                                    <button
+                                        type="button"
+                                        onClick={() => {
+                                            setShowModal(false);
+                                            navigate(`/admin/discipline/${selectedClass.id}/edit`);
+                                        }}
+                                        className="w-full p-4 bg-harven-dark text-white rounded-lg flex items-center justify-between hover:bg-black transition-colors"
+                                    >
+                                        <div className="flex items-center gap-3">
+                                            <span className="material-symbols-outlined">settings</span>
+                                            <div className="text-left">
+                                                <p className="font-bold text-sm">Gestao Completa da Disciplina</p>
+                                                <p className="text-[10px] text-white/70">Imagens, configuracoes e estrutura de cursos</p>
+                                            </div>
+                                        </div>
+                                        <span className="material-symbols-outlined">arrow_forward</span>
+                                    </button>
+
+                                    <div className="flex justify-between items-center bg-gray-50 p-3 rounded-lg border border-harven-border">
+                                        <span className="text-xs font-bold text-gray-500">Cursos desta Turma ({assignedCourses.length})</span>
+                                        <button
+                                            type="button"
+                                            onClick={() => {
+                                                setNewCourseData({ title: '', description: '' });
+                                                setEditingCourseId(null);
+                                                setShowCourseModal(true);
+                                            }}
+                                            className="text-primary-dark font-bold text-xs flex items-center gap-1 hover:underline"
+                                        >
+                                            <span className="material-symbols-outlined text-[16px]">add</span>
+                                            Novo Curso
+                                        </button>
+                                    </div>
+
+                                    <div className="space-y-2 max-h-[350px] overflow-y-auto">
+                                        {assignedCourses.map((course, i) => (
+                                            <div key={course.id || i} className="flex justify-between items-center p-4 border border-harven-border rounded-lg bg-white hover:bg-gray-50 transition-colors">
+                                                <div className="flex items-center gap-4 flex-1 min-w-0">
+                                                    <div className="size-12 bg-harven-bg rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                                                        {(course.image || course.image_url) ? (
+                                                            <img src={course.image || course.image_url} alt={course.title} className="w-full h-full object-cover" />
+                                                        ) : (
+                                                            <span className="material-symbols-outlined text-gray-400">menu_book</span>
+                                                        )}
+                                                    </div>
+                                                    <div className="min-w-0">
+                                                        <p className="text-sm font-bold text-harven-dark truncate">{course.title}</p>
+                                                        <p className="text-[10px] text-gray-400 truncate">{course.description || 'Sem descrição'}</p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex items-center gap-2 flex-shrink-0">
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => navigate(`/course/${course.id}/edit`)}
+                                                        className="text-gray-400 hover:text-primary-dark p-1 rounded transition-colors"
+                                                        title="Editar Curso"
+                                                    >
+                                                        <span className="material-symbols-outlined text-[18px]">edit</span>
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        onClick={async () => {
+                                                            if (confirm('Tem certeza que deseja remover este curso?')) {
+                                                                try {
+                                                                    await coursesApi.delete(course.id);
+                                                                    const courses = await coursesApi.listByClass(selectedClass.id);
+                                                                    setAssignedCourses(courses || []);
+                                                                } catch (e) {
+                                                                    alert('Erro ao remover curso');
+                                                                }
+                                                            }
+                                                        }}
+                                                        className="text-gray-400 hover:text-red-500 p-1 rounded transition-colors"
+                                                        title="Remover Curso"
+                                                    >
+                                                        <span className="material-symbols-outlined text-[18px]">delete</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        ))}
+                                        {assignedCourses.length === 0 && (
+                                            <div className="text-center py-8 text-gray-400 text-sm border-2 border-dashed border-gray-200 rounded-lg">
+                                                <span className="material-symbols-outlined text-3xl mb-2 block">menu_book</span>
+                                                Nenhum curso cadastrado nesta turma.
+                                                <button
+                                                    type="button"
+                                                    onClick={() => {
+                                                        setNewCourseData({ title: '', description: '' });
+                                                        setEditingCourseId(null);
+                                                        setShowCourseModal(true);
+                                                    }}
+                                                    className="text-primary-dark font-bold text-xs hover:underline block mx-auto mt-2"
+                                                >
+                                                    Criar o primeiro curso
+                                                </button>
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+                            )}
+
                             {modalTab === 'professors' && selectedClass && (
                                 <div className="space-y-4 animate-in fade-in slide-in-from-right-2 duration-300">
-                                    <div className="space-y-2">
+                                    <div className="space-y-2 relative">
                                         <label className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Adicionar Professor</label>
                                         <div className="flex gap-2">
                                             <input
                                                 className="flex-1 bg-harven-bg border-none rounded-lg px-4 py-2 text-sm"
-                                                placeholder="Buscar professor disponível..."
+                                                placeholder="Clique ou digite para buscar..."
                                                 value={professorSearch}
                                                 onChange={(e) => setProfessorSearch(e.target.value)}
+                                                onFocus={() => setProfessorDropdownOpen(true)}
+                                                onBlur={() => setTimeout(() => setProfessorDropdownOpen(false), 200)}
                                             />
                                         </div>
                                         {/* Dropdown de sugestões */}
-                                        {professorSearch && (
-                                            <div className="bg-white border border-harven-border rounded-lg shadow-lg max-h-40 overflow-y-auto">
-                                                {filteredAvailableProfessors.map(prof => (
-                                                    <button
-                                                        key={prof.id}
-                                                        type="button"
-                                                        onClick={() => { handleAddProfessor(prof.id); setProfessorSearch(''); }}
-                                                        className="w-full text-left p-2 hover:bg-harven-bg text-sm flex justify-between items-center"
-                                                    >
-                                                        <span>{prof.name}</span>
-                                                        <span className="material-symbols-outlined text-[16px] text-primary">add</span>
-                                                    </button>
-                                                ))}
-                                                {filteredAvailableProfessors.length === 0 && <div className="p-2 text-xs text-gray-400">Nenhum professor encontrado.</div>}
+                                        {professorDropdownOpen && (
+                                            <div className="absolute z-10 w-full bg-white border border-harven-border rounded-lg shadow-lg max-h-48 overflow-y-auto">
+                                                {filteredAvailableProfessors.length > 0 ? (
+                                                    filteredAvailableProfessors.slice(0, 20).map(prof => (
+                                                        <button
+                                                            key={prof.id}
+                                                            type="button"
+                                                            onClick={() => { handleAddProfessor(prof.id); setProfessorSearch(''); setProfessorDropdownOpen(false); }}
+                                                            className="w-full text-left p-3 hover:bg-harven-bg text-sm flex justify-between items-center border-b border-gray-100 last:border-0"
+                                                        >
+                                                            <div>
+                                                                <span className="font-medium">{prof.name}</span>
+                                                                {prof.email && <span className="text-xs text-gray-400 ml-2">{prof.email}</span>}
+                                                            </div>
+                                                            <span className="material-symbols-outlined text-[16px] text-primary">add</span>
+                                                        </button>
+                                                    ))
+                                                ) : (
+                                                    <div className="p-3 text-xs text-gray-400 text-center">Nenhum professor disponível.</div>
+                                                )}
+                                                {filteredAvailableProfessors.length > 20 && (
+                                                    <div className="p-2 text-xs text-gray-400 text-center border-t">Digite para filtrar mais...</div>
+                                                )}
                                             </div>
                                         )}
                                     </div>
@@ -482,30 +647,45 @@ const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate 
                                         />
                                     </div>
 
-                                    <div className="space-y-2">
+                                    <div className="space-y-2 relative">
                                         <label className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Adicionar Aluno</label>
                                         <div className="flex gap-2">
                                             <input
                                                 className="flex-1 bg-harven-bg border-none rounded-lg px-4 py-2 text-sm"
-                                                placeholder="Buscar aluno disponível..."
+                                                placeholder="Clique ou digite para buscar..."
                                                 value={studentSearch}
                                                 onChange={(e) => setStudentSearch(e.target.value)}
+                                                onFocus={() => setStudentDropdownOpen(true)}
+                                                onBlur={() => setTimeout(() => setStudentDropdownOpen(false), 200)}
                                             />
                                         </div>
-                                        {studentSearch && (
-                                            <div className="bg-white border border-harven-border rounded-lg shadow-lg max-h-40 overflow-y-auto">
-                                                {filteredAvailableStudents.map(student => (
-                                                    <button
-                                                        key={student.id}
-                                                        type="button"
-                                                        onClick={() => { handleAddStudent(student.id); setStudentSearch(''); }}
-                                                        className="w-full text-left p-2 hover:bg-harven-bg text-sm flex justify-between items-center"
-                                                    >
-                                                        <span>{student.name}</span>
-                                                        <span className="material-symbols-outlined text-[16px] text-primary">add</span>
-                                                    </button>
-                                                ))}
-                                                {filteredAvailableStudents.length === 0 && <div className="p-2 text-xs text-gray-400">Nenhum aluno encontrado.</div>}
+                                        {studentDropdownOpen && (
+                                            <div className="absolute z-10 w-full bg-white border border-harven-border rounded-lg shadow-lg max-h-48 overflow-y-auto">
+                                                {filteredAvailableStudents.length > 0 ? (
+                                                    filteredAvailableStudents.slice(0, 20).map(student => (
+                                                        <button
+                                                            key={student.id}
+                                                            type="button"
+                                                            onClick={() => { handleAddStudent(student.id); setStudentSearch(''); setStudentDropdownOpen(false); }}
+                                                            className="w-full text-left p-3 hover:bg-harven-bg text-sm flex justify-between items-center border-b border-gray-100 last:border-0"
+                                                        >
+                                                            <div>
+                                                                <span className="font-medium">{student.name}</span>
+                                                                <div className="text-xs text-gray-400">
+                                                                    {student.ra && <span>RA: {student.ra}</span>}
+                                                                    {student.ra && student.email && <span> • </span>}
+                                                                    {student.email && <span>{student.email}</span>}
+                                                                </div>
+                                                            </div>
+                                                            <span className="material-symbols-outlined text-[16px] text-primary">add</span>
+                                                        </button>
+                                                    ))
+                                                ) : (
+                                                    <div className="p-3 text-xs text-gray-400 text-center">Nenhum aluno disponível.</div>
+                                                )}
+                                                {filteredAvailableStudents.length > 20 && (
+                                                    <div className="p-2 text-xs text-gray-400 text-center border-t">Mostrando 20 de {filteredAvailableStudents.length}. Digite para filtrar...</div>
+                                                )}
                                             </div>
                                         )}
                                     </div>
@@ -544,6 +724,90 @@ const AdminClassManagement: React.FC<AdminClassManagementProps> = ({ onNavigate 
                                 <button type="button" onClick={() => setShowModal(false)} className="flex-1 py-3 border border-harven-border rounded-xl text-xs font-bold text-harven-dark hover:bg-gray-50 transition-colors uppercase tracking-widest">Fechar</button>
                                 <button type="submit" disabled={isSubmitting} className="flex-1 py-3 bg-primary hover:bg-primary-dark rounded-xl text-xs font-bold text-harven-dark transition-all uppercase tracking-widest shadow-lg shadow-primary/20 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed">
                                     {isSubmitting ? 'Salvando...' : 'Salvar Alterações'}
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            )}
+
+            {/* Mini Modal para Criar/Editar Curso */}
+            {showCourseModal && selectedClass && (
+                <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-harven-dark/80 backdrop-blur-sm animate-in fade-in duration-200">
+                    <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md flex flex-col overflow-hidden animate-in zoom-in-95 duration-200">
+                        <div className="p-5 border-b border-harven-border bg-harven-bg flex justify-between items-center">
+                            <h3 className="text-base font-display font-bold text-harven-dark">
+                                {editingCourseId ? 'Editar Curso' : 'Novo Curso'}
+                            </h3>
+                            <button onClick={() => setShowCourseModal(false)} className="text-gray-400 hover:text-harven-dark">
+                                <span className="material-symbols-outlined">close</span>
+                            </button>
+                        </div>
+
+                        <form
+                            onSubmit={async (e) => {
+                                e.preventDefault();
+                                setIsSubmitting(true);
+                                try {
+                                    if (editingCourseId) {
+                                        await coursesApi.update(editingCourseId, {
+                                            title: newCourseData.title,
+                                            description: newCourseData.description,
+                                            instructor_id: instructors[0]?.id || ''
+                                        });
+                                    } else {
+                                        await coursesApi.create(selectedClass.id, {
+                                            title: newCourseData.title,
+                                            description: newCourseData.description,
+                                            instructor_id: instructors[0]?.id || ''
+                                        });
+                                    }
+                                    const courses = await coursesApi.listByClass(selectedClass.id);
+                                    setAssignedCourses(courses || []);
+                                    setShowCourseModal(false);
+                                } catch (e: any) {
+                                    console.error("Erro ao salvar curso:", e);
+                                    alert(`Erro ao salvar curso: ${e.response?.data?.detail || e.message}`);
+                                } finally {
+                                    setIsSubmitting(false);
+                                }
+                            }}
+                            className="p-5 flex flex-col gap-4"
+                        >
+                            <div className="space-y-1.5">
+                                <label className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Nome do Curso</label>
+                                <input
+                                    required
+                                    value={newCourseData.title}
+                                    onChange={e => setNewCourseData({ ...newCourseData, title: e.target.value })}
+                                    className="w-full bg-harven-bg border-none rounded-lg px-4 py-2.5 text-sm font-medium focus:ring-1 focus:ring-primary text-harven-dark"
+                                    placeholder="Ex: Introdução à Programação"
+                                />
+                            </div>
+                            <div className="space-y-1.5">
+                                <label className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Descrição</label>
+                                <textarea
+                                    value={newCourseData.description}
+                                    onChange={e => setNewCourseData({ ...newCourseData, description: e.target.value })}
+                                    className="w-full bg-harven-bg border-none rounded-lg px-4 py-2.5 text-sm font-medium focus:ring-1 focus:ring-primary text-harven-dark resize-none"
+                                    rows={3}
+                                    placeholder="Breve descrição do curso..."
+                                />
+                            </div>
+                            <div className="pt-2 flex gap-3">
+                                <button
+                                    type="button"
+                                    onClick={() => setShowCourseModal(false)}
+                                    className="flex-1 py-2.5 border border-harven-border rounded-xl text-xs font-bold text-harven-dark hover:bg-gray-50 transition-colors uppercase tracking-widest"
+                                >
+                                    Cancelar
+                                </button>
+                                <button
+                                    type="submit"
+                                    disabled={isSubmitting}
+                                    className="flex-1 py-2.5 bg-primary hover:bg-primary-dark rounded-xl text-xs font-bold text-harven-dark transition-all uppercase tracking-widest shadow-lg shadow-primary/20 flex items-center justify-center gap-2 disabled:opacity-70"
+                                >
+                                    {isSubmitting ? 'Salvando...' : (editingCourseId ? 'Salvar' : 'Criar Curso')}
                                 </button>
                             </div>
                         </form>

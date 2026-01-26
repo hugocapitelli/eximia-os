@@ -1,0 +1,411 @@
+{
+    "timeline_metadata": {
+        "clone_target": "Tim Ferriss",
+        "extraction_date": "2026-01-19",
+        "event_count": 35,
+        "version": "1.0"
+    },
+    "timeline_events": [
+        {
+            "id": "T001",
+            "year": "1977",
+            "date": "1977-07-20",
+            "event": "Born in East Hampton, New York",
+            "category": "personal",
+            "significance": "Birth, early life begins",
+            "context": "Middle-class family, encouraged curiosity and reading"
+        },
+        {
+            "id": "T002",
+            "year": "~1985",
+            "date": "~1985",
+            "event": "Started wrestling (age ~8)",
+            "category": "personal",
+            "significance": "First experience with discipline, physical training",
+            "context": "Small child, wrestling taught early experimentation with workouts and diets"
+        },
+        {
+            "id": "T003",
+            "year": "~1992",
+            "date": "~1992",
+            "event": "Year in Japan as exchange student (age 15)",
+            "category": "education",
+            "significance": "Transformative cultural experience",
+            "context": "Broadened worldview, interest in East Asian culture"
+        },
+        {
+            "id": "T004",
+            "year": "~1992-1996",
+            "date": "~1992-1996",
+            "event": "Attended St. Paul's School (boarding school, New Hampshire)",
+            "category": "education",
+            "significance": "Elite secondary education",
+            "context": "Supported by grandparents' financial assistance and academic scholarships"
+        },
+        {
+            "id": "T005",
+            "year": "1996-2000",
+            "date": "1996-2000",
+            "event": "Princeton University - BA in East Asian Studies",
+            "category": "education",
+            "significance": "Higher education, focus on language acquisition",
+            "context": "Studied under John McPhee (Pulitzer winner), Kenzaburō Ōe (Nobel winner)"
+        },
+        {
+            "id": "T006",
+            "year": "~1998-2000",
+            "date": "~1998-2000",
+            "event": "Founded first company at Princeton (nutritional supplements)",
+            "category": "business",
+            "significance": "First entrepreneurial venture",
+            "context": "Discovered talent for marketing and entrepreneurship"
+        },
+        {
+            "id": "T007",
+            "year": "2001",
+            "date": "2001",
+            "event": "Founded BrainQUICKEN (while working at data storage company)",
+            "category": "business",
+            "significance": "The startup that became basis for 4-Hour Workweek",
+            "context": "Initially called BodyQuick, sold nutritional supplements for memory/reaction speed"
+        },
+        {
+            "id": "T008",
+            "year": "~2001-2004",
+            "date": "~2001-2004",
+            "event": "Bootstrapped BrainQUICKEN using credit card + prepays",
+            "category": "business",
+            "significance": "Learned automation, elimination, delegation",
+            "context": "Grew to $40-70K/month, reduced from 80h/week to ~4h/week involvement"
+        },
+        {
+            "id": "T009",
+            "year": "2004",
+            "date": "2004",
+            "event": "Discovered Stoicism (Seneca quote resonated during burnout)",
+            "category": "philosophy",
+            "significance": "Philosophical foundation established",
+            "context": "'We suffer more in imagination than in reality' changed perspective"
+        },
+        {
+            "id": "T010",
+            "year": "2003-2013",
+            "date": "2003-2013",
+            "event": "Guest lecturer at Princeton University",
+            "category": "career",
+            "significance": "Teaching entrepreneurship and lifestyle design",
+            "context": "Spoke on entrepreneurship as tool for world change"
+        },
+        {
+            "id": "T011",
+            "year": "2007",
+            "date": "2007",
+            "event": "Published 'The 4-Hour Workweek'",
+            "category": "publishing",
+            "significance": "Breakthrough book, established thought leadership",
+            "context": "New York Times & Wall Street Journal Bestseller, defined lifestyle design movement"
+        },
+        {
+            "id": "T012",
+            "year": "2007",
+            "date": "2007",
+            "event": "Early investment in Twitter (valuation ~$20M)",
+            "category": "investing",
+            "significance": "Beginning of angel investing career",
+            "context": "One of early angel investments"
+        },
+        {
+            "id": "T013",
+            "year": "2009",
+            "date": "2009",
+            "event": "Early investment in Uber ($25K at $3.7M valuation)",
+            "category": "investing",
+            "significance": "Major successful angel investment",
+            "context": "Pre-seed round advisor, used Uber before investing"
+        },
+        {
+            "id": "T014",
+            "year": "2009-2010",
+            "date": "2009-2010",
+            "event": "Sold BrainQUICKEN to London private equity firm",
+            "category": "business",
+            "significance": "Clean exit from first major business",
+            "context": "Took 20% reduction in price to avoid staying on as consultant"
+        },
+        {
+            "id": "T015",
+            "year": "2010",
+            "date": "2010",
+            "event": "Published 'The 4-Hour Body'",
+            "category": "publishing",
+            "significance": "Biohacking and body optimization book",
+            "context": "NYT & WSJ Bestseller, expanded into health/fitness domain"
+        },
+        {
+            "id": "T016",
+            "year": "2012",
+            "date": "2012-11-20",
+            "event": "Published 'The 4-Hour Chef'",
+            "category": "publishing",
+            "significance": "Meta-learning book disguised as cookbook",
+            "context": "Introduced DiSSS framework, NYT & WSJ Bestseller"
+        },
+        {
+            "id": "T017",
+            "year": "~2014",
+            "date": "~2014",
+            "event": "Started The Tim Ferriss Show podcast",
+            "category": "media",
+            "significance": "Became top business podcast",
+            "context": "Deconstruct world-class performers, 825+ episodes eventually"
+        },
+        {
+            "id": "T018",
+            "year": "2015",
+            "date": "2015-08-18",
+            "event": "Naval Ravikant episode (#97) - became one of most popular",
+            "category": "media",
+            "significance": "Defining podcast episode",
+            "context": "Happiness, habits, startup advice - highly influential conversation"
+        },
+        {
+            "id": "T019",
+            "year": "2016",
+            "date": "2016",
+            "event": "Published 'Tools of Titans'",
+            "category": "publishing",
+            "significance": "Compilation of podcast insights",
+            "context": "Tactics, routines, habits of billionaires and icons. NYT & WSJ Bestseller"
+        },
+        {
+            "id": "T020",
+            "year": "2017",
+            "date": "2017",
+            "event": "Published 'Tribe of Mentors'",
+            "category": "publishing",
+            "significance": "130+ mentors answering 11 core questions",
+            "context": "Short life advice from the best in the world. NYT & WSJ Bestseller"
+        },
+        {
+            "id": "T021",
+            "year": "~2017-2020",
+            "date": "~2017-2020",
+            "event": "Angel investing portfolio grew to 50+ companies",
+            "category": "investing",
+            "significance": "Established as prolific angel investor",
+            "context": "Includes Shopify (first advisor), Facebook, SpaceX, Alibaba, Duolingo, etc."
+        },
+        {
+            "id": "T022",
+            "year": "Ongoing",
+            "date": "Ongoing",
+            "event": "Five Bullet Friday newsletter (weekly)",
+            "category": "media",
+            "significance": "Direct connection with audience",
+            "context": "Free weekly email with 5 curated items (books, gadgets, articles, etc.)"
+        },
+        {
+            "id": "T023",
+            "year": "Ongoing",
+            "date": "Ongoing",
+            "event": "Daily morning routine (meditation, journaling, exercise, tea)",
+            "category": "personal",
+            "significance": "Consistent practice optimization",
+            "context": "8-step routine, 'win the morning, win the day' philosophy"
+        },
+        {
+            "id": "T024",
+            "year": "Ongoing",
+            "date": "Ongoing",
+            "event": "Regular Stoic practice (reading Seneca, Marcus Aurelius)",
+            "category": "philosophy",
+            "significance": "Philosophical grounding",
+            "context": "10-15 min daily, created 'Tao of Seneca' audiobook"
+        },
+        {
+            "id": "T025",
+            "year": "Ongoing",
+            "date": "Ongoing",
+            "event": "Fear-setting practice (monthly/quarterly)",
+            "category": "practice",
+            "significance": "Decision-making tool",
+            "context": "Based on Stoic premeditatio malorum, 3-page exercise"
+        },
+        {
+            "id": "T026",
+            "year": "Ongoing",
+            "date": "Ongoing",
+            "event": "Self-experimentation (N=1 experiments)",
+            "category": "practice",
+            "significance": "Personal optimization methodology",
+            "context": "Tests on diet, exercise, productivity, supplements"
+        },
+        {
+            "id": "T027",
+            "year": "Ongoing",
+            "date": "Ongoing",
+            "event": "Minimal social media presence (selective ignorance)",
+            "category": "practice",
+            "significance": "Protective of attention",
+            "context": "Removes apps from phone, strategic disengagement"
+        },
+        {
+            "id": "T028",
+            "year": "~2015-present",
+            "date": "~2015-present",
+            "event": "Advising portfolio companies on marketing/PR",
+            "category": "business",
+            "significance": "Value-add beyond capital",
+            "context": "Active advisor to Shopify, others on marketing strategy"
+        },
+        {
+            "id": "T029",
+            "year": "Various",
+            "date": "Various",
+            "event": "Arnold Schwarzenegger episodes (#60, #696)",
+            "category": "media",
+            "significance": "Popular recurring guest",
+            "context": "Vision, psychological warfare, growth through discomfort"
+        },
+        {
+            "id": "T030",
+            "year": "Various",
+            "date": "Various",
+            "event": "Jerry Seinfeld episode (#485)",
+            "category": "media",
+            "significance": "Creative process deep-dive",
+            "context": "Writing systems, 'Don't Break the Chain', constraints"
+        },
+        {
+            "id": "T031",
+            "year": "Various",
+            "date": "Various",
+            "event": "Created 'Tao of Seneca' audiobook series (free)",
+            "category": "philosophy",
+            "significance": "Making Stoicism accessible",
+            "context": "Turned Seneca's letters into listenable format"
+        },
+        {
+            "id": "T032",
+            "year": "Early career",
+            "date": "Early career",
+            "event": "Worked in sales at data storage company",
+            "category": "career",
+            "significance": "Corporate experience before entrepreneurship",
+            "context": "Realized traditional career path wasn't for him"
+        },
+        {
+            "id": "T033",
+            "year": "~2004-2006",
+            "date": "~2004-2006",
+            "event": "World travels that inspired 4-Hour Workweek",
+            "category": "personal",
+            "significance": "Geoarbitrage and lifestyle design testing",
+            "context": "Fear-setting exercise helped make decision to travel"
+        },
+        {
+            "id": "T034",
+            "year": "2020-present",
+            "date": "2020-present",
+            "event": "825+ podcast episodes with transcripts available",
+            "category": "media",
+            "significance": "Massive content archive",
+            "context": "Full transcripts at tim.blog/podcast"
+        },
+        {
+            "id": "T035",
+            "year": "Ongoing",
+            "date": "Ongoing",
+            "event": "Practicing 'voluntary discomfort' (cold showers, fasting)",
+            "category": "practice",
+            "significance": "Stoic practice  modernized",
+            "context": "Seneca's 'practicing poverty' applied to modern life"
+        }
+    ],
+    "timeline_phases": {
+        "formative_years": {
+            "span": "1977-2000",
+            "key_events": [
+                "Birth",
+                "Wrestling",
+                "Japan exchange",
+                "St. Paul's",
+                "Princeton"
+            ],
+            "themes": [
+                "Discipline",
+                "Cultural exposure",
+                "Elite education",
+                "Early entrepreneurship"
+            ]
+        },
+        "entrepreneurship_phase": {
+            "span": "2001-2010",
+            "key_events": [
+                "BrainQUICKEN founding",
+                "Automation/optimization",
+                "Sale of company"
+            ],
+            "themes": [
+                "Learning by doing",
+                "4-Hour methodology development",
+                "Financial independence"
+            ]
+        },
+        "author_emergence": {
+            "span": "2007-2017",
+            "key_events": [
+                "4HWW",
+                "4HB",
+                "4HC",
+                "Tools of Titans",
+                "Tribe of Mentors"
+            ],
+            "themes": [
+                "Thought leadership",
+                "Lifestyle design movement",
+                "Publishing success"
+            ]
+        },
+        "podcast_era": {
+            "span": "2014-present",
+            "key_events": [
+                "Starting podcast",
+                "825+ episodes",
+                "Top business podcast"
+            ],
+            "themes": [
+                "Deconstruction of excellence",
+                "Network building",
+                "Media influence"
+            ]
+        },
+        "angel_investor_era": {
+            "span": "2007-present",
+            "key_events": [
+                "Twitter",
+                "Uber",
+                "Facebook",
+                "50+ portfolio"
+            ],
+            "themes": [
+                "Capital deployment",
+                "Advisor role",
+                "Tech ecosystem participant"
+            ]
+        },
+        "philosopher_practitioner": {
+            "span": "2004-present",
+            "key_events": [
+                "Discovering Stoicism",
+                "Daily practice",
+                "Tao of Seneca"
+            ],
+            "themes": [
+                "Stoic philosophy",
+                "Self-experimentation",
+                "Continuous optimization"
+            ]
+        }
+    }
+}

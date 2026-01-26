@@ -150,3 +150,18 @@ Adicionar seção no relatório:
 ## 📚 Referências
 - [Business_Modeler: Protocol B "Stress Test"](../../X_Agents/Business_Modeler/agente_core.md)
 - [OWASP Testing Guide](https://owasp.org/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

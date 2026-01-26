@@ -252,3 +252,18 @@ COMBINAÇÃO: Merge V3 + V4 para triangulação
 - Google. (2024). *Advanced Search Operators*.
 - PubMed. (2024). *Search Field Descriptions and Tags*.
 - IEEE Xplore. (2024). *Command Search Guide*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

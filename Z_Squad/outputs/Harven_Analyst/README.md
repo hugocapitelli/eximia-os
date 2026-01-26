@@ -286,3 +286,18 @@ Criado pela metodologia Z Squad para a plataforma Harven.AI.
 - Data Scientist (Rigor analitico)
 - Linguist (Deteccao de padroes)
 - Ethics Advisor (Uso responsavel)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

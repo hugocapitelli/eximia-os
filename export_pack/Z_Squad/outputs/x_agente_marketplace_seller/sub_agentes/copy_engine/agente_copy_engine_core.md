@@ -391,3 +391,18 @@ Produto: Organizador de cabos
 
 **Headline final:**
 "Organize 18 Cabos em 5 Minutos — Sistema Modular Único para Home Office Produtivo"
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

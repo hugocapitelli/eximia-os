@@ -77,3 +77,18 @@ The_Maestro/
 - [Validation Cases](04_validation/VALIDATION_CASES.yaml)
 - [Maintenance Guide](04_validation/HANDOVER_DOCUMENT.md)
 - [Comparative Analysis](04_validation/COMPARATIVE_ANALYSIS.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

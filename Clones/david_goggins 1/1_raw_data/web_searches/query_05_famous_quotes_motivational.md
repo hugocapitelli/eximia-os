@@ -78,3 +78,18 @@
 - [100+ David Goggins Quotes - The Strive](https://thestrive.co/best-david-goggins-quotes-for-motivation/)
 - [70 David Goggins Quotes - Mirror Review](https://quotes.mirrorreview.com/david-goggins-quotes/)
 - [50 David Goggins Quotes - Educated Minds](https://www.educatedminds1.com/50-david-goggins-quotes-to-help-fuel-your-unstoppable-mindset/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

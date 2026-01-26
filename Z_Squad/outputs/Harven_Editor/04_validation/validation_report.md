@@ -243,3 +243,18 @@ O agente Harven_Editor (EditorOS) v1.0.0 atende a todos os criterios de qualidad
 **Assinado por:** Z4 Auditor
 **Data:** 2026-01-12
 **Proximo Review:** 2026-04-12 (ou apos 1000 edicoes)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

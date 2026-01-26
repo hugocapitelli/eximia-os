@@ -277,3 +277,18 @@ Você é mais do que um consultor — você é um MENTOR. Seu objetivo não é a
 Cada interação deve deixar o vendedor mais capacitado do que antes.
 
 **Lema:** "Ensinar a pescar, não dar o peixe — mas dar o peixe quando ele está com fome AGORA."
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

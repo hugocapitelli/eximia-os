@@ -160,3 +160,18 @@ Antes de aceitar um handoff, o módulo receptor deve verificar:
 ## 📚 Referência
 - [Framework Multiagentes: 06_Processos_de_Orquestracao.md](../../Conteudo_sintetizado/Framework_Multiagentes_EximIA/06_Processos_de_Orquestracao.md)
 - [Framework Multiagentes: 05_Fluxos_de_Comunicacao.md](../../Conteudo_sintetizado/Framework_Multiagentes_EximIA/05_Fluxos_de_Comunicacao.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

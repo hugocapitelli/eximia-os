@@ -110,3 +110,18 @@
 ## Plain Text (for processing)
 
 i mean when i was competing it was necessary but it makes me remember i didn't really remember what uh what i used to be like until that it's like when i'm working out seven hours a day yeah and just so obsessed and and all i was thinking about was winning that's all i was thinking about like if they were if they were working out five hours a day i wanted i wanted them to know that i was gonna work out an extra three hours and i was gonna get up early and i was gonna text them all hey [ __ ] i'm up already take pictures send selfies you know i was like you're gonna die oh i kept telling them you're all gonna die you try to keep up with me you're gonna die you weren't fully joking no i wasn't joking at all that's what i was [ __ ] up about it was the scary thing when i interact with goggins and what i saw in you on during that time is like this guy like like this is why i've been avoiding david ganga's recently [Laughter] is like because he wants to meet he has to do like talk on this podcast but he also wants to run an ultra marathon with me and i felt like this is a person if i spend any time in this realm if i spend any time with the joe rogan of that sober october like i might have to die to get out like there's this kind of uh yeah there's a competitive aspect that's super unhealthy i mean you saw the video that we watched earlier today of goggins draining his knee that would stop me from running ever again because i would think in my head okay i'm going to ruin my cartilage i'm going to need a knee replacement i would start thinking i would go down that line but he is perpetually in this push-it mindset you know what he calls the dog in him you know he's got that dog is in him all day long and he feeds that dog you know and that's um that's who he is that's one of the reasons why he's so inspirational and he's fuel for millions and millions of people i mean he really is he motivates people in a way that is it's so powerful but it can be very destructive i just i know i know now especially after the sober october thing that that thing's still in me you know i didn't know so really haven't done anything physically competitive except one time i was supposed to fight wesley snipes it came out then too that came out too that got creepy too but luckily that never happened but that was many months of training like training twice a day every day kickboxing in the morning jiu-jitsu at night i was just going going and going and going and i was just thinking just all day long and it but it [ __ ] with all the other aspects of your life [ __ ] with your friendships [ __ ] with your your [ __ ] with my comedy [ __ ] with everything because that mindset is not a mindset of an artist it's a mindset of a conqueror you
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

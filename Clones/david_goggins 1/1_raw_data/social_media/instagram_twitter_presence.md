@@ -253,3 +253,18 @@ Hard work, mental toughness, and stepping out of comfort zones are the keys to u
 - [171 Top Motivational Quotes - Life Success Journal](https://lifesuccessjournal.com/david-goggins-motivational-quotes/)
 - [The Best David Goggins Quotes - Your Positive Oasis](https://yourpositiveoasis.com/david-goggins-quotes/)
 - [YOU OWE IT TO YOU IN 2025 - Motiversity Acast](https://shows.acast.com/motivation-daily-by-motiversity/episodes/you-owe-it-to-you-in-2025-powerful-motivational-speech-david)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

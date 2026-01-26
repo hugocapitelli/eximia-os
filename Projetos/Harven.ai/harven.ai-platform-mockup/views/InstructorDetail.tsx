@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { ViewType } from '../types';
+import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import { coursesApi, disciplinesApi, usersApi } from '../services/api';
 
-interface InstructorDetailProps {
-  onNavigate: (view: ViewType, data?: any) => void;
-  disciplineId?: string | null; // This is actually the CLASS ID (Turma)
-}
+const InstructorDetail: React.FC = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { classId: disciplineId } = useParams<{ classId: string }>();
 
-const InstructorDetail: React.FC<InstructorDetailProps> = ({ onNavigate, disciplineId }) => {
+  // Determine if this is being accessed from admin route
+  const isAdminContext = location.pathname.startsWith('/admin');
+  const backRoute = isAdminContext ? '/admin/classes' : '/instructor';
+
   const [showModal, setShowModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [activeTab, setActiveTab] = useState<'subjects' | 'students' | 'grades'>('subjects');
@@ -141,9 +144,10 @@ const InstructorDetail: React.FC<InstructorDetailProps> = ({ onNavigate, discipl
             </div>
             <div className="flex gap-3">
               <button
-                onClick={() => onNavigate('INSTRUCTOR_LIST')}
-                className="px-5 py-2 border border-white/20 text-white hover:bg-white/10 transition-colors font-bold rounded-lg text-sm"
+                onClick={() => navigate(backRoute)}
+                className="px-4 py-2 border border-white/20 text-white hover:bg-white/10 transition-colors font-bold rounded-lg text-sm flex items-center gap-2"
               >
+                <span className="material-symbols-outlined text-[18px]">arrow_back</span>
                 Voltar
               </button>
               <button
@@ -219,11 +223,11 @@ const InstructorDetail: React.FC<InstructorDetailProps> = ({ onNavigate, discipl
                   <div
                     key={subject.id}
                     className="bg-white p-5 rounded-xl border border-harven-border flex flex-col md:flex-row items-center gap-8 shadow-sm group hover:shadow-md hover:border-primary/50 transition-all cursor-pointer"
-                    onClick={() => onNavigate('COURSE_DETAILS', { id: subject.id })}
+                    onClick={() => navigate(`/course/${subject.id}`)}
                   >
                     <div className="w-full md:w-32 h-20 rounded-xl bg-harven-bg flex items-center justify-center flex-shrink-0 overflow-hidden relative">
-                      {subject.image ? (
-                        <img src={subject.image} alt={subject.title} className="w-full h-full object-cover" />
+                      {(subject.image || subject.image_url) ? (
+                        <img src={subject.image || subject.image_url} alt={subject.title} className="w-full h-full object-cover" />
                       ) : (
                         <span className="material-symbols-outlined text-[36px] text-harven-dark group-hover:text-primary-dark transition-colors">functions</span>
                       )}
@@ -233,7 +237,7 @@ const InstructorDetail: React.FC<InstructorDetailProps> = ({ onNavigate, discipl
                           className="bg-white/20 p-2 rounded-full backdrop-blur-sm hover:bg-white/40 transition-colors"
                           onClick={(e) => {
                             e.stopPropagation();
-                            onNavigate('DISCIPLINE_EDIT', { id: subject.id, tab: 'info' });
+                            navigate(`/course/${subject.id}/edit`);
                           }}
                         >
                           <span className="material-symbols-outlined text-white">settings</span>
@@ -244,33 +248,22 @@ const InstructorDetail: React.FC<InstructorDetailProps> = ({ onNavigate, discipl
                     <div className="flex-1 min-w-0">
                       <h4 className="text-lg font-bold text-harven-dark leading-tight">{subject.title}</h4>
                       <div className="flex items-center gap-3 text-xs font-bold text-gray-400 uppercase tracking-widest mt-1">
-                        <span>{subject.modules || 0} Módulos</span>
+                        <span>{subject.chapters_count || 0} Módulos</span>
                         <span className="size-1 rounded-full bg-gray-200"></span>
-                        <span>{subject.students || 0} Alunos</span>
+                        <span>{stats.total_students || 0} Alunos</span>
                       </div>
                     </div>
 
-                    <div className="flex gap-2">
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          onNavigate('DISCIPLINE_EDIT', { id: subject.id, tab: 'syllabus' });
-                        }}
-                        className="px-4 py-2 bg-harven-bg hover:bg-primary group-hover:bg-primary group-hover:text-harven-dark border border-transparent rounded-lg text-xs font-bold text-harven-dark transition-all shadow-sm"
-                      >
-                        GERENCIAR
-                      </button>
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          onNavigate('DISCIPLINE_EDIT', { id: subject.id, tab: 'info' });
-                        }}
-                        className="px-2 py-2 border border-harven-border hover:bg-gray-50 rounded-lg text-gray-400 hover:text-harven-dark transition-colors"
-                        title="Editar Informações da Disciplina"
-                      >
-                        <span className="material-symbols-outlined text-[18px]">edit</span>
-                      </button>
-                    </div>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        navigate(`/course/${subject.id}/edit`);
+                      }}
+                      className="px-4 py-2 bg-harven-bg hover:bg-primary group-hover:bg-primary group-hover:text-harven-dark border border-transparent rounded-lg text-xs font-bold text-harven-dark transition-all shadow-sm flex items-center gap-2"
+                    >
+                      <span className="material-symbols-outlined text-[16px]">edit</span>
+                      GERENCIAR
+                    </button>
                   </div>
                 ))}
                 {filteredSubjects.length === 0 && !loading && (

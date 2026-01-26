@@ -366,3 +366,18 @@
 **Signed:** Z4_Auditor (simulated)  
 **Date:** 2026-01-07  
 **Version:** 1.0
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

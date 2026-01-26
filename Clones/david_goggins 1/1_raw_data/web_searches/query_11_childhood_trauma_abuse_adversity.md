@@ -124,3 +124,18 @@ His message resonates because:
 - [What Made David Goggins Unstoppable - Vocal Media](https://vocal.media/motivation/what-made-david-goggins-unstoppable)
 - [Dealing With Childhood Traumas - Jay Shetty Podcast](https://www.jayshetty.me/podcast/david-goggins-on-dealing-with-childhood-traumas)
 - [Pushing Through Self-Doubt and Adversity - Medium](https://medium.com/@passion.po/pushing-through-self-doubt-and-adversity-with-david-goggins-580f5fea6b0)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

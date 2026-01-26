@@ -54,3 +54,18 @@ Tempo para recuperar o CAC.
 4.  **Consistency:** Micro-compromissos (Foot-in-the-door).
 5.  **Liking:** Humanização da marca (Brand persona).
 6.  **Consensus (Social Proof):** Testimonials, "X users trust us".
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

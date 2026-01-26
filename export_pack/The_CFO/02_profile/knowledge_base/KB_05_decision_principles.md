@@ -138,3 +138,18 @@ Antes de decisão (Klein, 1989):
 3. **Decisão > R$100k: ≥48h** (Drucker time mgmt)
 4. **Uncertainty > 60%: Use ranges** (Kahneman)
 5. **Update priors with evidence** (Silver/Bayes)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

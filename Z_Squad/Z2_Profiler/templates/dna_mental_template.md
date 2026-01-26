@@ -88,3 +88,18 @@ clones_consultados: ["Clone 1", "Clone 2"]
 confianca_perfil: "[Alta / Media / Baixa]"
 notas_do_profiler: "[Observações]"
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

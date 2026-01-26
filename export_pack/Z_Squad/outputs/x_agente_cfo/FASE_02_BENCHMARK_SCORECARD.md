@@ -191,3 +191,18 @@ Score v4.0 = (90 + 92 + 91 + 95 + 85) / 5 = 90.6 / 100
 **Tempo:** 45min
 **Mantido por:** Arquiteto Cognitivo Elite
 **Data:** 2025-12-21
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

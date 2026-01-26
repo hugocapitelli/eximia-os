@@ -77,3 +77,18 @@ R=Responsible, A=Accountable, C=Consulted, I=Informed
 - Never expose raw JSON to user
 - Never let agents communicate directly without Maestro oversight
 - Never pass unverified data between agents
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

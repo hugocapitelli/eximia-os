@@ -26,6 +26,7 @@ sys.path.insert(0, str(project_root))
 
 from codex_scraper.scraper import CodexScraper
 from codex_categorizer.categorizer import CodexCategorizer
+from codex_transcriber.transcriber import VideoTranscriber
 
 # Import database & storage
 sys.path.insert(0, str(codex_path / "scripts"))
@@ -40,6 +41,7 @@ class CodexCLI:
         self.db = CodexDatabase()
         self.scraper = CodexScraper()
         self.categorizer = CodexCategorizer()
+        self.transcriber = VideoTranscriber()
         self.codex_path = project_root / "00_Codex"
     
     # ===== Comandos de Ingestão =====
@@ -115,6 +117,13 @@ class CodexCLI:
         else:
             print("   ⚠️  Falha no upload (usando cópia local)")
             
+        # Confirmar cópia local (Backup do Storage)
+        local_target = self.codex_path / remote_path
+        if not local_target.exists():
+            local_target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy(local_file_path, local_target)
+            print(f"   ✅ Salvo localmente em: {local_target}")
+
         print(f"💾 Salvando no database...")
         
         try:
@@ -131,8 +140,11 @@ class CodexCLI:
             
             # Auto-approve: padroniza ID e move para LIBRARY
             if auto_approve:
-                approve_res = self._approve_content({'id': content_id, 'type': categorization['type'], 'file_path': str(remote_path)})
-                content_id = approve_res.get('new_id', content_id)
+                try:
+                   approve_res = self._approve_content({'id': content_id, 'type': categorization['type'], 'file_path': str(remote_path)})
+                   content_id = approve_res.get('new_id', content_id)
+                except Exception as e_approve:
+                   print(f"⚠️  Erro no auto-approve: {e_approve}")
             
             print(f"✅ Conteúdo adicionado com sucesso!")
             print(f"   ID: {content_id}")
@@ -141,12 +153,19 @@ class CodexCLI:
             return {
                 "status": "success",
                 "content_id": content_id,
-                "categorization": categorization
+                "categorization": categorization,
+                "local_path": str(local_target)
             }
         
         except Exception as e:
-            print(f"❌ Erro ao salvar: {e}")
-            return {"status": "error", "error": str(e)}
+            print(f"⚠️  Database offline ou erro ao salvar: {e}")
+            print(f"✅ Conteúdo salvo apenas nos arquivos (Local/Storage).")
+            return {
+                "status": "success", 
+                "content_id": content_id,
+                "warning": "database_error",
+                "local_path": str(local_target)
+            }
     
     def cmd_add_auto(self, url: str) -> dict:
         """Atalho para add com auto-approve"""
@@ -343,8 +362,14 @@ class CodexCLI:
                 print(f"✅ Registrado com sucesso! Use /codex-review para aprovar.")
                 return {"status": "success", "content_id": temp_id, "file": str(dest)}
             except Exception as e:
-                print(f"❌ Erro ao registrar: {e}")
-                return {"status": "error", "error": str(e)}
+                print(f"⚠️  Database offline ou erro ao salvar: {e}")
+                print(f"✅ Conteúdo mantido localmente e no Storage.")
+                return {
+                    "status": "success", 
+                    "content_id": temp_id, 
+                    "file": str(dest),
+                    "warning": "database_error"
+                }
         
         return {"status": "error", "error": "Categorization failed"}
     

@@ -131,12 +131,75 @@ rules:
     description: "Growth marketing"
 
   - id: marketing_content
-    trigger: "conteúdo|copy|copywriting|SEO|blog|artigo|post"
+    trigger: "conteúdo|SEO|blog|artigo|post"
     agent: the_cmo
     priority: 3
     veritas_required: false
-    sub_agent: copywriting_engine
+    sub_agent: seo_content
     description: "Marketing de conteúdo"
+
+  # === PRIORIDADE 3.5: COPYWRITING (Copy Squad) ===
+  - id: copy_sales_page
+    trigger: "sales.*page|página.*venda|carta.*venda|sales.*letter"
+    agent: copy_chief
+    priority: 3
+    veritas_required: false
+    recommended_copywriter: gary_halbert
+    description: "Sales pages e cartas de vendas → Copy Squad"
+
+  - id: copy_vsl
+    trigger: "VSL|video.*sales|script.*video|roteiro.*video"
+    agent: copy_chief
+    priority: 3
+    veritas_required: false
+    recommended_copywriter: jon_benson
+    description: "Video Sales Letters → Jon Benson (inventor)"
+
+  - id: copy_email
+    trigger: "email.*sequence|sequência.*email|nurture|autoresponder|soap.*opera"
+    agent: copy_chief
+    priority: 3
+    veritas_required: false
+    description: "Email sequences → Copy Squad"
+
+  - id: copy_ads
+    trigger: "anúncio|ad.*copy|facebook.*ad|google.*ad|criativo"
+    agent: copy_chief
+    priority: 3
+    veritas_required: false
+    description: "Ad copy → Copy Squad"
+
+  - id: copy_headline
+    trigger: "headline|título|hook|gancho|fascination|bullet"
+    agent: copy_chief
+    priority: 3
+    veritas_required: false
+    recommended_copywriter: gary_bencivenga
+    description: "Headlines e bullets → Bencivenga"
+
+  - id: copy_urgency
+    trigger: "urgência|escassez|deadline|oferta.*limitada|scarcity"
+    agent: copy_chief
+    priority: 3
+    veritas_required: false
+    recommended_copywriter: dan_kennedy
+    description: "Urgência e escassez → Dan Kennedy"
+
+  - id: copy_audit
+    trigger: "audit.*copy|revisar.*copy|melhorar.*conversão|otimizar.*copy"
+    agent: copy_chief
+    priority: 3
+    veritas_required: false
+    tier_0_required: true
+    description: "Auditoria de copy → Hopkins (Tier 0)"
+
+  - id: copy_general
+    trigger: "copy|copywriting|escrever.*venda|texto.*persuasivo"
+    agent: copy_chief
+    priority: 3
+    veritas_required: false
+    workflow: "tier_based"
+    description: "Copywriting geral → Copy Squad workflow"
 
   - id: marketing_gtm
     trigger: "go.*to.*market|GTM|lançamento|launch|campanha"
@@ -254,6 +317,41 @@ multi_agent_patterns:
         task: "Due diligence legal"
         order: 3
     description: "Análise de M&A"
+
+  - id: copy_full_funnel
+    trigger: "funil.*completo|full.*funnel|lançamento.*digital|infoproduto"
+    agents:
+      - agent: copy_chief
+        task: "Diagnóstico Tier 0 (awareness + sophistication)"
+        order: 1
+        sub_agents: [eugene_schwartz, claude_hopkins]
+      - agent: the_cmo
+        task: "Posicionamento e GTM"
+        order: 2
+      - agent: copy_chief
+        task: "Execução de copy (Tier 1-3)"
+        order: 3
+        sub_agents: [gary_halbert, jon_benson]
+      - agent: copy_chief
+        task: "Validação com Sugarman 30 Triggers"
+        order: 4
+    synthesis: "Funnel completo com copy de alta conversão"
+    description: "Funil de vendas completo com Copy Squad"
+
+  - id: copy_high_ticket
+    trigger: "high.*ticket|produto.*premium|coaching|mentoria|consultoria"
+    agents:
+      - agent: copy_chief
+        task: "Diagnóstico de mercado premium"
+        order: 1
+      - agent: the_cfo
+        task: "Pricing e estrutura de oferta"
+        order: 2
+      - agent: copy_chief
+        task: "Copy para high-ticket (Ogilvy style)"
+        order: 3
+        recommended: david_ogilvy
+    description: "Estratégia de vendas high-ticket"
 
 # ============================================================================
 # CONFLICT RESOLUTION — Hierarquia de Prioridades

@@ -244,3 +244,18 @@ clones_consultados: ["William_Strunk", "George_Orwell"]
 confianca_perfil: "Alta"
 notas_do_profiler: "Agente focado em forma, nao conteudo. Deve ser invisivel - o aluno nunca deve perceber que houve edicao."
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

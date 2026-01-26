@@ -1,0 +1,153 @@
+========================================================================================================================
+ANÁLISE DA PLANILHA DE PLANEJAMENTO FINANCEIRO
+========================================================================================================================
+
+📋 ABAS DISPONÍVEIS:
+------------------------------------------------------------------------------------------------------------------------
+1. I 2024 (Dimensões: 190 linhas x 14 colunas)
+2. PL.C (Dimensões: 229 linhas x 9 colunas)
+3. I (Dimensões: 180 linhas x 14 colunas)
+4. D (Dimensões: 268 linhas x 27 colunas)
+5. BD (Dimensões: 408 linhas x 1159 colunas)
+6. DRE (Dimensões: 230 linhas x 340 colunas)
+7. Planilha1 (Dimensões: 17 linhas x 13 colunas)
+8. DFC (Dimensões: 46 linhas x 154 colunas)
+9. Comparações e Análises (Dimensões: 76 linhas x 10 colunas)
+10. Proj. DRE (Dimensões: 119 linhas x 25 colunas)
+11. Hist. e Proj. (Dimensões: 82 linhas x 62 colunas)
+12. Rec. (Dimensões: 281 linhas x 157 colunas)
+13. Op.Fix. (Dimensões: 268 linhas x 156 colunas)
+14. Op.Var. (Dimensões: 286 linhas x 156 colunas)
+15. Finan. (Dimensões: 279 linhas x 159 colunas)
+16. D.Adm (Dimensões: 299 linhas x 157 colunas)
+17. D.Com. (Dimensões: 273 linhas x 156 colunas)
+18. D.Log. (Dimensões: 269 linhas x 156 colunas)
+19. Invest. (Dimensões: 203 linhas x 156 colunas)
+20. Divd. (Dimensões: 246 linhas x 156 colunas)
+21. Mov.Cx. (Dimensões: 245 linhas x 150 colunas)
+
+========================================================================================================================
+ANÁLISE DETALHADA DE CADA ABA
+========================================================================================================================
+
+
+========================================================================================================================
+ABA: I 2024
+========================================================================================================================
+
+📊 PRIMEIRAS 25 LINHAS:
+------------------------------------------------------------------------------------------------------------------------
+                                             0                    1                    2                    3                    4                    5                    6                    7                    8                    9                    10                   11                   12       13
+0                                     Resultado  2024-01-01 00:00:00  2024-02-01 00:00:00  2024-03-01 00:00:00  2024-04-01 00:00:00  2024-05-01 00:00:00  2024-06-01 00:00:00  2024-07-01 00:00:00  2024-08-01 00:00:00  2024-09-01 00:00:00  2024-10-01 00:00:00  2024-11-01 00:00:00  2024-12-01 00:00:00    Total
+1                                     Resultado                  NaN                  NaN                  NaN                  NaN                  NaN                  NaN                  NaN                  NaN                  NaN                  NaN                  NaN                  NaN    Total
+2                     Receita operacional bruta               450429                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0   450429
+3                              [-] 10 - Receita               450429                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0   450429
+4                   10.01 - Receita com produto               449858                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0   449858
+5                       10.03 - Outras Receitas                  571                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0      571
+6                               Custos de venda               -11749                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0   -11749
+7             [-] 20 - Impostos sobre a receita               -11749                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0   -11749
+8                             20.04 - ICMS - ST               -11749                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0   -11749
+9                      21 - Crédito de impostos                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0        0
+10              22 - Repasse aos distribuidores                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0        0
+11                  55 - Devolução de Terceiros                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0        0
+12            ( = ) Receita operacional líquida               438680                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0   438680
+13            Receita operacional líquida ( % )                 0.97                    %                    %                    %                    %                    %                    %                    %                    %                    %                    %                    %     0.97
+14                Custos Operacionais Variáveis              -269834                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0  -269834
+15  [-] 29 - Despesas com Pessoal - Operacional               -25339                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0   -25339
+16        29.01 - Operacional - Salário líquido                -6816                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0    -6816
+17            29.02 - Operacional - 13o salário                 -159                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0     -159
+18                   29.06 - Operacional - INSS               -15675                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0   -15675
+19             29.17 - Operacional - Refeitório                 -782                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0     -782
+20           29.19 - Operacional - Horas Extras                -1907                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0    -1907
+21                 [-] 30 - Insumos de Produção              -237263                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0  -237263
+22                      30.01 - Matérias primas              -138506                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0  -138506
+23                           30.02 - Embalagens               -98757                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0   -98757
+24      [-] 33 - Custos Indiretos de Fabricação                -7232                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0    -7232
+
+
+🔍 ANÁLISE DE FÓRMULAS (células com fórmulas):
+------------------------------------------------------------------------------------------------------------------------
+   Nenhuma fórmula encontrada nas primeiras 50 linhas.
+
+
+========================================================================================================================
+ABA: PL.C
+========================================================================================================================
+
+📊 PRIMEIRAS 25 LINHAS:
+------------------------------------------------------------------------------------------------------------------------
+     0        1                                    2          3         4                              5                                            6      7
+0  NaN      NaN                                  NaN        NaN       NaN                            NaN                                          NaN    NaN
+1  NaN      NaN                                  NaN        NaN       NaN                            NaN                                          NaN    NaN
+2  NaN  Classf.                        Nome da conta       Tipo  Natureza                 Grupo de conta  Função no controle de reembolso de despesas  Ativo
+3  NaN       10                              Receita  Sintética       ---      Receita operacional bruta                                          ---    sim
+4  NaN    10.01                  Receita com produto  Analítica   Entrada      Receita operacional bruta                                          ---    sim
+5  NaN    10.02                  Receita com serviço  Analítica   Entrada      Receita operacional bruta                                          ---    sim
+6  NaN    10.03                      Outras Receitas  Analítica   Entrada      Receita operacional bruta                                      Nenhuma    sim
+7  NaN    10.04                   Estorno de Produto  Analítica     Saída      Receita operacional bruta                                      Nenhuma    sim
+8  NaN    10.06                 Devolução de produto  Analítica     Saída      Receita operacional bruta                                      Nenhuma    sim
+9  NaN    10.07  Adiantamento de despesas de cliente  Analítica     Saída      Receita operacional bruta                                      Nenhuma    sim
+10 NaN    10.08             Devolução de Recebimento  Analítica     Saída      Receita operacional bruta                                      Nenhuma    sim
+11 NaN       20             Impostos sobre a receita  Sintética       ---                Custos de venda                                          ---    sim
+12 NaN    20.01                                 ICMS  Analítica     Saída                Custos de venda                                          ---    sim
+13 NaN    20.04                            ICMS - ST  Analítica     Saída                Custos de venda                                      Nenhuma    sim
+14 NaN    20.05                                DIFAL  Analítica     Saída                Custos de venda                                      Nenhuma    sim
+15 NaN       21                  Crédito de impostos  Sintética       ---                Custos de venda                                          ---    sim
+16 NaN    21.01                                 ICMS  Analítica   Entrada                Custos de venda                                          ---    sim
+17 NaN    21.02                                  IPI  Analítica   Entrada                Custos de venda                                          ---    sim
+18 NaN    21.03                                  ISS  Analítica   Entrada                Custos de venda                                          ---    sim
+19 NaN       22           Repasse aos distribuidores  Sintética       ---                Custos de venda                                      Nenhuma    sim
+20 NaN    22.01               Repasse Distribuidores  Analítica     Saída                Custos de venda                                      Nenhuma    sim
+21 NaN       29   Despesas com Pessoal - Operacional  Sintética       ---  Custos Operacionais Variáveis                                      Nenhuma    sim
+22 NaN    29.01        Operacional - Salário líquido  Analítica     Saída  Custos Operacionais Variáveis                                          ---    sim
+23 NaN    29.02            Operacional - 13o salário  Analítica     Saída  Custos Operacionais Variáveis                                          ---    sim
+24 NaN    29.03                 Operacional - Férias  Analítica     Saída  Custos Operacionais Variáveis                                          ---    sim
+
+
+🔍 ANÁLISE DE FÓRMULAS (células com fórmulas):
+------------------------------------------------------------------------------------------------------------------------
+   Nenhuma fórmula encontrada nas primeiras 50 linhas.
+
+
+========================================================================================================================
+ABA: I
+========================================================================================================================
+
+📊 PRIMEIRAS 25 LINHAS:
+------------------------------------------------------------------------------------------------------------------------
+                                                     0                    1                    2                    3                    4                    5                    6                    7                    8                    9                    10                   11                   12         13
+0                                    colar na célula A2  2025-01-01 00:00:00  2025-02-01 00:00:00  2025-03-01 00:00:00  2025-04-01 00:00:00  2025-05-01 00:00:00  2025-06-01 00:00:00  2025-07-01 00:00:00  2025-08-01 00:00:00  2025-09-01 00:00:00  2025-10-01 00:00:00  2025-11-01 00:00:00  2025-12-01 00:00:00      Total
+1                             Receita operacional bruta              1385199              1267113              1314151              1590579              1497226              1483637              1883540              1534163              1652451              1528370              1348686              1782991   18268112
+2                                      [-] 10 - Receita              1385199              1267113              1314151              1590579              1497226              1483637              1883540              1534163              1652451              1528370              1348686              1782991   18268112
+3                           10.01 - Receita com produto              1379860              1267464              1314099              1583657              1498153              1477480              1883211              1532324              1649142              1528791              1348698              1781131   18244016
+4                           10.02 - Receita com serviço                    0                    0                    0                    0                    0                    0                    0                    0                   85                    0                    0                    0         85
+5                               10.03 - Outras Receitas                 6982                 4142                  362                 7275                    0                 6264                 2807                 2053                 3353                    0                    0                 3540      36782
+6                          10.06 - Devolução de produto                -1643                -4493                 -310                 -353                 -927                 -107                 -133                 -168                 -130                 -114                  -12                -1680     -10075
+7                      10.08 - Devolução de Recebimento                    0                    0                    0                    0                    0                    0                -2343                  -45                    0                 -306                    0                    0      -2695
+8                                       Custos de venda               -76353               -61825               -84284               -86087               -94571               -80879              -102307              -101456               -91951               -81174              -103162              -105589   -1069643
+9                     [-] 20 - Impostos sobre a receita               -76593               -58280               -82822               -84256               -92783               -80722              -100812              -100525               -89559               -81174              -101070              -105589   -1054190
+10                                         20.01 - ICMS               -20159               -25180               -29078               -23991               -29468               -14431               -31227               -35068               -27813               -22114               -38319               -36335    -333189
+11                                    20.04 - ICMS - ST               -56433               -33100               -53743               -60264               -63315               -66290               -69584               -65456               -61745               -59060               -62750               -69254    -721001
+12                             21 - Crédito de impostos                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0          0
+13                  [-] 22 - Repasse aos distribuidores                    0                -3544                -1462                -1831                -1787                 -156                -1495                 -931                -2391                    0                -2091                    0     -15693
+14                       22.01 - Repasse Distribuidores                    0                -3544                -1462                -1831                -1787                 -156                -1495                 -931                -2391                    0                -2091                    0     -15693
+15                      [-] 55 - Devolução de Terceiros                  240                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0        240
+16        55.01 - Recebimento de devolução de terceiros                  597                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0        597
+17          55.02 - Pagamento de devolução de terceiros                 -356                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0                    0       -356
+18                    ( = ) Receita operacional líquida              1308846              1205287              1229867              1504491              1402655              1402758              1781233              1432706              1560500              1447195              1245524              1677402   17198468
+19                    Receita operacional líquida ( % )                 0.94                 0.95                 0.94                 0.95                 0.94                 0.95                 0.95                 0.93                 0.94                 0.95                 0.92                 0.94       0.94
+20                        Custos Operacionais Variáveis              -892248             -1040510              -797814              -893417              -873799             -1094360             -1026627              -961293             -1008845              -972578              -843330             -1141475  -11546302
+21          [-] 29 - Despesas com Pessoal - Operacional              -190196              -292083              -187715              -214172              -201447              -198654              -224146              -242636              -246740              -251527              -249528              -290778   -2789627
+22                29.01 - Operacional - Salário líquido               -64982              -118718               -63399               -76661               -78441               -74740               -83984               -73696               -83767               -92128               -83872               -91041    -985436
+23                    29.02 - Operacional - 13o salário                    0                    0                    0                    0                    0                    0                    0                    0               -23854               -23059               -27838               -20049     -94801
+24                         29.03 - Operacional - Férias                    0               -34998               -11288                -8852               -10924                -9383               -18168                -5313                -5553                -8211               -11039                -8044    -131778
+
+
+🔍 ANÁLISE DE FÓRMULAS (células com fórmulas):
+------------------------------------------------------------------------------------------------------------------------
+   Nenhuma fórmula encontrada nas primeiras 50 linhas.
+
+
+========================================================================================================================
+ANÁLISE CONCLUÍDA
+========================================================================================================================

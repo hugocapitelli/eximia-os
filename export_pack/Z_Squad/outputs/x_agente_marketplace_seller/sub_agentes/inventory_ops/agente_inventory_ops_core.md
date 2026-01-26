@@ -419,3 +419,18 @@ Economia: R$ 4/unidade × 500 vendas/mês = R$ 2.000/mês
 - Faça análise ABC do portfólio
 - Avalie FBA/Full para produtos principais
 - Negocie melhores condições com fornecedor
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

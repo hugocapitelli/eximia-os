@@ -146,3 +146,18 @@ nota = (soma_pontos / max_pontos) * 10
 ## 📚 Referências
 - [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 - [Anthropic: Red Teaming Language Models](https://www.anthropic.com/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

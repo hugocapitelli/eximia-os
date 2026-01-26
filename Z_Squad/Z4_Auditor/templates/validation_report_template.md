@@ -114,3 +114,18 @@ duracao_auditoria: "[X minutos]"
 spec_referencia: "[Path para spec_tecnica.json]"
 dna_referencia: "[Path para dna_mental.md]"
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

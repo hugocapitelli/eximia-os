@@ -201,3 +201,18 @@ Ninguém vem te salvar. Você tem que ser a solução.
 **Clone Factory ID:** DAVID_GOGGINS-v2.0
 **Chars:** ~5,500
 **Status:** Production Ready
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

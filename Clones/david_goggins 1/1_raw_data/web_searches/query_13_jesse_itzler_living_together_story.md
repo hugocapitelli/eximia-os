@@ -164,3 +164,18 @@ Story inspired many to push their limits and seek discomfort intentionally.
 - [Jesse Itzler's Books](https://jesseitzler.com/pages/jesse-itzlers-books)
 - [Living with a SEAL - Bookey Podcast](https://www.podcastics.com/podcast/episode/living-with-a-seal-lessons-from-an-unconventional-coach-346598/)
 - [Book Review: Living With A Seal - Forward Fitness](https://forwardfitnessstl.com/2024/06/book-review-living-with-a-seal-by-jesse-itzler/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

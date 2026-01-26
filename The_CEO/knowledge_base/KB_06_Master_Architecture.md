@@ -59,3 +59,18 @@ session = Session(session_id="user-123", persistence="sqlite")
 1.  **Environment:** Set `OPENAI_API_KEY`, `TAVILY_API_KEY`.
 2.  **Mode:** Use `process="sequential"` for linear tasks, `process="parallel"` for scraping.
 3.  **Files:** Use `tools=[FileTools]` for agents that need to write reports.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

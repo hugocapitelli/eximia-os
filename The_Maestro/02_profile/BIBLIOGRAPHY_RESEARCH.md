@@ -139,3 +139,18 @@ Example:
 Based on "Thinking in Systems" (Meadows, 2008), the ecosystem exhibits 
 reinforcing feedback loops where agent improvements compound.
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

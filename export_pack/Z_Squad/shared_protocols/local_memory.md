@@ -182,3 +182,18 @@ Sempre usar `handoff_payload.yaml` com **summary**, não raw data.
 - [ZenML: Agent Memory Management](https://zenml.io/)
 - [LangGraph: Stateful Agents](https://langgraph.dev/)
 - [Framework Multiagentes: 05_Fluxos_de_Comunicacao.md](../../Conteudo_sintetizado/Framework_Multiagentes_EximIA/05_Fluxos_de_Comunicacao.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

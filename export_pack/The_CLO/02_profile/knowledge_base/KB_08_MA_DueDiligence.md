@@ -270,3 +270,18 @@ dd_checklist:
 - HEINEMAN JR., Ben W. The Inside Counsel Revolution, 2016
 - M&A Practice (Skadden, Kirkland, Latham)
 - Lei 12.529/2011 (CADE)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -30,3 +30,18 @@ O estado deve conter:
 ## 🛠️ Ferramentas de Orquestração
 *   **Low-Level:** Código Python/langgraph definindo os nós e arestas.
 *   **High-Level:** Frameworks como CrewAI ou Autogen (citados na playlist do Ofir) que abstraem esse loop.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Pesquisas]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

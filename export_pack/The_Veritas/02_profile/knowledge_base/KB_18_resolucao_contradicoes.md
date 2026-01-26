@@ -192,3 +192,18 @@ escalation_triggers:
 - Heuer, R. J. (1999). *Psychology of Intelligence Analysis*. CIA.
 - CIA. (2009). *A Tradecraft Primer: Structured Analytic Techniques*.
 - Tetlock, P. (2015). *Superforecasting*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

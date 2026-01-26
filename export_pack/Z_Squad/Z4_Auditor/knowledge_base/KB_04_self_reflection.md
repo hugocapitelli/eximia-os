@@ -152,3 +152,18 @@ Baseado na auto-crítica, o Z4 decide:
 - [Anthropic: Constitutional AI](https://anthropic.com/)
 - [Google: Self-Refine Paper](https://arxiv.org/)
 - [LangChain: Agent Self-Critique](https://langchain.com/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

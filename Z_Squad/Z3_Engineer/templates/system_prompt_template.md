@@ -141,3 +141,18 @@ clones_mentores: ["Clone1", "Clone2"]
 criado_por: "Z Squad"
 ```
 </metadata>
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

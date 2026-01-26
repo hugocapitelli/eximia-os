@@ -69,3 +69,18 @@ When stuck:
 2. What would we do with unlimited resources?
 3. What would a competitor do?
 4. What would we do if we had to solve it today?
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

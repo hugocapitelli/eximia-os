@@ -203,3 +203,18 @@ clones_consultados: ["Data_Scientist", "Linguist", "Ethics_Advisor"]
 confianca_perfil: "Alta"
 notas_do_profiler: "Agente analitico focado em coleta de dados e deteccao de padroes. Imparcial e objetivo, nunca punitivo. Papel e informar, nao julgar."
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -229,3 +229,18 @@ SE divergência >20% → Investigar
 **Mantido por:** Arquiteto Cognitivo Elite
 **Versão:** 4.0
 **Data:** 2025-12-21
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

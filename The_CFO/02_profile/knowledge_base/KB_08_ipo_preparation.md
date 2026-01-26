@@ -243,3 +243,18 @@ Segundo Ritter (IPO Data, 2023):
 4. **IPO discount: 10-20%** esperado
 5. **Gross spread: 3-7%** por tamanho
 6. **Free float mínimo: 25%** (Brasil)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

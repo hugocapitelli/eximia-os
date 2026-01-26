@@ -485,3 +485,18 @@ We'll know we're right when [measurable indicator]
 - Fitzpatrick, R. (2013). *The Mom Test*
 - Christensen, C. (2016). *Competing Against Luck* (JTBD)
 - Blank, S. (2013). *The Four Steps to the Epiphany*
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

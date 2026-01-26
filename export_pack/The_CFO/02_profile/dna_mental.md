@@ -126,3 +126,18 @@
 | Coerência | 9/10 | Princípios não conflitam |
 | Testabilidade | 8/10 | Princípios IF/THEN são claros |
 | **TOTAL** | **Alta** | Perfil pronto para Z3 |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

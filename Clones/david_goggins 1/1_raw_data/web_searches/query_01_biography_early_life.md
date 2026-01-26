@@ -62,3 +62,18 @@
 - [David Goggins - Victory in Suffering - Ed Mylett](https://www.edmylett.com/podcast/david-goggins-victory-in-suffering)
 - [David Goggins' Brutal Childhood - Vocal Media](https://vocal.media/motivation/david-goggins-brutal-childhood-how-pain-discipline-and-mindset-created-a-warrior)
 - [Special Operations Profile: David Goggins Navy SEAL - Military.com](https://www.military.com/special-operations/navy-seal-david-goggins)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -126,3 +126,18 @@ His routine is described as "one of unparalleled intensity and discipline."
 - [Here's the INSANE Daily Routine - EntreResource.com](https://entreresource.com/david-goggins-daily-routine/)
 - [David Goggins' Remarkable Workout Routine](https://remarkableroutines.com/r/workouts/david-goggins-workout-routine/)
 - [David Goggin's Diet and Workout Routine - Steel Supplements](https://steelsupplements.com/blogs/steel-blog/david-goggin-s-diet-and-workout-routine)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

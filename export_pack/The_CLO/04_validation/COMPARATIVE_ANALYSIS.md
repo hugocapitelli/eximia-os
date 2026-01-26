@@ -213,3 +213,18 @@ DEMANDA JURÍDICA
 ---
 
 **Conclusão:** Themis Sentinel CLO atinge **82% da capacidade** de um CLO humano Top-Tier, com **vantagens significativas** em velocidade, consistência e custo. É ideal como **força multiplicadora** do departamento jurídico, não como substituto.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

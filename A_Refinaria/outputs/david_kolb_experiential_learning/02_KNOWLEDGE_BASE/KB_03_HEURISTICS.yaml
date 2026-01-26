@@ -1,0 +1,259 @@
+# KB_03: Heuristics
+# Regras de Decisao Extraidas de Kolb
+# Fonte: Experiential Learning, David A. Kolb (2015)
+
+---
+
+meta:
+  author: David A. Kolb
+  source: "Experiential Learning: Experience as the Source of Learning and Development"
+  edition: "Second Edition, 2015"
+  total_heuristics: 30
+  categories:
+    - design_instrucional
+    - diagnostico_estilo
+    - desenvolvimento_pessoal
+    - facilitacao
+    - organizacional
+
+---
+
+heuristics:
+
+  # === DESIGN INSTRUCIONAL ===
+
+  - id: H01
+    category: design_instrucional
+    name: "Ciclo Completo"
+    rule: "Toda experiencia de aprendizagem deve incluir os quatro modos do ciclo (EC, OR, CA, EA)."
+    rationale: "Aprendizagem incompleta ocorre quando modos sao omitidos; conhecimento nao se consolida."
+    anti_pattern: "Cursos puramente teoricos (CA-only) ou puramente praticos (EA-only)."
+
+  - id: H02
+    category: design_instrucional
+    name: "Entrada pelo Conforto"
+    rule: "Inicie pelo modo mais confortavel para o aprendiz; desafie depois."
+    rationale: "Engajamento inicial requer zona de conforto; crescimento requer expansao posterior."
+    anti_pattern: "Forcar modo nao-preferido no inicio causa resistencia e dropout."
+
+  - id: H03
+    category: design_instrucional
+    name: "Espacos Multiplos"
+    rule: "Crie espacos de aprendizagem que suportem todos os quatro modos."
+    rationale: "Ambiente influencia modo ativado; diversidade de espacos permite flexibilidade."
+    example: "Sala de aula + laboratorio + biblioteca + area de discussao."
+
+  - id: H04
+    category: design_instrucional
+    name: "Tempo Proporcional"
+    rule: "Aloque tempo suficiente para reflexao (OR); nao so para acao e conteudo."
+    rationale: "Reflexao e o modo mais frequentemente negligenciado em educacao formal."
+    anti_pattern: "Curriculos comprimidos que eliminam tempo de processamento."
+
+  - id: H05
+    category: design_instrucional
+    name: "Conexao Teoria-Pratica"
+    rule: "Explicite sempre a conexao entre conceitos abstratos e aplicacoes concretas."
+    rationale: "Aprendizes precisam ver relevancia; sem conexao, conhecimento permanece inerte."
+    example: "Apos teoria (CA), imediatamente demonstrar aplicacao (EA)."
+
+  # === DIAGNOSTICO DE ESTILO ===
+
+  - id: H06
+    category: diagnostico_estilo
+    name: "Estilo Nao e Destino"
+    rule: "Use estilos como ponto de partida, nao como rotulo limitante."
+    rationale: "Flexibilidade e desenvolvivel; tipologias sao mapas, nao territorios."
+    anti_pattern: "Dizer 'voce e Convergente, entao nao pode fazer trabalho criativo'."
+
+  - id: H07
+    category: diagnostico_estilo
+    name: "Observar Alem do Inventario"
+    rule: "Complemente LSI com observacao de comportamento em situacoes reais."
+    rationale: "Auto-relato tem vieses; comportamento observado e mais confiavel."
+    method: "Compare resultado LSI com desempenho em tarefas de diferentes modos."
+
+  - id: H08
+    category: diagnostico_estilo
+    name: "Contexto Modifica Estilo"
+    rule: "Avalie estilo considerando o contexto cultural e profissional da pessoa."
+    rationale: "Estilo e influenciado por demandas ambientais; pode variar entre dominios."
+    example: "Mesmo individuo pode ser Convergente no trabalho e Divergente em hobbies."
+
+  - id: H09
+    category: diagnostico_estilo
+    name: "Equipe Diversa"
+    rule: "Forme equipes com diversidade de estilos para cobrir todos os modos."
+    rationale: "Equipes homogeneas tem pontos cegos; diversidade amplia capacidades coletivas."
+    anti_pattern: "Time de engenheiros todos Convergentes sem ninguem para brainstorming."
+
+  - id: H10
+    category: diagnostico_estilo
+    name: "Match Campo-Estilo"
+    rule: "Considere alinhamento entre estilo e demandas do campo ao orientar carreiras."
+    rationale: "Mismatch gera frustração; match facilita sucesso natural."
+    caveat: "Mismatch tambem pode ser oportunidade de desenvolvimento se intencional."
+
+  # === DESENVOLVIMENTO PESSOAL ===
+
+  - id: H11
+    category: desenvolvimento_pessoal
+    name: "Modo Nao-Dominante Deliberado"
+    rule: "Pratique intencionalmente seu modo menos preferido para desenvolver flexibilidade."
+    rationale: "Crescimento ocorre na borda do desconforto; conforto perpetuo limita."
+    method: "Identifique modo mais fraco no LSI; crie praticas regulares nesse modo."
+
+  - id: H12
+    category: desenvolvimento_pessoal
+    name: "Especializacao Antes de Integracao"
+    rule: "Desenvolva expertise profunda em um estilo antes de buscar integracao."
+    rationale: "Integracao prematura pode resultar em mediocridade em tudo."
+    timing: "Especializacao: 20s-30s; Integracao: 40s+."
+
+  - id: H13
+    category: desenvolvimento_pessoal
+    name: "Integridade como Meta"
+    rule: "Busque integridade — alinhamento entre aprendizagem, valores e acao."
+    rationale: "Integridade e o estagio mais alto de desenvolvimento em ELT."
+    definition: "Integridade = Fazer o que diz + Dizer o que faz + Coerencia interna."
+
+  - id: H14
+    category: desenvolvimento_pessoal
+    name: "Aprendizagem ao Longo da Vida"
+    rule: "Trate aprendizagem como processo continuo, nao evento finito."
+    rationale: "Mundo em mudanca requer adaptacao permanente; parar de aprender e estagnar."
+    practice: "500 horas/ano de aprendizagem deliberada (media de adultos segundo Tough)."
+
+  - id: H15
+    category: desenvolvimento_pessoal
+    name: "Experiencia Nao Basta"
+    rule: "Nao confie que experiencia sozinha ensina; processe deliberadamente."
+    rationale: "Vieses cognitivos distorcem licoes; reflexao critica e essencial."
+    anti_pattern: "'Tenho 20 anos de experiencia' sem reflexao = 1 ano repetido 20x."
+
+  # === FACILITACAO ===
+
+  - id: H16
+    category: facilitacao
+    name: "Multiplos Papeis do Educador"
+    rule: "Alterne entre papeis de Facilitador, Mentor, Especialista e Coach conforme o modo."
+    rationale: "Cada modo requer tipo diferente de apoio; papel fixo limita eficacia."
+    roles:
+      - "EC: Facilitador (criar ambiente seguro)"
+      - "OR: Mentor (guiar reflexao)"
+      - "CA: Especialista (prover teoria)"
+      - "EA: Coach (apoiar aplicacao)"
+
+  - id: H17
+    category: facilitacao
+    name: "Seguranca Psicologica Primeiro"
+    rule: "Estabeleca seguranca psicologica antes de exigir vulnerabilidade experiencial."
+    rationale: "Experiencia Concreta requer abertura; abertura requer seguranca."
+    method: "Modelo, normas explicitas, validacao de emocoes."
+
+  - id: H18
+    category: facilitacao
+    name: "Reflexao Estruturada"
+    rule: "Forneca estrutura para reflexao; nao assuma que ocorrera espontaneamente."
+    rationale: "Reflexao e habilidade que precisa ser ensinada e apoiada."
+    tools: "Perguntas guia, journaling prompts, debriefs estruturados."
+
+  - id: H19
+    category: facilitacao
+    name: "Teoria Conectada a Pratica"
+    rule: "Ao apresentar teoria, imediatamente conecte com experiencias previas ou iminentes."
+    rationale: "Teoria abstrata sem ancoragem experiencial nao se retém."
+    method: "Perguntar 'Como isso se conecta com sua experiencia?' apos cada conceito."
+
+  - id: H20
+    category: facilitacao
+    name: "Acao como Teste"
+    rule: "Crie oportunidades para testar conceitos atraves de acao e observar consequencias."
+    rationale: "Experimentacao Ativa fecha o ciclo; sem ela, aprendizagem e incompleta."
+    example: "Apos workshop, projeto de aplicacao com follow-up."
+
+  # === ORGANIZACIONAL ===
+
+  - id: H21
+    category: organizacional
+    name: "Organizacao Aprendente"
+    rule: "Estruture a organizacao para suportar todos os modos de aprendizagem."
+    rationale: "Organizacoes tambem tem 'estilos'; diversidade de funcoes cobre gaps."
+    example: "P&D (CA) + Producao (EA) + Marketing (EC) + Estrategia (OR)."
+
+  - id: H22
+    category: organizacional
+    name: "Renovacao Continua"
+    rule: "Crie mecanismos para evitar obsolescencia de pessoas e organizacao."
+    rationale: "Especializacao excessiva sem renovacao leva a rigidez."
+    methods: "Rotacao de funcoes, sabáticos, projetos cross-funcionais."
+
+  - id: H23
+    category: organizacional
+    name: "Workplace como Learning Space"
+    rule: "Trate o local de trabalho como ambiente de aprendizagem legitimo."
+    rationale: "Adultos aprendem principalmente trabalhando, nao em salas de aula."
+    implication: "On-the-job training, mentoria, projetos esticados."
+
+  - id: H24
+    category: organizacional
+    name: "Prior Learning Recognition"
+    rule: "Reconheca e credite aprendizagem obtida fora de contextos formais."
+    rationale: "Experiencia de vida gera conhecimento valido que pode ser avaliado."
+    example: "Programas de credenciamento de experiencia previa em universidades."
+
+  - id: H25
+    category: organizacional
+    name: "Desenvolvimento de Lideranca"
+    rule: "Desenvolva lideres com alta flexibilidade de estilo para lidar com complexidade."
+    rationale: "Lideranca requer alternar entre todos os modos conforme situacao."
+    method: "Assessment 360 de estilos + coaching para desenvolvimento de gaps."
+
+  # === ADICIONAIS ===
+
+  - id: H26
+    category: design_instrucional
+    name: "Concreto Antes do Abstrato"
+    rule: "Quando possivel, comece com experiencia concreta antes de introduzir teoria."
+    rationale: "Ancoragem experiencial facilita compreensao de abstracoes."
+    anti_pattern: "Comecar com teoria e depois dar exemplos (ordem invertida)."
+
+  - id: H27
+    category: desenvolvimento_pessoal
+    name: "Espiral, Nao Circulo"
+    rule: "Cada volta pelo ciclo deve aprofundar, nao apenas repetir."
+    rationale: "Aprendizagem e espiral ascendente, nao rotacao eterna no mesmo nivel."
+    indicator: "Se não ha novo insight, ciclo nao foi completado adequadamente."
+
+  - id: H28
+    category: facilitacao
+    name: "Conflito Construtivo"
+    rule: "Nao evite tensao entre modos opostos; e o motor da aprendizagem."
+    rationale: "Dialectica requer tese e antitese para gerar sintese."
+    example: "Divergente vs. Convergente em equipe gera criatividade + execucao."
+
+  - id: H29
+    category: diagnostico_estilo
+    name: "Flexibilidade > Dominancia"
+    rule: "Avalie flexibilidade de estilo, nao apenas estilo dominante."
+    rationale: "Capacidade de mudar conforme contexto e mais importante que preferencia fixa."
+    metric: "LSI 4.0 inclui score de flexibilidade."
+
+  - id: H30
+    category: organizacional
+    name: "Educacao-Trabalho Integrados"
+    rule: "Dissolva fronteira rigida entre educacao formal e trabalho."
+    rationale: "Separacao artificial impede transfer de aprendizagem."
+    implementations: "Internships, co-ops, executive education, corporate universities."
+
+---
+
+summary:
+  total: 30
+  by_category:
+    design_instrucional: 6
+    diagnostico_estilo: 5
+    desenvolvimento_pessoal: 6
+    facilitacao: 5
+    organizacional: 6
+    adicionais: 2

@@ -208,3 +208,18 @@ triggers:
 - CLT (Decreto-Lei 5.452/43)
 - Lei 13.467/2017 (Reforma Trabalhista)
 - DELGADO, Maurício Godinho. Curso de Direito do Trabalho, 2023
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -306,3 +306,18 @@ Com estes fundamentos, você está pronto para:
 5. **Primeiras vendas:** Estratégia de lançamento
 
 Os subagentes especialistas vão te guiar em cada etapa.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

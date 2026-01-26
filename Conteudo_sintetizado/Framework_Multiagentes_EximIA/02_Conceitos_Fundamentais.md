@@ -27,3 +27,18 @@
 
 ### 6. Gossip Protocol (Evento de Fofoca)
 *   Método de disseminação de informações em sistemas distribuídos (revisado no vídeo de Arquitetura Autônoma). Agentes "espalham" eventos (ex: "Nova task criada") para que os agentes interessados reajam.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Pesquisas]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -175,3 +175,18 @@ clones_consultados: ["Socrates", "Paulo_Freire", "John_Dewey"]
 confianca_perfil: "Alta"
 notas_do_profiler: "Agente desenhado para ser o coracao da experiencia socratica do Harven.AI. Foco absoluto em provocar pensamento atraves de perguntas, nunca respostas."
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -175,3 +175,18 @@ Created via Z_Squad methodology for eximIA.AI ecosystem.
 **Version:** 1.0  
 **Created:** 2026-01-07  
 **Status:** Production Ready ✅
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

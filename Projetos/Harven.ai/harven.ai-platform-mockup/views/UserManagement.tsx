@@ -292,6 +292,18 @@ const UserManagement: React.FC = () => {
                 </div>
               </div>
 
+              <div className="space-y-1.5">
+                <label className="text-xs font-bold text-muted-foreground uppercase">Senha Temporária</label>
+                <Input
+                  required
+                  type="password"
+                  value={formData.password}
+                  onChange={e => setFormData({ ...formData, password: e.target.value })}
+                  placeholder="Senha inicial do usuário"
+                />
+                <p className="text-[10px] text-muted-foreground">O usuário deverá alterar no primeiro acesso.</p>
+              </div>
+
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-1.5">
                   <label className="text-xs font-bold text-muted-foreground uppercase">Função</label>

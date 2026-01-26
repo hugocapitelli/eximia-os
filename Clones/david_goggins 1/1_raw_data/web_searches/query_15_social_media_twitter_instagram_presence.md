@@ -204,3 +204,18 @@ News Nation Now featured story: "How a 'haunting' voice drives David Goggins to 
 - [How a 'Haunting' Voice Drives David Goggins - News Nation Now](https://www.newsnationnow.com/cuomo-show/david-goggins-voice-drive-motivation/)
 - [David Goggins Quotes Bot - Twitter/X](https://x.com/botdavidgoggins?lang=en)
 - [David Goggins Instagram Reel](https://www.instagram.com/davidgoggins/reel/CzueXR2vN_T/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

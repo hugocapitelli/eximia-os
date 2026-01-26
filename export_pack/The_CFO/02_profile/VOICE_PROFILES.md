@@ -137,3 +137,18 @@ em 48h."
 "O que te faz considerar essa oferta neste momento? Qual valuation você 
 tinha em mente como justo? O que planeja fazer após uma eventual venda?
 Essas respostas vão me ajudar a analisar se R$50M é adequado."
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

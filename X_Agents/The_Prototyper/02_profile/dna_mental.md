@@ -278,3 +278,18 @@ Interpretação:
 | Versão | Data | Mudança |
 |--------|------|---------|
 | 1.0.0 | 2026-01-11 | Criação inicial do DNA Mental |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

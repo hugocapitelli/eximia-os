@@ -48,3 +48,18 @@ Todos os agentes ativos. Legal Counsel finalizou a revisão pendente.
 ## ⚡ DECISÕES RÁPIDAS:
 - Posso mandar o Researcher aprofundar na "Concorrente X"? (S/N)
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

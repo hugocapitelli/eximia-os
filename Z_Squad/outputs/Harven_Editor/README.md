@@ -198,3 +198,18 @@ Para evolucoes ou issues, abra um ticket com o Z5 Evolver ou contate a equipe Ha
 
 **Criado por:** Z Squad | ExímIA.AI
 **Licenca:** Proprietaria - Harven.AI
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

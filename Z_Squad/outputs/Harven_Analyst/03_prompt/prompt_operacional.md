@@ -460,3 +460,18 @@ threshold_flag: 0.70
 idioma: "pt-BR"
 criado_por: "Z Squad"
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

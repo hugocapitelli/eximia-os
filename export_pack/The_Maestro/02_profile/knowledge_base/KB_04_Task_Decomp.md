@@ -105,3 +105,18 @@ Before executing a decomposition:
 - [ ] Success criteria defined
 - [ ] Veritas invoked where needed
 - [ ] Parallel opportunities identified
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

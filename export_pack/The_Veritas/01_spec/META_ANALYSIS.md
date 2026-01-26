@@ -203,3 +203,18 @@ MASTER:
 | Contradiction handling | Ignore | Arbitration protocol |
 | Output formats | Markdown | MD/JSON/CSV |
 | Citation compliance | ~50% | 100% mandatory |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

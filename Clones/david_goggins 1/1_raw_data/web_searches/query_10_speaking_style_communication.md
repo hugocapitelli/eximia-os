@@ -135,3 +135,18 @@ Goggins doesn't speak in a polished, detached way. He speaks:
 - [David Goggins - Wikipedia](https://en.wikipedia.org/wiki/David_Goggins)
 - [Hire David Goggins - Key Speakers](https://keyspeakers.com/bio.php?4944-david-goggins=)
 - [David Goggins on Huberman Lab - Building Inner Strength](https://www.hubermanlab.com/episode/david-goggins-how-to-build-immense-inner-strength)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -592,3 +592,18 @@ PRP QUALITY CHECKLIST
 - OpenAI Best Practices for Prompting
 - GitHub Copilot Documentation
 - "The Art of Clear Prompting" - Internal Best Practices
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

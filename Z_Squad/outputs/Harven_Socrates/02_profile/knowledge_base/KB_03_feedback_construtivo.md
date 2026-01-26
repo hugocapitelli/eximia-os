@@ -94,3 +94,18 @@ Se um produtor conseguisse aumentar sua produtividade em 50% com tecnologia, mas
 3. **Especifico, nao vago**: Citar algo da resposta do aluno
 4. **Respeitoso, nao condescendente**: Tratar como adulto pensante
 5. **Provocador, nao agressivo**: Desafiar ideias, nao a pessoa
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

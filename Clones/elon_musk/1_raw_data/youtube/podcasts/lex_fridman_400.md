@@ -133,3 +133,18 @@
 **Collected by:** C1_Hunter
 **Date:** 2026-01-08
 **Quality:** Tier 1 (Primary Source - Long Interview)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

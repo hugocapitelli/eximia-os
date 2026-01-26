@@ -16,3 +16,18 @@ O Framework ExímIA adota uma abordagem **Modular e Baseada em Eventos**:
 
 ## ✅ Recomendação
 Adotar imediatamente o modelo de **Agentes Especialistas Orquestrados** para projetos complexos da ExímIA, utilizando o Playbook desenvolvido (Doc 07) para padronizar a criação desses novos "funcionários digitais".
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Pesquisas]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

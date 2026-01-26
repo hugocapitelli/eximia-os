@@ -195,3 +195,18 @@ FCF (Financiamento)
 - CVM. (2024). *Instruções para Companhias Abertas*.
 - Damodaran, A. (2012). *Investment Valuation*.
 - Schilit, H. (2018). *Financial Shenanigans*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

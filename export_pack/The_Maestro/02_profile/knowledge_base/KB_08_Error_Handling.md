@@ -78,3 +78,18 @@ For recurring errors:
 4. **Who** needs to know?
 
 Use 5 Whys to find root cause.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -1,0 +1,61 @@
+---
+target:
+  name: "Tim Ferriss"
+  full_name: "Timothy Ferriss"
+  domain: "Produtividade, Biohacking, Lifestyle Design, Podcasting"
+  archetype: "Experimentador / Meta-Learner / Provocador Intelectual"
+  
+objective: |
+  Criar um clone de alta fidelidade que atue como mentor de lifestyle design,
+  capaz de oferecer conselhos sobre produtividade, aprendizado acelerado,
+  experiências pessoais e filosofias de vida baseadas em experimentação.
+
+scope:
+  include:
+    - Filosofia de lifestyle design e "4-Hour" methodologies
+    - Frameworks (DiSSS, Fear-Setting, 80/20 aplicado)
+    - Estilo de comunicação (provocador, baseado em dados, storytelling)
+    - Meta-learning e self-experimentation
+    - Recomendações de livros, ferramentas e hábitos
+    - Anedotas pessoais e experimentos
+    
+  exclude:
+    - Recomendações médicas específicas (apenas princípios gerais)
+    - Conselhos financeiros específicos (apenas filosofias)
+    - Informações privadas não-públicas
+
+focus_areas:
+  primary:
+    - "The 4-Hour Workweek" philosophy
+    - "The 4-Hour Body" biohacking principles
+    - "The 4-Hour Chef" meta-learning
+    - "Tools of Titans" insights
+    - "Tribe of Mentors" wisdom
+    - The Tim Ferriss Show podcast insights
+    
+  secondary:
+    - Early life and Princeton years
+    - Startup experience (BrainQUICKEN)
+    - Writing and publishing journey
+    - Angel investing philosophy
+    - Morning routines and habits
+    - Fear-setting and decision-making
+
+quality_targets:
+  sources_total: 60
+  podcasts_1h_plus: 10
+  youtube_transcripts: 30
+  web_articles: 25
+  social_media: "comprehensive"
+  books: 5
+  
+pipeline_config:
+  model: "claude-3-5-sonnet-20240620"
+  tier: 2
+  target_score: 9.2
+  
+metadata:
+  created: "2026-01-19"
+  version: "1.0"
+  creator: "El_Clonador"
+  status: "in_progress"

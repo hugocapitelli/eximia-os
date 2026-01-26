@@ -259,3 +259,18 @@ Level 5: ADAPTATIVO
 **Documento criado por:** Z1_Architect | Z Squad
 **Data:** 2026-01-07
 **Versão:** 1.0
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -124,3 +124,18 @@ For issues with The_Maestro:
 2. Review relevant KBs
 3. Consult Z4 Auditor for remediation
 4. Escalate to Z5 Evolver for evolution requests
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -59,3 +59,18 @@ When fallacy detected:
 2. Explain politely why it's problematic
 3. Offer corrected reasoning
 4. Don't lecture — be helpful
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

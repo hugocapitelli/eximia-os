@@ -128,3 +128,18 @@ Nem todas as perguntas sao iguais. Este guia classifica tipos de perguntas por s
 3. CONECTAR teoria a pratica
 4. APROFUNDAR, nao apenas verificar
 5. Terminar em **ponto de interrogacao**
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

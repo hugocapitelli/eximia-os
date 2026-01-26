@@ -116,3 +116,18 @@ Combinar contribuições de múltiplos clones em uma persona coerente, resolvend
 ## 📚 Referências
 - [The_Cloner: 04_dna_mental_template.md](../../The_Cloner/04_dna_mental_template.md)
 - [RECRUTADOR_META.md](../../The_Recruiter/RECRUTADOR_META.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

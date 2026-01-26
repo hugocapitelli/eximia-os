@@ -1,0 +1,22 @@
+# AIOS Project Configuration
+version: 2.1.0
+project:
+  name: eximIA.OS
+  type: existing
+  created: 2026-01-26
+
+environment:
+  bootstrapped: true
+  bootstrap_date: 2026-01-26T00:00:00
+
+workflow:
+  current: agent-ecosystem
+  phase: operational
+
+settings:
+  auto_update_status: true
+  quality_gates_enabled: true
+
+repository:
+  url: https://github.com/hugocapitelli/eximia-os.git
+  branch: main

@@ -144,3 +144,18 @@ C0 Validator → C1 Hunter → C2 Extractor → C3 Creator → C4 Auditor
 - [openspec/project.md](file:///openspec/project.md) — Contexto do projeto
 - [BENCHMARK_CFO_COMPARATIVE.md](file:///BENCHMARK_CFO_COMPARATIVE.md) — Benchmark CFO
 - [.metrics/agent_dashboard.md](file:///.metrics/agent_dashboard.md) — KPIs
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

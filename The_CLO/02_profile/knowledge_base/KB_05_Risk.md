@@ -258,3 +258,18 @@ report:
 - ISO 31000:2018
 - IIA, Three Lines Model, 2020
 - CRESSEY, Donald. Other People's Money, 1953
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

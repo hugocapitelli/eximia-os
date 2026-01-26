@@ -153,3 +153,18 @@ R. J. Heuer Jr., Psychology of Intelligence Analysis.
 - **arXiv:** https://arxiv.org
 - **SSRN:** https://www.ssrn.com
 - **Google Scholar:** https://scholar.google.com
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

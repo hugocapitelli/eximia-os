@@ -160,3 +160,18 @@ The Z4 Auditor module periodically reviews Maestro responses for Constitution co
 | Version | Date | Change |
 |:---:|:---:|:---|
 | 1.0.0 | 2026-01-07 | Initial Constitution |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

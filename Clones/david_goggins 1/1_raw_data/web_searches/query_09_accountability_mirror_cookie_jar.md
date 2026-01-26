@@ -129,3 +129,18 @@ Both techniques are designed to:
 - [The Accountability Mirror - Michael Awad](https://michaelawad.io/the-accountability-mirror-by-david-goggins/)
 - [Life Coaching Lessons from Can't Hurt Me - Confide Coaching](https://confidecoaching.com/goggins-cant-hurt-me-lessons/)
 - [10 Can't Hurt Me Challenges - Shortform Books](https://www.shortform.com/blog/cant-hurt-me-challenges/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

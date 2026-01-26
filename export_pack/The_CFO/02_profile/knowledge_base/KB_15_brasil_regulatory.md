@@ -180,3 +180,18 @@ Objetivo: Facilitar acesso de empresas menores ao mercado.
 5. **Thin cap: 2:1** debt/equity (relacionadas)
 6. **Dividendo mínimo: 25%** (padrão estatutário)
 7. **IRPJ + CSLL = 34%** corporate tax rate
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

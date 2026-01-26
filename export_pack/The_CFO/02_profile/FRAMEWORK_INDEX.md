@@ -181,3 +181,18 @@
 - **Creator:** Committee of Sponsoring Organizations
 - **Source:** Internal Control Framework (1992, updated 2013)
 - **Components:** 5 components, 17 principles
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

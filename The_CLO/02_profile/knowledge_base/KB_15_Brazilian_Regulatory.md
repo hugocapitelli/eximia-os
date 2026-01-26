@@ -212,3 +212,18 @@ triggers:
 - Lei 12.529/11 (CADE)
 - Lei 13.709/18 (LGPD)
 - Resoluções e Instruções normativas vigentes
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

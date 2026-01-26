@@ -158,3 +158,18 @@ Z_Squad/Z5_Evolver/agent_registry.yaml
 
 **Última atualização:** 2026-01-06
 **Mantido por:** Z Squad
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

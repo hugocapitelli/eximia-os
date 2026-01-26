@@ -568,3 +568,18 @@ Gaps Identified:
 - Singer, R. (2019). *Shape Up* - Basecamp
 - Buxton, B. (2007). *Sketching User Experiences*
 - Unger, R. & Chandler, C. (2012). *A Project Guide to UX Design*
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

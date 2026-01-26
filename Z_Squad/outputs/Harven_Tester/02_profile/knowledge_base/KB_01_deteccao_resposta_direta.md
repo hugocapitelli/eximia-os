@@ -161,3 +161,18 @@ Boa observacao! A gestao de riscos no agronegocio envolve principalmente tres ar
 O que voce acha mais importante?
 ```
 **Por que REJECT:** Listou os tres tipos de risco E mencionou que exigem estrategias diferentes. A pergunta no final nao salva - a informacao ja foi entregue.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

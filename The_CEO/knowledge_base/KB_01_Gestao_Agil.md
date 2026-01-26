@@ -20,3 +20,18 @@
 ## Resolução de Conflitos
 - Se Agente A diz "X" e Agente B diz "Y": O CEO decide baseado no objetivo estratégico.
 - Se um Agente trava: O CEO deve tentar reformular o pedido ou consultar o "The Recruiter" para criar um agente melhor.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

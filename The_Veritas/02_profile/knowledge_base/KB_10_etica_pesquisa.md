@@ -138,3 +138,18 @@ viés comercial deve ser considerado.
 - UC Berkeley. (2024). *Copyright and Fair Use*.
 - Harvard Library. (2024). *Code of Best Practices in Fair Use*.
 - Poynter Institute. (2024). *IFCN Code of Principles*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

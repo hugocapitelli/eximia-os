@@ -179,3 +179,18 @@ A classe determina os requisitos mínimos para todos os módulos Z.
 ## 📚 Referências
 - [Athena vs MS Analysis](../../outputs/Athena%20Vs%20MS.md)
 - [Athena: GPT-CMO](../../outputs/x_agente_marketplace_seller/) (Class 3 example)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

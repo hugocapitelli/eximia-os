@@ -201,3 +201,18 @@ Tab Structure:
 4. **No hard-coded values in formulas** (FAST)
 5. **All inputs on Assumptions tab** (FAST)
 6. **Check cells = 0 for validation** (audit)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

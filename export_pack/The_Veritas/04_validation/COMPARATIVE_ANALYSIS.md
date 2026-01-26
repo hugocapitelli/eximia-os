@@ -152,3 +152,18 @@
 | Tokens | 18K | 18K ✅ |
 | Validation | 15 | 15 ✅ |
 | Citation | 100% | Target ✅ |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

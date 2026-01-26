@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { ViewType, UserRole } from '../types';
-import { coursesApi, chaptersApi } from '../services/api';
+import { useNavigate, useParams } from 'react-router-dom';
+import { UserRole } from '../types';
+import { coursesApi, chaptersApi, contentsApi } from '../services/api';
 
 interface CourseDetailsProps {
-  onNavigate: (view: ViewType, data?: any) => void;
   userRole: UserRole;
-  courseId: string;
 }
 
-const CourseDetails: React.FC<CourseDetailsProps> = ({ onNavigate, userRole, courseId }) => {
+const CourseDetails: React.FC<CourseDetailsProps> = ({ userRole }) => {
+  const navigate = useNavigate();
+  const { courseId } = useParams<{ courseId: string }>();
   const isInstructor = userRole === 'INSTRUCTOR';
 
   const [course, setCourse] = useState<any>(null);
@@ -39,7 +40,10 @@ const CourseDetails: React.FC<CourseDetailsProps> = ({ onNavigate, userRole, cou
   }, [courseId]);
 
   const loadData = async () => {
-    if (!courseId) return;
+    if (!courseId) {
+      setLoading(false);
+      return;
+    }
     try {
       setLoading(true);
       const [courseData, chaptersData] = await Promise.all([
@@ -51,6 +55,8 @@ const CourseDetails: React.FC<CourseDetailsProps> = ({ onNavigate, userRole, cou
       setModules(chaptersData || []);
     } catch (error) {
       console.error("Erro ao carregar curso:", error);
+      // Em caso de erro, ainda assim para o loading
+      setCourse(null);
     } finally {
       setLoading(false);
     }
@@ -94,12 +100,8 @@ const CourseDetails: React.FC<CourseDetailsProps> = ({ onNavigate, userRole, cou
   const openChapterModal = (moduleId: string) => {
     setNewChapterTitle('');
     setTargetModuleId(moduleId);
-    // Actually the modal was "New Lesson" in the UI context (adding content to a module).
-    // So this navigates to ContentCreation passing the chapterId (which is the module ID).
-    onNavigate('CONTENT_CREATION', { chapterId: moduleId });
-    // setShowChapterModal(true); // Disable modal, easier to go straight to content creation?
-    // User asked for "Adicionar Novo Módulo" (Chapter) which we did button above.
-    // "Adicionar Aula" (Content) -> goes to ContentCreation.
+    // Navigate to ContentCreation passing the chapterId (module ID) directly
+    navigate(`/course/${courseId}/chapter/${moduleId}/new-content`);
   };
 
 
@@ -110,21 +112,50 @@ const CourseDetails: React.FC<CourseDetailsProps> = ({ onNavigate, userRole, cou
     { id: 'discussion', label: 'Discussão', icon: 'forum', count: comments.length }
   ];
 
-  if (loading) return <div className="p-8 text-center">Carregando curso...</div>;
-  if (!course) return <div className="p-8 text-center">Curso não encontrado.</div>;
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-full bg-white">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-gray-500">Carregando curso...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!course) {
+    return (
+      <div className="flex items-center justify-center h-full bg-white">
+        <div className="text-center">
+          <span className="material-symbols-outlined text-6xl text-gray-300 mb-4">search_off</span>
+          <p className="text-lg font-bold text-gray-600">Curso não encontrado</p>
+          <p className="text-sm text-gray-400 mt-2">O curso solicitado não existe ou foi removido.</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col flex-1 h-full bg-[#f8f9fa] animate-in fade-in duration-500">
       <div className="relative h-64 bg-harven-dark overflow-hidden flex-shrink-0 group">
-        <img src={course.image || "https://picsum.photos/seed/growth/1200/600"} className="w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" alt="Banner" />
+        <img src={course.image || course.image_url || "https://picsum.photos/seed/growth/1200/600"} className="w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" alt="Banner" />
         <div className="absolute inset-0 bg-gradient-to-t from-harven-dark via-harven-dark/60 to-transparent p-8 flex flex-col justify-end">
+          {/* Botão Voltar no topo do banner */}
+          <button
+            onClick={() => navigate(isInstructor ? '/instructor' : '/dashboard')}
+            className="absolute top-4 left-4 flex items-center gap-2 text-white/70 hover:text-white transition-colors bg-black/20 hover:bg-black/40 px-3 py-1.5 rounded-lg backdrop-blur-sm"
+          >
+            <span className="material-symbols-outlined text-[20px]">arrow_back</span>
+            <span className="text-sm font-medium">Voltar</span>
+          </button>
+
           <div className="max-w-6xl mx-auto w-full flex flex-col md:flex-row justify-between items-end gap-6">
             <div className="flex flex-col gap-3">
               <h1 className="text-3xl md:text-4xl font-display font-bold text-white leading-tight tracking-tight drop-shadow-md relative">
                 {course.title}
                 {isInstructor && (
                   <button
-                    onClick={() => onNavigate('DISCIPLINE_EDIT', { id: courseId, tab: 'info' })}
+                    onClick={() => navigate(`/instructor/discipline/${courseId}/info`)}
                     className="absolute -right-10 top-1 text-gray-400 hover:text-primary transition-colors"
                     title="Configurações do Curso"
                   >
@@ -229,23 +260,50 @@ const CourseDetails: React.FC<CourseDetailsProps> = ({ onNavigate, userRole, cou
                           <div
                             key={chapter.id}
                             onClick={() => {
-                              // Navegar para leitura/interação
-                              // Se for instrutor, talvez edição?
-                              // Usuário quer ver o conteúdo.
+                              // Navega para leitura passando o ID do conteúdo e info do módulo/curso
+                              navigate(`/course/${courseId}/chapter/${module.id}/content/${chapter.id}`);
                             }}
                             className={`p-5 flex justify-between items-center transition-all cursor-pointer relative group/chapter hover:bg-white border-l-4 border-l-transparent hover:border-l-primary`}
                           >
                             <div className="flex items-center gap-4">
-                              <span className="material-symbols-outlined text-gray-400 text-[22px]">play_circle</span>
+                              <span className="material-symbols-outlined text-gray-400 text-[22px]">
+                                {chapter.type === 'VIDEO' ? 'play_circle' : chapter.type === 'AUDIO' ? 'headphones' : 'article'}
+                              </span>
                               <div>
                                 <p className="text-sm font-bold text-harven-dark">{chapter.title}</p>
                                 <p className="text-[10px] text-gray-400 font-bold uppercase mt-0.5">{chapter.type}</p>
                               </div>
                             </div>
                             {isInstructor && (
-                              <button onClick={(e) => e.stopPropagation()} className="p-1.5 bg-white border border-harven-border rounded-lg text-gray-400 hover:text-red-500 hover:border-red-200 transition-all">
-                                <span className="material-symbols-outlined text-[16px]">delete</span>
-                              </button>
+                              <div className="flex items-center gap-2">
+                                <button
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    navigate(`/course/${courseId}/chapter/${module.id}/content/${chapter.id}/revision`);
+                                  }}
+                                  className="p-1.5 bg-white border border-harven-border rounded-lg text-gray-400 hover:text-blue-500 hover:border-blue-200 transition-all"
+                                  title="Editar conteúdo"
+                                >
+                                  <span className="material-symbols-outlined text-[16px]">edit</span>
+                                </button>
+                                <button
+                                  onClick={async (e) => {
+                                    e.stopPropagation();
+                                    if (confirm('Tem certeza que deseja excluir este conteúdo?')) {
+                                      try {
+                                        await contentsApi.delete(chapter.id);
+                                        loadData();
+                                      } catch (err) {
+                                        alert('Erro ao excluir conteúdo');
+                                      }
+                                    }
+                                  }}
+                                  className="p-1.5 bg-white border border-harven-border rounded-lg text-gray-400 hover:text-red-500 hover:border-red-200 transition-all"
+                                  title="Excluir conteúdo"
+                                >
+                                  <span className="material-symbols-outlined text-[16px]">delete</span>
+                                </button>
+                              </div>
                             )}
                           </div>
                         ))}

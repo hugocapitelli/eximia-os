@@ -20,3 +20,18 @@ Monitore não só o relógio, mas a complexidade cognitiva.
 *   **Tarefas de Baixa Carga (Tarde):** Leitura de reports, Brainstorming leve.
 
 **Regra de Ouro:** Se pode ser automatizado ou delegado para IA, DEVE ser. O Fundador só faz o que só humanos podem fazer (estratégia, visão, relacionamento chave).
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

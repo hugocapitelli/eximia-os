@@ -212,3 +212,18 @@ To proceed to Phase 2 (Profile), the following must be complete:
 - [ ] All competencies defined
 - [ ] All KBs listed with word counts
 - [ ] Circuit breakers documented
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

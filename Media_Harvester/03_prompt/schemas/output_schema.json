@@ -1,0 +1,201 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Media_Harvester Output Schema",
+  "description": "Schema para outputs do agente Media_Harvester",
+  "type": "object",
+  "required": ["status", "summary", "files_created"],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["success", "partial_success", "failed"],
+      "description": "Status geral da execução"
+    },
+    "summary": {
+      "type": "object",
+      "required": ["total_processed", "successful", "failed"],
+      "properties": {
+        "total_processed": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total de itens processados"
+        },
+        "successful": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Itens processados com sucesso"
+        },
+        "failed": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Itens que falharam"
+        },
+        "skipped": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Itens pulados (já existentes)"
+        },
+        "total_duration_seconds": {
+          "type": "number",
+          "description": "Duração total do conteúdo processado"
+        },
+        "processing_time_seconds": {
+          "type": "number",
+          "description": "Tempo total de processamento"
+        }
+      }
+    },
+    "files_created": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "type"],
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "Caminho do arquivo criado"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["transcript", "summary", "metadata"],
+            "description": "Tipo do arquivo"
+          },
+          "video_id": {
+            "type": "string",
+            "description": "ID do vídeo (se aplicável)"
+          },
+          "title": {
+            "type": "string",
+            "description": "Título do conteúdo"
+          },
+          "duration_seconds": {
+            "type": "number",
+            "description": "Duração em segundos"
+          },
+          "word_count": {
+            "type": "integer",
+            "description": "Contagem de palavras da transcrição"
+          },
+          "transcript_source": {
+            "type": "string",
+            "enum": ["manual_subtitles", "auto_subtitles", "whisper"],
+            "description": "Fonte da transcrição"
+          }
+        }
+      }
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url", "error_type", "message"],
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "URL que falhou"
+          },
+          "error_type": {
+            "type": "string",
+            "enum": [
+              "invalid_url",
+              "video_unavailable",
+              "private_video",
+              "geo_blocked",
+              "no_transcript",
+              "timeout",
+              "network_error",
+              "encoding_error",
+              "unknown"
+            ],
+            "description": "Tipo do erro"
+          },
+          "message": {
+            "type": "string",
+            "description": "Mensagem de erro detalhada"
+          }
+        }
+      }
+    },
+    "batch_summary_path": {
+      "type": "string",
+      "description": "Caminho do arquivo _BATCH_SUMMARY.md gerado"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "started_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp de início"
+        },
+        "finished_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp de término"
+        },
+        "whisper_model": {
+          "type": "string",
+          "description": "Modelo Whisper utilizado"
+        },
+        "device": {
+          "type": "string",
+          "enum": ["cuda", "cpu"],
+          "description": "Dispositivo de processamento"
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "status": "success",
+      "summary": {
+        "total_processed": 10,
+        "successful": 10,
+        "failed": 0,
+        "skipped": 0,
+        "total_duration_seconds": 36000,
+        "processing_time_seconds": 1200
+      },
+      "files_created": [
+        {
+          "path": "Clones/david_goggins/1_raw_data/youtube/interviews/Joe Rogan Experience #1080_xxx.md",
+          "type": "transcript",
+          "video_id": "5tSTk1083VY",
+          "title": "Joe Rogan Experience #1080 - David Goggins",
+          "duration_seconds": 6840,
+          "word_count": 15000,
+          "transcript_source": "auto_subtitles"
+        }
+      ],
+      "errors": [],
+      "batch_summary_path": "Clones/david_goggins/1_raw_data/youtube/interviews/_BATCH_SUMMARY.md",
+      "metadata": {
+        "started_at": "2026-01-19T10:00:00Z",
+        "finished_at": "2026-01-19T10:20:00Z",
+        "whisper_model": "medium",
+        "device": "cuda"
+      }
+    },
+    {
+      "status": "partial_success",
+      "summary": {
+        "total_processed": 10,
+        "successful": 8,
+        "failed": 2,
+        "skipped": 0
+      },
+      "files_created": [],
+      "errors": [
+        {
+          "url": "https://youtube.com/watch?v=xxx",
+          "error_type": "video_unavailable",
+          "message": "Video has been removed by the user"
+        },
+        {
+          "url": "https://youtube.com/watch?v=yyy",
+          "error_type": "private_video",
+          "message": "This video is private"
+        }
+      ]
+    }
+  ]
+}

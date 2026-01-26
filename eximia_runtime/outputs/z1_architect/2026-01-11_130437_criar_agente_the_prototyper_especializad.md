@@ -138,3 +138,18 @@ Este JSON pode agora ser usado como base para o desenvolvimento e implementaçã
 - **Tokens:** 6919
 - **Time:** 18827.826ms
 - **Cost:** $0.000000
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

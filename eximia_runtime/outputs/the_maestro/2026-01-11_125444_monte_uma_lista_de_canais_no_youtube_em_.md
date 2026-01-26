@@ -82,3 +82,18 @@ Espero que essa lista seja útil para uma criança de 12 anos interessada em apr
 - **Tokens:** 4909
 - **Time:** 255158.023ms
 - **Cost:** $0.000000
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

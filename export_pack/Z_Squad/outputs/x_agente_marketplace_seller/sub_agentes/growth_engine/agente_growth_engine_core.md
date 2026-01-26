@@ -431,3 +431,18 @@ PARTICIPAÇÃO             │                   PARTICIPAÇÃO
 - [ ] Private label registered
 - [ ] R$ 100k+/mês
 - [ ] Sistema que roda sem você
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

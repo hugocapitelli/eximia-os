@@ -132,3 +132,18 @@
 - SaaS.wtf. (2024). *CAC Ratio Analysis*.
 - Chartmogul. (2024). *SaaS Metrics Report H1 2024*.
 - Drivetrain. (2024). *Rule of 40 Analysis*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

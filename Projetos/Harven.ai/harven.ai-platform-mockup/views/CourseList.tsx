@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { ViewType, UserRole } from '../types';
+import { useNavigate } from 'react-router-dom';
+import { UserRole } from '../types';
 import { Button } from '../components/ui/Button';
 import { Card, CardContent } from '../components/ui/Card';
 import { Input } from '../components/ui/Input';
@@ -10,11 +11,11 @@ import { Select } from '../components/ui/Select';
 import { disciplinesApi } from '../services/api';
 
 interface CourseListProps {
-  onNavigate: (view: ViewType) => void;
   userRole: UserRole;
 }
 
-const CourseList: React.FC<CourseListProps> = ({ onNavigate, userRole }) => {
+const CourseList: React.FC<CourseListProps> = ({ userRole }) => {
+  const navigate = useNavigate();
   const [courses, setCourses] = useState<any[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [activeTab, setActiveTab] = useState('Todos');
@@ -139,10 +140,10 @@ const CourseList: React.FC<CourseListProps> = ({ onNavigate, userRole }) => {
             key={course.id}
             hoverEffect
             className="flex flex-col h-full animate-in fade-in zoom-in-95 duration-300 group"
-            onClick={() => onNavigate('COURSE_DETAILS')}
+            onClick={() => navigate(`/course/${course.id}`)}
           >
             <div className="relative h-40 overflow-hidden bg-muted">
-              <img src={course.image || 'https://picsum.photos/seed/default/600/400'} alt={course.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src={course.image || course.image_url || 'https://picsum.photos/seed/default/600/400'} alt={course.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
               <div className="absolute top-3 right-3">
                 <Badge variant="default" className="bg-white/90 backdrop-blur text-foreground border-none">

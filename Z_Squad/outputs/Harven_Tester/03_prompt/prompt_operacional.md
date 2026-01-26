@@ -462,3 +462,18 @@ threshold_aprovacao: 0.7
 idioma: "pt-BR"
 criado_por: "Z Squad"
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

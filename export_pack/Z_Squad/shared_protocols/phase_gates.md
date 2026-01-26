@@ -135,3 +135,18 @@ gate_validation:
 ## 📚 Referências
 - [X_Agente: FASE_09_FINAL_ASSEMBLY](../../outputs/x_agente_cfo/FASE_09_FINAL_ASSEMBLY_SUMMARY.md)
 - [Z Squad: Handoff Protocol](./handoff_protocol.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

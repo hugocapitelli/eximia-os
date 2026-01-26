@@ -247,3 +247,18 @@ def z1_produce_spec(user_input: str) -> SpecTecnica:
 - [Pydantic Documentation](https://docs.pydantic.dev/)
 - [OpenAI Structured Outputs](https://openai.com/)
 - [Swarms Framework](https://github.com/kyegomez/swarms)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

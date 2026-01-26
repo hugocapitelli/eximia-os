@@ -59,3 +59,18 @@ Se a marca for "The Ruler" (Rolex), você veta qualquer tentativa de ser "The Je
   }
 }
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

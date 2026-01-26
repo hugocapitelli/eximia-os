@@ -151,3 +151,18 @@ O Architect gera um arquivo JSON Schema-compliant:
 
 ---
 **Próximo na Cadeia:** Z2 (The Profiler)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

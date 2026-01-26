@@ -50,3 +50,18 @@ Before approving a prompt for the Researcher, verify:
 2.  [ ] **Persona:** Did I define *who* the agent is acting as?
 3.  [ ] **Constraint:** Did I say what *not* to do?
 4.  [ ] **Format:** Did I specify Markdown, JSON, or CSV?
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

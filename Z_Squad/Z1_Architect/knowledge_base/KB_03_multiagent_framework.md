@@ -129,3 +129,18 @@ open_questions:
 - [Framework: 03_Padroes_de_Arquitetura.md](../../Conteudo_sintetizado/Framework_Multiagentes_EximIA/03_Padroes_de_Arquitetura.md)
 - [Framework: 08_Boas_Praticas_e_Antipadroes.md](../../Conteudo_sintetizado/Framework_Multiagentes_EximIA/08_Boas_Praticas_e_Antipadroes.md)
 - [Shared Protocols: handoff_protocol.md](../shared_protocols/handoff_protocol.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

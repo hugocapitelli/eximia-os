@@ -41,3 +41,18 @@ Todas as mudanças notáveis neste agente serão documentadas aqui.
 ### Performance
 - Token budget: ~20,000
 - Prompt size: 13,253 bytes
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

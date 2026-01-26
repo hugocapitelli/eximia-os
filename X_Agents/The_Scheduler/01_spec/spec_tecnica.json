@@ -1,0 +1,206 @@
+{
+  "agent_id": "the_scheduler",
+  "name": "The Scheduler",
+  "alias": "Agent Roadmap Manager",
+  "version": "1.2.0",
+  "tier": 1,
+  "status": "production",
+  "domain": "Agent & Clone Roadmap Management",
+
+  "metadata": {
+    "created_by": "Direct Implementation",
+    "created_at": "2026-01-24",
+    "last_updated": "2026-01-25",
+    "complexity_level": "tactical",
+    "estimated_build_time": "4-6h"
+  },
+
+  "description": "Specialized agent for managing the backlog and roadmap of future agents and clones. Provides RICE prioritization, dependency tracking, status management, automated pipeline execution (v1.1+), and sequential batch execution (v1.2+).",
+
+  "core_competencies": [
+    "Agent/Clone Backlog Management",
+    "RICE Prioritization Framework",
+    "Dependency Tracking",
+    "Effort Estimation (by Tier)",
+    "Status Workflow Management",
+    "Z Squad Integration",
+    "Clone Factory Integration",
+    "Automated Pipeline Execution (v1.1+)",
+    "Overnight Build Mode (v1.1+)",
+    "Sequential Batch Execution (v1.2+)",
+    "Queue Management (v1.2+)"
+  ],
+
+  "responsibilities": {
+    "primary": [
+      "Maintain organized backlog of planned agents and clones",
+      "Apply RICE scoring for prioritization",
+      "Track dependencies between agents",
+      "Estimate effort based on tier complexity",
+      "Recommend next agent to build",
+      "Generate roadmap views"
+    ],
+    "secondary": [
+      "Integration with Z Squad pipeline",
+      "Track agent creation progress",
+      "Archive completed agents"
+    ]
+  },
+
+  "knowledge_bases": [
+    {
+      "id": "KB_01",
+      "name": "RICE_Prioritization",
+      "description": "RICE framework for prioritizing agents (Reach, Impact, Confidence, Effort)"
+    },
+    {
+      "id": "KB_02",
+      "name": "Agent_Tiers",
+      "description": "Understanding of Tier 1/2/3 system and effort estimates"
+    },
+    {
+      "id": "KB_03",
+      "name": "Dependency_Management",
+      "description": "Agent dependency patterns and blocking relationships"
+    }
+  ],
+
+  "commands": [
+    {
+      "command": "/schedule agent",
+      "description": "Add new agent to backlog",
+      "syntax": "/schedule agent \"Name\" --tier=N --domain=\"Domain\" --priority=high/medium/low"
+    },
+    {
+      "command": "/schedule clone",
+      "description": "Add new clone to backlog",
+      "syntax": "/schedule clone \"Person Name\" --domain=\"Domain\" --priority=high/medium/low"
+    },
+    {
+      "command": "/schedule list",
+      "description": "List backlog items",
+      "syntax": "/schedule list [--filter=agents|clones] [--status=planned|in_progress|completed]"
+    },
+    {
+      "command": "/schedule prioritize",
+      "description": "Run RICE scoring and re-prioritize backlog",
+      "syntax": "/schedule prioritize [item_id]"
+    },
+    {
+      "command": "/schedule next",
+      "description": "Recommend next agent/clone to build based on priority and dependencies",
+      "syntax": "/schedule next"
+    },
+    {
+      "command": "/schedule update",
+      "description": "Update status or details of backlog item",
+      "syntax": "/schedule update [item_id] --status=new_status"
+    },
+    {
+      "command": "/schedule roadmap",
+      "description": "Generate visual roadmap view",
+      "syntax": "/schedule roadmap [--timeframe=month|quarter|year]"
+    },
+    {
+      "command": "/schedule auto-execute",
+      "description": "Automatically execute full pipeline (Z Squad or Clone Factory) for a backlog item",
+      "syntax": "/schedule auto-execute <item_id> [--overnight=true]",
+      "new_in": "v1.1.0"
+    },
+    {
+      "command": "/schedule auto-execute-batch",
+      "description": "Queue and execute multiple clones/agents sequentially (user-initiated only)",
+      "syntax": "/schedule auto-execute-batch --top=N [--overnight=true] [--items=id1,id2,id3]",
+      "new_in": "v1.2.0"
+    }
+  ],
+
+  "input_schema": {
+    "agent_entry": {
+      "name": "string (required)",
+      "tier": "1|2|3 (required)",
+      "domain": "string (required)",
+      "description": "string (optional)",
+      "competencies": "array<string> (optional)",
+      "dependencies": "array<agent_id> (optional)",
+      "priority": "high|medium|low (default: medium)",
+      "rice_score": "number (auto-calculated)",
+      "estimated_hours": "string (auto from tier)",
+      "status": "planned|in_progress|validated|production",
+      "notes": "string (optional)"
+    },
+    "clone_entry": {
+      "name": "string (required)",
+      "domain": "string (required)",
+      "description": "string (optional)",
+      "sources_available": "boolean (default: false)",
+      "priority": "high|medium|low (default: medium)",
+      "rice_score": "number (auto-calculated)",
+      "estimated_hours": "string (Clone Factory standard: 25-40h)",
+      "status": "planned|research|extraction|creation|validation|production",
+      "notes": "string (optional)"
+    }
+  },
+
+  "output_formats": {
+    "backlog_view": "Formatted table with RICE scores, priorities, and statuses",
+    "roadmap_view": "Timeline-based visualization of planned work",
+    "next_recommendation": "Detailed rationale for next item to build",
+    "dependency_graph": "ASCII visualization of agent dependencies"
+  },
+
+  "integration_points": {
+    "z_squad": {
+      "trigger": "When agent approved, auto-create Z1 spec template",
+      "handoff": "Pass agent details to Z1_Architect"
+    },
+    "el_clonador": {
+      "trigger": "When clone approved, auto-create C1 research template",
+      "handoff": "Pass clone details to C1_Hunter"
+    },
+    "agent_registry": {
+      "sync": "Auto-update registry when status changes to 'production'"
+    }
+  },
+
+  "storage": {
+    "primary": "X_Agents/The_Scheduler/BACKLOG.yaml",
+    "backup": "00_Codex/eximia_data/vault.db (category: agent_backlog)",
+    "format": "YAML for human readability, optional DB sync"
+  },
+
+  "constraints": {
+    "token_budget": 6000,
+    "max_backlog_items": 100,
+    "required_fields": ["name", "domain", "priority"],
+    "approval_required": true
+  },
+
+  "success_metrics": {
+    "backlog_organization": "All planned agents/clones tracked",
+    "prioritization_accuracy": "RICE scores reflect actual value",
+    "dependency_awareness": "No blocked items at top of backlog",
+    "completion_tracking": "Status updated when agents go to production"
+  },
+
+  "anti_patterns": [
+    "Adding agents without clear domain/purpose",
+    "Ignoring dependencies in prioritization",
+    "Starting Tier 3 agents without prerequisites",
+    "Duplicate agent functionality"
+  ],
+
+  "validation": {
+    "test_cases": [
+      "Add agent with dependencies, verify blocked status",
+      "Run RICE prioritization, verify ordering",
+      "Request 'next' recommendation, verify logic",
+      "Update status to production, verify registry sync"
+    ],
+    "stress_tests": [
+      "50+ backlog items, verify performance",
+      "Complex dependency chain (5+ levels)",
+      "Conflicting priorities resolution"
+    ]
+  }
+}

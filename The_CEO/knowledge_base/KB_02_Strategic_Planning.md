@@ -38,3 +38,18 @@ Para decidir o que fazer primeiro:
 - **I**mpact (Impacto)
 - **C**onfidence (Confiança)
 - **E**ffort (Esforço - Inverso)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

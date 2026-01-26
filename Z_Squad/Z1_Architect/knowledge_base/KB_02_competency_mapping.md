@@ -114,3 +114,18 @@ graph TD
 - [Spencer & Spencer: Competency at Work](https://www.amazon.com/)
 - [PMI: RACI Matrix](https://www.pmi.org/)
 - [Damodaran: Valuation Skills](https://pages.stern.nyu.edu/~adamodar/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

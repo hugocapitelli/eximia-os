@@ -216,3 +216,18 @@ The_CFO/
 │ Reporting (2):  COSO | Earnings Best Practices                  │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

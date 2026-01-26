@@ -302,3 +302,18 @@ Build me a dashboard
 ---
 
 *Validated by Z4_Auditor Module — Z Squad Elite Multiagent Factory*
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

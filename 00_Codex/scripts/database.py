@@ -45,19 +45,22 @@ class CodexDatabase:
         file_path: Optional[str] = None,
         tags: Optional[List[str]] = None,
         metadata: Optional[Dict] = None,
-        notes: Optional[str] = None
+        notes: Optional[str] = None,
+        source_agent: Optional[str] = None,
+        parent_content_id: Optional[str] = None
     ) -> bool:
         """Adiciona novo conteúdo ao database"""
         conn = self._get_connection()
         try:
             with conn.cursor() as cursor:
-                # Inserir conteúdo
+                # Inserir conteúdo (includes new columns for agent tracking)
                 cursor.execute("""
-                    INSERT INTO contents (id, title, type, source_url, author, file_path, notes, metadata_json)
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                    INSERT INTO contents (id, title, type, source_url, author, file_path, notes, metadata_json, source_agent, parent_content_id, generation_context)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 """, (
                     content_id, title, content_type, source_url, author, 
-                    file_path, notes, Json(metadata) if metadata else None
+                    file_path, notes, Json(metadata) if metadata else None,
+                    source_agent, parent_content_id, Json(metadata) if metadata else None
                 ))
                 
                 # Inserir tags

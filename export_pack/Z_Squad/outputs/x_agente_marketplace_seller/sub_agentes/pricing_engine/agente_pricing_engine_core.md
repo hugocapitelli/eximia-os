@@ -383,3 +383,18 @@ Preço = R$ 75 ÷ (1 - 0.25) = R$ 75 ÷ 0.75 = R$ 100
 ### 1 Hora:
 - Monte matriz competitiva completa
 - Defina estratégia de preço por estágio
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

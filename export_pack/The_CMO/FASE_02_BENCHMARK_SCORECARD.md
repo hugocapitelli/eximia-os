@@ -14,3 +14,18 @@ Definir o padrão de excelência (Top 1%).
 
 ---
 **Data:** 2025-12-23
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -162,3 +162,18 @@ gatekeeper_result:
 ## 📚 Referências
 - [The_CEO: Research Gatekeeper](../../The_CEO/agente_core.md)
 - [PraisonAI Protocol](../../X_Agents/Researcher/agente_core.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -261,3 +261,18 @@ confidence: 0.90
 **Analyzed by:** C2C_HeuristicMiner
 **Date:** 2026-01-08
 **Quality:** Tier 1 (Evidence-based from primary sources)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

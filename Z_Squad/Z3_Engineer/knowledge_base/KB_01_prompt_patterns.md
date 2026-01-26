@@ -173,3 +173,18 @@ Regras inquebráveis em formato IF/THEN.
 - [OpenAI: Prompt Engineering Guide](https://platform.openai.com/docs/)
 - [Anthropic: Constitutional AI](https://www.anthropic.com/)
 - [The_Recruiter: PROMPT_OPERACIONAL.md](../../The_Recruiter/PROMPT_OPERACIONAL.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

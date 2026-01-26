@@ -304,3 +304,18 @@ Se alguém te oferece "método secreto" para crescer rápido, provavelmente é a
 **Memorize, internalize, aplique.**
 
 Estas regras não são sugestões — são princípios que separam vendedores que sobrevivem dos que prosperam.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

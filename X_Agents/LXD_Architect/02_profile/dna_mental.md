@@ -186,3 +186,18 @@ Catalogados em FRAMEWORK_INDEX.md
 ---
 
 **LXD Architect | Tier 3 Expert | Z Squad | eximIA.AI © 2026**
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

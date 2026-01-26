@@ -172,3 +172,18 @@ invariants:
 
 ## 📚 Referências
 - [X_Agente: FASE_04_SEGREGATION](../../outputs/x_agente_cfo/FASE_04_SEGREGATION_SUMMARY.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

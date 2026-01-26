@@ -1,0 +1,18 @@
+# Claude Code ignore patterns
+# Files and directories to exclude from Claude Code context
+
+# Ignore large data directories
+00_Codex/eximia_data/vault.db
+00_Codex/eximia_data/04_IDEAS/*.md
+
+# Ignore auto-build outputs
+X_Agents/The_Scheduler/auto_builds/*
+
+# Ignore temporary files
+*.tmp
+*.log
+.DS_Store
+
+# Keep slash commands visible
+!.eximia/SLASH_COMMANDS.yaml
+!.eximia/SLASH_COMMANDS_GUIDE.md

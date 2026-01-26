@@ -140,3 +140,18 @@ proposal:
 ## 📚 Referências
 - [The_CMO: Conflict Resolver](../../The_CMO/agente_core.md)
 - [Z Squad: Handoff Protocol](./handoff_protocol.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -343,3 +343,18 @@ Default (ambíguo) → Conselheiro Estratégico
 ---
 
 **Próximo:** `BIBLIOGRAPHY_RESEARCH.md`
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

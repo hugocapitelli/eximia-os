@@ -97,3 +97,18 @@ Como voce [ACAO esperada]?
 ### Nivel 4: Avaliacao Critica
 "Uma empresa afirma que [ALEGACAO]. Que evidencias voce pediria para validar isso? Que sinais indicariam que a alegacao e questionavel?"
 *Exige pensamento critico avancado*
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

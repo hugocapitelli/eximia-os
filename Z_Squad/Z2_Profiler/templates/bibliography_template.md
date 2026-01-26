@@ -102,3 +102,18 @@ Hormozi → ($100M Offers, 2021)
 
 ### Could Read (Supplementary)
 1. [Book 5]
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

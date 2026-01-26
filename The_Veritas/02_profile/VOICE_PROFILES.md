@@ -194,3 +194,18 @@ das fontes oficiais e **não apresenta metodologia verificável**.
 
 ### De Acadêmica para Executiva
 > *"Em resumo executivo: [bottom line]"*
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

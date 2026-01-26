@@ -94,3 +94,18 @@ Antes de finalizar uma pergunta, verifique:
 - [ ] A pergunta e aberta (nao sim/nao)?
 - [ ] A pergunta esta no nivel 3+ de Bloom?
 - [ ] A pergunta esta conectada ao conteudo?
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

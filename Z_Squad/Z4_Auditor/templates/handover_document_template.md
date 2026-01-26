@@ -124,3 +124,18 @@ Documentar o **status final** do agente para entrega.
 
 **Handover Complete:** ✅
 **Agent Ready for:** [Testing / Production]
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

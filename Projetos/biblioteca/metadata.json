@@ -1,0 +1,5 @@
+{
+  "name": "Biblioteca",
+  "description": "A modern, dark-themed personal library management application featuring reading tracking, book categorization, and lending management.",
+  "requestFramePermissions": []
+}

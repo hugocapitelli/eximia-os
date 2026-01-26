@@ -205,3 +205,18 @@ His methods worked for HIS specific situation:
 - [Reddit Opinions About David Goggins - Glarity](https://askai.glarity.app/search/What-are-the-general-opinions-and-insights-about-David-Goggins-on-Reddit)
 - [Why David Goggins Is Wrong About Mid-Life Motivation - The Insecurity Project](https://jaeminfrazer.com/blog/why-david-goggins-is-wrong-about-mid-life-motivation)
 - [Controversial Topic: I Don't Like David Goggins - LinkedIn](https://www.linkedin.com/posts/davidhhaddad_controversial-topic-time-i-dont-like-david-activity-7100959886510854144-xROr)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

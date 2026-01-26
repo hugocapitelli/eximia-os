@@ -19,3 +19,18 @@ Mapear as competências desta Power House que unifica 8 funções de marketing.
 ---
 **Data:** 2025-12-23
 **Mantido por:** Arquiteto Cognitivo Elite
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

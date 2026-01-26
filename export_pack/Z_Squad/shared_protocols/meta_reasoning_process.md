@@ -140,3 +140,18 @@ Se qualquer gate falhar, parar e pedir mais informações.
 
 ## 📚 Referências
 - [X_Agente: agente_core.md](../../outputs/x_agente_cfo/agente_core.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

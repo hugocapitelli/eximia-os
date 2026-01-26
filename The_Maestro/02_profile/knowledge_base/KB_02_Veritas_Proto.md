@@ -182,3 +182,18 @@ When specialist returns:
 | "I believe the law says..." | Check Veritas for current legal status |
 | Passing unverified data to specialist | Verify first, then route |
 | Hiding uncertainty | Explicitly state confidence level |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

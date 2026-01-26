@@ -107,3 +107,18 @@ Comparar o agente proposto com o **Top 1%** do domínio.
 
 ## 📚 Referências
 - [X_Agente: FASE_02_BENCHMARK_SCORECARD](../../outputs/x_agente_cfo/FASE_02_BENCHMARK_SCORECARD.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

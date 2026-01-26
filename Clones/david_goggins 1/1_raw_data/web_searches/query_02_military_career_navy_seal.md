@@ -64,3 +64,18 @@ David Goggins is the ONLY member of the U.S. Armed Forces to complete:
 - [ABOUT - David Goggins Official Site](https://davidgoggins.com/about/)
 - [The Toughest Man Alive Interview - DVIDS](https://www.dvidshub.net/news/301115/toughest-man-alive-interview-with-retired-navy-seal-david-goggins)
 - [David Goggins Before And After - NAVYSEAL.com](https://www.navyseal.com/david-goggins-before-and-after/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

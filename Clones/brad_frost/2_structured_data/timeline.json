@@ -1,0 +1,237 @@
+{
+    "metadata": {
+        "clone_target": "Brad Frost",
+        "extraction_date": "2026-01-19",
+        "total_events": 25,
+        "phases": 4
+    },
+    "timeline": [
+        {
+            "id": "t001",
+            "year": "Early 2000s",
+            "phase": "Foundation",
+            "event": "Started web design career",
+            "significance": "Beginning of professional journey in web design and development",
+            "category": "career"
+        },
+        {
+            "id": "t002",
+            "year": "~2010",
+            "phase": "Foundation",
+            "event": "Moved to Pittsburgh, Pennsylvania",
+            "significance": "Established base, became part of Pittsburgh design community",
+            "category": "personal"
+        },
+        {
+            "id": "t003",
+            "year": "2011",
+            "phase": "Responsive Era",
+            "event": "Mobile-first responsive web design advocacy begins",
+            "significance": "Early adoption and teaching of responsive design principles",
+            "category": "methodology"
+        },
+        {
+            "id": "t004",
+            "year": "2012",
+            "phase": "Responsive Era",
+            "event": "Created 'This Is Responsive resource",
+            "significance": "Comprehensive responsive design pattern library and resource",
+            "category": "tool"
+        },
+        {
+            "id": "t005",
+            "year": "2013",
+            "phase": "Atomic Design",
+            "event": "Atomic Design methodology introduced (blog post)",
+            "significance": "First public articulation of atoms → molecules → organisms → templates → pages framework",
+            "category": "methodology"
+        },
+        {
+            "id": "t006",
+            "year": "2013-2014",
+            "phase": "Atomic Design",
+            "event": "Co-created Pattern Lab with Dave Olsen and Brian Muenzenmeyer",
+            "significance": "Open-source tool to implement Atomic Design, became industry standard",
+            "category": "tool"
+        },
+        {
+            "id": "t007",
+            "year": "2014",
+            "phase": "Atomic Design",
+            "event": "Created 'WTF Mobile Web' with Jen Simmons",
+            "significance": "Advocacy project highlighting mobile web pain points",
+            "category": "advocacy"
+        },
+        {
+            "id": "t008",
+            "year": "2014",
+            "phase": "Atomic Design",
+            "event": "Developed 'Mobile Web Best Practices'",
+            "significance": "Educational resource for mobile web development",
+            "category": "education"
+        },
+        {
+            "id": "t009",
+            "year": "2015",
+            "phase": "Atomic Design",
+            "event": "Created 'Styleguides.io' with Anna Debenham",
+            "significance": "Comprehensive resource for style guide creation and maintenance",
+            "category": "tool"
+        },
+        {
+            "id": "t010",
+            "year": "2016",
+            "phase": "Atomic Design",
+            "event": "'Atomic Design' book published",
+            "significance": "Definitive text on methodology, available free online, became seminal work",
+            "category": "publication"
+        },
+        {
+            "id": "t011",
+            "year": "2016",
+            "phase": "Atomic Design",
+            "event": "Created 'Style Guide Guide'",
+            "significance": "Resource for building effective style guides",
+            "category": "tool"
+        },
+        {
+            "id": "t012",
+            "year": "2016-2018",
+            "phase": "Atomic Design",
+            "event": "Co-hosted 'Style Guides Podcast'",
+            "significance": "Discussions on design systems and style guides with industry experts",
+            "category": "media"
+        },
+        {
+            "id": "t013",
+            "year": "2017-present",
+            "phase": "Design Systems Mature",
+            "event": "Regular SmashingConf speaker and workshop leader",
+            "significance": "Became go-to expert for design systems education",
+            "category": "speaking"
+        },
+        {
+            "id": "t014",
+            "year": "2018",
+            "phase": "Design Systems Mature",
+            "event": "Transitioned to design system consultant full-time",
+            "significance": "Dedicated career to helping organizations build design systems",
+            "category": "career"
+        },
+        {
+            "id": "t015",
+            "year": "2019",
+            "phase": "Design Systems Mature",
+            "event": "Launched 'Wake Up Excited!' podcast",
+            "significance": "Platform for discussing meaningful work and career fulfillment",
+            "category": "media"
+        },
+        {
+            "id": "t016",
+            "year": "2020-2021",
+            "phase": "Design Systems Mature",
+            "event": "Advanced design systems workshops (online pivot)",
+            "significance": "Adapted teaching to remote format, expanded reach globally",
+            "category": "education"
+        },
+        {
+            "id": "t017",
+            "year": "2022",
+            "phase": "Tokens & Scale",
+            "event": "Created 'Subatomic: The Complete Guide To Design Tokens' course",
+            "significance": "Comprehensive education on design tokens architecture and governance",
+            "category": "education"
+        },
+        {
+            "id": "t018",
+            "year": "2022",
+            "phase": "Tokens & Scale",
+            "event": "SmashingConf SF: 'Creating Themeable Design Systems'",
+            "significance": "Advanced talk on multi-brand system architecture",
+            "category": "speaking"
+        },
+        {
+            "id": "t019",
+            "year": "2023",
+            "phase": "Tokens & Scale",
+            "event": "Focus on global/multi-brand design system architectures",
+            "significance": "Consulting on enterprise-scale system challenges",
+            "category": "consulting"
+        },
+        {
+            "id": "t020",
+            "year": "2024",
+            "phase": "Tokens & Scale",
+            "event": "SmashingConf NYC: 'Is Atomic Design Dead?'",
+            "significance": "Addressed misconceptions, discussed methodology evolution",
+            "category": "speaking"
+        },
+        {
+            "id": "t021",
+            "year": "2024",
+            "phase": "Tokens & Scale",
+            "event": "Participated in 'Design Systems Smashing Magazine Discussion'",
+            "significance": "Industry dialogue on state of design systems",
+            "category": "speaking"
+        },
+        {
+            "id": "t022",
+            "year": "2024-2025",
+            "phase": "Tokens & Scale",
+            "event": "Exploring AI integration in design systems",
+            "significance": "Addressing how AI affects design system workflows while maintaining principles",
+            "category": "research"
+        },
+        {
+            "id": "t023",
+            "year": "2025-2026",
+            "phase": "Tokens & Scale",
+            "event": "Blog post: 'Agentic Design Systems in 2026'",
+            "significance": "Exploring future of automated/AI-assisted design systems",
+            "category": "thought_leadership"
+        },
+        {
+            "id": "t024",
+            "year": "2025-2026",
+            "phase": "Tokens & Scale",
+            "event": "Continued workshops on advanced design systems topics",
+            "significance": "Teaching design tokens, governance, scalability",
+            "category": "education"
+        },
+        {
+            "id": "t025",
+            "year": "Ongoing",
+            "phase": "All",
+            "event": "Active blogging at bradfrost.com",
+            "significance": "Continuous thought leadership on design systems evolution",
+            "category": "writing"
+        }
+    ],
+    "phases": {
+        "foundation": {
+            "years": "Early 2000s - 2012",
+            "focus": "Web design fundamentals, responsive design emergence",
+            "key_developments": "Career start, Pittsburgh move, early responsive advocacy"
+        },
+        "responsive_era": {
+            "years": "2011-2013",
+            "focus": "Mobile-first, responsive patterns, This Is Responsive",
+            "key_developments": "Established expertise in responsive web design"
+        },
+        "atomic_design": {
+            "years": "2013-2017",
+            "focus": "Atomic Design methodology, Pattern Lab, book publication",
+            "key_developments": "Created foundational methodology and tools still used industry-wide"
+        },
+        "design_systems_mature": {
+            "years": "2017-2021",
+            "focus": "Design systems consulting, education, workshops",
+            "key_developments": "Full-time consultant, expanded teaching, Style Guides/Wake Up podcasts"
+        },
+        "tokens_and_scale": {
+            "years": "2022-present",
+            "focus": "Design tokens, multi-brand systems, AI integration",
+            "key_developments": "Subatomic course, advanced architectures, future-facing explorations"
+        }
+    }
+}

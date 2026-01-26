@@ -223,3 +223,18 @@ Para empresas até R$500M de faturamento:
 4. **Material events: immediate** disclosure
 5. **IT controls: critical** para SOX
 6. **Brasil: CPC/IFRS convergido** desde 2010
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

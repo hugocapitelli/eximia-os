@@ -90,3 +90,18 @@ Ao definir um agente, perguntar:
 - [HBR: The Art of Asking Questions](https://hbr.org/)
 - [McKinsey: MECE Framework](https://www.mckinsey.com/)
 - [Peter Drucker: Management by Objectives](https://drucker.institute/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

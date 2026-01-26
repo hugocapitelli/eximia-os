@@ -139,3 +139,18 @@ design_review:
 
 ## 📚 Referências
 - [X_Agente: FASE_03_DESIGN_REVIEW_BOARD](../../outputs/x_agente_cfo/FASE_03_DESIGN_REVIEW_BOARD.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

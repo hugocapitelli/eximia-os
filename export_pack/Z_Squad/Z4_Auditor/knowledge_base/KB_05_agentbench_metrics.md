@@ -164,3 +164,18 @@ Para contextualizar performance, comparar com scores públicos:
 - [AgentBench GitHub](https://github.com/THUDM/AgentBench)
 - [DeepEval Framework](https://github.com/confident-ai/deepeval)
 - [ToolLLM Paper](https://arxiv.org/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -255,3 +255,18 @@ Remember times you stayed hard before, use that fuel.
 - [80 David Goggins Quotes - InnerTune Blog](https://blog.innertune.com/david-goggins-quotes/)
 - [Stay Hard - 23 Quotes from David Goggins - Twitter/X](https://x.com/jbonhotal/status/1538626689953107969)
 - [100+ David Goggins Quotes - The Strive](https://thestrive.co/best-david-goggins-quotes-for-motivation/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -237,3 +237,18 @@ sem metodologia transparente.
 - Dhuliawala, S., Komeili, M., Xu, J., et al. (2023). *Chain-of-Verification Reduces Hallucination in Large Language Models*. ICLR 2024.
 - Lewis, P., et al. (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks*. NeurIPS.
 - Heuer, R. J. (1999). *Psychology of Intelligence Analysis*. CIA.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

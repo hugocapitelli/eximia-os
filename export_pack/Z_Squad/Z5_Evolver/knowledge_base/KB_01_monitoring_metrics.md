@@ -172,3 +172,18 @@ alertas:
 ## 📚 Referências
 - [Google SRE Book](https://sre.google/sre-book/)
 - [Datadog: Application Monitoring](https://www.datadoghq.com/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -40,3 +40,18 @@ Para a **ExÃ­mIA Ventures**, a soluÃ§Ã£o ideal nÃ£o Ã© uma ferramenta 
 - **Model:** N/A
 - **Tokens:** N/A
 - **Time:** N/Ams
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

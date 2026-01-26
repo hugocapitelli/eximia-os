@@ -244,3 +244,18 @@ circuit_breakers:
 ---
 
 **Próximo:** `FRAMEWORK_INDEX.md`
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

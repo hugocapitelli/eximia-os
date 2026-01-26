@@ -204,3 +204,18 @@ Proteção para decisões tomadas com:
 - Código de Melhores Práticas de Governança Corporativa, IBGC, 6ª Ed., 2023
 - Regulamento Novo Mercado B3, 2024
 - Lei 6.404/76, Arts. 121-165
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

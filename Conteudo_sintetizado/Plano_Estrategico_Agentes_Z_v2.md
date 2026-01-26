@@ -115,3 +115,18 @@ Para garantir que a "Auto-Evolução" não gere monstros:
 
 ---
 **Status:** Plano Refinado (v2.0). Aguardando aprovação para implementação.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Pesquisas]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

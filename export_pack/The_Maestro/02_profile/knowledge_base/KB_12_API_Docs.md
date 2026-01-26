@@ -73,3 +73,18 @@
 2. **Parallel**: A + B → merge
 3. **Conditional**: if A then B else C
 4. **Fallback**: try A, if fail try B
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

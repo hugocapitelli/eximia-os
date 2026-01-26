@@ -30,3 +30,18 @@ Para criar um time eficaz, definimos papéis agnósticos que podem ser preenchid
 Podemos adicionar "Skills" aos papéis via MCP (Model Context Protocol):
 *   `+ Access Database`
 *   `+ Access Slack`
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Pesquisas]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

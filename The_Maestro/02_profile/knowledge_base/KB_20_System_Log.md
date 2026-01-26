@@ -69,3 +69,18 @@ Require verification of specific issue.
 2. Categorize as A/B/C
 3. Update metrics baseline if changed
 4. Trigger Z4 Auditor re-validation if Category A
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

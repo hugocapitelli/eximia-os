@@ -134,3 +134,18 @@ This approach is:
 - [A Bodybuilder Tried David Goggins' Diet - Men's Health](https://www.menshealth.com/nutrition/a35599551/david-goggins-weight-loss-diet-plan-bodybuilder-review-aseel-soueid/)
 - [106 Pounds in 3 Months - University of Oregon](https://blogs.uoregon.edu/meditative/david-goggins-weight-loss-transformation-106-pounds-in-3-months/)
 - [100 Pound Weight Loss Diet - BOXROX](https://www.boxrox.com/what-happens-when-you-try-the-david-goggins-100-pound-weight-loss-diet-2/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

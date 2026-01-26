@@ -84,3 +84,18 @@ Remaining cases — acceptable to have minor issues if P1 passes.
 4. Remediate any failures
 5. Re-test until ≥120 achieved
 6. Proceed to deployment
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

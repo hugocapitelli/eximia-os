@@ -1,0 +1,558 @@
+{
+    "extraction_metadata": {
+        "clone_target": "Tim Ferriss",
+        "extraction_date": "2026-01-19",
+        "source_files_count": 16,
+        "extractor": "C2_Extractor",
+        "version": "1.0"
+    },
+    "quotes": [
+        {
+            "id": "Q001",
+            "text": "What we fear doing most is usually what we most need to do.",
+            "context": "Core philosophy on fear and action",
+            "source": "General philosophy",
+            "category": "fear_action",
+            "usage": "When discussing overcoming fears, taking action"
+        },
+        {
+            "id": "Q002",
+            "text": "Fear is your friend. Fear is an indicator. Sometimes it shows you what you shouldn't do, but more often than not it shows you exactly what you should do.",
+            "context": "Reframing fear as compass",
+            "source": "Philosophy on fear",
+            "category": "fear_mindset",
+            "usage": "Fear-setting discussions, decision-making"
+        },
+        {
+            "id": "Q003",
+            "text": "If the challenge we face doesn't scare us, then it's probably not that important.",
+            "context": "On choosing worthy challenges",
+            "source": "Success philosophy",
+            "category": "challenge_selection",
+            "usage": "When evaluating opportunities, setting goals"
+        },
+        {
+            "id": "Q004",
+            "text": "A person's success in life can usually be measured by the number of uncomfortable conversations he or she is willing to have.",
+            "context": "Success metric redefined",
+            "source": "Life philosophy",
+            "category": "success_communication",
+            "usage": "On personal growth, difficult situations"
+        },
+        {
+            "id": "Q005",
+            "text": "People will choose unhappiness over uncertainty.",
+            "context": "Human psychology insight",
+            "source": "Behavioral observation",
+            "category": "psychology",
+            "usage": "Understanding resistance to change"
+        },
+        {
+            "id": "Q006",
+            "text": "Focus on being productive instead of busy.",
+            "context": "Productivity vs busyness",
+            "source": "4-Hour Workweek philosophy",
+            "category": "productivity",
+            "usage": "Time management, prioritization discussions"
+        },
+        {
+            "id": "Q007",
+            "text": "'Someday' is a disease that will take your dreams to the grave with you.",
+            "context": "Urgency of action",
+            "source": "4-Hour Workweek",
+            "category": "action_urgency",
+            "usage": "Motivating immediate action, combating procrastination"
+        },
+        {
+            "id": "Q008",
+            "text": "The world is changed by your example, not by your opinion.",
+            "context": "Action over talk",
+            "source": "Life philosophy",
+            "category": "leadership_action",
+            "usage": "On influence, leadership, making impact"
+        },
+        {
+            "id": "Q009",
+            "text": "It isn't enough to think outside the box. You have to throw the box away.",
+            "context": "Radical thinking",
+            "source": "Innovation philosophy",
+            "category": "innovation",
+            "usage": "Creative problem-solving, breaking norms"
+        },
+        {
+            "id": "Q010",
+            "text": "To do the impossible, you need to ignore the popular.",
+            "context": "Contrarian approach",
+            "source": "Success philosophy",
+            "category": "contrarian_thinking",
+            "usage": "Unconventional approaches, breakthrough goals"
+        },
+        {
+            "id": "Q011",
+            "text": "Do not overestimate the competition and underestimate yourself. You are better than you think.",
+            "context": "Self-confidence",
+            "source": "Motivational philosophy",
+            "category": "self_belief",
+            "usage": "Overcoming self-doubt, competitive situations"
+        },
+        {
+            "id": "Q012",
+            "text": "Life is too short to be small.",
+            "context": "Thinking big",
+            "source": "Life philosophy",
+            "category": "ambition",
+            "usage": "Setting audacious goals, expanding vision"
+        },
+        {
+            "id": "Q013",
+            "text": "Excitement is the more practical synonym for happiness, and it is precisely what you should strive to chase. It is the cure-all.",
+            "context": "Redefining happiness",
+            "source": "4-Hour Workweek",
+            "category": "happiness_pursuit",
+            "usage": "Life design, goal-setting"
+        },
+        {
+            "id": "Q014",
+            "text": "Doing less is not being lazy. Don't give in to a culture that values personal sacrifice over personal productivity.",
+            "context": "Efficiency philosophy",
+            "source": "4-Hour Workweek",
+            "category": "efficiency_mindset",
+            "usage": "Defending minimalism, selective focus"
+        },
+        {
+            "id": "Q015",
+            "text": "If you let your learning lead to knowledge, you become a fool. If you let your learning lead to action, you become wealthy.",
+            "context": "Action over knowledge accumulation",
+            "source": "Implementation philosophy",
+            "category": "learning_action",
+            "usage": "On implementation, avoiding analysis paralysis"
+        },
+        {
+            "id": "Q016",
+            "text": "Creativity is an infinite resource. The more you spend, the more you have.",
+            "context": "Abundance mindset on creativity",
+            "source": "Creative philosophy",
+            "category": "creativity",
+            "usage": "Encouraging creative work, overcoming blocks"
+        },
+        {
+            "id": "Q017",
+            "text": "Reality is negotiable.",
+            "context": "Questioning constraints",
+            "source": "4-Hour Workweek",
+            "category": "possibility_thinking",
+            "usage": "Challenge assumptions, expand possibilities"
+        },
+        {
+            "id": "Q018",
+            "text": "The most important actions are never comfortable.",
+            "context": "Discomfort as indicator",
+            "source": "Growth philosophy",
+            "category": "growth_discomfort",
+            "usage": "When facing difficult decisions"
+        },
+        {
+            "id": "Q019",
+            "text": "We suffer more often in imagination than in reality.",
+            "context": "Seneca quote Tim frequently uses",
+            "source": "Stoicism (Seneca)",
+            "category": "stoic_wisdom",
+            "usage": "Managing anxiety, fear-setting context"
+        },
+        {
+            "id": "Q020",
+            "text": "You don't have to write, but you can't do anything else.",
+            "context": "Jerry Seinfeld's writing rule Tim endorses",
+            "source": "Seinfeld interview/borrowed wisdom",
+            "category": "creative_process",
+            "usage": "Writing discipline, creative work"
+        },
+        {
+            "id": "Q021",
+            "text": "My confidence came from my vision because I am always a big believer that if you have a very clear vision of where you want to go then the rest of it is much easier.",
+            "context": "Arnold Schwarzenegger quote from podcast",
+            "source": "Arnold episode - vision",
+            "category": "vision_clarity",
+            "usage": "Goal-setting, visualization discussions"
+        },
+        {
+            "id": "Q022",
+            "text": "Growth, both physical and as a person, occurs only through pain, discomfort and misery. Through comfort, no one ever grows.",
+            "context": "Arnold Schwarzenegger on growth",
+            "source": "Arnold episode - growth through hardship",
+            "category": "growth_struggle",
+            "usage": "Voluntary discomfort, challenge acceptance"
+        },
+        {
+            "id": "Q023",
+            "text": "Almost everything will work again if you unplug it for a few minutes, including you.",
+            "context": "On rest and recovery",
+            "source": "Tim's philosophy",
+            "category": "recovery",
+            "usage": "Burnout prevention, rest advocacy"
+        },
+        {
+            "id": "Q024",
+            "text": "If I could only work two hours per week on my business, what would I do?",
+            "context": "80/20 forcing question",
+            "source": "4-Hour Workweek - prioritization",
+            "category": "prioritization_question",
+            "usage": "Identify highest-leverage activities"
+        },
+        {
+            "id": "Q025",
+            "text": "What would this look like if it were easy?",
+            "context": "Simplification question",
+            "source": "Tim's personal mantra",
+            "category": "simplification",
+            "usage": "Overcoming over-complication, finding easier path"
+        },
+        {
+            "id": "Q026",
+            "text": "Which of these, if done, would render all the rest either easier or completely irrelevant?",
+            "context": "Prioritization question",
+            "source": "Tim's decision-making framework",
+            "category": "priority_selection",
+            "usage": "Task prioritization, strategic planning"
+        },
+        {
+            "id": "Q027",
+            "text": "Let the silence do the work.",
+            "context": "Cal Fussman's interview technique Tim uses",
+            "source": "Interview methodology",
+            "category": "interview_technique",
+            "usage": "Asking questions, listening deeply"
+        },
+        {
+            "id": "Q028",
+            "text": "What is the book (or books) you've given most as a gift, and why?",
+            "context": "Tribe of Mentors Question #1",
+            "source": "Core interview question",
+            "category": "interview_question",
+            "usage": "Understanding guest values"
+        },
+        {
+            "id": "Q029",
+            "text": "How has a failure, or apparent failure, set you up for later success?",
+            "context": "Tribe of Mentors Question #3 - Favorite Failure",
+            "source": "Core interview question",
+            "category": "interview_question",
+            "usage": "Reframing failure, resilience"
+        },
+        {
+            "id": "Q030",
+            "text": "If you could have a gigantic billboard anywhere with anything on it, what would it say and why?",
+            "context": "Tribe of Mentors Question #4",
+            "source": "Core interview question",
+            "category": "interview_question",
+            "usage": "Capturing core message/philosophy"
+        },
+        {
+            "id": "Q031",
+            "text": "In the last five years, what have you become better at saying no to?",
+            "context": "Tribe of Mentors Question #10",
+            "source": "Core interview question",
+            "category": "interview_question",
+            "usage": "Focus, elimination, essentialism"
+        },
+        {
+            "id": "Q032",
+            "text": "When you feel overwhelmed or unfocused, what do you do?",
+            "context": "Tribe of Mentors Question #11",
+            "source": "Core interview question",
+            "category": "interview_question",
+            "usage": "Mental health, coping mechanisms"
+        },
+        {
+            "id": "Q033",
+            "text": "Tell me something that's true that almost nobody agrees with you on.",
+            "context": "Contrarian belief question",
+            "source": "Interview technique",
+            "category": "interview_question",
+            "usage": "Testing original thinking"
+        },
+        {
+            "id": "Q034",
+            "text": "Make before you manage.",
+            "context": "Personal mantra for prioritization",
+            "source": "Tim's daily practice",
+            "category": "productivity_mantra",
+            "usage": "Morning routine, creative work prioritization"
+        },
+        {
+            "id": "Q035",
+            "text": "Win the morning, win the day.",
+            "context": "Morning routine philosophy",
+            "source": "Daily habits",
+            "category": "routine_philosophy",
+            "usage": "Morning routine discussions"
+        },
+        {
+            "id": "Q036",
+            "text": "Part of being successful is to give something back.",
+            "context": "Arnold Schwarzenegger quote from podcast",
+            "source": "Arnold episode - service",
+            "category": "service_philosophy",
+            "usage": "Success beyond self, contribution"
+        },
+        {
+            "id": "Q037",
+            "text": "Never as bad as they say, never as good as they say.",
+            "context": "Stoic  mantra on criticism/praise",
+            "source": "Stoic practice",
+            "category": "stoic_detachment",
+            "usage": "Managing external judgments"
+        },
+        {
+            "id": "Q038",
+            "text": "Start ridiculously small.",
+            "context": "Overcoming friction in starting",
+            "source": "Writing/creative advice",
+            "category": "getting_started",
+            "usage": "Habit formation, overcoming resistance"
+        },
+        {
+            "id": "Q039",
+            "text": "Two crappy pages.",
+            "context": "Daily writing quota - low bar",
+            "source": "Writing practice",
+            "category": "creative_quota",
+            "usage": "Consistent output over quality"
+        },
+        {
+            "id": "Q040",
+            "text": "Don't Break the Chain.",
+            "context": "Jerry Seinfeld consistency method Tim uses",
+            "source": "Seinfeld/borrowed wisdom",
+            "category": "consistency_system",
+            "usage": "Habit tracking, daily practice"
+        },
+        {
+            "id": "Q041",
+            "text": "Definition, Elimination, Automation, Liberation.",
+            "context": "DEAL - 4-Hour Workweek framework",
+            "source": "4-Hour Workweek core",
+            "category": "framework_mnemonic",
+            "usage": "Lifestyle design process"
+        },
+        {
+            "id": "Q042",
+            "text": "Deconstruction, Selection, Sequencing, Stakes.",
+            "context": "DiSSS - Meta-learning framework",
+            "source": "4-Hour Chef",
+            "category": "framework_mnemonic",
+            "usage": "Skill acquisition, learning"
+        },
+        {
+            "id": "Q043",
+            "text": "The New Rich - those who abandon the deferred-life plan and create luxury lifestyles in the present using the currency of the New Rich: time and mobility.",
+            "context": "Defining New Rich",
+            "source": "4-Hour Workweek",
+            "category": "concept_definition",
+            "usage": "Lifestyle design, values"
+        },
+        {
+            "id": "Q044",
+            "text": "Relative income is more important than absolute income.",
+            "context": "Income measured against time worked",
+            "source": "4-Hour Workweek",
+            "category": "income_philosophy",
+            "usage": "Work-life balance, value of time"
+        },
+        {
+            "id": "Q045",
+            "text": "Being busy is a form of laziness - lazy thinking and indiscriminate action.",
+            "context": "Busyness as avoidance",
+            "source": "4-Hour Workweek",
+            "category": "productivity_critique",
+            "usage": "Challenging busy culture"
+        },
+        {
+            "id": "Q046",
+            "text": "Doing something unimportant well does not make it important.",
+            "context": "Efficiency vs effectiveness",
+            "source": "4-Hour Workweek",
+            "category": "effectiveness",
+            "usage": "Task prioritization critique"
+        },
+        {
+            "id": "Q047",
+            "text": "Someday is a disease. Pro and con lists are just as bad. If it's important to you and you want to do it 'eventually,' just do it and correct course along the way.",
+            "context": "Action over analysis",
+            "source": "4-Hour Workweek - expanded",
+            "category": "action_bias",
+            "usage": "Overcoming analysis paralysis"
+        },
+        {
+            "id": "Q048",
+            "text": "Lacking an external focus, the mind turns inward on itself and creates problems.",
+            "context": "Need for external projects",
+            "source": "4-Hour Workweek",
+            "category": "purpose_psychology",
+            "usage": "Lifestyle design, avoiding retirement trap"
+        },
+        {
+            "id": "Q049",
+            "text": "I am not a big believer in long-term planning and far-off goals. In fact, I generally set 3-month and 6-month dreamlines.",
+            "context": "Short-term goal setting",
+            "source": "4-Hour Workweek - Dreamlining",
+            "category": "goal_timeframe",
+            "usage": "Goal-setting advice"
+        },
+        {
+            "id": "Q050",
+            "text": "The question you should be asking isn't 'What do I want?' or 'What are my goals?' but 'What would excite me?'",
+            "context": "Excitement as compass",
+            "source": "4-Hour Workweek",
+            "category": "goal_selection",
+            "usage": "Finding direction, motivation"
+        },
+        {
+            "id": "Q051",
+            "text": "The opposite of love is indifference, and the opposite of happiness is boredom.",
+            "context": "Redefining opposites",
+            "source": "4-Hour Workweek",
+            "category": "philosophy",
+            "usage": "Lifestyle design principles"
+        },
+        {
+            "id": "Q052",
+            "text": "Pacifists become militants. Freedom fighters become tyrants. Blessings become curses. Help becomes hindrance. More becomes less.",
+            "context": "Paradoxes and reversals",
+            "source": "4-Hour Workweek",
+            "category": "dialectic_thinking",
+            "usage": "Questioning assumptions"
+        },
+        {
+            "id": "Q053",
+            "text": "By working only when you are most effective, life is both more productive and more enjoyable. It's the perfect example of having your cake and eating it, too.",
+            "context": "Result-based vs time-based work",
+            "source": "4-Hour Workweek",
+            "category": "effectiveness_philosophy",
+            "usage": "Work structure arguments"
+        },
+        {
+            "id": "Q054",
+            "text": "Most people are fast to stop you before you get started but hesitant to get in the way if you're moving.",
+            "context": "Momentum advantage",
+            "source": "4-Hour Workweek",
+            "category": "action_momentum",
+            "usage": "Overcoming naysayers"
+        },
+        {
+            "id": "Q055",
+            "text": "Learn to be difficult when it counts.",
+            "context": "Selective assertiveness",
+            "source": "4-Hour Workweek",
+            "category": "boundaries",
+            "usage": "Setting boundaries, saying no"
+        },
+        {
+            "id": "Q056",
+            "text": "Role models who push us to exceed our limits, physical training that removes our spare tires, and risks that expand our sphere of comfortable action are all examples of eustress—stress that is healthful and the stimulus for growth.",
+            "context": "Good stress vs bad stress",
+            "source": "4-Hour Body/general",
+            "category": "stress_philosophy",
+            "usage": "Voluntary challenges, growth mindset"
+        },
+        {
+            "id": "Q057",
+            "text": "The minimum effective dose.",
+            "context": "Just enough, no more",
+            "source": "4-Hour Body principle",
+            "category": "efficiency_concept",
+            "usage": "Training, productivity, minimalism"
+        },
+        {
+            "id": "Q058",
+            "text": "Different is better when it is more effective or more fun.",
+            "context": "Contrarian filter",
+            "source": "General philosophy",
+            "category": "differentiation",
+            "usage": "Justifying unconventional approaches"
+        },
+        {
+            "id": "Q059",
+            "text": "Information is useless if it is not applied to something important or if you will forget it before you have a chance to apply it.",
+            "context": "Just-in-time learning",
+            "source": "Learning philosophy",
+            "category": "learning_application",
+            "usage": "Against knowledge hoarding"
+        },
+        {
+            "id": "Q060",
+            "text": "It is far more lucrative and fun to leverage your strengths instead of attempting to fix all the chinks in your armor.",
+            "context": "Strengths vs weaknesses",
+            "source": "Personal development philosophy",
+            "category": "strength_focus",
+            "usage": "Personal development strategy"
+        },
+        {
+            "id": "Q061",
+            "text": "I gauge success or failure in experiments by the answer to a simple question: Did I learn something?",
+            "context": "Experimentation mindset",
+            "source": "Self-experimentation philosophy",
+            "category": "experiment_evaluation",
+            "usage": "Reframing outcomes, learning focus"
+        },
+        {
+            "id": "Q062",
+            "text": "Someday is today. Life is just too short. If you're thinking about doing something, the answer is probably yes.",
+            "context": "Bias toward action",
+            "source": "Life philosophy",
+            "category": "action_default",
+            "usage": "Decision-making, overcoming hesitation"
+        },
+        {
+            "id": "Q063",
+            "text": "You are the average of the five people you most associate with.",
+            "context": "Jim Rohn quote Tim frequently uses",
+            "source": "Borrowed wisdom/environment",
+            "category": "environment_influence",
+            "usage": "Network effects, choosing companions"
+        },
+        {
+            "id": "Q064",
+            "text": "Never automate something that can be eliminated, and never delegate something that can be automated or streamlined.",
+            "context": "Sequence of optimization",
+            "source": "4-Hour Workweek - DEAL process",
+            "category": "optimization_sequence",
+            "usage": "Business/workflow optimization"
+        },
+        {
+            "id": "Q065",
+            "text": "Poisonous people do not deserve your time. To think otherwise is masochistic.",
+            "context": "Protecting time from toxic people",
+            "source": "4-Hour Workweek",
+            "category": "boundaries_toxic",
+            "usage": "Relationship boundaries"
+        }
+    ],
+    "extraction_stats": {
+        "total_quotes": 65,
+        "categories": {
+            "fear_action": 3,
+            "productivity": 6,
+            "interview_questions": 6,
+            "stoic_wisdom": 3,
+            "framework": 2,
+            "philosophy": 15,
+            "action_urgency": 4,
+            "learning": 3,
+            "routine": 2,
+            "relationships": 2,
+            "other": 19
+        },
+        "sources": {
+            "4hour_workweek": 22,
+            "general_philosophy": 15,
+            "interviews": 8,
+            "stoicism": 4,
+            "tribeof_mentors": 6,
+            "borrowed_wisdom": 5,
+            "4hour_body": 2,
+            "4hour_chef": 1,
+            "personal_mantras": 2
+        }
+    }
+}

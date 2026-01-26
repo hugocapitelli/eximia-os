@@ -161,3 +161,18 @@
 - [David Goggins's Race Results - Ultrarunning.com](https://ultrarunning.com/calendar/runner/view/David-Goggins-1fa9c71c-0fe9-11ea-99ce-624db84c3c72)
 - [Getting to the Badwater 135: David Goggins' Journey - Shortform](https://www.shortform.com/blog/badwater-135-david-goggins/)
 - [AdventureCORPS - David Goggins Historical Data](https://dbase.adventurecorps.com/individualHistory.php?p=21)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

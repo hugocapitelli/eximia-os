@@ -302,3 +302,18 @@ Acao sugerida:
 - Manter historico completo
 - Permitir revisao de decisoes
 - Suportar apelacoes de alunos
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

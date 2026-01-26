@@ -201,3 +201,18 @@ The agent will pause and ask clarifying questions when it detects:
 ---
 
 *ProtoOS — Transforming visions into actionable product documentation*
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

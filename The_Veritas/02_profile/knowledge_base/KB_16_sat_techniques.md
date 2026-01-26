@@ -230,3 +230,18 @@ VARIÁVEL   │   (Bear)    │  (Mixed A)  │
 - CIA. (2009). *A Tradecraft Primer: Structured Analytic Techniques*.
 - Heuer, R. J. & Pherson, R. H. (2014). *Structured Analytic Techniques for Intelligence Analysis*.
 - Heuer, R. J. (1999). *Psychology of Intelligence Analysis*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

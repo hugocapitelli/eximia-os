@@ -253,3 +253,18 @@ certas, e possivel ser sustentavel e lucrativo ao mesmo tempo.
 - Sem conectores tipicos de LLM
 
 **Resultado:** Probabilidade = 0.45, Flag = null, Confidence = medium
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

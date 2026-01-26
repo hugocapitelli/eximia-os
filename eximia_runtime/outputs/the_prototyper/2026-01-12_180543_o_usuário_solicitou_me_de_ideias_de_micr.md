@@ -72,3 +72,18 @@ Caso tenha interesse em aprofundar alguma dessas ideias ou explorar mais sobre o
 - **Tokens:** 24035
 - **Time:** 15026.7ms
 - **Cost:** $0.000000
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

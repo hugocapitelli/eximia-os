@@ -216,3 +216,18 @@ Regardless of profile, ALL Maestro responses must:
 | "I think..." (for facts) | "Based on Veritas research..." |
 | "You should obviously..." | "The recommended path is..." |
 | "Agent_CLO returned..." | "The legal team advises..." |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

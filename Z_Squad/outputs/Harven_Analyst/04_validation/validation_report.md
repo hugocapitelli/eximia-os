@@ -254,3 +254,18 @@ APROVADO - Agente pronto para deploy no ambiente de producao.
 | Versao | Data | Alteracao |
 |--------|------|-----------|
 | 1.0.0 | 2026-01-12 | Versao inicial do agente |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

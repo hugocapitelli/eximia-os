@@ -1,0 +1,462 @@
+# Attack Vectors: Desafios a Experiential Learning Theory
+# Red Team Analysis — David Kolb
+# Total: 20 vetores organizados por categoria
+
+---
+
+meta:
+  theory: "Experiential Learning Theory (ELT)"
+  author: "David A. Kolb"
+  source_work: "Experiential Learning (2015, 2nd ed)"
+  generated_by: "A Refinaria LX Processing"
+  purpose: "Academic stress-testing and critical analysis"
+  total_vectors: 20
+
+---
+
+# CATEGORIA 1: PSICOMETRIA E METODOLOGIA
+
+vectors:
+  - id: "AV-01"
+    name: "LSI Reliability Crisis"
+    category: "Psychometric"
+    target: "Learning Style Inventory (LSI)"
+    severity: "High"
+
+    premise_attacked: "LSI is a valid instrument for measuring learning styles"
+
+    attack:
+      summary: "Multiple studies show poor test-retest reliability"
+      evidence:
+        - source: "Freedman & Stumpf (1980)"
+          finding: "LSI showed inconsistent factor structure"
+        - source: "Coffield et al. (2004)"
+          finding: "Classified LSI as having 'low reliability and validity'"
+        - source: "Kayes (2005)"
+          finding: "Factor analysis did not support four-style model"
+
+    counter_argument: |
+      If the instrument measuring learning styles has poor reliability,
+      how can we trust conclusions about the existence and nature of
+      those styles?
+
+    kolb_defense: "LSI 4.0 addressed many of these concerns; instrument is for reflection, not diagnosis"
+
+    rebuttal: "Even LSI 4.0 lacks independent validation; 'reflection tool' framing is unfalsifiable"
+
+  - id: "AV-02"
+    name: "Matching Hypothesis Failure"
+    category: "Empirical"
+    target: "Pedagogical recommendations"
+    severity: "Critical"
+
+    premise_attacked: "Matching teaching style to learning style improves outcomes"
+
+    attack:
+      summary: "No rigorous evidence supports the matching hypothesis"
+      evidence:
+        - source: "Pashler et al. (2008)"
+          finding: "No support for matching in controlled studies"
+        - source: "Willingham (2015)"
+          finding: "American Educator review found no valid evidence"
+        - source: "Rogowsky et al. (2015)"
+          finding: "No interaction between style and instruction mode"
+
+    counter_argument: |
+      If matching doesn't improve learning, what is the practical
+      value of knowing one's "learning style"?
+
+    kolb_defense: "Flexibility is the goal, not matching"
+
+    rebuttal: "If flexibility is the goal, why develop a categorization instrument at all?"
+
+  - id: "AV-03"
+    name: "Cycle Sequence Untested"
+    category: "Methodological"
+    target: "Experiential Learning Cycle"
+    severity: "Medium"
+
+    premise_attacked: "Learning follows the EC→OR→CA→EA sequence"
+
+    attack:
+      summary: "No empirical studies tracking actual cognitive sequence"
+      evidence:
+        - source: "Jarvis (2004)"
+          finding: "Proposed more complex, non-linear model"
+        - source: "Fenwick (2000)"
+          finding: "Five alternative perspectives on experiential learning"
+
+    counter_argument: |
+      The cycle is asserted, not demonstrated. Where is the cognitive
+      science evidence of this sequence occurring in learners' minds?
+
+    kolb_defense: "The cycle is a heuristic, not a literal description"
+
+    rebuttal: "Heuristics should still be validated for practical usefulness"
+
+---
+
+# CATEGORIA 2: FUNDAMENTOS FILOSOFICOS
+
+  - id: "AV-04"
+    name: "Dewey Misreading"
+    category: "Philosophical"
+    target: "Theoretical foundations"
+    severity: "Medium"
+
+    premise_attacked: "ELT is faithful to Dewey's concept of experience"
+
+    attack:
+      summary: "Kolb's 'concrete experience' is narrower than Dewey intended"
+      evidence:
+        - source: "Miettinen (2000)"
+          finding: "Kolb divorces experience from Dewey's social context"
+        - source: "Beckett & Hager (2002)"
+          finding: "Dewey's experience was transactional, not individualist"
+
+    counter_argument: |
+      Dewey's "experience" included cognitive and social dimensions,
+      not just sensory immersion. Kolb's "concrete experience" is a
+      reduction, not a faithful reading.
+
+    kolb_defense: "Synthesis, not exact replication, was the goal"
+
+    rebuttal: "Misattribution undermines theoretical credibility"
+
+  - id: "AV-05"
+    name: "Piaget Analogy Stretch"
+    category: "Philosophical"
+    target: "Developmental claims"
+    severity: "Low"
+
+    premise_attacked: "ELT extends Piaget's developmental stages"
+
+    attack:
+      summary: "Piaget described sequential stages, not concurrent styles"
+      evidence:
+        - source: "Piaget (1970)"
+          finding: "Stages are sequential and universal, not preference-based"
+
+    counter_argument: |
+      Using Piaget's stage theory to justify simultaneous "styles"
+      conflates development with preference. These are different constructs.
+
+  - id: "AV-06"
+    name: "Lewin Extrapolation"
+    category: "Philosophical"
+    target: "T-Group foundation"
+    severity: "Low"
+
+    premise_attacked: "T-Groups validate individual learning cycle"
+
+    attack:
+      summary: "Lewin focused on group dynamics, not individual cognition"
+      evidence:
+        - source: "Lewin (1946)"
+          finding: "Action research was about social change, not learning styles"
+
+    counter_argument: |
+      T-Groups were designed for group development and social psychology,
+      not for validating individual learning preferences.
+
+---
+
+# CATEGORIA 3: EVIDENCIA EMPIRICA
+
+  - id: "AV-07"
+    name: "Publication Bias"
+    category: "Empirical"
+    target: "Research base"
+    severity: "Medium"
+
+    premise_attacked: "50 years of research supports ELT"
+
+    attack:
+      summary: "Positive studies published; null results underreported"
+      evidence:
+        - source: "General publication bias literature"
+          finding: "Null results are rarely published in education research"
+
+    counter_argument: |
+      Citing "50 years of research" without systematic review of
+      null and negative findings creates survivorship bias.
+
+  - id: "AV-08"
+    name: "WEIRD Sample Bias"
+    category: "Empirical"
+    target: "Generalizability"
+    severity: "High"
+
+    premise_attacked: "ELT describes universal human learning"
+
+    attack:
+      summary: "Most research on Western, Educated, Industrialized samples"
+      evidence:
+        - source: "Henrich et al. (2010)"
+          finding: "Psychology findings often don't replicate cross-culturally"
+        - source: "Joy & Kolb (2009)"
+          finding: "Regional variations exist but interpretation contested"
+
+    counter_argument: |
+      Claiming universality from predominantly American/European
+      samples is scientifically unjustified.
+
+  - id: "AV-09"
+    name: "Self-Report Validity"
+    category: "Methodological"
+    target: "LSI methodology"
+    severity: "Medium"
+
+    premise_attacked: "People accurately report their learning preferences"
+
+    attack:
+      summary: "Self-reports are vulnerable to social desirability and poor metacognition"
+      evidence:
+        - source: "Nisbett & Wilson (1977)"
+          finding: "People have limited access to cognitive processes"
+
+    counter_argument: |
+      If people cannot accurately introspect their learning processes,
+      self-report instruments measure perceived, not actual, styles.
+
+---
+
+# CATEGORIA 4: CRITICAS PRATICAS
+
+  - id: "AV-10"
+    name: "Implementation Cost"
+    category: "Practical"
+    target: "Educational reform proposals"
+    severity: "Medium"
+
+    premise_attacked: "Education should move to experiential model"
+
+    attack:
+      summary: "Experiential learning at scale is resource-intensive"
+      evidence:
+        - source: "Cost analysis"
+          finding: "Labs, simulations, field work cost more than lectures"
+
+    counter_argument: |
+      Advocating experiential education without addressing resource
+      constraints ignores implementation reality for most institutions.
+
+  - id: "AV-11"
+    name: "Elite Bias"
+    category: "Practical"
+    target: "Implicit assumptions"
+    severity: "Medium"
+
+    premise_attacked: "All learners benefit from experiential approach"
+
+    attack:
+      summary: "Kolb developed theory at elite institutions (MIT, Harvard, Case Western)"
+      evidence:
+        - source: "Biographical data"
+          finding: "Career entirely in well-resourced academic environments"
+
+    counter_argument: |
+      Theory developed with privileged populations may not transfer
+      to under-resourced contexts where "concrete experiences" are limited.
+
+  - id: "AV-12"
+    name: "Time Inefficiency"
+    category: "Practical"
+    target: "Full cycle completion"
+    severity: "Low"
+
+    premise_attacked: "The full cycle should be completed for deep learning"
+
+    attack:
+      summary: "Completing four stages takes longer than direct instruction"
+      evidence:
+        - source: "Sweller (1988)"
+          finding: "Cognitive load theory suggests direct instruction more efficient for novices"
+
+    counter_argument: |
+      For time-constrained learning, is full-cycle experiential learning
+      more efficient than well-designed direct instruction?
+
+---
+
+# CATEGORIA 5: ALTERNATIVAS TEORICAS
+
+  - id: "AV-13"
+    name: "Cognitive Load Superiority"
+    category: "Alternative Theory"
+    target: "ELT overall"
+    severity: "High"
+
+    premise_attacked: "ELT is the best framework for understanding learning"
+
+    alternative_theory:
+      name: "Cognitive Load Theory"
+      author: "John Sweller"
+      advantage: "Empirically validated, specific mechanisms, testable predictions"
+
+    counter_argument: |
+      Cognitive Load Theory has stronger empirical base and makes
+      more specific, testable predictions about learning.
+
+  - id: "AV-14"
+    name: "Deliberate Practice Specificity"
+    category: "Alternative Theory"
+    target: "Learning style preferences"
+    severity: "Medium"
+
+    premise_attacked: "Learning preferences matter for skill development"
+
+    alternative_theory:
+      name: "Deliberate Practice"
+      author: "K. Anders Ericsson"
+      advantage: "Domain-specific, measurable, progression-focused"
+
+    counter_argument: |
+      Deliberate practice research suggests domain matters more than
+      learner preference for expert performance development.
+
+  - id: "AV-15"
+    name: "Situated Learning Context"
+    category: "Alternative Theory"
+    target: "Individual focus of ELT"
+    severity: "Medium"
+
+    premise_attacked: "Learning is primarily an individual process"
+
+    alternative_theory:
+      name: "Situated Learning"
+      author: "Lave & Wenger"
+      advantage: "Explains social dimension ELT underemphasizes"
+
+    counter_argument: |
+      Learning is fundamentally social and contextual. ELT's
+      individual focus misses the community of practice dimension.
+
+---
+
+# CATEGORIA 6: LOGICA INTERNA
+
+  - id: "AV-16"
+    name: "Flexibility Paradox"
+    category: "Logical"
+    target: "Core constructs"
+    severity: "High"
+
+    premise_attacked: "Styles are real but flexibility is the goal"
+
+    attack:
+      summary: "Tension between categorical instrument and flexibility ideal"
+
+    counter_argument: |
+      If the goal is flexibility and styles vary by context, what
+      does the LSI actually measure? This is internally contradictory.
+
+  - id: "AV-17"
+    name: "Tautology Risk"
+    category: "Logical"
+    target: "Theory structure"
+    severity: "Medium"
+
+    premise_attacked: "Experiential learning is the source of learning"
+
+    attack:
+      summary: "Defining learning as coming from experience is near-tautological"
+
+    counter_argument: |
+      "Learning comes from experience" is almost definitionally true,
+      making it unfalsifiable and scientifically weak.
+
+  - id: "AV-18"
+    name: "Falsifiability Deficit"
+    category: "Logical"
+    target: "Theory as whole"
+    severity: "High"
+
+    premise_attacked: "ELT is a scientific theory"
+
+    attack:
+      summary: "What would falsify ELT? If nothing, it's not scientific"
+
+    counter_argument: |
+      Kolb presents ELT as "comprehensive theory" but it's difficult
+      to imagine what evidence would disprove it. This violates
+      Popper's falsifiability criterion.
+
+---
+
+# CATEGORIA 7: COMERCIALIZACAO
+
+  - id: "AV-19"
+    name: "Commercial Interests"
+    category: "Conflict of Interest"
+    target: "LSI instrument"
+    severity: "Medium"
+
+    premise_attacked: "LSI recommendations are purely scientific"
+
+    attack:
+      summary: "EBLS sells LSI; financial interest in continued use"
+      evidence:
+        - source: "Experience Based Learning Systems website"
+          finding: "LSI is commercial product with licensing fees"
+
+    counter_argument: |
+      When the theory creator profits from the assessment instrument,
+      there's inherent conflict of interest in evaluating criticism.
+
+  - id: "AV-20"
+    name: "Consulting Industry"
+    category: "Conflict of Interest"
+    target: "Popularity of learning styles"
+    severity: "Low"
+
+    premise_attacked: "Learning styles persist because they're true"
+
+    attack:
+      summary: "Large consulting industry depends on learning style concepts"
+
+    counter_argument: |
+      Learning styles may persist not because of evidence but because
+      of the ecosystem of consultants, trainers, and products built around them.
+
+---
+
+# USO RECOMENDADO
+
+usage_guidelines:
+  intended_for:
+    - "Academic debate preparation"
+    - "Thesis defense anticipation"
+    - "Critical thinking exercises"
+    - "Theory refinement discussions"
+
+  not_intended_for:
+    - "Dismissing experiential learning value"
+    - "Bad faith argumentation"
+    - "Attacking practitioners personally"
+
+  best_practices:
+    - "Always steelman Kolb's position first"
+    - "Acknowledge genuine contributions"
+    - "Focus on improving, not destroying"
+    - "Engage with strongest versions of arguments"
+
+---
+
+# METADADOS
+
+metadata:
+  version: "1.0.0"
+  total_vectors: 20
+  categories: 7
+  severity_distribution:
+    critical: 1
+    high: 5
+    medium: 10
+    low: 4
+  generated_by: "A Refinaria LX Processing"
+  date: "2026-01-23"
+
+---
+
+# EOF

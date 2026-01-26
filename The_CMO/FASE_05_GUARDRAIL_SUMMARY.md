@@ -13,3 +13,18 @@ Implementar circuit breakers de marca e ética.
 
 ---
 **Data:** 2025-12-23
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

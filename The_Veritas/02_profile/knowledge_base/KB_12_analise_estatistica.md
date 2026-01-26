@@ -165,3 +165,18 @@ statistical_validation:
 - NIH. (2024). *Statistical Inference in Health Research*.
 - Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences*.
 - Kahneman, D., & Tversky, A. (1973). *Judgment under Uncertainty*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

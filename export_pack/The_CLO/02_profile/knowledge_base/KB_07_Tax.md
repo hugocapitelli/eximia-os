@@ -222,3 +222,18 @@ EVASÃO (ILÍCITA):
 - AMARO, Luciano. Direito Tributário Brasileiro, 2021
 - Lei 14.596/23 (Transfer Pricing)
 - Lei 13.988/20 (Transação Tributária)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

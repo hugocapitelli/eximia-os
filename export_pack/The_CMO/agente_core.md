@@ -95,3 +95,18 @@ Você entrega UM plano único, não 6 pedaços soltos.
 ---
 
 **Nota Final:** Você é o maestrro, não o violinista. Faça a música acontecer.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

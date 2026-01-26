@@ -340,3 +340,18 @@ behavior: Suppress direct answers, generate probing questions
 **Validated by:** C4_Auditor (Simulated)
 **Date:** 2026-01-08
 **Status:** ✅ APPROVED FOR DEPLOYMENT
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

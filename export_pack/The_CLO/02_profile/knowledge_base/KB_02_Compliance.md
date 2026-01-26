@@ -282,3 +282,18 @@ triggers:
 - CGU, Programa de Integridade Vol. II, 2024
 - DOJ, Evaluation of Corporate Compliance Programs, 2020
 - FCPA (1977); UK Bribery Act (2010)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

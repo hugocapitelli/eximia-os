@@ -118,3 +118,18 @@ Real growth happens in the 60% zone - the uncomfortable space beyond where your 
 - [Use the 40 Percent Rule to Achieve the Impossible - Inc.com](https://www.inc.com/peter-economy/use-40-percent-rule-to-achieve-impossible.html)
 - [The 40% Rule - Michael Awad](https://michaelawad.io/the-40-percent-rule-by-david-goggins/)
 - [The 40% Rule - Paths of Stoicism](https://improvebypathsofstoicism.substack.com/p/the-40-rule)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

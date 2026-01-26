@@ -230,3 +230,18 @@ PASSO 4: Conclusão
 - Conab. (2024). *Acompanhamento da Safra Brasileira*.
 - FAO. (2024). *FAOSTAT Database*.
 - Embrapa. (2024). *Dados Agrícolas*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

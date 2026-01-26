@@ -462,3 +462,18 @@ Se o objetivo é melhorar resultado, posso ajudar com:
 | **Tier** | Excellence | Basic |
 
 **Recomendação:** CFO v3.0 é production-ready para consultas financeiras complexas.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

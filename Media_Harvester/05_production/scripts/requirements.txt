@@ -1,0 +1,46 @@
+# Media_Harvester - Dependências Python
+# Instalação: pip install -r requirements.txt
+
+# Core - Download
+yt-dlp>=2024.1.0
+
+# Core - Transcrição (escolha uma)
+# Opção 1: Whisper original (mais simples)
+openai-whisper>=20231117
+
+# Opção 2: Faster-Whisper (4x mais rápido, recomendado)
+faster-whisper>=0.10.0
+
+# Opcional - Diarização (identificar quem fala)
+# whisperx>=3.1.0
+
+# Processamento de áudio
+ffmpeg-python>=0.2.0
+
+# Utilitários
+tqdm>=4.66.0
+
+# PyTorch (para GPU - instalar separadamente se necessário)
+# Para CUDA 11.8:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# Para CUDA 12.1:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# Para CPU only:
+# pip install torch torchvision torchaudio
+
+# =============================================================================
+# INSTALAÇÃO RÁPIDA
+# =============================================================================
+#
+# 1. Instalar FFmpeg (necessário):
+#    Windows: winget install ffmpeg
+#    macOS: brew install ffmpeg
+#    Linux: apt install ffmpeg
+#
+# 2. Instalar dependências Python:
+#    pip install yt-dlp faster-whisper ffmpeg-python tqdm
+#
+# 3. (Opcional) Para GPU NVIDIA:
+#    pip install torch --index-url https://download.pytorch.org/whl/cu118
+#
+# =============================================================================

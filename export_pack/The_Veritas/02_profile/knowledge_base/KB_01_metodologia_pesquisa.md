@@ -206,3 +206,18 @@ Survey representa 15% do universo, margem de erro 4%
 - Boyd, J. (1976). *OODA Loop*. US Air Force.
 - Academy of Management (2024). *AOM Journal Rigor and Quality Best Practices*. https://aom.org
 - Caulfield, M. (2017). *Web Literacy for Student Fact-Checkers*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

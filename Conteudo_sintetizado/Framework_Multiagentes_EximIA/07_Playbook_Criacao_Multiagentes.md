@@ -43,3 +43,18 @@ Defina o fluxo no seu código (Python/LangGraph/CrewAI):
     *   *Erro comum:* Perda de contexto. O agente B não sabe o que o A fez.
     *   *Correção:* Melhore o Prompt de Handoff ou use um Shared Memory (MCP).
 3.  **Itere:** Refine as "personas" (Backstories) para corrigir comportamentos.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Pesquisas]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

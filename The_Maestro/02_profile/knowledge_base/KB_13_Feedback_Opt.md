@@ -57,3 +57,18 @@ After each interaction:
 2. Where could we have been faster?
 3. Where could we have been clearer?
 4. What would we do differently?
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -263,3 +263,18 @@ clones_consultados: ["QA_Engineer", "Critical_Thinker"]
 confianca_perfil: "Alta"
 notas_do_profiler: "Agente guardiao da qualidade. Rigoroso nos principios fundamentais, tolerante com imperfeicoes menores. Foco em proteger a experiencia do aluno."
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

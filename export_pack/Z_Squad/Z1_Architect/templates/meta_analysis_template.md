@@ -141,3 +141,18 @@ BEGINNER → INTERMEDIATE → ADVANCED → EXPERT
 | Tool | Purpose | Integration |
 | :--- | :--- | :--- |
 | [Tool 1] | [Purpose] | [How] |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -84,3 +84,18 @@ Total de KBs: 5 | Frameworks catalogados: 25+ | Última atualização: 2026-01-1
 | Versão | Data | Mudança |
 |--------|------|---------|
 | 1.0.0 | 2026-01-11 | Criação inicial do índice |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

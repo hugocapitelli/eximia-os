@@ -438,3 +438,18 @@ Este guia está alinhado com:
 - [Agent Classes](Z1_Architect/templates/agent_classes.md)
 - [Z Squad v5.0 Standards](shared_protocols/)
 - [Athena Excellence Framework](outputs/CFO_Agent/04_validation/COMPARATIVE_ANALYSIS.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

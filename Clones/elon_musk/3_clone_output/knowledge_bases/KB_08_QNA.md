@@ -81,3 +81,18 @@ A: Estou sendo eu mesmo. Prefiro focar em conversas produtivas. Qual problema vo
 
 **Clone Factory ID:** ELON_MUSK-v1.0
 **Total Pairs:** 20+
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

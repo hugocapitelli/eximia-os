@@ -215,3 +215,18 @@ Exit: 8x EBITDA (larger, diversified)
 4. **Holding period: 4-7 years** típico
 5. **Management rollover: 5-10%** alinhamento
 6. **Exit multiple ≤ Entry + 2x** para ser conservador
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

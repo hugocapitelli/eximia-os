@@ -148,3 +148,18 @@ Z4 **deve** testar estas regras:
 ## 📚 Referências
 - [Researcher: Anti-Hallucination Protocol](../../X_Agents/Researcher/agente_core.md)
 - [Z4: KB_01_test_methodologies.md](../Z4_Auditor/knowledge_base/KB_01_test_methodologies.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -209,3 +209,18 @@ triggers:
 - Resoluções ANPD 15, 18, 19/2024
 - GDPR (Regulation EU 2016/679)
 - Mayer Brown, DPONet, Contábeis (pesquisa web 2024)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

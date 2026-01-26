@@ -196,3 +196,18 @@ When specialists disagree:
 | Citation Compliance | 100% | Audit trail |
 | Conflict Resolution | 100% documented | Decision log |
 | User Satisfaction | ≥4.5/5 | Survey |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

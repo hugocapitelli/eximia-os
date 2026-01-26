@@ -1,0 +1,521 @@
+{
+    "entities_metadata": {
+        "clone_target": "Tim Ferriss",
+        "extraction_date": "2026-01-19",
+        "total_entities": 72,
+        "version": "1.0"
+    },
+    "people": [
+        {
+            "id": "P001",
+            "name": "Naval Ravikant",
+            "relationship": "Podcast guest, startup advisor source",
+            "significance": "CEO/Co-founder of AngelList, episode #97 very popular",
+            "context": "Discusses happiness, habits, startup advice"
+        },
+        {
+            "id": "P002",
+            "name": "Arnold Schwarzenegger",
+            "relationship": "Podcast guest (multiple episodes)",
+            "significance": "Vision, psychological warfare, growth through discomfort",
+            "context": "Episodes #60, #696 - influential on success mindset"
+        },
+        {
+            "id": "P003",
+            "name": "Jerry Seinfeld",
+            "relationship": "Podcast guest",
+            "significance": "Writing systems, creative process, constraints",
+            "context": "Episode #485 - 'Don't Break the Chain' method"
+        },
+        {
+            "id": "P004",
+            "name": "Seneca",
+            "relationship": "Stoic philosopher (influence)",
+            "significance": "Primary Stoic influence, daily reading",
+            "context": "'Moral Letters to Lucilius', 'Tao of Seneca' audiobook"
+        },
+        {
+            "id": "P005",
+            "name": "Marcus Aurelius",
+            "relationship": "Stoic philosopher (influence)",
+            "significance": "Morning reading practice",
+            "context": "'Meditations' - reads in morning for daily prep"
+        },
+        {
+            "id": "P006",
+            "name": "Cal Fussman",
+            "relationship": "Interviewer/influence",
+            "significance": "Interview technique source",
+            "context": "'Let the silence do the work' - borrowed wisdom"
+        },
+        {
+            "id": "P007",
+            "name": "Tony Robbins",
+            "relationship": "Podcast guest, methodology influence",
+            "significance": "Peak performance, state priming",
+            "context": "Episodes #37, #178 - cold shower technique"
+        },
+        {
+            "id": "P008",
+            "name": "John McPhee",
+            "relationship": "Princeton professor",
+            "significance": "Writing mentor, Pulitzer Prize winner",
+            "context": "Studied under at Princeton"
+        },
+        {
+            "id": "P009",
+            "name": "Kenzaburō Ōe",
+            "relationship": "Influence/study",
+            "significance": "Nobel Prize winner in Literature",
+            "context": "Studied at Princeton"
+        },
+        {
+            "id": "P010",
+            "name": "Jim Rohn",
+            "relationship": "Borrowed wisdom",
+            "significance": "'You are the average of the five people...'",
+            "context": "Quote Tim frequently references"
+        },
+        {
+            "id": "P011",
+            "name": "Jamie Foxx",
+            "relationship": "Podcast guest",
+            "significance": "Top 10 most popular episode",
+            "context": "Episode #124"
+        },
+        {
+            "id": "P012",
+            "name": "Jocko Willink",
+            "relationship": "Podcast guest (multiple)",
+            "significance": "Leadership, discipline, military mindset",
+            "context": "Multiple episodes, very popular"
+        },
+        {
+            "id": "P013",
+            "name": "Seth Godin",
+            "relationship": "Podcast guest",
+            "significance": "Marketing, saying no, winning at life",
+            "context": "Episode #343"
+        },
+        {
+            "id": "P014",
+            "name": "Hugh Jackman",
+            "relationship": "Podcast guest",
+            "significance": "Routines, meditation, intuition",
+            "context": "Episodes #577, #444"
+        },
+        {
+            "id": "P015",
+            "name": "Steven Pressfield",
+            "relationship": "Podcast guest, influence",
+            "significance": "Overcoming resistance, amateur vs professional",
+            "context": "Episode #501, 'The War of Art' influence"
+        },
+        {
+            "id": "P016",
+            "name": "Brené Brown",
+            "relationship": "Podcast guest",
+            "significance": "Vulnerability, courage, shame, empathy",
+            "context": "Episodes #409, #656"
+        },
+        {
+            "id": "P017",
+            "name": "Ryan Holiday",
+            "relationship": "Podcast guest, Stoic colleague",
+            "significance": "Stoic philosophy for modern life",
+            "context": "Episode #4, fellow Stoicism advocate"
+        }
+    ],
+    "companies_and_organizations": [
+        {
+            "id": "C001",
+            "name": "BrainQUICKEN",
+            "type": "Startup (founded)",
+            "significance": "First major successful business",
+            "context": "Founded 2001, sold 2009-2010, basis for 4-Hour Workweek"
+        },
+        {
+            "id": "C002",
+            "name": "Uber",
+            "type": "Investment",
+            "significance": "Major successful angel investment",
+            "context": "$25K at $3.7M valuation (2009), pre-seed advisor"
+        },
+        {
+            "id": "C003",
+            "name": "Facebook (Meta)",
+            "type": "Investment",
+            "significance": "Early angel investment",
+            "context": "Early-stage investor"
+        },
+        {
+            "id": "C004",
+            "name": "Twitter (X)",
+            "type": "Investment",
+            "significance": "Early angel investment and advisor",
+            "context": "2007 at ~$20M valuation"
+        },
+        {
+            "id": "C005",
+            "name": "Shopify",
+            "type": "Investment/Advisory",
+            "significance": "First advisor",
+            "context": "Active advisor on marketing and growth"
+        },
+        {
+            "id": "C006",
+            "name": "SpaceX",
+            "type": "Investment",
+            "significance": "Angel investment in Elon Musk company",
+            "context": "Part of 50+ portfolio"
+        },
+        {
+            "id": "C007",
+            "name": "Alibaba",
+            "type": "Investment",
+            "significance": "Major tech investment",
+            "context": "Part of global tech portfolio"
+        },
+        {
+            "id": "C008",
+            "name": "Duolingo",
+            "type": "Investment",
+            "significance": "Series A investment",
+            "context": "Language learning app"
+        },
+        {
+            "id": "C009",
+            "name": "AngelList",
+            "type": "Investment/Platform",
+            "significance": "Used for syndicate investing",
+            "context": "Naval Ravikant's platform"
+        },
+        {
+            "id": "C010",
+            "name": "Wealthfront",
+            "type": "Investment",
+            "significance": "Fintech investment",
+            "context": "Part of portfolio"
+        },
+        {
+            "id": "C011",
+            "name": "TaskRabbit",
+            "type": "Investment",
+            "significance": "Gig economy platform investment",
+            "context": "Part of portfolio"
+        },
+        {
+            "id": "C012",
+            "name": "Evernote",
+            "type": "Investment/Advisory",
+            "significance": "Advisor role",
+            "context": "Productivity app"
+        },
+        {
+            "id": "C013",
+            "name": "Automattic (WordPress.com)",
+            "type": "Investment",
+            "significance": "Web infrastructure investment",
+            "context": "Part of portfolio"
+        },
+        {
+            "id": "C014",
+            "name": "Princeton University",
+            "type": "Education/Career",
+            "significance": "BA in East Asian Studies, later guest lecturer",
+            "context": "1996-2000, returned 2003-2013 as lecturer"
+        },
+        {
+            "id": "C015",
+            "name": "St. Paul's School",
+            "type": "Education",
+            "significance": "Elite secondary education",
+            "context": "Boarding school in New Hampshire"
+        }
+    ],
+    "concepts_and_philosophies": [
+        {
+            "id": "CONC001",
+            "name": "DEAL Framework",
+            "type": "Methodology",
+            "significance": "Core 4-Hour Workweek framework",
+            "context": "Definition, Elimination, Automation, Liberation"
+        },
+        {
+            "id": "CONC002",
+            "name": "DiSSS Method",
+            "type": "Meta-learning framework",
+            "significance": "Skill acquisition methodology",
+            "context": "Deconstruction, Selection, Sequencing, Stakes - from 4-Hour Chef"
+        },
+        {
+            "id": "CONC003",
+            "name": "Fear-Setting",
+            "type": "Decision-making tool",
+            "significance": "Tim's adaptation of Stoic practice",
+            "context": "Based on premeditatio malorum, 3-page exercise"
+        },
+        {
+            "id": "CONC004",
+            "name": "80/20 Principle (Pareto)",
+            "type": "Productivity framework",
+            "significance": "Core to all Tim's work",
+            "context": "20% of inputs = 80% of outputs"
+        },
+        {
+            "id": "CONC005",
+            "name": "The New Rich",
+            "type": "Lifestyle concept",
+            "significance": "Redefining wealth",
+            "context": "Time and mobility as currency, not just money"
+        },
+        {
+            "id": "CONC006",
+            "name": "Lifestyle Design",
+            "type": "Life philosophy",
+            "significance": "Alternative to deferred-life plan",
+            "context": "Create luxury lifestyles in present"
+        },
+        {
+            "id": "CONC007",
+            "name": "Relative Income",
+            "type": "Financial concept",
+            "significance": "Income measured against time worked",
+            "context": "$40K/year in 10h/week > $100K in 80h/week"
+        },
+        {
+            "id": "CONC008",
+            "name": "Geoarbitrage",
+            "type": "Financial strategy",
+            "significance": "Earn in strong currency, spend in weak",
+            "context": "Live in lower-cost countries while earning first-world income"
+        },
+        {
+            "id": "CONC009",
+            "name": "Mini-Retirements",
+            "type": "Lifestyle concept",
+            "significance": "Distribute retirement throughout life",
+            "context": "Instead of saving all rest for end of life"
+        },
+        {
+            "id": "CONC010",
+            "name": "Dreamlining",
+            "type": "Goal-setting method",significance": "3-6 month goals instead of 5-year plans","context": "Specific, time-bound, exciting goals"
+        },
+        {
+            "id": "CONC011",
+            "name": "Minimum Effective Dose (MED)",
+            "type": "Efficiency concept",
+            "significance": "Smallest intervention for desired outcome",
+            "context": "Applied to exercise, learning, business"
+        },
+        {
+            "id": "CONC012",
+            "name": "Eustress",
+            "type": "Stress concept",
+            "significance": "Healthful stress, stimulus for growth",
+            "context": "Challenges, physical training, risks"
+        },
+        {
+            "id": "CONC013",
+            "name": "Premeditatio Malorum",
+            "type": "Stoic practice",
+            "significance": "Premeditation of adversity",
+            "context": "Basis for Fear-Setting exercise"
+        },
+        {
+            "id": "CONC014",
+            "name": "Practicing Poverty",
+            "type": "Stoic practice",
+            "significance": "Voluntary discomfort/hardship",
+            "context": "Seneca's advice - fasting, cold, plain dress"
+        },
+        {
+            "id": "CONC015",
+            "name": "Amor Fati",
+            "type": "Stoic concept",
+            "significance": "Love of fate, acceptance",
+            "context": "Embrace what happens, find opportunity"
+        },
+        {
+            "id": "CONC016",
+            "name": "Don't Break the Chain",
+            "type": "Consistency method",
+            "significance": "Jerry Seinfeld's writing system",
+            "context": "Daily practice, visual tracking"
+        },
+        {
+            "id": "CONC017",
+            "name": "N=1 Experiments",
+            "type": "Self-experimentation",
+            "significance": "Personal data over general studies",
+            "context": "Test on yourself, track results"
+        },
+        {
+            "id": "CONC018",
+            "name": "Selective Ignorance",
+            "type": "Information diet",
+            "significance": "Strategic un-information",
+            "context": "Low-information diet, avoid news"
+        }
+    ],
+    "media_and_platforms": [
+        {
+            "id": "M001",
+            "name": "The Tim Ferriss Show",
+            "type": "Podcast",
+            "significance": "Top business podcast, 825+ episodes",
+            "context": "Started ~2014, deconstruct world-class performers"
+        },
+        {
+            "id": "M002",
+            "name": "Tim.blog",
+            "type": "Website/Blog",
+            "significance": "Official platform, 825+ transcripts",
+            "context": "Primary content hub"
+        },
+        {
+            "id": "M003",
+            "name": "Five Bullet Friday",
+            "type": "Newsletter",
+            "significance": "Weekly email to audience",
+            "context": "5 curated items: books, gadgets, articles, hacks"
+        },
+        {
+            "id": "M004",
+            "name": "The 4-Hour Workweek",
+            "type": "Book",
+            "significance": "Breakthrough book (2007)",
+            "context": "NYT & WSJ Bestseller, lifestyle design bible"
+        },
+        {
+            "id": "M005",
+            "name": "The 4-Hour Body",
+            "type": "Book",
+            "significance": "Biohacking book (2010)",
+            "context": "NYT & WSJ Bestseller"
+        },
+        {
+            "id": "M006",
+            "name": "The 4-Hour Chef",
+            "type": "Book",
+            "significance": "Meta-learning book (2012)",
+            "context": "NYT & WSJ Bestseller, DiSSS framework"
+        },
+        {
+            "id": "M007",
+            "name": "Tools of Titans",
+            "type": "Book",
+            "significance": "Podcast insights compilation (2016)",
+            "context": "NYT & WSJ Bestseller"
+        },
+        {
+            "id": "M008",
+            "name": "Tribe of Mentors",
+            "type": "Book",
+            "significance": "130+ mentors, 11 questions (2017)",
+            "context": "NYT & WSJ Bestseller"
+        },
+        {
+            "id": "M009",
+            "name": "Tao of Seneca",
+            "type": "Audiobook (free)",
+            "significance": "Seneca's letters in audio format",
+            "context": "Created by Tim, makes Stoicism accessible"
+        }
+    ],
+    "tools_and_practices": [
+        {
+            "id": "T001",
+            "name": "Transcendental Meditation",
+            "type": "Practice",
+            "significance": "Primary meditation method",
+            "context": "10-21 minutes daily, 30-50% productivity boost"
+        },
+        {
+            "id": "T002",
+            "name": "The 5-Minute Journal",
+            "type": "Tool",
+            "significance": "Structured journaling",
+            "context": "Morning gratitude + evening reflection"
+        },
+        {
+            "id": "T003",
+            "name": "Morning Pages",
+            "type": "Practice",
+            "significance": "Stream-of-consciousness writing",
+            "context": "Problem-solving, therapeutic"
+        },
+        {
+            "id": "T004",
+            "name": "Titanium Tea",
+            "type": "Morning beverage",
+            "significance": "Custom tea blend",
+            "context": "Pu-erh + green + turmeric + coconut oil"
+        },
+        {
+            "id": "T005",
+            "name": "Cold Showers",
+            "type": "Practice",
+            "significance": "State priming, voluntary discomfort",
+            "context": "30-60 seconds, Stoic practice + Tony Robbins"
+        },
+        {
+            "id": "T006",
+            "name": "Ring Turn-Out Push-ups (RTO)",
+            "type": "Exercise",
+            "significance": "Morning physical priming",
+            "context": "5-10 reps as state priming"
+        },
+        {
+            "id": "T007",
+            "name": "Intermittent Fasting",
+            "type": "Practice",
+            "significance": "Practicing discomfort, health",
+            "context": "Several days/month, Stoic voluntary hardship"
+        },
+        {
+            "id": "T008",
+            "name": "Legal Pads + Bic Pens",
+            "type": "Writing tools",
+            "significance": "Simple tools for writing",
+            "context": "Seinfeld's approach, no fancy tools needed"
+        },
+        {
+            "id": "T009",
+            "name": "Final Cut (for guests)",
+            "type": "Interview technique",
+            "significance": "Builds trust, encourages openness",
+            "context": "Guests can remove any content"
+        },
+        {
+            "id": "T010",
+            "name": "Remote Recording",
+            "type": "Interview method",
+            "significance": "Guests more comfortable",
+            "context": "Prefers remote over in-person for podcast"
+        },
+        {
+            "id": "T011",
+            "name": "Pre-Interview Chat",
+            "type": "Interview technique",
+            "significance": "Build rapport",
+            "context": "5-25 minutes before recording"
+        },
+        {
+            "id": "T012",
+            "name": "'What would make this a home run for you?'",
+            "type": "Interview question",
+            "significance": "Guest-centric approach",
+            "context": "Asks before recording starts"
+        }
+    ],
+    "entity_categories_summary": {
+        "people": 17,
+        "companies_organizations": 15,
+        "concepts_philosophies": 18,
+        "media_platforms": 9,
+        "tools_practices": 12,
+        "total": 71
+    }
+}

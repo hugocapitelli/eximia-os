@@ -223,3 +223,18 @@ Best Alternative to Negotiated Agreement:
 4. **Stay de 180 dias** na RJ (prorrogável)
 5. **60% + maioria** para aprovar plano
 6. **Distress premium: 5-10%** no WACC
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

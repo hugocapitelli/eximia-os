@@ -211,3 +211,18 @@ Este PRP detalha as funcionalidades e fluxos principais da plataforma 'The Proto
 - **Tokens:** 26006
 - **Time:** 28431.175ms
 - **Cost:** $0.000000
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

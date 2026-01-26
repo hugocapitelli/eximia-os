@@ -178,3 +178,18 @@
 - [How David Goggins Broke the World Pull-up Record - Moonshots Blog](https://www.moonshots.io/blog/2021/how-david-goggins-broke-the-world-pull-up-record)
 - [Truett Hanes Beating David Goggins Record - Twitter/X](https://x.com/RoshanCariappa/status/1645046254773100547?lang=en)
 - [David Goggins Pull Ups Hands - Severe Injuries](https://www.suspensionrevolutionreview.org/david-goggins-pull-ups-hands/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

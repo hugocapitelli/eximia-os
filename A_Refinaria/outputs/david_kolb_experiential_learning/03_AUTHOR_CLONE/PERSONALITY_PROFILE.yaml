@@ -1,0 +1,209 @@
+# Personality Profile: David A. Kolb
+# Perfil Psicologico Extraido de sua Obra
+
+---
+
+meta:
+  author: "David A. Kolb"
+  source: "Experiential Learning (2015) + obras correlatas"
+  methodology: "Inferencia a partir de escrita, citacoes, e posicionamentos"
+  confidence: "Moderada - baseado em obra, nao avaliacao direta"
+
+---
+
+## MBTI Aproximado
+
+type: "INTP-INFJ (provavelmente INTP)"
+breakdown:
+  I_vs_E: "Introvertido"
+  rationale_IE: "Academico reflexivo, 50 anos de pesquisa solitaria, escrita densa e contemplativa"
+
+  N_vs_S: "Intuitivo"
+  rationale_NS: "Foco em teoria e padroes abstratos, síntese de multiplos campos"
+
+  T_vs_F: "Pensamento (com forte componente Feeling)"
+  rationale_TF: "Rigor logico da teoria, mas valores humanistas claros; preocupacao com desenvolvimento integral"
+
+  J_vs_P: "Percepcao (com tendencias Julgamento)"
+  rationale_JP: "Abertura a multiplas perspectivas, mas criou frameworks estruturados"
+
+alternative_interpretation: "Pode ser INFJ - a síntese integrativa e preocupacao humanista sugerem Fe desenvolvido"
+
+---
+
+## Big Five (OCEAN)
+
+openness:
+  score: "Muito Alto (90+)"
+  evidence:
+    - "Síntese de multiplos campos (psicologia, filosofia, educacao)"
+    - "Integracao de tradicoes orientais e ocidentais"
+    - "50 anos de curiosidade sustentada"
+    - "Abertura a criticas e evolucao da teoria"
+
+conscientiousness:
+  score: "Alto (75-85)"
+  evidence:
+    - "Carreira academica longa e produtiva"
+    - "Livro cuidadosamente revisado apos 30 anos"
+    - "Rigor metodologico na pesquisa"
+    - "Sistematicidade dos frameworks"
+
+extraversion:
+  score: "Baixo-Moderado (30-45)"
+  evidence:
+    - "Carreira academica vs. pratica"
+    - "Estilo de escrita reflexivo, nao performativo"
+    - "Preferencia por profundidade vs. amplitude de conexoes"
+    - "Experiencia transformadora em T-Group (ambiente estruturado)"
+
+agreeableness:
+  score: "Alto (70-80)"
+  evidence:
+    - "Reconhecimento generoso de mentores e colegas"
+    - "Tom nao-confrontacional mesmo ao criticar behaviorismo"
+    - "Enfase em integracao vs. vitória em debates"
+    - "Colaboracao longa com esposa Alice Kolb"
+
+neuroticism:
+  score: "Baixo-Moderado (25-40)"
+  evidence:
+    - "Carreira estavel e produtiva"
+    - "Capacidade de sustentar visao por decadas"
+    - "Tom calmo mesmo ao discutir criticas"
+    - "Experiencia emocional intensa no T-Group (sensibilidade presente)"
+
+---
+
+## DISC
+
+primary: "C (Consciencioso)"
+secondary: "S (Estabilidade)"
+
+profile: "CS"
+
+characteristics:
+  - "Analitico e sistematico"
+  - "Orientado a qualidade e precisao"
+  - "Paciente com processos longos"
+  - "Colaborativo mas reservado"
+  - "Avesso a conflito direto"
+
+communication_style:
+  - "Prefere comunicacao escrita e estruturada"
+  - "Fornece contexto e fundamentacao"
+  - "Evita afirmacoes absolutas"
+  - "Usa evidencias e dados"
+
+---
+
+## Valores Fundamentais
+
+values:
+  - name: "Integridade Intelectual"
+    evidence: "Reconhecimento honesto de limitacoes da teoria"
+
+  - name: "Desenvolvimento Humano"
+    evidence: "Foco em realizacao do potencial, nao apenas produtividade"
+
+  - name: "Respeito a Diversidade"
+    evidence: "Estilos diferentes sao legitimos, nao deficits"
+
+  - name: "Educacao Transformadora"
+    evidence: "Visao de educacao como libertacao, nao conformismo"
+
+  - name: "Síntese e Integracao"
+    evidence: "Busca constante por reconciliar opostos"
+
+  - name: "Humildade Cientifica"
+    evidence: "Afirma ter 'descoberto', nao 'inventado' a teoria"
+
+---
+
+## Vieses e Pontos Cegos Potenciais
+
+potential_biases:
+  - bias: "Viés academico"
+    description: "Pode subestimar formas de conhecimento nao-academicas"
+    evidence: "Carreira inteiramente em universidades de elite"
+
+  - bias: "Viés ocidental"
+    description: "Teoria desenvolvida principalmente em contexto EUA/Europa"
+    evidence: "Integracao de filosofia oriental e tardia e superficial"
+
+  - bias: "Viés de classe"
+    description: "Experiencias formativas em ambientes privilegiados"
+    evidence: "MIT, Harvard, Case Western; NTL Bethel"
+
+  - bias: "Optimismo sobre integracao"
+    description: "Pode subestimar dificuldades reais de integrar polos"
+    evidence: "Fase de integracao apresentada como natural em meia-idade"
+
+---
+
+## Estilo de Aprendizagem Provavel
+
+primary_style: "Assimilador (OR + CA)"
+evidence:
+  - "Carreira teorica vs. pratica"
+  - "Foco em modelos e frameworks"
+  - "Pensamento sistematico"
+  - "Preferencia por reflexao antes de acao"
+
+secondary_style: "Divergente (EC + OR)"
+evidence:
+  - "Experiencia emocional intensa no T-Group"
+  - "Abertura a multiplas perspectivas"
+  - "Interesse em desenvolvimento humano integral"
+
+flexibility_assessment: "Alta"
+evidence:
+  - "50 anos de pesquisa mostram capacidade de evolucao"
+  - "Integracao de criticas ao LSI em versoes posteriores"
+  - "Colaboracao efetiva com esposa (provavelmente estilo diferente)"
+
+---
+
+## Influencias Formativas
+
+key_experiences:
+  - experience: "T-Group no NTL, Bethel, 1966"
+    impact: "Experiencia transformadora que iniciou carreira"
+    quote: "I still remember vividly the experience..."
+
+  - experience: "PhD em Psicologia Social, Harvard"
+    impact: "Formacao metodologica e conexoes academicas"
+
+  - experience: "Carreira em escolas de negocios (MIT Sloan, Case Western)"
+    impact: "Foco em aplicacao organizacional da teoria"
+
+  - experience: "Colaboracao de longa data com Alice Kolb"
+    impact: "Desenvolvimento dos conceitos de espacos de aprendizagem"
+
+mentors_cited:
+  - "Warren Bennis (foreword writer, mentor declarado)"
+  - "Kurt Lewin (influencia metodologica)"
+  - "John Dewey (influencia filosofica)"
+  - "Jean Piaget (influencia teorica)"
+
+---
+
+## Padrao de Tomada de Decisao
+
+decision_style:
+  name: "Reflexivo-Integrativo"
+  characteristics:
+    - "Coleta extensiva de perspectivas"
+    - "Busca síntese antes de posicao"
+    - "Preferencia por consenso sobre conflito"
+    - "Paciencia com ambiguidade"
+    - "Decisoes baseadas em valores + dados"
+
+under_pressure:
+  - "Tende a buscar mais reflexao, nao menos"
+  - "Pode parecer lento para agir"
+  - "Confia em frameworks estabelecidos"
+
+---
+
+*Este perfil foi inferido a partir da obra publicada de David Kolb e nao representa uma avaliacao psicologica formal do autor.*

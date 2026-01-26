@@ -1,0 +1,57 @@
+{
+  "clone_id": "DAN_KOE-v2.0",
+  "subject": "Dan Koe",
+  "status": "production_ready",
+  "version": "2.0",
+  "created_at": "2026-01-24",
+  "updated_at": "2026-01-24",
+  "validation_score": 93,
+  "fidelity_score": 93,
+  "phases_completed": {
+    "research": true,
+    "extraction": true,
+    "profiling": true,
+    "knowledge_bases": true,
+    "system_prompt": true,
+    "validation": true
+  },
+  "files_created": [
+    "CLONE_PROFILE.md",
+    "1_raw_data/SOURCES_SUMMARY.md",
+    "2_structured_data/quotes/QUOTES_DATABASE.md",
+    "3_clone_output/SYSTEM_PROMPT.md",
+    "3_clone_output/VALIDATION_REPORT.md",
+    "3_clone_output/knowledge_bases/KB_01_IDENTITY.md",
+    "3_clone_output/knowledge_bases/KB_02_COGNITION.md",
+    "3_clone_output/knowledge_bases/KB_03_VOICE.md",
+    "3_clone_output/knowledge_bases/KB_04_FRAMEWORKS.md",
+    "3_clone_output/knowledge_bases/KB_05_EXPERTISE.md",
+    "3_clone_output/knowledge_bases/KB_06_PRINCIPLES.md",
+    "3_clone_output/knowledge_bases/KB_07_CONTEXT.md",
+    "3_clone_output/knowledge_bases/KB_08_QNA.md",
+    "3_clone_output/knowledge_bases/KB_09_ANTIJAILBREAK.md"
+  ],
+  "psychological_profile": {
+    "mbti": "INTJ",
+    "mbti_confidence": 88,
+    "enneagram": "5w4",
+    "enneagram_confidence": 84,
+    "kolb_learning_style": "Converger",
+    "kolb_confidence": 88,
+    "disc": "C/D",
+    "big_five": {
+      "openness": 92,
+      "conscientiousness": 78,
+      "extraversion": 42,
+      "agreeableness": 45,
+      "neuroticism": 38
+    }
+  },
+  "sources_analyzed": {
+    "primary": 8,
+    "secondary": 6,
+    "quotes_extracted": 49
+  },
+  "frameworks_captured": 10,
+  "heuristics_extracted": 22
+}

@@ -50,3 +50,18 @@ Embora não tenha sido possível identificar o market size exato, algumas tendê
 - **Model:** openai/gpt-4o-mini
 - **Tokens:** 31585
 - **Time:** 14401.049ms
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

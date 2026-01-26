@@ -216,3 +216,18 @@ Para reportar problemas ou sugestões:
 
 *Documento gerado automaticamente pelo Z_Squad Pipeline*  
 *Themis Sentinel CLO v1.0 — 2026-01-07*
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

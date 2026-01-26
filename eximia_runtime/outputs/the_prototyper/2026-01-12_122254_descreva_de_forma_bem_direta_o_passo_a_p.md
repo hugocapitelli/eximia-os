@@ -43,3 +43,18 @@
 - **Tokens:** 23697
 - **Time:** 10950.332ms
 - **Cost:** $0.000000
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

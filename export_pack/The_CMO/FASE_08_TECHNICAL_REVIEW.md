@@ -13,3 +13,18 @@ O Agente CMO unifica com sucesso as competências de 8 agentes anteriores. Sua a
 
 ---
 **Data:** 2025-12-23
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -164,3 +164,18 @@ No `validation_report.md`, incluir:
 ## 📚 Referências
 - [The_CLO: Risk Heatmap](../../The_CLO/agente_core.md)
 - [OWASP Risk Rating](https://owasp.org/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

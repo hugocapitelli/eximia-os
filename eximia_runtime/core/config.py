@@ -64,13 +64,17 @@ class Settings(BaseSettings):
             root / "The_CEO",
             root / "The_CMO",
             root / "The_Maestro",
+            root / "The_Planner",
+            root / "Memo",
+            root / "Media_Harvester",
             root / "The_Cloner",
-            root / "Clone_Factory",
+            root / "El_Clonador",
             root / "Clones",
             root / "X_Agents",
             root / "Z_Squad",
             root / "Z_Squad" / "outputs",
-            root / "Intellex" / "modules",
+            root / "A_Refinaria" / "modules",
+            root / "A_Refinaria" / "core",
         ]
 
     def get_available_provider(self) -> str:

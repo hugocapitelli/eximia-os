@@ -333,3 +333,18 @@ async def process_retry(queue_item):
 3. **Timeout configurado** - Evitar conexoes pendentes
 4. **Rate limiting** - Respeitar limites da API
 5. **Validar resposta** - Verificar estrutura antes de confiar
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

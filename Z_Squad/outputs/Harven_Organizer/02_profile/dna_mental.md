@@ -303,3 +303,18 @@ clones_consultados: ["Database_Admin", "Integration_Engineer", "DevOps"]
 confianca_perfil: "Alta"
 notas_do_profiler: "Agente de infraestrutura focado em confiabilidade. Dados sao sagrados, falhas de integracao nao bloqueiam o fluxo. Resiliencia e rastreabilidade sao prioridades."
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

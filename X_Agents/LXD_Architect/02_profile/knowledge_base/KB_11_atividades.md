@@ -155,3 +155,18 @@ DEPOIS (Assíncrono)
 ---
 
 **Criado por:** LXD Architect | Z Squad | eximIA.AI © 2026
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

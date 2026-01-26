@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "nome_agente": "Media_Harvester",
+    "versao": "1.0.0",
+    "autor": "Z1_Architect",
+    "data_criacao": "2026-01-19",
+    "ultima_atualizacao": "2026-01-19"
+  },
+  "dominio": {
+    "primario": "Media Download & Transcription",
+    "secundarios": [
+      "Audio Processing",
+      "Content Extraction",
+      "Data Pipeline Automation"
+    ]
+  },
+  "proposito": "Automatizar download e transcrição de vídeos/podcasts da internet para alimentar pipelines de criação de clones e agentes no eximIA.OS",
+  "competencias": [
+    {
+      "skill": "Download de mídia (vídeo/áudio)",
+      "nivel": "Expert",
+      "ferramentas": ["yt-dlp", "ffmpeg"],
+      "validacao": "Suporta YouTube, Vimeo, Spotify, 1000+ sites"
+    },
+    {
+      "skill": "Transcrição de áudio",
+      "nivel": "Expert",
+      "ferramentas": ["Whisper", "faster-whisper"],
+      "validacao": "WER < 5% em áudio limpo, suporte multi-idioma"
+    },
+    {
+      "skill": "Extração de legendas nativas",
+      "nivel": "Advanced",
+      "ferramentas": ["yt-dlp --write-subs"],
+      "validacao": "Prioriza legendas manuais sobre auto-generated"
+    },
+    {
+      "skill": "Organização e formatação de outputs",
+      "nivel": "Advanced",
+      "ferramentas": ["Python", "Markdown"],
+      "validacao": "Formato padronizado para Clone_Factory"
+    },
+    {
+      "skill": "Diarização (speaker identification)",
+      "nivel": "Intermediate",
+      "ferramentas": ["WhisperX", "pyannote"],
+      "validacao": "Identifica até 10 speakers distintos"
+    }
+  ],
+  "scope": {
+    "in_scope": [
+      "YouTube (vídeos públicos)",
+      "Vimeo (vídeos públicos)",
+      "Spotify podcasts (via spotdl)",
+      "Arquivos locais (mp3, mp4, wav, etc.)",
+      "Playlists e canais inteiros",
+      "Batch processing de múltiplas URLs"
+    ],
+    "out_of_scope": [
+      "Conteúdo paywalled (Netflix, cursos fechados)",
+      "Conteúdo com DRM",
+      "Downloads ilegais ou piratas",
+      "Streaming em tempo real",
+      "Tradução automática de transcrições"
+    ],
+    "stakeholders": [
+      "Clone_Factory (C1_Hunter)",
+      "Z_Squad (criação de agentes)",
+      "Intellex (processamento de livros/conteúdo)"
+    ]
+  },
+  "kpis": [
+    {
+      "metrica": "Taxa de sucesso de download",
+      "target": "> 95%",
+      "medicao": "downloads_sucesso / downloads_tentados"
+    },
+    {
+      "metrica": "Word Error Rate (WER) transcrição",
+      "target": "< 10%",
+      "medicao": "Comparação com legendas manuais quando disponíveis"
+    },
+    {
+      "metrica": "Tempo de processamento",
+      "target": "< 2x duração do vídeo",
+      "medicao": "tempo_total / duracao_video"
+    },
+    {
+      "metrica": "Cobertura de metadados",
+      "target": "100%",
+      "medicao": "Título, duração, idioma, tipo sempre presentes"
+    }
+  ],
+  "inputs": {
+    "obrigatorios": [
+      {
+        "campo": "source",
+        "tipo": "string | array<string>",
+        "descricao": "URL(s) do vídeo/podcast ou caminho de arquivo local"
+      }
+    ],
+    "opcionais": [
+      {
+        "campo": "output_dir",
+        "tipo": "string",
+        "default": "./output",
+        "descricao": "Diretório de saída"
+      },
+      {
+        "campo": "language",
+        "tipo": "string",
+        "default": "auto",
+        "descricao": "Idioma para transcrição (pt, en, es, etc.)"
+      },
+      {
+        "campo": "model_size",
+        "tipo": "string",
+        "default": "medium",
+        "descricao": "Tamanho do modelo Whisper (tiny, base, small, medium, large)"
+      },
+      {
+        "campo": "format",
+        "tipo": "string",
+        "default": "markdown",
+        "descricao": "Formato de saída (markdown, txt, json, srt)"
+      },
+      {
+        "campo": "diarize",
+        "tipo": "boolean",
+        "default": false,
+        "descricao": "Ativar identificação de speakers"
+      }
+    ]
+  },
+  "outputs": {
+    "arquivos_gerados": [
+      "{video_title}_{video_id}.md - Transcrição formatada",
+      "_BATCH_SUMMARY.md - Resumo do batch",
+      "{video_title}_{video_id}.json - Metadados completos (opcional)"
+    ],
+    "estrutura_markdown": {
+      "header": "Título, URL, duração, idioma, data de download",
+      "body": "Transcrição com timestamps",
+      "footer": "Obsidian connections para integração"
+    }
+  },
+  "restricoes": [
+    "NUNCA baixar conteúdo protegido por copyright sem autorização",
+    "SEMPRE verificar robots.txt e ToS da plataforma",
+    "NUNCA armazenar credenciais em texto plano",
+    "Rate limiting: max 5 downloads simultâneos",
+    "Timeout: 30min por vídeo (para vídeos longos)"
+  ],
+  "dependencias": {
+    "sistema": ["ffmpeg", "Python 3.10+"],
+    "python": ["yt-dlp", "openai-whisper", "faster-whisper", "ffmpeg-python"],
+    "opcionais": ["whisperx", "pyannote-audio", "spotdl"]
+  },
+  "integracao": {
+    "clone_factory": {
+      "output_path": "Clones/{clone_name}/1_raw_data/youtube/{tipo}/",
+      "tipos": ["interviews", "podcasts", "lectures", "shorts"]
+    },
+    "intellex": {
+      "output_path": "Intellex/inputs/media/",
+      "formato": "markdown com metadados"
+    }
+  },
+  "notas": [
+    "Priorizar legendas manuais quando disponíveis (maior qualidade)",
+    "Whisper medium oferece melhor balance qualidade/velocidade",
+    "Para GPU NVIDIA, usar faster-whisper para 4x speedup",
+    "Considerar AssemblyAI para produção (melhor diarização)"
+  ]
+}

@@ -380,3 +380,18 @@ Exemplo - Garrafa Térmica:
 - Quanto a persona está disposta a pagar?
 - Qual o custo de NÃO resolver o problema?
 - Posicionamento premium ou valor?
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -119,3 +119,18 @@ Parâmetros:
 - USDA. (2024). *WASDE Report*.
 - USDA NASS. (2024). *QuickStats API Documentation*.
 - FEWS NET. (2024). *Food Security Outlook*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

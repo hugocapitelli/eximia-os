@@ -76,3 +76,18 @@ If input could mean multiple things:
 1. State the most likely interpretation
 2. Ask for confirmation OR
 3. Present options and ask user to choose
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

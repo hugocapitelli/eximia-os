@@ -228,3 +228,18 @@ versoes:
 ## 📚 Referências
 - [Google SRE: Managing Incidents](https://sre.google/)
 - [Continuous Delivery: Release Engineering](https://continuousdelivery.com/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

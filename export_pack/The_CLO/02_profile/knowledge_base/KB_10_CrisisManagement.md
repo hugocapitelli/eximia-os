@@ -192,3 +192,18 @@ Fato que possa:
 - LGPD, Arts. 46-49
 - Resolução ANPD 15/2024
 - Best Practices in Crisis Management
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -184,3 +184,18 @@ Alegações ambientais falsas ou enganosas para fins de marketing.
 - EU Taxonomy Regulation, 2020
 - Lei 9.605/98 (Crimes Ambientais)
 - GRI Standards, 2021
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

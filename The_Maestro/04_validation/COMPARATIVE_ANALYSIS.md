@@ -120,3 +120,18 @@ Compare The_Maestro against leading multi-agent orchestration frameworks.
 - Full autonomy required (AutoGPT)
 - Simple task chains (BabyAGI)
 - Custom graph routing needed (LangGraph)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

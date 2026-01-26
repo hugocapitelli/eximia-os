@@ -449,3 +449,18 @@ Você entende que em marketplace, o produto é julgado em 2 segundos. A imagem p
 ### 1 Dia:
 - Produzir set completo de 7 imagens
 - Testar diferentes heroes (A/B)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

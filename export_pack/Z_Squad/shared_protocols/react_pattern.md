@@ -190,3 +190,18 @@ Para evitar loops infinitos:
 - [Google: ReAct Paper](https://arxiv.org/abs/2210.03629)
 - [Microsoft: Agentic Design Patterns](https://microsoft.com/)
 - [Anthropic: Building Agents](https://anthropic.com/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

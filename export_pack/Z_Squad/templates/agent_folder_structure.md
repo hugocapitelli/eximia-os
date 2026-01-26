@@ -97,3 +97,18 @@ Cada agente deve ter um `README.md` na raiz com:
 | 03_prompt/schemas | input_schema.json | ✅ |
 | 03_prompt/schemas | output_schema.json | ✅ |
 | 04_validation | validation_report.md | ✅ |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

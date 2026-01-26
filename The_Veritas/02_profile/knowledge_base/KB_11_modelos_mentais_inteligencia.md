@@ -258,3 +258,18 @@ INDICADORES DE INVALIDAÇÃO:
 - CIA. (2009). *A Tradecraft Primer: Structured Analytic Techniques*.
 - Heuer, R. J. & Pherson, R. H. (2014). *Structured Analytic Techniques for Intelligence Analysis*.
 - Klein, G. (1989). *Premortem Analysis*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

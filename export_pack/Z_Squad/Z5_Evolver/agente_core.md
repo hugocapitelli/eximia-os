@@ -169,3 +169,18 @@ PATCH: Correção (fix de prompt, ajuste de guardrail)
 
 ---
 **Ciclo:** Monitora → Detecta → Propõe → Aprova → Evolui → Repete
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

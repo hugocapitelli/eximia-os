@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Media_Harvester Input Schema",
+  "description": "Schema para inputs do agente Media_Harvester",
+  "type": "object",
+  "required": ["action"],
+  "properties": {
+    "action": {
+      "type": "string",
+      "enum": ["download_single", "download_batch", "download_playlist", "transcribe_local"],
+      "description": "Tipo de ação a executar"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL do vídeo, playlist ou arquivo local"
+    },
+    "urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "description": "Lista de URLs para processamento em batch"
+    },
+    "query": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Query de busca para download_batch"
+    },
+    "clone_name": {
+      "type": "string",
+      "pattern": "^[a-z_]+$",
+      "description": "Nome do clone (snake_case)"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["interviews", "podcasts", "lectures", "shorts", "auto"],
+      "default": "auto",
+      "description": "Categoria do conteúdo"
+    },
+    "output_dir": {
+      "type": "string",
+      "description": "Diretório de saída customizado"
+    },
+    "options": {
+      "type": "object",
+      "properties": {
+        "language": {
+          "type": "string",
+          "pattern": "^[a-z]{2}$|^auto$",
+          "default": "auto",
+          "description": "Código ISO 639-1 do idioma (pt, en, es, etc.) ou 'auto'"
+        },
+        "model": {
+          "type": "string",
+          "enum": ["tiny", "base", "small", "medium", "large", "large-v3"],
+          "default": "medium",
+          "description": "Tamanho do modelo Whisper"
+        },
+        "prefer_subtitles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Priorizar legendas do YouTube sobre Whisper"
+        },
+        "diarize": {
+          "type": "boolean",
+          "default": false,
+          "description": "Ativar diarização (identificação de speakers)"
+        },
+        "max_results": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50,
+          "default": 10,
+          "description": "Máximo de resultados para busca"
+        },
+        "skip_existing": {
+          "type": "boolean",
+          "default": true,
+          "description": "Pular vídeos já baixados"
+        },
+        "format": {
+          "type": "string",
+          "enum": ["markdown", "json", "txt", "srt"],
+          "default": "markdown",
+          "description": "Formato de saída da transcrição"
+        },
+        "include_timestamps": {
+          "type": "boolean",
+          "default": true,
+          "description": "Incluir timestamps na transcrição"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "action": { "const": "download_single" } }
+      },
+      "then": {
+        "required": ["url"]
+      }
+    },
+    {
+      "if": {
+        "properties": { "action": { "const": "download_batch" } }
+      },
+      "then": {
+        "anyOf": [
+          { "required": ["query"] },
+          { "required": ["urls"] }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": { "action": { "const": "download_playlist" } }
+      },
+      "then": {
+        "required": ["url"]
+      }
+    },
+    {
+      "if": {
+        "properties": { "action": { "const": "transcribe_local" } }
+      },
+      "then": {
+        "required": ["url"]
+      }
+    }
+  ],
+  "examples": [
+    {
+      "action": "download_single",
+      "url": "https://youtube.com/watch?v=5tSTk1083VY",
+      "clone_name": "david_goggins",
+      "category": "interviews"
+    },
+    {
+      "action": "download_batch",
+      "query": "Elon Musk interview 2024",
+      "clone_name": "elon_musk",
+      "category": "auto",
+      "options": {
+        "max_results": 10,
+        "language": "en"
+      }
+    },
+    {
+      "action": "transcribe_local",
+      "url": "file:///path/to/audio.mp3",
+      "output_dir": "./transcripts",
+      "options": {
+        "model": "large",
+        "diarize": true
+      }
+    }
+  ]
+}

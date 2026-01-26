@@ -94,3 +94,18 @@ Dashboard de status operacional dos agentes coordenados pelo Maestro.
 ---
 
 *Atualizado automaticamente pelo sistema de monitoramento.*
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

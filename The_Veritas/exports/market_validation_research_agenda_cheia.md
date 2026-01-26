@@ -307,3 +307,18 @@ LTV:CAC = 1.552 / 635 = 2.44
 *Ground Truth Engine for eximIA.AI*
 
 > *"A verdade é o único produto que entrego. Tudo mais é ruído."*
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

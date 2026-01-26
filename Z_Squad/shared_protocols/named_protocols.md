@@ -169,3 +169,18 @@ protocol:
 ## 📚 Referências
 - [Business_Modeler: Protocols A/B/C](../../X_Agents/Business_Modeler/agente_core.md)
 - [Z Squad: Handoff Protocol](./handoff_protocol.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

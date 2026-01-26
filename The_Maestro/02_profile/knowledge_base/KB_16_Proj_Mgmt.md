@@ -62,3 +62,18 @@ For complex requests:
 3. Find longest path (critical path)
 4. Optimize bottlenecks
 5. Parallelize where possible
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -1,0 +1,231 @@
+# eximIA.OS Agent & Clone Backlog
+# Managed by: The Scheduler v1.0.0
+# Storage: X_Agents/The_Scheduler/BACKLOG.yaml
+
+version: "1.0.0"
+last_updated: "2026-01-24T00:00:00Z"
+maintained_by: "The_Scheduler"
+
+# ============================================================================
+# AGENTS BACKLOG
+# ============================================================================
+# Priority: high|medium|low
+# Status: planned|in_progress|validated|production
+# Blocked: true|false (based on dependencies)
+# ============================================================================
+
+agents_backlog:
+  # Example entry (remove when adding real items)
+  - id: example_agent
+    name: "Example Agent"
+    tier: 2
+    domain: "Example Domain"
+    description: "This is an example entry. Remove when adding real agents."
+    competencies:
+      - "Example Competency 1"
+      - "Example Competency 2"
+    dependencies:
+      hard:
+        - the_veritas  # Example: Agent needs Veritas
+      soft:
+        - the_ceo      # Example: Better with CEO
+    priority: medium
+    rice_score: null  # Calculate with /schedule prioritize
+    rice_components:
+      reach: null
+      impact: null
+      confidence: null
+      effort: 9  # Auto from tier
+    estimated_hours: "8-10h"
+    status: planned
+    blocked: false  # Set true if hard dependencies not in production
+    created_at: "2026-01-24"
+    created_by: "The_Scheduler"
+    notes: "Example entry - replace with real agents"
+
+# ============================================================================
+# CLONES BACKLOG
+# ============================================================================
+# Status: planned|research|extraction|creation|validation|production
+# Effort: Always 25-40h (Clone Factory standard)
+# ============================================================================
+
+clones_backlog:
+  # Example entry (remove when adding real items)
+  - id: example_clone
+    name: "Example Person"
+    domain: "Example Expertise"
+    description: "This is an example clone entry. Remove when adding real clones."
+    sources_available: true  # Do we have access to enough source material?
+    source_hints:
+      - "Podcasts available"
+      - "Book published"
+      - "Interviews on YouTube"
+    priority: medium
+    rice_score: null  # Calculate with /schedule prioritize
+    rice_components:
+      reach: null
+      impact: null
+      confidence: null
+      effort: 30  # Clone Factory standard
+    estimated_hours: "25-35h"
+    status: planned
+    blocked: false
+    created_at: "2026-01-24"
+    created_by: "The_Scheduler"
+    notes: "Example entry - replace with real clones"
+
+  - id: jacob_petry
+    name: "Jacob Petry"
+    domain: "Comportamento Humano"
+    description: "Autor de O Óbvio que Ignoramos, focado em comportamento e leis do sucesso."
+    sources_available: true
+    priority: high
+    rice_score: 0.24
+    rice_components:
+      reach: 3
+      impact: 3.0
+      confidence: 0.8
+      effort: 30
+    estimated_hours: "25-35h"
+    status: planned
+    blocked: false
+    created_at: "2026-01-24"
+    created_by: "The_Scheduler"
+    notes: "Tier 2 requested, mapped to Standard Clone Factory pipeline"
+
+  - id: donald_miller
+    name: "Donald Miller"
+    domain: "Branding/Story Brand"
+    description: "Autor de Building a StoryBrand, especialista em clareza de mensagem e framework StoryBrand"
+    sources_available: true
+    source_hints:
+      - "Building a StoryBrand (2017)"
+      - "Marketing Made Simple (2020)"
+      - "Business Made Simple Podcast"
+      - "StoryBrand keynotes e talks"
+    priority: medium
+    rice_score: 2.0
+    rice_components:
+      reach: 20
+      impact: 3.0
+      confidence: 1.0
+      effort: 30
+    estimated_hours: "25-35h"
+    status: planned
+    blocked: false
+    created_at: "2026-01-24"
+    created_by: "The_Scheduler"
+    notes: "Framework StoryBrand muito popular, fontes abundantes (livros, podcasts, talks)"
+
+  - id: ray_dalio
+    name: "Ray Dalio"
+    domain: "Princípios Sistêmicos"
+    description: "Fundador da Bridgewater, autor de Principles, especialista em pensamento sistêmico e tomada de decisão"
+    sources_available: true
+    source_hints:
+      - "Principles: Life and Work (2017)"
+      - "Principles for Navigating Big Debt Crises (2018)"
+      - "Principles for Dealing with the Changing World Order (2021)"
+      - "Principles.com resources"
+      - "TED Talks, podcasts (Tim Ferriss, Lex Fridman)"
+      - "Economic principles videos"
+    priority: medium
+    rice_score: 5.0
+    rice_components:
+      reach: 50
+      impact: 3.0
+      confidence: 1.0
+      effort: 30
+    estimated_hours: "25-35h"
+    status: planned
+    blocked: false
+    created_at: "2026-01-24"
+    created_by: "The_Scheduler"
+    notes: "Fontes abundantes, pensamento sistêmico aplicável a estratégia, finanças e decisões. RICE 5.0 = BUILD NOW!"
+
+  - id: steve_jobs
+    name: "Steve Jobs"
+    domain: "Inovação Visionária"
+    description: "Co-fundador da Apple, visionário em design e inovação, filosofia de produto e experiência do usuário"
+    sources_available: true
+    source_hints:
+      - "Walter Isaacson Biography (2011)"
+      - "Stanford Commencement Speech (2005)"
+      - "Apple keynotes (1984-2011)"
+      - "The Lost Interview (1995)"
+      - "D Conference interviews"
+      - "Think Different campaign"
+      - "NeXT and Pixar materials"
+    priority: high
+    rice_score: 5.0
+    rice_components:
+      reach: 50
+      impact: 3.0
+      confidence: 1.0
+      effort: 30
+    estimated_hours: "25-35h"
+    status: planned
+    blocked: false
+    created_at: "2026-01-24"
+    created_by: "The_Scheduler"
+    notes: "Material abundante, persona icônica, first principles thinking, design philosophy única. RICE 5.0 = BUILD NOW!"
+
+  - id: peter_thiel
+    name: "Peter Thiel"
+    domain: "Monopólio Criativo"
+    description: "Co-fundador do PayPal e Palantir, autor de Zero to One, especialista em pensamento contrarian e criação de monopólios"
+    sources_available: true
+    source_hints:
+      - "Zero to One (2014)"
+      - "Stanford CS183: Startup (2012 lectures)"
+      - "The Diversity Myth (1995)"
+      - "Numerous interviews (Tim Ferriss, Tyler Cowen, Peter Robinson)"
+      - "PayPal Mafia insights"
+      - "Founders Fund philosophy"
+      - "Contrarian thinking frameworks"
+    priority: high
+    rice_score: 0.8
+    rice_components:
+      reach: 15
+      impact: 2.0
+      confidence: 0.8
+      effort: 30
+    estimated_hours: "25-35h"
+    status: planned
+    blocked: false
+    created_at: "2026-01-25"
+    created_by: "The_Scheduler"
+    notes: "Pensamento contrarian único, filosofia 0→1, fontes abundantes (livro + lectures + interviews)"
+
+# ============================================================================
+# COMPLETED (Archive)
+# ============================================================================
+# Moved here when status = production
+# Kept for historical tracking
+
+completed:
+  agents: []
+  clones: []
+
+# ============================================================================
+# STATISTICS
+# ============================================================================
+statistics:
+  total_agents_planned: 0
+  total_clones_planned: 5
+  total_in_progress: 0
+  total_completed: 0
+  average_rice_score: 1.77
+  highest_rice_agent: "ray_dalio"
+  next_recommended: "ray_dalio"
+
+# ============================================================================
+# NOTES
+# ============================================================================
+# - Use /schedule agent to add new agents
+# - Use /schedule clone to add new clones
+# - Use /schedule prioritize to calculate RICE scores
+# - Use /schedule next to get recommendation
+# - This file is auto-updated by The Scheduler
+# - Manual edits are allowed but use caution

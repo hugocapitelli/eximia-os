@@ -230,3 +230,18 @@ red_flags:
 - Código Civil (Lei 10.406/2002)
 - GOMES, Orlando. Contratos, 2019
 - TARTUCE, Flávio. Direito Civil: Contratos, 2023
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

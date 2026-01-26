@@ -163,3 +163,18 @@ Kolb identificou que cada pessoa tem tendência a preferir certas etapas do cicl
 ---
 
 **Criado por:** KolbFlow Designer | Z Squad | eximIA.AI © 2026
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

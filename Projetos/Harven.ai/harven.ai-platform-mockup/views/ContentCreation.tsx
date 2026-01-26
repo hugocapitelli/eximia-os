@@ -1,68 +1,183 @@
 
-import React, { useState, useEffect } from 'react';
-import { ViewType } from '../types';
-import { contentsApi, questionsApi } from '../services/api';
+import React, { useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import { contentsApi, questionsApi, aiApi } from '../services/api';
 
-interface ContentCreationProps {
-   onNavigate: (view: ViewType, data?: any) => void;
-   chapterId?: string | null;
-}
-
-const ContentCreation: React.FC<ContentCreationProps> = ({ onNavigate, chapterId }) => {
+const ContentCreation: React.FC = () => {
+   const navigate = useNavigate();
+   const { courseId, chapterId } = useParams<{ courseId: string; chapterId: string }>();
    const [file, setFile] = useState<File | null>(null);
    const [mediaType, setMediaType] = useState<'text' | 'video' | 'audio'>('text');
+   const [uploadProgress, setUploadProgress] = useState(0);
+   const [isUploading, setIsUploading] = useState(false);
 
    // Flow enforced: Upload -> Selection (Method) -> Processing/Manual
    const [step, setStep] = useState<'upload' | 'selection' | 'manual' | 'ai_processing'>('upload');
    const [processingProgress, setProcessingProgress] = useState(0);
    const [processingStage, setProcessingStage] = useState('Inicializando...');
 
+   // Uploaded file data
+   const [uploadedFileUrl, setUploadedFileUrl] = useState<string | null>(null);
+
    // Manual Creation Data
-   const [contentTitle, setContentTitle] = useState('Novo Conteúdo Manual');
+   const [contentTitle, setContentTitle] = useState('Novo Conteúdo');
    const [textContent, setTextContent] = useState('');
    const [manualQuestions, setManualQuestions] = useState<any[]>([
       { question_text: '', expected_answer: '', difficulty: 'medium' }
    ]);
 
-   const handleFileDrop = (e: React.DragEvent) => {
-      e.preventDefault();
-      const fileName = mediaType === 'text' ? 'Nova_Aula_05.pdf' : mediaType === 'video' ? 'Aula_Video_01.mp4' : 'Audio_Explainer.mp3';
-      // Mock file object (would be real file in production drop)
-      const mockFile = { name: fileName, size: 2048000 } as any;
-      setFile(mockFile);
-      setContentTitle(fileName);
-      setStep('selection');
-   };
+   // AI Generated Questions
+   const [aiGeneratedQuestions, setAiGeneratedQuestions] = useState<any[]>([]);
+   const [aiError, setAiError] = useState<string | null>(null);
 
-   const handleFileInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-      if (e.target.files && e.target.files[0]) {
-         setFile(e.target.files[0]);
-         setContentTitle(e.target.files[0].name);
-         setStep('selection');
+   const handleFileDrop = async (e: React.DragEvent) => {
+      e.preventDefault();
+      const droppedFiles = e.dataTransfer.files;
+      if (droppedFiles && droppedFiles[0]) {
+         await processFile(droppedFiles[0]);
       }
    };
 
-   const startAIProcessing = () => {
-      setStep('ai_processing');
-      let progress = 0;
-      const stages = ['Lendo Arquivo...', 'Transcrevendo (Whisper)...', 'Analisando Estrutura Semântica...', 'Gerando Embeddings...', 'Finalizando...'];
+   const handleFileInput = async (e: React.ChangeEvent<HTMLInputElement>) => {
+      if (e.target.files && e.target.files[0]) {
+         await processFile(e.target.files[0]);
+      }
+   };
 
-      const interval = setInterval(() => {
-         progress += 5;
-         setProcessingProgress(progress);
+   const processFile = async (selectedFile: File) => {
+      if (!chapterId) {
+         alert("Erro: ID do capítulo não encontrado.");
+         return;
+      }
 
-         const stageIndex = Math.floor((progress / 100) * stages.length);
-         setProcessingStage(stages[Math.min(stageIndex, stages.length - 1)]);
+      // Detectar tipo baseado na extensão do arquivo localmente também
+      const fileExt = selectedFile.name.split('.').pop()?.toLowerCase() || '';
+      const localTypeMap: Record<string, 'text' | 'video' | 'audio'> = {
+         'pdf': 'text', 'doc': 'text', 'docx': 'text', 'txt': 'text', 'pptx': 'text',
+         'mp4': 'video', 'mov': 'video', 'avi': 'video', 'webm': 'video', 'mkv': 'video',
+         'mp3': 'audio', 'wav': 'audio', 'ogg': 'audio', 'm4a': 'audio', 'aac': 'audio'
+      };
+      const detectedType = localTypeMap[fileExt] || 'text';
 
-         if (progress >= 100) {
-            clearInterval(interval);
-            setTimeout(async () => {
-               // Creating mocked AI content for now, but saving to DB
-               await saveContentAndQuestions(true);
-               onNavigate('INSTRUCTOR_LIST'); // Or go back to discipline/chapter
-            }, 500);
+      // Atualizar tipo imediatamente baseado na extensão
+      setMediaType(detectedType);
+
+      setFile(selectedFile);
+      setContentTitle(selectedFile.name.replace(/\.[^/.]+$/, "")); // Remove extension for title
+      setIsUploading(true);
+      setUploadProgress(10);
+
+      try {
+         // Upload real file to Supabase
+         setUploadProgress(30);
+         const uploadResult = await contentsApi.uploadFile(chapterId, selectedFile);
+         setUploadProgress(100);
+
+         setUploadedFileUrl(uploadResult.url);
+
+         // Usar tipo do backend se disponível, senão manter o detectado localmente
+         if (uploadResult.type) {
+            const backendType = uploadResult.type.toLowerCase() as 'text' | 'video' | 'audio';
+            setMediaType(backendType);
+            console.log('Tipo detectado pelo backend:', backendType);
+         } else {
+            console.log('Tipo detectado localmente:', detectedType);
          }
-      }, 200);
+
+         // Use extracted text from PDF/TXT for AI processing
+         if (uploadResult.extracted_text) {
+            setTextContent(uploadResult.extracted_text);
+         }
+
+         setStep('selection');
+      } catch (error) {
+         console.error("Erro no upload:", error);
+         alert("Erro ao fazer upload do arquivo. Tente novamente.");
+         setFile(null);
+      } finally {
+         setIsUploading(false);
+         setUploadProgress(0);
+      }
+   };
+
+   const startAIProcessing = async () => {
+      setStep('ai_processing');
+      setAiError(null);
+      setProcessingProgress(10);
+      setProcessingStage('Conectando ao Harven Creator...');
+
+      try {
+         // Verificar se IA esta disponivel
+         setProcessingProgress(20);
+         const status = await aiApi.getStatus();
+
+         if (!status.enabled) {
+            throw new Error('Servico de IA nao configurado. Configure OPENAI_API_KEY no backend.');
+         }
+
+         setProcessingProgress(30);
+         setProcessingStage('Analisando conteudo...');
+
+         // Preparar conteudo para a IA
+         const contentForAI = textContent || file?.name || 'Conteudo educacional';
+
+         setProcessingProgress(50);
+         setProcessingStage('Gerando perguntas socraticas...');
+
+         // Chamar API de geracao de perguntas
+         const result = await aiApi.generateQuestions({
+            chapter_content: contentForAI,
+            chapter_title: contentTitle,
+            difficulty: 'intermediario',
+            max_questions: 3
+         });
+
+         setProcessingProgress(80);
+         setProcessingStage('Processando resultado...');
+
+         // Converter formato da IA para formato do banco
+         let formattedQuestions: any[] = [];
+         if (result.questions && result.questions.length > 0) {
+            formattedQuestions = result.questions.map((q: any) => ({
+               question_text: q.text || q.question_text || q.question,
+               expected_answer: q.expected_depth || q.intention || q.expected_answer || '',
+               difficulty: q.difficulty || 'medium',
+               skill: q.skill,
+               followup_prompts: q.followup_prompts
+            }));
+            setAiGeneratedQuestions(formattedQuestions);
+         }
+
+         setProcessingProgress(100);
+         setProcessingStage('Concluido!');
+
+         // Salvar conteudo com perguntas geradas (passar diretamente para evitar problema de setState assíncrono)
+         setTimeout(async () => {
+            await saveContentAndQuestions(true, formattedQuestions);
+         }, 500);
+
+      } catch (error: any) {
+         console.error('Erro no processamento de IA:', error);
+         const errorMsg = error.message || 'Erro ao processar com IA';
+
+         // Se erro de configuração, mostrar e voltar
+         if (errorMsg.includes('OPENAI_API_KEY') || errorMsg.includes('not configured')) {
+            setAiError('IA não configurada. Configure OPENAI_API_KEY no backend/.env');
+            setProcessingStage('IA não disponível');
+            setTimeout(() => setStep('selection'), 3000);
+            return;
+         }
+
+         // Para outros erros, continuar com perguntas default
+         setProcessingStage('Usando perguntas padrão...');
+         setProcessingProgress(90);
+
+         // Limpar erro e salvar com perguntas default
+         setAiError(null);
+         setTimeout(async () => {
+            await saveContentAndQuestions(true);
+         }, 500);
+      }
    };
 
    const addQuestionField = () => {
@@ -75,44 +190,53 @@ const ContentCreation: React.FC<ContentCreationProps> = ({ onNavigate, chapterId
       setManualQuestions(newQs);
    };
 
-   const saveContentAndQuestions = async (isAI: boolean = false) => {
+   const saveContentAndQuestions = async (isAI: boolean = false, questionsFromAI: any[] = []) => {
       if (!chapterId) {
-         alert("Erro: ID do capítulo não encontrado.");
+         alert("Erro: ID do capítulo não encontrado. Retornando ao portal.");
+         navigate('/instructor');
          return;
       }
 
       try {
-         // 1. Create Content
+         // Log para debug do tipo de conteúdo
+         console.log('Salvando conteúdo com tipo:', mediaType, '| URL:', uploadedFileUrl);
+
+         // 1. Create Content with real file URL
          const newContent = await contentsApi.create(chapterId, {
             title: contentTitle,
             type: mediaType, // 'text', 'video', 'audio'
-            text_content: isAI ? "Conteúdo gerado via AI..." : textContent, // Simplified for now
-            content_url: file ? `https://fake-storage/${file.name}` : null,
-            order: 0 // TODO: fetch count
+            text_content: textContent || null,
+            content_url: uploadedFileUrl || null, // Real uploaded file URL
+            order: 0
          });
 
-         // 2. Create Questions (if manual or mocked AI)
+         console.log('Conteúdo criado:', newContent);
+
+         // 2. Create Questions (AI-generated or manual)
          if (newContent && newContent.id) {
+            // Use questions passed directly (for AI) or from state (for manual)
+            const aiQuestions = questionsFromAI.length > 0 ? questionsFromAI : aiGeneratedQuestions;
+
             const questionsToSave = isAI
-               ? [
-                  { question_text: "Qual o conceito principal abordado?", expected_answer: "O conceito de...", difficulty: "medium" },
-                  { question_text: "Como isso se aplica na vida real?", expected_answer: "Exemplo prático...", difficulty: "hard" }
-               ]
+               ? aiQuestions.length > 0
+                  ? aiQuestions
+                  : [
+                     { question_text: "Qual o conceito principal abordado?", expected_answer: "O conceito de...", difficulty: "medium" },
+                     { question_text: "Como isso se aplica na vida real?", expected_answer: "Exemplo pratico...", difficulty: "hard" }
+                  ]
                : manualQuestions.filter(q => q.question_text.trim() !== '');
 
             if (questionsToSave.length > 0) {
                await questionsApi.create(newContent.id, questionsToSave);
             }
-         }
 
-         if (!isAI) {
-            alert("Conteúdo e Perguntas salvos com sucesso!");
-            onNavigate('DISCIPLINE_EDIT', null); // Ideally go back to previous view logic
+            // 3. Navigate to the content revision page for approval
+            navigate(`/course/${courseId}/chapter/${chapterId}/content/${newContent.id}/revision`);
          }
 
       } catch (e) {
          console.error("Erro ao salvar conteúdo", e);
-         alert("Erro ao salvar conteúdo.");
+         alert("Erro ao salvar conteúdo. Verifique o console para mais detalhes.");
       }
    };
 
@@ -122,11 +246,16 @@ const ContentCreation: React.FC<ContentCreationProps> = ({ onNavigate, chapterId
 
             {/* Header da View */}
             <div>
-               <nav className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">
-                  <span className="cursor-pointer hover:text-harven-dark" onClick={() => onNavigate('DISCIPLINE_EDIT', null)}>Voltar</span>
-                  <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-                  <span className="text-harven-dark">Gerenciador de Conteúdo</span>
-               </nav>
+               <div className="flex items-center gap-3 mb-2">
+                  <button
+                     onClick={() => navigate(`/course/${courseId}`)}
+                     className="p-2 -ml-2 rounded-lg hover:bg-white text-gray-400 hover:text-harven-dark transition-colors flex items-center gap-2"
+                     title="Voltar"
+                  >
+                     <span className="material-symbols-outlined text-[20px]">arrow_back</span>
+                     <span className="text-xs font-bold uppercase tracking-widest">Voltar</span>
+                  </button>
+               </div>
                <h1 className="text-3xl font-display font-bold text-harven-dark">
                   Adicionar Conteúdo
                </h1>
@@ -141,55 +270,91 @@ const ContentCreation: React.FC<ContentCreationProps> = ({ onNavigate, chapterId
                   <div className="flex gap-2 mb-6 bg-white p-1 rounded-xl border border-harven-border shadow-sm">
                      <button
                         onClick={() => setMediaType('text')}
-                        className={`px-4 py-2 rounded-lg text-xs font-bold uppercase transition-all flex items-center gap-2 ${mediaType === 'text' ? 'bg-harven-dark text-white' : 'text-gray-400 hover:text-harven-dark'}`}
+                        disabled={isUploading}
+                        className={`px-4 py-2 rounded-lg text-xs font-bold uppercase transition-all flex items-center gap-2 ${mediaType === 'text' ? 'bg-harven-dark text-white' : 'text-gray-400 hover:text-harven-dark'} disabled:opacity-50`}
                      >
                         <span className="material-symbols-outlined text-[18px]">description</span> Documento
                      </button>
                      <button
                         onClick={() => setMediaType('video')}
-                        className={`px-4 py-2 rounded-lg text-xs font-bold uppercase transition-all flex items-center gap-2 ${mediaType === 'video' ? 'bg-harven-dark text-white' : 'text-gray-400 hover:text-harven-dark'}`}
+                        disabled={isUploading}
+                        className={`px-4 py-2 rounded-lg text-xs font-bold uppercase transition-all flex items-center gap-2 ${mediaType === 'video' ? 'bg-harven-dark text-white' : 'text-gray-400 hover:text-harven-dark'} disabled:opacity-50`}
                      >
                         <span className="material-symbols-outlined text-[18px]">movie</span> Vídeo
                      </button>
                      <button
                         onClick={() => setMediaType('audio')}
-                        className={`px-4 py-2 rounded-lg text-xs font-bold uppercase transition-all flex items-center gap-2 ${mediaType === 'audio' ? 'bg-harven-dark text-white' : 'text-gray-400 hover:text-harven-dark'}`}
+                        disabled={isUploading}
+                        className={`px-4 py-2 rounded-lg text-xs font-bold uppercase transition-all flex items-center gap-2 ${mediaType === 'audio' ? 'bg-harven-dark text-white' : 'text-gray-400 hover:text-harven-dark'} disabled:opacity-50`}
                      >
                         <span className="material-symbols-outlined text-[18px]">headphones</span> Áudio
                      </button>
                   </div>
 
                   <div
-                     className="w-full max-w-2xl border-2 border-dashed border-gray-300 rounded-3xl p-12 flex flex-col items-center justify-center bg-white hover:border-primary hover:bg-primary/5 transition-all cursor-pointer group relative"
+                     className={`w-full max-w-2xl border-2 border-dashed rounded-3xl p-12 flex flex-col items-center justify-center bg-white transition-all relative ${isUploading ? 'border-primary bg-primary/5' : 'border-gray-300 hover:border-primary hover:bg-primary/5 cursor-pointer group'}`}
                      onDragOver={(e) => e.preventDefault()}
-                     onDrop={handleFileDrop}
+                     onDrop={isUploading ? undefined : handleFileDrop}
                   >
-                     <input type="file" className="absolute inset-0 opacity-0 cursor-pointer" onChange={handleFileInput} accept={mediaType === 'text' ? '.pdf,.doc,.docx,.txt' : mediaType === 'video' ? '.mp4,.mov' : '.mp3,.wav'} />
-                     <div className="size-20 bg-harven-bg rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <span className="material-symbols-outlined text-4xl text-gray-400 group-hover:text-primary-dark">
-                           {mediaType === 'text' ? 'cloud_upload' : mediaType === 'video' ? 'video_file' : 'audio_file'}
-                        </span>
-                     </div>
-                     <h3 className="text-xl font-bold text-harven-dark mb-2">
-                        {mediaType === 'text' ? 'Arraste seu documento (PDF/DOC)' : mediaType === 'video' ? 'Arraste seu vídeo (MP4/MOV)' : 'Arraste seu áudio (MP3/WAV)'}
-                     </h3>
-                     <p className="text-gray-500 mb-8">Conteúdo base para a aula</p>
-                     <div className="flex gap-4 text-xs font-bold text-gray-400 uppercase tracking-widest">
-                        {mediaType === 'text' && <span>PDF • DOCX • PPTX • TXT</span>}
-                        {mediaType === 'video' && <span>MP4 • MOV • AVI • WEBM</span>}
-                        {mediaType === 'audio' && <span>MP3 • WAV • OGG • M4A</span>}
-                     </div>
+                     {!isUploading && (
+                        <input
+                           type="file"
+                           className="absolute inset-0 opacity-0 cursor-pointer"
+                           onChange={handleFileInput}
+                           accept={mediaType === 'text' ? '.pdf,.doc,.docx,.txt,.pptx' : mediaType === 'video' ? '.mp4,.mov,.avi,.webm' : '.mp3,.wav,.ogg,.m4a'}
+                        />
+                     )}
+
+                     {isUploading ? (
+                        <>
+                           <div className="size-20 bg-primary/20 rounded-full flex items-center justify-center mb-6 animate-pulse">
+                              <span className="material-symbols-outlined text-4xl text-primary-dark animate-spin">sync</span>
+                           </div>
+                           <h3 className="text-xl font-bold text-harven-dark mb-2">Fazendo upload...</h3>
+                           <p className="text-gray-500 mb-4">{file?.name}</p>
+                           <div className="w-full max-w-xs bg-gray-200 rounded-full h-2 overflow-hidden">
+                              <div
+                                 className="bg-primary h-full rounded-full transition-all duration-300"
+                                 style={{ width: `${uploadProgress}%` }}
+                              ></div>
+                           </div>
+                           <p className="text-xs text-gray-400 mt-2">{uploadProgress}%</p>
+                        </>
+                     ) : (
+                        <>
+                           <div className="size-20 bg-harven-bg rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                              <span className="material-symbols-outlined text-4xl text-gray-400 group-hover:text-primary-dark">
+                                 {mediaType === 'text' ? 'cloud_upload' : mediaType === 'video' ? 'video_file' : 'audio_file'}
+                              </span>
+                           </div>
+                           <h3 className="text-xl font-bold text-harven-dark mb-2">
+                              {mediaType === 'text' ? 'Arraste seu documento (PDF/DOC)' : mediaType === 'video' ? 'Arraste seu vídeo (MP4/MOV)' : 'Arraste seu áudio (MP3/WAV)'}
+                           </h3>
+                           <p className="text-gray-500 mb-8">Conteúdo base para a aula</p>
+                           <div className="flex gap-4 text-xs font-bold text-gray-400 uppercase tracking-widest">
+                              {mediaType === 'text' && <span>PDF • DOCX • PPTX • TXT</span>}
+                              {mediaType === 'video' && <span>MP4 • MOV • AVI • WEBM</span>}
+                              {mediaType === 'audio' && <span>MP3 • WAV • OGG • M4A</span>}
+                           </div>
+                        </>
+                     )}
                   </div>
 
                   <div className="mt-8 flex gap-4">
-                     <button onClick={() => setStep('manual')} className="text-gray-400 hover:text-harven-dark font-bold text-sm underline">Pular upload e criar manualmente</button>
+                     <button
+                        onClick={() => setStep('manual')}
+                        disabled={isUploading}
+                        className="text-gray-400 hover:text-harven-dark font-bold text-sm underline disabled:opacity-50"
+                     >
+                        Pular upload e criar manualmente
+                     </button>
                   </div>
                </div>
             )}
 
             {/* STEP 2: SELECTION (METHOD) */}
             {step === 'selection' && (
-               <div className="flex-1 flex flex-col gap-8 animate-in slide-in-from-bottom-4 duration-500">
+               <div className="flex-1 flex flex-col gap-6 animate-in slide-in-from-bottom-4 duration-500 overflow-y-auto">
                   <div className="bg-white p-4 rounded-xl border border-harven-border flex items-center gap-4 shadow-sm">
                      <div className="size-10 bg-green-50 text-green-600 rounded-lg flex items-center justify-center">
                         <span className="material-symbols-outlined">
@@ -203,7 +368,30 @@ const ContentCreation: React.FC<ContentCreationProps> = ({ onNavigate, chapterId
                      <button onClick={() => setStep('upload')} className="text-xs font-bold text-gray-400 hover:text-red-500 uppercase">Trocar</button>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-full max-h-[400px]">
+                  {/* Status do conteúdo extraído */}
+                  {textContent ? (
+                     <div className="bg-green-50 p-4 rounded-xl border border-green-200 flex items-center gap-3">
+                        <div className="size-10 bg-green-100 text-green-600 rounded-lg flex items-center justify-center">
+                           <span className="material-symbols-outlined">check_circle</span>
+                        </div>
+                        <div className="flex-1">
+                           <p className="text-sm font-bold text-green-800">Texto extraído automaticamente</p>
+                           <p className="text-xs text-green-600">{textContent.length.toLocaleString()} caracteres prontos para análise da IA</p>
+                        </div>
+                     </div>
+                  ) : (
+                     <div className="bg-amber-50 p-4 rounded-xl border border-amber-200 flex items-center gap-3">
+                        <div className="size-10 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center">
+                           <span className="material-symbols-outlined">info</span>
+                        </div>
+                        <div className="flex-1">
+                           <p className="text-sm font-bold text-amber-800">Sem texto extraído</p>
+                           <p className="text-xs text-amber-600">Para vídeos/áudios, a IA gerará perguntas baseadas no título. Para PDFs, verifique se o arquivo contém texto selecionável.</p>
+                        </div>
+                     </div>
+                  )}
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                      {/* Card AI */}
                      <button
                         onClick={startAIProcessing}
@@ -219,11 +407,11 @@ const ContentCreation: React.FC<ContentCreationProps> = ({ onNavigate, chapterId
                         <div>
                            <h3 className="text-2xl font-display font-bold text-harven-dark mb-2">Processamento Inteligente (IA)</h3>
                            <p className="text-gray-500 leading-relaxed">
-                              A Harven AI analisará o conteúdo, extrairá conceitos-chave e gerará automaticamente perguntas socráticas e a estrutura da aula.
+                              A Harven AI analisará o conteúdo, extrairá conceitos-chave e gerará automaticamente perguntas socráticas.
                            </p>
                         </div>
                         <div className="mt-auto flex items-center gap-2 text-sm font-bold text-primary-dark uppercase tracking-wide">
-                           Recomendado <span className="material-symbols-outlined">arrow_forward</span>
+                           {textContent ? 'Gerar Perguntas' : 'Gerar Perguntas'} <span className="material-symbols-outlined">arrow_forward</span>
                         </div>
                      </button>
 
@@ -238,7 +426,7 @@ const ContentCreation: React.FC<ContentCreationProps> = ({ onNavigate, chapterId
                         <div>
                            <h3 className="text-2xl font-display font-bold text-harven-dark mb-2">Processamento Manual</h3>
                            <p className="text-gray-500 leading-relaxed">
-                              Você define a estrutura do capítulo e escreve as perguntas e respostas esperadas manualmente. Ideal para controle total.
+                              Você define a estrutura do capítulo e escreve as perguntas manualmente. Ideal para controle total.
                            </p>
                         </div>
                         <div className="mt-auto flex items-center gap-2 text-sm font-bold text-gray-400 group-hover:text-harven-dark uppercase tracking-wide transition-colors">

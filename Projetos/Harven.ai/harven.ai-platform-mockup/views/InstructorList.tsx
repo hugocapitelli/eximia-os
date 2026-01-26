@@ -1,17 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
-import { ViewType } from '../types';
+import { useNavigate } from 'react-router-dom';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { Input } from '../components/ui/Input';
 import { Badge } from '../components/ui/Badge';
 import { disciplinesApi } from '../services/api';
 
-interface InstructorListProps {
-  onNavigate: (view: ViewType, data?: any) => void;
-}
-
-const InstructorList: React.FC<InstructorListProps> = ({ onNavigate }) => {
+const InstructorList: React.FC = () => {
+  const navigate = useNavigate();
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 
   // Real Disciplines Data
@@ -86,22 +83,21 @@ const InstructorList: React.FC<InstructorListProps> = ({ onNavigate }) => {
               key={i}
               hoverEffect
               className="flex flex-col animate-in zoom-in-95 duration-300 relative h-full"
-              onClick={() => onNavigate('INSTRUCTOR_DETAIL', discipline.id)}
+              onClick={() => navigate(`/instructor/class/${discipline.id}`)}
             >
               <div className="h-24 bg-gradient-to-br from-foreground to-foreground/80 p-5 flex items-end relative overflow-hidden">
-                <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+                {/* Cover image if exists */}
+                {discipline.image && (
+                  <img
+                    src={discipline.image}
+                    alt={discipline.title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                )}
+                {/* Overlay gradient for readability */}
+                <div className={`absolute inset-0 ${discipline.image ? 'bg-gradient-to-t from-black/60 via-black/20 to-transparent' : 'opacity-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white via-transparent to-transparent'}`}></div>
 
                 <div className="absolute top-3 right-3 flex gap-2">
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      onNavigate('DISCIPLINE_EDIT', { id: discipline.id, type: 'class', tab: 'info' });
-                    }}
-                    className="size-6 bg-white/20 hover:bg-white text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all shadow-sm"
-                    title="Editar Turma"
-                  >
-                    <span className="material-symbols-outlined text-[14px]">edit</span>
-                  </button>
                   <Badge variant={'success'} className="border-white/20 bg-white/10 text-white backdrop-blur-sm">
                     Ativa
                   </Badge>
@@ -115,8 +111,9 @@ const InstructorList: React.FC<InstructorListProps> = ({ onNavigate }) => {
                   {discipline.title}
                 </h3>
                 <p className="text-xs text-muted-foreground mt-1 font-bold">{discipline.code} • {discipline.department}</p>
+                <p className="text-[10px] text-muted-foreground mt-2 uppercase tracking-widest">{discipline.courses_count || 0} CURSOS • {discipline.students || 0} ALUNOS</p>
 
-                <div className="mt-8 pt-4 border-t border-border flex justify-between items-center">
+                <div className="mt-auto pt-4 border-t border-border flex justify-between items-center">
                   <span className="text-xs font-bold text-muted-foreground">Gerenciar Turma</span>
                   <span className="material-symbols-outlined text-[18px] text-primary-dark">arrow_forward</span>
                 </div>
@@ -134,10 +131,14 @@ const InstructorList: React.FC<InstructorListProps> = ({ onNavigate }) => {
             <div className="col-span-1 text-right">Ações</div>
           </div>
           {disciplines.map((cls, i) => (
-            <div key={i} className="grid grid-cols-12 gap-4 p-4 border-b border-border hover:bg-muted/20 items-center group transition-colors cursor-pointer" onClick={() => onNavigate('INSTRUCTOR_DETAIL', cls.id)}>
+            <div key={i} className="grid grid-cols-12 gap-4 p-4 border-b border-border hover:bg-muted/20 items-center group transition-colors cursor-pointer" onClick={() => navigate(`/instructor/class/${cls.id}`)}>
               <div className="col-span-5 flex items-center gap-4">
                 <div className="size-10 rounded-lg bg-muted border border-border flex items-center justify-center text-foreground overflow-hidden">
-                  <span className="material-symbols-outlined">{cls.icon || 'school'}</span>
+                  {cls.image ? (
+                    <img src={cls.image} alt={cls.title} className="w-full h-full object-cover" />
+                  ) : (
+                    <span className="material-symbols-outlined">{cls.icon || 'school'}</span>
+                  )}
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-foreground group-hover:text-primary-dark transition-colors">{cls.title}</h4>
@@ -149,7 +150,7 @@ const InstructorList: React.FC<InstructorListProps> = ({ onNavigate }) => {
                 <Badge variant={cls.status === 'active' || cls.status === 'Ativa' ? 'success' : 'default'}>{cls.status || 'Ativa'}</Badge>
               </div>
               <div className="col-span-1 flex justify-end gap-2">
-                <Button variant="ghost" size="icon" onClick={(e) => { e.stopPropagation(); onNavigate('INSTRUCTOR_DETAIL', cls.id); }} className="size-8"><span className="material-symbols-outlined text-[18px]">arrow_forward</span></Button>
+                <Button variant="ghost" size="icon" onClick={(e) => { e.stopPropagation(); navigate(`/instructor/class/${cls.id}`); }} className="size-8"><span className="material-symbols-outlined text-[18px]">arrow_forward</span></Button>
               </div>
             </div>
           ))}

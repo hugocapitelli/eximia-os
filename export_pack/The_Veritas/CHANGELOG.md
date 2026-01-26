@@ -35,3 +35,18 @@ Todas as mudanças notáveis neste agente serão documentadas aqui.
 ### Validation
 - 15 validation cases passed
 - Comparative analysis vs competitors complete
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

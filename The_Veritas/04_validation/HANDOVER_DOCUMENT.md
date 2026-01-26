@@ -179,3 +179,18 @@ The_Veritas/
 | Z4_Validator | — | ✅ |
 
 **Status:** ✅ **PRODUCTION READY**
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

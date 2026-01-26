@@ -234,3 +234,18 @@ FONTES
 - Minto, B. (1978). *The Pyramid Principle*. Minto International.
 - McKinsey & Company. *MECE Framework*.
 - Kipling, R. (1902). *Just So Stories* (origem do 5W1H).
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

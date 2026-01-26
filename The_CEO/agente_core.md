@@ -114,3 +114,18 @@ Quando o Fundador ativa este modo:
 ---
 **Criado por:** Hugo & The Recruiter
 **Atualizado em:** 2026-01-06
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

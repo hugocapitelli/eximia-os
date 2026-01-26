@@ -329,3 +329,18 @@ Se 4+ = Avançar para análise profunda
 - Suplementos (regulamentação)
 - Cosméticos (ANVISA)
 - Produtos de marca (concorrência desleal)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

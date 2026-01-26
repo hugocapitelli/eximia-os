@@ -77,3 +77,18 @@ No Harven.AI, o metodo e adaptado para:
 **Aluno:** "Segundo o texto, a sustentabilidade tem tres pilares: economico, social e ambiental."
 
 **Socratico:** "Voce identificou os tres pilares. Agora imagine um cenario real: uma fazenda que e muito lucrativa (pilar economico) mas polui um rio proximo. Como voce avaliaria essa situacao usando esses pilares? Eles estao em conflito?"
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

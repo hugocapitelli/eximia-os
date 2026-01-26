@@ -26,3 +26,47 @@ tmp/
 
 # Binaries (Optional - taking a middle ground: ignoring specific large binaries but keeping structure)
 # FINANCE/bin/ # Uncomment if we want to download binaries via script
+
+# Environment & Secrets (AIOS)
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# Dependencies (AIOS)
+node_modules
+
+# Build & Logs (AIOS)
+dist/
+build/
+logs/
+
+# IDE & OS (AIOS)
+*.swp
+
+# AIOS Local (AIOS)
+.aios-core/local/
+.claude/settings.local.json
+.aios/install-log.txt
+
+# Windows reserved names
+nul
+NUL
+CON
+PRN
+AUX
+
+# Embedded git repositories
+Projetos/agenda_cheia/agenda-cheia/
+
+# Large media files (GitHub limit: 100MB)
+*.mp3
+*.mp4
+*.wav
+*.avi
+*.mov
+Media_Harvester/05_production/scripts/temp_audio/
+
+# Test files with potential secrets
+00_Codex/test_simple.py
+00_Codex/test_*.py

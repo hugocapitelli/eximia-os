@@ -205,3 +205,18 @@ Conversão 0-100: 98.6 / 100
 **Tempo:** 30min
 **Mantido por:** Arquiteto Cognitivo Elite
 **Data:** 2025-12-21
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

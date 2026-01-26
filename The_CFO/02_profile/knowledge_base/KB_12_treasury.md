@@ -185,3 +185,18 @@ LIQUIDITY WATERFALL
 4. **Real-time visibility: essential** para decisões
 5. **BRL volatility: 20-30%** anual (hedge important)
 6. **IOF: considerar custo** em operações cambiais
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

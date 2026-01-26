@@ -42,3 +42,18 @@ Esse é o processo direto para a criação de um PRD.
 - **Tokens:** 23680
 - **Time:** 11189.57ms
 - **Cost:** $0.000000
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

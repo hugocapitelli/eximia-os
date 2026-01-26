@@ -161,3 +161,18 @@ Antes de entregar, verificar:
 | Paragrafo 1 e feedback? | Conteudo sobre resposta do aluno |
 | Paragrafo 2 termina com "?"? | Ultima char e "?" |
 | Tamanho total 80-200 palavras? | Contar palavras |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

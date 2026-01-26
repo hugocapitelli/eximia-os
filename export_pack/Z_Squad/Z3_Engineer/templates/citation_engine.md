@@ -122,3 +122,18 @@ fundamentais de persuasão.
 
 ## 📚 Referências
 - [Athena: GPT-CMO BIBLIOGRAPHY_RESEARCH](../../outputs/x_agente_marketplace_seller/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -81,7 +81,9 @@ class AgentRegistry:
         return (
             (path / "agente_core.md").exists() or
             (path / "03_prompt" / "prompt_operacional.md").exists() or
-            (path / "README.md").exists() and (path / "knowledge_base").exists()
+            (path / "README.md").exists() and (path / "knowledge_base").exists() or
+            (path / "3_clone_output" / "CLONE_DNA.md").exists() or
+            (path / "CLONE_DNA.md").exists()
         )
 
     def _register_agent(self, agent_path: Path) -> None:
@@ -105,12 +107,15 @@ class AgentRegistry:
             if "The_" in agent_path.name:
                 tier = 3  # Expert level for main agents
                 category = "executive"
-            elif "Clone_Factory" in str(agent_path):
+            elif "El_Clonador" in str(agent_path):
                 tier = 2
                 category = "factory"
             elif "Clones" in str(agent_path):
                 tier = 2
                 category = "clone"
+            elif "A_Refinaria" in str(agent_path):
+                 tier = 3
+                 category = "factory"
 
         agent = AgentInfo(
             name=name,

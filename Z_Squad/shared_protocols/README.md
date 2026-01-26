@@ -22,3 +22,18 @@ Este diretório contém os protocolos de comunicação e coordenação compartil
 
 ## 🔗 Referência
 Baseado no [Framework Multiagentes ExímIA](../../Conteudo_sintetizado/Framework_Multiagentes_EximIA/).
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

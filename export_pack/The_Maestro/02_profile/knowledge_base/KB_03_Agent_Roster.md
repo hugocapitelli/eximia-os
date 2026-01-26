@@ -221,3 +221,18 @@ The_CLO > The_CFO > The_CTO > The_CMO
 2. Define fallback routing
 3. Update dependent workflows
 4. Remove after transition period
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

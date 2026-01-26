@@ -94,3 +94,18 @@
 - [What Makes David Goggins David Goggins? - Marathon Handbook](https://marathonhandbook.com/david-goggins/)
 - [Badwater 135 - Run247](https://run247.com/running-news/ultramarathon-news/badwater-135-david-goggins-time-third-2006-2007-reaction)
 - [David Goggins - UTMB Index](https://utmb.world/runner/17272.david.goggins)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

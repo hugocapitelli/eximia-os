@@ -33,3 +33,18 @@ Antes de enviar qualquer coisa para o Researcher, você deve aplicar o **Refinam
 - Exemplo:
   - *Falha:* Agente trouxe lei antiga.
   - *Correção:* "Atenção: A lei mudou em 2023. Filtre resultados apenas de 2024 em diante."
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

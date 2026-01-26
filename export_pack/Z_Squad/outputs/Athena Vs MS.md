@@ -963,4 +963,19 @@ conferiu. explora a pasta functions e compara a estrutura do gpt ceo e gpt cmo, 
   3\. Decidir classe do GPT-CEO e completar adequadamente  
   4\. Usar GPT-CMO como template para futuros Classe 3  
   \---  
-  Essa análise responde sua pergunta? Alguma dimensão específica que você quer que eu aprofunde mais?  
+  Essa análise responde sua pergunta? Alguma dimensão específica que você quer que eu aprofunde mais?
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

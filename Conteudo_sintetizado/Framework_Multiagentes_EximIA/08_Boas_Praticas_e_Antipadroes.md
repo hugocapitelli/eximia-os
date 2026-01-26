@@ -15,3 +15,18 @@
     *   *Solução:* Use MCP ou resumidores para passar apenas o necessário.
 4.  **Infinite Loops:** Dois agentes conversando entre si sem critério de parada.
     *   *Solução:* Defina `max_turns` ou um Agente Manager que encerra a discussão.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Pesquisas]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

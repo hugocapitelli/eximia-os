@@ -99,3 +99,18 @@ O DNA Mental será consumido por:
 - [Framework: 01_Visao_Geral.md](../../Conteudo_sintetizado/Framework_Multiagentes_EximIA/01_Visao_Geral.md)
 - [Framework: 05_Fluxos_de_Comunicacao.md](../../Conteudo_sintetizado/Framework_Multiagentes_EximIA/05_Fluxos_de_Comunicacao.md)
 - [Shared Protocols: handoff_protocol.md](../shared_protocols/handoff_protocol.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

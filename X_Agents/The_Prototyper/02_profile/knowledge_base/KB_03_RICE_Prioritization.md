@@ -489,3 +489,18 @@ Framework customizável onde você define critérios e pesos relevantes para seu
 - Kano, N. (1984). "Attractive Quality and Must-Be Quality"
 - Clegg, D., Barker, R. (1994). Case Method Fast-Track (MoSCoW)
 - Cagan, M. (2017). Inspired
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

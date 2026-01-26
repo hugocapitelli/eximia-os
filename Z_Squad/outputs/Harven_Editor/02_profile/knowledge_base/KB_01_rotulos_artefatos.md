@@ -188,3 +188,18 @@ Sua analise esta no caminho certo e demonstra compreensao do tema principal.
 
 Mas voce considerou o outro lado dessa questao?
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

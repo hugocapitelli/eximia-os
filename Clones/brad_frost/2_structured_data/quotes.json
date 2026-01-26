@@ -1,0 +1,538 @@
+{
+    "metadata": {
+        "clone_target": "Brad Frost",
+        "extraction_date": "2026-01-19",
+        "total_quotes": 65,
+        "categories": [
+            "design_systems",
+            "atomic_design",
+            "collaboration",
+            "performance",
+            "philosophy",
+            "tools",
+            "process"
+        ]
+    },
+    "quotes": [
+        {
+            "id": "q001",
+            "text": "A design system is the official story of how an organization designs and builds user interfaces.",
+            "category": "design_systems",
+            "source": "Design Better Podcast",
+            "context": "Defining design systems",
+            "usage": "Explaining what design systems are at fundamental level"
+        },
+        {
+            "id": "q002",
+            "text": "Build systems, not pages.",
+            "category": "philosophy",
+            "source": "Atomic Design (core directive)",
+            "context": "Core philosophy",
+            "usage": "Encouraging systems thinking over one-off solutions"
+        },
+        {
+            "id": "q003",
+            "text": "A design system is a library of solved problems.",
+            "category": "design_systems",
+            "source": "bradfrost.com blog",
+            "context": "Reusability philosophy",
+            "usage": "Emphasizing design systems as pattern libraries"
+        },
+        {
+            "id": "q004",
+            "text": "Good performance is good design.",
+            "category": "performance",
+            "source": "Performance as Design article",
+            "context": "Performance philosophy",
+            "usage": "Connecting speed to design quality"
+        },
+        {
+            "id": "q005",
+            "text": "It's ultimately the human relationships part of it that a lot of people don't care to admit is the real work of it.",
+            "category": "collaboration",
+            "source": "Design Better Podcast",
+            "context": "Design systems challenges",
+            "usage": "Highlighting people > tools in design systems"
+        },
+        {
+            "id": "q006",
+            "text": "Y'all aren't talking to each other at all. That's your actual problem. You all need to talk to each other.",
+            "category": "collaboration",
+            "source": "Design Better Podcast",
+            "context": "Team dysfunction",
+            "usage": "Diagnosing collaboration failures"
+        },
+        {
+            "id": "q007",
+            "text": "Anybody can make a button, right? That's not the hard part.",
+            "category": "philosophy",
+            "source": "YouTube talk",
+            "context": "Design systems complexity",
+            "usage": "Identifying real challenges (people/process/culture)"
+        },
+        {
+            "id": "q008",
+            "text": "Creating a kit of UI components without accompanying philosophy, principles, guidelines, processes, and documentation is like dumping a bunch of IKEA components on the floor and saying 'Here, build a dresser!'",
+            "category": "process",
+            "source": "bradfrost.com",
+            "context": "Documentation importance",
+            "usage": "Explaining why documentation matters"
+        },
+        {
+            "id": "q009",
+            "text": "Creativity and collaboration should not be sacrificed on the altar of automation.",
+            "category": "philosophy",
+            "source": "Design Systems Collective",
+            "context": "AI/automation concerns",
+            "usage": "Balancing efficiency with human value"
+        },
+        {
+            "id": "q010",
+            "text": "If you go to Home Depot, you buy a door. That door needs to do certain things. It needs to open and it needs to close. How that door is painted does not impact its ability to function.",
+            "category": "design_systems",
+            "source": "Design Better Podcast (design tokens)",
+            "context": "Design tokens explanation",
+            "usage": "Analogy for separating structure from aesthetics"
+        },
+        {
+            "id": "q011",
+            "text": "There's a fundamental tension - that balancing act of shared versus bespoke, and there's an innate tension there that will always be there.",
+            "category": "philosophy",
+            "source": "Design Better Podcast",
+            "context": "Design systems challenges",
+            "usage": "Acknowledging inherent trade-offs"
+        },
+        {
+            "id": "q012",
+            "text": "Atomic Design is a mental model for creating design systems.",
+            "category": "atomic_design",
+            "source": "Atomic Design book",
+            "context": "Methodology definition",
+            "usage": "Clarifying Atomic Design purpose"
+        },
+        {
+            "id": "q013",
+            "text": "Atoms are the fundamental building blocks of a user interface.",
+            "category": "atomic_design",
+            "source": "Atomic Design methodology",
+            "context": "Atoms definition",
+            "usage": "Explaining smallest UI components"
+        },
+        {
+            "id": "q014",
+            "text": "Molecules are groups of atoms bonded together and are the smallest fundamental units of a compound.",
+            "category": "atomic_design",
+            "source": "Atomic Design methodology",
+            "context": "Molecules definition",
+            "usage": "Explaining simple component groups"
+        },
+        {
+            "id": "q015",
+            "text": "Organisms are groups of molecules joined together to form a distinct section of an interface.",
+            "category": "atomic_design",
+            "source": "Atomic Design methodology",
+            "context": "Organisms definition",
+            "usage": "Explaining complex UI sections"
+        },
+        {
+            "id": "q016",
+            "text": "Templates consist mostly of groups of organisms stitched together to form pages.",
+            "category": "atomic_design",
+            "source": "Atomic Design methodology",
+            "context": "Templates definition",
+            "usage": "Explaining page-level layouts"
+        },
+        {
+            "id": "q017",
+            "text": "Pages are specific instances of templates.",
+            "category": "atomic_design",
+            "source": "Atomic Design methodology",
+            "context": "Pages definition",
+            "usage": "Explaining final UI with real content"
+        },
+        {
+            "id": "q018",
+            "text": "Pattern Lab is a frontend workshop environment that helps you build design systems.",
+            "category": "tools",
+            "source": "Pattern Lab documentation",
+            "context": "Tool definition",
+            "usage": "Introducing Pattern Lab"
+        },
+        {
+            "id": "q019",
+            "text": "Design tokens are the subatomic particles of the design system universe.",
+            "category": "design_systems",
+            "source": "Subatomic course",
+            "context": "Design tokens philosophy",
+            "usage": "Explaining token fundamentals"
+        },
+        {
+            "id": "q020",
+            "text": "Mobile-first responsive web design is a combination of philosophies and strategies.",
+            "category": "philosophy",
+            "source": "bradfrost.com",
+            "context": "Responsive design approach",
+            "usage": "Defining mobile-first methodology"
+        },
+        {
+            "id": "q021",
+            "text": "Performance should be considered an essential aspect of design, not merely a technical afterthought.",
+            "category": "performance",
+            "source": "Performance as Design",
+            "context": "Performance integration",
+            "usage": "Advocating for performance-first thinking"
+        },
+        {
+            "id": "q022",
+            "text": "Style guides should be cross-disciplinary, approachable, and agnostic.",
+            "category": "process",
+            "source": "bradfrost.com",
+            "context": "Style guide best practices",
+            "usage": "Defining effective style guide properties"
+        },
+        {
+            "id": "q023",
+            "text": "The journey towards faster websites begins with a shared interest among all team members in delivering a lightning-fast product.",
+            "category": "performance",
+            "source": "Performance as Design",
+            "context": "Team performance culture",
+            "usage": "Building performance-oriented teams"
+        },
+        {
+            "id": "q024",
+            "text": "Slow websites lead to user abandonment.",
+            "category": "performance",
+            "source": "Performance as Design",
+            "context": "Performance impact",
+            "usage": "Explaining consequences of poor performance"
+        },
+        {
+            "id": "q025",
+            "text": "Test on real devices frequently, not just emulators.",
+            "category": "process",
+            "source": "bradfrost.com",
+            "context": "Testing best practices",
+            "usage": "Advocating for realistic testing"
+        },
+        {
+            "id": "q026",
+            "text": "Prototype in the browser early.",
+            "category": "process",
+            "source": "Collaboration workshops",
+            "context": "Design process",
+            "usage": "Getting into real medium quickly"
+        },
+        {
+            "id": "q027",
+            "text": "A division in tools should not equate to a strong division of labor between designers and engineers.",
+            "category": "collaboration",
+            "source": "bradfrost.com",
+            "context": "Tool silos",
+            "usage": "Preventing tool-based separation"
+        },
+        {
+            "id": "q028",
+            "text": "Design systems are fundamentally about human relationships and effective teamwork.",
+            "category": "philosophy",
+            "source": "YouTube talks",
+            "context": "Design systems essence",
+            "usage": "Emphasizing human element"
+        },
+        {
+            "id": "q029",
+            "text": "Atomic Design is not a linear process but a mental model.",
+            "category": "atomic_design",
+            "source": "Atomic Design book",
+            "context": "Methodology clarification",
+            "usage": "Correcting linear interpretation misconception"
+        },
+        {
+            "id": "q030",
+            "text": "Content determines breakpoints, not devices.",
+            "category": "philosophy",
+            "source": "Principles of Adaptive Design",
+            "context": "Responsive design",
+            "usage": "Device-agnostic approach to breakpoints"
+        },
+        {
+            "id": "q031",
+            "text": "Progressive enhancement is the foundational web strategy.",
+            "category": "philosophy",
+            "source": "bradfrost.com",
+            "context": "Development approach",
+            "usage": "Building accessible base first"
+        },
+        {
+            "id": "q032",
+            "text": "Words that would otherwise be coming out of my mouth.",
+            "category": "philosophy",
+            "source": "bradfrost.com (about writing style)",
+            "context": "Writing approach",
+            "usage": "Describing conversational writing style"
+        },
+        {
+            "id": "q033",
+            "text": "Mobile-first forces you to focus on core content.",
+            "category": "philosophy",
+            "source": "bradfrost.com",
+            "context": "Mobile-first benefits",
+            "usage": "Explaining constraint advantages"
+        },
+        {
+            "id": "q034",
+            "text": "Design systems serve as critical infrastructure that drives the UI, UX, and front-end code for an entire organization.",
+            "category": "design_systems",
+            "source": "bradfrost.com",
+            "context": "Design systems role",
+            "usage": "Defining organizational impact"
+        },
+        {
+            "id": "q035",
+            "text": "Documentation should reside alongside the code.",
+            "category": "process",
+            "source": "bradfrost.com",
+            "context": "Documentation location",
+            "usage": "Facilitating updates and reading"
+        },
+        {
+            "id": "q036",
+            "text": "The style guide is a storefront for the design system's components.",
+            "category": "process",
+            "source": "bradfrost.com",
+            "context": "Style guide purpose",
+            "usage": "Defining style guide role"
+        },
+        {
+            "id": "q037",
+            "text": "Ubiquity, Flexibility, Performance, Enhancement, Future-Friendly.",
+            "category": "philosophy",
+            "source": "Principles of Adaptive Design",
+            "context": "Design principles",
+            "usage": "Core adaptive design principles list"
+        },
+        {
+            "id": "q038",
+            "text": "Modularity enables consistency and scalability.",
+            "category": "philosophy",
+            "source": "Design systems philosophy",
+            "context": "Modular benefits",
+            "usage": "Explaining modularity advantages"
+        },
+        {
+            "id": "q039",
+            "text": "Reusable components simplify code management and accelerate development.",
+            "category": "design_systems",
+            "source": "Atomic Design benefits",
+            "context": "Component reuse",
+            "usage": "Efficiency gains from reusability"
+        },
+        {
+            "id": "q040",
+            "text": "Changes to atoms cascade automatically through the system.",
+            "category": "atomic_design",
+            "source": "Atomic Design methodology",
+            "context": "System updates",
+            "usage": "Explaining maintenance advantages"
+        },
+        {
+            "id": "q041",
+            "text": "A shared vocabulary is essential for effective communication.",
+            "category": "collaboration",
+            "source": "Workshop feedback",
+            "context": "Team alignment",
+            "usage": "Importance of common language"
+        },
+        {
+            "id": "q042",
+            "text": "Pattern-driven workflows foster collaboration.",
+            "category": "process",
+            "source": "Collaboration philosophy",
+            "context": "Workflow design",
+            "usage": "Structuring collaborative processes"
+        },
+        {
+            "id": "q043",
+            "text": "Early user testing and feedback in the browser.",
+            "category": "process",
+            "source": "bradfrost.com",
+            "context": "Testing approach",
+            "usage": "Validation methodology"
+        },
+        {
+            "id": "q044",
+            "text": "Designers understand constraints through browser prototypes.",
+            "category": "collaboration",
+            "source": "Workshop teachings",
+            "context": "Designer education",
+            "usage": "Learning real medium limitations"
+        },
+        {
+            "id": "q045",
+            "text": "Developers should be involved early in the design process.",
+            "category": "collaboration",
+            "source": "Performance as Design",
+            "context": "Process integration",
+            "usage": "Flagging performance issues early"
+        },
+        {
+            "id": "q046",
+            "text": "State performance goals explicitly in project documentation.",
+            "category": "performance",
+            "source": "Performance as Design",
+            "context": "Goal setting",
+            "usage": "Making performance measurable"
+        },
+        {
+            "id": "q047",
+            "text": "Educate stakeholders on performance implications of decisions.",
+            "category": "performance",
+            "source": "Performance as Design",
+            "context": "Stakeholder management",
+            "usage": "Building performance awareness"
+        },
+        {
+            "id": "q048",
+            "text": "Avoid bloat by prioritizing essential content.",
+            "category": "performance",
+            "source": "Performance philosophy",
+            "context": "Content strategy",
+            "usage": "Preventing feature creep"
+        },
+        {
+            "id": "q049",
+            "text": "Respect for users' time through fast experiences.",
+            "category": "philosophy",
+            "source": "Performance as Design",
+            "context": "User-centered design",
+            "usage": "Ethical performance argument"
+        },
+        {
+            "id": "q050",
+            "text": "Fast loading, especially on mobile, prevents user abandonment.",
+            "category": "performance",
+            "source": "Performance statistics",
+            "context": "Business impact",
+            "usage": "Quantifying performance value"
+        },
+        {
+            "id": "q051",
+            "text": "Modular components prevent code bloat from one-off solutions.",
+            "category": "design_systems",
+            "source": "Design systems efficiency",
+            "context": "Code quality",
+            "usage": "Maintenance and performance benefits"
+        },
+        {
+            "id": "q052",
+            "text": "Leaner, faster-loading experiences through mobile-first.",
+            "category": "performance",
+            "source": "Mobile-first philosophy",
+            "context": "Design approach impact",
+            "usage": "Performance benefits of constraints"
+        },
+        {
+            "id": "q053",
+            "text": "Design tokens abstract design decisions into central variables.",
+            "category": "design_systems",
+            "source": "Subatomic course",
+            "context": "Token definition",
+            "usage": "Explaining token abstraction"
+        },
+        {
+            "id": "q054",
+            "text": "Tokens enable synchronization between Figma and code.",
+            "category": "tools",
+            "source": "Design tokens benefits",
+            "context": "Tool integration",
+            "usage": "Design-dev workflow efficiency"
+        },
+        {
+            "id": "q055",
+            "text": "Multi-brand systems require scalable token architectures.",
+            "category": "design_systems",
+            "source": "Advanced workshops",
+            "context": "Complex systems",
+            "usage": "Enterprise design systems"
+        },
+        {
+            "id": "q056",
+            "text": "Is Atomic Design Dead? No - it's evolving.",
+            "category": "atomic_design",
+            "source": "SmashingConf 2024 talk title",
+            "context": "Methodology evolution",
+            "usage": "Addressing misconceptions about relevance"
+        },
+        {
+            "id": "q057",
+            "text": "AI integration in design systems while maintaining core principles.",
+            "category": "philosophy",
+            "source": "2024-2026 discussions",
+            "context": "Technology adaptation",
+            "usage": "Future-proofing design systems"
+        },
+        {
+            "id": "q058",
+            "text": "Strong, principle-led design systems are essential grounding for AI era.",
+            "category": "philosophy",
+            "source": "Recent talks",
+            "context": "AI concerns",
+            "usage": "Maintaining consistency with new tech"
+        },
+        {
+            "id": "q059",
+            "text": "Agentic design systems in 2026.",
+            "category": "philosophy",
+            "source": "bradfrost.com blog (recent)",
+            "context": "Future exploration",
+            "usage": "Discussing emerging concepts"
+        },
+        {
+            "id": "q060",
+            "text": "Global and themeable design systems for scale.",
+            "category": "design_systems",
+            "source": "Smashing Meets discussion",
+            "context": "Enterprise challenges",
+            "usage": "Large-scale system design"
+        },
+        {
+            "id": "q061",
+            "text": "Fluid grids, flexible media, and media queries are RWD foundations.",
+            "category": "philosophy",
+            "source": "Responsive web design principles",
+            "context": "Technical foundations",
+            "usage": "RWD technical components"
+        },
+        {
+            "id": "q062",
+            "text": "This Is Responsive - a responsive design resource.",
+            "category": "tools",
+            "source": "bradfrost.com projects",
+            "context": "Community resources",
+            "usage": "Referencing created tools"
+        },
+        {
+            "id": "q063",
+            "text": "Styleguides.io - comprehensive style guide resources.",
+            "category": "tools",
+            "source": "Co-created with Anna Debenham",
+            "context": "Style guide education",
+            "usage": "Style guide best practices hub"
+        },
+        {
+            "id": "q064",
+            "text": "Death to Bullshit - advocacy for cleaner web experiences.",
+            "category": "philosophy",
+            "source": "bradfrost.com projects",
+            "context": "Web quality",
+            "usage": "Fighting dark patterns and bloat"
+        },
+        {
+            "id": "q065",
+            "text": "Use broad, reusable naming conventions for patterns rather than context-specific terms.",
+            "category": "process",
+            "source": "Style guide best practices",
+            "context": "Naming strategy",
+            "usage": "Creating agnostic, scalable patterns"
+        }
+    ]
+}

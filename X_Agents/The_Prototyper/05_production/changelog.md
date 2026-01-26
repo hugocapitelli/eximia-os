@@ -99,3 +99,18 @@ N/A - Initial release
 ---
 
 *Maintained by Z Squad Elite Multiagent Factory*
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

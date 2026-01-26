@@ -423,3 +423,18 @@ Para cada 50 reviews, analise:
 ### Este Mês:
 - Implemente melhorias baseadas em feedback
 - Configure automatização de solicitação de review (onde permitido)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

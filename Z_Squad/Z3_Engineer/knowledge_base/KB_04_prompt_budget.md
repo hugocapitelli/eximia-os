@@ -157,3 +157,18 @@ Antes de finalizar prompt:
 ## 📚 Referências
 - [Anthropic: Prompt Engineering](https://anthropic.com/)
 - [OpenAI: Best Practices](https://platform.openai.com/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

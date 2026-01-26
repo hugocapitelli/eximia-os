@@ -215,3 +215,18 @@ Para disputa de USD 10M:
 - Lei 13.129/15 (Reforma)
 - ICC Arbitration Rules, 2021
 - CAM-CCBC Regulamento
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

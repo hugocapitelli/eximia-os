@@ -217,3 +217,18 @@
 
 **Validado por:** Z4 Auditor v3.2
 **Método:** Comparative Analysis + Quality Checklist
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

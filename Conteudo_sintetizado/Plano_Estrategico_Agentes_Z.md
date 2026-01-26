@@ -63,3 +63,18 @@ O sistema será composto por 4 agentes especialistas, operando em cadeia (Pipeli
 
 ---
 **Status:** Plano pronto para revisão. Aguardando sinal verde para implementação.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Pesquisas]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

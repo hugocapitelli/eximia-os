@@ -25,6 +25,19 @@ export interface SystemSettingsData {
     pwd_expiration: boolean;
     session_timeout: string;
     force_2fa: boolean;
+    
+    // Novos campos
+    moodle_url: string;
+    moodle_token: string;
+    smtp_server: string;
+    smtp_port: number;
+    smtp_user: string;
+    smtp_password: string;
+    firewall_blocked_ips: string;
+    firewall_whitelist: string;
+    backup_enabled: boolean;
+    backup_frequency: string;
+    backup_retention: number;
 }
 
 interface SettingsContextType {
@@ -44,7 +57,7 @@ const defaultSettings: SystemSettingsData = {
     login_bg_url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAu1xjVy8-tTUa7Rg2hEmktsCWJxqvIX3OK7FpFaopQvyB8ps8bXXqzl_7FBXD-GmLEoNwL_Vn0JXKVXExgfnVuv2fOLBuEVkQrOoAFLDlJdpil7xF9AC4oCYQKTHjMF5hx2wAiR8Mq2VMgbuU8cUP-P2skdbiqEceR7SQhgUTqGzZwQLEy_MQQ5OPD3_Gikr7z2kOnX_sJySZmgWkS5-e0HWvvzjqrOZMboTNlYU-yrYOhrzKdfuHYrxdNQ4OHtsc8gdDZyg2zpng',
     module_auto_register: true,
     module_ai_tutor: true,
-    module_gamification: false,
+    module_gamification: true,
     module_dark_mode: true,
     limit_tokens: 2048,
     limit_upload_mb: 500,
@@ -55,7 +68,20 @@ const defaultSettings: SystemSettingsData = {
     pwd_special_chars: true,
     pwd_expiration: false,
     session_timeout: '30 minutos',
-    force_2fa: false
+    force_2fa: false,
+    
+    // Defaults novos
+    moodle_url: '',
+    moodle_token: '',
+    smtp_server: '',
+    smtp_port: 587,
+    smtp_user: '',
+    smtp_password: '',
+    firewall_blocked_ips: '',
+    firewall_whitelist: '',
+    backup_enabled: true,
+    backup_frequency: 'Diário',
+    backup_retention: 30
 };
 
 const SettingsContext = createContext<SettingsContextType | undefined>(undefined);

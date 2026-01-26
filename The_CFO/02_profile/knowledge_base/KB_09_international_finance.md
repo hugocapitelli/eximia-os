@@ -193,3 +193,18 @@ Transações entre partes relacionadas devem refletir preços de mercado.
 4. **Thin Cap Brasil: Debt/Equity ≤ 2:1** (Lei 12.249)
 5. **BRL volatility: 20-30% anual** (histórico)
 6. **ROF/RDE: obrigatório para FDI** (BACEN)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

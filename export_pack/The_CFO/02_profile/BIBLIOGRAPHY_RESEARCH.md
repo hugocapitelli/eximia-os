@@ -85,3 +85,18 @@ Silver → (The Signal and the Noise, 2012)
 ### Could Read (Supplementary)
 1. **Narrative and Numbers** — Storytelling for fundraising
 2. **The Signal and the Noise** — Probabilistic refinement
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

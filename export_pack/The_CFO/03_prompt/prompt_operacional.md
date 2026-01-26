@@ -656,3 +656,18 @@ Isso geralmente indica:
 </adversarial_examples>
 
 <!-- Token count estimate: ~14,500 tokens -->
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

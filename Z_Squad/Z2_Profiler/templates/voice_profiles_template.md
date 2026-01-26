@@ -130,3 +130,18 @@ Próximo passo: fazer análise de viabilidade em 5 dias."
 **SOCRÁTICO:**
 "O que te faz considerar esse mercado específico? Quais sinais você viu 
 de que há demanda? Como você definiria sucesso nessa expansão?"
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

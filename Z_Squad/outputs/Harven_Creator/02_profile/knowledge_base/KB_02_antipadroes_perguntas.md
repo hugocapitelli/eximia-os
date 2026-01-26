@@ -162,3 +162,18 @@ Antes de entregar uma pergunta, verificar:
 3. Ser ESPECIFICA ao conteudo
 4. ABRIR dialogo, nao fechar
 5. PROVOCAR reflexao
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

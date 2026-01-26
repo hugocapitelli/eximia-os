@@ -555,3 +555,18 @@ A diferença reflete diferentes populações:
 9. **Quando** houver contradição Tier 1 vs Tier 1, apresente ambos
 10. **Quando** não encontrar dado, declare honestamente
 11. **Sempre** liste os URLs verificados na seção '### Codex Links' para arquivamento
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

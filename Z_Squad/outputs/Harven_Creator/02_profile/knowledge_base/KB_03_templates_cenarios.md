@@ -206,3 +206,18 @@ Para 3 perguntas, usar pelo menos 2 com cenarios:
 - Pergunta 1: Com cenario (Template 1, 2 ou 7)
 - Pergunta 2: Com cenario (Template 3, 4 ou 5)
 - Pergunta 3: Pode ser mais conceitual (Template 6 ou analise direta)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -63,3 +63,18 @@ Crawl-delay: 10      # Esperar 10s entre requests
 
 - Internet Archive. *Wayback Machine*.
 - Google. *Robots.txt Specifications*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

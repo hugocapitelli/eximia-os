@@ -78,3 +78,18 @@ Every conflict resolution MUST include:
 3. What resolution was applied
 4. Why this resolution was chosen
 5. Any trade-offs the user should know
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

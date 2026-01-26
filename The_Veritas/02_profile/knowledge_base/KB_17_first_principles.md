@@ -180,3 +180,18 @@ Perguntas que desafiam suposições:
 - FIPS. (2024). *First Principles Thinking Manual (2nd ed)*.
 - Farnam Street. (2024). *First Principles: The Building Blocks of True Knowledge*.
 - James Clear. (2024). *First Principles*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -108,3 +108,18 @@ agente_final/
 
 ---
 **Próximo na Cadeia:** Z4 (The Auditor)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

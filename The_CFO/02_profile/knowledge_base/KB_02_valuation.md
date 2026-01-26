@@ -131,3 +131,18 @@ Magic Number = Net New ARR / S&M Spend Last Quarter
 3. **WACC Brasil: 12-18% typical** (B3 data)
 4. **Control premium: 20-40%** (Precedents)
 5. **Synergy haircut: 30-60%** (McKinsey, 2020)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -198,3 +198,18 @@ Os **9 Eventos de Instrução** de Robert Gagné (1965, atualizado em 1985) são
 ---
 
 **Criado por:** LXD Architect | Z Squad | eximIA.AI © 2026
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

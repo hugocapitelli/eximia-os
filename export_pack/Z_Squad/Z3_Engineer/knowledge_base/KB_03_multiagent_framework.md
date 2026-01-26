@@ -148,3 +148,18 @@ feedback_from_z4:
 - [Framework: 07_Playbook_Criacao_Multiagentes.md](../../Conteudo_sintetizado/Framework_Multiagentes_EximIA/07_Playbook_Criacao_Multiagentes.md)
 - [Framework: 08_Boas_Praticas_e_Antipadroes.md](../../Conteudo_sintetizado/Framework_Multiagentes_EximIA/08_Boas_Praticas_e_Antipadroes.md)
 - [Shared Protocols: antipatterns.md](../shared_protocols/antipatterns.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

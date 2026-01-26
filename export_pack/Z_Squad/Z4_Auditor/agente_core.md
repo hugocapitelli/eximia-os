@@ -134,3 +134,18 @@ Se `REJECTED` ou `APPROVED WITH CONDITIONS`:
 
 ---
 **Próximo na Cadeia:** Delivery → Z5 (The Evolver) para monitoramento
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

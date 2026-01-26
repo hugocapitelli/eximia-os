@@ -140,3 +140,18 @@ LXD Architect (Tier 3)
 **Handover completo. LXD Architect pronto para produção.**
 
 **Z Squad Pipeline | eximIA.AI © 2026-01-08**
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

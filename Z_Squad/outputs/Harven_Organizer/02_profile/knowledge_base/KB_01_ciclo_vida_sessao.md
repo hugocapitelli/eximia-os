@@ -260,3 +260,18 @@ WHERE s.status = 'export_failed'
 AND q.retry_count >= 3
 ORDER BY q.created_at ASC;
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

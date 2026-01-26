@@ -140,3 +140,18 @@ perfil_estruturado/
 
 ---
 **Próximo na Cadeia:** Z3 (The Engineer)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

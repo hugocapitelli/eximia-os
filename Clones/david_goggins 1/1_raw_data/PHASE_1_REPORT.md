@@ -369,3 +369,18 @@ david_goggins/
 ║  🎯 Próximo: Executar FASE 2 (ETL)                           ║
 ║     Usar: prompts/PHASE_2_ETL_v4.1.md                        ║
 ╚══════════════════════════════════════════════════════════════╝
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

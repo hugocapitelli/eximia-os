@@ -163,3 +163,18 @@ Diluição: 2/12 = 16.7%
 | Bear | 25% | [-10%] | [-20%] | [$Z] |
 
 **Expected Value = Σ (Probabilidade × Valuation)**
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

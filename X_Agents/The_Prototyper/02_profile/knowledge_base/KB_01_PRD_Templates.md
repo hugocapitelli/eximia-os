@@ -456,3 +456,18 @@ PRD QUALITY CHECKLIST
 - Norton, K. (2005). *How to Write a Good PRD*
 - Perri, M. (2018). *Escaping the Build Trap*
 - Shape Up by Basecamp (2019)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

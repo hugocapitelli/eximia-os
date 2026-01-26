@@ -58,3 +58,18 @@
 | Agent conflict | Medium | Medium | KB_05 resolution |
 | Circuit break | Low | Medium | Graceful degradation |
 | Ethics violation | Very Low | Critical | KB_01 enforcement |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

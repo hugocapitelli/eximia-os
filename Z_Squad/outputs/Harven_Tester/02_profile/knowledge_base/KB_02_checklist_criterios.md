@@ -216,3 +216,18 @@ Senao:
     Score = (6 - MINOR_FAILED*0.5) / 6
     Veredicto = APPROVED (com observacoes se MINOR_FAILED > 0)
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

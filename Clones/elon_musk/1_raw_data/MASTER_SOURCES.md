@@ -198,3 +198,18 @@
 **Coletado por:** C1_Hunter + The_Veritas
 **Metodologia:** Deep Research com Triangulação
 **Data:** 2026-01-08
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -98,3 +98,18 @@ Primeira demonstração de capacidade de:
 **Collected by:** C1_Hunter via The_Veritas
 **Date:** 2026-01-08
 **Triangulated:** Wikipedia, Britannica, Walter Isaacson biography
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

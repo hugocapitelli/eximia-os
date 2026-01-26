@@ -61,3 +61,18 @@ When receiving from sub-agents:
 - [ ] Sources provided
 - [ ] No Constitution violations
 - [ ] Format compatible with synthesis
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

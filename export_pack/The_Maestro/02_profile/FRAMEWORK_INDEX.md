@@ -140,3 +140,18 @@ graph TD
     POKEY[Poka-Yoke] --> QA
     QA --> DELIVER[Deliver Response]
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

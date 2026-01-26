@@ -112,3 +112,18 @@ Evitar clones com frameworks **conflitantes**:
 ## 📚 Referências
 - [The_Cloner: cloner_registry.yaml](../../The_Cloner/cloner_registry.yaml)
 - [The_Cloner: cloner_prompt.md](../../The_Cloner/cloner_prompt.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -309,3 +309,18 @@ CREATE INDEX idx_queue_next_retry ON export_queue(next_retry_at)
 | Sessoes ativas | Indefinido |
 | Sessoes exportadas | 1 ano |
 | Fila de export | 30 dias apos sucesso |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

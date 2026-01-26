@@ -353,3 +353,18 @@ Veja: EAN/GTIN
 | SEO | Search Engine Optimization |
 | SKU | Stock Keeping Unit |
 | TACOS | Total Advertising Cost of Sale |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

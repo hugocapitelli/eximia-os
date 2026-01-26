@@ -247,3 +247,18 @@ Para atingir 10.0 absoluto, considerar:
 3. Adicionar knowledge synthesis document (de Athena)
 
 **Status atual: Production-ready como Class 3 Expert.**
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

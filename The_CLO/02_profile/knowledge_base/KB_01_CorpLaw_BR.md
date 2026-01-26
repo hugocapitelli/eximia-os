@@ -224,3 +224,18 @@ MEMORIZE:
 - Lei 6.404/76
 - Carvalhosa, Modesto. Comentários à Lei das S.A., 2021
 - MPRJ, PUC-SP, Migalhas, Estadão (pesquisa web 2024-2025)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

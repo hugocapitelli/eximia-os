@@ -63,10 +63,16 @@ class OutputManager:
 
         logger.info("output_saved", path=str(filepath))
         
-        # Auto-integrate with Codex
+        # Auto-integrate with Codex - capture ALL agent outputs
         try:
             from eximia_runtime.utils.codex_integration import CodexIntegration
-            CodexIntegration.auto_integrate(filepath, agent_name)
+            CodexIntegration.capture(
+                content=response,
+                agent_name=agent_name,
+                query=query,
+                metadata=metadata,
+                filepath=filepath
+            )
         except Exception as e:
             logger.warning("codex_integration_failed", error=str(e))
             

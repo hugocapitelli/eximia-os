@@ -24,3 +24,18 @@
 
 *   **Nome:** Sempre usar a grafia correta da marca.
 *   **Proibidos:** Termos pejorativos, polêmicas políticas/religiosas (salvo se for parte da estratégia explícita), promessas milagrosas ("Perca 10kg em 1 dia").
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

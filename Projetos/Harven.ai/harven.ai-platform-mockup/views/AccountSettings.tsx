@@ -1,16 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
 import { Input } from '../components/ui/Input';
-import { ViewType } from '../types';
 import { usersApi } from '../services/api';
 
-interface AccountSettingsProps {
-    onNavigate: (view: ViewType) => void;
-}
-
-const AccountSettings: React.FC<AccountSettingsProps> = ({ onNavigate }) => {
+const AccountSettings: React.FC = () => {
+    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState<'profile' | 'security' | 'notifications'>('profile');
     const [avatarUrl, setAvatarUrl] = useState('https://picsum.photos/seed/student/200/200');
     const [user, setUser] = useState<any>(null);
@@ -110,13 +107,66 @@ const AccountSettings: React.FC<AccountSettingsProps> = ({ onNavigate }) => {
             const file = e.target.files[0];
             try {
                 setAvatarUrl(URL.createObjectURL(file)); // Optimistic preview
-                await usersApi.uploadAvatar(user.id, file);
-                alert("Foto de perfil atualizada!");
-            } catch (error) {
+                const result = await usersApi.uploadAvatar(user.id, file);
+
+                // Update avatar URL with server response
+                if (result.avatar_url) {
+                    setAvatarUrl(result.avatar_url);
+
+                    // Update localStorage with new avatar
+                    const storedUser = localStorage.getItem('user-data');
+                    if (storedUser) {
+                        const u = JSON.parse(storedUser);
+                        u.avatar_url = result.avatar_url;
+                        localStorage.setItem('user-data', JSON.stringify(u));
+                        // Dispatch event to notify Header and other components
+                        window.dispatchEvent(new Event('user-data-updated'));
+                    }
+                }
+
+                // Show warning if there's one (database column missing)
+                if (result.warning) {
+                    console.warn("Upload warning:", result.warning);
+                    alert(`Foto enviada! Nota: ${result.warning}`);
+                } else {
+                    alert("Foto de perfil atualizada!");
+                }
+            } catch (error: any) {
                 console.error("Erro no upload:", error);
-                alert("Erro ao enviar imagem. Tente novamente.");
+                const errorMsg = error?.response?.data?.detail || "Erro ao enviar imagem. Tente novamente.";
+                alert(errorMsg);
                 loadUser(); // Revert on error
             }
+        }
+    };
+
+    const handleDeleteAvatar = async () => {
+        if (!user) return;
+
+        const confirmed = window.confirm("Tem certeza que deseja remover sua foto de perfil?");
+        if (!confirmed) return;
+
+        try {
+            await usersApi.deleteAvatar(user.id);
+
+            // Reset to default avatar
+            const defaultAvatar = `https://ui-avatars.com/api/?name=${encodeURIComponent(user.name || 'U')}&background=D0FF00&color=0a1f09&bold=true`;
+            setAvatarUrl(defaultAvatar);
+
+            // Update localStorage
+            const storedUser = localStorage.getItem('user-data');
+            if (storedUser) {
+                const u = JSON.parse(storedUser);
+                u.avatar_url = '';
+                localStorage.setItem('user-data', JSON.stringify(u));
+                window.dispatchEvent(new Event('user-data-updated'));
+            }
+
+            alert("Foto de perfil removida!");
+        } catch (error: any) {
+            console.error("Erro ao remover avatar:", error);
+            const errorMsg = error?.response?.data?.detail || "Erro ao remover foto. Tente novamente.";
+            alert(errorMsg);
         }
     };
 
@@ -127,7 +177,7 @@ const AccountSettings: React.FC<AccountSettingsProps> = ({ onNavigate }) => {
             <div className="max-w-4xl mx-auto w-full p-8 md:p-12 flex flex-col gap-8">
 
                 <div className="flex items-center gap-4 mb-2">
-                    <button onClick={() => onNavigate('USER_PROFILE')} className="p-2 hover:bg-white rounded-full transition-colors text-gray-400 hover:text-harven-dark">
+                    <button onClick={() => navigate('/profile')} className="p-2 hover:bg-white rounded-full transition-colors text-gray-400 hover:text-harven-dark">
                         <span className="material-symbols-outlined">arrow_back</span>
                     </button>
                     <div>
@@ -177,6 +227,12 @@ const AccountSettings: React.FC<AccountSettingsProps> = ({ onNavigate }) => {
                                                     Alterar Foto
                                                     <input type="file" className="hidden" accept="image/*" onChange={handleAvatarChange} />
                                                 </label>
+                                                <button
+                                                    onClick={handleDeleteAvatar}
+                                                    className="px-4 py-2 bg-red-50 hover:bg-red-100 text-red-600 text-xs font-bold uppercase rounded-lg transition-colors border border-red-200"
+                                                >
+                                                    Remover Foto
+                                                </button>
                                             </div>
                                             <p className="text-[10px] text-gray-400 font-medium">
                                                 Recomendado: JPG, PNG ou GIF. Máx. 2MB.

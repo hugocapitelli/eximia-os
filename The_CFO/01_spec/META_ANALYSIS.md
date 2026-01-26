@@ -145,3 +145,18 @@ BEGINNER ──────► INTERMEDIATE ──────► ADVANCED ─�
 | Spreadsheets | DCF models | User provides |
 | Market data | Comparables | User provides |
 | Cap table tools | Fundraising | Reference only |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

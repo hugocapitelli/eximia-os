@@ -181,3 +181,18 @@ Para 3 perguntas, garantir:
 - [ ] Pelo menos 1 pergunta com cenario pratico
 - [ ] Cada pergunta aborda angulo diferente do conteudo
 - [ ] Citations cobrem diferentes partes do material
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

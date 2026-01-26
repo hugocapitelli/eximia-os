@@ -123,3 +123,18 @@ Fonte: Distrito, LAVCA (2024)
 3. **NRR > 100%** para crescimento saudável
 4. **Dilution 15-25%** por round é normal
 5. **1x non-participating** é standard justo
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

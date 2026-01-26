@@ -182,3 +182,18 @@ Fonte: Conab (2024)
 - Purdue University. (2024). *Technical Report Format*.
 - APA. (2020). *Publication Manual of the APA, 7th ed*.
 - ABNT. (2018). *NBR 6023: Referências*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

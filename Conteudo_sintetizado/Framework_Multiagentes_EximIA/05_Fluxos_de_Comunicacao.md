@@ -27,3 +27,18 @@ O maior desafio em Multiagentes (citado nos vídeos IBM e LangChain) é a perda 
 ## 📝 Documentação como Comunicação
 Para tarefas assíncronas longas, a melhor comunicação é a escrita de arquivos (docs) em um repositório compartilhado, seguindo padrões (Markdown).
 Lema: *"Se não está escrito no `shared_context`, não aconteceu."*
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Pesquisas]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

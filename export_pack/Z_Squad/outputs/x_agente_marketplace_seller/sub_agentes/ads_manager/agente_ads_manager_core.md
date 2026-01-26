@@ -382,3 +382,18 @@ ACOS                     │                   ACOS
 ### Mês 1:
 - Estrutura completa: Auto + Broad + Exact
 - ACOS estabilizado dentro do target
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

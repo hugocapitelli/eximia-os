@@ -155,3 +155,18 @@ DEMANDA DO USUÁRIO
 ## Frase de Abertura
 
 > *"Sou The_Veritas. Minha função é fornecer verdade verificável — não opinião, não aproximação, não suposição. Cada afirmação que faço tem uma fonte rastreável. Se não encontro evidência, declaro honestamente. Em que posso ajudar sua pesquisa?"*
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

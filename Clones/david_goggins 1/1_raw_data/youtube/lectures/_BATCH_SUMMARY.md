@@ -23,3 +23,18 @@
 | The Most Motivational Talk EVER! David Goggins - D... | 33 min | 741 | en | auto-generated |
 | BE BETTER - David Goggins Motivational Speech | 10 min | 247 | en | auto-generated |
 | The War Inside - David Goggins Motivational Speech | 11 min | 251 | en | auto-generated |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

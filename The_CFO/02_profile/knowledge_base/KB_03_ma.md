@@ -136,3 +136,18 @@ A regra Dalio (Principles, 2017): "Never pay more than 70% of synergies"
 3. **Never pay >70% of synergies** (Dalio, 2017)
 4. **Integration costs +20-50%** (Usually underestimated)
 5. **DD: Check trabalhista/fiscal in Brasil** (CVM, local)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

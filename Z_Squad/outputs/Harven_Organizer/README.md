@@ -285,3 +285,18 @@ Criado pela metodologia Z Squad para a plataforma Harven.AI.
 - Database Admin (Persistencia confiavel)
 - Integration Engineer (Exportacao resiliente)
 - DevOps (Operacao robusta)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

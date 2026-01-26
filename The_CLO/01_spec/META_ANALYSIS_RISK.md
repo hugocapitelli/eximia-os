@@ -276,3 +276,18 @@ Este mapa de riscos serve como base para o funcionamento do Themis Sentinel CLO.
 ---
 
 **Próximo:** `handoff_z1_z2.yaml` → Z2 Profiler
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

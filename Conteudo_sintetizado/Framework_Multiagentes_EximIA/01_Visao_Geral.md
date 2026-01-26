@@ -26,3 +26,18 @@ Suportamos tanto modelos hierárquicos (Manager -> Workers) quanto descentraliza
 
 ---
 **Próximos Passos:** Consulte `02_Conceitos_Fundamentais.md` para entender o vocabulário e `07_Playbook_Criacao_Multiagentes.md` para começar a construir.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Pesquisas]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

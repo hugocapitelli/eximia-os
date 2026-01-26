@@ -254,3 +254,18 @@ CONCLUSÃO: Fonte não verificável, Tier 4
 - Blakeslee, S. (2004). *The CRAAP Test*. CSU Chico Library.
 - Mandalios, J. (2013). *RADAR Framework*.
 - Stanford History Education Group. (2016). *Evaluating Information*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -1,0 +1,220 @@
+    # ===== Métodos para Vídeos =====
+    
+    def _is_video_url(self, url: str) -> bool:
+        """Detecta se URL é de vídeo"""
+        video_platforms = ['youtube.com', 'youtu.be', 'vimeo.com', 'dailymotion.com', 'twitch.tv']
+        return any(platform in url.lower() for platform in video_platforms)
+    
+    def _handle_video_add(self, url: str, auto_approve: bool = False) -> dict:
+        """
+        Workflow específico para adicionar vídeos (com transcrição)
+        
+        Args:
+            url: URL do vídeo
+            auto_approve: Se True, pula review
+        
+        Returns:
+            Dict com resultado do workflow
+        """
+        print(f"🎬 Vídeo detectado!")
+        print(f"🎵 Extraindo áudio e transcrevendo...")
+        
+        # Usar método padrão: gemini (mais acessível para o usuário)
+        method = os.getenv('TRANSCRIPTION_DEFAULT_METHOD', 'gemini')
+        
+       # Transcrever vídeo
+        transcribe_result = self.transcriber.transcribe_video(url, method=method)
+        
+        if transcribe_result['status'] != 'success':
+            print(f"❌ Erro na transcrição: {transcribe_result.get('message')}")
+            return transcribe_result
+        
+        transcript = transcribe_result['transcript']
+        video_metadata = transcribe_result['metadata']
+        
+        print(f"✅ Transcrição completa!")
+        print(f"   Título: {video_metadata.get('title', 'Unknown Video')}")
+        print(f"   Duração: {video_metadata.get('duration', 0)}s")
+        print(f"   Confiança: {video_metadata.get('confidence', 0):.2f}")
+        
+        # Criar arquivo markdown com a transcrição
+        content_id = self.scraper._slugify(video_metadata.get('title', 'video'))
+        
+        # Formatar conteúdo
+        markdown_content = self._format_video_transcript(transcript, video_metadata, url)
+        
+        # Salvar em INBOX local
+        inbox_dir = self.codex_path / "eximia_data" / "00_INBOX"
+        inbox_dir.mkdir(parents=True, exist_ok=True)
+        local_file_path = inbox_dir / f"{content_id}.md"
+        local_file_path.write_text(markdown_content, encoding='utf-8')
+        
+        # Categorizar
+        print(f"\n🤖 Categorizando com IA...")
+        cat_result = self.categorizer.analyze_content(
+            str(local_file_path),
+            metadata={'title': video_metadata.get('title', 'Unknown Video')}
+        )
+        
+        if cat_result['status'] != 'success':
+            print(f"❌ Erro ao categorizar: {cat_result.get('error')}")
+            return cat_result
+        
+        categorization = cat_result['categorization']
+        
+        # Forçar tipo como 'video' ou 'video_transcript'
+        categorization['type'] = 'video'
+        
+        print(f"✅ Categorização completa:")
+        print(f"   Tipo: {categorization['type']}")
+        print(f"  Tags: {', '.join(categorization['tags'][:5])}")
+        print(f"   Confiança: {categorization['confidence']:.2f}")
+        
+        # Review ou Auto-approve
+        if not auto_approve:
+            print(f"\n📋 Preview:")
+            print(f"   ID: {content_id}")
+            print(f"   Título: {video_metadata.get('title')}")
+            print(f"   Transcrição: {transcript[:200]}...")
+            
+            response = input("\n✅ Aprovar e adicionar à biblioteca? (s/N): ")
+            if response.lower() != 's':
+                print("❌ Operação cancelada")
+                return {"status": "cancelled"}
+        
+        # Upload para Cloud Storage
+        print(f"\n☁️ Sincronizando com a Nuvem...")
+        remote_path = f"eximia_data/00_INBOX/{local_file_path.name}"
+        
+        if storage.upload_file(local_file_path, remote_path):
+            print("   ✅ Upload concluído")
+        else:
+            print("   ⚠️  Falha no upload (usando cópia local)")
+        
+        # Salvar no database
+        print(f"💾 Salvando no database...")
+        
+        try:
+            self.db.add_content(
+                content_id=content_id,
+                title=video_metadata.get('title', 'Unknown Video'),
+                content_type='video',
+                source_url=url,
+                author=video_metadata.get('author'),
+                file_path=str(remote_path),
+                tags=categorization['tags'],
+                notes=categorization['summary']
+            )
+            
+            # Auto-approve
+            if auto_approve:
+                approve_res = self._approve_content({
+                    'id': content_id, 
+                    'type': 'video', 
+                    'file_path': str(remote_path)
+                })
+                content_id = approve_res.get('new_id', content_id)
+            
+            print(f"✅ Vídeo adicionado com sucesso!")
+            print(f"   ID: {content_id}")
+            print(f"   Status: {'library' if auto_approve else 'inbox'}")
+            
+            return {
+                "status": "success",
+                "content_id": content_id,
+                "categorization": categorization
+            }
+        
+        except Exception as e:
+            print(f"❌ Erro ao salvar: {e}")
+            return {"status": "error", "error": str(e)}
+    
+    def _format_video_transcript(self, transcript: str, metadata: dict, url: str) -> str:
+        """Formata transcrição de vídeo em Markdown"""
+        title = metadata.get('title', 'Unknown Video')
+        author = metadata.get('author', 'N/A')
+        duration = metadata.get('duration', 0)
+        platform = metadata.get('platform', 'unknown')
+        upload_date = metadata.get('upload_date', 'N/A')
+        
+        # Formatar duração
+        if duration > 0:
+            minutes = duration // 60
+            seconds = duration % 60
+            duration_str = f"{minutes}m{seconds}s"
+        else:
+            duration_str = "N/A"
+        
+        markdown = f"""# {title}
+
+> **Fonte:** {url}  
+> **Plataforma:** {platform}  
+> **Autor/Canal:** {author}  
+> **Duração:** {duration_str}  
+> **Data de Publicação:** {upload_date}
+
+## Transcrição
+
+{transcript}
+
+---
+
+*Transcrição gerada automaticamente usando {metadata.get('transcript_method', 'AI')}*
+"""
+        return markdown
+    
+    def cmd_transcribe(self, file_path: str, method: str = "gemini") -> dict:
+        """
+        Transcrever arquivo de vídeo/áudio local
+        
+        Args:
+            file_path: Caminho para arquivo de vídeo ou áudio
+            method: Método de transcrição (whisper, google, gemini)
+        """
+        if not Path(file_path).exists():
+            print(f"❌ Arquivo não encontrado: {file_path}")
+            return {"status": "error", "message": "file_not_found"}
+        
+        print(f"🎬 Transcrevendo arquivo local: {file_path}")
+        
+        result = self.transcriber.transcribe_video(file_path, method=method)
+        
+        if result['status'] == 'success':
+            print(f"✅ Transcrição completa ({len(result['transcript'])} caracteres)")
+            
+            # Salvar automaticamente no Codex
+            file_obj = Path(file_path)
+            content_id = self.scraper._slugify(file_obj.stem)
+            
+           # Criar markdown
+            markdown_content = self._format_video_transcript(
+                result['transcript'],
+                result['metadata'],
+                f"file:///{file_path}"
+            )
+            
+            # Salvar no INBOX
+            inbox_dir = self.codex_path / "eximia_data" / "00_INBOX"
+            inbox_dir.mkdir(parents=True, exist_ok=True)
+            local_file = inbox_dir / f"{content_id}.md"
+            local_file.write_text(markdown_content, encoding='utf-8')
+            
+            # Upload para cloud
+            remote_path = f"eximia_data/00_INBOX/{local_file.name}"
+            storage.upload_file(local_file, remote_path)
+            
+            # Adicionar ao database
+            self.db.add_content(
+                content_id=content_id,
+                title=file_obj.stem,
+                content_type='video',
+                source_url=f"file:///{file_path}",
+                file_path=remote_path,
+                tags=['video', 'local', 'transcription'],
+                notes=f"Arquivo local transcrito usando {method}"
+            )
+            
+            print(f"💾 Salvo no Codex como: {content_id}")
+            print(f"📄 Use /codex-review para aprovar")
+        
+        return result

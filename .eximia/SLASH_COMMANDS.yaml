@@ -1,0 +1,373 @@
+# eximIA.OS — Slash Commands Registry
+# Integrated command system for Claude Code
+# Version: 1.0.0
+# Last Updated: 2026-01-24
+
+version: "1.0.0"
+last_updated: "2026-01-24"
+
+# ============================================================================
+# HOW THIS WORKS
+# ============================================================================
+# Slash commands are shortcuts to invoke specific agents or workflows.
+# When user types /command, Claude Code:
+#   1. Looks up command in this registry
+#   2. Loads corresponding workflow file from .agent/workflows/
+#   3. Executes agent with appropriate context
+#
+# Command Format: /[agent-namespace]-[action]
+# Example: /schedule-next, /memo-add, /clone-start
+# ============================================================================
+
+commands:
+  # ==========================================================================
+  # SCHEDULER COMMANDS — The Scheduler (Agent Roadmap Manager)
+  # ==========================================================================
+  - command: "/schedule"
+    alias: ["/sched", "/s"]
+    agent: "the_scheduler"
+    description: "Manage agent/clone backlog and roadmap"
+    workflow: ".agent/workflows/schedule.md"
+    version: "1.1.0"
+    subcommands:
+      - name: "agent"
+        syntax: "/schedule agent \"Name\" --tier=N --domain=\"...\" --priority=high|medium|low"
+        description: "Add new agent to backlog"
+        example: "/schedule agent \"The_Negotiator\" --tier=2 --domain=\"Contract Negotiation\""
+
+      - name: "clone"
+        syntax: "/schedule clone \"Person\" --domain=\"...\" --priority=high|medium|low"
+        description: "Add new clone to backlog"
+        example: "/schedule clone \"Naval Ravikant\" --domain=\"Startup Philosophy\""
+
+      - name: "list"
+        syntax: "/schedule list [--filter=agents|clones] [--status=planned|in_progress|completed]"
+        description: "List backlog items"
+        example: "/schedule list --filter=clones"
+
+      - name: "prioritize"
+        syntax: "/schedule prioritize [item_id]"
+        description: "Calculate RICE scores and re-prioritize"
+        example: "/schedule prioritize jacob_petry"
+
+      - name: "next"
+        syntax: "/schedule next"
+        description: "Get next recommended item to build"
+        example: "/schedule next"
+
+      - name: "update"
+        syntax: "/schedule update <item_id> --status=<new_status>"
+        description: "Update item status"
+        example: "/schedule update jacob_petry --status=in_progress"
+
+      - name: "roadmap"
+        syntax: "/schedule roadmap [--timeframe=month|quarter|year]"
+        description: "View roadmap timeline"
+        example: "/schedule roadmap --timeframe=quarter"
+
+      - name: "auto-execute"
+        syntax: "/schedule auto-execute <item_id> [--overnight=true]"
+        description: "Execute full pipeline automatically (NEW in v1.1)"
+        example: "/schedule auto-execute jacob_petry --overnight=true"
+        new_in: "v1.1.0"
+        workflow: ".agent/workflows/schedule_auto_execute.md"
+
+  # ==========================================================================
+  # MEMO COMMANDS — Memo (Smart Idea Bank)
+  # ==========================================================================
+  - command: "/memo"
+    alias: ["/m", "/idea"]
+    agent: "memo"
+    description: "Manage idea bank with Zettelkasten method"
+    workflow: ".agent/workflows/memo.md"
+    version: "2.0.0"
+    subcommands:
+      - name: "add"
+        syntax: "/memo \"idea text here\""
+        description: "Add atomic idea to vault"
+        example: "/memo \"Use RICE framework for agent prioritization\""
+
+      - name: "cluster"
+        syntax: "/memo cluster"
+        description: "Form clusters of related ideas"
+        example: "/memo cluster"
+
+      - name: "insights"
+        syntax: "/memo insights"
+        description: "Generate high-level insights from idea graph"
+        example: "/memo insights"
+
+      - name: "graph"
+        syntax: "/memo graph"
+        description: "Visualize idea connection graph"
+        example: "/memo graph"
+
+      - name: "recall"
+        syntax: "/memo recall [query]"
+        description: "Search for similar ideas"
+        example: "/memo recall \"agent architecture\""
+
+      - name: "list"
+        syntax: "/memo list [page]"
+        description: "List all ideas (25 per page)"
+        example: "/memo list 2"
+
+  # ==========================================================================
+  # CLONE FACTORY COMMANDS — El Clonador Pipeline
+  # ==========================================================================
+  - command: "/clone"
+    alias: ["/cloner"]
+    agent: "clone_factory"
+    description: "Clone Factory pipeline for personality replication"
+    workflow: ".agent/workflows/clone.md"
+    version: "1.0.0"
+    subcommands:
+      - name: "start"
+        syntax: "/clone start \"Person Name\" --domain=\"...\""
+        description: "Start new clone creation (C1 Hunter)"
+        example: "/clone start \"Jacob Petry\" --domain=\"Comportamento Humano\""
+
+      - name: "research"
+        syntax: "/clone research <clone_name>"
+        description: "Run C1_Hunter research phase"
+        example: "/clone research jacob_petry"
+
+      - name: "extract"
+        syntax: "/clone extract <clone_name>"
+        description: "Run C2_Extractor analysis phase"
+        example: "/clone extract jacob_petry"
+
+      - name: "create"
+        syntax: "/clone create <clone_name>"
+        description: "Run C3_Creator build phase"
+        example: "/clone create jacob_petry"
+
+      - name: "validate"
+        syntax: "/clone validate <clone_name>"
+        description: "Run C4_Auditor validation phase"
+        example: "/clone validate jacob_petry"
+
+      - name: "status"
+        syntax: "/clone status <clone_name>"
+        description: "Check clone creation progress"
+        example: "/clone status jacob_petry"
+
+  # ==========================================================================
+  # Z SQUAD COMMANDS — Agent Creation Pipeline
+  # ==========================================================================
+  - command: "/zsquad"
+    alias: ["/z", "/agent-build"]
+    agent: "z_squad"
+    description: "Z Squad pipeline for agent creation"
+    workflow: ".agent/workflows/zsquad.md"
+    version: "1.0.0"
+    subcommands:
+      - name: "start"
+        syntax: "/zsquad start \"Agent Name\" --tier=N --domain=\"...\""
+        description: "Start new agent creation (Z1 Architect)"
+        example: "/zsquad start \"The_Negotiator\" --tier=2 --domain=\"Contract Negotiation\""
+
+      - name: "spec"
+        syntax: "/zsquad spec <agent_name>"
+        description: "Run Z1_Architect spec creation"
+        example: "/zsquad spec the_negotiator"
+
+      - name: "profile"
+        syntax: "/zsquad profile <agent_name>"
+        description: "Run Z2_Profiler (DNA + KBs)"
+        example: "/zsquad profile the_negotiator"
+
+      - name: "engineer"
+        syntax: "/zsquad engineer <agent_name>"
+        description: "Run Z3_Engineer (prompt creation)"
+        example: "/zsquad engineer the_negotiator"
+
+      - name: "audit"
+        syntax: "/zsquad audit <agent_name>"
+        description: "Run Z4_Auditor validation"
+        example: "/zsquad audit the_negotiator"
+
+      - name: "status"
+        syntax: "/zsquad status <agent_name>"
+        description: "Check agent creation progress"
+        example: "/zsquad status the_negotiator"
+
+  # ==========================================================================
+  # COPY SQUAD COMMANDS — Elite Copywriting
+  # ==========================================================================
+  - command: "/copy"
+    alias: ["/copywrite"]
+    agent: "copy_chief"
+    description: "Elite copywriting with legendary copywriters"
+    workflow: ".agent/workflows/copy.md"
+    version: "3.0.0"
+    subcommands:
+      - name: "diagnose"
+        syntax: "/copy diagnose"
+        description: "Diagnose market awareness & sophistication (Tier 0)"
+        example: "/copy diagnose"
+
+      - name: "recommend"
+        syntax: "/copy recommend"
+        description: "Get copywriter recommendation from Copy Chief"
+        example: "/copy recommend"
+
+      - name: "sales-page"
+        syntax: "/copy sales-page [copywriter]"
+        description: "Create sales page (default: Gary Halbert)"
+        example: "/copy sales-page gary-halbert"
+
+      - name: "vsl"
+        syntax: "/copy vsl"
+        description: "Create VSL script (Jon Benson)"
+        example: "/copy vsl"
+
+      - name: "email-sequence"
+        syntax: "/copy email-sequence [copywriter]"
+        description: "Create email sequence"
+        example: "/copy email-sequence dan-kennedy"
+
+      - name: "headlines"
+        syntax: "/copy headlines [copywriter]"
+        description: "Generate headlines (default: David Ogilvy)"
+        example: "/copy headlines"
+
+      - name: "audit"
+        syntax: "/copy audit"
+        description: "Audit existing copy (Claude Hopkins)"
+        example: "/copy audit"
+
+      - name: "sugarman-check"
+        syntax: "/copy sugarman-check"
+        description: "Validate with 30 psychological triggers"
+        example: "/copy sugarman-check"
+
+  # ==========================================================================
+  # EXECUTIVE AGENT COMMANDS
+  # ==========================================================================
+  - command: "/maestro"
+    alias: ["/orchestrate"]
+    agent: "the_maestro"
+    description: "Supreme orchestrator for multi-agent tasks"
+    workflow: ".agent/workflows/maestro.md"
+    version: "1.0.0"
+
+  - command: "/veritas"
+    alias: ["/research", "/fact-check"]
+    agent: "the_veritas"
+    description: "Deep research with anti-hallucination"
+    workflow: ".agent/workflows/veritas.md"
+    version: "1.0.0"
+
+  - command: "/ceo"
+    alias: ["/chief-of-staff"]
+    agent: "the_ceo"
+    description: "Chief of Staff for executive tasks"
+    workflow: ".agent/workflows/ceo.md"
+    version: "2.1.0"
+
+  - command: "/cfo"
+    alias: ["/finance"]
+    agent: "the_cfo"
+    description: "Corporate finance (valuation, M&A, modeling)"
+    workflow: ".agent/workflows/cfo.md"
+    version: "1.0.0"
+
+  - command: "/clo"
+    alias: ["/legal"]
+    agent: "the_clo"
+    description: "Legal & compliance"
+    workflow: ".agent/workflows/clo.md"
+    version: "1.0.0"
+
+  - command: "/cmo"
+    alias: ["/marketing"]
+    agent: "the_cmo"
+    description: "Marketing & growth"
+    workflow: ".agent/workflows/cmo.md"
+    version: "1.0.0"
+
+  # ==========================================================================
+  # X AGENTS — Tactical Specialists
+  # ==========================================================================
+  - command: "/prototyper"
+    alias: ["/prd", "/rfc"]
+    agent: "the_prototyper"
+    description: "Product architecture & prototyping (PRDs, wireframes)"
+    workflow: ".agent/workflows/prototyper.md"
+    version: "2.0.0"
+
+  - command: "/strategist"
+    alias: ["/stratos", "/hoshin"]
+    agent: "stratos"
+    description: "Strategic planning with Hoshin Kanri"
+    workflow: ".agent/workflows/stratos.md"
+    version: "1.2.0"
+
+  - command: "/lxd"
+    alias: ["/learning-design"]
+    agent: "lxd_architect"
+    description: "Learning Experience Design"
+    workflow: ".agent/workflows/lxd.md"
+    version: "1.0.0"
+
+# ============================================================================
+# COMMAND RESOLUTION LOGIC
+# ============================================================================
+# When user types: /schedule next
+#
+# Claude Code:
+#   1. Parse "/schedule next"
+#   2. Lookup "schedule" in commands registry
+#   3. Find agent: "the_scheduler"
+#   4. Load workflow: ".agent/workflows/schedule.md"
+#   5. Find subcommand: "next"
+#   6. Execute with syntax validation
+#   7. Pass to The Scheduler agent
+#
+# The Scheduler then:
+#   1. Loads prompt: X_Agents/The_Scheduler/03_prompt/prompt_operacional.md
+#   2. Loads KBs: KB_01, KB_02, KB_03
+#   3. Executes "Protocolo 3: Next Recommendation"
+#   4. Returns result to user
+# ============================================================================
+
+# ============================================================================
+# ALIAS SUPPORT
+# ============================================================================
+# Users can use aliases for common commands:
+#   /s next        → /schedule next
+#   /m "idea"      → /memo "idea"
+#   /z start       → /zsquad start
+#   /copy vsl      → (uses Copy Squad)
+# ============================================================================
+
+# ============================================================================
+# FUTURE COMMANDS (Planned)
+# ============================================================================
+future_commands:
+  - command: "/deploy"
+    description: "Deploy agent to production"
+    status: "planned"
+
+  - command: "/monitor"
+    description: "Monitor agent performance"
+    status: "planned"
+
+  - command: "/rollback"
+    description: "Rollback agent to previous version"
+    status: "planned"
+
+  - command: "/analytics"
+    description: "Agent usage analytics"
+    status: "planned"
+
+# ============================================================================
+# MAINTENANCE
+# ============================================================================
+maintenance_log:
+  - date: "2026-01-24"
+    action: "Initial slash commands registry created"
+    by: "Claude Code Integration"
+    commands_added: 8
+    total_subcommands: 40+

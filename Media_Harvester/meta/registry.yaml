@@ -1,0 +1,48 @@
+---
+name: media_harvester
+tier: 2
+category: operational
+version: 1.1.0
+capabilities:
+  - video_download
+  - audio_transcription
+  - youtube_integration
+  - batch_processing
+  - clone_data_collection
+  - whisper_transcription
+dependencies:
+  - yt-dlp
+  - faster-whisper
+  - ffmpeg
+---
+
+# Agent Metadata
+
+**Criado:** 2026-01-19 (Z Squad)  
+**Production Deployment:** 2026-01-19  
+**Tier:** 2 (Operational)  
+**Categoria:** Operational
+
+## Capabilities Overview
+
+Media_Harvester é um agente especializado em download e transcrição de vídeos/podcasts para alimentar pipelines de clones e agentes:
+
+- **YouTube Download:** Via yt-dlp (vídeos, playlists, searches)
+- **Smart Transcription:** Prioriza legendas manuais → auto-geradas → Whisper
+- **Batch Processing:** Download e transcrição em lote
+- **Categorização Automática:** Detecta tipo de conteúdo (interview, podcast, lecture)
+- **Clone Integration:** Output compatível com Clone_Factory pipeline
+- **Local Transcription:** Suporte a arquivos de áudio locais
+
+## Technical Stack
+
+- **Download:** yt-dlp
+- **Transcription:** faster-whisper (GPU/CPU)
+- **Audio Processing:** ffmpeg
+- **Output Format:** Markdown com metadados Obsidian
+
+## Validation
+
+**Status:** Ready for Production  
+**Score:** 8.7/10  
+**Validated:** 2026-01-19

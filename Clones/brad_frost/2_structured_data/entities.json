@@ -1,0 +1,470 @@
+{
+    "metadata": {
+        "clone_target": "Brad Frost",
+        "extraction_date": "2026-01-19",
+        "total_entities": 55,
+        "categories": [
+            "people",
+            "companies",
+            "concepts",
+            "tools",
+            "media",
+            "events"
+        ]
+    },
+    "entities": [
+        {
+            "id": "p001",
+            "name": "Dave Olsen",
+            "category": "people",
+            "relationship": "Co-creator of Pattern Lab",
+            "significance": "Collaboration partner on Pattern Lab development",
+            "context": "Technical partner in tool creation"
+        },
+        {
+            "id": "p002",
+            "name": "Brian Muenzenmeyer",
+            "category": "people",
+            "relationship": "Co-creator of Pattern Lab",
+            "significance": "Collaboration partner on Pattern Lab development",
+            "context": "Third member of Pattern Lab team"
+        },
+        {
+            "id": "p003",
+            "name": "Anna Debenham",
+            "category": "people",
+            "relationship": "Co-creator of Styleguides.io",
+            "significance": "Collaboration partner on style guide resources",
+            "context": "Style guide expertise"
+        },
+        {
+            "id": "p004",
+            "name": "Jen Simmons",
+            "category": "people",
+            "relationship": "Co-creator of WTF Mobile Web",
+            "significance": "Collaboration partner on mobile web advocacy",
+            "context": "Mobile web critique project"
+        },
+        {
+            "id": "p005",
+            "name": "Dan Mall",
+            "category": "people",
+            "relationship": "Collaboration partner",
+            "significance": "Designer-developer workflow demonstrations",
+            "context": "Cross-disciplinary collaboration examples"
+        },
+        {
+            "id": "p006",
+            "name": "Luke Wroblewski",
+            "category": "people",
+            "relationship": "Influence",
+            "significance": "Coined 'mobile-first' philosophy that Brad advocates",
+            "context": "Mobile-first methodology origin"
+        },
+        {
+            "id": "p007",
+            "name": "Ethan Marcotte",
+            "category": "people",
+            "relationship": "Influence",
+            "significance": "Coined 'responsive web design,' Brad built on this",
+            "context": "RWD foundational concept"
+        },
+        {
+            "id": "c001",
+            "name": "Atomic Design",
+            "category": "concepts",
+            "type": "Methodology",
+            "description": "5-level system: Atoms → Molecules → Organisms → Templates → Pages",
+            "significance": "Brad's signature methodology, industry standard",
+            "created_by": "Brad Frost",
+            "year": "2013"
+        },
+        {
+            "id": "c002",
+            "name": "Design Systems",
+            "category": "concepts",
+            "type": "Framework",
+            "description": "Comprehensive UI component libraries with guidelines, principles, documentation",
+            "significance": "Brad's primary expertise area",
+            "notes": "'Official story of how org designs and builds UI'"
+        },
+        {
+            "id": "c003",
+            "name": "Design Tokens",
+            "category": "concepts",
+            "type": "Technical approach",
+            "description": "Abstracted design decisions (colors, spacing, typography) as variables",
+            "significance": "'Subatomic particles' of design systems",
+            "notes": "Enables Figma-to-code sync, multi-brand systems"
+        },
+        {
+            "id": "c004",
+            "name": "Mobile-First",
+            "category": "concepts",
+            "type": "Design philosophy",
+            "description": "Design for mobile constraints first, enhance for larger screens",
+            "significance": "Forces focus on core content, progressive enhancement",
+            "origin": "Luke Wroblewski, advocated by Brad"
+        },
+        {
+            "id": "c005",
+            "name": "Responsive Web Design (RWD)",
+            "category": "concepts",
+            "type": "Technical approach",
+            "description": "Fluid grids, flexible media, media queries for multi-device layouts",
+            "significance": "Foundation of Brad's work",
+            "origin": "Ethan Marcotte, expanded by Brad"
+        },
+        {
+            "id": "c006",
+            "name": "Progressive Enhancement",
+            "category": "concepts",
+            "type": "Development strategy",
+            "description": "Build accessible base, add enhancements for capable devices",
+            "significance": "Foundational web strategy Brad advocates",
+            "notes": "Core to mobile-first approach"
+        },
+        {
+            "id": "c007",
+            "name": "Pattern Libraries",
+            "category": "concepts",
+            "type": "System component",
+            "description": "Collections of reusable UI patterns/components",
+            "significance": "Core deliverable of design systems",
+            "notes": "Implemented via Pattern Lab"
+        },
+        {
+            "id": "c008",
+            "name": "Style Guides",
+            "category": "concepts",
+            "type": "Documentation",
+            "description": "Documentation of design system components, usage, principles",
+            "significance": "'Storefront for design system components'",
+            "notes": "Should be cross-disciplinary, approachable, agnostic"
+        },
+        {
+            "id": "c009",
+            "name": "Component-Driven Development",
+            "category": "concepts",
+            "type": "Development approach",
+            "description": "Building UI from modular, reusable components",
+            "significance": "Enabler of scalability and consistency",
+            "notes": "Natural fit with Atomic Design"
+        },
+        {
+            "id": "c010",
+            "name": "Performance as Design",
+            "category": "concepts",
+            "type": "Philosophy",
+            "description": "Treating web performance as essential design feature",
+            "significance": "'Good performance is good design'",
+            "notes": "Shared team responsibility"
+        },
+        {
+            "id": "c011",
+            "name": "Principles of Adaptive Design",
+            "category": "concepts",
+            "type": "Framework",
+            "description": "Ubiquity, Flexibility, Performance, Enhancement, Future-Friendly",
+            "significance": "Brad's expansion on RWD",
+            "notes": "Beyond just fluid grids and media queries"
+        },
+        {
+            "id": "t001",
+            "name": "Pattern Lab",
+            "category": "tools",
+            "type": "Open-source software",
+            "description": "Frontend workshop environment for building design systems",
+            "significance": "Implements Atomic Design, industry-standard tool",
+            "created_by": "Brad Frost, Dave Olsen, Brian Muenzenmeyer",
+            "year": "2013-2014",
+            "url": "patternlab.io"
+        },
+        {
+            "id": "t002",
+            "name": "This Is Responsive",
+            "category": "tools",
+            "type": "Resource",
+            "description": "Comprehensive responsive design patterns and resources",
+            "significance": "Early responsive design education",
+            "created_by": "Brad Frost",
+            "year": "2012"
+        },
+        {
+            "id": "t003",
+            "name": "Styleguides.io",
+            "category": "tools",
+            "type": "Resource",
+            "description": "Comprehensive style guide creation resources",
+            "significance": "Style guide best practices hub",
+            "created_by": "Brad Frost, Anna Debenham",
+            "year": "2015"
+        },
+        {
+            "id": "t004",
+            "name": "WTF Mobile Web",
+            "category": "tools",
+            "type": "Advocacy project",
+            "description": "Highlighting mobile web pain points and bad practices",
+            "significance": "Mobile web quality advocacy",
+            "created_by": "Brad Frost, Jen Simmons",
+            "year": "2014"
+        },
+        {
+            "id": "t005",
+            "name": "Mobile Web Best Practices",
+            "category": "tools",
+            "type": "Educational resource",
+            "description": "Guidelines for mobile web development",
+            "significance": "Mobile development education",
+            "created_by": "Brad Frost",
+            "year": "2014"
+        },
+        {
+            "id": "t006",
+            "name": "Style Guide Guide",
+            "category": "tools",
+            "type": "Resource",
+            "description": "Guide for building effective style guides",
+            "significance": "Style guide creation methodology",
+            "created_by": "Brad Frost",
+            "year": "2016"
+        },
+        {
+            "id": "t007",
+            "name": "Death to Bullshit",
+            "category": "tools",
+            "type": "Advocacy project",
+            "description": "Fighting dark patterns and web bloat",
+            "significance": "Web quality advocacy",
+            "created_by": "Brad Frost"
+        },
+        {
+            "id": "m001",
+            "name": "Atomic Design (book)",
+            "category": "media",
+            "type": "Book",
+            "description": "Definitive text on Atomic Design methodology",
+            "significance": "Seminal work on design systems, available free online",
+            "author": "Brad Frost",
+            "year": "2016"
+        },
+        {
+            "id": "m002",
+            "name": "Style Guides Podcast",
+            "category": "media",
+            "type": "Podcast",
+            "description": "Discussions on design systems and style guides",
+            "significance": "Industry dialogue on design systems",
+            "hosts": "Brad Frost (co-host)",
+            "years": "2016-2018"
+        },
+        {
+            "id": "m003",
+            "name": "Wake Up Excited! Podcast",
+            "category": "media",
+            "type": "Podcast",
+            "description": "Discussions on meaningful work and career fulfillment",
+            "significance": "Personal project on work satisfaction",
+            "host": "Brad Frost",
+            "year_started": "2019"
+        },
+        {
+            "id": "m004",
+            "name": "bradfrost.com",
+            "category": "media",
+            "type": "Blog",
+            "description": "Personal blog on design systems, web design, industry trends",
+            "significance": "Primary thought leadership platform",
+            "owner": "Brad Frost",
+            "ongoing": true
+        },
+        {
+            "id": "m005",
+            "name": "Subatomic: The Complete Guide To Design Tokens",
+            "category": "media",
+            "type": "Online course",
+            "description": "Comprehensive design tokens education",
+            "significance": "Advanced design systems education",
+            "creator": "Brad Frost",
+            "year": "2022",
+            "url": "designtokenscourse.com"
+        },
+        {
+            "id": "e001",
+            "name": "SmashingConf",
+            "category": "events",
+            "type": "Conference series",
+            "description": "Smashing Magazine conferences",
+            "significance": "Regular speaker venue, workshop platform",
+            "brad_involvement": "Frequent speaker, workshop leader",
+            "notable_talks": [
+                "Is Atomic Design Dead? (2024)",
+                "Creating Themeable Design Systems (2022)"
+            ]
+        },
+        {
+            "id": "e002",
+            "name": "FRONT ZURICH",
+            "category": "events",
+            "type": "Conference",
+            "description": "Frontend development conference",
+            "significance": "Speaking venue",
+            "brad_involvement": "Speaker on design systems"
+        },
+        {
+            "id": "e003",
+            "name": "Hatch Conference",
+            "category": "events",
+            "type": "Conference",
+            "description": "Design conference in Berlin",
+            "significance": "European speaking venue",
+            "brad_involvement": "Design systems talks"
+        },
+        {
+            "id": "tech001",
+            "name": "HTML",
+            "category": "technologies",
+            "type": "Language",
+            "description": "Markup language",
+            "brad_context": "Atoms-level in Atomic Design"
+        },
+        {
+            "id": "tech002",
+            "name": "CSS",
+            "category": "technologies",
+            "type": "Language",
+            "description": "Styling language",
+            "brad_context": "Visual design implementation, responsive via media queries"
+        },
+        {
+            "id": "tech003",
+            "name": "JavaScript",
+            "category": "technologies",
+            "type": "Language",
+            "description": "Programming language",
+            "brad_context": "Interactive components, Pattern Lab"
+        },
+        {
+            "id": "tech004",
+            "name": "Media Queries",
+            "category": "technologies",
+            "type": "CSS feature",
+            "description": "Responsive breakpoints",
+            "brad_context": "Core of responsive web design"
+        },
+        {
+            "id": "tech005",
+            "name": "Figma",
+            "category": "technologies",
+            "type": "Design tool",
+            "description": "UI design platform",
+            "brad_context": "Design tokens sync between Figma and code"
+        },
+        {
+            "id": "org001",
+            "name": "Pittsburgh Design Community",
+            "category": "organizations",
+            "type": "Community",
+            "description": "Local design community",
+            "brad_involvement": "Active member, based in Pittsburgh"
+        },
+        {
+            "id": "org002",
+            "name": "Smashing Magazine",
+            "category": "organizations",
+            "type": "Publication/Conference",
+            "description": "Web design publication and events",
+            "brad_involvement": "Frequent contributor, speaker, workshop leader"
+        },
+        {
+            "id": "org003",
+            "name": "Design Systems Collective",
+            "category": "organizations",
+            "type": "Community",
+            "description": "Design systems practitioners community",
+            "brad_involvement": "Thought leader, contributor"
+        },
+        {
+            "id": "prac001",
+            "name": "Browser Prototyping",
+            "category": "practices",
+            "type": "Methodology",
+            "description": "Prototyping directly in HTML/CSS/JS",
+            "brad_advocacy": "Early testing in real medium",
+            "benefit": "Reveals constraints, enables user testing"
+        },
+        {
+            "id": "prac002",
+            "name": "Pattern-Driven Workflows",
+            "category": "practices",
+            "type": "Process",
+            "description": "Building from reusable patterns",
+            "brad_advocacy": "Core to design systems",
+            "benefit": "Consistency, collaboration, efficiency"
+        },
+        {
+            "id": "prac003",
+            "name": "Cross-Disciplinary Collaboration",
+            "category": "practices",
+            "type": "Process",
+            "description": "Designers and developers working together",
+            "brad_advocacy": "Central philosophy",
+            "benefit": "Shared vocabulary, better solutions"
+        },
+        {
+            "id": "prac004",
+            "name": "Documentation-First",
+            "category": "practices",
+            "type": "Process",
+            "description": "Documenting alongside code",
+            "brad_advocacy": "Essential for design systems",
+            "benefit": "Maintainability, onboarding, clarity"
+        },
+        {
+            "id": "prac005",
+            "name": "Performance Budgets",
+            "category": "practices",
+            "type": "Process",
+            "description": "Setting performance goals in project docs",
+            "brad_advocacy": "Performance as design",
+            "benefit": "Measurable speed goals"
+        },
+        {
+            "id": "concept012",
+            "name": "Agentic Design Systems",
+            "category": "concepts",
+            "type": "Emerging concept",
+            "description": "AI-assisted/automated design systems",
+            "significance": "2026 exploration by Brad",
+            "notes": "Balancing automation with human creativity"
+        },
+        {
+            "id": "concept013",
+            "name": "Multi-Brand Design Systems",
+            "category": "concepts",
+            "type": "Architecture pattern",
+            "description": "Single system serving multiple brands",
+            "significance": "Advanced scalability challenge",
+            "notes": "Requires sophisticated token architecture"
+        },
+        {
+            "id": "concept014",
+            "name": "Themeable Design Systems",
+            "category": "concepts",
+            "type": "Architecture pattern",
+            "description": "Systems adaptable to multiple visual themes",
+            "significance": "Flexibility for diverse brands",
+            "notes": "Separation of structure/aesthetics via tokens"
+        },
+        {
+            "id": "concept015",
+            "name": "Living Style Guides",
+            "category": "concepts",
+            "type": "Documentation approach",
+            "description": "Style guides that update automatically with code",
+            "significance": "Always-current documentation",
+            "notes": "Pattern Lab enables this"
+        }
+    ]
+}

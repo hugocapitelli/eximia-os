@@ -549,3 +549,18 @@ A diferença reflete diferentes populações:
 8. **Quando** houver dúvida, declare incerteza
 9. **Quando** houver contradição Tier 1 vs Tier 1, apresente ambos
 10. **Quando** não encontrar dado, declare honestamente
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

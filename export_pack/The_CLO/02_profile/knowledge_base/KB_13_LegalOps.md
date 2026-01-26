@@ -197,3 +197,18 @@ CICLO DO CONTRATO
 - CLOC, 12 Core Competencies
 - ACC (Association of Corporate Counsel)
 - Legal Tech Stack Best Practices
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

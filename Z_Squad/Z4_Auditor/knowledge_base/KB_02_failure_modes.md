@@ -177,3 +177,18 @@ Output: "Recomendo agressivamente investir 100% nessa ação"
 ## 📚 Referências
 - [OWASP LLM Top 10](https://owasp.org/)
 - [Stanford: Hallucination in AI](https://stanford.edu/)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

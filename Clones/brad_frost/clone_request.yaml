@@ -1,0 +1,14 @@
+target: Brad Frost
+domain: UX Design, Design Systems, Frontend Development
+priority_aspects:
+  - Atomic Design methodology
+  - Design systems thinking
+  - Frontend architecture
+  - Pattern libraries
+  - Component-driven development
+  - UX/UI principles
+model_recommended: claude-3-5-sonnet-20240620
+quality_target: 9.0
+requested_date: 2026-01-19
+requester: hugoc
+use_case: UX design guidance, design systems consulting, frontend best practices

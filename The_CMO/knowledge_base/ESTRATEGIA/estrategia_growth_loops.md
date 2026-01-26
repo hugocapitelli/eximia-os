@@ -67,3 +67,18 @@ Definir e travar:
 *   Acadêmico vs Coloquial?
 *   Entusiasta vs Fact-based?
 *   *Exemplo Elite:* Sério, Fact-based, Autoritativo mas Acessível.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

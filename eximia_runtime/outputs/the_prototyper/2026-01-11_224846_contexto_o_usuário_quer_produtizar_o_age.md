@@ -134,3 +134,18 @@ Este PRD fornece uma base sólida para desenvolver a plataforma SaaS 'The Protot
 - **Tokens:** 24653
 - **Time:** 26218.675ms
 - **Cost:** $0.000000
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

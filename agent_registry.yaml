@@ -94,25 +94,22 @@ executive_agents:
     tier: 3
     status: production
     domain: "Intellectual Production & Framework Creation"
-    description: "Motor de produção intelectual: livros, artigos científicos, frameworks de impacto"
-    competencies:
-      - "Book Processing"
-      - "Paper Generation"
-      - "Framework Creation"
-      - "Knowledge Synthesis"
-      - "Academic Writing"
+    description: "Sophias (Knowledge Architecture/LXD)"
+    role: "Knowledge Production Engine"
+    category: "factory"
+    capabilities:
+      - "book_processing"
+      - "framework_creation"
+      - "lxd_design"
     dependencies:
       required: ["the_veritas"]
       optional: []
-    sub_modules:
-      - "Book_Processor"
-      - "Paper_Generator"
-      - "Framework_Creator"
+    icon: "🏭"
     paths:
-      root: "Intellex/"
-      core: "Intellex/core/"
-      modules: "Intellex/modules/"
-      templates: "Intellex/templates/"
+      root: "A_Refinaria/"
+      core: "A_Refinaria/core/"
+      modules: "A_Refinaria/modules/"
+      templates: "A_Refinaria/templates/"
     metrics:
       token_budget: 16000
       knowledge_bases: 8
@@ -295,30 +292,6 @@ z_squad_outputs:
       last_validated: "2026-01-07"
     created_by: "Z Squad Pipeline"
 
-  - id: stratos_hoshin
-    name: "StratOS"
-    version: "1.0.0"
-    tier: 3
-    status: production
-    domain: "Strategic Planning & Lean Management"
-    description: "Expert em Hoshin Kanri Deployment sem X-Matrix (Cascade Logic Only)"
-    competencies:
-      - "Hoshin Kanri"
-      - "Strategic Catchball"
-      - "KPI Design"
-      - "A3 Problem Solving"
-      - "Strategic Governance"
-    paths:
-      root: "Z_Squad/outputs/StratOS/"
-      spec: "Z_Squad/outputs/StratOS/01_spec/spec_tecnica.json"
-      profile: "Z_Squad/outputs/StratOS/02_profile/dna_mental.md"
-      prompt: "Z_Squad/outputs/StratOS/03_prompt/prompt_operacional.md"
-      kbs: "Z_Squad/outputs/StratOS/02_profile/knowledge_base/"
-    metrics:
-      token_budget: 16000
-      knowledge_bases: 2
-      last_validated: "2026-01-11"
-    created_by: "Z Squad Manual Fallback"
 
 
 
@@ -364,12 +337,100 @@ z_squad_outputs:
       prompt: "Z_Squad/outputs/Harven_Creator/03_prompt/prompt_operacional.md"
     created_by: "Z Squad Pipeline"
 
+  - id: memo
+    name: "Memo"
+    alias: "Smart Idea Bank"
+    version: "2.0.0"
+    tier: 2
+    status: production
+    domain: "Knowledge Management & Idea Networking"
+    description: "Intelligent idea bank with graph connections and cluster detection"
+    competencies:
+      - "Atomic Idea Capture"
+      - "Semantic Connection Detection"
+      - "Cluster Formation"
+      - "Insight Generation"
+      - "Knowledge Graph Analysis"
+    dependencies:
+      required: []
+      optional: ["the_veritas"]
+    paths:
+      root: "Z_Squad/outputs/Memo/"
+      spec: "Z_Squad/outputs/Memo/01_architecture/agent_spec.md"
+      profile: "Z_Squad/outputs/Memo/02_profile/"
+      prompt: "Z_Squad/outputs/Memo/03_prompt/prompt_operacional.md"
+      kbs: "Z_Squad/outputs/Memo/02_profile/knowledge_base/"
+      changelog: "Z_Squad/outputs/Memo/CHANGELOG.md"
+    metrics:
+      token_budget: 8000
+      knowledge_bases: 4
+      last_validated: "2026-01-18"
+    storage:
+      database: "00_Codex/eximia_data/vault.db"
+      files: "00_Codex/eximia_data/04_IDEAS/"
+      category: "ideas"
+    created_by: "Direct Implementation (not Z Squad)"
+
 
 
 # ============================================================================
 # X AGENTS — Agentes Táticos de Propósito Específico
 # ============================================================================
 # X_Agents will be populated with Knowledge Agents
+x_agents:
+
+  - id: the_scheduler
+    name: "The Scheduler"
+    alias: "Agent Roadmap Manager"
+    version: "1.2.0"
+    tier: 1
+    status: production
+    domain: "Agent & Clone Roadmap Management"
+    description: "Manages backlog and roadmap of future agents and clones using RICE prioritization. Auto-executes pipelines (v1.1+) and batch queues (v1.2+)"
+    competencies:
+      - "RICE Prioritization"
+      - "Dependency Tracking"
+      - "Effort Estimation"
+      - "Agent/Clone Backlog Management"
+      - "Next Build Recommendation"
+      - "Automated Pipeline Execution (v1.1+)"
+      - "Overnight Build Mode (v1.1+)"
+      - "Sequential Batch Execution (v1.2+)"
+      - "Queue Management (v1.2+)"
+    dependencies:
+      required: []
+      optional: []
+    paths:
+      root: "X_Agents/The_Scheduler/"
+      spec: "X_Agents/The_Scheduler/01_spec/spec_tecnica.json"
+      profile: "X_Agents/The_Scheduler/02_profile/"
+      prompt: "X_Agents/The_Scheduler/03_prompt/prompt_operacional.md"
+      kbs: "X_Agents/The_Scheduler/02_profile/knowledge_base/"
+      validation: "X_Agents/The_Scheduler/04_validation/"
+      backlog: "X_Agents/The_Scheduler/BACKLOG.yaml"
+      changelog: "X_Agents/The_Scheduler/CHANGELOG.md"
+      auto_builds: "X_Agents/The_Scheduler/auto_builds/"
+    metrics:
+      token_budget: 6000
+      knowledge_bases: 3
+      last_score: 9.65
+      last_validated: "2026-01-24"
+    commands:
+      - "/schedule agent"
+      - "/schedule clone"
+      - "/schedule list"
+      - "/schedule prioritize"
+      - "/schedule next"
+      - "/schedule update"
+      - "/schedule roadmap"
+      - "/schedule auto-execute (NEW v1.1)"
+    integration:
+      z_squad: "Auto-create spec on build approval, full pipeline execution"
+      clone_factory: "Auto-create research template, full pipeline execution"
+      agent_registry: "Sync on status→production"
+    created_by: "Direct Implementation"
+    created_at: "2026-01-24"
+    updated_at: "2026-01-24"
 
   - id: the_prototyper
     name: "The Prototyper"
@@ -395,12 +456,44 @@ z_squad_outputs:
       last_validated: "2026-01-11"
     created_by: "Z Squad Pipeline (Promoted)"
 
-
+  - id: stratos
+    name: "StratOS"
+    alias: "The Strategist"
+    version: "1.2.0"
+    tier: 3
+    status: production
+    domain: "Strategic Planning & Lean Management"
+    description: "Expert em Hoshin Kanri Deployment sem X-Matrix (Cascade Logic Only)"
+    competencies:
+      - "Hoshin Kanri"
+      - "Strategic Catchball"
+      - "KPI Design"
+      - "A3 Problem Solving"
+      - "Strategic Governance"
+      - "Balanced Scorecard"
+      - "SWOT Analysis"
+    dependencies:
+      required: []
+      optional: ["the_veritas"]
+    paths:
+      root: "X_Agents/StratOS/"
+      spec: "X_Agents/StratOS/01_spec/spec_tecnica.json"
+      profile: "X_Agents/StratOS/02_profile/dna_mental.md"
+      prompt: "X_Agents/StratOS/03_prompt/prompt_operacional.md"
+      kbs: "X_Agents/StratOS/02_profile/knowledge_base/"
+      changelog: "X_Agents/StratOS/CHANGELOG.md"
+      validation: "X_Agents/StratOS/04_validation/"
+      prps: "X_Agents/StratOS/PRPs/"
+    metrics:
+      token_budget: 16000
+      knowledge_bases: 2
+      last_validated: "2026-01-18"
+    created_by: "Z Squad Manual Fallback (Promoted to X_Agent)"
 
 
 
 # ============================================================================
-# CLONES — Personalidades clonadas pelo Clone Factory
+# CLONES — Personalidades clonadas pelo El Clonador
 # ============================================================================
 clones:
 
@@ -452,6 +545,260 @@ clones:
       root: "Clones/Richard_feynman/"
     notes: "Em desenvolvimento"
 
+  - id: ray_dalio
+    name: "Ray Dalio"
+    version: "1.0.0"
+    status: production
+    domain: "Investment Principles & Systematic Thinking"
+    description: "Clone de alta fidelidade focado em principles-based decision making, radical transparency e ciclos econômicos"
+    tags:
+      - "high_fidelity"
+      - "production_ready"
+      - "business_leader"
+    paths:
+      root: "Clones/ray_dalio/"
+    metrics:
+      turing_score: 9.2
+      final_score: 9.2
+      total_sources: 45
+      knowledge_bases: 9
+      heuristics: 28
+    validated_by: "C4_Auditor"
+    created_at: "2026-01-25"
+
+# ============================================================================
+# COPY SQUAD — Elite Copywriting Agents (Expansion Pack)
+# ============================================================================
+# Migrado do pack /copy para integração com eximIA.OS
+# Os copywriters são organizados por Tier funcional (não qualidade)
+# Workflow: Tier 0 (diagnóstico) → Tier 1-3 (execução) → Tool (validação)
+
+copy_squad:
+  pack_info:
+    name: "Copy - Elite Copywriting Squad"
+    version: "3.1.0"
+    location: "Ferramentas/copy/"
+    status: production
+    integrated_at: "2026-01-23"
+
+  # Orchestrator
+  - id: copy_chief
+    name: "Copy Chief"
+    alias: "Copywriting Orchestrator"
+    version: "3.0.0"
+    tier: orchestrator
+    status: production
+    domain: "Copywriting Orchestration"
+    description: "Orquestrador do time de copywriters - diagnóstico, delegação e síntese"
+    competencies:
+      - "Tier-based Workflow"
+      - "Copywriter Selection"
+      - "Project Diagnosis"
+      - "Copy Synthesis"
+    dependencies:
+      required: []
+      optional: ["the_cmo"]
+    paths:
+      root: "Ferramentas/copy/"
+      prompt: "Ferramentas/copy/agents/copy-chief.md"
+      config: "Ferramentas/copy/config.yaml"
+    commands:
+      - "*help"
+      - "*diagnose"
+      - "*recommend"
+      - "*briefing"
+
+  # Tier 0 - Diagnóstico (SEMPRE primeiro)
+  - id: claude_hopkins
+    name: "Claude Hopkins"
+    alias: "Scientific Advertising"
+    version: "1.0.0"
+    tier: 0
+    status: production
+    domain: "Copy Diagnosis & Testing"
+    era: "Classic (1866-1932)"
+    description: "Pai do advertising científico - auditoria, métricas e split tests"
+    competencies:
+      - "Scientific Advertising"
+      - "Copy Auditing"
+      - "Split Test Design"
+      - "Measurable Results"
+    paths:
+      prompt: "Ferramentas/copy/agents/claude-hopkins.md"
+    tasks:
+      - "audit-copy-hopkins"
+      - "setup-split-test"
+
+  - id: eugene_schwartz
+    name: "Eugene Schwartz"
+    alias: "Breakthrough Advertising"
+    version: "1.0.0"
+    tier: 0
+    status: production
+    domain: "Market Awareness Diagnosis"
+    era: "Classic (1927-1995)"
+    description: "5 Levels of Awareness & Market Sophistication - diagnóstico fundamental"
+    competencies:
+      - "5 Awareness Levels"
+      - "Market Sophistication Stages"
+      - "Big Ideas"
+      - "Breakthrough Copy"
+    paths:
+      prompt: "Ferramentas/copy/agents/eugene-schwartz.md"
+    commands:
+      - "*diagnose-awareness"
+      - "*diagnose-sophistication"
+
+  # Tier 1 - Documented Masters ($500M+)
+  - id: gary_halbert
+    name: "Gary Halbert"
+    alias: "The Prince of Print"
+    version: "1.0.0"
+    tier: 1
+    status: production
+    domain: "Sales Letters & Storytelling"
+    era: "Classic (1938-2007)"
+    results: "$1 BILLION+ em vendas"
+    description: "Mestre das sales letters - storytelling visceral e emocional"
+    competencies:
+      - "Sales Letters"
+      - "Storytelling"
+      - "Headlines"
+      - "Emotional Copy"
+    paths:
+      prompt: "Ferramentas/copy/agents/gary-halbert.md"
+    best_for:
+      - "Long-form sales pages"
+      - "Emotional storytelling"
+      - "Unaware audiences"
+
+  - id: gary_bencivenga
+    name: "Gary Bencivenga"
+    alias: "World's Greatest Living Copywriter"
+    version: "1.0.0"
+    tier: 1
+    status: production
+    domain: "Bullets & Fascinations"
+    era: "Classic/Modern"
+    results: "80% win rate em controles"
+    description: "Mestre dos bullets hipnóticos e fascinations irresistíveis"
+    competencies:
+      - "Bullets"
+      - "Fascinations"
+      - "Control Beating"
+      - "Long-form Copy"
+    paths:
+      prompt: "Ferramentas/copy/agents/gary-bencivenga.md"
+    best_for:
+      - "Bullets & fascinations"
+      - "Product Aware audiences"
+      - "Long-form sales"
+
+  - id: david_ogilvy
+    name: "David Ogilvy"
+    alias: "Father of Advertising"
+    version: "1.0.0"
+    tier: 1
+    status: production
+    domain: "Premium Branding & Research"
+    era: "Classic (1911-1999)"
+    description: "Copy elegante, research-based, campanhas icônicas"
+    competencies:
+      - "Premium Branding"
+      - "Research-based Copy"
+      - "Elegant Headlines"
+      - "Brand Building"
+    paths:
+      prompt: "Ferramentas/copy/agents/david-ogilvy.md"
+    best_for:
+      - "Premium products"
+      - "Brand campaigns"
+      - "Sophisticated audiences"
+
+  # Tier 2 - Modern Systematizers
+  - id: dan_kennedy
+    name: "Dan Kennedy"
+    alias: "The Millionaire Maker"
+    version: "1.0.0"
+    tier: 2
+    status: production
+    domain: "Direct Response & Urgency"
+    era: "Transition (1980-2010)"
+    results: "$100M+ em royalties"
+    description: "NO B.S. Marketing - urgência, escassez, 3Ms (Message-Market-Media)"
+    competencies:
+      - "3Ms Framework"
+      - "Urgency & Scarcity"
+      - "PAS Formula"
+      - "Ultimate Sales Letter"
+    note: "3Ms (NOT 4Ms!): Message-Market-Media"
+    paths:
+      prompt: "Ferramentas/copy/agents/dan-kennedy.md"
+    best_for:
+      - "Urgency campaigns"
+      - "Most Aware audiences"
+      - "Deadlines & scarcity"
+
+  - id: todd_brown
+    name: "Todd Brown"
+    alias: "E5 Method Creator"
+    version: "1.0.0"
+    tier: 2
+    status: production
+    domain: "Big Ideas & Unique Mechanisms"
+    era: "Modern (active)"
+    description: "E5 Method - diferenciação em mercados saturados"
+    competencies:
+      - "E5 Method"
+      - "Big Ideas"
+      - "Unique Mechanisms"
+      - "Market Differentiation"
+    paths:
+      prompt: "Ferramentas/copy/agents/todd-brown.md"
+    best_for:
+      - "Saturated markets"
+      - "Solution Aware audiences"
+      - "Differentiation"
+
+  # Tier 3 - Format Specialists
+  - id: jon_benson
+    name: "Jon Benson"
+    alias: "VSL Inventor"
+    version: "1.0.0"
+    tier: 3
+    status: production
+    domain: "Video Sales Letters"
+    era: "Modern (active)"
+    results: "$1 BILLION+ via VSL"
+    description: "Inventor do VSL - Sellerator method, video copy"
+    competencies:
+      - "VSL Scripts"
+      - "Video Copy"
+      - "Sellerator Method"
+      - "Engagement Hooks"
+    paths:
+      prompt: "Ferramentas/copy/agents/jon-benson.md"
+    tasks:
+      - "vsl-script"
+    best_for:
+      - "Video sales letters"
+      - "Video ads"
+      - "Webinar scripts"
+
+  # Tool (NOT a clone - checklist only)
+  - id: sugarman_triggers
+    name: "Sugarman 30 Triggers"
+    type: tool
+    tier: tool
+    status: production
+    domain: "Post-Copy Validation"
+    description: "Checklist de 30 triggers psicológicos - aplicar APÓS escrever copy"
+    note: "CRITICAL: 30 triggers (NOT 31). This is a TOOL, not an activatable clone."
+    usage: "*sugarman-check"
+    paths:
+      prompt: "Ferramentas/copy/agents/joe-sugarman.md"
+      checklist: "Ferramentas/copy/checklists/sugarman-30-triggers.md"
+
 # ============================================================================
 # Z SQUAD — Pipeline de Criação de Agentes
 # ============================================================================
@@ -499,37 +846,23 @@ z_squad_pipeline:
       registry: "Z_Squad/Z5_Evolver/agent_registry.yaml"  # Legacy, migrate to root
 
 # ============================================================================
-# CLONE FACTORY — Pipeline de Clonagem de Personalidades
+# EL CLONADOR — Pipeline de Clonagem de Personalidades
 # ============================================================================
-clone_factory_pipeline:
-
-  - id: c1_hunter
-    name: "C1 Hunter"
-    status: production
-    role: "Research & Data Collection"
-    paths:
-      prompt: "Clone_Factory/C1_Hunter/agente_core.md"
-
-  - id: c2_extractor
-    name: "C2 Extractor"
-    status: production
-    role: "ETL & Data Structuring"
-    paths:
-      prompt: "Clone_Factory/C2_Extractor/agente_core.md"
-
-  - id: c3_creator
-    name: "C3 Creator"
-    status: production
-    role: "Clone Generation"
-    paths:
-      prompt: "Clone_Factory/C3_Creator/agente_core.md"
-
-  - id: c4_auditor
-    name: "C4 Auditor"
-    status: production
-    role: "Validation & Turing Test"
-    paths:
-      prompt: "Clone_Factory/C4_Auditor/agente_core.md"
+el_clonador_pipeline:
+  description: "Pipeline de criação de clones digitais (Hunter -> Extractor -> Creator -> Auditor)"
+  steps:
+    - id: 1
+      agent: "C1_Hunter"
+      prompt: "El_Clonador/C1_Hunter/agente_core.md"
+    - id: 2
+      agent: "C2_Extractor"
+      prompt: "El_Clonador/C2_Extractor/agente_core.md"
+    - id: 3
+      agent: "C3_Creator"
+      prompt: "El_Clonador/C3_Creator/agente_core.md"
+    - id: 4
+      agent: "C4_Auditor"
+      prompt: "El_Clonador/C4_Auditor/agente_core.md"
 
 # ============================================================================
 # DEPRECATED — Agentes marcados para remoção
@@ -539,7 +872,7 @@ deprecated:
   - id: the_cloner
     name: "The Cloner"
     status: deprecated
-    reason: "Funcionalidade migrada para Clone_Factory"
+    reason: "Funcionalidade migrada para El_Clonador"
     deprecated_at: "2026-01-08"
     paths:
       root: "The_Cloner/"  # A ser removido
@@ -548,22 +881,27 @@ deprecated:
 # STATISTICS
 # ============================================================================
 statistics:
-  total_agents: 24  # Updated count after cleanup
+  total_agents: 35  # Updated with The_Scheduler
   by_category:
     executive_agents: 6
     z_squad_outputs: 2 # CFO, Marketplace
-    x_agents: 1        # LXD Architect moved here (conceptually, though kept in Z Squad section in text for now, should move section too if strict)
+    x_agents: 3        # The_Scheduler, The_Prototyper, StratOS
     clones: 3
+    copy_squad: 10     # Copy Chief + 8 copywriters + 1 tool
     z_squad_pipeline: 5
-    clone_factory_pipeline: 4
+    el_clonador_pipeline: 4
     deprecated: 1
   by_tier:
-    tier_1: 0 # Removed X agents + KolbFlow
-    tier_2: 3 # CEO + CFO Agents
-    tier_3: 8 # Execs + LXD + Intellex
+    tier_0_diagnosis: 2  # Hopkins, Schwartz
+    tier_1_tactical: 4   # The_Scheduler, Harven_Socrates, Harven_Creator, Marketplace_Seller
+    tier_1_masters: 3    # Halbert, Bencivenga, Ogilvy
+    tier_2_exec: 6       # CEO, Memo, Copy Chief, LXD + Kennedy, Todd Brown
+    tier_3_expert: 10    # Maestro, Veritas, CFO, CLO, CMO, Intellex, The_Prototyper, StratOS + Benson
+    orchestrators: 2     # Maestro, Copy Chief
     pipeline: 9
+    tools: 1             # Sugarman Triggers
   by_status:
-    production: 21
+    production: 32
     validated: 1
     draft: 1
     deprecated: 1
@@ -573,6 +911,26 @@ statistics:
 # MAINTENANCE LOG
 # ============================================================================
 maintenance_log:
+  - date: "2026-01-25"
+    action: "The_Scheduler v1.2 - Batch execution adicionado"
+    by: "Claude Code Direct Implementation"
+    details: "Novo comando /schedule auto-execute-batch para execução sequencial de múltiplos items. Suporta --top=N (por RICE) ou --items=list (explícito). Queue management, checkpoints entre items, resume capability. User-initiated only (não automático). Workflow completo em .agent/workflows/schedule_auto_execute_batch.md. Token budget aumentado para 8000."
+
+  - date: "2026-01-24"
+    action: "The_Scheduler v1.1 - Auto-execute feature adicionado"
+    by: "Claude Code Direct Implementation"
+    details: "Novo comando /schedule auto-execute para execução automática de pipelines (Z Squad ou Clone Factory). Overnight mode, checkpoint system, error handling. Slash commands registry criado em .eximia/SLASH_COMMANDS.yaml com 8 comandos principais e 40+ subcomandos."
+
+  - date: "2026-01-24"
+    action: "The_Scheduler v1.0 adicionado como X_Agent (Tier 1)"
+    by: "Claude Code Direct Implementation"
+    details: "Agent Roadmap Manager para backlog de agentes/clones. RICE prioritization, dependency tracking, integration com Z Squad e Clone Factory. Score: 9.65/10. Commands: /schedule agent|clone|list|prioritize|next|update|roadmap."
+
+  - date: "2026-01-23"
+    action: "Copy Squad integrado - 10 agentes de copywriting adicionados (Copy Chief + 8 copywriters + Sugarman tool)"
+    by: "Claude Code Integration"
+    details: "Pack /copy adaptado para convenções eximIA.OS. Copywriters organizados por tier funcional."
+
   - date: "2026-01-08"
     action: "Registry central criado, consolidando Z5_Evolver e Clone_Factory registries"
     by: "System Improvement Initiative"

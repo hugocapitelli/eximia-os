@@ -203,3 +203,18 @@ from those expressed or implied..."
 4. **Earnings prep: T-30 dias** mínimo
 5. **Post-call: transcript same day**
 6. **1:1 follow-up** com top shareholders
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

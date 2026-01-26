@@ -121,3 +121,18 @@ Acessar quando usuário perguntar sobre:
 ---
 
 **Clone Factory ID:** ELON_MUSK-v1.0
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Clones]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -180,3 +180,18 @@ Segundo FD Capital (2024), o CFO é fundamental no desenvolvimento e execução 
 4. **Due diligence: sempre completa** antes de oferta
 5. **ESG disclosure: crescente importância**
 6. **Brasil: CDI + spread** é benchmark
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

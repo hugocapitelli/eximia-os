@@ -37,3 +37,18 @@ I will switch to EXECUTION mode and write the code.
 To Finish: Ask me to "Archive the change".
 I will update the permanent documentation.
 Key Rule: Specs are the Truth. If you want to change how the system works, we update the Spec first (via a new Change Proposal), then the Code.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Pesquisas]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

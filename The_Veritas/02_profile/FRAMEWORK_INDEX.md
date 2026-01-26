@@ -153,3 +153,18 @@
 
 ### Para Formatar Output
 1. MECE → 2. Pyramid Principle → 3. APA/ABNT (conforme pedido)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

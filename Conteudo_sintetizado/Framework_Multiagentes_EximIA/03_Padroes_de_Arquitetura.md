@@ -25,3 +25,18 @@ Não existe uma arquitetura única (Silver Bullet). O framework ExímIA prevê d
 | **Escalabilidade** | Média (O chefe vira gargalo) | Alta (Autônomo) |
 | **Complexidade** | Baixa | Alta |
 | **Exemplo ExímIA** | Geração de Relatórios | Coding Assistant no IDE |
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Pesquisas]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -186,3 +186,18 @@ O handoff está pronto para próximo módulo ou delivery.
 ## 📚 Referências
 - [The_Cloner: cloner_checklist.md](../../The_Cloner/cloner_checklist.md)
 - [Z4: KB_01_test_methodologies.md](./KB_01_test_methodologies.md)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

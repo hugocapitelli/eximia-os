@@ -35,3 +35,18 @@ Não foi possível localizar dados específicos sobre o market size do mercado d
 - **Model:** openai/gpt-4o
 - **Tokens:** 31319
 - **Time:** 10976.438ms
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

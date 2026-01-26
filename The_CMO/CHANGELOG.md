@@ -32,3 +32,18 @@ Todas as mudanças notáveis neste agente serão documentadas aqui.
 ### Dependencies
 - Requires The_Veritas for market research
 - Optional The_CLO for compliance review
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

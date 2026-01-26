@@ -1,0 +1,72 @@
+# ============================================
+# HARVEN.AI - Docker Compose para Coolify
+# ============================================
+#
+# DEPLOY NO COOLIFY:
+# 1. Crie um novo projeto no Coolify
+# 2. Escolha "Docker Compose" como tipo
+# 3. Aponte para este repositorio
+# 4. Configure as variaveis de ambiente no painel
+#
+# VARIAVEIS OBRIGATORIAS NO COOLIFY:
+# - SUPABASE_URL (sua URL do Supabase)
+# - SUPABASE_KEY (sua service_role key do Supabase)
+# - OPENAI_API_KEY (chave da OpenAI)
+# - JWT_SECRET (gere um UUID seguro)
+#
+# VARIAVEIS OPCIONAIS:
+# - OPENAI_MODEL (default: gpt-4o-mini)
+# - JACAD_URL, JACAD_API_KEY (integracao JACAD)
+# - MOODLE_URL, MOODLE_TOKEN (integracao Moodle)
+# ============================================
+
+services:
+  # ==========================================
+  # Backend - FastAPI + AI Agents
+  # ==========================================
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file:
+      - .env.production
+    environment:
+      - ENVIRONMENT=production
+      - FRONTEND_URL=https://harven.eximiaventures.com.br
+      - PORT=8000
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    networks:
+      - harven-network
+
+  # ==========================================
+  # Frontend - React + Vite + Nginx
+  # ==========================================
+  frontend:
+    build:
+      context: ./harven.ai-platform-mockup
+      dockerfile: Dockerfile
+      args:
+        # URL da API que sera embedada no build do frontend
+        - VITE_API_URL=https://api.harven.eximiaventures.com.br
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+    networks:
+      - harven-network
+
+networks:
+  harven-network:
+    driver: bridge

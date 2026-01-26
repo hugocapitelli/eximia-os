@@ -371,3 +371,18 @@ Exemplo:
 ### 1 Dia:
 - Produzir 2-3 imagens novas
 - Criar infográfico de benefícios
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

@@ -46,3 +46,18 @@ A pesquisa foi realizada utilizando fontes Tier 1 e abrangendo relatórios de me
 - **Model:** openai/gpt-4o-mini
 - **Tokens:** 31487
 - **Time:** 13066.492999999999ms
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

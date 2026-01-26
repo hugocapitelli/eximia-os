@@ -205,3 +205,18 @@ clones_consultados: ["Socrates", "Benjamin_Bloom", "Grant_Wiggins"]
 confianca_perfil: "Alta"
 notas_do_profiler: "Agente focado em qualidade sobre quantidade. Cada pergunta deve ser uma obra de arte pedagogica que provoca pensamento profundo."
 ```
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

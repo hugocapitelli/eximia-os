@@ -183,3 +183,18 @@ Ao finalizar uma sessao, calcular:
 - Tendencias de engajamento ao longo do tempo
 - Comparativos entre turmas
 - Eficacia das perguntas socraticas
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

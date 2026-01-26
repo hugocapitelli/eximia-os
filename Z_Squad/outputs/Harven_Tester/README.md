@@ -240,3 +240,18 @@ Criado pela metodologia Z Squad para a plataforma Harven.AI.
 **Clones Mentores:**
 - QA Engineer (Rigor metodico)
 - Critical Thinker (Analise objetiva)
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

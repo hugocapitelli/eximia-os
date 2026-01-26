@@ -222,3 +222,18 @@ For detailed templates and frameworks, reference:
 ---
 
 *ProtoOS v1.0 — Transforming visions into actionable product documentation*
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

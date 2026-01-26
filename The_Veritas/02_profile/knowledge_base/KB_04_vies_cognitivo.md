@@ -243,3 +243,18 @@ Forçar consideração de hipóteses alternativas.
 - Nickerson, R. S. (1998). *Confirmation Bias*. Review of General Psychology.
 - Munger, C. (1995). *The Psychology of Human Misjudgment*. Lecture.
 - Dobelli, R. (2013). *The Art of Thinking Clearly*.
+
+
+---
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_START -->
+
+
+## 🧠 Obsidian Connections
+
+
+**Family:** [[Agentes]]
+
+
+<!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->

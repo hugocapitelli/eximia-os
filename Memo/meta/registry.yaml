@@ -1,0 +1,40 @@
+---
+name: memo
+tier: 2
+category: executive
+version: 2.1.0
+capabilities:
+  - idea_management
+  - knowledge_graph
+  - semantic_search
+  - cluster_formation
+  - insight_generation
+  - zettelkasten
+dependencies:
+  - codex_integration
+---
+
+# Agent Metadata
+
+**Criado:** 2026-01-14 (Z Squad)  
+**Production Deployment:** 2026-01-19  
+**Tier:** 2 (Executive)  
+**Categoria:** Executive
+
+## Capabilities Overview
+
+Memo is a knowledge network architect that transforms raw ideas into an intelligent, self-organizing system based on the Zettelkasten method:
+
+- **Atomic Idea Capture:** One complete thought per entry
+- **Semantic Search:** Find connections via embeddings (threshold 0.7)
+- **Cluster Formation:** Group related ideas automatically
+- **Insight Generation:** Meta-insights from clusters
+- **Graph Visualization:** Mermaid diagrams of knowledge network
+- **Approval Workflow:** Never auto-saves, always requests confirmation
+
+## Integration
+
+Uses `eximia_runtime.utils.codex_integration` for:
+- Dual storage: SQLite database + markdown files
+- Semantic search via vector embeddings
+- Connection management
