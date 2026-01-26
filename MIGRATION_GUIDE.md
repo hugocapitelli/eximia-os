@@ -33,7 +33,7 @@ Como você ainda não configurou o repositório remoto:
     git add .
     git commit -m "Initial backup for migration"
     git branch -M main
-    git remote add origin <URL_DO_NOVO_REPO>
+    git remote add origin <https://github.com/hugocapitelli/ex-mia-os.git>
     git push -u origin main
     ```
     > **Nota**: Após fazer isso, substitua `<URL_DO_NOVO_REPO>` nos comandos abaixo pela URL real.
@@ -53,11 +53,39 @@ Instale o básico antes de tudo:
 1. [ ] Abra o Terminal (PowerShell) na pasta onde deseja instalar (ex: `Documents`).
 2. [ ] Clone o repositório:
    ```powershell
-   git clone <URL_DO_SEU_REPO> eximIA.OS
+   git clone <https://github.com/hugocapitelli/ex-mia-os.git> eximIA.OS
    cd eximIA.OS/eximIA.OS
    ```
 3. [ ] **Restaure o Secrets**:
    - Pegue o arquivo `.env` do seu backup e cole na raiz (`eximIA.OS/eximIA.OS/.env`).
+
+#### 2.2b Opção: Atualizar Instalação Existente
+Se você já tem a pasta (ex: cópia manual ou versão antiga):
+1. [ ] Abra o terminal na pasta `eximIA.OS/eximIA.OS`.
+2. [ ] Atualize o código:
+   ```powershell
+   git pull origin main
+   ```
+3. [ ] (Opcional) Se tiver conflitos locais que queira ignorar (sobrescrever com o da nuvem):
+   ```powershell
+   git fetch --all
+   git reset --hard origin/main
+   ```
+
+#### 2.2c Opção: Transformar "Pasta Solta" em Repo
+Se você tem uma pasta antiga que **NUNCA** viu o Git:
+1. [ ] Abra o terminal na pasta raiz do projeto.
+2. [ ] Conecte na nuvem à força:
+   ```powershell
+   git init
+   git remote add origin <https://github.com/hugocapitelli/ex-mia-os.git>
+   git fetch --all
+   
+   # ATENÇÃO: Isso vai sobrescrever arquivos de CÓDIGO pelos da nuvem.
+   # Seus dados ignorados (PDFs, .env) permanecem salvos.
+   git reset --hard origin/main
+   git branch -M main
+   ```
 
 ### 2.3 Hidratação Automática (O Mágico 🧙‍♂️)
 Execute o script que instala tudo (Python libs, Node libs, Drivers):
@@ -82,3 +110,25 @@ Execute o script que instala tudo (Python libs, Node libs, Drivers):
 Para garantir que está tudo 100%:
 - [ ] Verifique se o **The_CFO** consegue ler um PDF (Testa Tesseract/Poppler).
 - [ ] Verifique se o **Codex** consegue listar arquivos (Testa Supabase Connection).
+
+---
+
+## 4. Rotina de Sincronização (Dia a Dia)
+
+Para manter seus computadores sincronizados após a migração inicial:
+
+### 📤 Enviar Alterações (Upload)
+Sempre que finalizar um trabalho em um PC:
+```powershell
+git add .
+git commit -m "Descricao do que fez"
+git push origin main
+```
+
+### 📥 Receber Alterações (Update)
+Ao sentar no outro PC, antes de começar:
+```powershell
+git pull origin main
+# Se houver novas dependências, rode o setup novamente (é seguro):
+./setup_device.ps1
+```
