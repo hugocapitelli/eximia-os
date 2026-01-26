@@ -1,5 +1,5 @@
 # CURRENT FOCUS
-**Atualizado:** 26 Janeiro 2026 - 14:00
+**Atualizado:** 26 Janeiro 2026 - 22:00
 
 ---
 
@@ -7,9 +7,9 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  BLOCO 0.1 - Setup & Infraestrutura                        │
-│  Status: NOT_STARTED                                        │
-│  Instância: Nenhuma                                         │
+│  BLOCO 0.3 - Design Tokens                                  │
+│  Status: DONE ✅                                            │
+│  Instância: CLAUDE_2026-01-26_03                            │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -17,11 +17,11 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Bloco** | 0.1 |
-| **Status** | `IN_PROGRESS` |
-| **Locked By** | CLAUDE_2026-01-26_01 |
-| **Lock Time** | 26/01/2026 15:30 |
-| **Last Update** | 26/01/2026 15:30 |
+| **Bloco** | 0.3 (DONE) |
+| **Status** | `DONE` |
+| **Locked By** | - |
+| **Lock Time** | - |
+| **Last Update** | 26/01/2026 22:00 |
 
 ---
 
@@ -57,21 +57,26 @@ Exemplo: `CLAUDE_2026-01-26_01`
 
 | Ordem | Bloco | Status | Dependências |
 |-------|-------|--------|--------------|
-| 1 | 0.1 - Setup | ⬜ NOT_STARTED | - |
-| 2 | 0.2 - Agent Service | ⬜ NOT_STARTED | 0.1 |
-| 3 | 0.3 - Design Tokens | ⬜ NOT_STARTED | 0.1 |
-| 4 | 0.4 - Atoms | ⬜ NOT_STARTED | 0.3 |
+| 1 | 0.1 - Setup | 🟢 DONE | - |
+| 2 | 0.2 - Agent Service | 🔵 IN_PROGRESS | 0.1 ✅ |
+| 3 | 0.3 - Design Tokens | 🟢 DONE | 0.1 ✅ |
+| 4 | 0.4 - Atoms | ⬜ NOT_STARTED | 0.3 ✅ |
 | 5 | 0.5 - Molecules | ⬜ NOT_STARTED | 0.4 |
 | 6 | 0.6 - Layout | ⬜ NOT_STARTED | 0.5 |
 
 ---
 
-## Blocos Paralelizáveis (após FASE 0)
+## Blocos Disponíveis para Trabalho
 
-Quando FASE 0 estiver completa, estes blocos podem rodar em paralelo:
+Os seguintes blocos podem ser iniciados agora:
 
-- BLOCO 1.1 (Connection Schema) - Instância A
-- BLOCO 1.2 (Agents Base) - Instância B
+1. **BLOCO 0.4 - Atoms** (depende de 0.3 ✅)
+   - Button (todas variantes)
+   - Input (todos estados)
+   - Badge (todas variantes)
+   - Icon system (Lucide)
+   - Avatar
+   - Typography components
 
 ---
 

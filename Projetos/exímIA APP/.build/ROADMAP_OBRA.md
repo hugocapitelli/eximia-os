@@ -1,7 +1,7 @@
 # ROADMAP DE OBRA - ExímIA OS
 **Versão:** 1.0.0
 **Criado:** 26 Janeiro 2026
-**Status:** Em Planejamento
+**Status:** Em Desenvolvimento (FASE 0)
 
 ---
 
@@ -111,7 +111,7 @@ Projetos/exímIA APP/
 > **Objetivo:** App funcionando em produção com auth e design system básico.
 > **Paralelizável:** NÃO - Sequencial obrigatório.
 
-### ⬜ BLOCO 0.1 - Setup & Infraestrutura
+### 🟢 BLOCO 0.1 - Setup & Infraestrutura ✅
 
 | Campo | Valor |
 |-------|-------|
@@ -121,17 +121,17 @@ Projetos/exímIA APP/
 | **Estimativa** | 1 sessão |
 
 **Escopo:**
-- [ ] Criar projeto Next.js 14 (App Router, TypeScript, Tailwind)
-- [ ] Configurar Supabase (projeto + env vars)
-- [ ] Implementar Auth básico (login/logout/registro)
-- [ ] Configurar Easypanel (container Next.js)
-- [ ] Deploy inicial funcionando
-- [ ] Configurar domínio (se houver)
+- [x] Criar projeto Next.js 14 (App Router, TypeScript, Tailwind)
+- [x] Configurar Supabase (projeto + env vars)
+- [x] Implementar Auth básico (login/logout/registro)
+- [x] Configurar Easypanel (container Next.js)
+- [x] Deploy inicial funcionando
+- [x] Configurar domínio (se houver)
 
 **Critério de Done:**
-- [ ] URL pública acessível
-- [ ] Login/logout funcionando com Supabase Auth
-- [ ] Página protegida acessível apenas logado
+- [x] URL pública acessível
+- [x] Login/logout funcionando com Supabase Auth
+- [x] Página protegida acessível apenas logado
 
 **Não inclui (próximo bloco):**
 - Design system
@@ -168,26 +168,26 @@ Projetos/exímIA APP/
 
 ---
 
-### ⬜ BLOCO 0.3 - Design System: Tokens & Base
+### 🟢 BLOCO 0.3 - Design System: Tokens & Base ✅
 
 | Campo | Valor |
 |-------|-------|
 | **PRD Fonte** | `00_Core/PRD-Design-System-v5.0.md` (seções 1-2) |
 | **Checkpoint** | `.build/checkpoints/BLOCO_0.3_design_tokens.md` |
-| **Dependências** | BLOCO 0.1 |
+| **Dependências** | BLOCO 0.1 ✅ |
 | **Estimativa** | 1 sessão |
 
 **Escopo:**
-- [ ] Configurar design tokens (CSS variables)
-- [ ] Configurar Tailwind com tokens customizados
-- [ ] Configurar shadcn/ui como base
-- [ ] Criar tema dark (ExímIA palette)
-- [ ] Documentar tokens (pode ser em MD, não precisa Storybook ainda)
+- [x] Configurar design tokens (CSS variables)
+- [x] Configurar Tailwind com tokens customizados
+- [x] Configurar shadcn/ui como base
+- [x] Criar tema dark (ExímIA palette)
+- [x] Documentar tokens (docs/DESIGN_TOKENS.md)
 
 **Critério de Done:**
-- [ ] Tokens disponíveis globalmente
-- [ ] Tailwind usando cores ExímIA
-- [ ] Componentes shadcn com tema aplicado
+- [x] Tokens disponíveis globalmente
+- [x] Tailwind usando cores ExímIA
+- [x] Componentes shadcn com tema aplicado
 
 ---
 
@@ -496,8 +496,10 @@ Projetos/exímIA APP/
 
 ## Próximo Passo
 
-**INICIAR:** BLOCO 0.1 - Setup & Infraestrutura
+**PRÓXIMOS DISPONÍVEIS (podem rodar em paralelo):**
+- BLOCO 0.2 - Agent Service Setup
+- BLOCO 0.3 - Design Tokens & Base
 
 ---
 
-*Última atualização: 26 Janeiro 2026*
+*Última atualização: 26 Janeiro 2026 - 21:00*

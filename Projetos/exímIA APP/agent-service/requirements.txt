@@ -1,0 +1,25 @@
+# ExímIA Agent Service - Dependencies
+# Python 3.11+
+
+# FastAPI & Server
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+
+# Pydantic & Settings
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# HTTP Client
+httpx>=0.26.0
+
+# Supabase
+supabase>=2.3.0
+
+# JWT Auth
+python-jose[cryptography]>=3.3.0
+
+# Logging
+structlog>=24.1.0
+
+# Environment
+python-dotenv>=1.0.0

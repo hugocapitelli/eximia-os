@@ -1,7 +1,7 @@
 # CHECKPOINT: BLOCO 0.2 - Agent Service Setup
 **Criado:** 26 Janeiro 2026
 **Atualizado:** 26 Janeiro 2026
-**Status:** `NOT_STARTED`
+**Status:** `IN_PROGRESS`
 
 ---
 
@@ -18,38 +18,38 @@
 ## Checklist de Escopo
 
 ### Setup do Projeto
-- [ ] Criar estrutura de pastas Python
-- [ ] Configurar pyproject.toml ou requirements.txt
+- [x] Criar estrutura de pastas Python
+- [x] Configurar pyproject.toml ou requirements.txt
 - [ ] Configurar ambiente virtual
-- [ ] Instalar FastAPI + Uvicorn
-- [ ] Criar main.py básico
+- [x] Instalar FastAPI + Uvicorn (no requirements.txt)
+- [x] Criar main.py básico
 
 ### Estrutura Base
-- [ ] Configurar routers
-- [ ] Configurar settings (pydantic-settings)
-- [ ] Criar endpoint /health
-- [ ] Configurar CORS
-- [ ] Configurar logging
+- [x] Configurar routers
+- [x] Configurar settings (pydantic-settings)
+- [x] Criar endpoint /health
+- [x] Configurar CORS
+- [x] Configurar logging
 
 ### Integração Supabase
-- [ ] Instalar supabase-py
-- [ ] Criar client Supabase
+- [x] Instalar supabase-py (no requirements.txt)
+- [x] Criar client Supabase
 - [ ] Testar conexão com banco
-- [ ] Validação de JWT (auth)
+- [x] Validação de JWT (auth)
 
 ### Deploy Easypanel
-- [ ] Criar Dockerfile
+- [x] Criar Dockerfile
 - [ ] Configurar projeto no Easypanel
 - [ ] Configurar variáveis de ambiente
 - [ ] Deploy inicial
 - [ ] Testar health check
 
 ### Comunicação Next.js ↔ Agent Service
-- [ ] Criar client no Next.js para Agent Service
+- [x] Criar client no Next.js para Agent Service
 - [ ] Testar chamada do frontend para backend
 - [ ] Verificar CORS funcionando
 
-**Progresso:** 0/17 (0%)
+**Progresso:** 12/17 (71%)
 
 ---
 
@@ -57,18 +57,51 @@
 
 ### Última Ação Realizada
 ```
-Nenhuma - bloco não iniciado
-Depende de: BLOCO 0.1 (Setup Next.js)
+Criada estrutura completa do Agent Service:
+- FastAPI app com routers e health endpoints
+- Configuração via pydantic-settings
+- Cliente Supabase para database
+- Validação JWT para auth
+- Dockerfile para deploy
+- Cliente TypeScript no Next.js
 ```
 
 ### Próxima Ação Pendente
 ```
-Aguardar conclusão do BLOCO 0.1
+1. Criar arquivo .env no agent-service/ com credenciais Supabase
+2. Testar localmente: cd agent-service && pip install -r requirements.txt && uvicorn app.main:app --reload
+3. Deploy no Easypanel
 ```
 
-### Arquivos Modificados
+### Arquivos Criados
 ```
-Nenhum ainda
+agent-service/
+├── app/
+│   ├── __init__.py
+│   ├── main.py                 # FastAPI app
+│   ├── config.py               # Settings
+│   ├── api/
+│   │   ├── __init__.py
+│   │   ├── deps.py             # Dependencies (auth)
+│   │   └── v1/
+│   │       ├── __init__.py
+│   │       ├── router.py       # Main router
+│   │       └── health.py       # Health endpoints
+│   └── services/
+│       ├── __init__.py
+│       └── supabase.py         # Supabase client
+├── tests/
+│   ├── __init__.py
+│   └── test_health.py
+├── .dockerignore
+├── .env.example
+├── Dockerfile
+├── pyproject.toml
+├── README.md
+└── requirements.txt
+
+app/src/lib/
+└── agent-service.ts            # Next.js client
 ```
 
 ---
@@ -211,7 +244,7 @@ settings = Settings()
 
 | Blocker | Descrição | Ação Necessária |
 |---------|-----------|-----------------|
-| Dependência | BLOCO 0.1 não concluído | Aguardar |
+| - | Nenhum | - |
 
 ---
 
@@ -230,7 +263,8 @@ settings = Settings()
 | Data | Instância | Ações | Resultado |
 |------|-----------|-------|-----------|
 | 26/01/2026 | - | Checkpoint criado | Setup inicial |
+| 26/01/2026 | CLAUDE_2026-01-26_02 | Estrutura completa criada | 71% concluído |
 
 ---
 
-*Última atualização: 26 Janeiro 2026 - 14:00*
+*Última atualização: 26 Janeiro 2026 - 21:15*

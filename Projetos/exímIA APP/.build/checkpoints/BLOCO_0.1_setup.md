@@ -1,7 +1,7 @@
 # CHECKPOINT: BLOCO 0.1 - Setup & Infraestrutura
 **Criado:** 26 Janeiro 2026
 **Atualizado:** 26 Janeiro 2026
-**Status:** `IN_PROGRESS` (aguardando Node.js 20+ para teste local)
+**Status:** `DONE`
 
 ---
 
@@ -29,7 +29,7 @@
 - [x] Configurar variáveis de ambiente
 - [x] Instalar @supabase/supabase-js e @supabase/ssr
 - [x] Criar cliente Supabase (browser + server)
-- [ ] Testar conexão (requer Node.js 20+)
+- [x] Testar conexão
 
 ### Autenticação
 - [x] Configurar Supabase Auth
@@ -37,17 +37,17 @@
 - [x] Criar página de registro
 - [x] Implementar logout
 - [x] Criar middleware de proteção de rotas
-- [ ] Testar fluxo completo (requer Node.js 20+)
+- [x] Testar fluxo completo
 
 ### Deploy Easypanel
 - [x] Criar Dockerfile para Next.js
-- [ ] Configurar projeto no Easypanel
-- [ ] Configurar variáveis de ambiente no Easypanel
-- [ ] Deploy inicial
-- [ ] Configurar domínio (os.eximiaventures.com.br)
-- [ ] Testar em produção
+- [x] Configurar projeto no Easypanel
+- [x] Configurar variáveis de ambiente no Easypanel
+- [x] Deploy inicial
+- [x] Configurar domínio (os.eximiaventures.com.br)
+- [x] Testar em produção
 
-**Progresso:** 14/18 (78%)
+**Progresso:** 18/18 (100%) ✅
 
 ---
 
@@ -193,11 +193,13 @@ CMD ["node", "server.js"]
 
 ## Critério de Done
 
-- [ ] URL pública acessível (Easypanel)
-- [ ] Login/logout funcionando com Supabase Auth
-- [ ] Página protegida acessível apenas logado
-- [ ] Redirect automático se não autenticado
-- [ ] Persistência de sessão (refresh mantém logado)
+- [x] URL pública acessível (Easypanel)
+- [x] Login/logout funcionando com Supabase Auth
+- [x] Página protegida acessível apenas logado
+- [x] Redirect automático se não autenticado
+- [x] Persistência de sessão (refresh mantém logado)
+
+✅ **BLOCO CONCLUÍDO** - 26 Janeiro 2026
 
 ---
 
