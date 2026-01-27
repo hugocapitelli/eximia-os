@@ -1,160 +1,133 @@
 import { createClient } from "@/lib/supabase/server";
-import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  Badge,
+  Heading,
+  Text,
+  CheckCircle,
+  Target,
+  TrendingUp,
+  BookOpen,
+} from "@/components/ui";
+import { MetricCard, EntityLink } from "@/components/molecules";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       {/* Welcome */}
       <div>
-        <h2 className="text-2xl font-bold text-white">
-          Bem-vindo ao ExímIA OS
-        </h2>
-        <p className="mt-1 text-zinc-400">
-          Logado como: {user?.email}
-        </p>
+        <Heading level="h2">
+          Olá, {user?.user_metadata?.full_name || user?.email?.split("@")[0] || "Usuário"}
+        </Heading>
+        <Text color="muted">
+          Seu sistema operacional de produtividade com IA está pronto.
+        </Text>
       </div>
 
-      {/* Status Card - Using new design system */}
+      {/* Metrics */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <MetricCard
+          label="Metas Ativas"
+          value="12"
+          icon={<Target className="size-4" />}
+          period="Este trimestre"
+          change={15}
+          changeLabel="vs. trimestre anterior"
+        />
+        <MetricCard
+          label="Hábitos"
+          value="87%"
+          icon={<CheckCircle className="size-4" />}
+          period="Esta semana"
+          change={5}
+          progress={87}
+        />
+        <MetricCard
+          label="Aulas Concluídas"
+          value="24"
+          icon={<BookOpen className="size-4" />}
+          period="Este mês"
+          change={-3}
+        />
+        <MetricCard
+          label="Produtividade"
+          value="4.2h"
+          icon={<TrendingUp className="size-4" />}
+          period="Média diária"
+          change={12}
+        />
+      </div>
+
+      {/* Quick Actions */}
       <Card>
         <CardHeader>
-          <div className="flex items-center justify-between">
-            <CardTitle className="flex items-center gap-3">
-              <div className="w-3 h-3 bg-success rounded-full animate-pulse" />
-              Sistema Operacional
-            </CardTitle>
-            <Badge variant="success">Online</Badge>
-          </div>
-          <CardDescription>
-            BLOCO 0.3 - Design System implementado
-          </CardDescription>
+          <CardTitle>Conexões Recentes</CardTitle>
+          <CardDescription>Entidades conectadas no seu sistema</CardDescription>
         </CardHeader>
         <CardContent>
-          <p className="text-zinc-300">
-            Design tokens, Tailwind theme e componentes shadcn/ui configurados com tema ExímIA.
-          </p>
+          <div className="flex flex-wrap gap-2">
+            <EntityLink type="goal" id="1" label="Lançar MVP" />
+            <EntityLink type="project" id="2" label="ExímIA OS" />
+            <EntityLink type="habit" id="3" label="Meditação" />
+            <EntityLink type="note" id="4" label="Ideias de Features" />
+            <EntityLink type="agent" id="5" label="The Maestro" />
+            <EntityLink type="resource" id="6" label="Atomic Habits" />
+          </div>
         </CardContent>
       </Card>
 
-      {/* Design System Demo */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Design System Demo</CardTitle>
-          <CardDescription>Componentes com tema ExímIA Gold</CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-6">
-          {/* Buttons */}
-          <div className="space-y-3">
-            <p className="text-sm font-medium text-zinc-400">Buttons</p>
-            <div className="flex flex-wrap gap-3">
-              <Button>Primary</Button>
-              <Button variant="secondary">Secondary</Button>
-              <Button variant="outline">Outline</Button>
-              <Button variant="ghost">Ghost</Button>
-              <Button variant="destructive">Destructive</Button>
-              <Button variant="success">Success</Button>
-            </div>
-            <div className="flex flex-wrap gap-3">
-              <Button size="sm">Small</Button>
-              <Button size="default">Default</Button>
-              <Button size="lg">Large</Button>
-            </div>
-          </div>
-
-          {/* Badges */}
-          <div className="space-y-3">
-            <p className="text-sm font-medium text-zinc-400">Badges</p>
-            <div className="flex flex-wrap gap-2">
-              <Badge>Default</Badge>
-              <Badge variant="primary">Primary</Badge>
-              <Badge variant="secondary">Secondary</Badge>
-              <Badge variant="success">Success</Badge>
-              <Badge variant="warning">Warning</Badge>
-              <Badge variant="destructive">Error</Badge>
-              <Badge variant="info">Info</Badge>
-              <Badge variant="outline">Outline</Badge>
-            </div>
-          </div>
-
-          {/* Input */}
-          <div className="space-y-3">
-            <p className="text-sm font-medium text-zinc-400">Input</p>
-            <div className="max-w-sm">
-              <Input placeholder="Digite algo..." />
-            </div>
-          </div>
-
-          {/* Color Palette */}
-          <div className="space-y-3">
-            <p className="text-sm font-medium text-zinc-400">ExímIA Gold Palette</p>
-            <div className="flex gap-1">
-              <div className="w-12 h-12 rounded bg-eximia-50" title="eximia-50" />
-              <div className="w-12 h-12 rounded bg-eximia-100" title="eximia-100" />
-              <div className="w-12 h-12 rounded bg-eximia-200" title="eximia-200" />
-              <div className="w-12 h-12 rounded bg-eximia-300" title="eximia-300" />
-              <div className="w-12 h-12 rounded bg-eximia-400" title="eximia-400" />
-              <div className="w-12 h-12 rounded bg-eximia-500" title="eximia-500" />
-              <div className="w-12 h-12 rounded bg-eximia-600" title="eximia-600" />
-              <div className="w-12 h-12 rounded bg-eximia-700" title="eximia-700" />
-              <div className="w-12 h-12 rounded bg-eximia-800" title="eximia-800" />
-              <div className="w-12 h-12 rounded bg-eximia-900" title="eximia-900" />
-            </div>
-          </div>
-        </CardContent>
-        <CardFooter>
-          <Button className="glow-eximia">Efeito Glow</Button>
-        </CardFooter>
-      </Card>
-
-      {/* Next Steps */}
+      {/* Progress */}
       <Card className="border-eximia-400/20">
         <CardHeader>
-          <CardTitle className="text-eximia-400">Progresso da Fase 0</CardTitle>
+          <CardTitle className="text-eximia-400">FASE 0 - Fundação</CardTitle>
+          <CardDescription>Progresso do desenvolvimento</CardDescription>
         </CardHeader>
         <CardContent>
-          <ul className="space-y-2 text-zinc-400">
-            <li className="flex items-center gap-2">
-              <Badge variant="success">Done</Badge>
-              BLOCO 0.1: Setup & Infraestrutura
-            </li>
-            <li className="flex items-center gap-2">
-              <Badge variant="warning">WIP</Badge>
-              BLOCO 0.2: Agent Service (FastAPI)
-            </li>
-            <li className="flex items-center gap-2">
-              <Badge variant="success">Done</Badge>
-              BLOCO 0.3: Design Tokens
-            </li>
-            <li className="flex items-center gap-2">
-              <Badge variant="outline">Pending</Badge>
-              BLOCO 0.4: Atoms
-            </li>
-            <li className="flex items-center gap-2">
-              <Badge variant="outline">Pending</Badge>
-              BLOCO 0.5: Molecules
-            </li>
-            <li className="flex items-center gap-2">
-              <Badge variant="outline">Pending</Badge>
-              BLOCO 0.6: Layout Shell
-            </li>
-          </ul>
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Badge variant="success" dot size="sm">Concluído</Badge>
+                <Text size="sm">BLOCO 0.1-0.4: Setup + Design System</Text>
+              </div>
+              <Text size="xs" color="muted">4/6</Text>
+            </div>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Badge variant="success" dot size="sm">Concluído</Badge>
+                <Text size="sm">BLOCO 0.5: Molecules</Text>
+              </div>
+              <Text size="xs" color="muted">5/6</Text>
+            </div>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Badge variant="success" dot size="sm">Concluído</Badge>
+                <Text size="sm">BLOCO 0.6: Layout Shell</Text>
+              </div>
+              <Text size="xs" color="muted">6/6</Text>
+            </div>
+
+            {/* Progress Bar */}
+            <div className="mt-4">
+              <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-gradient-to-r from-eximia-500 to-eximia-400 rounded-full"
+                  style={{ width: "100%" }}
+                />
+              </div>
+              <Text size="xs" color="muted" className="mt-2 text-center">
+                FASE 0 completa! Pronto para FASE 1 - Core
+              </Text>
+            </div>
+          </div>
         </CardContent>
       </Card>
-
-      {/* Debug Info */}
-      <div className="p-4 bg-zinc-900/30 border border-zinc-800/50 rounded-lg">
-        <p className="text-xs text-zinc-500 font-mono">
-          User ID: {user?.id}
-        </p>
-        <p className="text-xs text-zinc-500 font-mono">
-          Created: {user?.created_at}
-        </p>
-      </div>
     </div>
   );
 }

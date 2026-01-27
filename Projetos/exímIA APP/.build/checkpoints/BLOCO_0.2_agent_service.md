@@ -1,7 +1,7 @@
 # CHECKPOINT: BLOCO 0.2 - Agent Service Setup
 **Criado:** 26 Janeiro 2026
 **Atualizado:** 26 Janeiro 2026
-**Status:** `IN_PROGRESS`
+**Status:** `DONE`
 
 ---
 

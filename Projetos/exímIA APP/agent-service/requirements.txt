@@ -1,25 +1,31 @@
 # ExímIA Agent Service - Dependencies
 # Python 3.11+
+# IMPORTANT: All versions are pinned for reproducible builds
 
 # FastAPI & Server
-fastapi>=0.109.0
-uvicorn[standard]>=0.27.0
+fastapi==0.109.2
+uvicorn[standard]==0.27.0
+sse-starlette==2.1.2
 
 # Pydantic & Settings
-pydantic>=2.5.0
-pydantic-settings>=2.1.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
 
 # HTTP Client
-httpx>=0.26.0
+httpx==0.26.0
 
 # Supabase
-supabase>=2.3.0
+supabase==2.3.5
 
 # JWT Auth
-python-jose[cryptography]>=3.3.0
+python-jose[cryptography]==3.3.0
+
+# LLM Providers
+openai==1.12.0
+anthropic==0.18.1
 
 # Logging
-structlog>=24.1.0
+structlog==24.1.0
 
 # Environment
-python-dotenv>=1.0.0
+python-dotenv==1.0.0

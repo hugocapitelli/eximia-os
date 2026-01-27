@@ -46,13 +46,18 @@ async def get_current_user_id(
     token = parts[1]
 
     try:
-        # Decode JWT without verification for now
-        # In production, verify with Supabase JWT secret
+        # Always verify JWT signature - CRITICAL for security
+        if not settings.supabase_jwt_secret:
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="JWT secret not configured",
+            )
+
         payload = jwt.decode(
             token,
-            settings.supabase_jwt_secret or "secret",
+            settings.supabase_jwt_secret,
             algorithms=["HS256"],
-            options={"verify_signature": bool(settings.supabase_jwt_secret)},
+            options={"verify_signature": True},  # Always verify
         )
         user_id = payload.get("sub")
         if not user_id:

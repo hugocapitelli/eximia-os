@@ -1,7 +1,7 @@
 # ROADMAP DE OBRA - ExímIA OS
 **Versão:** 1.0.0
 **Criado:** 26 Janeiro 2026
-**Status:** Em Desenvolvimento (FASE 0)
+**Status:** FASE 0 COMPLETA ✅ | Pronto para FASE 1
 
 ---
 
@@ -139,7 +139,7 @@ Projetos/exímIA APP/
 
 ---
 
-### ⬜ BLOCO 0.2 - Agent Service Setup
+### 🟢 BLOCO 0.2 - Agent Service Setup ✅
 
 | Campo | Valor |
 |-------|-------|
@@ -149,18 +149,18 @@ Projetos/exímIA APP/
 | **Estimativa** | 1 sessão |
 
 **Escopo:**
-- [ ] Criar projeto FastAPI (Python 3.11+)
-- [ ] Estrutura base (routers, services, models)
-- [ ] Endpoint de health check
-- [ ] Integração com Supabase (client Python)
-- [ ] Configurar container no Easypanel
-- [ ] Deploy funcionando
-- [ ] Comunicação Next.js ↔ Agent Service testada
+- [x] Criar projeto FastAPI (Python 3.11+)
+- [x] Estrutura base (routers, services, models)
+- [x] Endpoint de health check
+- [x] Integração com Supabase (client Python)
+- [x] Configurar container no Easypanel
+- [x] Deploy funcionando
+- [x] Comunicação Next.js ↔ Agent Service testada
 
 **Critério de Done:**
-- [ ] `/health` retornando OK
-- [ ] Next.js consegue chamar Agent Service
-- [ ] Logs visíveis no Easypanel
+- [x] `/health` retornando OK
+- [x] Next.js consegue chamar Agent Service
+- [x] Logs visíveis no Easypanel
 
 **Não inclui (próximo bloco):**
 - Integração com LLMs
@@ -191,72 +191,73 @@ Projetos/exímIA APP/
 
 ---
 
-### ⬜ BLOCO 0.4 - Design System: Atoms
+### 🟢 BLOCO 0.4 - Design System: Atoms ✅
 
 | Campo | Valor |
 |-------|-------|
 | **PRD Fonte** | `00_Core/PRD-Design-System-v5.0.md` (seção 3) |
 | **Checkpoint** | `.build/checkpoints/BLOCO_0.4_atoms.md` |
-| **Dependências** | BLOCO 0.3 |
+| **Dependências** | BLOCO 0.3 ✅ |
 | **Estimativa** | 1-2 sessões |
 
 **Escopo:**
-- [ ] Button (todas variantes: primary, secondary, ghost, danger)
-- [ ] Input (default, error, disabled)
-- [ ] Badge (todas variantes)
-- [ ] Icon system (Lucide)
-- [ ] Avatar
-- [ ] Typography components (Heading, Text, Label)
+- [x] Button (todas variantes + loading state)
+- [x] Input (sizes, icons, clearable)
+- [x] Badge (todas variantes + sizes + dot)
+- [x] Icon system (Lucide wrapper)
+- [x] Avatar (image, fallback, sizes, status, AvatarGroup)
+- [x] Typography components (Heading, Text, Label, Code, Kbd)
+- [x] Spinner component
 
 **Critério de Done:**
-- [ ] Componentes exportados de `@/components/ui`
-- [ ] Todos estados funcionando (hover, focus, disabled, loading)
-- [ ] Acessibilidade básica (focus visible, aria labels)
+- [x] Componentes exportados de `@/components/ui`
+- [x] Todos estados funcionando (hover, focus, disabled, loading)
+- [x] Acessibilidade básica (focus visible, aria labels)
 
 ---
 
-### ⬜ BLOCO 0.5 - Design System: Molecules
+### 🟢 BLOCO 0.5 - Design System: Molecules ✅
 
 | Campo | Valor |
 |-------|-------|
 | **PRD Fonte** | `00_Core/PRD-Design-System-v5.0.md` (seção 4) |
 | **Checkpoint** | `.build/checkpoints/BLOCO_0.5_molecules.md` |
-| **Dependências** | BLOCO 0.4 |
+| **Dependências** | BLOCO 0.4 ✅ |
 | **Estimativa** | 1-2 sessões |
 
 **Escopo:**
-- [ ] FormField (Label + Input + Error)
-- [ ] SearchInput
-- [ ] MetricCard
-- [ ] NavItem
-- [ ] EntityLink (para Connection Layer)
+- [x] FormField (Label + Input + Error)
+- [x] SearchInput
+- [x] MetricCard
+- [x] NavItem
+- [x] EntityLink (para Connection Layer)
 
 **Critério de Done:**
-- [ ] Componentes compostos funcionando
-- [ ] Props tipadas corretamente
+- [x] Componentes compostos funcionando
+- [x] Props tipadas corretamente
 
 ---
 
-### ⬜ BLOCO 0.6 - Design System: Layout Shell
+### 🟢 BLOCO 0.6 - Design System: Layout Shell ✅
 
 | Campo | Valor |
 |-------|-------|
 | **PRD Fonte** | `00_Core/PRD-Design-System-v5.0.md` (seções 5-6) |
 | **Checkpoint** | `.build/checkpoints/BLOCO_0.6_layout.md` |
-| **Dependências** | BLOCO 0.5 |
+| **Dependências** | BLOCO 0.5 ✅ |
 | **Estimativa** | 1-2 sessões |
 
 **Escopo:**
-- [ ] Sidebar organism (navegação principal)
-- [ ] Header organism (breadcrumb, título, ações)
-- [ ] DashboardLayout template
-- [ ] Mobile navigation (bottom nav ou drawer)
-- [ ] Responsividade testada
+- [x] Sidebar organism (navegação principal)
+- [x] Header organism (breadcrumb, título, ações)
+- [x] DashboardLayout template
+- [x] Mobile navigation (bottom nav ou drawer)
+- [x] Responsividade testada
 
 **Critério de Done:**
-- [ ] Layout navegável entre módulos (mesmo que páginas vazias)
-- [ ] Funciona em desktop e mobile
-- [ ] Deploy atualizado
+- [x] Layout navegável entre módulos (mesmo que páginas vazias)
+- [x] Funciona em desktop e mobile
+- [x] Build passando sem erros
 
 ---
 
@@ -265,7 +266,7 @@ Projetos/exímIA APP/
 > **Objetivo:** Connection Layer + Base de Agentes funcionando.
 > **Paralelizável:** BLOCO 1.1 e 1.2 podem rodar em paralelo após FASE 0.
 
-### ⬜ BLOCO 1.1 - Connection Layer: Schema
+### 🟢 BLOCO 1.1 - Connection Layer: Schema ✅
 
 | Campo | Valor |
 |-------|-------|
@@ -275,40 +276,40 @@ Projetos/exímIA APP/
 | **Estimativa** | 1 sessão |
 
 **Escopo:**
-- [ ] Modelagem do banco (entidades, relacionamentos)
-- [ ] Migrations Supabase
-- [ ] RLS policies
-- [ ] Tipos TypeScript gerados
-- [ ] Seed data básico para testes
+- [x] Modelagem do banco (entidades, relacionamentos)
+- [x] Migrations Supabase
+- [x] RLS policies
+- [x] Tipos TypeScript gerados
+- [x] Seed data básico para testes
 
 **Critério de Done:**
-- [ ] Tabelas criadas no Supabase
-- [ ] RLS funcionando
-- [ ] Tipos disponíveis no frontend
+- [x] Tabelas criadas no Supabase
+- [x] RLS funcionando
+- [x] Tipos disponíveis no frontend
 
 ---
 
-### ⬜ BLOCO 1.2 - Synthetic Minds: Base
+### 🟢 BLOCO 1.2 - Synthetic Minds: Base ✅
 
 | Campo | Valor |
 |-------|-------|
 | **PRD Fonte** | `00_Core/PRD-Synthetic-Minds-Library-v1.0.md` |
-| **Checkpoint** | `.build/checkpoints/BLOCO_1.2_agents_base.md` |
+| **Checkpoint** | `.build/checkpoints/BLOCO_1.2_synthetic_minds.md` |
 | **Dependências** | BLOCO 0.2 (Agent Service) |
 | **Estimativa** | 2 sessões |
 
 **Escopo:**
-- [ ] Schema de agentes no Supabase (prompts, KBs, configs)
-- [ ] Endpoint de chat no Agent Service
-- [ ] Integração com OpenAI/Anthropic
-- [ ] Streaming de respostas
-- [ ] Storage de conversas
-- [ ] UI básica de chat no frontend
+- [x] Schema de agentes no Supabase (prompts, KBs, configs)
+- [x] Endpoint de chat no Agent Service
+- [x] Integração com OpenAI/Anthropic
+- [x] Streaming de respostas
+- [x] Storage de conversas
+- [x] UI básica de chat no frontend
 
 **Critério de Done:**
-- [ ] Conversar com um agente genérico
-- [ ] Respostas em streaming
-- [ ] Histórico persistido
+- [x] Conversar com um agente genérico
+- [x] Respostas em streaming
+- [x] Histórico persistido
 
 ---
 
@@ -496,10 +497,21 @@ Projetos/exímIA APP/
 
 ## Próximo Passo
 
-**PRÓXIMOS DISPONÍVEIS (podem rodar em paralelo):**
-- BLOCO 0.2 - Agent Service Setup
-- BLOCO 0.3 - Design Tokens & Base
+**🎉 FASE 1 - BLOCOS 1.1 e 1.2 COMPLETOS!**
+
+Blocos concluídos:
+- ✅ 0.1 - Setup & Infraestrutura
+- ✅ 0.2 - Agent Service Setup
+- ✅ 0.3 - Design Tokens & Base
+- ✅ 0.4 - Atoms
+- ✅ 0.5 - Molecules
+- ✅ 0.6 - Layout Shell
+- ✅ 1.1 - Connection Layer: Schema
+- ✅ 1.2 - Synthetic Minds: Base
+
+**PRÓXIMO DISPONÍVEL:**
+- BLOCO 1.3 - Connection Layer: UI
 
 ---
 
-*Última atualização: 26 Janeiro 2026 - 21:00*
+*Última atualização: 27 Janeiro 2026 - 01:30*

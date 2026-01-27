@@ -1,6 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { validateEnv } from "@/lib/validate-env";
+
+// Validate environment variables at startup
+validateEnv();
 
 const inter = Inter({
   variable: "--font-inter",
