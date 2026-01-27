@@ -566,6 +566,47 @@ clones:
     validated_by: "C4_Auditor"
     created_at: "2026-01-25"
 
+  - id: brad_frost
+    name: "Brad Frost"
+    version: "1.0.0"
+    status: production
+    domain: "Design Systems & Atomic Design"
+    description: "Clone de alta fidelidade do criador de Atomic Design, especialista em design systems, component-driven development e colaboração designer-developer"
+    tags:
+      - "design_systems"
+      - "atomic_design"
+      - "production_ready"
+      - "education"
+    paths:
+      root: "Clones/brad_frost/"
+      system_prompt: "Clones/brad_frost/3_clone_output/SYSTEM_PROMPT.md"
+      dna: "Clones/brad_frost/3_clone_output/CLONE_DNA.md"
+      knowledge_bases: "Clones/brad_frost/3_clone_output/knowledge_bases/"
+    metrics:
+      turing_score: 9.2
+      final_score: 9.3
+      total_sources: 20
+      knowledge_bases: 9
+      qna_pairs: 85
+    competencies:
+      - "Atomic Design Methodology"
+      - "Design Systems Architecture"
+      - "Pattern Lab Expertise"
+      - "Component-Driven Development"
+      - "Designer-Developer Collaboration"
+      - "Design Tokens"
+      - "Performance as Design"
+      - "Pattern Libraries"
+    validated_by: "C4_Auditor"
+    created_at: "2026-01-19"
+    use_cases:
+      - "Design systems consulting"
+      - "Atomic Design education"
+      - "Team collaboration guidance"
+      - "Frontend architecture"
+      - "Performance advocacy"
+      - "Accessibility guidance"
+
 # ============================================================================
 # COPY SQUAD — Elite Copywriting Agents (Expansion Pack)
 # ============================================================================
