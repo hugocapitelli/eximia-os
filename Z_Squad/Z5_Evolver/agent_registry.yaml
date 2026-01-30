@@ -1,7 +1,7 @@
 # Agent Registry — Z5 Evolver
 
-agent_registry_version: "1.0.0"
-last_updated: "2026-01-06T23:30:00Z"
+agent_registry_version: "1.1.0"
+last_updated: "2026-01-29T18:00:00Z"
 
 # ========================================
 # INSTRUÇÕES DE USO
@@ -56,6 +56,51 @@ agents:
   # Agentes Registrados
   # ========================================
   
+  - agent_id: a3_master
+    nome: "A3 Master"
+    versao: "3.0.0"
+    tier: 3
+    status: validated
+    dominio: "Excelência Operacional / A3 Thinking / Toyota Production System"
+    competencias:
+      - "A3 Thinking (Toyota) - Expert"
+      - "Análise de Causa Raiz (Ishikawa 6M + 5 Porquês) - Expert"
+      - "PDCA Integration - Expert"
+      - "Hoshin Kanri Deployment (X-Matrix, Catchball) - Expert"
+      - "Modelo Shingo (Sistema→Comportamento→Resultado) - Expert"
+      - "Coaching/Mentoring (Socratic) - Advanced"
+      - "Gemba Walk e Observação - Advanced"
+      - "Visual Management - Advanced"
+      - "Yokoten (Transferência Lateral) - Advanced"
+      - "Hansei (Reflexão) - Advanced"
+      - "Kaizen (Melhoria Contínua) - Advanced"
+    clones_mentores:
+      - "Taiichi Ohno"
+      - "Shigeo Shingo"
+      - "John Shook"
+      - "Jeffrey Liker"
+      - "Masaaki Imai"
+      - "W. Edwards Deming"
+    nota_global: 9.4
+    risco: baixo
+    token_budget: 16000
+    knowledge_bases: 16
+    frameworks: 45
+    sources: 50
+    created_at: "2026-01-29"
+    created_by: "Z Squad Pipeline"
+    last_validated: "2026-01-29"
+    upgraded_to_tier3: "2026-01-29"
+    next_review: "2026-04-29"
+    evolution_tickets: []
+    paths:
+      spec: "outputs/A3_Master/01_spec/spec_tecnica.json"
+      dna: "outputs/A3_Master/02_profile/dna_mental.md"
+      prompt: "outputs/A3_Master/03_prompt/prompt_operacional.md"
+      kbs: "outputs/A3_Master/02_profile/knowledge_base/"
+      validation: "outputs/A3_Master/04_validation/validation_report.md"
+    notas: "TIER 3 EXPERT. 6 clones mentores TPS. 16 KBs com 50 fontes e 45 frameworks. 4 modos (Build/Evaluate/Teach/Coach). Score 9.4/10. Upgrade de Tier 2 para Tier 3 em 2026-01-29."
+
   - agent_id: cfo_agent
     nome: "CFO Agent"
     versao: "1.1.0"
@@ -131,17 +176,17 @@ agents:
 # ESTATÍSTICAS
 # ========================================
 stats:
-  total_agents: 3
+  total_agents: 4
   by_status:
     draft: 0
-    validated: 3
+    validated: 4
     production: 0
     deprecated: 0
   by_risk:
-    baixo: 2
+    baixo: 3
     medio: 1
     alto: 0
-  average_nota: 9.5
+  average_nota: 9.4
 
   - agent_id: the_strategist
     nome: "The Strategist (StratOS)"
@@ -181,6 +226,12 @@ stats:
 # LOGS DE MANUTENÇÃO
 # ========================================
 maintenance_log:
+  - date: "2026-01-29"
+    action: "UPGRADED A3_Master to Tier 3 (v3.0.0, 16 KBs, 45 frameworks, Score 9.4)"
+    by: "Z Squad Pipeline"
+  - date: "2026-01-29"
+    action: "Added A3_Master agent (v2.0.0, Tier 2, Score 9.1)"
+    by: "Z Squad Pipeline"
   - date: "2026-01-06"
     action: "Registry created"
     by: "Z Squad Setup"

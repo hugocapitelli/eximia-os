@@ -1,0 +1,305 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "A3 Master Tier 3 - Output Schema",
+  "description": "Schema de saída do agente A3 Master em modo Tier 3",
+  "version": "3.0.0",
+  "type": "object",
+  "required": ["mode", "response", "meta"],
+  "properties": {
+    "mode": {
+      "type": "string",
+      "enum": ["build", "evaluate", "teach"],
+      "description": "Modo de operação que gerou esta resposta"
+    },
+    "response": {
+      "oneOf": [
+        { "$ref": "#/definitions/build_response" },
+        { "$ref": "#/definitions/evaluate_response" },
+        { "$ref": "#/definitions/teach_response" }
+      ]
+    },
+    "meta": {
+      "type": "object",
+      "required": ["confidence", "kb_references", "next_actions"],
+      "properties": {
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Nível de confiança na resposta (%)"
+        },
+        "kb_references": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^KB_[0-9]{2}$" },
+          "description": "Knowledge Bases utilizadas"
+        },
+        "frameworks_applied": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Frameworks do índice aplicados"
+        },
+        "validation_flags": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "item": { "type": "string" },
+              "reason": { "type": "string" },
+              "suggested_action": { "type": "string" }
+            }
+          },
+          "description": "Itens marcados [VALIDAR]"
+        },
+        "circuit_breakers_triggered": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^CB-0[1-7]$" },
+          "description": "Circuit breakers acionados"
+        },
+        "next_actions": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Próximos passos recomendados"
+        },
+        "meta_reasoning_log": {
+          "type": "object",
+          "description": "Log do processo de meta-reasoning (5 fases)",
+          "properties": {
+            "perception": { "type": "string" },
+            "analysis": { "type": "string" },
+            "synthesis": { "type": "string" },
+            "critique": { "type": "string" },
+            "output_rationale": { "type": "string" }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "build_response": {
+      "type": "object",
+      "description": "Resposta para modo BUILD",
+      "properties": {
+        "a3_section": {
+          "type": "string",
+          "enum": [
+            "context",
+            "current_conditions",
+            "objectives",
+            "root_cause_analysis",
+            "countermeasures",
+            "action_plan",
+            "monitoring",
+            "complete"
+          ],
+          "description": "Seção do A3 sendo trabalhada"
+        },
+        "content": {
+          "type": "string",
+          "description": "Conteúdo da seção em markdown"
+        },
+        "guidance": {
+          "type": "string",
+          "description": "Orientação para próximos passos"
+        },
+        "questions": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Perguntas para coletar mais informações"
+        },
+        "a3_draft": {
+          "type": "object",
+          "description": "Rascunho do A3 em construção",
+          "properties": {
+            "context": { "type": "string" },
+            "current_conditions": { "type": "string" },
+            "objectives": { "type": "array", "items": { "type": "string" } },
+            "ishikawa": {
+              "type": "object",
+              "properties": {
+                "method": { "type": "array", "items": { "type": "string" } },
+                "machine": { "type": "array", "items": { "type": "string" } },
+                "manpower": { "type": "array", "items": { "type": "string" } },
+                "material": { "type": "array", "items": { "type": "string" } },
+                "measurement": { "type": "array", "items": { "type": "string" } },
+                "environment": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "five_whys": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "cause": { "type": "string" },
+                  "whys": { "type": "array", "items": { "type": "string" }, "maxItems": 5 },
+                  "root_cause": { "type": "string" }
+                }
+              }
+            },
+            "countermeasures": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": { "type": "string" },
+                  "description": { "type": "string" },
+                  "linked_cause": { "type": "string" },
+                  "owner": { "type": "string" },
+                  "deadline": { "type": "string" },
+                  "ice_score": { "type": "number" }
+                }
+              }
+            },
+            "action_plan": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "action": { "type": "string" },
+                  "responsible": { "type": "string" },
+                  "start_date": { "type": "string" },
+                  "end_date": { "type": "string" },
+                  "status": { "type": "string", "enum": ["pending", "in_progress", "completed"] }
+                }
+              }
+            },
+            "monitoring": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "indicator": { "type": "string" },
+                  "type": { "type": "string", "enum": ["leading", "lagging"] },
+                  "target": { "type": "string" },
+                  "frequency": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "evaluate_response": {
+      "type": "object",
+      "description": "Resposta para modo EVALUATE",
+      "required": ["overall_score", "classification", "criteria_scores"],
+      "properties": {
+        "overall_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10,
+          "description": "Score geral do A3 (0-10)"
+        },
+        "classification": {
+          "type": "string",
+          "enum": ["excellent", "good", "satisfactory", "insufficient", "critical"],
+          "description": "Classificação baseada no score"
+        },
+        "criteria_scores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["criterion", "score", "weight", "observation"],
+            "properties": {
+              "criterion": { "type": "string" },
+              "score": { "type": "number", "minimum": 0, "maximum": 10 },
+              "weight": { "type": "number" },
+              "observation": { "type": "string" }
+            }
+          },
+          "minItems": 10,
+          "maxItems": 10
+        },
+        "strengths": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Pontos fortes identificados"
+        },
+        "improvement_opportunities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "area": { "type": "string" },
+              "current_state": { "type": "string" },
+              "recommended_action": { "type": "string" },
+              "priority": { "type": "string", "enum": ["high", "medium", "low"] }
+            }
+          },
+          "description": "Oportunidades de melhoria priorizadas"
+        },
+        "comparison": {
+          "type": "object",
+          "description": "Comparação com avaliação anterior (se disponível)",
+          "properties": {
+            "previous_score": { "type": "number" },
+            "current_score": { "type": "number" },
+            "delta": { "type": "number" },
+            "evolved_areas": { "type": "array", "items": { "type": "string" } },
+            "regressed_areas": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+    "teach_response": {
+      "type": "object",
+      "description": "Resposta para modo TEACH",
+      "required": ["topic", "definition", "why_it_matters", "how_to_apply"],
+      "properties": {
+        "topic": {
+          "type": "string",
+          "description": "Conceito sendo ensinado"
+        },
+        "definition": {
+          "type": "string",
+          "description": "Definição clara do conceito"
+        },
+        "why_it_matters": {
+          "type": "string",
+          "description": "Por que o conceito é importante"
+        },
+        "how_to_apply": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Passos práticos para aplicação"
+        },
+        "example": {
+          "type": "object",
+          "description": "Exemplo real de aplicação",
+          "properties": {
+            "context": { "type": "string" },
+            "application": { "type": "string" },
+            "result": { "type": "string" },
+            "source": { "type": "string" }
+          }
+        },
+        "common_pitfalls": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Armadilhas comuns a evitar"
+        },
+        "related_concepts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "concept": { "type": "string" },
+              "relationship": { "type": "string" },
+              "kb_reference": { "type": "string" }
+            }
+          },
+          "description": "Conceitos relacionados para aprofundamento"
+        },
+        "quiz": {
+          "type": "object",
+          "description": "Quiz para verificação de aprendizado",
+          "properties": {
+            "question": { "type": "string" },
+            "options": { "type": "array", "items": { "type": "string" } },
+            "correct_answer": { "type": "integer" },
+            "explanation": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

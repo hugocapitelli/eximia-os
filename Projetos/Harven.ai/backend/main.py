@@ -4,15 +4,62 @@ import time
 from datetime import datetime
 from contextlib import asynccontextmanager
 from typing import List, Optional
-from fastapi import FastAPI, HTTPException, Depends, Header, UploadFile, File, Form
+from fastapi import FastAPI, HTTPException, Depends, Header, UploadFile, File, Form, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import Response, JSONResponse
 from pydantic import BaseModel
 from supabase import create_client, Client
 from dotenv import load_dotenv
 
+# Observability imports
+import sentry_sdk
+from sentry_sdk.integrations.fastapi import FastApiIntegration
+from sentry_sdk.integrations.starlette import StarletteIntegration
+import structlog
+
 # Carrega variáveis de ambiente
 load_dotenv()
+
+# ============================================
+# SENTRY INITIALIZATION
+# ============================================
+SENTRY_DSN = os.getenv("SENTRY_DSN")
+ENVIRONMENT = os.getenv("ENVIRONMENT", "development")
+
+if SENTRY_DSN:
+    sentry_sdk.init(
+        dsn=SENTRY_DSN,
+        environment=ENVIRONMENT,
+        integrations=[
+            FastApiIntegration(transaction_style="endpoint"),
+            StarletteIntegration(transaction_style="endpoint"),
+        ],
+        traces_sample_rate=float(os.getenv("SENTRY_TRACES_SAMPLE_RATE", "0.1")),
+        profiles_sample_rate=float(os.getenv("SENTRY_PROFILES_SAMPLE_RATE", "0.1")),
+        send_default_pii=False,
+    )
+    print(f"✅ Sentry initialized for environment: {ENVIRONMENT}")
+else:
+    print("⚠️ SENTRY_DSN not configured - error tracking disabled")
+
+# ============================================
+# STRUCTURED LOGGING CONFIGURATION
+# ============================================
+structlog.configure(
+    processors=[
+        structlog.contextvars.merge_contextvars,
+        structlog.processors.add_log_level,
+        structlog.processors.TimeStamper(fmt="iso"),
+        structlog.processors.JSONRenderer()
+    ],
+    wrapper_class=structlog.make_filtering_bound_logger(
+        getattr(__import__('logging'), os.getenv("LOG_LEVEL", "INFO"))
+    ),
+    context_class=dict,
+    logger_factory=structlog.PrintLoggerFactory(),
+    cache_logger_on_first_use=True,
+)
+logger = structlog.get_logger()
 
 # Configuração do Supabase
 SUPABASE_URL = os.getenv("SUPABASE_URL")
@@ -196,6 +243,77 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# ============================================
+# PROMETHEUS METRICS
+# ============================================
+from prometheus_fastapi_instrumentator import Instrumentator
+
+# Initialize Prometheus metrics
+instrumentator = Instrumentator(
+    should_group_status_codes=True,
+    should_ignore_untemplated=True,
+    should_respect_env_var=True,
+    should_instrument_requests_inprogress=True,
+    excluded_handlers=["/metrics", "/health"],
+    inprogress_name="harven_inprogress_requests",
+    inprogress_labels=True,
+)
+
+# Add custom metrics for AI agents
+instrumentator.add(
+    lambda info: info.modified_duration
+).add(
+    lambda info: info.modified_status
+).add(
+    lambda info: info.modified_handler
+)
+
+# Expose metrics endpoint
+instrumentator.instrument(app).expose(app, include_in_schema=True, tags=["Health"])
+
+logger.info("prometheus_initialized", endpoint="/metrics")
+
+# ============================================
+# REQUEST LOGGING MIDDLEWARE
+# ============================================
+from starlette.middleware.base import BaseHTTPMiddleware
+
+class RequestLoggingMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
+        request_id = str(uuid.uuid4())[:8]
+        start_time = time.time()
+
+        # Add request context for structured logging
+        structlog.contextvars.clear_contextvars()
+        structlog.contextvars.bind_contextvars(
+            request_id=request_id,
+            method=request.method,
+            path=request.url.path,
+        )
+
+        # Add user context to Sentry if available
+        auth_header = request.headers.get("Authorization")
+        if auth_header and SENTRY_DSN:
+            sentry_sdk.set_tag("request_id", request_id)
+
+        response = await call_next(request)
+
+        duration_ms = (time.time() - start_time) * 1000
+
+        # Log request completion
+        logger.info(
+            "request_completed",
+            status_code=response.status_code,
+            duration_ms=round(duration_ms, 2),
+        )
+
+        # Add request ID to response headers
+        response.headers["X-Request-ID"] = request_id
+
+        return response
+
+app.add_middleware(RequestLoggingMiddleware)
 
 # ============================================
 # HEALTH & STATUS
@@ -552,12 +670,107 @@ async def remove_discipline_student(discipline_id: str, student_id: str):
     """Remove a matrícula de um aluno em uma disciplina."""
     if not supabase:
         raise HTTPException(status_code=503, detail="Banco de dados desconectado")
-    
+
     try:
         response = supabase.table("discipline_students").delete().eq("discipline_id", discipline_id).eq("student_id", student_id).execute()
         return response.data
     except Exception as e:
         print(f"Erro ao remover aluno: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/disciplines/{discipline_id}/courses", tags=["Disciplines"], summary="Listar cursos da disciplina")
+async def get_discipline_courses(discipline_id: str):
+    """Retorna todos os cursos vinculados a uma disciplina específica."""
+    if not supabase:
+        raise HTTPException(status_code=503, detail="Banco de dados desconectado")
+    try:
+        response = supabase.table("courses").select("*").eq("discipline_id", discipline_id).order("created_at").execute()
+        courses = response.data or []
+
+        for course in courses:
+            try:
+                chapters_res = supabase.table("chapters").select("id", count="exact").eq("course_id", course['id']).execute()
+                course['chapters_count'] = chapters_res.count or 0
+            except Exception as inner_e:
+                print(f"Erro ao contar capítulos do curso {course['id']}: {inner_e}")
+                course['chapters_count'] = 0
+
+        return courses
+    except Exception as e:
+        print(f"Erro ao buscar cursos da disciplina: {e}")
+        return []
+
+@app.get("/disciplines/{discipline_id}/chapters", tags=["Disciplines"], summary="Listar capítulos da disciplina")
+async def get_discipline_chapters(discipline_id: str):
+    """Retorna todos os capítulos de todos os cursos de uma disciplina."""
+    if not supabase:
+        raise HTTPException(status_code=503, detail="Banco de dados desconectado")
+    try:
+        # Buscar cursos da disciplina
+        courses_res = supabase.table("courses").select("id").eq("discipline_id", discipline_id).execute()
+        course_ids = [c['id'] for c in (courses_res.data or [])]
+
+        if not course_ids:
+            return []
+
+        # Buscar capítulos de todos os cursos
+        chapters_res = supabase.table("chapters").select("*").in_("course_id", course_ids).order("order").execute()
+        chapters = chapters_res.data or []
+
+        # Enriquecer com conteúdos
+        for chapter in chapters:
+            try:
+                contents_res = supabase.table("contents").select("*").eq("chapter_id", chapter['id']).order("order").execute()
+                chapter['contents'] = contents_res.data or []
+            except Exception as inner_e:
+                print(f"Erro ao buscar conteúdos do capítulo {chapter['id']}: {inner_e}")
+                chapter['contents'] = []
+
+        return chapters
+    except Exception as e:
+        print(f"Erro ao buscar capítulos da disciplina: {e}")
+        return []
+
+@app.post("/disciplines/{discipline_id}/chapters", tags=["Disciplines"], summary="Criar capítulo na disciplina")
+async def create_discipline_chapter(discipline_id: str, chapter: ChapterCreate):
+    """
+    Cria um capítulo para uma disciplina.
+    Automaticamente associa ao primeiro curso da disciplina ou cria um curso default.
+    """
+    if not supabase:
+        raise HTTPException(status_code=503, detail="Banco de dados desconectado")
+    try:
+        # Buscar ou criar curso default para a discipline
+        courses_res = supabase.table("courses").select("id").eq("discipline_id", discipline_id).limit(1).execute()
+
+        if courses_res.data and len(courses_res.data) > 0:
+            course_id = courses_res.data[0]['id']
+        else:
+            # Buscar título da discipline para nomear o curso
+            disc_res = supabase.table("disciplines").select("title").eq("id", discipline_id).single().execute()
+            disc_title = disc_res.data.get('title', 'Curso') if disc_res.data else 'Curso'
+
+            # Criar curso default
+            new_course = supabase.table("courses").insert({
+                "discipline_id": discipline_id,
+                "title": disc_title,
+                "description": f"Conteúdo principal de {disc_title}",
+                "status": "Ativa"
+            }).execute()
+            course_id = new_course.data[0]['id']
+
+        # Criar capítulo no curso
+        data = {
+            "course_id": course_id,
+            "title": chapter.title,
+            "description": chapter.description,
+            "order": chapter.order,
+            "status": "Rascunho"
+        }
+        response = supabase.table("chapters").insert(data).execute()
+        return response.data[0]
+    except Exception as e:
+        print(f"Erro ao criar capítulo na disciplina: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 # ============================================

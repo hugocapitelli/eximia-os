@@ -114,6 +114,18 @@ export const disciplinesApi = {
             headers: { 'Content-Type': 'multipart/form-data' }
         });
         return response.data;
+    },
+    getCourses: async (disciplineId: string) => {
+        const response = await api.get(`/disciplines/${disciplineId}/courses`);
+        return response.data;
+    },
+    getChapters: async (disciplineId: string) => {
+        const response = await api.get(`/disciplines/${disciplineId}/chapters`);
+        return response.data;
+    },
+    createChapter: async (disciplineId: string, data: any) => {
+        const response = await api.post(`/disciplines/${disciplineId}/chapters`, data);
+        return response.data;
     }
 };
 

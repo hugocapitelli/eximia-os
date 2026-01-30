@@ -1,0 +1,167 @@
+---
+name: copy-creation-bible-inspired
+version: 1.0.0
+description: "Create persuasive copy inspired by biblical principles: brief → inspiration → generation → validation → polish"
+category: "Copywriting & Content Creation"
+
+triggers:
+  - command: "*copy-inspiration"
+  - command: "/biblical-copy"
+  - handoff_from: "copy_chief"
+  - handoff_from: "the_cmo"
+
+metadata:
+  estimated_time: "8-15 minutes"
+  complexity: "high"
+  requires_interaction: true
+  can_be_scheduled: false
+
+steps:
+  - id: brief-collection
+    agent: copy-alchemist
+    description: "Gather copy requirements, audience, business context"
+    interaction: true
+    elicit:
+      - question: "What type of copy do you need? (headline/email/sales-page/vsl/social-post)"
+      - question: "Who is your target audience?"
+      - question: "What transformation/benefit are you offering?"
+      - question: "What tone do you want? (inspiring/challenging/comforting)"
+    output: "Clear brief and context"
+
+  - id: select-inspiration-passage
+    agent: copy-alchemist
+    description: "Identify relevant biblical passage or principle for inspiration"
+    interaction: true
+    elicit:
+      - question: "Is there a specific scripture or biblical principle that should inspire this?"
+      - fallback: "Or should I suggest one based on your product/message?"
+    input_from: ["brief-collection"]
+
+  - id: find-passages
+    task: lookup-scripture
+    agent: scripture-researcher
+    description: "Find thematic passages to inspire copy"
+    input_from: ["select-inspiration-passage"]
+    parameters:
+      query_type: "keyword or theme"
+      include_context: true
+
+  - id: extract-principle
+    task: analyze-passage
+    agent: o-biblista
+    description: "Deep dive into scriptural principle"
+    input_from: ["find-passages"]
+    parameters:
+      analysis_depth: "standard"
+
+  - id: generate-copy
+    task: copy-generation-bible-inspired
+    agent: copy-alchemist
+    description: "Create persuasive copy from principle"
+    input_from: ["extract-principle", "brief-collection"]
+    parameters:
+      copy_type: "from brief"
+      tone: "from brief"
+      include_principle_explanation: true
+
+  - id: validate-alignment
+    task: copy-analysis-biblical
+    agent: copy-alchemist
+    description: "Ensure biblical alignment and authenticity"
+    input_from: ["generate-copy"]
+    parameters:
+      depth: "standard"
+
+  - id: check-quality
+    agent: copy-alchemist
+    description: "Quality review: persuasiveness, clarity, authenticity"
+    input_from: ["validate-alignment"]
+    logic: "If alignment_score < 75, loop back to generate-copy with suggestions"
+    decision_point: true
+
+  - id: refine
+    agent: copy-alchemist
+    description: "Polish and optimize copy"
+    input_from: ["check-quality"]
+    conditional: "Only if refinement needed"
+    parameters:
+      focus: "Persuasiveness while maintaining integrity"
+
+  - id: package-output
+    agent: copy-alchemist
+    description: "Prepare final deliverables"
+    input_from: ["refine"]
+
+outputs:
+  - name: "generated_copy"
+    type: "markdown"
+    contains: "The actual copy (formatted for type)"
+
+  - name: "scriptural_foundation"
+    type: "object"
+    contains: |
+      {
+        "primary_passage": "...",
+        "principle_extracted": "...",
+        "supporting_passages": [...],
+        "why_chosen": "..."
+      }
+
+  - name: "principle_explanation"
+    type: "markdown"
+    contains: "Why this principle was chosen and how it applies"
+
+  - name: "validation_report"
+    type: "object"
+    contains: |
+      {
+        "alignment_score": 85,
+        "strengths": [...],
+        "considerations": [...]
+      }
+
+  - name: "usage_guidance"
+    type: "markdown"
+    contains: "How and where to use this copy"
+
+flow_chart: |
+  Collect Copy Brief
+        ↓
+  Select Inspiration Passage
+        ↓
+  Find Relevant Passages
+        ↓
+  Extract Biblical Principle
+        ↓
+  Generate Copy from Principle
+        ↓
+  Validate Biblical Alignment
+        ↓
+  Quality Check
+    ↙     ↘
+  Good? → Refine & Polish
+    ↓        ↓
+  Package Output
+
+error_handling:
+  - if: "Alignment score too low"
+    then: "Regenerate with different principle or approach"
+
+  - if: "Copy feels inauthentic"
+    then: "Use more direct scriptural language or stronger principle connection"
+
+success_criteria:
+  - Copy is persuasive and compelling
+  - Copy is authentically grounded in scripture
+  - Alignment score 75+
+  - Copy respects audience autonomy
+  - Principle is clearly explained
+  - Ready to use
+
+handoff_to:
+  - copy_chief: "For final optimization and A/B testing"
+  - the_cmo: "For campaign integration"
+
+created: 2026-01-27
+last_updated: 2026-01-27
+status: active

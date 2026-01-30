@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import './src/test-connection'; // Auto-test Supabase connection
 import { Sidebar } from './components/organisms/Sidebar';
 import { DesignSystemViewer } from './components/pages/DesignSystemViewer';
 import { DesignSystemLibrary } from './components/pages/DesignSystemLibrary';
