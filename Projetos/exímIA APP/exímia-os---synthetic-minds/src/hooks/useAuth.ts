@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { supabase } from '../lib/supabase/client'
+import { sendWelcomeEmail } from '../services/emailService'
 import type { User, Session } from '@supabase/supabase-js'
 
 export function useAuth() {
@@ -45,6 +46,12 @@ export function useAuth() {
         },
       },
     })
+
+    // Enviar email de boas-vindas após signup bem-sucedido
+    if (!error && data.user) {
+      sendWelcomeEmail(email, fullName).catch(console.error)
+    }
+
     return { data, error }
   }
 

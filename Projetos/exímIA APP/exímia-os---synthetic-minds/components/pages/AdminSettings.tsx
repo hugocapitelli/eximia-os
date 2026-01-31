@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Settings, Shield, Bell, Palette, Database, Globe, ChevronRight } from 'lucide-react';
+import { Settings, Shield, Bell, Palette, Database, Globe, ChevronRight, UserCheck } from 'lucide-react';
 import { AdminPanel, AdminHeader } from '../admin';
 
 interface SettingSection {
@@ -18,6 +18,13 @@ interface SettingSection {
 }
 
 const SETTINGS_SECTIONS: SettingSection[] = [
+  {
+    id: 'access-control',
+    icon: <UserCheck className="w-5 h-5" />,
+    title: 'Controle de Acesso',
+    description: 'Gerencie solicitações e whitelist',
+    settings: [],
+  },
   {
     id: 'general',
     icon: <Globe className="w-5 h-5" />,
@@ -149,7 +156,13 @@ export const AdminSettings: React.FC<AdminSettingsProps> = ({
               {SETTINGS_SECTIONS.map((section) => (
                 <button
                   key={section.id}
-                  onClick={() => setActiveSection(section.id)}
+                  onClick={() => {
+                    if (section.id === 'access-control' && onNavigate) {
+                      onNavigate('admin-access-control');
+                    } else {
+                      setActiveSection(section.id);
+                    }
+                  }}
                   className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-left transition-colors ${
                     activeSection === section.id
                       ? 'bg-amber-500/10 text-amber-500 border border-amber-500/20'
@@ -170,7 +183,26 @@ export const AdminSettings: React.FC<AdminSettingsProps> = ({
 
           {/* Settings Content */}
           <div className="flex-1">
-            {currentSection && (
+            {currentSection && currentSection.id === 'access-control' ? (
+              <div className="bg-[#0A0A0A] border border-[#1F1F22] rounded-xl p-6">
+                <div className="mb-6">
+                  <h2 className="text-xl font-bold text-white">{currentSection.title}</h2>
+                  <p className="text-sm text-zinc-500 mt-1">{currentSection.description}</p>
+                </div>
+                <div className="text-center py-12">
+                  <UserCheck className="w-16 h-16 text-amber-500 mx-auto mb-4" />
+                  <p className="text-zinc-400 mb-6">
+                    Gerencie solicitações de acesso e emails autorizados na plataforma.
+                  </p>
+                  <button
+                    onClick={() => onNavigate && onNavigate('admin-access-control')}
+                    className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-black font-bold rounded-lg transition-colors"
+                  >
+                    Abrir Controle de Acesso
+                  </button>
+                </div>
+              </div>
+            ) : currentSection && (
               <div className="bg-[#0A0A0A] border border-[#1F1F22] rounded-xl p-6">
                 <div className="mb-6">
                   <h2 className="text-xl font-bold text-white">{currentSection.title}</h2>
@@ -231,7 +263,7 @@ export const AdminSettings: React.FC<AdminSettingsProps> = ({
                   ))}
                 </div>
               </div>
-            )}
+            )}{' '}
           </div>
         </div>
       </div>
