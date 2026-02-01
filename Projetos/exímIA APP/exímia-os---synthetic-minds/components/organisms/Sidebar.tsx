@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { NavItem } from '../../types';
 import {
     NAV_ITEMS_PERSONAL,
@@ -9,26 +8,37 @@ import {
     NAV_ITEMS_AI,
     NAV_ITEMS_ADMIN
 } from '../../constants';
-import { ChevronDown, User, Settings, PanelLeftClose, PanelLeftOpen, LogOut, Command, Sparkles, Shield } from 'lucide-react';
+import { ChevronDown, User, Settings, PanelLeftClose, PanelLeftOpen, LogOut, Sparkles, Shield } from 'lucide-react';
 import { useAdminMode } from '../../hooks/useAdminMode';
 import { useAuth } from '../../src/hooks/useAuth';
 import { Logo } from '../atoms/Logo';
 
-interface SidebarProps {
-  onNavigate: (pageId: string) => void;
-  activePageId: string;
-}
-
-export const Sidebar: React.FC<SidebarProps> = ({ onNavigate, activePageId }) => {
+export const Sidebar: React.FC = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [showUserMenu, setShowUserMenu] = useState(false);
   const { isAdmin, toggleAdmin } = useAdminMode();
   const { user, signOut } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleLogout = async () => {
     await signOut();
     navigate('/login');
+  };
+
+  // Check if a path is active (matches current location)
+  const isPathActive = (path: string, subItems?: NavItem[]) => {
+    // Exact match or starts with path (for nested routes)
+    if (location.pathname === path) return true;
+    if (location.pathname.startsWith(path + '/')) return true;
+    // Check if any subitem is active
+    if (subItems) {
+      return subItems.some(sub =>
+        location.pathname === sub.path ||
+        location.pathname.startsWith(sub.path + '/')
+      );
+    }
+    return false;
   };
 
   const renderSection = (title: string | null, items: NavItem[]) => {
@@ -64,9 +74,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ onNavigate, activePageId }) =>
                         key={item.id}
                         item={item}
                         isCollapsed={isCollapsed}
-                        onNavigate={onNavigate}
-                        isActive={activePageId === item.id || item.subItems?.some(sub => sub.id === activePageId)}
-                        activePageId={activePageId}
+                        isActive={isPathActive(item.path, item.subItems)}
+                        currentPath={location.pathname}
                         isAiItem={isAISection}
                         isAdminItem={isAdminSection}
                     />
@@ -77,7 +86,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ onNavigate, activePageId }) =>
   };
 
   return (
-    <aside 
+    <aside
       className={`
         bg-[#050505] border-r border-[#1F1F22] flex flex-col h-screen fixed left-0 top-0 z-30 font-sans transition-all duration-300 ease-in-out text-zinc-400
         ${isCollapsed ? 'w-20' : 'w-64'}
@@ -85,8 +94,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ onNavigate, activePageId }) =>
     >
       {/* 1. Header Area - Logo */}
       <div className="h-16 flex items-center px-6 border-b border-[#1F1F22]">
-          <div 
-            onClick={() => onNavigate('strategy-dashboard')}
+          <NavLink
+            to="/inbox"
             className={`cursor-pointer flex items-center gap-3 group w-full ${isCollapsed ? 'justify-center' : ''}`}
           >
              {/* Logo */}
@@ -95,7 +104,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ onNavigate, activePageId }) =>
                variant={isCollapsed ? "icon" : "full"}
                className={`transition-transform duration-300 ${isCollapsed ? 'group-hover:scale-110' : ''}`}
              />
-          </div>
+          </NavLink>
       </div>
 
       {/* 2. Scrollable Content */}
@@ -109,7 +118,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ onNavigate, activePageId }) =>
 
       {/* 3. Footer / User Area (Inverted Order) */}
       <div className="p-4 border-t border-[#1F1F22] bg-[#050505]">
-        
+
         {/* Buttons (Top) */}
         <div className={`mb-4 flex ${isCollapsed ? 'flex-col items-center gap-4' : 'justify-between px-2'}`}>
              <button
@@ -129,9 +138,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ onNavigate, activePageId }) =>
                      <Shield className="w-4 h-4" />
                  </button>
                  {!isCollapsed && (
-                     <button className="text-zinc-600 hover:text-white transition-colors" aria-label="Configurações">
+                     <NavLink to="/admin/settings" className="text-zinc-600 hover:text-white transition-colors" aria-label="Configurações">
                          <Settings className="w-4 h-4" />
-                     </button>
+                     </NavLink>
                  )}
              </div>
         </div>
@@ -180,31 +189,29 @@ const SidebarItem: React.FC<{
   item: NavItem;
   depth?: number;
   isCollapsed: boolean;
-  onNavigate: (id: string) => void;
   isActive: boolean;
-  activePageId: string;
+  currentPath: string;
   isAiItem?: boolean;
   isAdminItem?: boolean;
-}> = ({ item, depth = 0, isCollapsed, onNavigate, isActive, activePageId, isAiItem, isAdminItem }) => {
+}> = ({ item, depth = 0, isCollapsed, isActive, currentPath, isAiItem, isAdminItem }) => {
   const [isOpen, setIsOpen] = useState(isActive);
   const hasSubs = item.subItems && item.subItems.length > 0;
-  
-  const handleClick = () => {
+
+  // Check if this specific item is the active one
+  const isItemActive = currentPath === item.path || currentPath.startsWith(item.path + '/');
+
+  const handleToggleSubmenu = (e: React.MouseEvent) => {
     if (hasSubs && !isCollapsed) {
+      e.preventDefault();
+      e.stopPropagation();
       setIsOpen(!isOpen);
-    } else {
-      onNavigate(item.id);
     }
   };
-
-  const isItemActive = activePageId === item.id;
 
   // Determine icon color
   const getIconColorClass = () => {
       if (isActive || isItemActive) return 'text-white';
-      // Items inside AI section keep purple/minds color
       if (isAiItem) return 'text-minds-500 group-hover:text-minds-400';
-      // Items inside Admin section keep amber color
       if (isAdminItem) return 'text-amber-500 group-hover:text-amber-400';
       return 'text-zinc-600 group-hover:text-zinc-400';
   };
@@ -219,39 +226,58 @@ const SidebarItem: React.FC<{
       return 'text-zinc-500 hover:text-zinc-300 hover:bg-[#0A0A0A] border border-transparent';
   };
 
+  // For items with submenus, use a button for the toggle, NavLink for navigation
+  const ItemContent = () => (
+    <div className={`flex items-center ${isCollapsed ? 'justify-center w-full' : 'gap-3 flex-1'}`}>
+      {item.icon && (
+        <item.icon className={`
+            ${isCollapsed ? 'w-5 h-5' : 'w-4 h-4'}
+            ${getIconColorClass()}
+            transition-all duration-200
+        `} />
+      )}
+      {!isCollapsed && (
+          <span className={`uppercase tracking-wide ${(isAiItem || isAdminItem) && !isItemActive ? 'text-zinc-400 group-hover:text-white' : ''}`}>
+              {item.label}
+          </span>
+      )}
+    </div>
+  );
+
   return (
     <div className="relative">
-      <div 
-        onClick={handleClick}
-        title={isCollapsed ? item.label : undefined}
-        className={`
-          group flex items-center w-full py-2 px-3 rounded-lg cursor-pointer transition-all duration-200 mb-1
-          ${depth > 0 ? 'pl-9 text-xs' : 'text-xs font-medium'}
-          ${isCollapsed ? 'justify-center px-2' : 'justify-between'}
-          ${getActiveClass()}
-        `}
-      >
-        <div className={`flex items-center ${isCollapsed ? 'justify-center w-full' : 'gap-3'}`}>
-          {item.icon && (
-            <item.icon className={`
-                ${isCollapsed ? 'w-5 h-5' : 'w-4 h-4'} 
-                ${getIconColorClass()}
-                transition-all duration-200
-            `} />
-          )}
-          {!isCollapsed && (
-              <span className={`uppercase tracking-wide ${(isAiItem || isAdminItem) && !isItemActive ? 'text-zinc-400 group-hover:text-white' : ''}`}>
-                  {item.label}
-              </span>
-          )}
+      {hasSubs && !isCollapsed ? (
+        // Item with submenu - clickable div for toggle
+        <div
+          onClick={handleToggleSubmenu}
+          title={isCollapsed ? item.label : undefined}
+          className={`
+            group flex items-center w-full py-2 px-3 rounded-lg cursor-pointer transition-all duration-200 mb-1
+            ${depth > 0 ? 'pl-9 text-xs' : 'text-xs font-medium'}
+            ${isCollapsed ? 'justify-center px-2' : 'justify-between'}
+            ${getActiveClass()}
+          `}
+        >
+          <ItemContent />
+          <span className={`text-zinc-600 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
+              <ChevronDown className="w-3 h-3" />
+          </span>
         </div>
-        
-        {!isCollapsed && hasSubs && (
-            <span className={`text-zinc-600 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
-                <ChevronDown className="w-3 h-3" />
-            </span>
-        )}
-      </div>
+      ) : (
+        // Item without submenu - NavLink for navigation
+        <NavLink
+          to={item.path}
+          title={isCollapsed ? item.label : undefined}
+          className={`
+            group flex items-center w-full py-2 px-3 rounded-lg cursor-pointer transition-all duration-200 mb-1
+            ${depth > 0 ? 'pl-9 text-xs' : 'text-xs font-medium'}
+            ${isCollapsed ? 'justify-center px-2' : 'justify-between'}
+            ${getActiveClass()}
+          `}
+        >
+          <ItemContent />
+        </NavLink>
+      )}
 
       {/* Submenu */}
       {hasSubs && isOpen && !isCollapsed && (
@@ -264,9 +290,8 @@ const SidebarItem: React.FC<{
               item={sub}
               depth={depth + 1}
               isCollapsed={isCollapsed}
-              onNavigate={onNavigate}
               isActive={false}
-              activePageId={activePageId}
+              currentPath={currentPath}
               isAiItem={isAiItem}
               isAdminItem={isAdminItem}
             />

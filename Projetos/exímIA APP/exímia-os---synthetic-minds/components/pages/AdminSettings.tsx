@@ -19,10 +19,10 @@ interface SettingSection {
 
 const SETTINGS_SECTIONS: SettingSection[] = [
   {
-    id: 'access-control',
+    id: 'users',
     icon: <UserCheck className="w-5 h-5" />,
-    title: 'Controle de Acesso',
-    description: 'Gerencie solicitações e whitelist',
+    title: 'Usuários',
+    description: 'Gestão de usuários e controle de acesso',
     settings: [],
   },
   {
@@ -157,8 +157,8 @@ export const AdminSettings: React.FC<AdminSettingsProps> = ({
                 <button
                   key={section.id}
                   onClick={() => {
-                    if (section.id === 'access-control' && onNavigate) {
-                      onNavigate('admin-access-control');
+                    if (section.id === 'users' && onNavigate) {
+                      onNavigate('admin-users');
                     } else {
                       setActiveSection(section.id);
                     }
@@ -183,7 +183,7 @@ export const AdminSettings: React.FC<AdminSettingsProps> = ({
 
           {/* Settings Content */}
           <div className="flex-1">
-            {currentSection && currentSection.id === 'access-control' ? (
+            {currentSection && currentSection.id === 'users' ? (
               <div className="bg-[#0A0A0A] border border-[#1F1F22] rounded-xl p-6">
                 <div className="mb-6">
                   <h2 className="text-xl font-bold text-white">{currentSection.title}</h2>
@@ -192,13 +192,13 @@ export const AdminSettings: React.FC<AdminSettingsProps> = ({
                 <div className="text-center py-12">
                   <UserCheck className="w-16 h-16 text-amber-500 mx-auto mb-4" />
                   <p className="text-zinc-400 mb-6">
-                    Gerencie solicitações de acesso e emails autorizados na plataforma.
+                    Gerencie usuários da equipe, permissões e controle de acesso à plataforma.
                   </p>
                   <button
-                    onClick={() => onNavigate && onNavigate('admin-access-control')}
+                    onClick={() => onNavigate && onNavigate('admin-users')}
                     className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-black font-bold rounded-lg transition-colors"
                   >
-                    Abrir Controle de Acesso
+                    Gerenciar Usuários
                   </button>
                 </div>
               </div>

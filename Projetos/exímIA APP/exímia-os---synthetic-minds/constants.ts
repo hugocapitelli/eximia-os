@@ -184,28 +184,32 @@ export const NAV_ITEMS_PERSONAL: NavItem[] = [
     id: 'inbox',
     label: 'Inbox',
     icon: Inbox,
+    path: '/inbox',
     isActive: true,
   },
   {
     id: 'journey',
     label: 'Journey',
     icon: Compass,
+    path: '/journey',
     subItems: [
-      { id: 'journey-dashboard', label: 'Dashboard' },
-      { id: 'journey-goals', label: 'Metas (Goals)' },
-      { id: 'journey-habits', label: 'Hábitos' },
-      { id: 'journey-calendar', label: 'Calendário' },
+      { id: 'journey-dashboard', label: 'Dashboard', path: '/journey' },
+      { id: 'journey-goals', label: 'Metas (Goals)', path: '/journey/goals' },
+      { id: 'journey-habits', label: 'Hábitos', path: '/journey/habits' },
+      { id: 'journey-calendar', label: 'Calendário', path: '/journey/calendar' },
     ]
   },
   {
     id: 'biblioteca',
     label: 'Biblioteca',
     icon: Library,
+    path: '/biblioteca',
   },
   {
     id: 'academy-dashboard',
     label: 'Academy',
     icon: GraduationCap,
+    path: '/academy',
   }
 ];
 
@@ -214,51 +218,55 @@ export const NAV_ITEMS_BUSINESS: NavItem[] = [
     id: 'strategy',
     label: 'Strategy',
     icon: Crosshair,
+    path: '/strategy',
     subItems: [
-      { id: 'strategy-dashboard', label: 'Dashboard' },
-      { id: 'strategy-cycles', label: 'Ciclos & OKRs' },
-      { id: 'strategy-initiatives', label: 'Iniciativas' },
-      { id: 'strategy-kpis', label: 'KPIs' },
-      { id: 'strategy-roadmap', label: 'Roadmap' },
+      { id: 'strategy-dashboard', label: 'Dashboard', path: '/strategy' },
+      { id: 'strategy-cycles', label: 'Ciclos & OKRs', path: '/strategy/cycles' },
+      { id: 'strategy-initiatives', label: 'Iniciativas', path: '/strategy/initiatives' },
+      { id: 'strategy-kpis', label: 'KPIs', path: '/strategy/kpis' },
+      { id: 'strategy-roadmap', label: 'Roadmap', path: '/strategy/roadmap' },
     ]
   },
   {
     id: 'finance',
     label: 'Finance',
     icon: Wallet,
+    path: '/finance',
     subItems: [
-      { id: 'finance-dashboard', label: 'Dashboard' },
-      { id: 'finance-revenues', label: 'Receitas' },
-      { id: 'finance-expenses', label: 'Despesas' },
-      { id: 'finance-projections', label: 'Projeções' },
-      { id: 'finance-saas', label: 'SaaS Metrics' },
-      { id: 'finance-reports', label: 'Relatórios' },
+      { id: 'finance-dashboard', label: 'Dashboard', path: '/finance' },
+      { id: 'finance-revenues', label: 'Receitas', path: '/finance/revenues' },
+      { id: 'finance-expenses', label: 'Despesas', path: '/finance/expenses' },
+      { id: 'finance-projections', label: 'Projeções', path: '/finance/projections' },
+      { id: 'finance-saas', label: 'SaaS Metrics', path: '/finance/saas' },
+      { id: 'finance-reports', label: 'Relatórios', path: '/finance/reports' },
     ]
   },
   {
     id: 'sales',
     label: 'Vendas & Clientes',
     icon: DollarSign,
+    path: '/sales',
     subItems: [
-      { id: 'sales-ai', label: 'Sales AI' },
-      { id: 'crm', label: 'CRM' },
+      { id: 'sales-ai', label: 'Sales AI', path: '/sales/ai' },
+      { id: 'crm', label: 'CRM', path: '/crm' },
     ]
   },
   {
     id: 'team',
     label: 'Equipe & Cultura',
     icon: Users,
+    path: '/team',
     subItems: [
-      { id: 'team-dashboard', label: 'Dashboard' },
-      { id: 'team-org', label: 'Organograma' },
-      { id: 'team-members', label: 'Membros' },
-      { id: 'team-hiring', label: 'Hiring' },
-      { id: 'team-onboarding', label: 'Onboarding' },
-      { id: 'team-performance', label: 'Performance' },
-      { id: 'team-rituals', label: 'Rituais' },
-      { id: 'team-culture', label: 'Cultura' },
-      { id: 'team-comms', label: 'Comunicação' },
-      { id: 'team-management', label: 'Gestão de Usuários' }, 
+      { id: 'team-dashboard', label: 'Dashboard', path: '/team' },
+      { id: 'team-org', label: 'Organograma', path: '/team/org' },
+      { id: 'team-members', label: 'Membros', path: '/team/members' },
+      { id: 'team-hiring', label: 'Hiring', path: '/team/hiring' },
+      { id: 'team-onboarding', label: 'Onboarding', path: '/team/onboarding' },
+      { id: 'team-performance', label: 'Performance', path: '/team/performance' },
+      { id: 'team-rituals', label: 'Rituais', path: '/team/rituals' },
+      { id: 'team-culture', label: 'Cultura', path: '/team/culture' },
+      { id: 'team-comms', label: 'Comunicação', path: '/team/comms' },
+      { id: 'team-management', label: 'Gestão de Usuários', path: '/team/management' },
     ]
   }
 ];
@@ -268,35 +276,38 @@ export const NAV_ITEMS_CREATIVE: NavItem[] = [
     id: 'prototypos',
     label: 'PrototypOS',
     icon: Code,
+    path: '/design-system',
     subItems: [
-      { id: 'ds-library', label: 'DS Library' },
-      { id: 'ds-viewer', label: 'Viewer' },
+      { id: 'ds-library', label: 'DS Library', path: '/design-system' },
+      { id: 'ds-viewer', label: 'Viewer', path: '/design-system/eximia-os-v6' },
     ]
   },
   {
     id: 'identity',
     label: 'Identidade & Marca',
     icon: Palette,
+    path: '/brand',
     subItems: [
-      { id: 'brand-dashboard', label: 'Dashboard' },
-      { id: 'brand-visual', label: 'Identidade Visual' },
-      { id: 'brand-voice', label: 'Voz & Mensagem' },
-      { id: 'brand-assets', label: 'Biblioteca de Assets' },
+      { id: 'brand-dashboard', label: 'Dashboard', path: '/brand' },
+      { id: 'brand-visual', label: 'Identidade Visual', path: '/brand/visual' },
+      { id: 'brand-voice', label: 'Voz & Mensagem', path: '/brand/voice' },
+      { id: 'brand-assets', label: 'Biblioteca de Assets', path: '/brand/assets' },
     ]
   },
   {
     id: 'content',
     label: 'Criação & Conteúdo',
     icon: PenTool,
+    path: '/content',
     subItems: [
-      { id: 'content-dashboard', label: 'Dashboard' },
-      { id: 'content-courses', label: 'Course Creator' },
-      { id: 'content-curator', label: 'Curador[IA]' },
-      { id: 'content-ebooks', label: 'Ebook Generator' },
-      { id: 'content-social', label: 'Social Media' },
-      { id: 'content-newsletter', label: 'Newsletter Builder' },
-      { id: 'content-videos', label: 'Vídeo Scripts' },
-      { id: 'content-copies', label: 'Copy Bank' },
+      { id: 'content-dashboard', label: 'Dashboard', path: '/content' },
+      { id: 'content-courses', label: 'Course Creator', path: '/content/courses' },
+      { id: 'content-curator', label: 'Curador[IA]', path: '/content/curator' },
+      { id: 'content-ebooks', label: 'Ebook Generator', path: '/content/ebooks' },
+      { id: 'content-social', label: 'Social Media', path: '/content/social' },
+      { id: 'content-newsletter', label: 'Newsletter Builder', path: '/content/newsletter' },
+      { id: 'content-videos', label: 'Vídeo Scripts', path: '/content/videos' },
+      { id: 'content-copies', label: 'Copy Bank', path: '/content/copies' },
     ]
   }
 ];
@@ -306,6 +317,7 @@ export const NAV_ITEMS_AI: NavItem[] = [
     id: 'synthetic-minds',
     label: 'Minds',
     icon: Brain,
+    path: '/synthetic-minds',
   }
 ];
 
@@ -315,34 +327,38 @@ export const NAV_ITEMS_ADMIN: NavItem[] = [
     id: 'admin-academy-studio',
     label: 'Academy Studio',
     icon: GraduationCap,
+    path: '/admin/academy',
     subItems: [
-      { id: 'admin-courses', label: 'Gerenciar Cursos' },
-      { id: 'admin-tracks', label: 'Gerenciar Trilhas' },
-      { id: 'admin-carousel', label: 'Hero Carousel' },
+      { id: 'admin-courses', label: 'Gerenciar Cursos', path: '/admin/academy' },
+      { id: 'admin-tracks', label: 'Gerenciar Trilhas', path: '/admin/academy/tracks' },
+      { id: 'admin-carousel', label: 'Hero Carousel', path: '/admin/academy/carousel' },
     ]
   },
   {
     id: 'admin-library-editor',
     label: 'Library Editor',
     icon: Library,
+    path: '/admin/library/books',
     subItems: [
-      { id: 'admin-books', label: 'Gerenciar Livros' },
-      { id: 'admin-authors', label: 'Gerenciar Autores' },
+      { id: 'admin-books', label: 'Gerenciar Livros', path: '/admin/library/books' },
+      { id: 'admin-authors', label: 'Gerenciar Autores', path: '/admin/library/authors' },
     ]
   },
   {
     id: 'admin-ds-manager',
     label: 'DS Manager',
     icon: Layout,
+    path: '/admin/ds/components',
     subItems: [
-      { id: 'admin-components', label: 'Componentes' },
-      { id: 'admin-tokens', label: 'Tokens' },
+      { id: 'admin-components', label: 'Componentes', path: '/admin/ds/components' },
+      { id: 'admin-tokens', label: 'Tokens', path: '/admin/ds/tokens' },
     ]
   },
   {
     id: 'admin-settings',
     label: 'Configurações',
     icon: Settings,
+    path: '/admin/settings',
   }
 ];
 

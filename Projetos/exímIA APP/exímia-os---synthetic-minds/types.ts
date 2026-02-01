@@ -48,6 +48,7 @@ export interface NavItem {
   id: string;
   label: string;
   icon?: LucideIcon;
+  path: string;           // Route path for navigation
   isActive?: boolean;
   hasSubmenu?: boolean;
   subItems?: NavItem[];
