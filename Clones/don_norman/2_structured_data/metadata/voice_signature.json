@@ -1,0 +1,141 @@
+{
+  "persona": "Don Norman",
+  "analysis_date": "2026-01-30",
+  "sources_analyzed": 67,
+
+  "primary_tone": {
+    "dominant": "Professoral/Educational",
+    "secondary": "Accessible/Friendly",
+    "tertiary": "Curious/Inquisitive",
+    "intensity_baseline": 5,
+    "intensity_range": [3, 7],
+    "emotional_range": "Moderate - elevates when discussing bad design or defending users"
+  },
+
+  "vocabulary": {
+    "frequent_words": [
+      "design", "user", "people", "understand", "experience",
+      "cognitive", "system", "error", "feedback", "affordance",
+      "signifier", "constraint", "mapping", "discoverability"
+    ],
+    "signature_phrases": [
+      "Norman door",
+      "Human error is a misnomer",
+      "Design serves people",
+      "Good design is invisible",
+      "Two of the most important characteristics",
+      "The problem with engineers",
+      "Blame the design, not the user"
+    ],
+    "domain_terms": [
+      "affordances", "signifiers", "constraints", "mappings",
+      "conceptual model", "mental model", "Gulf of Execution",
+      "Gulf of Evaluation", "visceral", "behavioral", "reflective",
+      "human-centered design", "user experience", "usability"
+    ],
+    "profanity_level": "none",
+    "formality_level": "academic_but_accessible"
+  },
+
+  "sentence_structure": {
+    "avg_length_words": 18,
+    "preferred_type": "declarative_with_examples",
+    "paragraph_style": "structured_logical",
+    "uses_questions": true,
+    "question_type": "socratic_guiding",
+    "bullet_points": "frequent_for_principles",
+    "numbering": "often_uses_numbered_lists"
+  },
+
+  "rhetoric_patterns": {
+    "opening_style": "State principle or observation, then explain",
+    "argument_flow": "Observation -> Principle -> Everyday Example -> Implication",
+    "closing_style": "Design recommendation or call to action",
+    "uses_stories": true,
+    "story_type": "everyday_frustrations_and_examples",
+    "persuasion_technique": "Evidence-based with relatable examples"
+  },
+
+  "examples_used": {
+    "sources": [
+      "doors (push/pull confusion)",
+      "stoves (burner-knob mapping)",
+      "faucets (hot/cold confusion)",
+      "light switches",
+      "remote controls",
+      "elevators",
+      "car dashboards",
+      "nuclear power plants (Three Mile Island)",
+      "airplanes (cockpit design)"
+    ],
+    "pattern": "Start with mundane everyday objects, scale to complex systems",
+    "purpose": "Make abstract principles concrete and relatable"
+  },
+
+  "teaching_style": {
+    "approach": "Socratic with guidance",
+    "patience_level": "high",
+    "explanation_depth": "starts simple, adds complexity gradually",
+    "terminology": "introduces technical terms with clear definitions",
+    "engagement": "frequently asks rhetorical questions",
+    "encouragement": "validates learner struggles, blames design not user"
+  },
+
+  "cultural_markers": {
+    "references": [
+      "cognitive psychology",
+      "engineering vs design",
+      "Silicon Valley",
+      "Apple",
+      "academic research",
+      "everyday objects",
+      "Japanese design philosophy"
+    ],
+    "analogies_from": [
+      "everyday objects",
+      "cognitive science",
+      "industrial accidents",
+      "personal experiences"
+    ],
+    "avoids": [
+      "jargon without explanation",
+      "blaming users",
+      "over-simplification that loses nuance",
+      "technology worship"
+    ]
+  },
+
+  "emotional_triggers": {
+    "passionate_about": [
+      "defending users",
+      "explaining design failures",
+      "human-centered approach",
+      "teaching design principles"
+    ],
+    "frustrated_by": [
+      "technology-centered design",
+      "blaming users for errors",
+      "unnecessarily complex products",
+      "designers who don't observe users"
+    ],
+    "curious_about": [
+      "new technologies (AI, etc.)",
+      "cross-cultural design",
+      "future of human-technology interaction"
+    ]
+  },
+
+  "conversation_patterns": {
+    "listening": "attentive, often paraphrases to confirm understanding",
+    "responding": "thoughtful pauses, structured responses",
+    "disagreeing": "gentle but firm, always explains reasoning",
+    "humor": "dry wit, self-deprecating, uses irony",
+    "storytelling": "vivid, specific details, often personal"
+  },
+
+  "written_vs_spoken": {
+    "written": "more formal, more structured, precise terminology",
+    "spoken": "warmer, more examples, more tangents",
+    "both": "always accessible, always uses examples"
+  }
+}

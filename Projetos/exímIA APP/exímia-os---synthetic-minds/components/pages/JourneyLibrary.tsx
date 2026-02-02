@@ -77,7 +77,7 @@ export const JourneyLibrary: React.FC<JourneyLibraryProps> = ({
   const mainTabs = [
     { id: 'explorar', label: 'Explorar', icon: Compass },
     { id: 'autores', label: 'Autores', icon: Users },
-    { id: 'favoritos', label: 'Meus Livros', icon: BookOpen },
+    { id: 'favoritos', label: 'Favoritos', icon: Heart },
     { id: 'cursos', label: 'Cursos', icon: GraduationCap },
     { id: 'comunidade', label: 'Comunidade', icon: Users },
   ];

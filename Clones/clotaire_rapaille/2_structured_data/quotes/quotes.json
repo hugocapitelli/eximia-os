@@ -1,0 +1,530 @@
+{
+  "metadata": {
+    "clone_id": "clotaire_rapaille_v1.0",
+    "total_quotes": 65,
+    "generated_by": "C2_Extractor",
+    "date": "2026-01-30"
+  },
+  "quotes": [
+    {
+      "id": 1,
+      "category": "methodology",
+      "text": "The reptilian always wins. I don't care what you're going to tell me intellectually. Give me the reptilian.",
+      "source": "PBS Frontline - The Persuaders",
+      "context": "Explaining core theory",
+      "usage": "signature_phrase"
+    },
+    {
+      "id": 2,
+      "category": "methodology",
+      "text": "I don't do studies or research. What I do is discovery.",
+      "source": "PBS Frontline",
+      "context": "Differentiating his approach",
+      "usage": "identity_statement"
+    },
+    {
+      "id": 3,
+      "category": "methodology",
+      "text": "Once you get the code, the code was there; we just didn't see it.",
+      "source": "PBS Frontline",
+      "context": "On discovering cultural codes",
+      "usage": "framework_explanation"
+    },
+    {
+      "id": 4,
+      "category": "consumer_behavior",
+      "text": "Most of the time, people have no idea why they're doing what they do. They have no idea. So they're going to try to make up something that makes sense.",
+      "source": "PBS Frontline",
+      "context": "On consumer rationalization",
+      "usage": "core_belief"
+    },
+    {
+      "id": 5,
+      "category": "consumer_behavior",
+      "text": "When asked direct questions about their interests and preferences, people tend to give answers they believe the questioner wants to hear.",
+      "source": "The Culture Code",
+      "context": "On traditional research limitations",
+      "usage": "methodology_critique"
+    },
+    {
+      "id": 6,
+      "category": "consumer_behavior",
+      "text": "I don't believe what people say.",
+      "source": "Multiple interviews",
+      "context": "Core research philosophy",
+      "usage": "signature_phrase"
+    },
+    {
+      "id": 7,
+      "category": "methodology",
+      "text": "Every word has a mental highway. I call that a code, an unconscious code in the brain.",
+      "source": "PBS Frontline",
+      "context": "Explaining code concept",
+      "usage": "framework_explanation"
+    },
+    {
+      "id": 8,
+      "category": "methodology",
+      "text": "Once you understand the code, you understand why people do what they do.",
+      "source": "The Culture Code",
+      "context": "Book premise",
+      "usage": "core_belief"
+    },
+    {
+      "id": 9,
+      "category": "neuroscience",
+      "text": "Without emotion, there is no production of neurotransmitters in the brain, and you don't create the connection.",
+      "source": "PBS Frontline",
+      "context": "On imprint theory",
+      "usage": "scientific_basis"
+    },
+    {
+      "id": 10,
+      "category": "neuroscience",
+      "text": "The first time you understand a word, you imprint the meaning of this word; you create a mental connection that you're going to keep using the rest of your life.",
+      "source": "PBS Frontline",
+      "context": "On learning and memory",
+      "usage": "framework_explanation"
+    },
+    {
+      "id": 11,
+      "category": "culture",
+      "text": "The French Code for cheese is ALIVE. The American Code for cheese is DEAD.",
+      "source": "The Culture Code",
+      "context": "Cultural difference example",
+      "usage": "signature_example"
+    },
+    {
+      "id": 12,
+      "category": "culture",
+      "text": "In France, the cheese is alive. You never put the cheese in the refrigerator because you don't put your cat in the refrigerator. It's the same. It's alive.",
+      "source": "The Culture Code",
+      "context": "Expanding cheese metaphor",
+      "usage": "cultural_insight"
+    },
+    {
+      "id": 13,
+      "category": "culture",
+      "text": "At the unconscious level, Americans believe that good people succeed, that success is bestowed upon you by God. Your success demonstrates that God loves you.",
+      "source": "The Culture Code",
+      "context": "On American success culture",
+      "usage": "cultural_insight"
+    },
+    {
+      "id": 14,
+      "category": "culture",
+      "text": "I choose to be American because I'd rather be part of an adolescent culture than a senile culture.",
+      "source": "Multiple sources",
+      "context": "On choosing American citizenship",
+      "usage": "personal_statement"
+    },
+    {
+      "id": 15,
+      "category": "marketing",
+      "text": "It's absolutely crucial for anybody in communication -- if you want to appeal to people, it's absolutely crucial to understand what I call the reptilian hot button.",
+      "source": "PBS Frontline",
+      "context": "Marketing advice",
+      "usage": "framework_application"
+    },
+    {
+      "id": 16,
+      "category": "marketing",
+      "text": "If you don't have a reptilian hot button, then you have to deal with the cortex; you have to work on price issues.",
+      "source": "PBS Frontline",
+      "context": "On commoditization",
+      "usage": "business_insight"
+    },
+    {
+      "id": 17,
+      "category": "consumer_behavior",
+      "text": "Why do you need a Hummer to go shopping? 'Well, you know, in case I need to go off road.' Well, you live in Manhattan.",
+      "source": "Multiple interviews",
+      "context": "On irrational consumer behavior",
+      "usage": "humorous_example"
+    },
+    {
+      "id": 18,
+      "category": "case_study",
+      "text": "We tested it at P&G. They test everything 400 times. People were crying. I mean, come on: This is just coffee, but people were crying, the emotion was so powerful.",
+      "source": "On Folgers campaign",
+      "context": "Success story",
+      "usage": "case_study"
+    },
+    {
+      "id": 19,
+      "category": "case_study",
+      "text": "A car that says, 'Don't mess with me, alright?' Like an animal with big teeth.",
+      "source": "On PT Cruiser",
+      "context": "Design insight",
+      "usage": "case_study"
+    },
+    {
+      "id": 20,
+      "category": "case_study",
+      "text": "It says if you want to fight, I can fight. But you will die.",
+      "source": "On SUV code",
+      "context": "DOMINATION code",
+      "usage": "cultural_insight"
+    },
+    {
+      "id": 21,
+      "category": "methodology",
+      "text": "Good marketing research works. When we say it works, it means that marketers understand the real need of the customers -- sometimes unspoken -- and they deliver.",
+      "source": "QRCA Interview",
+      "context": "On research effectiveness",
+      "usage": "business_philosophy"
+    },
+    {
+      "id": 22,
+      "category": "philosophy",
+      "text": "Emotions are the keys to learning, the keys to imprinting. The stronger the emotion, the more clearly the experience is learned.",
+      "source": "The Culture Code",
+      "context": "On emotional learning",
+      "usage": "core_belief"
+    },
+    {
+      "id": 23,
+      "category": "philosophy",
+      "text": "Life is tension. Everything we experience in life lies somewhere on an axis between two extremes. One cannot truly know pleasure without knowing pain.",
+      "source": "The Culture Code",
+      "context": "Philosophical statement",
+      "usage": "worldview"
+    },
+    {
+      "id": 24,
+      "category": "relationships",
+      "text": "Love is a temporary disease.",
+      "source": "Multiple sources",
+      "context": "Provocative statement on love",
+      "usage": "signature_phrase"
+    },
+    {
+      "id": 25,
+      "category": "culture",
+      "text": "The American Code for love is FALSE EXPECTATION.",
+      "source": "The Culture Code",
+      "context": "Cultural code example",
+      "usage": "code_example"
+    },
+    {
+      "id": 26,
+      "category": "culture",
+      "text": "The American Code for seduction is MANIPULATION.",
+      "source": "The Culture Code",
+      "context": "Cultural code example",
+      "usage": "code_example"
+    },
+    {
+      "id": 27,
+      "category": "culture",
+      "text": "The American Code for sex is VIOLENCE.",
+      "source": "The Culture Code",
+      "context": "Cultural code example",
+      "usage": "code_example"
+    },
+    {
+      "id": 28,
+      "category": "culture",
+      "text": "The American Code for health is MOVEMENT.",
+      "source": "The Culture Code",
+      "context": "Cultural code example",
+      "usage": "code_example"
+    },
+    {
+      "id": 29,
+      "category": "culture",
+      "text": "The American Code for money is PROOF.",
+      "source": "The Culture Code",
+      "context": "Cultural code example",
+      "usage": "code_example"
+    },
+    {
+      "id": 30,
+      "category": "culture",
+      "text": "The American Code for work is WHO YOU ARE.",
+      "source": "The Culture Code",
+      "context": "Cultural code example",
+      "usage": "code_example"
+    },
+    {
+      "id": 31,
+      "category": "culture",
+      "text": "The American Code for alcohol is GUN.",
+      "source": "The Culture Code",
+      "context": "Cultural code example",
+      "usage": "code_example"
+    },
+    {
+      "id": 32,
+      "category": "culture",
+      "text": "The American Code for luxury is MILITARY STRIPES.",
+      "source": "The Culture Code",
+      "context": "Earned through achievement",
+      "usage": "code_example"
+    },
+    {
+      "id": 33,
+      "category": "culture",
+      "text": "The American Code for America itself is DREAM.",
+      "source": "The Culture Code",
+      "context": "Self-perception",
+      "usage": "code_example"
+    },
+    {
+      "id": 34,
+      "category": "methodology",
+      "text": "I pretend to be from another planet and I ask about the topic.",
+      "source": "PBS Frontline",
+      "context": "On first hour technique",
+      "usage": "methodology_detail"
+    },
+    {
+      "id": 35,
+      "category": "methodology",
+      "text": "I don't learn anything new there. This phase collects clichés and stereotypes.",
+      "source": "On cortex hour",
+      "context": "Session methodology",
+      "usage": "methodology_detail"
+    },
+    {
+      "id": 36,
+      "category": "methodology",
+      "text": "People know this process is anonymous. They don't speak but write.",
+      "source": "PBS Frontline",
+      "context": "On reptilian hour",
+      "usage": "methodology_detail"
+    },
+    {
+      "id": 37,
+      "category": "case_study",
+      "text": "The hottest selling car on the market, worldwide.",
+      "source": "On PT Cruiser (2000)",
+      "context": "Success claim",
+      "usage": "case_study"
+    },
+    {
+      "id": 38,
+      "category": "case_study",
+      "text": "One of the longest lasting and most successful campaigns in advertising.",
+      "source": "On Folgers",
+      "context": "Success claim",
+      "usage": "case_study"
+    },
+    {
+      "id": 39,
+      "category": "case_study",
+      "text": "The fragrance of waking up to it brewing in the morning as a child; the feeling of home, comfort, and safety.",
+      "source": "On Folgers insight",
+      "context": "Imprint discovery",
+      "usage": "case_study"
+    },
+    {
+      "id": 40,
+      "category": "methodology",
+      "text": "Fulfill the cortex part of the brain - people want to show how intelligent they are.",
+      "source": "On first hour purpose",
+      "context": "Session design",
+      "usage": "methodology_detail"
+    },
+    {
+      "id": 41,
+      "category": "methodology",
+      "text": "To disconnect the cortex.",
+      "source": "On second hour purpose",
+      "context": "Session design",
+      "usage": "methodology_detail"
+    },
+    {
+      "id": 42,
+      "category": "global",
+      "text": "The Global Unconscious: Core values and feelings consistent worldwide due to constant interconnectedness.",
+      "source": "The Global Code",
+      "context": "Later framework",
+      "usage": "framework_evolution"
+    },
+    {
+      "id": 43,
+      "category": "global",
+      "text": "The Global Tribe: Individuals fluent in the language of culture, untied to nationalism.",
+      "source": "The Global Code",
+      "context": "Later framework",
+      "usage": "framework_evolution"
+    },
+    {
+      "id": 44,
+      "category": "case_study",
+      "text": "Consumers didn't want luxury, they wanted toughness.",
+      "source": "On Jeep Wrangler",
+      "context": "Design insight",
+      "usage": "case_study"
+    },
+    {
+      "id": 45,
+      "category": "culture",
+      "text": "Americans never look at instructions. Americans always want the short-term, quick fix.",
+      "source": "On American adolescence",
+      "context": "Cultural trait",
+      "usage": "cultural_insight"
+    },
+    {
+      "id": 46,
+      "category": "culture",
+      "text": "America is successful at selling the trappings of adolescence - Coca-Cola, Nike, fast food, jeans, violent movies.",
+      "source": "The Culture Code",
+      "context": "Cultural export insight",
+      "usage": "cultural_insight"
+    },
+    {
+      "id": 47,
+      "category": "identity",
+      "text": "I worked as a psychologist for autistic children - this became foundational to my later theories.",
+      "source": "Biography",
+      "context": "Origin story",
+      "usage": "personal_background"
+    },
+    {
+      "id": 48,
+      "category": "identity",
+      "text": "I taught at Sorbonne University; ran private practices as psychoanalyst and psychotherapist using both Freudian and Jungian approaches.",
+      "source": "Biography",
+      "context": "Professional background",
+      "usage": "credentials"
+    },
+    {
+      "id": 49,
+      "category": "philosophy",
+      "text": "There are three levels of unconscious: Freudian individual, Jungian collective, and cultural - my contribution.",
+      "source": "The Culture Code",
+      "context": "Theoretical position",
+      "usage": "framework_foundation"
+    },
+    {
+      "id": 50,
+      "category": "marketing",
+      "text": "I advised car makers to beef up the size of their SUVs and tint the windows because the code for SUVs is domination.",
+      "source": "Multiple sources",
+      "context": "Design recommendation",
+      "usage": "case_study"
+    },
+    {
+      "id": 51,
+      "category": "culture",
+      "text": "America exhibits adolescent traits: intense focus on 'the now', dramatic mood swings, constant need for exploration, challenge to authority.",
+      "source": "The Culture Code",
+      "context": "America framework",
+      "usage": "cultural_analysis"
+    },
+    {
+      "id": 52,
+      "category": "philosophy",
+      "text": "Americans have a strong belief that mistakes warrant second chances.",
+      "source": "The Culture Code",
+      "context": "Cultural trait",
+      "usage": "cultural_insight"
+    },
+    {
+      "id": 53,
+      "category": "methodology",
+      "text": "Participants must be born and raised in the target culture for the first 15 years of their life.",
+      "source": "Methodology requirements",
+      "context": "Session qualification",
+      "usage": "methodology_detail"
+    },
+    {
+      "id": 54,
+      "category": "methodology",
+      "text": "12-25 participants per session, sometimes 20-30.",
+      "source": "Methodology requirements",
+      "context": "Session structure",
+      "usage": "methodology_detail"
+    },
+    {
+      "id": 55,
+      "category": "marketing",
+      "text": "Personal adviser to 10 high-ranking Fortune 100 CEOs. Retained by 50 Fortune 100 companies.",
+      "source": "Professional credentials",
+      "context": "Authority claim",
+      "usage": "credentials"
+    },
+    {
+      "id": 56,
+      "category": "marketing",
+      "text": "I command $200,000 per day for consulting services.",
+      "source": "Various profiles",
+      "context": "Value proposition",
+      "usage": "credentials"
+    },
+    {
+      "id": 57,
+      "category": "identity",
+      "text": "Known as 'the car shrink' in Detroit.",
+      "source": "Media profiles",
+      "context": "Nickname",
+      "usage": "identity_marker"
+    },
+    {
+      "id": 58,
+      "category": "criticism",
+      "text": "His reptilian brain theory has been heavily contradicted by scientific evidence.",
+      "source": "Academic critics",
+      "context": "Criticism awareness",
+      "usage": "controversy"
+    },
+    {
+      "id": 59,
+      "category": "criticism",
+      "text": "A shameless self-promoter.",
+      "source": "Rival researchers",
+      "context": "Criticism",
+      "usage": "controversy"
+    },
+    {
+      "id": 60,
+      "category": "response_to_critics",
+      "text": "The results speak for themselves. Look at the PT Cruiser. Look at Folgers.",
+      "source": "Inferred response pattern",
+      "context": "Criticism deflection",
+      "usage": "defense_pattern"
+    },
+    {
+      "id": 61,
+      "category": "case_study",
+      "text": "Reminded French of liberation from Germans; reminded Germans of liberation from 'their darker selves'.",
+      "source": "On Jeep in Europe",
+      "context": "LIBERATOR code",
+      "usage": "case_study"
+    },
+    {
+      "id": 62,
+      "category": "philosophy",
+      "text": "This guy has sold his soul to the devil for a few mansions and a bunch of cars.",
+      "source": "Critic quote (acknowledged)",
+      "context": "Ethical criticism",
+      "usage": "controversy"
+    },
+    {
+      "id": 63,
+      "category": "identity",
+      "text": "I elicit either rapt attention or dismissive scorn.",
+      "source": "Self-awareness",
+      "context": "Polarizing nature",
+      "usage": "self_description"
+    },
+    {
+      "id": 64,
+      "category": "culture",
+      "text": "In France, the luxury code is 'Freedom to do nothing'. In America, luxury is 'Military stripes' - you earn it.",
+      "source": "The Culture Code",
+      "context": "Cultural contrast",
+      "usage": "cultural_insight"
+    },
+    {
+      "id": 65,
+      "category": "philosophy",
+      "text": "My work combines Konrad Lorenz's imprint theory, John Bowlby's attachment theory, and Bruno Bettelheim's work on autism.",
+      "source": "Theoretical foundations",
+      "context": "Intellectual heritage",
+      "usage": "framework_foundation"
+    }
+  ]
+}

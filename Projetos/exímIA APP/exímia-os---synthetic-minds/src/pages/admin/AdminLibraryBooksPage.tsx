@@ -7,7 +7,7 @@ export const AdminLibraryBooksPage: React.FC = () => {
 
   return (
     <AdminLibraryBooks
-      onBack={() => navigate('/biblioteca')}
+      onBack={() => navigate('/admin')}
       onNavigate={(pageId) => {
         const routeMap: Record<string, string> = {
           'biblioteca': '/biblioteca',
@@ -15,6 +15,7 @@ export const AdminLibraryBooksPage: React.FC = () => {
         };
         navigate(routeMap[pageId] || '/admin/library/books');
       }}
+      onEditSummary={(summaryId) => navigate(`/admin/summaries/${summaryId}/edit`)}
     />
   );
 };

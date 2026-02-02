@@ -1,0 +1,238 @@
+{
+  "$schema": "https://eximia.ai/schemas/squad_spec_v1.json",
+  "meta": {
+    "squad_name": "Carousel Squad",
+    "versao": "1.0.0",
+    "tier": 3,
+    "autor": "Z1 Architect",
+    "timestamp": "2026-01-30T00:00:00Z",
+    "pipeline": "Z_Squad v2.0"
+  },
+  "dominio": {
+    "primario": "Social Media Content Creation",
+    "secundarios": [
+      "Visual Storytelling",
+      "Carousel Design",
+      "Copywriting",
+      "Growth Marketing",
+      "Brand Strategy"
+    ]
+  },
+  "inspiracoes": {
+    "instagram_profiles": [
+      {
+        "handle": "@brandsdecoded__",
+        "followers": "227K",
+        "specialty": "AI Content Agency",
+        "contribution": "Estratégia de marketing com IA, decodificação de marcas"
+      },
+      {
+        "handle": "@notjournal.ai",
+        "followers": "244K",
+        "specialty": "Educational AI Content",
+        "contribution": "Carrosséis educacionais, storytelling visual"
+      },
+      {
+        "handle": "@oficiallittlemonster",
+        "followers": "N/A",
+        "specialty": "Design Inovador",
+        "contribution": "Design impactante, tendências visuais"
+      }
+    ]
+  },
+  "agents": [
+    {
+      "name": "Carousel_Maestro",
+      "role": "Orquestrador",
+      "tier": 3,
+      "focus": "Estratégia macro, coordenação do squad, visão de conjunto",
+      "knowledge_bases": 15,
+      "frameworks": 50,
+      "token_budget": 16000,
+      "clones_mentores": ["Russell Brunson", "Seth Godin", "Simon Sinek"]
+    },
+    {
+      "name": "Story_Architect",
+      "role": "Especialista em Narrativa",
+      "tier": 3,
+      "focus": "Storytelling, estrutura narrativa, arcos de história",
+      "knowledge_bases": 15,
+      "frameworks": 50,
+      "token_budget": 16000,
+      "clones_mentores": ["Robert McKee", "Joseph Campbell", "Nancy Duarte"]
+    },
+    {
+      "name": "Visual_Designer",
+      "role": "Especialista em Design",
+      "tier": 3,
+      "focus": "Design visual, tipografia, layouts, sistemas de cor",
+      "knowledge_bases": 15,
+      "frameworks": 50,
+      "token_budget": 16000,
+      "clones_mentores": ["Paula Scher", "Brad Frost", "Massimo Vignelli"]
+    },
+    {
+      "name": "Copy_Master",
+      "role": "Especialista em Copywriting",
+      "tier": 3,
+      "focus": "Headlines, hooks, CTAs, copy persuasivo",
+      "knowledge_bases": 15,
+      "frameworks": 50,
+      "token_budget": 16000,
+      "clones_mentores": ["Gary Halbert", "David Ogilvy", "Eugene Schwartz"]
+    },
+    {
+      "name": "Growth_Hacker",
+      "role": "Especialista em Otimização",
+      "tier": 3,
+      "focus": "Algoritmo, métricas, growth tactics, A/B testing",
+      "knowledge_bases": 15,
+      "frameworks": 50,
+      "token_budget": 16000,
+      "clones_mentores": ["Neil Patel", "Sean Ellis", "Andrew Chen"]
+    }
+  ],
+  "competencias": {
+    "core": [
+      {
+        "skill": "Visual Storytelling",
+        "nivel": "Expert",
+        "validacao": "Criar narrativa visual completa de 10+ slides"
+      },
+      {
+        "skill": "Carousel Design",
+        "nivel": "Expert",
+        "validacao": "Design de carrossel com taxa de swipe >60%"
+      },
+      {
+        "skill": "Copywriting Persuasivo",
+        "nivel": "Expert",
+        "validacao": "Headlines com CTR >5%"
+      },
+      {
+        "skill": "Estratégia de Conteúdo",
+        "nivel": "Expert",
+        "validacao": "Plano de conteúdo com métricas de sucesso"
+      },
+      {
+        "skill": "Psicologia Visual",
+        "nivel": "Expert",
+        "validacao": "Aplicar princípios de Gestalt e color psychology"
+      }
+    ],
+    "advanced": [
+      {
+        "skill": "Hooks Virais",
+        "nivel": "Advanced",
+        "validacao": "Criar 10 variações de hook para mesmo tema"
+      },
+      {
+        "skill": "Typography Systems",
+        "nivel": "Advanced",
+        "validacao": "Sistema tipográfico escalável e acessível"
+      },
+      {
+        "skill": "Otimização de Algoritmo",
+        "nivel": "Advanced",
+        "validacao": "Métricas de reach e engagement acima da média"
+      }
+    ],
+    "specialist": [
+      {
+        "skill": "Carrosséis Educacionais",
+        "nivel": "Specialist",
+        "validacao": "Tutorial completo em formato carrossel"
+      },
+      {
+        "skill": "Carrosséis de Conversão",
+        "nivel": "Specialist",
+        "validacao": "Funil de vendas em carrossel com CTA otimizado"
+      },
+      {
+        "skill": "Infográficos",
+        "nivel": "Specialist",
+        "validacao": "Data visualization acessível e impactante"
+      }
+    ]
+  },
+  "scope": {
+    "in_scope": [
+      "Estratégia de carrosséis para Instagram, LinkedIn e TikTok",
+      "Design de layouts e sistemas visuais",
+      "Copywriting para cada slide",
+      "Storytelling e estrutura narrativa",
+      "Otimização para algoritmos",
+      "Análise de métricas e recomendações",
+      "Templates e frameworks reutilizáveis"
+    ],
+    "out_of_scope": [
+      "Criação de imagens/vídeos (somente orienta)",
+      "Postagem automática em redes",
+      "Gestão de comunidade",
+      "Paid ads (foco é orgânico)",
+      "Gerenciamento de crise"
+    ],
+    "stakeholders": [
+      "Social Media Managers",
+      "Content Creators",
+      "Marketing Teams",
+      "Personal Brands",
+      "Agências Digitais"
+    ]
+  },
+  "kpis": [
+    {
+      "metrica": "Swipe Rate",
+      "target": ">60%",
+      "descricao": "Porcentagem de visualizadores que deslizam além do slide 1"
+    },
+    {
+      "metrica": "Engagement Rate",
+      "target": ">3%",
+      "descricao": "Likes + comments + saves / impressões"
+    },
+    {
+      "metrica": "Save Rate",
+      "target": ">5%",
+      "descricao": "Porcentagem de salvamentos (indicador de valor)"
+    },
+    {
+      "metrica": "Share Rate",
+      "target": ">2%",
+      "descricao": "Porcentagem de compartilhamentos"
+    }
+  ],
+  "workflows": {
+    "full_carousel": {
+      "description": "Criação completa de carrossel do zero",
+      "flow": ["Carousel_Maestro", "Story_Architect", "Visual_Designer", "Copy_Master", "Growth_Hacker"],
+      "estimated_time": "30-60min por carrossel"
+    },
+    "quick_copy": {
+      "description": "Apenas copy para carrossel existente",
+      "flow": ["Copy_Master"],
+      "estimated_time": "10-15min"
+    },
+    "optimization": {
+      "description": "Otimização de carrossel existente",
+      "flow": ["Growth_Hacker"],
+      "estimated_time": "15-20min"
+    }
+  },
+  "validation": {
+    "total_cases": 60,
+    "per_agent": 12,
+    "categories": [
+      "Competency Tests",
+      "Hallucination Tests",
+      "Consistency Tests",
+      "Edge Cases",
+      "Performance Tests"
+    ]
+  },
+  "notas": [
+    "Squad projetado para criadores que produzem 10+ carrosséis por mês",
+    "Foco em carrosséis educacionais e de storytelling",
+    "Inspirado nas melhores práticas de @brandsdecoded__, @notjournal.ai, @oficiallittlemonster"
+  ]
+}

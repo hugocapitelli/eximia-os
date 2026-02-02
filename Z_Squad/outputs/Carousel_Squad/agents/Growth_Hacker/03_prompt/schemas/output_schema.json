@@ -1,0 +1,750 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "growth_hacker_output_v1.0.0",
+  "title": "Growth Hacker Output Schema",
+  "description": "Output schema for the Growth Hacker agent - optimization recommendations, hashtags, timing, and A/B tests",
+  "type": "object",
+  "required": ["optimization_report"],
+  "properties": {
+    "optimization_report": {
+      "type": "object",
+      "description": "Complete optimization report for the carousel",
+      "required": ["performance_assessment", "recommendations", "timing", "hashtag_strategy"],
+      "properties": {
+        "performance_assessment": {
+          "type": "object",
+          "description": "Assessment of expected/current performance",
+          "required": ["benchmarks"],
+          "properties": {
+            "benchmarks": {
+              "type": "array",
+              "description": "Performance benchmarks for this carousel type",
+              "items": {
+                "type": "object",
+                "required": ["metric", "benchmark", "target"],
+                "properties": {
+                  "metric": {
+                    "type": "string",
+                    "description": "Metric name",
+                    "enum": ["swipe_rate", "save_rate", "share_rate", "comment_rate", "engagement_rate", "reach"],
+                    "examples": ["swipe_rate"]
+                  },
+                  "benchmark": {
+                    "type": "string",
+                    "description": "Industry/niche benchmark range",
+                    "examples": ["60-70%", "8-15%"]
+                  },
+                  "target": {
+                    "type": "number",
+                    "description": "Target value for this carousel"
+                  },
+                  "current": {
+                    "type": "number",
+                    "description": "Current value if measuring existing carousel"
+                  },
+                  "status": {
+                    "type": "string",
+                    "description": "Status assessment",
+                    "enum": ["excellent", "good", "needs_improvement", "critical", "unknown"],
+                    "examples": ["good"]
+                  }
+                }
+              }
+            },
+            "overall_assessment": {
+              "type": "string",
+              "description": "Overall performance assessment",
+              "examples": ["Above average for educational carousels in this niche"]
+            },
+            "key_strengths": {
+              "type": "array",
+              "description": "Key strengths identified",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["Strong hook with curiosity gap", "Clear value proposition"]]
+            },
+            "key_weaknesses": {
+              "type": "array",
+              "description": "Key weaknesses identified",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["CTA could be stronger", "Missing social proof"]]
+            }
+          }
+        },
+        "recommendations": {
+          "type": "object",
+          "description": "Prioritized optimization recommendations",
+          "required": ["high_priority"],
+          "properties": {
+            "high_priority": {
+              "type": "array",
+              "description": "High priority optimizations (ICE > 7)",
+              "items": {
+                "type": "object",
+                "required": ["opportunity", "action", "ice_score"],
+                "properties": {
+                  "opportunity": {
+                    "type": "string",
+                    "description": "The optimization opportunity",
+                    "examples": ["Double hook (slide 1+2)"]
+                  },
+                  "rationale": {
+                    "type": "string",
+                    "description": "Why this matters",
+                    "examples": ["Algorithm may show slide 2 in feed preview"]
+                  },
+                  "action": {
+                    "type": "string",
+                    "description": "Specific action to take",
+                    "examples": ["Create strong hook in slide 2 as backup"]
+                  },
+                  "ice_score": {
+                    "type": "object",
+                    "description": "ICE prioritization score",
+                    "properties": {
+                      "impact": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 10
+                      },
+                      "confidence": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 10
+                      },
+                      "ease": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 10
+                      },
+                      "total": {
+                        "type": "number",
+                        "description": "Average of I, C, E"
+                      }
+                    }
+                  },
+                  "expected_impact": {
+                    "type": "string",
+                    "description": "Expected impact on metrics",
+                    "examples": ["+10-15% swipe rate"]
+                  }
+                }
+              }
+            },
+            "medium_priority": {
+              "type": "array",
+              "description": "Medium priority optimizations (ICE 5-7)",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "opportunity": {
+                    "type": "string"
+                  },
+                  "rationale": {
+                    "type": "string"
+                  },
+                  "action": {
+                    "type": "string"
+                  },
+                  "ice_score": {
+                    "type": "object",
+                    "properties": {
+                      "impact": {"type": "integer"},
+                      "confidence": {"type": "integer"},
+                      "ease": {"type": "integer"},
+                      "total": {"type": "number"}
+                    }
+                  }
+                }
+              }
+            },
+            "low_priority": {
+              "type": "array",
+              "description": "Low priority optimizations (ICE < 5)",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "opportunity": {
+                    "type": "string"
+                  },
+                  "action": {
+                    "type": "string"
+                  },
+                  "ice_score": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "timing": {
+          "type": "object",
+          "description": "Posting timing recommendations",
+          "required": ["recommended_day", "recommended_time"],
+          "properties": {
+            "recommended_day": {
+              "type": "string",
+              "description": "Recommended day to post",
+              "enum": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+              "examples": ["tuesday"]
+            },
+            "recommended_time": {
+              "type": "string",
+              "description": "Recommended time to post",
+              "examples": ["09:00", "12:00", "19:00"]
+            },
+            "alternative_slots": {
+              "type": "array",
+              "description": "Alternative posting slots",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "day": {
+                    "type": "string"
+                  },
+                  "time": {
+                    "type": "string"
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "rationale": {
+              "type": "string",
+              "description": "Why this timing is recommended",
+              "examples": ["Entrepreneurs check feeds during work breaks; Tuesday has highest engagement for educational content"]
+            },
+            "avoid_times": {
+              "type": "array",
+              "description": "Times to avoid posting",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "timeframe": {
+                    "type": "string"
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "hashtag_strategy": {
+          "type": "object",
+          "description": "Complete hashtag strategy",
+          "required": ["hashtags"],
+          "properties": {
+            "hashtags": {
+              "type": "object",
+              "description": "Hashtags organized by size",
+              "properties": {
+                "small_niche": {
+                  "type": "array",
+                  "description": "Small niche hashtags (1K-50K posts)",
+                  "items": {
+                    "type": "string"
+                  },
+                  "examples": [["#dicasdeempreendedor", "#produtividadeempreendedora"]]
+                },
+                "medium_niche": {
+                  "type": "array",
+                  "description": "Medium niche hashtags (50K-500K posts)",
+                  "items": {
+                    "type": "string"
+                  },
+                  "examples": [["#produtividade", "#empreendedorismo", "#gestãodotempo"]]
+                },
+                "large_niche": {
+                  "type": "array",
+                  "description": "Large niche hashtags (500K-5M posts)",
+                  "items": {
+                    "type": "string"
+                  },
+                  "examples": [["#empreender", "#motivação", "#sucesso"]]
+                },
+                "community": {
+                  "type": "array",
+                  "description": "Community/engagement hashtags",
+                  "items": {
+                    "type": "string"
+                  },
+                  "examples": [["#comunidadeempreendedora"]]
+                }
+              }
+            },
+            "total_count": {
+              "type": "integer",
+              "description": "Total number of hashtags",
+              "maximum": 30
+            },
+            "placement": {
+              "type": "object",
+              "description": "Where to place hashtags",
+              "properties": {
+                "in_caption": {
+                  "type": "array",
+                  "description": "Hashtags to include in caption (most relevant)",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "in_first_comment": {
+                  "type": "array",
+                  "description": "Hashtags for first comment",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "hashtags_to_avoid": {
+              "type": "array",
+              "description": "Hashtags to avoid (banned, oversaturated, off-brand)",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "distribution_checklist": {
+          "type": "object",
+          "description": "Distribution and promotion checklist",
+          "properties": {
+            "pre_post": {
+              "type": "array",
+              "description": "Actions before posting",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "string"
+                  },
+                  "timing": {
+                    "type": "string"
+                  },
+                  "completed": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            },
+            "post_publish": {
+              "type": "array",
+              "description": "Actions after posting",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "string"
+                  },
+                  "timing": {
+                    "type": "string"
+                  },
+                  "importance": {
+                    "type": "string",
+                    "enum": ["critical", "important", "nice_to_have"]
+                  },
+                  "completed": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            },
+            "engagement_strategy": {
+              "type": "object",
+              "description": "Engagement strategy post-publish",
+              "properties": {
+                "respond_to_comments": {
+                  "type": "string",
+                  "description": "Comment response strategy",
+                  "examples": ["Reply to ALL comments within first hour"]
+                },
+                "story_promotion": {
+                  "type": "string",
+                  "description": "Story cross-promotion strategy",
+                  "examples": ["Post story announcing carousel + poll"]
+                },
+                "repost_strategy": {
+                  "type": "string",
+                  "description": "Strategy for reposting evergreen content",
+                  "examples": ["Repost to Stories after 24h if performing well"]
+                }
+              }
+            }
+          }
+        },
+        "ab_testing": {
+          "type": "object",
+          "description": "A/B testing recommendations",
+          "properties": {
+            "recommended_tests": {
+              "type": "array",
+              "description": "Recommended A/B tests",
+              "items": {
+                "type": "object",
+                "required": ["test_name", "hypothesis", "variants", "metric_to_measure"],
+                "properties": {
+                  "test_name": {
+                    "type": "string",
+                    "description": "Name of the test",
+                    "examples": ["Hook headline test"]
+                  },
+                  "hypothesis": {
+                    "type": "string",
+                    "description": "Test hypothesis",
+                    "examples": ["Number-based hook will outperform question-based hook"]
+                  },
+                  "variants": {
+                    "type": "object",
+                    "description": "Test variants",
+                    "properties": {
+                      "control": {
+                        "type": "string",
+                        "description": "Control/current version"
+                      },
+                      "variant": {
+                        "type": "string",
+                        "description": "Test variant"
+                      }
+                    }
+                  },
+                  "metric_to_measure": {
+                    "type": "string",
+                    "description": "Primary metric to measure",
+                    "examples": ["swipe_rate", "save_rate"]
+                  },
+                  "min_sample_size": {
+                    "type": "integer",
+                    "description": "Minimum impressions needed",
+                    "examples": [1000, 2000]
+                  },
+                  "priority": {
+                    "type": "string",
+                    "enum": ["high", "medium", "low"]
+                  }
+                }
+              }
+            },
+            "testing_protocol": {
+              "type": "object",
+              "description": "Protocol for running tests",
+              "properties": {
+                "isolation_rule": {
+                  "type": "string",
+                  "description": "Rule for isolating variables",
+                  "default": "Change only ONE variable per test"
+                },
+                "timing_rule": {
+                  "type": "string",
+                  "description": "Timing rule for fair comparison",
+                  "default": "Post at same time/day of week"
+                },
+                "documentation_required": {
+                  "type": "array",
+                  "description": "What to document",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": ["hypothesis", "variants", "results", "learnings", "next_test"]
+                }
+              }
+            }
+          }
+        },
+        "expected_impact": {
+          "type": "object",
+          "description": "Expected impact if optimizations are implemented",
+          "properties": {
+            "swipe_rate_lift": {
+              "type": "string",
+              "description": "Expected improvement in swipe rate",
+              "examples": ["+5-10%"]
+            },
+            "save_rate_lift": {
+              "type": "string",
+              "description": "Expected improvement in save rate",
+              "examples": ["+2-5%"]
+            },
+            "engagement_lift": {
+              "type": "string",
+              "description": "Expected improvement in overall engagement",
+              "examples": ["+10-15%"]
+            },
+            "confidence_level": {
+              "type": "string",
+              "description": "Confidence in these projections",
+              "enum": ["high", "medium", "low"],
+              "examples": ["medium"]
+            },
+            "caveats": {
+              "type": "array",
+              "description": "Caveats to these projections",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["Results vary by account size", "Algorithm changes may affect outcomes"]]
+            }
+          }
+        }
+      }
+    },
+    "algorithm_insights": {
+      "type": "object",
+      "description": "Relevant algorithm insights for this carousel",
+      "properties": {
+        "signals_optimized_for": {
+          "type": "array",
+          "description": "Algorithm signals this carousel is optimized for",
+          "items": {
+            "type": "object",
+            "properties": {
+              "signal": {
+                "type": "string",
+                "examples": ["time_spent", "saves", "shares"]
+              },
+              "optimization": {
+                "type": "string",
+                "description": "How it's optimized",
+                "examples": ["10 slides for maximum time spent"]
+              }
+            }
+          }
+        },
+        "current_algorithm_notes": {
+          "type": "array",
+          "description": "Current relevant algorithm notes",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["Saves are weighted heavily for educational content", "Carousels get extended reach in Explore"]]
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "description": "Handoff protocol information",
+      "properties": {
+        "from": {
+          "type": "string",
+          "const": "Growth_Hacker"
+        },
+        "to": {
+          "type": "string",
+          "description": "Next step",
+          "enum": ["production", "Carousel_Maestro", "iteration"]
+        },
+        "ready_for_publish": {
+          "type": "boolean",
+          "description": "Is the carousel ready to publish?"
+        },
+        "blocking_issues": {
+          "type": "array",
+          "description": "Any blocking issues before publish",
+          "items": {
+            "type": "string"
+          }
+        },
+        "final_checklist": {
+          "type": "object",
+          "description": "Final pre-publish checklist",
+          "properties": {
+            "content_complete": {"type": "boolean"},
+            "copy_reviewed": {"type": "boolean"},
+            "visuals_ready": {"type": "boolean"},
+            "hashtags_prepared": {"type": "boolean"},
+            "caption_written": {"type": "boolean"},
+            "timing_scheduled": {"type": "boolean"}
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadata about the optimization report",
+      "properties": {
+        "version": {
+          "type": "string",
+          "default": "1.0.0"
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "agent": {
+          "type": "string",
+          "const": "Growth_Hacker"
+        },
+        "frameworks_used": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["ICE Scoring", "Algorithm Signals Ranking", "Hashtag Strategy Framework"]]
+        },
+        "data_sources": {
+          "type": "array",
+          "description": "Data sources used for recommendations",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["Industry benchmarks 2025-2026", "Account historical data", "Niche analysis"]]
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "optimization_report": {
+        "performance_assessment": {
+          "benchmarks": [
+            {"metric": "swipe_rate", "benchmark": "60-70%", "target": 65, "status": "good"},
+            {"metric": "save_rate", "benchmark": "8-15%", "target": 10, "status": "good"},
+            {"metric": "share_rate", "benchmark": "2-4%", "target": 3, "status": "unknown"}
+          ],
+          "overall_assessment": "Above average for educational carousels",
+          "key_strengths": ["Strong curiosity-based hook", "Clear value delivery"],
+          "key_weaknesses": ["CTA could emphasize saves more"]
+        },
+        "recommendations": {
+          "high_priority": [
+            {
+              "opportunity": "Double hook (slide 1+2)",
+              "rationale": "Algorithm may show slide 2 in feed preview",
+              "action": "Create strong backup hook in slide 2",
+              "ice_score": {"impact": 8, "confidence": 7, "ease": 9, "total": 8.0},
+              "expected_impact": "+10-15% swipe rate"
+            },
+            {
+              "opportunity": "Save-focused CTA",
+              "rationale": "Primary goal is saves",
+              "action": "Change CTA from follow to 'Save to check before investing'",
+              "ice_score": {"impact": 7, "confidence": 8, "ease": 10, "total": 8.3},
+              "expected_impact": "+3-5% save rate"
+            }
+          ],
+          "medium_priority": [
+            {
+              "opportunity": "Template bonus offer",
+              "rationale": "Increases perceived value and saves",
+              "action": "Add 'DM for free template' to drive saves and DMs",
+              "ice_score": {"impact": 6, "confidence": 6, "ease": 7, "total": 6.3}
+            }
+          ]
+        },
+        "timing": {
+          "recommended_day": "tuesday",
+          "recommended_time": "09:00",
+          "alternative_slots": [
+            {"day": "tuesday", "time": "12:00", "reason": "Lunch break engagement"},
+            {"day": "thursday", "time": "19:00", "reason": "Evening scroll time"}
+          ],
+          "rationale": "Entrepreneurs check feeds in morning; Tuesday has highest engagement for educational content"
+        },
+        "hashtag_strategy": {
+          "hashtags": {
+            "small_niche": ["#dicasdeempreendedor", "#produtividadeempreendedora", "#rotinasdeprodutor", "#empreendedoriniciante", "#focoeresultado"],
+            "medium_niche": ["#produtividade", "#empreendedorismo", "#gestãodotempo", "#focoeproposito", "#crescimentopessoal", "#mentalidadeempreendedora", "#vidadeempreendedor", "#sucessonegócios", "#dicasdenegócios", "#empreendedordigital"],
+            "large_niche": ["#empreender", "#motivação", "#sucesso", "#negócios", "#trabalho"],
+            "community": ["#comunidadeempreendedora", "#empreendedoresdebrasilia"]
+          },
+          "total_count": 22,
+          "placement": {
+            "in_caption": ["#produtividade", "#empreendedorismo", "#dicasdeempreendedor"],
+            "in_first_comment": ["#gestãodotempo", "#focoeproposito", "#empreender", "#motivação"]
+          }
+        },
+        "distribution_checklist": {
+          "pre_post": [
+            {"action": "Prepare first comment with hashtags", "timing": "Before posting", "completed": false}
+          ],
+          "post_publish": [
+            {"action": "Post Story announcing carousel", "timing": "Immediately", "importance": "critical", "completed": false},
+            {"action": "Reply to ALL comments", "timing": "Within 1 hour", "importance": "critical", "completed": false},
+            {"action": "Repost to Stories", "timing": "After 24h", "importance": "important", "completed": false},
+            {"action": "Pin if performing well", "timing": "After 48h", "importance": "nice_to_have", "completed": false}
+          ],
+          "engagement_strategy": {
+            "respond_to_comments": "Reply to ALL comments within first hour with questions to spark conversation",
+            "story_promotion": "Post story with poll asking which tip they want to learn more about",
+            "repost_strategy": "If >5% save rate, repost to Stories at 24h and consider pinning"
+          }
+        },
+        "ab_testing": {
+          "recommended_tests": [
+            {
+              "test_name": "Hook headline test",
+              "hypothesis": "Number-based hook outperforms question-based hook for swipe rate",
+              "variants": {
+                "control": "5 mistakes that make BEGINNERS lose money",
+                "variant": "Are you making these 5 beginner mistakes?"
+              },
+              "metric_to_measure": "swipe_rate",
+              "min_sample_size": 1000,
+              "priority": "high"
+            },
+            {
+              "test_name": "CTA type test",
+              "hypothesis": "Save CTA outperforms follow CTA for save rate",
+              "variants": {
+                "control": "Follow for more tips",
+                "variant": "Save to check before investing"
+              },
+              "metric_to_measure": "save_rate",
+              "min_sample_size": 1000,
+              "priority": "medium"
+            }
+          ],
+          "testing_protocol": {
+            "isolation_rule": "Change only ONE variable per test",
+            "timing_rule": "Post at same time/day of week",
+            "documentation_required": ["hypothesis", "variants", "results", "learnings"]
+          }
+        },
+        "expected_impact": {
+          "swipe_rate_lift": "+5-15%",
+          "save_rate_lift": "+3-5%",
+          "engagement_lift": "+10-20%",
+          "confidence_level": "medium",
+          "caveats": ["Results vary by account size", "Algorithm changes may affect outcomes"]
+        }
+      },
+      "algorithm_insights": {
+        "signals_optimized_for": [
+          {"signal": "time_spent", "optimization": "10 slides maximize time on post"},
+          {"signal": "saves", "optimization": "Educational content with clear value"}
+        ],
+        "current_algorithm_notes": [
+          "Saves heavily weighted for educational content",
+          "First 30 minutes of engagement critical for reach"
+        ]
+      },
+      "handoff": {
+        "from": "Growth_Hacker",
+        "to": "production",
+        "ready_for_publish": true,
+        "final_checklist": {
+          "content_complete": true,
+          "copy_reviewed": true,
+          "visuals_ready": true,
+          "hashtags_prepared": true,
+          "caption_written": true,
+          "timing_scheduled": false
+        }
+      },
+      "metadata": {
+        "version": "1.0.0",
+        "agent": "Growth_Hacker",
+        "frameworks_used": ["ICE Scoring", "Algorithm Signals Ranking", "Hashtag Strategy Framework"],
+        "data_sources": ["Industry benchmarks 2025-2026", "Account historical data"]
+      }
+    }
+  ]
+}

@@ -3,34 +3,55 @@
 # Mantido automaticamente pelo C4_Auditor
 
 metadata:
-  factory_version: "2.0"
-  last_updated: "2026-01-19"
-  total_clones: 3
-  average_score: 9.35
+  factory_version: "2.1"
+  last_updated: "2026-01-31"
+  total_clones: 4
+  average_score: 9.42
+  schema_version: "2.0"
+  changelog:
+    - version: "2.1"
+      date: "2026-01-31"
+      changes:
+        - "Added C2E_LinguisticAnalyst for idiolect extraction"
+        - "Updated C2C_HeuristicMiner v2.0 with System 1/2 analysis"
+        - "Updated C2D_BiographicAnalyst v2.0 with Core Identity extraction"
+        - "Added clone_dna_v2 template with expanded schema"
   
 # Cognitive Architecture Agents
 agents:
   extraction_subagents:
     - id: "C2A_JunguianAnalyst"
       type: "Extraction Sub-Agent"
-      function: "MBTI / Cognitive Functions extraction"
+      function: "MBTI / Cognitive Functions / Enneagram extraction"
       path: "C2_Extractor/C2A_JunguianAnalyst/"
-      
+      version: "1.0"
+
     - id: "C2B_PsychometricAnalyst"
       type: "Extraction Sub-Agent"
-      function: "Big Five / DISC scoring"
+      function: "Big Five / DISC / Kolb scoring"
       path: "C2_Extractor/C2B_PsychometricAnalyst/"
-      
+      version: "2.0"
+
     - id: "C2C_HeuristicMiner"
       type: "Extraction Sub-Agent"
-      function: "Decision rules / Mental models"
+      function: "Decision rules / Mental models / System 1-2 / Habits / Stress response"
       path: "C2_Extractor/C2C_HeuristicMiner/"
-      
+      version: "2.0"
+
     - id: "C2D_BiographicAnalyst"
       type: "Extraction Sub-Agent"
-      function: "Context / Formative events"
+      function: "Core Identity / Narrative Arc / Formative events / Context"
       path: "C2_Extractor/C2D_BiographicAnalyst/"
-      
+      version: "2.0"
+
+    - id: "C2E_LinguisticAnalyst"
+      type: "Extraction Sub-Agent"
+      function: "Idiolect / Voice signature / LIWC indicators / Syntactic patterns"
+      path: "C2_Extractor/C2E_LinguisticAnalyst/"
+      version: "1.0"
+      added: "2026-01-31"
+      scientific_basis: "LIWC, Lexical Hypothesis, Idiolect Analysis"
+
   runtime:
     - id: "C5_RuntimeEngine"
       type: "Runtime Agent"
@@ -40,7 +61,7 @@ agents:
 # Estatísticas
 statistics:
   by_status:
-    validated: 2
+    validated: 3
     conditional: 0
     deprecated: 0
     in_progress: 1
@@ -48,8 +69,9 @@ statistics:
     performance_mental: 1
     design_systems: 1
     technology_innovation: 1
+    cultural_psychology: 1
   by_score:
-    excellent_95_plus: 0
+    excellent_95_plus: 1
     pass_90_94: 2
     conditional_80_89: 0
 
@@ -215,6 +237,67 @@ clones:
       - "high_fidelity"
       - "production_ready"
       - "collaboration"
+
+  # CLOTAIRE RAPAILLE (Culture Code v1.0)
+  - clone_id: "clotaire_rapaille"
+    nome: "Dr. G. Clotaire Rapaille"
+    versao: "v1.0"
+    status: "validated"
+    architecture: "cognitive_simulation_v2"
+
+    domain:
+      primary: "cultural_psychology"
+      secondary: ["marketing", "consumer_behavior", "cross_cultural", "archetype_discovery"]
+
+    scores:
+      phase_1_research: 8.8
+      phase_2_etl: 9.1
+      phase_3_generation: 9.3
+      phase_4_validation:
+        turing_test: 9.3
+        style_compliance: 9.4
+        ethics_compliance: 10.0
+        jailbreak_resistance: 10.0
+      final: 9.57
+
+    metrics:
+      total_sources: 52
+      knowledge_bases: 9
+      qna_pairs: 40
+      system_prompt_chars: 7200
+      turing_scenarios: 20
+
+    artifacts:
+      path: "Clones/clotaire_rapaille/"
+      system_prompt: "3_clone_output/SYSTEM_PROMPT.md"
+      dna_mental: "3_clone_output/CLONE_DNA.md"
+      validation_report: "VALIDATION_REPORT.md"
+
+    dates:
+      created: "2026-01-30T19:00:00Z"
+      validated: "2026-01-30T19:30:00Z"
+      last_updated: "2026-01-30T19:30:00Z"
+
+    validated_by: "C4_Auditor"
+    risco: "baixo"
+
+    observacoes: |
+      Clone de alta fidelidade de Dr. Clotaire Rapaille, psicólogo franco-americano
+      e criador da metodologia Culture Code. Especialista em códigos culturais,
+      comportamento do consumidor, e teoria do cérebro reptiliano. Fundador da
+      Archetype Discoveries Worldwide, consultor de 50+ Fortune 100 companies.
+      Tom supremamente confiante, provocativo, e baseado em resultados práticos.
+      Principais frameworks: Cérebro Triuno, Sessão de 3 Horas, Teoria do Imprint,
+      América como Cultura Adolescente. Casos signature: PT Cruiser, Folgers, Jeep.
+
+    tags:
+      - "cultural_psychology"
+      - "marketing"
+      - "consumer_behavior"
+      - "excellent_score"
+      - "high_fidelity"
+      - "production_ready"
+      - "culture_code"
 
 # Template para novos clones
 # _template:

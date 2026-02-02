@@ -1,0 +1,341 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "carousel_maestro_input_v1.0.0",
+  "title": "Carousel Maestro Input Schema",
+  "description": "Input schema for the Carousel Maestro agent - the strategic orchestrator of the Carousel Squad",
+  "type": "object",
+  "required": ["brief"],
+  "properties": {
+    "brief": {
+      "type": "object",
+      "description": "The carousel brief containing all strategic information",
+      "required": ["objective", "audience", "theme"],
+      "properties": {
+        "objective": {
+          "type": "object",
+          "description": "The primary goal of the carousel",
+          "required": ["type"],
+          "properties": {
+            "type": {
+              "type": "string",
+              "description": "The main objective category",
+              "enum": [
+                "awareness",
+                "engagement",
+                "lead_generation",
+                "sales",
+                "education",
+                "authority_building",
+                "community_building"
+              ],
+              "examples": ["awareness", "education"]
+            },
+            "specific_goal": {
+              "type": "string",
+              "description": "Specific measurable goal for this carousel",
+              "examples": ["Gain 500 new followers", "Generate 50 leads", "Achieve 10% save rate"]
+            },
+            "kpis": {
+              "type": "array",
+              "description": "Key performance indicators to track",
+              "items": {
+                "type": "string",
+                "enum": ["followers", "saves", "shares", "comments", "profile_visits", "link_clicks", "dms", "swipe_rate"]
+              },
+              "examples": [["saves", "followers"]]
+            }
+          }
+        },
+        "audience": {
+          "type": "object",
+          "description": "Target audience definition",
+          "required": ["primary_persona"],
+          "properties": {
+            "primary_persona": {
+              "type": "string",
+              "description": "Description of the primary target audience",
+              "examples": ["Young professionals aged 25-35 interested in personal finance"]
+            },
+            "experience_level": {
+              "type": "string",
+              "description": "The audience's level of expertise in the topic",
+              "enum": ["beginner", "intermediate", "advanced", "mixed"],
+              "default": "beginner"
+            },
+            "primary_pain": {
+              "type": "string",
+              "description": "The main pain point or problem the audience faces",
+              "examples": ["Don't know how to start investing", "Overwhelmed by financial jargon"]
+            },
+            "primary_desire": {
+              "type": "string",
+              "description": "The main desire or aspiration of the audience",
+              "examples": ["Financial independence", "Build passive income"]
+            },
+            "demographics": {
+              "type": "object",
+              "description": "Optional demographic details",
+              "properties": {
+                "age_range": {
+                  "type": "string",
+                  "examples": ["20-30", "25-40"]
+                },
+                "location": {
+                  "type": "string",
+                  "examples": ["Brazil", "Latin America"]
+                },
+                "profession": {
+                  "type": "string",
+                  "examples": ["Entrepreneurs", "Corporate employees"]
+                }
+              }
+            }
+          }
+        },
+        "theme": {
+          "type": "object",
+          "description": "The content theme and topic",
+          "required": ["topic"],
+          "properties": {
+            "topic": {
+              "type": "string",
+              "description": "The main topic of the carousel",
+              "examples": ["How to start investing with R$100", "5 productivity hacks for entrepreneurs"]
+            },
+            "content_pillar": {
+              "type": "string",
+              "description": "The content pillar this carousel belongs to",
+              "enum": ["educational", "inspirational", "entertainment", "promotional", "engagement"],
+              "examples": ["educational"]
+            },
+            "angle": {
+              "type": "string",
+              "description": "The specific angle or approach to the topic",
+              "examples": ["Beginner-friendly step-by-step guide", "Myth-busting common misconceptions"]
+            }
+          }
+        },
+        "assets": {
+          "type": "object",
+          "description": "Available assets and resources for the carousel",
+          "properties": {
+            "data_stats": {
+              "type": "array",
+              "description": "Available data points and statistics",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["90% of beginners lose money in first year", "R$100 is enough to start investing"]]
+            },
+            "testimonials": {
+              "type": "array",
+              "description": "Available testimonials or social proof",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "quote": {
+                    "type": "string"
+                  },
+                  "author": {
+                    "type": "string"
+                  },
+                  "result": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "images": {
+              "type": "array",
+              "description": "Available images or visual assets",
+              "items": {
+                "type": "string"
+              }
+            },
+            "case_studies": {
+              "type": "array",
+              "description": "Available case studies or success stories",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "before": {
+                    "type": "string"
+                  },
+                  "after": {
+                    "type": "string"
+                  },
+                  "timeframe": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "brand_guidelines": {
+              "type": "object",
+              "description": "Brand visual guidelines if available",
+              "properties": {
+                "colors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "fonts": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "tone": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "constraints": {
+          "type": "object",
+          "description": "Constraints and limitations for the carousel",
+          "properties": {
+            "max_slides": {
+              "type": "integer",
+              "description": "Maximum number of slides allowed",
+              "minimum": 2,
+              "maximum": 20,
+              "default": 10,
+              "examples": [10]
+            },
+            "min_slides": {
+              "type": "integer",
+              "description": "Minimum number of slides required",
+              "minimum": 2,
+              "maximum": 20,
+              "default": 5,
+              "examples": [5]
+            },
+            "visual_style": {
+              "type": "string",
+              "description": "Required visual style",
+              "enum": ["clean", "bold", "minimal", "editorial", "vibrant", "corporate", "playful"],
+              "examples": ["clean"]
+            },
+            "deadline": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Deadline for carousel completion"
+            },
+            "platform": {
+              "type": "string",
+              "description": "Target social media platform",
+              "enum": ["instagram", "linkedin", "facebook", "twitter", "tiktok"],
+              "default": "instagram"
+            },
+            "format": {
+              "type": "string",
+              "description": "Carousel format dimensions",
+              "enum": ["square_1080", "portrait_1080x1350", "story_1080x1920"],
+              "default": "square_1080"
+            },
+            "language": {
+              "type": "string",
+              "description": "Language for the carousel content",
+              "default": "pt-BR",
+              "examples": ["pt-BR", "en-US", "es-ES"]
+            },
+            "forbidden_topics": {
+              "type": "array",
+              "description": "Topics or elements to avoid",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "context": {
+      "type": "object",
+      "description": "Additional context for strategy development",
+      "properties": {
+        "previous_performance": {
+          "type": "object",
+          "description": "Performance data from previous carousels",
+          "properties": {
+            "avg_swipe_rate": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "avg_save_rate": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "top_performing_type": {
+              "type": "string"
+            },
+            "lessons_learned": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "competitor_reference": {
+          "type": "array",
+          "description": "Competitor accounts for reference",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["@brandsdecoded__", "@notjournal.ai"]]
+        },
+        "brand_voice": {
+          "type": "string",
+          "description": "Description of the brand voice",
+          "examples": ["Professional but approachable, uses humor occasionally"]
+        }
+      }
+    },
+    "request_type": {
+      "type": "string",
+      "description": "Type of request being made to the Maestro",
+      "enum": ["full_strategy", "clarification", "quick_consultation", "review"],
+      "default": "full_strategy"
+    }
+  },
+  "examples": [
+    {
+      "brief": {
+        "objective": {
+          "type": "education",
+          "specific_goal": "Position as authority in personal finance",
+          "kpis": ["saves", "followers"]
+        },
+        "audience": {
+          "primary_persona": "Young professionals aged 20-30 who have never invested",
+          "experience_level": "beginner",
+          "primary_pain": "Fear of losing money and not knowing where to start",
+          "primary_desire": "Build wealth and achieve financial independence"
+        },
+        "theme": {
+          "topic": "How to start investing with R$100",
+          "content_pillar": "educational",
+          "angle": "Beginner-friendly step-by-step guide"
+        },
+        "assets": {
+          "data_stats": ["90% of Brazilians don't invest", "R$100 is enough to start"]
+        },
+        "constraints": {
+          "max_slides": 10,
+          "visual_style": "clean",
+          "language": "pt-BR"
+        }
+      },
+      "request_type": "full_strategy"
+    }
+  ]
+}

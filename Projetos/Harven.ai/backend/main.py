@@ -11,6 +11,19 @@ from pydantic import BaseModel
 from supabase import create_client, Client
 from dotenv import load_dotenv
 
+# Password hashing utilities
+from utils.auth import hash_password, verify_password, needs_rehash
+
+# Exception handling
+from utils.exceptions import (
+    AppException,
+    NotFoundError,
+    DatabaseError,
+    AuthenticationError,
+    ExternalServiceError,
+)
+from models.responses import ErrorResponse, ErrorDetail
+
 # Observability imports
 import sentry_sdk
 from sentry_sdk.integrations.fastapi import FastApiIntegration
@@ -38,28 +51,45 @@ if SENTRY_DSN:
         profiles_sample_rate=float(os.getenv("SENTRY_PROFILES_SAMPLE_RATE", "0.1")),
         send_default_pii=False,
     )
-    print(f"✅ Sentry initialized for environment: {ENVIRONMENT}")
+    print(f"[OK] Sentry initialized for environment: {ENVIRONMENT}")
 else:
-    print("⚠️ SENTRY_DSN not configured - error tracking disabled")
+    print("[WARN] SENTRY_DSN not configured - error tracking disabled")
 
 # ============================================
 # STRUCTURED LOGGING CONFIGURATION
 # ============================================
-structlog.configure(
-    processors=[
-        structlog.contextvars.merge_contextvars,
-        structlog.processors.add_log_level,
-        structlog.processors.TimeStamper(fmt="iso"),
-        structlog.processors.JSONRenderer()
-    ],
-    wrapper_class=structlog.make_filtering_bound_logger(
-        getattr(__import__('logging'), os.getenv("LOG_LEVEL", "INFO"))
-    ),
-    context_class=dict,
-    logger_factory=structlog.PrintLoggerFactory(),
-    cache_logger_on_first_use=True,
-)
-logger = structlog.get_logger()
+import logging
+
+# Get log level safely
+def get_log_level():
+    level_name = os.getenv("LOG_LEVEL", "INFO").upper()
+    level_map = {
+        "DEBUG": logging.DEBUG,
+        "INFO": logging.INFO,
+        "WARNING": logging.WARNING,
+        "ERROR": logging.ERROR,
+        "CRITICAL": logging.CRITICAL,
+    }
+    return level_map.get(level_name, logging.INFO)
+
+try:
+    structlog.configure(
+        processors=[
+            structlog.contextvars.merge_contextvars,
+            structlog.processors.add_log_level,
+            structlog.processors.TimeStamper(fmt="iso"),
+            structlog.processors.JSONRenderer()
+        ],
+        wrapper_class=structlog.make_filtering_bound_logger(get_log_level()),
+        context_class=dict,
+        logger_factory=structlog.PrintLoggerFactory(),
+        cache_logger_on_first_use=True,
+    )
+    logger = structlog.get_logger()
+    print(f"[OK] Structlog configured with level: {os.getenv('LOG_LEVEL', 'INFO').upper()}")
+except Exception as e:
+    print(f"[WARN] Structlog configuration failed: {e}, using basic logging")
+    logger = logging.getLogger(__name__)
 
 # Configuração do Supabase
 SUPABASE_URL = os.getenv("SUPABASE_URL")
@@ -74,14 +104,30 @@ supabase: Client = None
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup
+    print("=" * 50)
+    print("[STARTUP] HARVEN.AI BACKEND STARTING...")
+    print("=" * 50)
+    print(f"Environment: {ENVIRONMENT}")
+    print(f"Supabase URL: {'[OK] Configured' if SUPABASE_URL else '[X] Missing'}")
+    print(f"Supabase Key: {'[OK] Configured' if SUPABASE_KEY else '[X] Missing'}")
+    print(f"Sentry DSN: {'[OK] Configured' if SENTRY_DSN else '[X] Not configured'}")
+
     global supabase
     if SUPABASE_URL and SUPABASE_KEY:
         try:
             supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
-            print("Conectado ao cliente Supabase")
+            print("[OK] Conectado ao cliente Supabase")
         except Exception as e:
-            print(f"Erro ao conectar ao Supabase: {e}")
+            print(f"[ERROR] Erro ao conectar ao Supabase: {e}")
+    else:
+        print("[WARN] Supabase nao configurado - funcionando sem banco de dados")
+
+    print("=" * 50)
+    print("[OK] HARVEN.AI BACKEND READY!")
+    print("=" * 50)
+
     yield
+
     # Shutdown
     print("Desligando backend...")
 
@@ -247,32 +293,25 @@ app.add_middleware(
 # ============================================
 # PROMETHEUS METRICS
 # ============================================
-from prometheus_fastapi_instrumentator import Instrumentator
+try:
+    from prometheus_fastapi_instrumentator import Instrumentator
 
-# Initialize Prometheus metrics
-instrumentator = Instrumentator(
-    should_group_status_codes=True,
-    should_ignore_untemplated=True,
-    should_respect_env_var=True,
-    should_instrument_requests_inprogress=True,
-    excluded_handlers=["/metrics", "/health"],
-    inprogress_name="harven_inprogress_requests",
-    inprogress_labels=True,
-)
+    # Initialize Prometheus metrics (simplified - removed problematic custom metrics)
+    instrumentator = Instrumentator(
+        should_group_status_codes=True,
+        should_ignore_untemplated=True,
+        should_respect_env_var=True,
+        should_instrument_requests_inprogress=True,
+        excluded_handlers=["/metrics", "/health"],
+        inprogress_name="harven_inprogress_requests",
+        inprogress_labels=True,
+    )
 
-# Add custom metrics for AI agents
-instrumentator.add(
-    lambda info: info.modified_duration
-).add(
-    lambda info: info.modified_status
-).add(
-    lambda info: info.modified_handler
-)
-
-# Expose metrics endpoint
-instrumentator.instrument(app).expose(app, include_in_schema=True, tags=["Health"])
-
-logger.info("prometheus_initialized", endpoint="/metrics")
+    # Expose metrics endpoint
+    instrumentator.instrument(app).expose(app, include_in_schema=True, tags=["Health"])
+    print("[OK] Prometheus metrics initialized")
+except Exception as e:
+    print(f"[WARN] Prometheus metrics initialization failed: {e}")
 
 # ============================================
 # REQUEST LOGGING MIDDLEWARE
@@ -316,6 +355,63 @@ class RequestLoggingMiddleware(BaseHTTPMiddleware):
 app.add_middleware(RequestLoggingMiddleware)
 
 # ============================================
+# EXCEPTION HANDLERS
+# ============================================
+
+@app.exception_handler(AppException)
+async def app_exception_handler(request: Request, exc: AppException):
+    """Handle custom application exceptions."""
+    logger.error(
+        "app_exception",
+        code=exc.code,
+        message=exc.message,
+        path=request.url.path,
+    )
+    return JSONResponse(
+        status_code=exc.status_code,
+        content=ErrorResponse(
+            code=exc.code,
+            message=exc.message,
+            request_id=request.headers.get("X-Request-ID")
+        ).model_dump()
+    )
+
+
+@app.exception_handler(HTTPException)
+async def http_exception_handler(request: Request, exc: HTTPException):
+    """Handle FastAPI HTTP exceptions."""
+    logger.warning(
+        "http_exception",
+        status_code=exc.status_code,
+        detail=exc.detail,
+        path=request.url.path,
+    )
+    return JSONResponse(
+        status_code=exc.status_code,
+        content=ErrorResponse(
+            code=f"HTTP_{exc.status_code}",
+            message=str(exc.detail),
+            request_id=request.headers.get("X-Request-ID")
+        ).model_dump()
+    )
+
+
+@app.exception_handler(Exception)
+async def generic_exception_handler(request: Request, exc: Exception):
+    """Handle unhandled exceptions."""
+    logger.exception("unhandled_exception", exc_info=exc, path=request.url.path)
+    # Sentry captures automatically if configured
+    return JSONResponse(
+        status_code=500,
+        content=ErrorResponse(
+            code="INTERNAL_ERROR",
+            message="Erro interno do servidor",
+            request_id=request.headers.get("X-Request-ID")
+        ).model_dump()
+    )
+
+
+# ============================================
 # HEALTH & STATUS
 # ============================================
 
@@ -330,7 +426,13 @@ class DisciplineCreate(BaseModel):
     name: str # Tabela usa 'name' ou 'title'? Vou assumir title compativel com o front ou ajustar. O user disse "disciplines".
     code: str
     department: str
-    
+
+# Modelo para Chapter (definido aqui para uso em /disciplines/{id}/chapters)
+class ChapterCreate(BaseModel):
+    title: str
+    description: Optional[str] = ""
+    order: int = 0
+
 # ============================================
 # DISCIPLINES (TURMAS)
 # ============================================
@@ -490,24 +592,31 @@ async def login(data: LoginRequest):
     
     try:
         # Busca usuário pelo RA
-        print(f"DEBUG: Buscando RA: {data.ra}")
+        logger.debug("auth_lookup", ra=data.ra[:4] + "***" if len(data.ra) > 4 else "***")
         response = supabase.table("users").select("*").eq("ra", data.ra).execute()
-        print(f"DEBUG: Resposta Supabase: {response}")
-        
+        logger.debug("auth_lookup_response", found=bool(response.data))
+
         if not response.data:
-            print("DEBUG: Nenhum dado encontrado para este RA.")
+            logger.debug("auth_lookup_not_found", ra=data.ra[:4] + "***" if len(data.ra) > 4 else "***")
             raise HTTPException(status_code=401, detail="RA não encontrado (Verifique RLS/Key)")
             
         user = response.data[0]
-        
-        # VERIFICAÇÃO DE SENHA (SIMPLIFICADA PARA MOCKUP/LEGADO)
-        # TODO: Implementar verificação real de hash (bcrypt/argon2) conforme sistema legado
-        # Por enquanto, comparamos direto com password_hash ou aceitamos se for igual (para testes)
-        if user.get('password_hash') != data.password and user.get('password') != data.password:
-             # Fallback para permitir testes se o banco tiver senhas em plain text ou hash placeholder
-             # Se for produção real, isso deve ser substituído por check_password_hash(data.password, user['password_hash'])
-             pass
-             # raise HTTPException(status_code=401, detail="Senha incorreta") 
+
+        # VERIFICAÇÃO DE SENHA COM BCRYPT
+        stored_password = user.get('password_hash') or user.get('password') or ''
+
+        if needs_rehash(stored_password):
+            # Legacy plain text password - verify and migrate to bcrypt
+            if stored_password != data.password:
+                raise HTTPException(status_code=401, detail="Senha incorreta")
+            # Migrate to bcrypt hash
+            new_hash = hash_password(data.password)
+            supabase.table("users").update({"password": new_hash}).eq("id", user['id']).execute()
+            logger.info("password_migrated_to_bcrypt", user_id=user['id'])
+        else:
+            # Bcrypt hash - verify properly
+            if not verify_password(data.password, stored_password):
+                raise HTTPException(status_code=401, detail="Senha incorreta") 
         
         # Normalização de Role para o Frontend
         raw_role = user.get('role', 'student').upper()
@@ -1369,7 +1478,7 @@ async def create_user(user: UserCreate):
             "name": user.name,
             "email": user.email,
             "role": user.role,
-            "password": user.password,
+            "password": hash_password(user.password) if user.password else None,
             "title": user.title,
             "ra": user.ra, # Coluna separada
             "created_at": "now()"
@@ -1397,7 +1506,7 @@ async def create_users_batch(users: List[UserCreate]):
                 "name": user.name,
                 "email": user.email,
                 "role": user.role,
-                "password": user.password,
+                "password": hash_password(user.password) if user.password else None,
                 "title": user.title,
                 "ra": user.ra,
                 "created_at": "now()"
@@ -1426,7 +1535,7 @@ async def update_user(user_id: str, user: UserUpdate):
         data = {}
         if user.name: data["name"] = user.name
         if user.email: data["email"] = user.email
-        if user.password: data["password"] = user.password # TODO: Hash
+        if user.password: data["password"] = hash_password(user.password)
         if user.title: data["title"] = user.title
         if user.ra: data["ra"] = user.ra
         
@@ -1442,7 +1551,7 @@ async def update_user(user_id: str, user: UserUpdate):
 @app.post("/users/{user_id}/avatar", tags=["Users"], summary="Upload de avatar")
 async def upload_avatar(user_id: str, file: UploadFile = File(...)):
     """Faz upload da foto de perfil do usuário."""
-    print(f"DEBUG: Starting avatar upload for user {user_id}")
+    logger.debug("avatar_upload_start", user_id=user_id)
     if not supabase:
         raise HTTPException(status_code=503, detail="Banco de dados desconectado")
 
@@ -1453,9 +1562,9 @@ async def upload_avatar(user_id: str, file: UploadFile = File(...)):
         unique_id = str(uuid.uuid4())[:8]
         file_path = f"avatars/{user_id}_{unique_id}.{file_ext}"
 
-        print(f"DEBUG: Reading file {filename}...")
+        logger.debug("avatar_reading_file", filename=filename)
         content = await file.read()
-        print(f"DEBUG: Read {len(content)} bytes")
+        logger.debug("avatar_file_read", bytes=len(content))
 
         # 2. Try multiple buckets in order of preference
         public_url = ""
@@ -1466,17 +1575,17 @@ async def upload_avatar(user_id: str, file: UploadFile = File(...)):
             if upload_success:
                 break
             try:
-                print(f"DEBUG: Trying bucket '{bucket_name}'...")
+                logger.debug("avatar_trying_bucket", bucket=bucket_name)
                 supabase.storage.from_(bucket_name).upload(
                     file_path,
                     content,
                     {"upsert": "true", "content-type": file.content_type or "image/jpeg"}
                 )
                 public_url = supabase.storage.from_(bucket_name).get_public_url(file_path)
-                print(f"DEBUG: Success! URL: {public_url}")
+                logger.debug("avatar_upload_success", bucket=bucket_name)
                 upload_success = True
             except Exception as bucket_err:
-                print(f"DEBUG: Bucket '{bucket_name}' failed: {bucket_err}")
+                logger.debug("avatar_bucket_failed", bucket=bucket_name, error=str(bucket_err))
                 continue
 
         if not upload_success or not public_url:
@@ -1486,7 +1595,7 @@ async def upload_avatar(user_id: str, file: UploadFile = File(...)):
             )
 
         # 3. Update User Record - try different column names
-        print(f"DEBUG: Updating user record with avatar_url...")
+        logger.debug("avatar_updating_db", user_id=user_id)
         db_update_success = False
 
         for column_name in ["avatar_url", "avatar", "profile_image", "image_url"]:
@@ -1495,9 +1604,9 @@ async def upload_avatar(user_id: str, file: UploadFile = File(...)):
             try:
                 supabase.table("users").update({column_name: public_url}).eq("id", user_id).execute()
                 db_update_success = True
-                print(f"DEBUG: Successfully updated column '{column_name}'")
+                logger.debug("avatar_db_updated", column=column_name)
             except Exception as col_err:
-                print(f"DEBUG: Column '{column_name}' failed: {col_err}")
+                logger.debug("db_column_failed", column=column_name, error=str(col_err))
                 continue
 
         if not db_update_success:
@@ -1539,7 +1648,7 @@ async def delete_avatar(user_id: str):
                         bucket = bucket_and_path.split('/')[0]
                         file_path = '/'.join(bucket_and_path.split('/')[1:])
                         supabase.storage.from_(bucket).remove([file_path])
-                        print(f"DEBUG: Deleted file from storage: {bucket}/{file_path}")
+                        logger.debug("storage_file_deleted", bucket=bucket, path=file_path)
             except Exception as storage_err:
                 print(f"WARNING: Could not delete file from storage: {storage_err}")
                 # Continue anyway - we'll still clear the URL from database
@@ -2022,7 +2131,7 @@ async def delete_course(course_id: str):
 @app.post("/courses/{course_id}/image", tags=["Upload"], summary="Upload de imagem do curso")
 async def upload_course_image(course_id: str, file: UploadFile = File(...)):
     """Faz upload de uma imagem de capa para o curso. Formatos aceitos: JPG, PNG, GIF."""
-    print(f"DEBUG: Starting upload for course {course_id}")
+    logger.debug("course_upload_start", course_id=course_id)
     if not supabase: raise HTTPException(status_code=503, detail="DB Disconnected")
     try:
         # 1. Upload to Supabase Storage
@@ -2030,7 +2139,7 @@ async def upload_course_image(course_id: str, file: UploadFile = File(...)):
         file_ext = filename.split(".")[-1] if "." in filename else "jpg"
         unique_id = str(uuid.uuid4())[:8]
 
-        print("DEBUG: Reading file...")
+        logger.debug("reading_file")
         content = await file.read()
 
         public_url = ""
@@ -2044,21 +2153,21 @@ async def upload_course_image(course_id: str, file: UploadFile = File(...)):
                 break
             try:
                 file_path = f"course_{course_id}_{unique_id}.{file_ext}"
-                print(f"DEBUG: Trying bucket '{bucket_name}' with path '{file_path}'...")
+                logger.debug("trying_bucket", bucket=bucket_name, path=file_path)
 
                 res = supabase.storage.from_(bucket_name).upload(
                     file_path,
                     content,
                     {"upsert": "true", "content-type": file.content_type or "image/jpeg"}
                 )
-                print(f"DEBUG: Upload result for {bucket_name}: {res}")
+                logger.debug("upload_result", bucket=bucket_name)
 
                 public_url = supabase.storage.from_(bucket_name).get_public_url(file_path)
-                print(f"DEBUG: Public URL from {bucket_name}: {public_url}")
+                logger.debug("public_url_generated", bucket=bucket_name, url=public_url[:50] + "..." if len(public_url) > 50 else public_url)
                 upload_success = True
 
             except Exception as bucket_err:
-                print(f"DEBUG: Bucket '{bucket_name}' failed: {bucket_err}")
+                logger.debug("bucket_upload_failed", bucket=bucket_name, error=str(bucket_err))
                 continue
 
         if not upload_success or not public_url:
@@ -2068,7 +2177,7 @@ async def upload_course_image(course_id: str, file: UploadFile = File(...)):
             )
 
         # 2. Update Course - try to update the database with the image URL
-        print("DEBUG: Updating course table...")
+        logger.debug("updating_course_table", course_id=course_id)
         db_update_success = False
 
         # Try different column names that might exist in the table
@@ -2085,9 +2194,9 @@ async def upload_course_image(course_id: str, file: UploadFile = File(...)):
             try:
                 supabase.table("courses").update(column_data).eq("id", course_id).execute()
                 db_update_success = True
-                print(f"DEBUG: Successfully updated with column: {list(column_data.keys())[0]}")
+                logger.debug("course_column_updated", column=list(column_data.keys())[0])
             except Exception as col_err:
-                print(f"DEBUG: Column {list(column_data.keys())[0]} failed: {col_err}")
+                logger.debug("course_column_failed", column=list(column_data.keys())[0], error=str(col_err))
                 continue
 
         if not db_update_success:
@@ -2101,7 +2210,7 @@ async def upload_course_image(course_id: str, file: UploadFile = File(...)):
                 "warning": "Imagem enviada com sucesso, mas não foi possível salvar no banco. Adicione a coluna 'image_url' na tabela 'courses'."
             }
 
-        print("DEBUG: Update success.")
+        logger.debug("course_update_success", course_id=course_id)
         return {"image_url": public_url}
 
     except HTTPException:
@@ -2115,7 +2224,7 @@ async def upload_course_image(course_id: str, file: UploadFile = File(...)):
 @app.post("/disciplines/{discipline_id}/image", tags=["Upload"], summary="Upload de imagem da disciplina")
 async def upload_discipline_image(discipline_id: str, file: UploadFile = File(...)):
     """Faz upload de uma imagem de capa para a disciplina. Formatos aceitos: JPG, PNG, GIF."""
-    print(f"DEBUG: Starting upload for discipline {discipline_id}")
+    logger.debug("discipline_upload_start", discipline_id=discipline_id)
     if not supabase: raise HTTPException(status_code=503, detail="DB Disconnected")
     try:
         filename = file.filename or "unknown.jpg"
@@ -2128,13 +2237,13 @@ async def upload_discipline_image(discipline_id: str, file: UploadFile = File(..
         # Try multiple buckets
         for bucket in ["courses", "avatars", "public"]:
             try:
-                print(f"DEBUG: Trying bucket '{bucket}'...")
+                logger.debug("trying_bucket", bucket=bucket)
                 supabase.storage.from_(bucket).upload(file_path, content, {"upsert": "true", "content-type": file.content_type})
                 public_url = supabase.storage.from_(bucket).get_public_url(file_path)
-                print(f"DEBUG: Success! URL: {public_url}")
+                logger.debug("upload_success", bucket=bucket, url=public_url[:50] + "..." if len(public_url) > 50 else public_url)
                 break
             except Exception as bucket_err:
-                print(f"DEBUG: Bucket '{bucket}' failed: {bucket_err}")
+                logger.debug("bucket_failed", bucket=bucket, error=str(bucket_err))
                 continue
 
         if not public_url:
@@ -2148,9 +2257,9 @@ async def upload_discipline_image(discipline_id: str, file: UploadFile = File(..
             try:
                 supabase.table("disciplines").update({column_name: public_url}).eq("id", discipline_id).execute()
                 db_update_success = True
-                print(f"DEBUG: Successfully updated column '{column_name}'")
+                logger.debug("discipline_column_updated", column=column_name)
             except Exception as col_err:
-                print(f"DEBUG: Column '{column_name}' failed: {col_err}")
+                logger.debug("db_column_failed", column=column_name, error=str(col_err))
                 continue
 
         if not db_update_success:
@@ -2394,7 +2503,7 @@ def extract_text_from_pdf(content_bytes: bytes) -> str:
                     text_content.append(page_text)
 
         extracted = "\n\n".join(text_content)
-        print(f"DEBUG: Extracted {len(extracted)} characters from PDF")
+        logger.debug("pdf_extracted", chars=len(extracted))
         return extracted
     except ImportError:
         print("WARNING: pdfplumber not installed. Run: pip install pdfplumber")
@@ -2426,7 +2535,7 @@ async def upload_content_file(chapter_id: str, file: UploadFile = File(...)):
         filename = file.filename or "unknown"
         file_ext = filename.split(".")[-1].lower() if "." in filename else "bin"
 
-        print(f"DEBUG: Starting upload for file: {filename}, extension: {file_ext}")
+        logger.debug("upload_start", filename=filename, extension=file_ext)
 
         # Determine content type
         content_type_map = {
@@ -2458,11 +2567,11 @@ async def upload_content_file(chapter_id: str, file: UploadFile = File(...)):
         safe_filename = safe_filename[:50]  # Limit length
 
         file_path = f"{unique_id}_{safe_filename}"
-        print(f"DEBUG: Safe file path: {file_path}, mime: {mime_type}")
+        logger.debug("file_path_generated", path=file_path, mime=mime_type)
 
         # Read file content
         content_bytes = await file.read()
-        print(f"DEBUG: Read {len(content_bytes)} bytes")
+        logger.debug("file_read", bytes=len(content_bytes))
 
         # Extract text from supported file types
         extracted_text = ""
@@ -2482,13 +2591,13 @@ async def upload_content_file(chapter_id: str, file: UploadFile = File(...)):
 
         for bucket_name in buckets_to_try:
             try:
-                print(f"DEBUG: Trying bucket '{bucket_name}'...")
+                logger.debug("trying_bucket", bucket=bucket_name)
                 res = supabase.storage.from_(bucket_name).upload(file_path, content_bytes, {"upsert": "true", "content-type": mime_type})
                 public_url = supabase.storage.from_(bucket_name).get_public_url(file_path)
-                print(f"DEBUG: Success! URL: {public_url}")
+                logger.debug("upload_success", bucket=bucket_name)
                 break
             except Exception as bucket_err:
-                print(f"DEBUG: Bucket '{bucket_name}' failed: {bucket_err}")
+                logger.debug("bucket_failed", bucket=bucket_name, error=str(bucket_err))
                 continue
 
         if not public_url:
@@ -2521,7 +2630,7 @@ async def generic_upload(file: UploadFile = File(...), type: Optional[str] = For
         filename = file.filename or "unknown"
         file_ext = filename.split(".")[-1].lower() if "." in filename else "bin"
 
-        print(f"DEBUG: Generic upload for file: {filename}, type hint: {type}")
+        logger.debug("generic_upload_start", filename=filename, type_hint=type)
 
         # Determine MIME type
         mime_type_map = {
@@ -2545,11 +2654,11 @@ async def generic_upload(file: UploadFile = File(...), type: Optional[str] = For
         folder = type or "files"
         file_path = f"{folder}/{unique_id}_{safe_filename}"
 
-        print(f"DEBUG: Safe file path: {file_path}")
+        logger.debug("file_path_generated", path=file_path)
 
         # Read file content
         content_bytes = await file.read()
-        print(f"DEBUG: Read {len(content_bytes)} bytes")
+        logger.debug("file_read", bytes=len(content_bytes))
 
         # Upload to storage
         public_url = ""
@@ -2557,13 +2666,13 @@ async def generic_upload(file: UploadFile = File(...), type: Optional[str] = For
 
         for bucket_name in buckets_to_try:
             try:
-                print(f"DEBUG: Trying bucket '{bucket_name}'...")
+                logger.debug("trying_bucket", bucket=bucket_name)
                 supabase.storage.from_(bucket_name).upload(file_path, content_bytes, {"upsert": "true", "content-type": mime_type})
                 public_url = supabase.storage.from_(bucket_name).get_public_url(file_path)
-                print(f"DEBUG: Success! URL: {public_url}")
+                logger.debug("upload_success", bucket=bucket_name)
                 break
             except Exception as bucket_err:
-                print(f"DEBUG: Bucket '{bucket_name}' failed: {bucket_err}")
+                logger.debug("bucket_failed", bucket=bucket_name, error=str(bucket_err))
                 continue
 
         if not public_url:
@@ -2930,7 +3039,7 @@ async def generate_audio(request: dict):
         from elevenlabs.client import ElevenLabs
         client = ElevenLabs(api_key=ELEVENLABS_API_KEY)
 
-        print(f"DEBUG: Generating audio for {len(text)} characters with voice {voice_id}")
+        logger.debug("tts_generate_start", chars=len(text), voice_id=voice_id)
 
         # Gerar áudio
         audio_generator = client.text_to_speech.convert(
@@ -2943,7 +3052,7 @@ async def generate_audio(request: dict):
         # Converter generator para bytes
         audio_bytes = b"".join(audio_generator)
 
-        print(f"DEBUG: Generated {len(audio_bytes)} bytes of audio")
+        logger.debug("tts_audio_generated", bytes=len(audio_bytes))
 
         # Salvar no Supabase Storage
         unique_id = str(uuid.uuid4())[:8]
@@ -2958,10 +3067,10 @@ async def generate_audio(request: dict):
                     {"upsert": "true", "content-type": "audio/mpeg"}
                 )
                 public_url = supabase.storage.from_(bucket_name).get_public_url(file_path)
-                print(f"DEBUG: Audio saved to {bucket_name}/{file_path}")
+                logger.debug("audio_saved", bucket=bucket_name, path=file_path)
                 break
             except Exception as bucket_err:
-                print(f"DEBUG: Bucket '{bucket_name}' failed: {bucket_err}")
+                logger.debug("bucket_failed", bucket=bucket_name, error=str(bucket_err))
                 continue
 
         if not public_url:
@@ -2971,7 +3080,7 @@ async def generate_audio(request: dict):
         if content_id:
             try:
                 supabase.table("contents").update({"audio_url": public_url}).eq("id", content_id).execute()
-                print(f"DEBUG: Updated content {content_id} with audio URL")
+                logger.debug("content_updated_audio", content_id=content_id)
             except Exception as db_err:
                 print(f"WARNING: Could not update content: {db_err}")
 
@@ -3046,7 +3155,7 @@ async def generate_audio_summary(request: dict):
         )
 
         script_text = script_response.choices[0].message.content
-        print(f"DEBUG: Generated script with {len(script_text)} characters")
+        logger.debug("script_generated", chars=len(script_text))
 
         # 3. Gerar áudio com ElevenLabs
         from elevenlabs.client import ElevenLabs
@@ -3060,7 +3169,7 @@ async def generate_audio_summary(request: dict):
         )
 
         audio_bytes = b"".join(audio_generator)
-        print(f"DEBUG: Generated {len(audio_bytes)} bytes of audio")
+        logger.debug("summary_audio_generated", bytes=len(audio_bytes))
 
         # 4. Salvar no Storage
         unique_id = str(uuid.uuid4())[:8]
@@ -3077,20 +3186,20 @@ async def generate_audio_summary(request: dict):
                 public_url = supabase.storage.from_(bucket_name).get_public_url(file_path)
                 break
             except Exception as bucket_err:
-                print(f"DEBUG: Bucket '{bucket_name}' failed: {bucket_err}")
+                logger.debug("bucket_failed", bucket=bucket_name, error=str(bucket_err))
                 continue
 
         if not public_url:
             raise HTTPException(status_code=500, detail="Failed to save audio to storage. Make sure a bucket exists (audio-files, courses, or public)")
 
-        print(f"DEBUG: Audio uploaded successfully. URL: {public_url}")
+        logger.debug("audio_uploaded", url=public_url[:50] + "..." if len(public_url) > 50 else public_url)
 
         # 5. Atualizar o conteúdo com a URL do áudio
         db_update_success = False
         try:
             update_result = supabase.table("contents").update({"audio_url": public_url}).eq("id", content_id).execute()
             db_update_success = True
-            print(f"DEBUG: Database updated successfully. Rows affected: {len(update_result.data) if update_result.data else 0}")
+            logger.debug("db_updated", content_id=content_id, rows=len(update_result.data) if update_result.data else 0)
         except Exception as db_err:
             print(f"WARNING: Could not update content in database: {db_err}")
             # Continua mesmo se o banco falhar - a URL ainda foi gerada
@@ -3157,7 +3266,7 @@ async def transcribe_audio(request: TranscriptionRequest):
         if not audio_url:
             raise HTTPException(status_code=400, detail="Nenhuma URL de áudio encontrada")
 
-        print(f"DEBUG: Transcribing audio from URL: {audio_url}")
+        logger.debug("transcription_start", url=audio_url[:50] + "..." if len(audio_url) > 50 else audio_url)
 
         # Baixar o arquivo de áudio
         import httpx
@@ -3167,7 +3276,7 @@ async def transcribe_audio(request: TranscriptionRequest):
                 raise HTTPException(status_code=400, detail=f"Não foi possível baixar o áudio: {response.status_code}")
             audio_bytes = response.content
 
-        print(f"DEBUG: Downloaded {len(audio_bytes)} bytes of audio")
+        logger.debug("audio_downloaded", bytes=len(audio_bytes))
 
         # Determinar extensão do arquivo
         file_ext = "mp3"
@@ -3196,7 +3305,7 @@ async def transcribe_audio(request: TranscriptionRequest):
                 )
 
             transcribed_text = transcript.text
-            print(f"DEBUG: Transcribed {len(transcribed_text)} characters")
+            logger.debug("transcription_complete", chars=len(transcribed_text))
 
             # Atualizar o conteúdo com o texto transcrito
             db_update_success = False
@@ -3205,7 +3314,7 @@ async def transcribe_audio(request: TranscriptionRequest):
                     "text_content": transcribed_text
                 }).eq("id", request.content_id).execute()
                 db_update_success = True
-                print(f"DEBUG: Database updated with transcription")
+                logger.debug("transcription_saved", content_id=request.content_id)
             except Exception as db_err:
                 print(f"WARNING: Could not update content in database: {db_err}")
 

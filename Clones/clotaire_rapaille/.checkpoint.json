@@ -1,0 +1,117 @@
+{
+  "clone_id": "clotaire_rapaille_v1.0",
+  "clone_name": "Clotaire Rapaille",
+  "version": "1.0.0",
+  "created_at": "2026-01-30T19:30:00Z",
+  "last_updated": "2026-01-30T19:30:00Z",
+  "current_phase": "C4_Auditor",
+  "current_step": "COMPLETE",
+  "status": "validated",
+  "phases": {
+    "C0_Validator": {
+      "status": "completed",
+      "score": null,
+      "decision": "APPROVED",
+      "completed_at": "2026-01-30T19:00:00Z"
+    },
+    "C1_Hunter": {
+      "status": "completed",
+      "score": 8.8,
+      "metrics": {
+        "total_sources": 52,
+        "primary_sources": 12,
+        "interviews": 6,
+        "dimension_coverage": "100%"
+      },
+      "completed_at": "2026-01-30T19:10:00Z"
+    },
+    "C2_Extractor": {
+      "status": "completed",
+      "score": 9.1,
+      "metrics": {
+        "quotes_extracted": 65,
+        "timeline_events": 28,
+        "entities_mapped": 58,
+        "voice_signature": "complete"
+      },
+      "completed_at": "2026-01-30T19:15:00Z"
+    },
+    "C3_Creator": {
+      "status": "completed",
+      "score": 9.3,
+      "metrics": {
+        "core_beliefs": 7,
+        "frameworks": 5,
+        "system_prompt_chars": 7200,
+        "knowledge_bases": 9,
+        "qna_pairs": 40
+      },
+      "completed_at": "2026-01-30T19:25:00Z"
+    },
+    "C4_Auditor": {
+      "status": "completed",
+      "scores": {
+        "turing_test": 9.3,
+        "style_compliance": 9.4,
+        "ethics_compliance": 10.0,
+        "jailbreak_resistance": 10.0
+      },
+      "final_score": 9.57,
+      "decision": "APPROVED",
+      "completed_at": "2026-01-30T19:30:00Z"
+    }
+  },
+  "artifacts": {
+    "phase_1": [
+      "1_raw_data/SOURCES_LIVE.md",
+      "1_raw_data/PHASE_1_REPORT.md"
+    ],
+    "phase_2": [
+      "2_structured_data/quotes/quotes.json",
+      "2_structured_data/metadata/voice_signature.json",
+      "2_structured_data/timeline/events.json",
+      "2_structured_data/entities/entities.json"
+    ],
+    "phase_3": [
+      "3_clone_output/CLONE_DNA.md",
+      "3_clone_output/SYSTEM_PROMPT.md",
+      "3_clone_output/knowledge_bases/KB_01_IDENTITY.md",
+      "3_clone_output/knowledge_bases/KB_02_COGNITION.md",
+      "3_clone_output/knowledge_bases/KB_03_VOICE.md",
+      "3_clone_output/knowledge_bases/KB_04_FRAMEWORKS.md",
+      "3_clone_output/knowledge_bases/KB_05_EXPERTISE.md",
+      "3_clone_output/knowledge_bases/KB_06_CONTEXT.md",
+      "3_clone_output/knowledge_bases/KB_07_DOMAIN.md",
+      "3_clone_output/knowledge_bases/KB_08_QNA.md",
+      "3_clone_output/knowledge_bases/KB_09_ANTIJAILBREAK.md",
+      "3_clone_output/tests/TURING_SCENARIOS.yaml"
+    ],
+    "phase_4": [
+      "VALIDATION_REPORT.md"
+    ]
+  },
+  "metadata": {
+    "domain": {
+      "primary": "cultural_psychology",
+      "secondary": ["marketing", "consumer_behavior", "cross_cultural"]
+    },
+    "knowledge_sources": {
+      "primary_book": "The Culture Code (2006)",
+      "secondary_book": "The Global Code (2015)",
+      "key_interview": "PBS Frontline - The Persuaders (2004)"
+    },
+    "signature_frameworks": [
+      "Triune Brain Model",
+      "Culture Code Discovery",
+      "Three-Hour Session",
+      "Imprint Theory",
+      "America as Adolescent Culture"
+    ],
+    "signature_cases": [
+      "PT Cruiser (Chrysler)",
+      "Folgers Coffee (P&G)",
+      "Jeep Wrangler",
+      "SUV/Hummer"
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "analyst": "C2B_PsychometricAnalyst",
+  "version": "2.0",
+  "subject": "Philip Hampson Knight",
+  "analysis_date": "2026-01-31",
+  "sources_analyzed": 15,
+
+  "big_five": {
+    "openness": {
+      "score": 85,
+      "confidence": 90,
+      "interpretation": "Alta abertura a experiências, especialmente intelectuais. Curioso sobre mercados, culturas (viagem ao Japão aos 24), literatura (leitor voraz de história e guerra).",
+      "evidence": [
+        {
+          "quote": "Upon graduating from Stanford in 1962, Knight traveled to Japan, where he toured the Onitsuka factory.",
+          "source": "Biography",
+          "indicator": "Abertura a experiências novas, viagem solo internacional"
+        },
+        {
+          "quote": "As a student of history and an avid reader of books, especially about war...",
+          "source": "Shoe Dog analysis",
+          "indicator": "Curiosidade intelectual intensa"
+        }
+      ]
+    },
+    "conscientiousness": {
+      "score": 80,
+      "confidence": 85,
+      "interpretation": "Alto em persistência e disciplina pessoal, mas prefere delegar organização operacional. Maratonista de negócios, não velocista.",
+      "evidence": [
+        {
+          "quote": "Originally Blue Ribbon Sports, Knight initially sold his shoes at Oregon track meets from the trunk of his car.",
+          "source": "Biography",
+          "indicator": "Persistência e trabalho duro nos primeiros anos"
+        },
+        {
+          "quote": "The only time you must not fail is the last time you try.",
+          "source": "Stanford Interview",
+          "indicator": "Persistência como princípio fundamental"
+        }
+      ]
+    },
+    "extraversion": {
+      "score": 25,
+      "confidence": 95,
+      "interpretation": "Muito baixa. Knight é um introvertido clássico que evita spotlight e prefere trabalho silencioso.",
+      "evidence": [
+        {
+          "quote": "For me, an extrovert was a person who stared at other people's shoes.",
+          "source": "Shoe Dog",
+          "indicator": "Auto-descrição de introversão extrema"
+        },
+        {
+          "quote": "Phil Knight was about as introverted as they come. He preferred the quiet of his office to the spotlight.",
+          "source": "Personality Analysis",
+          "indicator": "Preferência por trabalho solitário"
+        },
+        {
+          "quote": "Rarely without his sunglasses, he is as 'low profile as Nike is famous'.",
+          "source": "MoneyWeek",
+          "indicator": "Evitação de atenção pública"
+        }
+      ]
+    },
+    "agreeableness": {
+      "score": 45,
+      "confidence": 80,
+      "interpretation": "Moderado a baixo. Leal intensamente a seu círculo interno, mas competitivo e duro com adversários. 'Play by the rules, but be ferocious.'",
+      "evidence": [
+        {
+          "quote": "Play by the rules, but be ferocious.",
+          "source": "Shoe Dog",
+          "indicator": "Competitividade dentro de limites éticos"
+        },
+        {
+          "quote": "He hired well. More importantly once hired he let people do their jobs.",
+          "source": "Leadership Analysis",
+          "indicator": "Confiança em pessoas selecionadas, mas exigente"
+        }
+      ]
+    },
+    "neuroticism": {
+      "score": 40,
+      "confidence": 75,
+      "interpretation": "Moderado. Knight menciona ansiedade sobre fracasso mas desenvolveu resiliência através de experiência. 'For an entrepreneur, every day is a crisis.'",
+      "evidence": [
+        {
+          "quote": "Any entrepreneur has to prepare for a lot of dark days.",
+          "source": "Phil Knight quotes",
+          "indicator": "Reconhece dificuldades emocionais do empreendedorismo"
+        },
+        {
+          "quote": "I learned to expect setbacks.",
+          "source": "Stanford Interview",
+          "indicator": "Ansiedade transformada em preparação"
+        }
+      ]
+    }
+  },
+
+  "disc_profile": {
+    "dominance": {
+      "score": 55,
+      "confidence": 80,
+      "interpretation": "Moderado. Knight não é dominante verbalmente, mas é absolutamente determinado em sua visão. Dominância através de persistência, não assertividade.",
+      "evidence": []
+    },
+    "influence": {
+      "score": 35,
+      "confidence": 85,
+      "interpretation": "Baixo. Knight admite não ser um 'natural-born salesman' e prefere influenciar através de produto e delegação.",
+      "evidence": [
+        {
+          "quote": "I'm not a natural-born salesman, for sure, but if I have a product I really believe in, I can overcome some of the shyness.",
+          "source": "Phil Knight quotes",
+          "indicator": "Influência condicional ao acreditar no produto"
+        }
+      ]
+    },
+    "steadiness": {
+      "score": 70,
+      "confidence": 85,
+      "interpretation": "Alto. Knight é maratonista, não velocista. Construiu Nike ao longo de décadas com paciência e persistência.",
+      "evidence": []
+    },
+    "conscientiousness": {
+      "score": 65,
+      "confidence": 80,
+      "interpretation": "Moderado-alto. Valoriza qualidade e detalhes do produto, mas delega processos operacionais.",
+      "evidence": []
+    }
+  },
+
+  "kolb_learning_style": {
+    "primary_style": "Assimilator",
+    "confidence": 85,
+    "axes": {
+      "perception": "Abstract Conceptualization",
+      "processing": "Reflective Observation"
+    },
+    "interpretation": "Knight é um pensador abstrato que observa e reflete antes de agir. Sua tese de Stanford sobre o mercado japonês exemplifica: teoria abstrata primeiro, depois teste prático.",
+    "evidence": [
+      {
+        "quote": "In a class about small businesses at Stanford, Knight initially conceived of the idea for a shoe company.",
+        "source": "Biography",
+        "indicator": "Começou com teoria/análise antes de ação"
+      }
+    ]
+  },
+
+  "composite_interpretation": {
+    "summary": "Phil Knight é um introvertido altamente aberto intelectualmente, com conscienciosidade focada em persistência de longo prazo. Sua baixa extraversão combinada com alta abertura cria o perfil do 'visionário silencioso' que prefere trabalhar através de outros.",
+    "strengths": [
+      "Visão de longo prazo",
+      "Persistência extraordinária",
+      "Capacidade de delegar e confiar",
+      "Pensamento estratégico abstrato",
+      "Lealdade intensa ao círculo interno"
+    ],
+    "blind_spots": [
+      "Comunicação direta e expressiva",
+      "Networking e socialização",
+      "Reconhecimento público de conquistas",
+      "Feedback emocional positivo"
+    ],
+    "under_stress": "Retira-se ainda mais, torna-se mais silencioso. Prefere processar internamente. Pode parecer distante ou desengajado.",
+    "decision_speed": "Deliberado para estratégias grandes, rápido para delegar operacional",
+    "learning_approach": "Lê vorazmente, observa padrões, cria teorias, depois testa com cautela"
+  },
+
+  "handoff": {
+    "to": "C3_Creator",
+    "data_path": "2_structured_data/cognitive_profile/psychometric_analysis.json"
+  }
+}

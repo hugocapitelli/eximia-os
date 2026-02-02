@@ -1,0 +1,282 @@
+{
+  "metadata": {
+    "clone_id": "clotaire_rapaille_v1.0",
+    "total_events": 28,
+    "generated_by": "C2D_BiographicAnalyst",
+    "date": "2026-01-30"
+  },
+  "timeline": [
+    {
+      "id": 1,
+      "year": "~1950s",
+      "event": "Birth in France",
+      "type": "biographical",
+      "impact": "French cultural foundation",
+      "significance": "high"
+    },
+    {
+      "id": 2,
+      "year": "~1970",
+      "event": "Degree from Paris Institute of Political Sciences (Sciences Po)",
+      "type": "educational",
+      "impact": "Political and social science foundation",
+      "significance": "high"
+    },
+    {
+      "id": 3,
+      "year": "~1972",
+      "event": "PhD in Social Psychology from Paris-Sorbonne University",
+      "type": "educational",
+      "impact": "Academic credentials established",
+      "significance": "high"
+    },
+    {
+      "id": 4,
+      "year": "1966-1968",
+      "event": "Cultural attaché at French Embassy in Managua, Nicaragua",
+      "type": "professional",
+      "impact": "Cross-cultural experience, diplomatic skills",
+      "significance": "medium"
+    },
+    {
+      "id": 5,
+      "year": "~1968-1978",
+      "event": "Ten years teaching at Sorbonne University",
+      "type": "academic",
+      "impact": "Academic credibility, research development",
+      "significance": "high"
+    },
+    {
+      "id": 6,
+      "year": "~1968-1978",
+      "event": "Private practice as psychoanalyst (Freudian and Jungian approaches)",
+      "type": "professional",
+      "impact": "Clinical experience with unconscious mind",
+      "significance": "high"
+    },
+    {
+      "id": 7,
+      "year": "~1970s",
+      "event": "Work with autistic children as psychologist",
+      "type": "foundational",
+      "impact": "CRITICAL - Foundation for imprint theory",
+      "significance": "critical"
+    },
+    {
+      "id": 8,
+      "year": "1972",
+      "event": "Published 'Laing' (Editions Universitaires, Paris)",
+      "type": "publication",
+      "impact": "Early academic publishing",
+      "significance": "low"
+    },
+    {
+      "id": 9,
+      "year": "1973",
+      "event": "Published 'La Relation Creatrice' (Editions Universitaires, Paris)",
+      "type": "publication",
+      "impact": "Academic contribution",
+      "significance": "low"
+    },
+    {
+      "id": 10,
+      "year": "1975",
+      "event": "Published 'Wisdom of Madness' (Michigan State University)",
+      "type": "publication",
+      "impact": "American academic connection",
+      "significance": "medium"
+    },
+    {
+      "id": 11,
+      "year": "1976",
+      "event": "Founded Archetype Discoveries Worldwide",
+      "type": "entrepreneurial",
+      "impact": "CRITICAL - Business vehicle for methodology",
+      "significance": "critical"
+    },
+    {
+      "id": 12,
+      "year": "Early 1980s",
+      "event": "Immigration to the United States",
+      "type": "biographical",
+      "impact": "Career shift to American market",
+      "significance": "critical"
+    },
+    {
+      "id": 13,
+      "year": "1981",
+      "event": "Published 'Escuchelo: Es Su Hijo' (Spanish)",
+      "type": "publication",
+      "impact": "International reach",
+      "significance": "low"
+    },
+    {
+      "id": 14,
+      "year": "~1990s",
+      "event": "Begins consulting for Fortune 100 companies",
+      "type": "professional",
+      "impact": "Major corporate credibility",
+      "significance": "high"
+    },
+    {
+      "id": 15,
+      "year": "~1990s",
+      "event": "Folgers Coffee campaign with P&G",
+      "type": "case_study",
+      "impact": "Major success story, validates methodology",
+      "significance": "high"
+    },
+    {
+      "id": 16,
+      "year": "1998-2000",
+      "event": "PT Cruiser archetype research for Chrysler",
+      "type": "case_study",
+      "impact": "CRITICAL - Most famous success story",
+      "significance": "critical"
+    },
+    {
+      "id": 17,
+      "year": "2000",
+      "event": "PT Cruiser launches as 'hottest selling car worldwide'",
+      "type": "validation",
+      "impact": "Public validation of methodology",
+      "significance": "high"
+    },
+    {
+      "id": 18,
+      "year": "2001",
+      "event": "Published 'Seven Secrets of Marketing in a Multi-Cultural World'",
+      "type": "publication",
+      "impact": "Marketing methodology book",
+      "significance": "medium"
+    },
+    {
+      "id": 19,
+      "year": "2003",
+      "event": "Published 'Social Cancer: Decoding the Archetype of Terrorism'",
+      "type": "publication",
+      "impact": "Application to social issues",
+      "significance": "medium"
+    },
+    {
+      "id": 20,
+      "year": "November 9, 2004",
+      "event": "Featured on PBS Frontline 'The Persuaders'",
+      "type": "media",
+      "impact": "CRITICAL - Major public exposure, methodology explained",
+      "significance": "critical"
+    },
+    {
+      "id": 21,
+      "year": "~2005",
+      "event": "60 Minutes II appearance",
+      "type": "media",
+      "impact": "National television exposure",
+      "significance": "high"
+    },
+    {
+      "id": 22,
+      "year": "~2005",
+      "event": "New York Times Sunday Styles front page feature",
+      "type": "media",
+      "impact": "Mainstream recognition",
+      "significance": "high"
+    },
+    {
+      "id": 23,
+      "year": "2006",
+      "event": "Published 'The Culture Code'",
+      "type": "publication",
+      "impact": "CRITICAL - Signature book, #9 Business Week bestseller",
+      "significance": "critical"
+    },
+    {
+      "id": 24,
+      "year": "2006",
+      "event": "Salon interview - 'In America, Seduction is Dishonest'",
+      "type": "media",
+      "impact": "Detailed profile and cultural commentary",
+      "significance": "medium"
+    },
+    {
+      "id": 25,
+      "year": "2015",
+      "event": "Published 'The Global Code'",
+      "type": "publication",
+      "impact": "Framework evolution - Global Tribe concept",
+      "significance": "high"
+    },
+    {
+      "id": 26,
+      "year": "2017",
+      "event": "QRCA Views Interview",
+      "type": "media",
+      "impact": "Later career reflection",
+      "significance": "medium"
+    },
+    {
+      "id": 27,
+      "year": "Ongoing",
+      "event": "Continues consulting via Archetype Discoveries Worldwide",
+      "type": "professional",
+      "impact": "$200,000/day consulting rate",
+      "significance": "high"
+    },
+    {
+      "id": 28,
+      "year": "Ongoing",
+      "event": "Personal adviser to 10+ Fortune 100 CEOs",
+      "type": "professional",
+      "impact": "Executive-level credibility",
+      "significance": "high"
+    }
+  ],
+  "formative_influences": {
+    "theoretical": [
+      {
+        "name": "Konrad Lorenz",
+        "contribution": "Imprint theory",
+        "impact": "Foundation for cultural imprinting concept"
+      },
+      {
+        "name": "John Bowlby",
+        "contribution": "Attachment theory",
+        "impact": "Understanding early emotional connections"
+      },
+      {
+        "name": "Bruno Bettelheim",
+        "contribution": "Work on autism",
+        "impact": "Direct influence from clinical work"
+      },
+      {
+        "name": "Paul D. MacLean",
+        "contribution": "Triune brain theory",
+        "impact": "Core neurological framework (reptilian brain)"
+      },
+      {
+        "name": "Sigmund Freud",
+        "contribution": "Individual unconscious",
+        "impact": "Psychoanalytic foundation"
+      },
+      {
+        "name": "Carl Jung",
+        "contribution": "Collective unconscious, archetypes",
+        "impact": "Archetype framework, collective patterns"
+      }
+    ],
+    "experiential": [
+      {
+        "experience": "Work with autistic children",
+        "impact": "Discovered importance of first emotional imprint"
+      },
+      {
+        "experience": "French vs American cultural shift",
+        "impact": "Developed comparative cultural analysis capability"
+      },
+      {
+        "experience": "Diplomatic service in Nicaragua",
+        "impact": "Cross-cultural communication skills"
+      }
+    ]
+  }
+}

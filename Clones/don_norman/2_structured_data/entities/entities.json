@@ -1,0 +1,696 @@
+{
+  "persona": "Don Norman",
+  "total_entities": 85,
+  "extraction_date": "2026-01-30",
+  "entities": [
+    {
+      "id": "ENT001",
+      "name": "Affordances",
+      "type": "CONCEPT",
+      "description": "The perceived and actual properties of an object that determine how it could possibly be used. Originally from James Gibson, Norman popularized it in design.",
+      "frequency": "very_high",
+      "sources": ["The Design of Everyday Things", "all interviews"]
+    },
+    {
+      "id": "ENT002",
+      "name": "Signifiers",
+      "type": "CONCEPT",
+      "description": "Signals that communicate where and how an action should take place. Norman introduced this term to clarify affordances.",
+      "frequency": "very_high",
+      "sources": ["The Design of Everyday Things (2013)"]
+    },
+    {
+      "id": "ENT003",
+      "name": "Constraints",
+      "type": "CONCEPT",
+      "description": "Physical, cultural, semantic, and logical limitations that guide user behavior and prevent errors.",
+      "frequency": "high",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT004",
+      "name": "Mapping",
+      "type": "CONCEPT",
+      "description": "The relationship between controls and their effects. Natural mappings follow physical, cultural, or semantic principles.",
+      "frequency": "high",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT005",
+      "name": "Feedback",
+      "type": "CONCEPT",
+      "description": "Communication about the results of an action. Must be immediate, informative, and appropriate.",
+      "frequency": "high",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT006",
+      "name": "Conceptual Model",
+      "type": "CONCEPT",
+      "description": "A simplified explanation of how something works, held by both designers and users.",
+      "frequency": "very_high",
+      "sources": ["The Design of Everyday Things", "multiple interviews"]
+    },
+    {
+      "id": "ENT007",
+      "name": "Mental Model",
+      "type": "CONCEPT",
+      "description": "The user's internal representation of how a system works, which may differ from the designer's model.",
+      "frequency": "very_high",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT008",
+      "name": "Gulf of Execution",
+      "type": "FRAMEWORK",
+      "description": "The gap between a user's intention and the physical actions allowed by the system.",
+      "frequency": "high",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT009",
+      "name": "Gulf of Evaluation",
+      "type": "FRAMEWORK",
+      "description": "The gap between the system's state and the user's perception of that state.",
+      "frequency": "high",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT010",
+      "name": "Visceral Design",
+      "type": "FRAMEWORK",
+      "description": "The initial, automatic emotional response to appearance - the 'gut reaction' to a product's look and feel.",
+      "frequency": "high",
+      "sources": ["Emotional Design"]
+    },
+    {
+      "id": "ENT011",
+      "name": "Behavioral Design",
+      "type": "FRAMEWORK",
+      "description": "The level of design concerned with use and experience - how well does the product work?",
+      "frequency": "high",
+      "sources": ["Emotional Design"]
+    },
+    {
+      "id": "ENT012",
+      "name": "Reflective Design",
+      "type": "FRAMEWORK",
+      "description": "The level of design about message, culture, and meaning - what does using this product say about me?",
+      "frequency": "high",
+      "sources": ["Emotional Design"]
+    },
+    {
+      "id": "ENT013",
+      "name": "Norman Door",
+      "type": "CONCEPT",
+      "description": "A door whose design makes it unclear whether to push or pull. Term coined by others based on Norman's work.",
+      "frequency": "very_high",
+      "sources": ["99% Invisible", "internet culture"]
+    },
+    {
+      "id": "ENT014",
+      "name": "Human-Centered Design (HCD)",
+      "type": "FRAMEWORK",
+      "description": "Design approach that starts with understanding people, their needs, and their contexts.",
+      "frequency": "very_high",
+      "sources": ["all works", "NN/g"]
+    },
+    {
+      "id": "ENT015",
+      "name": "User Experience (UX)",
+      "type": "CONCEPT",
+      "description": "Term coined by Norman at Apple to encompass all aspects of the user's interaction with a company and its products.",
+      "frequency": "very_high",
+      "sources": ["interviews", "Apple history"]
+    },
+    {
+      "id": "ENT016",
+      "name": "Design Thinking",
+      "type": "FRAMEWORK",
+      "description": "Creative problem-solving methodology: empathize, define, ideate, prototype, test.",
+      "frequency": "high",
+      "sources": ["IDEO U", "interviews"]
+    },
+    {
+      "id": "ENT017",
+      "name": "Humanity-Centered Design",
+      "type": "FRAMEWORK",
+      "description": "Evolution of HCD that considers broader societal and environmental impacts, not just individual users.",
+      "frequency": "medium",
+      "sources": ["recent interviews 2020+"]
+    },
+    {
+      "id": "ENT018",
+      "name": "DesignX",
+      "type": "FRAMEWORK",
+      "description": "Initiative focused on design for complex sociotechnical systems.",
+      "frequency": "medium",
+      "sources": ["UCSD Design Lab"]
+    },
+    {
+      "id": "ENT019",
+      "name": "Discoverability",
+      "type": "CONCEPT",
+      "description": "The ability to determine what actions are possible and the current state of a device.",
+      "frequency": "high",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT020",
+      "name": "Root Cause Analysis",
+      "type": "FRAMEWORK",
+      "description": "Systematic investigation of why errors occur, looking at system design rather than human blame.",
+      "frequency": "high",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT021",
+      "name": "Jakob Nielsen",
+      "type": "PERSON",
+      "description": "Usability pioneer, co-founder of Nielsen Norman Group with Don Norman.",
+      "relationship": "business_partner",
+      "sources": ["NN/g history", "interviews"]
+    },
+    {
+      "id": "ENT022",
+      "name": "James J. Gibson",
+      "type": "PERSON",
+      "description": "Psychologist who originated the concept of affordances that Norman later adapted for design.",
+      "relationship": "intellectual_influence",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT023",
+      "name": "Steve Jobs",
+      "type": "PERSON",
+      "description": "Apple co-founder; Norman worked under his leadership as VP.",
+      "relationship": "colleague",
+      "sources": ["Apple history", "interviews"]
+    },
+    {
+      "id": "ENT024",
+      "name": "Stephen Draper",
+      "type": "PERSON",
+      "description": "Co-editor of 'User Centered System Design' with Norman.",
+      "relationship": "collaborator",
+      "sources": ["bibliography"]
+    },
+    {
+      "id": "ENT025",
+      "name": "Alan Kay",
+      "type": "PERSON",
+      "description": "Computer scientist at Apple's ATG; colleague of Norman.",
+      "relationship": "colleague",
+      "sources": ["Apple history"]
+    },
+    {
+      "id": "ENT026",
+      "name": "The Design of Everyday Things",
+      "type": "WORK",
+      "description": "Norman's most influential book, originally titled 'The Psychology of Everyday Things' (1988, revised 2013).",
+      "frequency": "very_high",
+      "sources": ["bibliography"]
+    },
+    {
+      "id": "ENT027",
+      "name": "Emotional Design",
+      "type": "WORK",
+      "description": "2004 book introducing visceral/behavioral/reflective framework.",
+      "frequency": "high",
+      "sources": ["bibliography"]
+    },
+    {
+      "id": "ENT028",
+      "name": "Living with Complexity",
+      "type": "WORK",
+      "description": "2010 book arguing complexity isn't the enemy, bad design is.",
+      "frequency": "medium",
+      "sources": ["bibliography"]
+    },
+    {
+      "id": "ENT029",
+      "name": "The Invisible Computer",
+      "type": "WORK",
+      "description": "1998 book arguing technology should become invisible through design.",
+      "frequency": "medium",
+      "sources": ["bibliography"]
+    },
+    {
+      "id": "ENT030",
+      "name": "The Design of Future Things",
+      "type": "WORK",
+      "description": "2007 book on designing for autonomous and intelligent machines.",
+      "frequency": "medium",
+      "sources": ["bibliography"]
+    },
+    {
+      "id": "ENT031",
+      "name": "Nielsen Norman Group",
+      "type": "ORGANIZATION",
+      "description": "UX consulting firm co-founded by Norman and Nielsen in 1998.",
+      "frequency": "very_high",
+      "sources": ["NN/g website"]
+    },
+    {
+      "id": "ENT032",
+      "name": "Apple Computer",
+      "type": "ORGANIZATION",
+      "description": "Company where Norman served as VP of Advanced Technology Group (1993-1998).",
+      "frequency": "high",
+      "sources": ["biography"]
+    },
+    {
+      "id": "ENT033",
+      "name": "UC San Diego",
+      "type": "ORGANIZATION",
+      "description": "University where Norman spent most of his academic career and is Professor Emeritus.",
+      "frequency": "high",
+      "sources": ["UCSD records"]
+    },
+    {
+      "id": "ENT034",
+      "name": "UCSD Design Lab",
+      "type": "ORGANIZATION",
+      "description": "Design research lab at UC San Diego where Norman serves as Director.",
+      "frequency": "medium",
+      "sources": ["UCSD records"]
+    },
+    {
+      "id": "ENT035",
+      "name": "MIT",
+      "type": "ORGANIZATION",
+      "description": "Where Norman received his B.S. in Electrical Engineering.",
+      "frequency": "medium",
+      "sources": ["biography"]
+    },
+    {
+      "id": "ENT036",
+      "name": "University of Pennsylvania",
+      "type": "ORGANIZATION",
+      "description": "Where Norman received his M.S. and Ph.D.",
+      "frequency": "medium",
+      "sources": ["biography"]
+    },
+    {
+      "id": "ENT037",
+      "name": "IDEO",
+      "type": "ORGANIZATION",
+      "description": "Design firm that has worked closely with Norman's principles.",
+      "frequency": "medium",
+      "sources": ["design industry"]
+    },
+    {
+      "id": "ENT038",
+      "name": "Three Mile Island",
+      "type": "LOCATION",
+      "description": "Nuclear power plant whose 1979 accident was a turning point in Norman's career.",
+      "frequency": "high",
+      "sources": ["The Design of Everyday Things", "interviews"]
+    },
+    {
+      "id": "ENT039",
+      "name": "jnd.org",
+      "type": "WORK",
+      "description": "Norman's personal website with essays and design insights.",
+      "frequency": "medium",
+      "sources": ["website"]
+    },
+    {
+      "id": "ENT040",
+      "name": "ACM CHI",
+      "type": "ORGANIZATION",
+      "description": "Premier international conference on Human-Computer Interaction.",
+      "frequency": "medium",
+      "sources": ["academic records"]
+    },
+    {
+      "id": "ENT041",
+      "name": "IxDA",
+      "type": "ORGANIZATION",
+      "description": "Interaction Design Association, which created the Don Norman Design Award.",
+      "frequency": "medium",
+      "sources": ["IxDA records"]
+    },
+    {
+      "id": "ENT042",
+      "name": "Cognitive Science",
+      "type": "CONCEPT",
+      "description": "Interdisciplinary study of mind and intelligence that Norman helped establish.",
+      "frequency": "high",
+      "sources": ["academic history"]
+    },
+    {
+      "id": "ENT043",
+      "name": "Human Error",
+      "type": "CONCEPT",
+      "description": "Term Norman argues is a misnomer - should be called 'system error' or 'design error'.",
+      "frequency": "very_high",
+      "sources": ["all works"]
+    },
+    {
+      "id": "ENT044",
+      "name": "Usability",
+      "type": "CONCEPT",
+      "description": "The ease with which a product can be used - central but not sufficient for good design.",
+      "frequency": "high",
+      "sources": ["all works", "NN/g"]
+    },
+    {
+      "id": "ENT045",
+      "name": "Slip",
+      "type": "CONCEPT",
+      "description": "Error that occurs when the action performed is not what was intended (automatic behavior).",
+      "frequency": "medium",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT046",
+      "name": "Mistake",
+      "type": "CONCEPT",
+      "description": "Error that occurs when the goal or plan is wrong (conscious behavior).",
+      "frequency": "medium",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT047",
+      "name": "Forcing Function",
+      "type": "CONCEPT",
+      "description": "Design element that prevents incorrect behavior or forces correct sequence.",
+      "frequency": "medium",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT048",
+      "name": "Knowledge in the World vs Head",
+      "type": "CONCEPT",
+      "description": "Distinction between information stored externally (affordances, signifiers) vs internally (memory).",
+      "frequency": "high",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT049",
+      "name": "Seven Stages of Action",
+      "type": "FRAMEWORK",
+      "description": "Goal, Plan, Specify, Perform, Perceive, Interpret, Compare - model of human action.",
+      "frequency": "medium",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT050",
+      "name": "Double Diamond",
+      "type": "FRAMEWORK",
+      "description": "Design process model: Discover, Define, Develop, Deliver.",
+      "frequency": "medium",
+      "sources": ["design thinking"]
+    },
+    {
+      "id": "ENT051",
+      "name": "Activity-Centered Design",
+      "type": "FRAMEWORK",
+      "description": "Design approach focused on activities and tasks rather than technology.",
+      "frequency": "medium",
+      "sources": ["The Design of Future Things"]
+    },
+    {
+      "id": "ENT052",
+      "name": "TED",
+      "type": "ORGANIZATION",
+      "description": "Platform where Norman delivered influential talk on emotional design.",
+      "frequency": "medium",
+      "sources": ["TED records"]
+    },
+    {
+      "id": "ENT053",
+      "name": "Benjamin Franklin Medal",
+      "type": "ACHIEVEMENT",
+      "description": "Prestigious award Norman received in Computer and Cognitive Science (2011).",
+      "frequency": "low",
+      "sources": ["Franklin Institute"]
+    },
+    {
+      "id": "ENT054",
+      "name": "SIGCHI Lifetime Research Award",
+      "type": "ACHIEVEMENT",
+      "description": "ACM CHI's highest recognition for lifetime contribution to HCI (2017).",
+      "frequency": "low",
+      "sources": ["ACM records"]
+    },
+    {
+      "id": "ENT055",
+      "name": "Don Norman Design Award",
+      "type": "ACHIEVEMENT",
+      "description": "IxDA award named after Norman for design addressing societal challenges.",
+      "frequency": "medium",
+      "sources": ["IxDA records"]
+    },
+    {
+      "id": "ENT056",
+      "name": "Natural Mapping",
+      "type": "CONCEPT",
+      "description": "When control arrangement matches physical arrangement of what's being controlled.",
+      "frequency": "high",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT057",
+      "name": "Poka-Yoke",
+      "type": "CONCEPT",
+      "description": "Japanese term for error-proofing; related to Norman's design principles.",
+      "frequency": "low",
+      "sources": ["related literature"]
+    },
+    {
+      "id": "ENT058",
+      "name": "Learned Helplessness",
+      "type": "CONCEPT",
+      "description": "Psychological state where people believe they can't succeed, often caused by bad design.",
+      "frequency": "medium",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT059",
+      "name": "Feature Creep",
+      "type": "CONCEPT",
+      "description": "The gradual addition of features that makes products harder to use.",
+      "frequency": "medium",
+      "sources": ["multiple works"]
+    },
+    {
+      "id": "ENT060",
+      "name": "Satisficing",
+      "type": "CONCEPT",
+      "description": "Choosing a 'good enough' option rather than optimal; how users actually behave.",
+      "frequency": "medium",
+      "sources": ["various"]
+    },
+    {
+      "id": "ENT061",
+      "name": "Design Thinking Process",
+      "type": "FRAMEWORK",
+      "description": "Iterate: Observe, Generate Ideas, Prototype, Test, Repeat.",
+      "frequency": "high",
+      "sources": ["IDEO, Design Lab"]
+    },
+    {
+      "id": "ENT062",
+      "name": "Sociotechnical Systems",
+      "type": "CONCEPT",
+      "description": "Complex systems involving both technical components and human/social elements.",
+      "frequency": "medium",
+      "sources": ["DesignX initiative"]
+    },
+    {
+      "id": "ENT063",
+      "name": "High Resolution Podcast",
+      "type": "WORK",
+      "description": "Podcast featuring in-depth interview with Norman.",
+      "frequency": "low",
+      "sources": ["podcast"]
+    },
+    {
+      "id": "ENT064",
+      "name": "99% Invisible",
+      "type": "WORK",
+      "description": "Design podcast that popularized the term 'Norman Door'.",
+      "frequency": "medium",
+      "sources": ["podcast"]
+    },
+    {
+      "id": "ENT065",
+      "name": "User Research",
+      "type": "CONCEPT",
+      "description": "Systematic study of users and their requirements, foundational to HCD.",
+      "frequency": "high",
+      "sources": ["NN/g", "all works"]
+    },
+    {
+      "id": "ENT066",
+      "name": "Iterative Design",
+      "type": "FRAMEWORK",
+      "description": "Cyclic process of prototyping, testing, analyzing, and refining.",
+      "frequency": "high",
+      "sources": ["design thinking"]
+    },
+    {
+      "id": "ENT067",
+      "name": "Ethnographic Research",
+      "type": "FRAMEWORK",
+      "description": "Observational research method to understand users in context.",
+      "frequency": "medium",
+      "sources": ["HCD methodology"]
+    },
+    {
+      "id": "ENT068",
+      "name": "Persona",
+      "type": "CONCEPT",
+      "description": "Fictional representation of a user type, used in user-centered design.",
+      "frequency": "medium",
+      "sources": ["design practice"]
+    },
+    {
+      "id": "ENT069",
+      "name": "Scenario-Based Design",
+      "type": "FRAMEWORK",
+      "description": "Design method using narrative descriptions of user interactions.",
+      "frequency": "medium",
+      "sources": ["design methodology"]
+    },
+    {
+      "id": "ENT070",
+      "name": "System Image",
+      "type": "CONCEPT",
+      "description": "What the system presents to the user - should match designer's conceptual model.",
+      "frequency": "medium",
+      "sources": ["The Design of Everyday Things"]
+    },
+    {
+      "id": "ENT071",
+      "name": "Cognitive Load",
+      "type": "CONCEPT",
+      "description": "The mental effort required to process information; design should minimize it.",
+      "frequency": "medium",
+      "sources": ["cognitive science"]
+    },
+    {
+      "id": "ENT072",
+      "name": "Heuristic Evaluation",
+      "type": "FRAMEWORK",
+      "description": "Usability inspection method using heuristics; related to Norman's principles.",
+      "frequency": "medium",
+      "sources": ["Nielsen, NN/g"]
+    },
+    {
+      "id": "ENT073",
+      "name": "Dark Patterns",
+      "type": "CONCEPT",
+      "description": "Manipulative design practices that Norman criticizes.",
+      "frequency": "medium",
+      "sources": ["recent interviews"]
+    },
+    {
+      "id": "ENT074",
+      "name": "Design Ethics",
+      "type": "CONCEPT",
+      "description": "Moral principles that should guide design decisions.",
+      "frequency": "medium",
+      "sources": ["recent work"]
+    },
+    {
+      "id": "ENT075",
+      "name": "Sustainable Design",
+      "type": "CONCEPT",
+      "description": "Design that considers environmental impact; part of humanity-centered design.",
+      "frequency": "medium",
+      "sources": ["recent interviews"]
+    },
+    {
+      "id": "ENT076",
+      "name": "Inclusive Design",
+      "type": "CONCEPT",
+      "description": "Design that works for people of all abilities.",
+      "frequency": "medium",
+      "sources": ["accessibility"]
+    },
+    {
+      "id": "ENT077",
+      "name": "Universal Design",
+      "type": "CONCEPT",
+      "description": "Design usable by all people without need for adaptation.",
+      "frequency": "medium",
+      "sources": ["accessibility"]
+    },
+    {
+      "id": "ENT078",
+      "name": "Wicked Problems",
+      "type": "CONCEPT",
+      "description": "Complex problems with no clear solution; addressed by DesignX.",
+      "frequency": "medium",
+      "sources": ["DesignX"]
+    },
+    {
+      "id": "ENT079",
+      "name": "Artificial Intelligence (AI)",
+      "type": "CONCEPT",
+      "description": "Technology Norman increasingly discusses regarding design implications.",
+      "frequency": "medium",
+      "sources": ["recent work"]
+    },
+    {
+      "id": "ENT080",
+      "name": "Automation",
+      "type": "CONCEPT",
+      "description": "Topic Norman has written about extensively, especially human-automation interaction.",
+      "frequency": "medium",
+      "sources": ["The Design of Future Things"]
+    },
+    {
+      "id": "ENT081",
+      "name": "User-Centered System Design",
+      "type": "WORK",
+      "description": "1986 book co-edited with Stephen Draper, foundational HCI text.",
+      "frequency": "medium",
+      "sources": ["bibliography"]
+    },
+    {
+      "id": "ENT082",
+      "name": "Turn Signals Are the Facial Expressions of Automobiles",
+      "type": "WORK",
+      "description": "1992 collection of essays on design.",
+      "frequency": "low",
+      "sources": ["bibliography"]
+    },
+    {
+      "id": "ENT083",
+      "name": "Institute for Cognitive Science (UCSD)",
+      "type": "ORGANIZATION",
+      "description": "Research institute Norman founded at UC San Diego in 1977.",
+      "frequency": "medium",
+      "sources": ["UCSD records"]
+    },
+    {
+      "id": "ENT084",
+      "name": "Design for a Better World",
+      "type": "WORK",
+      "description": "Upcoming book Norman is working on about humanity-centered design.",
+      "frequency": "low",
+      "sources": ["interviews"]
+    },
+    {
+      "id": "ENT085",
+      "name": "Fast Company",
+      "type": "ORGANIZATION",
+      "description": "Magazine where Norman has published design articles.",
+      "frequency": "low",
+      "sources": ["publications"]
+    }
+  ],
+  "entity_types_summary": {
+    "CONCEPT": 42,
+    "FRAMEWORK": 16,
+    "PERSON": 5,
+    "WORK": 10,
+    "ORGANIZATION": 11,
+    "ACHIEVEMENT": 3,
+    "LOCATION": 1
+  }
+}

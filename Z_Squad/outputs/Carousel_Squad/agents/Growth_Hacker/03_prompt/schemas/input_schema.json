@@ -1,0 +1,408 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "growth_hacker_input_v1.0.0",
+  "title": "Growth Hacker Input Schema",
+  "description": "Input schema for the Growth Hacker agent - the optimization specialist of the Carousel Squad",
+  "type": "object",
+  "required": ["carousel"],
+  "properties": {
+    "carousel": {
+      "type": "object",
+      "description": "The complete carousel to optimize",
+      "required": ["type", "objective"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "The type of carousel",
+          "enum": [
+            "educational",
+            "storytelling",
+            "listicle",
+            "data_stats",
+            "quote_carousel",
+            "behind_the_scenes",
+            "product_showcase",
+            "testimonial",
+            "interactive",
+            "trend_news"
+          ],
+          "examples": ["educational"]
+        },
+        "objective": {
+          "type": "object",
+          "description": "The carousel objective",
+          "required": ["primary_goal"],
+          "properties": {
+            "primary_goal": {
+              "type": "string",
+              "description": "The primary goal",
+              "enum": [
+                "awareness",
+                "engagement",
+                "followers",
+                "saves",
+                "shares",
+                "leads",
+                "sales",
+                "authority"
+              ],
+              "examples": ["saves"]
+            },
+            "secondary_goals": {
+              "type": "array",
+              "description": "Secondary goals",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["followers", "engagement"]]
+            },
+            "target_metrics": {
+              "type": "object",
+              "description": "Target metric values if known",
+              "properties": {
+                "swipe_rate": {
+                  "type": "number",
+                  "description": "Target swipe-through rate %",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "save_rate": {
+                  "type": "number",
+                  "description": "Target save rate %"
+                },
+                "share_rate": {
+                  "type": "number",
+                  "description": "Target share rate %"
+                },
+                "engagement_rate": {
+                  "type": "number",
+                  "description": "Target overall engagement rate %"
+                }
+              }
+            }
+          }
+        },
+        "audience": {
+          "type": "object",
+          "description": "Target audience information",
+          "properties": {
+            "persona": {
+              "type": "string",
+              "description": "Primary audience persona",
+              "examples": ["Entrepreneurs aged 25-40"]
+            },
+            "niche": {
+              "type": "string",
+              "description": "Content niche",
+              "examples": ["Personal finance", "Entrepreneurship", "Marketing"]
+            },
+            "location": {
+              "type": "string",
+              "description": "Primary geographic location",
+              "examples": ["Brazil", "Latin America", "Global"]
+            },
+            "language": {
+              "type": "string",
+              "description": "Content language",
+              "examples": ["pt-BR", "en-US", "es-ES"]
+            },
+            "active_times": {
+              "type": "object",
+              "description": "When audience is typically active (if known)",
+              "properties": {
+                "peak_days": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "peak_hours": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "content_summary": {
+          "type": "object",
+          "description": "Summary of the carousel content",
+          "properties": {
+            "topic": {
+              "type": "string",
+              "description": "Main topic",
+              "examples": ["5 productivity tips for entrepreneurs"]
+            },
+            "slide_count": {
+              "type": "integer",
+              "description": "Number of slides",
+              "minimum": 2,
+              "maximum": 20
+            },
+            "hook_summary": {
+              "type": "string",
+              "description": "Summary of the hook/first slide",
+              "examples": ["Bold claim about productivity mistakes"]
+            },
+            "cta_type": {
+              "type": "string",
+              "description": "Type of CTA used",
+              "enum": ["follow", "save", "share", "comment", "link", "dm", "none"],
+              "examples": ["save"]
+            },
+            "content_pillar": {
+              "type": "string",
+              "description": "Content pillar category",
+              "enum": ["educational", "inspirational", "entertainment", "promotional", "engagement"]
+            }
+          }
+        },
+        "copy": {
+          "type": "object",
+          "description": "Copy information if available",
+          "properties": {
+            "headline": {
+              "type": "string",
+              "description": "Main headline"
+            },
+            "caption": {
+              "type": "string",
+              "description": "Post caption"
+            },
+            "cta_text": {
+              "type": "string",
+              "description": "CTA text"
+            }
+          }
+        },
+        "visual_summary": {
+          "type": "object",
+          "description": "Visual design summary if available",
+          "properties": {
+            "style": {
+              "type": "string",
+              "description": "Visual style",
+              "examples": ["clean", "bold", "minimal"]
+            },
+            "colors": {
+              "type": "array",
+              "description": "Main colors used",
+              "items": {
+                "type": "string"
+              }
+            },
+            "has_faces": {
+              "type": "boolean",
+              "description": "Does the carousel include human faces?"
+            }
+          }
+        }
+      }
+    },
+    "account_data": {
+      "type": "object",
+      "description": "Account performance data for context",
+      "properties": {
+        "follower_count": {
+          "type": "integer",
+          "description": "Current follower count",
+          "examples": [5000, 50000]
+        },
+        "avg_engagement_rate": {
+          "type": "number",
+          "description": "Average engagement rate %",
+          "examples": [3.5, 5.2]
+        },
+        "historical_performance": {
+          "type": "object",
+          "description": "Historical performance benchmarks",
+          "properties": {
+            "avg_swipe_rate": {
+              "type": "number",
+              "description": "Average swipe-through rate %"
+            },
+            "avg_save_rate": {
+              "type": "number",
+              "description": "Average save rate %"
+            },
+            "avg_share_rate": {
+              "type": "number",
+              "description": "Average share rate %"
+            },
+            "avg_comment_rate": {
+              "type": "number",
+              "description": "Average comment rate %"
+            },
+            "best_performing_type": {
+              "type": "string",
+              "description": "Best performing carousel type"
+            },
+            "best_posting_time": {
+              "type": "string",
+              "description": "Best performing posting time"
+            }
+          }
+        },
+        "recent_carousels": {
+          "type": "array",
+          "description": "Recent carousel performance for context",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "swipe_rate": {
+                "type": "number"
+              },
+              "save_rate": {
+                "type": "number"
+              },
+              "engagement_rate": {
+                "type": "number"
+              },
+              "learnings": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "optimization_focus": {
+      "type": "object",
+      "description": "Specific optimization areas to focus on",
+      "properties": {
+        "priority_areas": {
+          "type": "array",
+          "description": "Areas to prioritize",
+          "items": {
+            "type": "string",
+            "enum": ["timing", "hashtags", "caption", "hook", "cta", "distribution", "ab_testing"]
+          },
+          "examples": [["hashtags", "timing", "ab_testing"]]
+        },
+        "specific_questions": {
+          "type": "array",
+          "description": "Specific questions to answer",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["What's the best time to post?", "Which hashtags should I use?"]]
+        },
+        "constraints": {
+          "type": "object",
+          "description": "Constraints to consider",
+          "properties": {
+            "posting_day_fixed": {
+              "type": "string",
+              "description": "If posting day is already decided"
+            },
+            "hashtag_limit": {
+              "type": "integer",
+              "description": "Maximum hashtags allowed",
+              "default": 30
+            },
+            "cannot_change": {
+              "type": "array",
+              "description": "Elements that cannot be changed",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "description": "Handoff information from previous agent",
+      "properties": {
+        "from": {
+          "type": "string",
+          "description": "Agent that sent this handoff",
+          "enum": ["Carousel_Maestro", "Copy_Master", "Visual_Designer", "direct_request"]
+        },
+        "context": {
+          "type": "object",
+          "description": "Context from previous agent"
+        },
+        "priority_metrics": {
+          "type": "array",
+          "description": "Metrics to prioritize from strategy",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ab_test_suggestions": {
+          "type": "array",
+          "description": "A/B test suggestions from Copy Master",
+          "items": {
+            "type": "object",
+            "properties": {
+              "element": {
+                "type": "string"
+              },
+              "variant_a": {
+                "type": "string"
+              },
+              "variant_b": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "carousel": {
+        "type": "educational",
+        "objective": {
+          "primary_goal": "saves",
+          "secondary_goals": ["followers"],
+          "target_metrics": {
+            "save_rate": 10,
+            "swipe_rate": 65
+          }
+        },
+        "audience": {
+          "persona": "Entrepreneurs aged 25-40",
+          "niche": "Productivity",
+          "location": "Brazil",
+          "language": "pt-BR"
+        },
+        "content_summary": {
+          "topic": "5 productivity tips for entrepreneurs",
+          "slide_count": 10,
+          "hook_summary": "Bold claim about common productivity mistakes",
+          "cta_type": "save",
+          "content_pillar": "educational"
+        },
+        "copy": {
+          "headline": "5 dicas de produtividade que REALMENTE funcionam",
+          "cta_text": "Salve para consultar depois"
+        }
+      },
+      "account_data": {
+        "follower_count": 15000,
+        "avg_engagement_rate": 4.2,
+        "historical_performance": {
+          "avg_swipe_rate": 55,
+          "avg_save_rate": 6,
+          "best_performing_type": "educational"
+        }
+      },
+      "optimization_focus": {
+        "priority_areas": ["timing", "hashtags", "ab_testing"]
+      },
+      "handoff": {
+        "from": "Copy_Master",
+        "priority_metrics": ["save_rate", "swipe_rate"]
+      }
+    }
+  ]
+}

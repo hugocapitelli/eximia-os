@@ -1,0 +1,459 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "copy_master_input_v1.0.0",
+  "title": "Copy Master Input Schema",
+  "description": "Input schema for the Copy Master agent - the copywriting specialist of the Carousel Squad",
+  "type": "object",
+  "required": ["briefing"],
+  "properties": {
+    "briefing": {
+      "type": "object",
+      "description": "The copywriting briefing",
+      "required": ["narrative_structure", "tone", "objective"],
+      "properties": {
+        "narrative_structure": {
+          "type": "object",
+          "description": "Narrative structure from Story Architect",
+          "required": ["slides"],
+          "properties": {
+            "slides": {
+              "type": "array",
+              "description": "Slide-by-slide narrative structure",
+              "items": {
+                "type": "object",
+                "required": ["slide_number", "function", "content_direction"],
+                "properties": {
+                  "slide_number": {
+                    "type": "integer",
+                    "description": "Slide number"
+                  },
+                  "function": {
+                    "type": "string",
+                    "description": "Narrative function of this slide",
+                    "examples": ["hook", "problem", "solution", "cta"]
+                  },
+                  "content_direction": {
+                    "type": "string",
+                    "description": "What the slide should communicate",
+                    "examples": ["That voice that tells you you're not good enough..."]
+                  },
+                  "emotional_beat": {
+                    "type": "string",
+                    "description": "Emotion to evoke",
+                    "examples": ["recognition", "tension", "hope", "empowerment"]
+                  },
+                  "open_loop": {
+                    "type": "boolean",
+                    "description": "Should this slide create an open loop?",
+                    "default": false
+                  }
+                }
+              },
+              "minItems": 2
+            },
+            "core_elements": {
+              "type": "object",
+              "description": "Core story elements",
+              "properties": {
+                "hero": {
+                  "type": "string",
+                  "description": "The protagonist/audience"
+                },
+                "conflict": {
+                  "type": "string",
+                  "description": "The central tension"
+                },
+                "transformation": {
+                  "type": "string",
+                  "description": "The transformation arc"
+                }
+              }
+            }
+          }
+        },
+        "visual_specs": {
+          "type": "object",
+          "description": "Visual specifications from Visual Designer",
+          "properties": {
+            "text_constraints": {
+              "type": "object",
+              "description": "Text constraints based on design",
+              "properties": {
+                "max_headline_chars": {
+                  "type": "integer",
+                  "description": "Maximum characters for headlines",
+                  "examples": [50, 60]
+                },
+                "max_body_chars": {
+                  "type": "integer",
+                  "description": "Maximum characters for body text",
+                  "examples": [150, 200]
+                },
+                "max_lines_headline": {
+                  "type": "integer",
+                  "description": "Maximum lines for headlines",
+                  "examples": [3, 4]
+                },
+                "max_lines_body": {
+                  "type": "integer",
+                  "description": "Maximum lines for body",
+                  "examples": [4, 6]
+                }
+              }
+            },
+            "slide_layouts": {
+              "type": "array",
+              "description": "Layout information per slide",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "slide_number": {
+                    "type": "integer"
+                  },
+                  "layout_type": {
+                    "type": "string",
+                    "examples": ["headline_only", "headline_body", "list"]
+                  },
+                  "copy_elements_needed": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "examples": [["headline", "subheadline"], ["headline", "body"]]
+                  }
+                }
+              }
+            },
+            "emphasis_slides": {
+              "type": "array",
+              "description": "Slides needing strong copy emphasis",
+              "items": {
+                "type": "integer"
+              },
+              "examples": [[1, 4, 10]]
+            }
+          }
+        },
+        "tone": {
+          "type": "object",
+          "description": "Tone of voice specifications",
+          "required": ["primary_tone"],
+          "properties": {
+            "primary_tone": {
+              "type": "string",
+              "description": "The primary tone of voice",
+              "enum": [
+                "formal",
+                "casual",
+                "conversational",
+                "authoritative",
+                "friendly",
+                "provocative",
+                "inspirational",
+                "educational",
+                "humorous",
+                "empathetic",
+                "urgent"
+              ],
+              "examples": ["conversational"]
+            },
+            "tone_modifiers": {
+              "type": "array",
+              "description": "Additional tone characteristics",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["accessible", "jargon-free", "empowering"]]
+            },
+            "tone_evolution": {
+              "type": "array",
+              "description": "How tone should evolve through the carousel",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "slides": {
+                    "type": "string",
+                    "examples": ["1-4", "5-8", "9-10"]
+                  },
+                  "tone": {
+                    "type": "string",
+                    "examples": ["vulnerable", "hopeful", "empowering"]
+                  }
+                }
+              }
+            },
+            "voice_characteristics": {
+              "type": "object",
+              "description": "Voice characteristics",
+              "properties": {
+                "person": {
+                  "type": "string",
+                  "description": "Point of view",
+                  "enum": ["first_person", "second_person", "third_person"],
+                  "default": "second_person"
+                },
+                "formality_level": {
+                  "type": "integer",
+                  "description": "Formality level 1-10",
+                  "minimum": 1,
+                  "maximum": 10,
+                  "examples": [4, 6]
+                }
+              }
+            }
+          }
+        },
+        "objective": {
+          "type": "object",
+          "description": "The carousel objective",
+          "required": ["type", "cta_type"],
+          "properties": {
+            "type": {
+              "type": "string",
+              "description": "Main objective type",
+              "enum": ["educate", "inspire", "convert", "entertain", "build_authority", "generate_engagement"],
+              "examples": ["educate"]
+            },
+            "cta_type": {
+              "type": "string",
+              "description": "Type of call-to-action",
+              "enum": ["follow", "save", "share", "comment", "link_bio", "dm", "swipe", "none"],
+              "examples": ["follow"]
+            },
+            "cta_specifics": {
+              "type": "string",
+              "description": "Specific CTA details",
+              "examples": ["Follow for more investment tips for beginners"]
+            },
+            "promise": {
+              "type": "string",
+              "description": "What the carousel promises to deliver",
+              "examples": ["Learn 5 tips to start investing with little money"]
+            }
+          }
+        },
+        "audience": {
+          "type": "object",
+          "description": "Target audience information",
+          "properties": {
+            "persona": {
+              "type": "string",
+              "description": "Primary audience persona",
+              "examples": ["Young professionals who want to invest but don't know how"]
+            },
+            "pain_points": {
+              "type": "array",
+              "description": "Key pain points to address",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["Fear of losing money", "Don't know where to start", "Think they need lots of money"]]
+            },
+            "desires": {
+              "type": "array",
+              "description": "Key desires to appeal to",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["Financial freedom", "Passive income", "Feel smart about money"]]
+            },
+            "objections": {
+              "type": "array",
+              "description": "Common objections to address",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["It's too risky", "I don't have enough money"]]
+            },
+            "language_level": {
+              "type": "string",
+              "description": "Language complexity appropriate for audience",
+              "enum": ["simple", "moderate", "advanced"],
+              "default": "simple"
+            }
+          }
+        },
+        "content_guidelines": {
+          "type": "object",
+          "description": "Content guidelines and constraints",
+          "properties": {
+            "key_messages": {
+              "type": "array",
+              "description": "Key messages to convey",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["You can start with R$100", "It's simpler than you think"]]
+            },
+            "words_to_use": {
+              "type": "array",
+              "description": "Power words to incorporate",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["simple", "today", "you", "finally"]]
+            },
+            "words_to_avoid": {
+              "type": "array",
+              "description": "Words to avoid",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["complicated", "risk", "difficult"]]
+            },
+            "must_include": {
+              "type": "array",
+              "description": "Elements that must be included",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["specific numbers", "social proof"]]
+            },
+            "must_avoid": {
+              "type": "array",
+              "description": "Elements that must be avoided",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["unrealistic promises", "technical jargon"]]
+            }
+          }
+        }
+      }
+    },
+    "source_material": {
+      "type": "object",
+      "description": "Source material to incorporate",
+      "properties": {
+        "data_points": {
+          "type": "array",
+          "description": "Statistics and data to potentially use",
+          "items": {
+            "type": "object",
+            "properties": {
+              "stat": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "testimonials": {
+          "type": "array",
+          "description": "Testimonials to potentially incorporate",
+          "items": {
+            "type": "object",
+            "properties": {
+              "quote": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              },
+              "result": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "description": "Quotes to potentially use",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "description": "Handoff information from previous agent",
+      "properties": {
+        "from": {
+          "type": "string",
+          "description": "Agent that sent this handoff",
+          "enum": ["Carousel_Maestro", "Story_Architect", "Visual_Designer", "direct_request"]
+        },
+        "context": {
+          "type": "object",
+          "description": "Context from previous agent"
+        },
+        "instructions": {
+          "type": "array",
+          "description": "Specific instructions from previous agent",
+          "items": {
+            "type": "string"
+          }
+        },
+        "copy_constraints": {
+          "type": "array",
+          "description": "Copy constraints from previous agent",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "briefing": {
+        "narrative_structure": {
+          "slides": [
+            {"slide_number": 1, "function": "hook", "content_direction": "5 mistakes that make beginners lose money", "emotional_beat": "curiosity", "open_loop": true},
+            {"slide_number": 2, "function": "problem", "content_direction": "Mistake #1 - Investing without emergency fund", "emotional_beat": "recognition"},
+            {"slide_number": 10, "function": "cta", "content_direction": "Want to learn to invest without these mistakes?", "emotional_beat": "empowerment"}
+          ],
+          "core_elements": {
+            "hero": "Young professional starting to invest",
+            "conflict": "Fear of losing money due to mistakes",
+            "transformation": "From fearful to confident"
+          }
+        },
+        "visual_specs": {
+          "text_constraints": {
+            "max_headline_chars": 50,
+            "max_lines_headline": 3
+          }
+        },
+        "tone": {
+          "primary_tone": "conversational",
+          "tone_modifiers": ["accessible", "jargon-free", "friendly expert"],
+          "voice_characteristics": {
+            "person": "second_person",
+            "formality_level": 4
+          }
+        },
+        "objective": {
+          "type": "educate",
+          "cta_type": "follow",
+          "cta_specifics": "Follow for more beginner investment tips",
+          "promise": "Avoid the 5 most common beginner mistakes"
+        },
+        "audience": {
+          "persona": "Young professionals 20-30 who never invested",
+          "pain_points": ["Fear of losing money", "Information overload"],
+          "language_level": "simple"
+        },
+        "content_guidelines": {
+          "key_messages": ["These mistakes cost money", "They are avoidable"],
+          "words_to_avoid": ["complex", "risk", "difficult"]
+        }
+      },
+      "handoff": {
+        "from": "Story_Architect",
+        "instructions": ["Use friendly expert voice", "Include #3 as teaser in hook"]
+      }
+    }
+  ]
+}

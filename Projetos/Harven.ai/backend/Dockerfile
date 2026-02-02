@@ -42,8 +42,8 @@ ENV PYTHONHASHSEED=random
 
 # Application configuration
 ENV PORT=8000
-ENV WORKERS=4
-ENV LOG_LEVEL=info
+ENV WORKERS=2
+ENV LOG_LEVEL=INFO
 ENV ENVIRONMENT=production
 
 # Security: run as non-root user
@@ -76,18 +76,8 @@ USER appuser
 EXPOSE 8000
 
 # Health check with curl (more reliable)
-HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
+HEALTHCHECK --interval=30s --timeout=30s --start-period=60s --retries=5 \
     CMD curl -f http://localhost:8000/health || exit 1
 
 # Production startup command with Gunicorn + Uvicorn workers
-CMD ["sh", "-c", "gunicorn main:app \
-    --worker-class uvicorn.workers.UvicornWorker \
-    --workers ${WORKERS:-4} \
-    --bind 0.0.0.0:${PORT:-8000} \
-    --timeout 120 \
-    --keep-alive 5 \
-    --max-requests 1000 \
-    --max-requests-jitter 100 \
-    --access-logfile - \
-    --error-logfile - \
-    --log-level ${LOG_LEVEL:-info}"]
+CMD gunicorn main:app --worker-class uvicorn.workers.UvicornWorker --workers 2 --bind 0.0.0.0:8000 --timeout 120 --keep-alive 5 --max-requests 1000 --max-requests-jitter 100 --access-logfile - --error-logfile - --log-level info

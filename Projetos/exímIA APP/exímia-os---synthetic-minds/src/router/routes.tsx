@@ -38,6 +38,12 @@ const BookDetailPageWrapper = lazy(() => import('../pages/biblioteca/BookDetailP
 const AuthorDetailPageWrapper = lazy(() => import('../pages/biblioteca/AuthorDetailPageWrapper'));
 const ReadingPageWrapper = lazy(() => import('../pages/biblioteca/ReadingPageWrapper'));
 
+// New Biblioteca V2 Pages
+const ExplorePage = lazy(() => import('../pages/biblioteca/ExplorePage'));
+const FavoritesPage = lazy(() => import('../pages/biblioteca/FavoritesPage'));
+const BookDetailPageV2 = lazy(() => import('../pages/biblioteca/BookDetailPageV2'));
+const ReadingPageV2 = lazy(() => import('../pages/biblioteca/ReadingPageV2'));
+
 const DesignSystemLibraryPage = lazy(() => import('../pages/design-system/DesignSystemLibraryPage'));
 const DesignSystemViewerPage = lazy(() => import('../pages/design-system/DesignSystemViewerPage'));
 const MindDetailPage = lazy(() => import('../pages/synthetic-minds/MindDetailPage'));
@@ -100,6 +106,10 @@ const AdminSettingsPage = lazy(() => import('../pages/admin/AdminSettingsPage'))
 const AdminAccessControlPage = lazy(() => import('../pages/admin/AdminAccessControlPage'));
 const AdminUsersPage = lazy(() => import('../pages/admin/AdminUsersPage'));
 
+// New Admin Biblioteca Pages
+const AdminSummariesPage = lazy(() => import('../pages/admin/AdminSummariesPage'));
+const AdminChapterEditorPage = lazy(() => import('../pages/admin/AdminChapterEditorPage'));
+
 export const routes: RouteObject[] = [
   // Public routes
   {
@@ -146,6 +156,14 @@ export const routes: RouteObject[] = [
       },
       {
         path: '/biblioteca/book/:bookId/read',
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <ReadingPageV2 />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/biblioteca/book/:bookId/read-legacy',
         element: (
           <Suspense fallback={<PageLoader />}>
             <ReadingPageWrapper />
@@ -253,6 +271,31 @@ export const routes: RouteObject[] = [
         element: (
           <Suspense fallback={<PageLoader />}>
             <AuthorDetailPageWrapper />
+          </Suspense>
+        ),
+      },
+      // New Biblioteca V2 Routes
+      {
+        path: 'biblioteca/explore',
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <ExplorePage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'biblioteca/favorites',
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <FavoritesPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'biblioteca/v2/book/:bookId',
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <BookDetailPageV2 />
           </Suspense>
         ),
       },
@@ -719,6 +762,23 @@ export const routes: RouteObject[] = [
         element: (
           <Suspense fallback={<PageLoader />}>
             <AdminUsersPage />
+          </Suspense>
+        ),
+      },
+      // Admin Biblioteca Routes
+      {
+        path: 'admin/summaries',
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <AdminSummariesPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'admin/summaries/:summaryId/edit',
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <AdminChapterEditorPage />
           </Suspense>
         ),
       },
