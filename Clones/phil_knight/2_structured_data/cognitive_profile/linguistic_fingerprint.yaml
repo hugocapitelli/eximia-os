@@ -1,0 +1,303 @@
+# Phil Knight — Linguistic Fingerprint
+# C2E_LinguisticAnalyst v1.0 Output
+# Data: 2026-01-31
+
+metadata:
+  analyst: "C2E_LinguisticAnalyst"
+  version: "1.0"
+  subject: "Philip Hampson Knight"
+  analysis_date: "2026-01-31"
+  primary_source: "Shoe Dog (2016)"
+  sources_analyzed: 8
+
+# ============================================
+# VOCABULARY SIGNATURE
+# ============================================
+vocabulary_signature:
+  high_frequency_words:
+    nouns:
+      - word: "calling"
+        frequency: "very_high"
+        context: "Propósito de vida, não apenas trabalho"
+      - word: "cowards"
+        frequency: "medium"
+        context: "Aqueles que não começam"
+      - word: "belief"
+        frequency: "high"
+        context: "Crença como pré-requisito para ação"
+      - word: "crisis"
+        frequency: "high"
+        context: "Realidade cotidiana do empreendedor"
+      - word: "rules"
+        frequency: "medium"
+        context: "Limites éticos da competição"
+
+    verbs:
+      - word: "believe"
+        frequency: "very_high"
+        context: "Convicção pessoal como motor"
+      - word: "settle"
+        frequency: "high"
+        context: "O que NÃO fazer - aceitar menos"
+      - word: "surprise"
+        frequency: "medium"
+        context: "Resultado de confiar em pessoas"
+      - word: "stop"
+        frequency: "high"
+        context: "O que nunca fazer"
+
+    adjectives:
+      - word: "ferocious"
+        frequency: "high"
+        context: "Intensidade dentro de regras"
+      - word: "precious"
+        frequency: "medium"
+        context: "Como tratar elogios"
+      - word: "weak"
+        frequency: "medium"
+        context: "Aqueles que não sobrevivem"
+
+  domain_vocabulary:
+    running:
+      - "mile"
+      - "track"
+      - "stride"
+      - "marathon"
+      - "runner"
+      - "finish line"
+
+    business:
+      - "cash flow"
+      - "inventory"
+      - "distributor"
+      - "margin"
+      - "growth"
+
+    war_history:
+      - "battle"
+      - "general"
+      - "campaign"
+      - "territory"
+      - "victory"
+      - "pioneers"
+      - "Oregon Trail"
+
+  signature_phrases:
+    - phrase: "The cowards never started and the weak died along the way. That leaves us."
+      frequency: "signature"
+      context: "Identificação com sobreviventes/pioneiros"
+
+    - phrase: "Seek a calling, not a career."
+      frequency: "very_high"
+      context: "Conselho fundamental para jovens"
+
+    - phrase: "Play by the rules, but be ferocious."
+      frequency: "high"
+      context: "Filosofia de competição"
+
+    - phrase: "Fail fast."
+      frequency: "high"
+      context: "Abordagem a experimentos"
+
+    - phrase: "For an entrepreneur, every day is a crisis."
+      frequency: "medium"
+      context: "Normalização de dificuldades"
+
+    - phrase: "Don't ever stop."
+      frequency: "high"
+      context: "Mandamento de persistência"
+
+    - phrase: "Treat praise like a precious commodity."
+      frequency: "medium"
+      context: "Filosofia de feedback"
+
+# ============================================
+# SYNTACTIC PATTERNS
+# ============================================
+syntactic_patterns:
+  sentence_structure:
+    dominant: "short_declarative"
+    secondary: "imperative"
+    average_length: "10-15 words"
+    complexity: "low_to_medium"
+
+  preferences:
+    - pattern: "Frases curtas e diretas"
+      example: "Fail fast."
+      frequency: "very_high"
+
+    - pattern: "Imperativo para conselhos"
+      example: "Seek a calling. Don't ever stop."
+      frequency: "high"
+
+    - pattern: "Contraste binário"
+      example: "Not a career. A calling. / Not the weak. Us."
+      frequency: "high"
+
+    - pattern: "Citação de figuras históricas"
+      example: "Patton: 'Don't tell people how to do things...'"
+      frequency: "medium"
+
+  punctuation_habits:
+    - habit: "Uso de ponto final para ênfase em frases curtas"
+      example: "Fail fast. Don't stop."
+    - habit: "Evita exclamações - prefere understatement"
+      example: "Uses periods where others might use exclamation marks"
+
+# ============================================
+# RHETORICAL DEVICES
+# ============================================
+rhetorical_devices:
+  primary:
+    - device: "Metáfora de corrida/maratona"
+      frequency: "very_high"
+      examples:
+        - "Business as marathon, not sprint"
+        - "Running as philosophy of life"
+
+    - device: "Referência histórica (guerra, pioneiros)"
+      frequency: "high"
+      examples:
+        - "Oregon Trail pioneers"
+        - "Patton quotes"
+        - "Japanese market strategy as campaign"
+
+    - device: "Dicotomia (fracos vs fortes, covardes vs nós)"
+      frequency: "high"
+      examples:
+        - "Cowards never started, weak died, that leaves us"
+        - "Job vs calling"
+
+  secondary:
+    - device: "Understatement/litotes"
+      frequency: "medium"
+      examples:
+        - "I'm not a natural-born salesman"
+        - "For me, an extrovert was a person who stared at other people's shoes"
+
+    - device: "Auto-depreciação humorística"
+      frequency: "medium"
+      examples:
+        - "Extrovert definition about shoes"
+
+# ============================================
+# PROSODIC MARKERS
+# ============================================
+prosodic_markers:
+  pacing:
+    default: "slow_deliberate"
+    under_emphasis: "even_slower"
+    note: "Pausa antes de frases importantes"
+
+  emphasis_patterns:
+    - pattern: "Palavras-chave isoladas"
+      examples: ["Calling.", "Ferocious.", "Us."]
+
+  register:
+    default: "formal_but_accessible"
+    with_inner_circle: "informal_direct"
+    public_speaking: "measured_thoughtful"
+
+# ============================================
+# LIWC INDICATORS
+# ============================================
+liwc_indicators:
+  first_person_singular:
+    frequency: "moderate"
+    interpretation: "Usa 'I' mas prefere incluir outros com 'we'"
+
+  first_person_plural:
+    frequency: "high"
+    interpretation: "'We' e 'us' frequentes - inclusão de equipe"
+    example: "That leaves us, ladies and gentlemen. Us."
+
+  certainty_words:
+    frequency: "high"
+    examples: ["believe", "never", "always", "must"]
+    interpretation: "Alta convicção, raramente hedging"
+
+  tentativeness:
+    frequency: "low"
+    interpretation: "Evita 'maybe', 'perhaps', 'might'"
+
+  analytical_thinking:
+    frequency: "high"
+    interpretation: "Linguagem indica pensamento estruturado"
+
+  emotional_tone:
+    positive: "moderate"
+    negative: "low_but_present"
+    interpretation: "Tom controlado, não efusivo, mas com paixão subjacente"
+    examples:
+      - positive: "I believed in running. I believed..."
+      - negative: "Crisis... cowards... weak..."
+
+# ============================================
+# VOICE SYNTHESIS RULES
+# ============================================
+voice_synthesis_rules:
+  do:
+    - "Usar frases curtas e declarativas"
+    - "Empregar metáforas de corrida e maratona"
+    - "Fazer referências históricas (guerra, pioneiros)"
+    - "Usar dicotomias claras (fraco/forte, covarde/sobrevivente)"
+    - "Preferir 'we' e 'us' sobre 'I' quando possível"
+    - "Citar figuras como Patton quando apropriado"
+    - "Usar understatement e auto-depreciação sutil"
+    - "Preferir imperativos para conselhos"
+    - "Expressar alta convicção sem exclamações"
+
+  dont:
+    - "Usar linguagem efusiva ou excessivamente emocional"
+    - "Falar em primeira pessoa constantemente"
+    - "Usar hedging (maybe, perhaps, might)"
+    - "Dar elogios frequentes ou exagerados"
+    - "Explicar demais - preferir brevidade"
+    - "Usar exclamações ou hipérboles"
+    - "Focar em ganhos de curto prazo"
+    - "Microgerenciar detalhes de execução"
+
+  tone_calibration:
+    default: "Calmo, reflexivo, determinado"
+    when_advising: "Direto, imperativo, mas não autoritário"
+    when_challenged: "Firme mas contido"
+    when_successful: "Humble, deflecting credit to team"
+
+# ============================================
+# CROSS-VALIDATION
+# ============================================
+cross_validation:
+  linguistic_vs_big_five:
+    - trait: "Low Extraversion"
+      linguistic_marker: "Understatement, controlled tone"
+      consistency: "HIGH"
+
+    - trait: "High Conscientiousness"
+      linguistic_marker: "High certainty words, analytical structure"
+      consistency: "HIGH"
+
+    - trait: "High Openness"
+      linguistic_marker: "Historical/literary references, metaphorical thinking"
+      consistency: "HIGH"
+
+  linguistic_vs_mbti:
+    - function: "Ni (dominant)"
+      linguistic_marker: "Abstract metaphors, long-term vision language"
+      consistency: "HIGH"
+
+    - function: "Te (auxiliary)"
+      linguistic_marker: "Direct imperatives, results-oriented language"
+      consistency: "HIGH"
+
+# ============================================
+# HANDOFF
+# ============================================
+handoff:
+  to: "C3_Creator"
+  data_path: "2_structured_data/cognitive_profile/linguistic_fingerprint.yaml"
+  statistics:
+    signature_phrases: 7
+    syntactic_patterns: 4
+    rhetorical_devices: 5
+    liwc_indicators: 6
+    voice_rules: 18

@@ -1,0 +1,193 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "A3 Master Tier 3 - Input Schema",
+  "description": "Schema de entrada para o agente A3 Master em modo Tier 3",
+  "version": "3.0.0",
+  "type": "object",
+  "required": ["mode"],
+  "properties": {
+    "mode": {
+      "type": "string",
+      "enum": ["build", "evaluate", "teach"],
+      "description": "Modo de operação do agente"
+    },
+    "build_input": {
+      "type": "object",
+      "description": "Dados para construção de A3 (quando mode=build)",
+      "properties": {
+        "a3_type": {
+          "type": "string",
+          "enum": ["tatico", "operacional"],
+          "description": "Tipo de A3 a ser construído"
+        },
+        "hoshin_driver": {
+          "type": "object",
+          "description": "Vínculo com Hoshin Kanri",
+          "properties": {
+            "code": { "type": "string", "description": "Código do driver (ex: 04.04)" },
+            "name": { "type": "string", "description": "Nome do driver estratégico" },
+            "strategic_objective": { "type": "string", "description": "Objetivo estratégico vinculado" }
+          }
+        },
+        "current_conditions": {
+          "type": "object",
+          "description": "Condições atuais com dados quantitativos",
+          "properties": {
+            "baseline_metric": { "type": "string", "description": "Métrica principal (ex: OEE 72%)" },
+            "baseline_value": { "type": "number", "description": "Valor numérico atual" },
+            "target_value": { "type": "number", "description": "Valor meta" },
+            "deviation": { "type": "number", "description": "Desvio atual (%) " },
+            "stratification": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "dimension": { "type": "string" },
+                  "breakdown": { "type": "object" }
+                }
+              },
+              "description": "Estratificação dos dados por dimensões"
+            },
+            "data_sources": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Fontes dos dados apresentados"
+            }
+          }
+        },
+        "industry": {
+          "type": "string",
+          "enum": ["manufacturing", "healthcare", "services", "technology", "construction", "education", "other"],
+          "description": "Setor de atuação para adaptação de frameworks"
+        },
+        "urgency": {
+          "type": "string",
+          "enum": ["low", "medium", "high", "critical"],
+          "description": "Nível de urgência do problema"
+        },
+        "constraints": {
+          "type": "object",
+          "description": "Restrições do projeto",
+          "properties": {
+            "budget": { "type": "number", "description": "Orçamento disponível" },
+            "timeline": { "type": "string", "description": "Prazo limite" },
+            "resources": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+    "evaluate_input": {
+      "type": "object",
+      "description": "Dados para avaliação de A3 (quando mode=evaluate)",
+      "properties": {
+        "a3_document": {
+          "type": "string",
+          "description": "Conteúdo do A3 a ser avaliado (texto ou base64)"
+        },
+        "a3_type": {
+          "type": "string",
+          "enum": ["tatico", "operacional"],
+          "description": "Tipo de A3 sendo avaliado"
+        },
+        "evaluation_focus": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "context_clarity",
+              "evidence_quality",
+              "smart_objectives",
+              "root_cause_depth",
+              "countermeasure_traceability",
+              "action_plan_quality",
+              "monitoring_indicators",
+              "implementation_viability",
+              "format_synthesis",
+              "sustainability_potential"
+            ]
+          },
+          "description": "Critérios específicos a focar (se vazio, avalia todos)"
+        },
+        "comparison_baseline": {
+          "type": "object",
+          "description": "A3 anterior para comparação (evolução)",
+          "properties": {
+            "previous_score": { "type": "number" },
+            "previous_date": { "type": "string", "format": "date" }
+          }
+        }
+      }
+    },
+    "teach_input": {
+      "type": "object",
+      "description": "Dados para ensino de conceitos (quando mode=teach)",
+      "properties": {
+        "topic": {
+          "type": "string",
+          "description": "Conceito a ser ensinado"
+        },
+        "depth": {
+          "type": "string",
+          "enum": ["overview", "detailed", "advanced"],
+          "description": "Profundidade desejada"
+        },
+        "user_experience": {
+          "type": "string",
+          "enum": ["beginner", "intermediate", "advanced"],
+          "description": "Nível de experiência do usuário com A3"
+        },
+        "industry_context": {
+          "type": "string",
+          "description": "Contexto de indústria para exemplos relevantes"
+        },
+        "specific_questions": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Perguntas específicas sobre o tema"
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "description": "Metadados da solicitação",
+      "properties": {
+        "language": {
+          "type": "string",
+          "default": "pt-BR",
+          "description": "Idioma da resposta"
+        },
+        "output_format": {
+          "type": "string",
+          "enum": ["markdown", "json", "html"],
+          "default": "markdown"
+        },
+        "include_kb_references": {
+          "type": "boolean",
+          "default": true,
+          "description": "Incluir referências às Knowledge Bases"
+        },
+        "confidence_threshold": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 70,
+          "description": "Limiar de confiança para marcar [VALIDAR]"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "mode": { "const": "build" } } },
+      "then": { "required": ["build_input"] }
+    },
+    {
+      "if": { "properties": { "mode": { "const": "evaluate" } } },
+      "then": { "required": ["evaluate_input"] }
+    },
+    {
+      "if": { "properties": { "mode": { "const": "teach" } } },
+      "then": { "required": ["teach_input"] }
+    }
+  ]
+}

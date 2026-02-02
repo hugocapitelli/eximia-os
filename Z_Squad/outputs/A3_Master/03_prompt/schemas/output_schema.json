@@ -1,0 +1,459 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "a3_master_output_schema",
+  "title": "A3 Master Output Schema",
+  "description": "Schema para validar outputs do A3 Master Agent",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "#/definitions/a3_document" },
+    { "$ref": "#/definitions/evaluation_report" },
+    { "$ref": "#/definitions/teaching_response" }
+  ],
+  "definitions": {
+    "a3_document": {
+      "type": "object",
+      "title": "Documento A3 Completo",
+      "required": [
+        "metadata",
+        "contexto",
+        "condicoes_atuais",
+        "objetivos_metas",
+        "analise_causa",
+        "contramedidas",
+        "cronograma",
+        "monitoramento"
+      ],
+      "properties": {
+        "metadata": {
+          "type": "object",
+          "required": ["codigo", "titulo", "tipo", "lider", "data_elaboracao"],
+          "properties": {
+            "codigo": {
+              "type": "string",
+              "pattern": "^[0-9]{2}\\.[0-9]{2}(\\.[0-9]{2})?$"
+            },
+            "titulo": { "type": "string" },
+            "tipo": {
+              "type": "string",
+              "enum": ["estrategico", "tatico", "operacional"]
+            },
+            "lider": { "type": "string" },
+            "sponsor": { "type": "string" },
+            "data_elaboracao": {
+              "type": "string",
+              "format": "date"
+            },
+            "data_revisao": {
+              "type": "string",
+              "format": "date"
+            },
+            "areas_envolvidas": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "contexto": {
+          "type": "object",
+          "required": ["texto", "hoshin_vinculado"],
+          "properties": {
+            "texto": {
+              "type": "string",
+              "maxLength": 500,
+              "description": "Máximo 5 linhas"
+            },
+            "hoshin_vinculado": {
+              "type": "object",
+              "properties": {
+                "objetivo": { "type": "string" },
+                "driver": { "type": "string" },
+                "indicador": { "type": "string" }
+              }
+            }
+          }
+        },
+        "condicoes_atuais": {
+          "type": "object",
+          "required": ["texto", "evidencias"],
+          "properties": {
+            "texto": {
+              "type": "string",
+              "maxLength": 500
+            },
+            "evidencias": {
+              "type": "array",
+              "minItems": 3,
+              "items": {
+                "type": "object",
+                "properties": {
+                  "descricao": { "type": "string" },
+                  "valor": { "type": "string" },
+                  "fonte": { "type": "string" },
+                  "validado": { "type": "boolean" }
+                }
+              }
+            }
+          }
+        },
+        "objetivos_metas": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "required": ["objetivo", "meta", "prazo"],
+            "properties": {
+              "id": { "type": "integer" },
+              "objetivo": { "type": "string" },
+              "meta": { "type": "string" },
+              "indicador": { "type": "string" },
+              "prazo": { "type": "string" },
+              "smart_check": {
+                "type": "object",
+                "properties": {
+                  "especifico": { "type": "boolean" },
+                  "mensuravel": { "type": "boolean" },
+                  "alcancavel": { "type": "boolean" },
+                  "relevante": { "type": "boolean" },
+                  "temporal": { "type": "boolean" }
+                }
+              }
+            }
+          }
+        },
+        "analise_causa": {
+          "type": "object",
+          "required": ["efeito", "ishikawa", "cinco_porques"],
+          "properties": {
+            "efeito": {
+              "type": "string",
+              "description": "Frase única definindo o efeito/problema"
+            },
+            "ishikawa": {
+              "type": "object",
+              "properties": {
+                "metodo": {
+                  "type": "array",
+                  "items": { "$ref": "#/definitions/causa" },
+                  "minItems": 1,
+                  "maxItems": 4
+                },
+                "medida": {
+                  "type": "array",
+                  "items": { "$ref": "#/definitions/causa" },
+                  "minItems": 1,
+                  "maxItems": 4
+                },
+                "mao_de_obra": {
+                  "type": "array",
+                  "items": { "$ref": "#/definitions/causa" },
+                  "minItems": 1,
+                  "maxItems": 4
+                },
+                "maquina": {
+                  "type": "array",
+                  "items": { "$ref": "#/definitions/causa" },
+                  "minItems": 1,
+                  "maxItems": 4
+                },
+                "material": {
+                  "type": "array",
+                  "items": { "$ref": "#/definitions/causa" },
+                  "minItems": 1,
+                  "maxItems": 4
+                },
+                "meio_ambiente": {
+                  "type": "array",
+                  "items": { "$ref": "#/definitions/causa" },
+                  "minItems": 1,
+                  "maxItems": 4
+                }
+              }
+            },
+            "cinco_porques": {
+              "type": "array",
+              "description": "Análise 5 Porquês das causas prioritárias",
+              "items": {
+                "type": "object",
+                "required": ["causa_inicial", "cadeia", "causa_raiz"],
+                "properties": {
+                  "causa_inicial": { "type": "string" },
+                  "cadeia": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "nivel": { "type": "integer" },
+                        "pergunta": { "type": "string" },
+                        "resposta": { "type": "string" }
+                      }
+                    }
+                  },
+                  "causa_raiz": { "type": "string" },
+                  "validacao_reversa": { "type": "boolean" }
+                }
+              }
+            }
+          }
+        },
+        "contramedidas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "causa_raiz", "contramedida", "responsavel"],
+            "properties": {
+              "id": { "type": "string" },
+              "causa_raiz": { "type": "string" },
+              "contramedida": { "type": "string" },
+              "tipo": {
+                "type": "string",
+                "enum": ["prevencao", "deteccao", "administrativa"]
+              },
+              "responsavel": { "type": "string" },
+              "definition_of_done": { "type": "string" },
+              "acoes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "acao": { "type": "string" },
+                    "responsavel": { "type": "string" },
+                    "prazo": { "type": "string" },
+                    "status": {
+                      "type": "string",
+                      "enum": ["pendente", "em_andamento", "concluido", "atrasado"]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cronograma": {
+          "type": "object",
+          "required": ["acoes", "cobertura"],
+          "properties": {
+            "acoes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "sequencia": { "type": "integer" },
+                  "acao": { "type": "string" },
+                  "responsavel": { "type": "string" },
+                  "meses": {
+                    "type": "object",
+                    "properties": {
+                      "jan": { "type": "boolean" },
+                      "fev": { "type": "boolean" },
+                      "mar": { "type": "boolean" },
+                      "abr": { "type": "boolean" },
+                      "mai": { "type": "boolean" },
+                      "jun": { "type": "boolean" },
+                      "jul": { "type": "boolean" },
+                      "ago": { "type": "boolean" },
+                      "set": { "type": "boolean" },
+                      "out": { "type": "boolean" },
+                      "nov": { "type": "boolean" },
+                      "dez": { "type": "boolean" }
+                    }
+                  },
+                  "status": { "type": "string" },
+                  "comentarios": { "type": "string" }
+                }
+              }
+            },
+            "gates": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "nome": { "type": "string" },
+                  "data": { "type": "string" },
+                  "criterio": { "type": "string" }
+                }
+              }
+            },
+            "cobertura": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100,
+              "description": "% de contramedidas cobertas pelo cronograma"
+            }
+          }
+        },
+        "monitoramento": {
+          "type": "object",
+          "required": ["indicadores", "ritual"],
+          "properties": {
+            "indicadores": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["nome", "meta", "tipo"],
+                "properties": {
+                  "id": { "type": "integer" },
+                  "nome": { "type": "string" },
+                  "tipo": {
+                    "type": "string",
+                    "enum": ["resultado", "eficacia"]
+                  },
+                  "meta": { "type": "string" },
+                  "regua": {
+                    "type": "object",
+                    "properties": {
+                      "verde": { "type": "string" },
+                      "amarelo": { "type": "string" },
+                      "vermelho": { "type": "string" }
+                    }
+                  },
+                  "medicoes": {
+                    "type": "object",
+                    "properties": {
+                      "jan": { "type": "string" },
+                      "fev": { "type": "string" },
+                      "mar": { "type": "string" },
+                      "abr": { "type": "string" },
+                      "mai": { "type": "string" },
+                      "jun": { "type": "string" },
+                      "jul": { "type": "string" },
+                      "ago": { "type": "string" },
+                      "set": { "type": "string" },
+                      "out": { "type": "string" },
+                      "nov": { "type": "string" },
+                      "dez": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            },
+            "ritual": {
+              "type": "object",
+              "properties": {
+                "frequencia": { "type": "string" },
+                "participantes": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "foco": { "type": "string" }
+              }
+            }
+          }
+        },
+        "validacoes_pendentes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Itens marcados como [VALIDAR]"
+        }
+      }
+    },
+    "evaluation_report": {
+      "type": "object",
+      "title": "Relatório de Avaliação",
+      "required": ["metadata", "pontuacao", "resultado", "recomendacoes"],
+      "properties": {
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "a3_avaliado": { "type": "string" },
+            "data_avaliacao": { "type": "string", "format": "date" },
+            "avaliador": { "type": "string", "const": "A3_Master" }
+          }
+        },
+        "pontuacao": {
+          "type": "object",
+          "required": ["criterios", "total", "nota_final"],
+          "properties": {
+            "criterios": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["id", "nome", "peso", "nota", "observacao"],
+                "properties": {
+                  "id": { "type": "integer" },
+                  "nome": { "type": "string" },
+                  "peso": { "type": "integer", "enum": [1, 2] },
+                  "nota": { "type": "integer", "minimum": 1, "maximum": 5 },
+                  "pontos": { "type": "integer" },
+                  "observacao": { "type": "string" }
+                }
+              }
+            },
+            "total": { "type": "integer", "maximum": 70 },
+            "nota_final": { "type": "number", "minimum": 0, "maximum": 10 }
+          }
+        },
+        "resultado": {
+          "type": "object",
+          "properties": {
+            "classificacao": {
+              "type": "string",
+              "enum": ["excelente", "bom", "adequado", "insuficiente", "critico"]
+            },
+            "aprovado": { "type": "boolean" },
+            "acao_requerida": { "type": "string" }
+          }
+        },
+        "recomendacoes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "prioridade": {
+                "type": "string",
+                "enum": ["alta", "media", "baixa"]
+              },
+              "criterio_afetado": { "type": "string" },
+              "recomendacao": { "type": "string" },
+              "exemplo": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "teaching_response": {
+      "type": "object",
+      "title": "Resposta de Ensino",
+      "required": ["topico", "conteudo"],
+      "properties": {
+        "topico": { "type": "string" },
+        "nivel": {
+          "type": "string",
+          "enum": ["basico", "intermediario", "avancado"]
+        },
+        "conteudo": {
+          "type": "object",
+          "properties": {
+            "definicao": { "type": "string" },
+            "origem": { "type": "string" },
+            "quando_usar": { "type": "string" },
+            "como_aplicar": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "armadilhas": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "exemplo": { "type": "string" }
+          }
+        },
+        "fontes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "pergunta_verificacao": { "type": "string" }
+      }
+    },
+    "causa": {
+      "type": "object",
+      "required": ["descricao", "sistemica"],
+      "properties": {
+        "descricao": { "type": "string" },
+        "sistemica": { "type": "boolean", "const": true },
+        "evidencia": { "type": "string" },
+        "validado": { "type": "boolean" }
+      }
+    }
+  }
+}

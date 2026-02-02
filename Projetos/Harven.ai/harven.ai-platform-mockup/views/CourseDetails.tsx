@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { UserRole } from '../types';
-import { coursesApi, chaptersApi, contentsApi } from '../services/api';
+import { disciplinesApi, chaptersApi, contentsApi } from '../services/api';
 
 interface CourseDetailsProps {
   userRole: UserRole;
@@ -47,15 +47,14 @@ const CourseDetails: React.FC<CourseDetailsProps> = ({ userRole }) => {
     try {
       setLoading(true);
       const [courseData, chaptersData] = await Promise.all([
-        coursesApi.get(courseId),
-        chaptersApi.list(courseId)
+        disciplinesApi.get(courseId),
+        disciplinesApi.getChapters(courseId)
       ]);
       setCourse(courseData);
       setAboutText(courseData.description || "Sem descrição.");
       setModules(chaptersData || []);
     } catch (error) {
       console.error("Erro ao carregar curso:", error);
-      // Em caso de erro, ainda assim para o loading
       setCourse(null);
     } finally {
       setLoading(false);
@@ -69,7 +68,7 @@ const CourseDetails: React.FC<CourseDetailsProps> = ({ userRole }) => {
   const handleAddModule = async () => {
     const newOrder = modules.length + 1;
     try {
-      await chaptersApi.create(courseId, {
+      await disciplinesApi.createChapter(courseId!, {
         title: `Novo Módulo ${newOrder}`,
         description: '',
         order: newOrder

@@ -1,0 +1,315 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "story_architect_input_v1.0.0",
+  "title": "Story Architect Input Schema",
+  "description": "Input schema for the Story Architect agent - the narrative specialist of the Carousel Squad",
+  "type": "object",
+  "required": ["briefing"],
+  "properties": {
+    "briefing": {
+      "type": "object",
+      "description": "The briefing from Carousel Maestro or direct request",
+      "required": ["theme", "audience", "objective"],
+      "properties": {
+        "theme": {
+          "type": "object",
+          "description": "The content theme and topic",
+          "required": ["topic"],
+          "properties": {
+            "topic": {
+              "type": "string",
+              "description": "The main topic of the carousel",
+              "examples": ["How I overcame impostor syndrome", "5 productivity mistakes"]
+            },
+            "content_type": {
+              "type": "string",
+              "description": "The type of content being created",
+              "enum": [
+                "how_to",
+                "personal_story",
+                "case_study",
+                "listicle",
+                "myth_busting",
+                "before_after",
+                "tutorial",
+                "thought_leadership"
+              ],
+              "examples": ["personal_story"]
+            },
+            "key_message": {
+              "type": "string",
+              "description": "The core message to convey",
+              "examples": ["You can act despite fear", "Small habits compound over time"]
+            }
+          }
+        },
+        "audience": {
+          "type": "object",
+          "description": "Target audience definition",
+          "required": ["primary_persona"],
+          "properties": {
+            "primary_persona": {
+              "type": "string",
+              "description": "Description of the primary target audience",
+              "examples": ["Beginner entrepreneurs who doubt themselves"]
+            },
+            "pain_points": {
+              "type": "array",
+              "description": "Key pain points the audience experiences",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["Self-doubt", "Fear of failure", "Comparison to others"]]
+            },
+            "desires": {
+              "type": "array",
+              "description": "Key desires and aspirations",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["Confidence", "Success", "Recognition"]]
+            },
+            "current_state": {
+              "type": "string",
+              "description": "Where the audience is right now",
+              "examples": ["Paralyzed by self-doubt, not taking action"]
+            },
+            "desired_state": {
+              "type": "string",
+              "description": "Where the audience wants to be",
+              "examples": ["Acting with confidence despite fear"]
+            }
+          }
+        },
+        "objective": {
+          "type": "object",
+          "description": "The carousel objective",
+          "required": ["type"],
+          "properties": {
+            "type": {
+              "type": "string",
+              "description": "The main objective type",
+              "enum": ["educate", "inspire", "convert", "entertain", "build_authority", "generate_engagement"],
+              "examples": ["inspire"]
+            },
+            "emotional_outcome": {
+              "type": "string",
+              "description": "How the audience should feel after viewing",
+              "examples": ["Empowered and ready to take action"]
+            }
+          }
+        },
+        "strategy_context": {
+          "type": "object",
+          "description": "Context from Carousel Maestro's strategy",
+          "properties": {
+            "carousel_type": {
+              "type": "string",
+              "description": "The type of carousel selected",
+              "enum": [
+                "educational",
+                "storytelling",
+                "listicle",
+                "data_stats",
+                "quote_carousel",
+                "behind_the_scenes",
+                "product_showcase",
+                "testimonial",
+                "interactive",
+                "trend_news"
+              ]
+            },
+            "funnel_stage": {
+              "type": "string",
+              "description": "Position in the marketing funnel",
+              "enum": ["tofu", "mofu", "bofu"]
+            },
+            "slide_count": {
+              "type": "integer",
+              "description": "Number of slides to structure",
+              "minimum": 2,
+              "maximum": 20
+            },
+            "narrative_arc_suggestion": {
+              "type": "string",
+              "description": "Suggested narrative arc from Maestro",
+              "examples": ["Transformation (from fear to confidence)"]
+            },
+            "tension_suggestion": {
+              "type": "string",
+              "description": "Suggested central tension",
+              "examples": ["Internal voice saying you're not good enough"]
+            },
+            "resolution_suggestion": {
+              "type": "string",
+              "description": "Suggested resolution approach",
+              "examples": ["Realizing that action beats fear"]
+            }
+          }
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "description": "Constraints for the narrative structure",
+      "properties": {
+        "min_slides": {
+          "type": "integer",
+          "minimum": 2,
+          "default": 5
+        },
+        "max_slides": {
+          "type": "integer",
+          "maximum": 20,
+          "default": 10
+        },
+        "framework_preference": {
+          "type": "string",
+          "description": "Preferred narrative framework to use",
+          "enum": [
+            "heros_journey_micro",
+            "story_spine_pixar",
+            "scqa_mckinsey",
+            "before_after_bridge",
+            "three_act_structure",
+            "auto"
+          ],
+          "default": "auto"
+        },
+        "must_include_elements": {
+          "type": "array",
+          "description": "Elements that must be included in the narrative",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["personal_anecdote", "data_point", "social_proof"]]
+        },
+        "avoid_elements": {
+          "type": "array",
+          "description": "Elements to avoid in the narrative",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "source_material": {
+      "type": "object",
+      "description": "Source material to incorporate into the narrative",
+      "properties": {
+        "personal_story": {
+          "type": "object",
+          "description": "Personal story elements to incorporate",
+          "properties": {
+            "before_state": {
+              "type": "string",
+              "description": "The before/starting situation"
+            },
+            "turning_point": {
+              "type": "string",
+              "description": "What changed everything"
+            },
+            "after_state": {
+              "type": "string",
+              "description": "The after/current situation"
+            },
+            "key_insights": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "data_points": {
+          "type": "array",
+          "description": "Data or statistics to incorporate",
+          "items": {
+            "type": "object",
+            "properties": {
+              "stat": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "description": "Quotes to potentially incorporate",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "description": "Handoff information from previous agent",
+      "properties": {
+        "from": {
+          "type": "string",
+          "description": "Agent that sent this handoff",
+          "enum": ["Carousel_Maestro", "direct_request"]
+        },
+        "context": {
+          "type": "object",
+          "description": "Context passed from previous agent"
+        },
+        "instructions": {
+          "type": "array",
+          "description": "Specific instructions from previous agent",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "briefing": {
+        "theme": {
+          "topic": "How I overcame impostor syndrome",
+          "content_type": "personal_story",
+          "key_message": "You can act despite fear"
+        },
+        "audience": {
+          "primary_persona": "Beginner entrepreneurs who doubt themselves",
+          "pain_points": ["Self-doubt", "Fear of failure", "Comparison to others"],
+          "desires": ["Confidence", "Success"],
+          "current_state": "Paralyzed by self-doubt",
+          "desired_state": "Acting with confidence despite fear"
+        },
+        "objective": {
+          "type": "inspire",
+          "emotional_outcome": "Empowered and ready to take action"
+        },
+        "strategy_context": {
+          "carousel_type": "storytelling",
+          "funnel_stage": "mofu",
+          "slide_count": 10,
+          "narrative_arc_suggestion": "Transformation (from fear to confidence)"
+        }
+      },
+      "constraints": {
+        "max_slides": 10,
+        "framework_preference": "heros_journey_micro"
+      },
+      "handoff": {
+        "from": "Carousel_Maestro",
+        "instructions": ["Focus on vulnerability", "Include personal rock-bottom moment"]
+      }
+    }
+  ]
+}

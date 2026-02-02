@@ -1,0 +1,140 @@
+---
+name: daily-devotional-generation
+version: 1.0.0
+description: "Generate meaningful daily devotional: theme selection → scripture → devotional → integration"
+category: "Devotional & Spiritual Practice"
+
+triggers:
+  - command: "*devotional"
+  - command: "/daily-devotion"
+  - scheduled: "daily at 6:00 AM"
+
+metadata:
+  estimated_time: "3-5 minutes"
+  complexity: "medium"
+  requires_interaction: false
+  can_be_scheduled: true
+
+steps:
+  - id: select-theme
+    agent: daily-guide
+    description: "Choose theme for day (from rotation or user preference)"
+    interaction: false
+    logic: "Use data/daily-themes-rotation.yaml based on day of week"
+    output: "Today's theme"
+
+  - id: find-scripture
+    task: lookup-scripture
+    agent: scripture-researcher
+    description: "Find key passages for theme"
+    input_from: ["select-theme"]
+    parameters:
+      query_type: "theme"
+      translations: ["King James 1611", "ACF", "NVT"]
+      include_context: true
+
+  - id: select-primary-passage
+    agent: daily-guide
+    description: "Select primary passage for devotional focus"
+    input_from: ["find-scripture"]
+    logic: "Choose most applicable passage for day/theme"
+
+  - id: generate-devotional
+    task: daily-devotional
+    agent: daily-guide
+    description: "Create complete devotional content"
+    input_from: ["select-primary-passage"]
+    parameters:
+      focus_area: "from selected theme"
+      length: "medium"
+      tone: "encouraging"
+
+  - id: add-cross-references
+    agent: scripture-researcher
+    description: "Include related passages"
+    input_from: ["generate-devotional"]
+    task: lookup-scripture
+    parameters:
+      query_type: "theme"
+      max_results: 3
+
+  - id: provide-prayer
+    agent: daily-guide
+    description: "Compose closing prayer"
+    input_from: ["generate-devotional"]
+    logic: "Crafted prayer specific to today's theme and application"
+
+  - id: format-output
+    agent: daily-guide
+    description: "Format for daily delivery"
+    input_from: ["provide-prayer"]
+
+outputs:
+  - name: "complete_devotional"
+    type: "markdown"
+    sections:
+      - "Title"
+      - "Opening Reflection"
+      - "Scripture (multiple translations)"
+      - "Main Reflection"
+      - "Practical Application"
+      - "Prayer"
+      - "Reflection Questions"
+      - "Related Passages"
+
+  - name: "theme_of_day"
+    type: "string"
+
+  - name: "reading_time"
+    type: "number"
+    unit: "minutes"
+
+  - name: "primary_passage"
+    type: "object"
+    contains: "Reference, translations, significance"
+
+flow_chart: |
+  Select Theme (Daily Rotation)
+        ↓
+  Find Scripture for Theme
+        ↓
+  Select Primary Passage
+        ↓
+  Generate Devotional
+        ↓
+  Add Cross-References
+        ↓
+  Create Closing Prayer
+        ↓
+  Format for Delivery
+
+scheduling:
+  default_time: "06:00 AM"
+  can_customize: true
+  timezone_aware: true
+  optional_digest: "Weekly compilation available"
+
+personalization_options:
+  - length: "short (2-3 min) | medium (5-7 min) | long (10-15 min)"
+  - tone: "encouraging | challenging | meditative | practical"
+  - theme_preference: "Can request specific theme or area"
+  - translations: "Customize which versions included"
+
+success_criteria:
+  - Devotional is engaging and relevant
+  - Scripture is presented in multiple translations
+  - Application is practical and actionable
+  - Closure is meaningful (prayer)
+  - Reader feels spiritually nourished
+  - Encourages daily reflection
+
+related_features:
+  - Reflection journal prompts
+  - Weekly theme summary
+  - Scripture memory helper
+  - Prayer tracking
+  - Spiritual growth journaling
+
+created: 2026-01-27
+last_updated: 2026-01-27
+status: active

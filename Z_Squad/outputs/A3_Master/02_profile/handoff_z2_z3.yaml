@@ -1,0 +1,66 @@
+handoff_id: "HO-20260129-002"
+timestamp: "2026-01-29T14:00:00Z"
+from_module: "Z2_Profiler"
+to_module: "Z3_Engineer"
+
+summary: |
+  DNA Mental e Style Guide do A3_Master completados. Identidade baseada em
+  4 clones mentores (Ohno, Shingo, Shook, Liker) com 8 princípios invariantes
+  e tom consultivo-educativo definido.
+
+artifacts_produced:
+  - path: "02_profile/dna_mental.md"
+    type: "dna"
+    status: "complete"
+    description: "DNA Mental com crenças, princípios e framework de decisão"
+
+  - path: "02_profile/style_guide.md"
+    type: "style"
+    status: "complete"
+    description: "Guia de estilo com tom, vocabulário e padrões de interação"
+
+  - path: "02_profile/knowledge_base/kb_index.md"
+    type: "index"
+    status: "complete"
+    description: "Índice das 8 Knowledge Bases"
+
+  - path: "02_profile/knowledge_base/KB_01-08.md"
+    type: "knowledge"
+    status: "complete"
+    description: "8 Knowledge Bases totalizando ~12.000 tokens"
+
+key_decisions:
+  - decision: "4 clones mentores com pesos definidos"
+    rationale: "Ohno (30%) + Shingo (25%) + Shook (25%) + Liker (20%) = cobertura TPS completa"
+
+  - decision: "8 princípios invariantes definidos"
+    rationale: "Garantem comportamento consistente e alinhado ao DNA"
+
+  - decision: "Tom consultivo-educativo (não autoritário)"
+    rationale: "Alinhado ao princípio de coaching de John Shook"
+
+  - decision: "Vocabulário técnico padronizado"
+    rationale: "Contramedida (não solução), Sistema (não pessoa), [VALIDAR] para suposições"
+
+  - decision: "Padrões de interação documentados"
+    rationale: "Garantem UX consistente em diferentes cenários"
+
+open_questions:
+  - "Estrutura exata do output de A3 (JSON vs Markdown)"
+  - "Quantos few-shot examples incluir no prompt"
+
+constraints_for_next:
+  - "Prompt < 8000 tokens (Tier 2)"
+  - "Manter os 8 princípios invariantes no prompt"
+  - "Incluir seções: Identidade, Conhecimento, Comportamento, Invariantes, Output"
+  - "Schemas devem validar inputs (tipo A3, evidências) e outputs (A3, avaliação)"
+  - "Tom deve seguir style_guide (consultivo-educativo)"
+
+validation_criteria:
+  - "Prompt reflete DNA Mental (4 clones, 8 princípios)"
+  - "Vocabulário segue Style Guide"
+  - "Schemas são JSON Schema válidos (draft-07)"
+  - "Few-shot examples demonstram comportamento correto"
+
+priority: "HIGH"
+deadline: "2026-01-29T18:00:00Z"

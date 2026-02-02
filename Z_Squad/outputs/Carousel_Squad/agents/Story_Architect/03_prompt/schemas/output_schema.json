@@ -1,0 +1,538 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "story_architect_output_v1.0.0",
+  "title": "Story Architect Output Schema",
+  "description": "Output schema for the Story Architect agent - narrative structure with slide-by-slide story arc",
+  "type": "object",
+  "required": ["narrative_structure"],
+  "properties": {
+    "narrative_structure": {
+      "type": "object",
+      "description": "The complete narrative structure for the carousel",
+      "required": ["core_story_elements", "slide_structure"],
+      "properties": {
+        "core_story_elements": {
+          "type": "object",
+          "description": "Fundamental story elements",
+          "required": ["hero", "conflict", "transformation", "stakes"],
+          "properties": {
+            "hero": {
+              "type": "string",
+              "description": "Who is the protagonist (audience representation)",
+              "examples": ["Entrepreneur who doubts themselves"]
+            },
+            "conflict": {
+              "type": "string",
+              "description": "The central tension or problem",
+              "examples": ["Internal voice that says 'you're not good enough'"]
+            },
+            "transformation": {
+              "type": "object",
+              "description": "The transformation arc",
+              "required": ["from", "to"],
+              "properties": {
+                "from": {
+                  "type": "string",
+                  "description": "Starting state",
+                  "examples": ["Paralyzed by doubts"]
+                },
+                "to": {
+                  "type": "string",
+                  "description": "Ending state",
+                  "examples": ["Acting despite fear"]
+                }
+              }
+            },
+            "stakes": {
+              "type": "string",
+              "description": "What's at stake - why this matters",
+              "examples": ["Achieving or not achieving the dream of entrepreneurship"]
+            },
+            "theme": {
+              "type": "string",
+              "description": "The underlying theme or moral",
+              "examples": ["Courage is not absence of fear, but action despite it"]
+            }
+          }
+        },
+        "arc_visualization": {
+          "type": "object",
+          "description": "Visual representation of the narrative arc",
+          "properties": {
+            "arc_type": {
+              "type": "string",
+              "description": "The narrative arc framework used",
+              "enum": [
+                "heros_journey_micro",
+                "story_spine_pixar",
+                "scqa_mckinsey",
+                "before_after_bridge",
+                "three_act_structure"
+              ],
+              "examples": ["heros_journey_micro"]
+            },
+            "tension_curve": {
+              "type": "array",
+              "description": "Tension level per slide (1-10 scale)",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "slide": {
+                    "type": "integer"
+                  },
+                  "tension_level": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 10
+                  }
+                }
+              },
+              "examples": [[
+                {"slide": 1, "tension_level": 7},
+                {"slide": 2, "tension_level": 5},
+                {"slide": 3, "tension_level": 6},
+                {"slide": 4, "tension_level": 9},
+                {"slide": 5, "tension_level": 8}
+              ]]
+            },
+            "key_moments": {
+              "type": "object",
+              "description": "Key narrative moments",
+              "properties": {
+                "hook_slide": {
+                  "type": "integer",
+                  "description": "Slide number for the hook"
+                },
+                "inciting_incident": {
+                  "type": "integer",
+                  "description": "Slide where the conflict is introduced"
+                },
+                "climax": {
+                  "type": "integer",
+                  "description": "Slide with highest tension/revelation"
+                },
+                "resolution": {
+                  "type": "integer",
+                  "description": "Slide where tension resolves"
+                }
+              }
+            }
+          }
+        },
+        "slide_structure": {
+          "type": "array",
+          "description": "Detailed slide-by-slide narrative structure",
+          "items": {
+            "type": "object",
+            "required": ["slide_number", "narrative_function", "content_direction"],
+            "properties": {
+              "slide_number": {
+                "type": "integer",
+                "description": "The slide number",
+                "minimum": 1
+              },
+              "narrative_function": {
+                "type": "string",
+                "description": "The narrative function of this slide",
+                "enum": [
+                  "hook_identification",
+                  "establish_stakes",
+                  "ordinary_world",
+                  "call_to_adventure",
+                  "introduce_conflict",
+                  "deepen_problem",
+                  "rock_bottom",
+                  "the_shift",
+                  "first_insight",
+                  "building_solution",
+                  "key_revelation",
+                  "climax_proof",
+                  "resolution",
+                  "new_world",
+                  "transfer_to_audience",
+                  "cta"
+                ],
+                "examples": ["hook_identification", "rock_bottom", "the_shift"]
+              },
+              "content_direction": {
+                "type": "string",
+                "description": "What this slide should communicate",
+                "examples": ["That voice that tells you you're not good enough..."]
+              },
+              "emotional_beat": {
+                "type": "string",
+                "description": "The emotion this slide should evoke",
+                "enum": [
+                  "curiosity",
+                  "recognition",
+                  "empathy",
+                  "tension",
+                  "fear",
+                  "hope",
+                  "relief",
+                  "inspiration",
+                  "empowerment",
+                  "urgency",
+                  "satisfaction"
+                ],
+                "examples": ["recognition", "tension", "hope"]
+              },
+              "open_loop": {
+                "type": "boolean",
+                "description": "Does this slide create an open loop?",
+                "default": false
+              },
+              "open_loop_description": {
+                "type": "string",
+                "description": "Description of the open loop if present",
+                "examples": ["Teases the turning point without revealing it"]
+              },
+              "connects_to_previous": {
+                "type": "string",
+                "description": "How this slide connects to the previous one",
+                "examples": ["Deepens the problem introduced in slide 3"]
+              },
+              "sets_up_next": {
+                "type": "string",
+                "description": "How this slide sets up the next one",
+                "examples": ["Creates tension that will be released in slide 5"]
+              }
+            }
+          },
+          "minItems": 2
+        },
+        "open_loops": {
+          "type": "array",
+          "description": "Summary of open loops in the narrative",
+          "items": {
+            "type": "object",
+            "properties": {
+              "created_at_slide": {
+                "type": "integer",
+                "description": "Slide where the loop opens"
+              },
+              "closed_at_slide": {
+                "type": "integer",
+                "description": "Slide where the loop closes"
+              },
+              "loop_description": {
+                "type": "string",
+                "description": "What question/curiosity the loop creates"
+              }
+            }
+          }
+        }
+      }
+    },
+    "notes_for_specialists": {
+      "type": "object",
+      "description": "Notes for other specialist agents",
+      "properties": {
+        "copy_master": {
+          "type": "object",
+          "description": "Notes for the Copy Master",
+          "properties": {
+            "tone_evolution": {
+              "type": "array",
+              "description": "How the tone should evolve through the carousel",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "slides": {
+                    "type": "string",
+                    "examples": ["1-4", "5-8", "9-10"]
+                  },
+                  "tone": {
+                    "type": "string",
+                    "examples": ["vulnerable", "hopeful", "empowering"]
+                  }
+                }
+              }
+            },
+            "key_phrases": {
+              "type": "array",
+              "description": "Key phrases that support the narrative",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["inner voice", "fear", "act despite", "you can"]]
+            },
+            "emotions_to_evoke": {
+              "type": "array",
+              "description": "Emotions to evoke by slide range",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "slides": {
+                    "type": "string"
+                  },
+                  "emotion": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "avoid_in_copy": {
+              "type": "array",
+              "description": "Things to avoid in the copy",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "visual_designer": {
+          "type": "object",
+          "description": "Notes for the Visual Designer",
+          "properties": {
+            "mood_evolution": {
+              "type": "array",
+              "description": "How the visual mood should evolve",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "slides": {
+                    "type": "string"
+                  },
+                  "mood": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "emphasis_moments": {
+              "type": "array",
+              "description": "Slides that deserve special visual emphasis",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "slide": {
+                    "type": "integer"
+                  },
+                  "emphasis_type": {
+                    "type": "string",
+                    "enum": ["high_contrast", "bold_typography", "visual_break", "emotional_peak", "cta_highlight"]
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "visual_metaphors": {
+              "type": "array",
+              "description": "Suggested visual metaphors",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "description": "Handoff protocol information",
+      "properties": {
+        "from": {
+          "type": "string",
+          "const": "Story_Architect"
+        },
+        "to": {
+          "type": "string",
+          "description": "Next agent(s) to receive the work",
+          "enum": ["Copy_Master", "Visual_Designer", "both"]
+        },
+        "context_summary": {
+          "type": "string",
+          "description": "Brief summary for receiving agent(s)"
+        },
+        "critical_elements": {
+          "type": "array",
+          "description": "Critical elements that must be preserved",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadata about the narrative structure",
+      "properties": {
+        "version": {
+          "type": "string",
+          "default": "1.0.0"
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "agent": {
+          "type": "string",
+          "const": "Story_Architect"
+        },
+        "framework_used": {
+          "type": "string",
+          "description": "The narrative framework applied",
+          "examples": ["Hero's Journey (Micro)"]
+        },
+        "total_slides": {
+          "type": "integer"
+        },
+        "estimated_read_time": {
+          "type": "string",
+          "description": "Estimated time to consume the carousel",
+          "examples": ["45-60 seconds"]
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "narrative_structure": {
+        "core_story_elements": {
+          "hero": "Entrepreneur who doubts themselves",
+          "conflict": "Internal voice that says 'you're not good enough'",
+          "transformation": {
+            "from": "Paralyzed by doubts",
+            "to": "Acting despite fear"
+          },
+          "stakes": "Achieving or not achieving the dream of entrepreneurship",
+          "theme": "Courage is action despite fear"
+        },
+        "arc_visualization": {
+          "arc_type": "heros_journey_micro",
+          "tension_curve": [
+            {"slide": 1, "tension_level": 7},
+            {"slide": 2, "tension_level": 6},
+            {"slide": 3, "tension_level": 5},
+            {"slide": 4, "tension_level": 9},
+            {"slide": 5, "tension_level": 7},
+            {"slide": 6, "tension_level": 5},
+            {"slide": 7, "tension_level": 4},
+            {"slide": 8, "tension_level": 6},
+            {"slide": 9, "tension_level": 3},
+            {"slide": 10, "tension_level": 4}
+          ],
+          "key_moments": {
+            "hook_slide": 1,
+            "inciting_incident": 3,
+            "climax": 4,
+            "resolution": 9
+          }
+        },
+        "slide_structure": [
+          {
+            "slide_number": 1,
+            "narrative_function": "hook_identification",
+            "content_direction": "That voice that tells you you're not good enough...",
+            "emotional_beat": "recognition",
+            "open_loop": true,
+            "open_loop_description": "Creates identification without resolution"
+          },
+          {
+            "slide_number": 2,
+            "narrative_function": "establish_stakes",
+            "content_direction": "What you stop doing because of it",
+            "emotional_beat": "empathy",
+            "open_loop": true,
+            "connects_to_previous": "Deepens the hook"
+          },
+          {
+            "slide_number": 3,
+            "narrative_function": "ordinary_world",
+            "content_direction": "I also had this voice...",
+            "emotional_beat": "recognition",
+            "open_loop": true
+          },
+          {
+            "slide_number": 4,
+            "narrative_function": "rock_bottom",
+            "content_direction": "The moment I almost gave up",
+            "emotional_beat": "tension",
+            "open_loop": true
+          },
+          {
+            "slide_number": 5,
+            "narrative_function": "the_shift",
+            "content_direction": "What changed my perspective",
+            "emotional_beat": "hope",
+            "open_loop": false
+          },
+          {
+            "slide_number": 6,
+            "narrative_function": "first_insight",
+            "content_direction": "First tool/insight",
+            "emotional_beat": "hope"
+          },
+          {
+            "slide_number": 7,
+            "narrative_function": "building_solution",
+            "content_direction": "Second tool/insight",
+            "emotional_beat": "inspiration"
+          },
+          {
+            "slide_number": 8,
+            "narrative_function": "climax_proof",
+            "content_direction": "Results after the change",
+            "emotional_beat": "inspiration"
+          },
+          {
+            "slide_number": 9,
+            "narrative_function": "transfer_to_audience",
+            "content_direction": "You can too",
+            "emotional_beat": "empowerment"
+          },
+          {
+            "slide_number": 10,
+            "narrative_function": "cta",
+            "content_direction": "What voice do you need to face?",
+            "emotional_beat": "empowerment"
+          }
+        ],
+        "open_loops": [
+          {
+            "created_at_slide": 1,
+            "closed_at_slide": 5,
+            "loop_description": "How to overcome the internal critic"
+          }
+        ]
+      },
+      "notes_for_specialists": {
+        "copy_master": {
+          "tone_evolution": [
+            {"slides": "1-4", "tone": "vulnerable"},
+            {"slides": "5-8", "tone": "hopeful"},
+            {"slides": "9-10", "tone": "empowering"}
+          ],
+          "key_phrases": ["inner voice", "fear", "act despite", "you can"],
+          "emotions_to_evoke": [
+            {"slides": "1-4", "emotion": "tension"},
+            {"slides": "5-9", "emotion": "hope"},
+            {"slides": "10", "emotion": "empowerment"}
+          ]
+        },
+        "visual_designer": {
+          "mood_evolution": [
+            {"slides": "1-4", "mood": "dark, tense"},
+            {"slides": "5-8", "mood": "brightening"},
+            {"slides": "9-10", "mood": "bright, hopeful"}
+          ],
+          "emphasis_moments": [
+            {"slide": 1, "emphasis_type": "high_contrast", "reason": "Hook must grab attention"},
+            {"slide": 4, "emphasis_type": "emotional_peak", "reason": "Rock bottom moment"},
+            {"slide": 10, "emphasis_type": "cta_highlight", "reason": "Drive action"}
+          ]
+        }
+      },
+      "metadata": {
+        "version": "1.0.0",
+        "agent": "Story_Architect",
+        "framework_used": "Hero's Journey (Micro)",
+        "total_slides": 10,
+        "estimated_read_time": "45-60 seconds"
+      }
+    }
+  ]
+}

@@ -1,0 +1,493 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "carousel_maestro_output_v1.0.0",
+  "title": "Carousel Maestro Output Schema",
+  "description": "Output schema for the Carousel Maestro agent - strategy document with briefings for specialist agents",
+  "type": "object",
+  "required": ["strategy", "specialist_briefings"],
+  "properties": {
+    "strategy": {
+      "type": "object",
+      "description": "The complete carousel strategy document",
+      "required": ["executive_summary", "structure", "validation_checklist"],
+      "properties": {
+        "executive_summary": {
+          "type": "object",
+          "description": "High-level overview of the carousel strategy",
+          "required": ["objective", "audience", "carousel_type", "funnel_stage", "slide_count"],
+          "properties": {
+            "objective": {
+              "type": "string",
+              "description": "Clear statement of what the carousel aims to achieve",
+              "examples": ["Awareness + Authority building for personal finance"]
+            },
+            "audience": {
+              "type": "string",
+              "description": "Summary of the target audience",
+              "examples": ["Young professionals 20-30, investment beginners"]
+            },
+            "carousel_type": {
+              "type": "string",
+              "description": "The type of carousel based on taxonomy",
+              "enum": [
+                "educational",
+                "storytelling",
+                "listicle",
+                "data_stats",
+                "quote_carousel",
+                "behind_the_scenes",
+                "product_showcase",
+                "testimonial",
+                "interactive",
+                "trend_news"
+              ],
+              "examples": ["educational"]
+            },
+            "funnel_stage": {
+              "type": "string",
+              "description": "Position in the marketing funnel",
+              "enum": ["tofu", "mofu", "bofu"],
+              "examples": ["tofu"]
+            },
+            "slide_count": {
+              "type": "integer",
+              "description": "Recommended number of slides",
+              "minimum": 2,
+              "maximum": 20,
+              "examples": [10]
+            },
+            "primary_cta": {
+              "type": "string",
+              "description": "The main call-to-action for this carousel",
+              "examples": ["Follow for more investment tips"]
+            }
+          }
+        },
+        "structure": {
+          "type": "object",
+          "description": "Macro structure of the carousel",
+          "required": ["slides"],
+          "properties": {
+            "slides": {
+              "type": "array",
+              "description": "Slide-by-slide structure definition",
+              "items": {
+                "type": "object",
+                "required": ["slide_number", "function", "direction"],
+                "properties": {
+                  "slide_number": {
+                    "type": "integer",
+                    "description": "The slide number",
+                    "minimum": 1
+                  },
+                  "function": {
+                    "type": "string",
+                    "description": "The strategic function of this slide",
+                    "enum": ["hook", "setup", "problem", "promise", "value", "proof", "solution", "cta", "transition"],
+                    "examples": ["hook", "value"]
+                  },
+                  "direction": {
+                    "type": "string",
+                    "description": "What this slide should communicate",
+                    "examples": ["Capture attention with bold statement about investing being accessible"]
+                  }
+                }
+              },
+              "minItems": 2
+            },
+            "arc_type": {
+              "type": "string",
+              "description": "The narrative arc structure being used",
+              "enum": [
+                "hook_story_offer",
+                "problem_agitate_solve",
+                "heros_journey_micro",
+                "before_after_bridge",
+                "three_act",
+                "educational_sequence"
+              ],
+              "examples": ["hook_story_offer"]
+            }
+          }
+        },
+        "validation_checklist": {
+          "type": "object",
+          "description": "Checklist to validate strategy completeness",
+          "properties": {
+            "objective_clear": {
+              "type": "boolean",
+              "description": "Is the objective clear and singular?"
+            },
+            "audience_defined": {
+              "type": "boolean",
+              "description": "Is the audience properly defined?"
+            },
+            "carousel_type_appropriate": {
+              "type": "boolean",
+              "description": "Is the carousel type appropriate for the objective?"
+            },
+            "structure_complete": {
+              "type": "boolean",
+              "description": "Is the slide structure complete?"
+            },
+            "briefings_complete": {
+              "type": "boolean",
+              "description": "Are all specialist briefings complete?"
+            }
+          }
+        }
+      }
+    },
+    "specialist_briefings": {
+      "type": "object",
+      "description": "Briefings for each specialist agent in the squad",
+      "required": ["story_architect", "visual_designer", "copy_master", "growth_hacker"],
+      "properties": {
+        "story_architect": {
+          "type": "object",
+          "description": "Briefing for the Story Architect agent",
+          "required": ["narrative_arc", "tension", "resolution"],
+          "properties": {
+            "narrative_arc": {
+              "type": "string",
+              "description": "The desired narrative arc type",
+              "examples": ["Transformation (from fear to confidence)"]
+            },
+            "tension": {
+              "type": "string",
+              "description": "The central tension or conflict",
+              "examples": ["Investing seems complicated and risky for beginners"]
+            },
+            "resolution": {
+              "type": "string",
+              "description": "How the carousel resolves the tension",
+              "examples": ["With these 4 simple steps, anyone can start investing"]
+            },
+            "hero_definition": {
+              "type": "string",
+              "description": "Who is the hero (audience) in this story",
+              "examples": ["Young professional who wants financial freedom but fears losing money"]
+            },
+            "emotional_journey": {
+              "type": "array",
+              "description": "The emotional progression through the carousel",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "slides": {
+                    "type": "string",
+                    "examples": ["1-3", "4-7", "8-10"]
+                  },
+                  "emotion": {
+                    "type": "string",
+                    "examples": ["curiosity", "hope", "confidence"]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "visual_designer": {
+          "type": "object",
+          "description": "Briefing for the Visual Designer agent",
+          "required": ["mood"],
+          "properties": {
+            "mood": {
+              "type": "string",
+              "description": "The visual mood/feeling",
+              "examples": ["Clean, trustworthy, modern"]
+            },
+            "style_references": {
+              "type": "array",
+              "description": "Reference accounts or styles",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["@brandsdecoded__", "@notjournal.ai"]]
+            },
+            "color_suggestions": {
+              "type": "object",
+              "description": "Suggested color palette",
+              "properties": {
+                "primary": {
+                  "type": "string",
+                  "examples": ["Blue (trust)"]
+                },
+                "secondary": {
+                  "type": "string",
+                  "examples": ["Green (growth)"]
+                },
+                "accent": {
+                  "type": "string",
+                  "examples": ["White (clean)"]
+                }
+              }
+            },
+            "visual_emphasis": {
+              "type": "array",
+              "description": "Slides that need special visual emphasis",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "slide": {
+                    "type": "integer"
+                  },
+                  "emphasis_type": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "copy_master": {
+          "type": "object",
+          "description": "Briefing for the Copy Master agent",
+          "required": ["tone", "headline_direction", "cta_focus"],
+          "properties": {
+            "tone": {
+              "type": "string",
+              "description": "The tone of voice for the copy",
+              "examples": ["Accessible, jargon-free, friendly expert"]
+            },
+            "headline_direction": {
+              "type": "string",
+              "description": "Direction for the hook/headline",
+              "examples": ["Break the barrier of 'you need lots of money to invest'"]
+            },
+            "cta_focus": {
+              "type": "string",
+              "description": "Focus for the call-to-action",
+              "enum": ["follow", "save", "share", "comment", "link", "dm"],
+              "examples": ["follow"]
+            },
+            "key_messages": {
+              "type": "array",
+              "description": "Key messages to convey",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["You can start with R$100", "It's simpler than you think"]]
+            },
+            "words_to_use": {
+              "type": "array",
+              "description": "Power words or phrases to incorporate",
+              "items": {
+                "type": "string"
+              }
+            },
+            "words_to_avoid": {
+              "type": "array",
+              "description": "Words or phrases to avoid",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "growth_hacker": {
+          "type": "object",
+          "description": "Briefing for the Growth Hacker agent",
+          "required": ["priority_metrics"],
+          "properties": {
+            "priority_metrics": {
+              "type": "array",
+              "description": "Metrics to prioritize for this carousel",
+              "items": {
+                "type": "string",
+                "enum": ["swipe_rate", "save_rate", "share_rate", "comment_rate", "follows", "reach"]
+              },
+              "examples": [["save_rate", "follows"]]
+            },
+            "timing_suggestions": {
+              "type": "object",
+              "description": "Suggested posting timing",
+              "properties": {
+                "best_days": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+                  }
+                },
+                "best_times": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "examples": [["12:00", "19:00"]]
+                }
+              }
+            },
+            "hashtag_themes": {
+              "type": "array",
+              "description": "Themes for hashtag research",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["investimento para iniciantes", "educacao financeira"]]
+            },
+            "distribution_notes": {
+              "type": "string",
+              "description": "Notes on distribution strategy",
+              "examples": ["Cross-post to Stories, engage with finance community"]
+            }
+          }
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "description": "Handoff protocol information for agent coordination",
+      "properties": {
+        "from": {
+          "type": "string",
+          "const": "Carousel_Maestro"
+        },
+        "to": {
+          "type": "string",
+          "description": "Next agent to receive the work",
+          "enum": ["Story_Architect", "Visual_Designer", "Copy_Master", "Growth_Hacker", "all"]
+        },
+        "context_summary": {
+          "type": "string",
+          "description": "Brief summary of context for the receiving agent"
+        },
+        "priority": {
+          "type": "string",
+          "description": "Priority level of this handoff",
+          "enum": ["low", "normal", "high", "urgent"],
+          "default": "normal"
+        }
+      }
+    },
+    "clarification_needed": {
+      "type": "object",
+      "description": "Questions for clarification if brief is incomplete",
+      "properties": {
+        "is_complete": {
+          "type": "boolean",
+          "description": "Whether the brief has all required information"
+        },
+        "questions": {
+          "type": "array",
+          "description": "List of clarification questions",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": {
+                "type": "string",
+                "enum": ["objective", "audience", "theme", "assets", "constraints"]
+              },
+              "question": {
+                "type": "string"
+              },
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadata about the strategy generation",
+      "properties": {
+        "version": {
+          "type": "string",
+          "default": "1.0.0"
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "agent": {
+          "type": "string",
+          "const": "Carousel_Maestro"
+        },
+        "frameworks_used": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["Hook-Story-Offer", "TOFU-MOFU-BOFU", "3-3-3 Rule"]]
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "strategy": {
+        "executive_summary": {
+          "objective": "Awareness + Authority building",
+          "audience": "Young professionals 20-30, investment beginners",
+          "carousel_type": "educational",
+          "funnel_stage": "tofu",
+          "slide_count": 10,
+          "primary_cta": "Follow for more investment tips"
+        },
+        "structure": {
+          "arc_type": "hook_story_offer",
+          "slides": [
+            {"slide_number": 1, "function": "hook", "direction": "You have R$100? You can start investing TODAY"},
+            {"slide_number": 2, "function": "problem", "direction": "Why most people don't invest (fear, complexity)"},
+            {"slide_number": 3, "function": "promise", "direction": "What you'll learn in this carousel"},
+            {"slide_number": 4, "function": "value", "direction": "Step 1 of 4"},
+            {"slide_number": 5, "function": "value", "direction": "Step 2 of 4"},
+            {"slide_number": 6, "function": "value", "direction": "Step 3 of 4"},
+            {"slide_number": 7, "function": "value", "direction": "Step 4 of 4"},
+            {"slide_number": 8, "function": "proof", "direction": "Myth-bust: You don't need lots of money"},
+            {"slide_number": 9, "function": "proof", "direction": "Social proof with data"},
+            {"slide_number": 10, "function": "cta", "direction": "Follow for more beginner tips"}
+          ]
+        },
+        "validation_checklist": {
+          "objective_clear": true,
+          "audience_defined": true,
+          "carousel_type_appropriate": true,
+          "structure_complete": true,
+          "briefings_complete": true
+        }
+      },
+      "specialist_briefings": {
+        "story_architect": {
+          "narrative_arc": "Transformation (from fear to confidence)",
+          "tension": "Investing seems complicated and risky",
+          "resolution": "With these 4 simple steps, anyone can start",
+          "hero_definition": "Young professional who wants financial freedom"
+        },
+        "visual_designer": {
+          "mood": "Clean, trustworthy, young (not juvenile)",
+          "style_references": ["@brandsdecoded__", "@notjournal.ai"],
+          "color_suggestions": {
+            "primary": "Blue (trust)",
+            "secondary": "Green (growth)"
+          }
+        },
+        "copy_master": {
+          "tone": "Accessible, jargon-free",
+          "headline_direction": "Break the 'need lots of money' barrier",
+          "cta_focus": "follow",
+          "key_messages": ["You can start with R$100", "Simpler than you think"]
+        },
+        "growth_hacker": {
+          "priority_metrics": ["save_rate", "follows"],
+          "hashtag_themes": ["investimento para iniciantes", "educacao financeira"],
+          "timing_suggestions": {
+            "best_days": ["tuesday", "thursday"],
+            "best_times": ["12:00", "19:00"]
+          }
+        }
+      },
+      "metadata": {
+        "version": "1.0.0",
+        "agent": "Carousel_Maestro",
+        "frameworks_used": ["Hook-Story-Offer", "TOFU-MOFU-BOFU", "Carousel Type Taxonomy"]
+      }
+    }
+  ]
+}

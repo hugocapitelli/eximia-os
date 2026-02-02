@@ -1,0 +1,484 @@
+workflow:
+  id: narrative-post-engine
+  name: Narrative Post Engine
+  description: >-
+    Workflow de criação de posts e carrosséis para redes sociais.
+    Orquestra Copy Squad, Carousel Squad e Don Norman para transformar
+    um briefing em conteúdo estruturado com narrativa e design otimizado.
+  type: hybrid
+  scope: content-marketing
+  version: 1.0.0
+  created: 2026-01-31
+
+  project_types:
+    - social-media-content
+    - carousel-posts
+    - instagram-content
+    - linkedin-content
+    - organic-content
+
+  phases:
+    - phase_1: Intake (Briefing)
+    - phase_2: Copy (Narrativa)
+    - phase_3: Carousel (Estruturação)
+    - phase_4: Design (UX Principles)
+    - phase_5: Output (Entrega)
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # AGENTS INVOLVED
+  # ═══════════════════════════════════════════════════════════════════════════
+  agents:
+    - id: aios-master
+      role: Orchestrator
+      stage: intake
+
+    - id: copy-squad
+      role: Narrative Creator
+      stage: copy
+      location: squads/copy/
+      orchestrator: copy-chief
+
+    - id: carousel-squad
+      role: Structure Creator
+      stage: carousel
+      location: Z_Squad/outputs/Carousel_Squad/
+      orchestrator: carousel-maestro
+
+    - id: don-norman
+      role: UX Design Expert
+      stage: design
+      location: Clones/don_norman/
+      type: clone
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # INPUT SCHEMA
+  # ═══════════════════════════════════════════════════════════════════════════
+  input:
+    required:
+      - field: tema
+        type: string
+        description: Tema principal do conteúdo
+        example: "Produtividade para empreendedores"
+
+      - field: objetivo
+        type: enum
+        options: [educar, entreter, vender, engajar]
+        description: Objetivo principal do post
+
+      - field: publico_alvo
+        type: string
+        description: Público-alvo do conteúdo
+        example: "Empreendedores 25-45 anos"
+
+      - field: formato
+        type: enum
+        options: [post, carrossel, stories, reels-script]
+        description: Formato do conteúdo
+
+      - field: quantidade_slides
+        type: number
+        min: 3
+        max: 20
+        default: 10
+        description: Número de slides do carrossel
+
+      - field: canais
+        type: array
+        items: [instagram, linkedin, tiktok, twitter, facebook]
+        description: Canais de destino (redes sociais)
+
+    optional:
+      - field: referencias
+        type: string
+        description: Links ou descrição de referências visuais/textuais
+
+      - field: tom_de_voz
+        type: string
+        description: Tom de voz específico (se diferente do padrão)
+
+      - field: restricoes
+        type: string
+        description: O que evitar no conteúdo
+
+      - field: assets_externos
+        type: array
+        description: Imagens, logos ou elementos visuais a incluir
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # OUTPUT STRUCTURE
+  # ═══════════════════════════════════════════════════════════════════════════
+  output:
+    location: outputs/narrative-post-engine/{date}_{topic}/
+    format: multiple-files
+
+    structure:
+      - file: 00_briefing.md
+        description: Briefing original consolidado
+        stage: intake
+
+      - file: 01_narrativa.md
+        description: Copy/narrativa criada pelo Copy Squad
+        stage: copy
+
+      - file: 02_estrutura_carrossel.md
+        description: Headlines e estrutura de slides
+        stage: carousel
+
+      - file: 03_design_review.md
+        description: Análise de UX/Design por Don Norman
+        stage: design
+
+      - file: slides/
+        description: Pasta com arquivos individuais por slide
+        contents:
+          - slide_01.md
+          - slide_02.md
+          - slide_XX.md
+
+      - file: 04_output_final.md
+        description: Documento consolidado final
+        stage: output
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # SEQUENCE - WORKFLOW STEPS
+  # ═══════════════════════════════════════════════════════════════════════════
+  sequence:
+
+    # ═══════════════════════════════════════════════════════════════════════════
+    # PHASE 1: INTAKE (BRIEFING)
+    # ═══════════════════════════════════════════════════════════════════════════
+    - phase: 1
+      name: Intake
+      description: "Coleta e validação do briefing do usuário"
+      agent: aios-master
+
+    - step: 1.1
+      action: collect_briefing
+      agent: aios-master
+      creates: 00_briefing.md
+      elicit: true
+      prompts:
+        - "Qual é o tema do conteúdo?"
+        - "Qual o objetivo? (educar, entreter, vender, engajar)"
+        - "Quem é o público-alvo?"
+        - "Qual formato? (post, carrossel, stories)"
+        - "Quantos slides?"
+        - "Quais canais de destino?"
+        - "Tem referências? (opcional)"
+      validation:
+        - all_required_fields_filled
+        - quantidade_slides_within_range
+      notes: |
+        Orion coleta todas as informações necessárias.
+        Valida campos obrigatórios antes de prosseguir.
+        Salva briefing estruturado em 00_briefing.md
+
+    - step: 1.2
+      action: validate_briefing
+      agent: aios-master
+      requires: 00_briefing.md
+      checkpoint: true
+      notes: |
+        Apresenta resumo do briefing ao usuário.
+        Aguarda confirmação antes de prosseguir.
+
+    # ═══════════════════════════════════════════════════════════════════════════
+    # PHASE 2: COPY (NARRATIVA)
+    # ═══════════════════════════════════════════════════════════════════════════
+    - phase: 2
+      name: Copy
+      description: "Criação da narrativa/copy pelo Copy Squad"
+      agent: copy-squad
+
+    - step: 2.1
+      action: create_narrative
+      agent: copy-squad
+      orchestrator: copy-chief
+      requires: 00_briefing.md
+      creates: 01_narrativa.md
+      workflow_ref: wf-4-organic-content
+      notes: |
+        Copy Chief recebe o briefing.
+        Decide qual copywriter usar baseado no objetivo:
+        - educar → estrutura didática
+        - entreter → storytelling
+        - vender → persuasão direta
+        - engajar → interação/perguntas
+
+        Cria narrativa completa com:
+        - Hook de abertura
+        - Desenvolvimento
+        - CTA de fechamento
+
+    - step: 2.2
+      action: user_approval
+      checkpoint: true
+      approval_required: true
+      requires: 01_narrativa.md
+      notes: |
+        ✋ CHECKPOINT DE APROVAÇÃO
+        Usuário revisa a narrativa criada.
+        Pode solicitar ajustes ou aprovar.
+        Só prossegue após aprovação.
+
+    # ═══════════════════════════════════════════════════════════════════════════
+    # PHASE 3: CAROUSEL (ESTRUTURAÇÃO)
+    # ═══════════════════════════════════════════════════════════════════════════
+    - phase: 3
+      name: Carousel
+      description: "Transformação da narrativa em estrutura de carrossel"
+      agent: carousel-squad
+
+    - step: 3.1
+      action: structure_carousel
+      agent: carousel-squad
+      orchestrator: carousel-maestro
+      requires:
+        - 00_briefing.md
+        - 01_narrativa.md
+      creates:
+        - 02_estrutura_carrossel.md
+        - slides/
+      sub_agents:
+        - story-architect: estrutura narrativa
+        - copy-master: headlines por slide
+        - growth-hacker: otimização para algoritmo
+      notes: |
+        Carousel Maestro coordena:
+        1. Story Architect define arco narrativo por slides
+        2. Copy Master cria headline para cada slide
+        3. Growth Hacker otimiza para engajamento
+
+        Output:
+        - 02_estrutura_carrossel.md (visão geral)
+        - slides/slide_XX.md (1 arquivo por slide)
+
+        Cada slide contém:
+        - Número do slide
+        - Headline principal
+        - Texto de suporte
+        - Notas para design
+        - CTA (se aplicável)
+
+    - step: 3.2
+      action: user_approval
+      checkpoint: true
+      approval_required: true
+      requires: 02_estrutura_carrossel.md
+      notes: |
+        ✋ CHECKPOINT DE APROVAÇÃO
+        Usuário revisa estrutura e headlines.
+        Pode reordenar slides ou ajustar texto.
+        Só prossegue após aprovação.
+
+    # ═══════════════════════════════════════════════════════════════════════════
+    # PHASE 4: DESIGN (UX PRINCIPLES)
+    # ═══════════════════════════════════════════════════════════════════════════
+    - phase: 4
+      name: Design
+      description: "Aplicação de princípios de UX/Design por Don Norman"
+      agent: don-norman
+
+    - step: 4.1
+      action: apply_design_principles
+      agent: don-norman
+      clone: true
+      requires:
+        - 00_briefing.md
+        - 02_estrutura_carrossel.md
+        - slides/
+      creates: 03_design_review.md
+      updates: slides/
+      frameworks:
+        - 7_fundamental_principles: Discoverability, Feedback, Affordances, Signifiers, Mappings, Constraints, Conceptual Model
+        - 3_levels_emotional_design: Visceral, Behavioral, Reflective
+        - gulf_of_execution_evaluation: User interaction gaps
+      notes: |
+        Don Norman analisa cada slide aplicando:
+
+        1. PRINCÍPIOS FUNDAMENTAIS
+           - Discoverability: O usuário entende o que fazer?
+           - Feedback: Há resposta visual clara?
+           - Signifiers: Os indicadores são claros?
+           - Mappings: A navegação é intuitiva?
+           - Constraints: Limites guiam o usuário?
+
+        2. DESIGN EMOCIONAL
+           - Visceral: Primeira impressão visual
+           - Behavioral: Facilidade de uso/leitura
+           - Reflective: Conexão com valores/identidade
+
+        3. RECOMENDAÇÕES
+           - Hierarquia visual
+           - Tipografia
+           - Espaçamento
+           - Cores e contraste
+           - Flow entre slides
+
+        Atualiza arquivos de slides com notas de design.
+        Cria 03_design_review.md com análise completa.
+
+    # ═══════════════════════════════════════════════════════════════════════════
+    # PHASE 5: OUTPUT (ENTREGA)
+    # ═══════════════════════════════════════════════════════════════════════════
+    - phase: 5
+      name: Output
+      description: "Consolidação e entrega final"
+      agent: aios-master
+
+    - step: 5.1
+      action: consolidate_output
+      agent: aios-master
+      requires:
+        - 00_briefing.md
+        - 01_narrativa.md
+        - 02_estrutura_carrossel.md
+        - 03_design_review.md
+        - slides/
+      creates: 04_output_final.md
+      notes: |
+        Consolida todos os artefatos em documento final:
+
+        ## 04_output_final.md
+
+        1. Resumo do Briefing
+        2. Narrativa Original
+        3. Estrutura do Carrossel
+           - Lista de todos os slides com headlines
+        4. Recomendações de Design
+        5. Checklist de Publicação por Canal
+        6. Métricas Sugeridas para Tracking
+
+    - step: 5.2
+      action: generate_summary
+      agent: aios-master
+      creates: README.md
+      notes: |
+        Cria README.md na pasta do output com:
+        - Data de criação
+        - Tema
+        - Objetivo
+        - Canais
+        - Lista de arquivos
+        - Próximos passos
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # HANDOFF PROTOCOL
+  # ═══════════════════════════════════════════════════════════════════════════
+  handoff:
+    format: markdown
+    template: |
+      ## HANDOFF: {from_stage} → {to_stage}
+
+      **De:** {from_agent}
+      **Para:** {to_agent}
+      **Timestamp:** {timestamp}
+
+      ### Briefing Original
+      {briefing_summary}
+
+      ### Entregáveis Recebidos
+      {deliverables}
+
+      ### Contexto Importante
+      {context_notes}
+
+      ### Ação Esperada
+      {expected_action}
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # VALIDATION & QUALITY
+  # ═══════════════════════════════════════════════════════════════════════════
+  validation:
+    checkpoints:
+      - stage: intake
+        criteria: all_required_fields_present
+        blocker: true
+
+      - stage: copy
+        criteria: narrative_approved_by_user
+        blocker: true
+
+      - stage: carousel
+        criteria: structure_approved_by_user
+        blocker: true
+
+      - stage: design
+        criteria: design_review_complete
+        blocker: false
+
+      - stage: output
+        criteria: all_files_generated
+        blocker: true
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # ERROR HANDLING
+  # ═══════════════════════════════════════════════════════════════════════════
+  error_handling:
+    strategy: pause_and_notify
+
+    scenarios:
+      - error: user_rejects_copy
+        action: return_to_copy_squad
+        notes: Usuário pode dar feedback específico
+
+      - error: user_rejects_structure
+        action: return_to_carousel_squad
+        notes: Permite reordenação ou reescrita
+
+      - error: missing_input
+        action: prompt_for_missing
+        notes: Solicita campos faltantes
+
+      - error: agent_unavailable
+        action: notify_and_wait
+        notes: Aguarda disponibilidade do agente
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # TEMPLATES
+  # ═══════════════════════════════════════════════════════════════════════════
+  templates:
+    existing:
+      - source: Z_Squad/outputs/Carousel_Squad/shared/templates/
+        use_for: carousel_structure
+
+    custom:
+      - name: slide-template.md
+        location: .aios-core/development/templates/narrative-post-engine/
+        content: |
+          # Slide {number}
+
+          ## Headline
+          {headline}
+
+          ## Texto de Suporte
+          {supporting_text}
+
+          ## Notas de Design
+          - Hierarquia: {hierarchy_notes}
+          - Tipografia: {typography_notes}
+          - Cores: {color_notes}
+
+          ## CTA (se aplicável)
+          {cta}
+
+          ---
+          *Gerado por Narrative Post Engine v1.0*
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # METADATA
+  # ═══════════════════════════════════════════════════════════════════════════
+  metadata:
+    created_by: Orion (AIOS Master)
+    created_at: 2026-01-31
+    version: 1.0.0
+    tags:
+      - content-creation
+      - social-media
+      - carousel
+      - copywriting
+      - ux-design
+    dependencies:
+      - copy-squad
+      - carousel-squad
+      - don-norman-clone

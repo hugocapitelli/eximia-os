@@ -1,0 +1,124 @@
+# Design Systems Consulting Workflow
+# Brad Frost Atomic Design Squad v1.0
+# Created: 2026-01-27
+
+name: design-systems-consulting
+version: 1.0.0
+description: "End-to-end workflow for comprehensive design system review, assessment, and recommendations"
+squad: brad-frost
+
+metadata:
+  created: 2026-01-27
+  author: brad-frost-squad-creator
+  tags:
+    - design-systems
+    - consulting
+    - strategy
+    - workflow
+
+triggers:
+  - type: manual
+    command: "*design-systems-consulting"
+
+inputs:
+  - name: system_description
+    type: string
+    required: true
+    description: "Description of your current design system"
+
+  - name: team_size
+    type: number
+    required: false
+    description: "Number of designers/developers working on system"
+
+  - name: primary_challenges
+    type: array
+    required: false
+    description: "Key challenges you're facing"
+
+steps:
+  - id: welcome
+    name: "Welcome & Orientation"
+    description: "Set expectations and understand scope"
+    action: agent-command
+    agent: brad-frost
+    task: none
+    on_error: abort
+
+  - id: assess-system
+    name: "Assess Current Design System"
+    description: "Review existing structure, governance, and adoption"
+    action: task
+    task: design-system-assessment
+    depends_on:
+      - welcome
+    inputs:
+      system_description: "{{inputs.system_description}}"
+    on_error: continue
+
+  - id: diagnose-collaboration
+    name: "Diagnose Collaboration"
+    description: "Identify designer-developer friction points"
+    action: task
+    task: collaboration-diagnosis
+    depends_on:
+      - welcome
+    on_error: continue
+
+  - id: synthesize-findings
+    name: "Synthesize Findings"
+    description: "Combine assessment and collaboration data"
+    action: agent-command
+    agent: brad-frost
+    task: none
+    depends_on:
+      - assess-system
+      - diagnose-collaboration
+    on_error: abort
+
+  - id: recommend-strategy
+    name: "Recommend Strategy"
+    description: "Provide prioritized recommendations"
+    action: agent-command
+    agent: brad-frost
+    task: none
+    depends_on:
+      - synthesize-findings
+    on_error: abort
+
+  - id: create-roadmap
+    name: "Create Implementation Roadmap"
+    description: "Develop phased plan for improvements"
+    action: agent-command
+    agent: brad-frost
+    task: none
+    depends_on:
+      - recommend-strategy
+    on_error: abort
+
+outputs:
+  - name: consulting_report
+    from: "{{steps.assess-system.output}}"
+    description: "Complete design system audit and recommendations"
+
+  - name: implementation_roadmap
+    from: "{{steps.create-roadmap.output}}"
+    description: "Phased implementation plan"
+
+completion:
+  on_success:
+    message: "Design systems consulting workflow completed. Review your recommendations and start implementation!"
+    notify: false
+  on_failure:
+    message: "Workflow encountered issues. Please review the error details above."
+    notify: true
+    rollback: true
+
+validation:
+  pre_run:
+    - "System description provided"
+    - "Team context understood"
+  post_run:
+    - "Audit report generated"
+    - "Recommendations documented"
+    - "Implementation roadmap created"

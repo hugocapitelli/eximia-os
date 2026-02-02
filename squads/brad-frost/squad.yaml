@@ -1,0 +1,300 @@
+---
+# Brad Frost Atomic Design Squad
+# Created: 2026-01-27
+# Based on: Brad Frost Clone v1.0 (CLONE_COMPLETION_REPORT score: 9.3/10)
+
+squad:
+  id: brad-frost
+  name: "Brad Frost — Atomic Design Squad"
+  version: "1.0.0"
+  created: "2026-01-27T00:00:00Z"
+  status: production
+
+description: |
+  Complete squad for Atomic Design consulting, education, and design system guidance.
+  Embodies Brad Frost's philosophy: "Build systems, not pages." Specializes in:
+  - Atomic Design methodology (5-level framework)
+  - Design system architecture and governance
+  - Component library design and pattern management
+  - Designer-developer collaboration
+  - Design tokens and naming conventions
+  - Performance as design feature
+  - Responsive web design and accessibility
+
+metadata:
+  author: "squad-creator + Clone Factory"
+  derived_from: "Clones/brad_frost/"
+  clone_score: "9.3/10"
+  fidelity: "High"
+  use_cases:
+    - Design systems consulting
+    - Atomic Design education
+    - Design system architecture reviews
+    - Component library governance
+    - Team collaboration workshops
+    - Frontend architecture guidance
+    - LLM token economy analysis & ROI calculation
+
+# ============================================================================
+# AGENTS
+# ============================================================================
+agents:
+  - id: brad-frost
+    name: "Brad Frost"
+    title: "Design Systems Architect & Atomic Design Expert"
+    icon: "🏗️"
+    type: "Personality Clone"
+    status: production
+
+    description: |
+      Expert in Atomic Design methodology, design systems architecture,
+      and fostering designer-developer collaboration. Provides pragmatic,
+      systems-thinking guidance grounded in real-world experience.
+
+    path: "./agents/brad-frost.yaml"
+
+    persona:
+      role: "Design Systems Consultant & Educator"
+      style: "Conversational, pragmatic, systems-thinking, collaborative"
+      identity: "Creator of Atomic Design | Design systems thought leader"
+      focus: |
+        - Design systems as solved problem libraries
+        - Modularity and component reusability
+        - Human collaboration and communication
+        - Performance as design feature
+        - Documentation and shared vocabulary
+
+    competencies:
+      tier1:
+        - "Atomic Design methodology"
+        - "Design system architecture"
+        - "Component library design"
+        - "Design tokens strategy"
+        - "Responsive web design"
+        - "Designer-developer collaboration"
+      tier2:
+        - "Pattern Lab tool"
+        - "Frontend development"
+        - "Progressive enhancement"
+        - "Performance optimization"
+        - "Accessibility (WCAG)"
+      tier3:
+        - "Visual design aesthetics"
+        - "Backend architecture"
+        - "DevOps"
+
+    knowledge_bases:
+      - "KB_01_IDENTITY.md"
+      - "KB_02_COGNITION.md"
+      - "KB_03_VOICE.md"
+      - "KB_04_FRAMEWORKS.md"
+      - "KB_05_EXPERTISE.md"
+      - "KB_06_PRINCIPLES.md"
+      - "KB_07_CONTEXT.md"
+      - "KB_08_QNA.md"
+      - "KB_09_ANTIJAILBREAK.md"
+
+    system_prompt: "./agents/brad-frost-system-prompt.md"
+
+    commands:
+      - name: help
+        visibility: [full, quick, key]
+        description: "Show all available commands"
+      - name: design-system-review
+        visibility: [full, quick]
+        description: "Review existing design system (structure, governance, adoption)"
+      - name: atomic-design-lesson
+        visibility: [full, quick]
+        description: "Teach Atomic Design 5-level framework with examples"
+      - name: component-architecture
+        visibility: [full, quick]
+        description: "Guide on component design, APIs, and naming"
+      - name: collaboration-workshop
+        visibility: [full, quick]
+        description: "Address designer-developer collaboration challenges"
+      - name: design-tokens
+        visibility: [full, quick]
+        description: "Design tokens strategy, architecture, governance"
+      - name: exit
+        visibility: [full, quick, key]
+        description: "Exit Brad Frost mode"
+
+# ============================================================================
+# TASKS (TASK-FIRST ARCHITECTURE)
+# ============================================================================
+tasks:
+  # Educational tasks
+  - id: teach-atomic-design
+    name: "Teach Atomic Design Framework"
+    agent: brad-frost
+    description: "Interactive lesson on Atomic Design 5-level framework (atoms → molecules → organisms → templates → pages)"
+    path: "./tasks/teach-atomic-design.md"
+
+  - id: design-system-assessment
+    name: "Design System Assessment"
+    agent: brad-frost
+    description: "Audit existing design system structure, gaps, and improvement recommendations"
+    path: "./tasks/design-system-assessment.md"
+
+  - id: collaboration-diagnosis
+    name: "Collaboration Diagnosis"
+    agent: brad-frost
+    description: "Diagnose designer-developer collaboration issues and prescribe solutions"
+    path: "./tasks/collaboration-diagnosis.md"
+
+  - id: design-tokens-strategy
+    name: "Design Tokens Strategy"
+    agent: brad-frost
+    description: "Design and document design token system (architecture, naming, governance)"
+    path: "./tasks/design-tokens-strategy.md"
+
+  - id: component-library-review
+    name: "Component Library Review"
+    agent: brad-frost
+    description: "Review component library design, APIs, documentation, reusability patterns"
+    path: "./tasks/component-library-review.md"
+
+  - id: performance-strategy
+    name: "Performance Strategy"
+    agent: brad-frost
+    description: "Define performance as design feature with team-wide culture shift"
+    path: "./tasks/performance-strategy.md"
+
+  - id: token-economy-analysis
+    name: "Token Economy & ROI Analysis"
+    agent: brad-frost
+    description: "Calculate LLM token consumption and ROI of Atomic Design vs. ad-hoc development across different LLM models"
+    path: "./tasks/token-economy-analysis.md"
+
+  - id: complete-design-system-planning
+    name: "Complete Design System Planning"
+    agent: brad-frost
+    description: "Comprehensive one-shot design system planning: takes project description → generates specification, component inventory, tokens, roadmap, governance"
+    path: "./tasks/complete-design-system-planning.md"
+
+# ============================================================================
+# WORKFLOWS
+# ============================================================================
+workflows:
+  - id: atomic-design-planning
+    name: "Atomic Design Complete Planning Workflow"
+    description: "One-command design system planning: describe your project → get complete Atomic Design specification, components, tokens, implementation roadmap, governance guide"
+    path: "./workflows/atomic-design-planning.yaml"
+    primary: true
+    note: "THE command to start: *atomic-design or /atomic-design"
+
+  - id: design-systems-consulting
+    name: "Design Systems Consulting Workflow"
+    description: "End-to-end workflow for design system review, assessment, and recommendations"
+    path: "./workflows/design-systems-consulting.yaml"
+
+  - id: atomic-design-training
+    name: "Atomic Design Training Program"
+    description: "Multi-step training program on Atomic Design methodology and application"
+    path: "./workflows/atomic-design-training.yaml"
+
+  - id: collaboration-improvement
+    name: "Collaboration Improvement Program"
+    description: "Structured program to improve designer-developer teamwork"
+    path: "./workflows/collaboration-improvement.yaml"
+
+# ============================================================================
+# TEMPLATES
+# ============================================================================
+templates:
+  - id: atomic-design-template
+    name: "Atomic Design Component Template"
+    description: "Template for documenting Atomic Design components with all 5 levels"
+    path: "./templates/atomic-design-component.md"
+
+  - id: design-system-audit
+    name: "Design System Audit Template"
+    description: "Structured template for comprehensive design system audits"
+    path: "./templates/design-system-audit.md"
+
+  - id: design-tokens-spec
+    name: "Design Tokens Specification"
+    description: "Template for defining and documenting design tokens"
+    path: "./templates/design-tokens-spec.md"
+
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
+config:
+  coding_standards: "./config/coding-standards.md"
+  tech_stack: "./config/tech-stack.md"
+  collaboration: "./config/collaboration.md"
+
+# ============================================================================
+# KNOWLEDGE ASSETS
+# ============================================================================
+knowledge:
+  import:
+    - source: "Clones/brad_frost/3_clone_output/knowledge_bases/"
+      dest: "./knowledge/"
+      include:
+        - "KB_01_IDENTITY.md"
+        - "KB_02_COGNITION.md"
+        - "KB_03_VOICE.md"
+        - "KB_04_FRAMEWORKS.md"
+        - "KB_05_EXPERTISE.md"
+        - "KB_06_PRINCIPLES.md"
+        - "KB_07_CONTEXT.md"
+        - "KB_08_QNA.md"
+        - "KB_09_ANTIJAILBREAK.md"
+
+# ============================================================================
+# DEPENDENCIES
+# ============================================================================
+dependencies:
+  external:
+    - aios-core (task-first framework)
+    - squad-validator (schema validation)
+  optional:
+    - The_Veritas (for fact verification)
+    - The_CEO (for organizational strategy)
+
+# ============================================================================
+# VALIDATION & QUALITY GATES
+# ============================================================================
+validation:
+  schema: "squad-schema.json"
+  quality_gates:
+    - squad-manifest-structure
+    - agent-definitions
+    - task-completeness
+    - workflow-syntax
+  minimum_score: 9.0
+
+# ============================================================================
+# DISTRIBUTION & DEPLOYMENT
+# ============================================================================
+distribution:
+  local:
+    path: "./squads/brad-frost/"
+    status: "active"
+  public:
+    repo: "github.com/SynkraAI/aios-squads"
+    status: "ready-for-publish"
+    visibility: "public"
+
+# ============================================================================
+# LIFECYCLE
+# ============================================================================
+lifecycle:
+  created: "2026-01-27"
+  updated: "2026-01-27"
+  maintenance_frequency: "quarterly"
+  next_review: "2026-04-27"
+  deprecated: false
+
+tags:
+  - atomic-design
+  - design-systems
+  - consulting
+  - education
+  - components
+  - framework
+  - collaboration
+  - performance
+  - responsive-design

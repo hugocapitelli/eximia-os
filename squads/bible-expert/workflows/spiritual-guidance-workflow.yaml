@@ -1,0 +1,141 @@
+---
+name: spiritual-guidance
+version: 1.0.0
+description: "Complete spiritual guidance journey: understanding → scripture research → principle application → wisdom synthesis"
+category: "Guidance & Counseling"
+
+triggers:
+  - command: "*spiritual-guidance"
+  - command: "/guidance"
+  - handoff_from: "the_maestro"
+
+metadata:
+  estimated_time: "5-10 minutes"
+  complexity: "high"
+  requires_interaction: true
+  can_be_scheduled: false
+
+steps:
+  - id: welcome
+    agent: o-biblista
+    description: "Welcome seeker and understand their spiritual/life situation"
+    interaction: true
+    elicit:
+      - question: "What situation are you facing that you'd like spiritual guidance on?"
+      - question: "How are you feeling about this? (struggling/uncertain/seeking)"
+    output: "Deep understanding of situation"
+
+  - id: analyze-situation
+    agent: o-biblista
+    description: "Analyze the spiritual/life challenge at deeper level"
+    interaction: false
+    dependencies: ["welcome"]
+    logic: "Use principle-application task to understand situation"
+
+  - id: research-scripture
+    task: lookup-scripture
+    agent: scripture-researcher
+    description: "Research relevant biblical passages using keyword/theme"
+    input_from: ["analyze-situation"]
+    parameters:
+      query_type: "keyword or theme from situation"
+      include_context: true
+
+  - id: extract-principles
+    agent: daily-guide
+    description: "Identify key biblical principles relevant to situation"
+    input_from: ["research-scripture"]
+    dependencies: ["research-scripture"]
+
+  - id: apply-principle
+    task: principle-application
+    agent: daily-guide
+    description: "Deep principle application to specific situation"
+    input_from: ["extract-principles", "analyze-situation"]
+    parameters:
+      include_practical_steps: true
+      include_obstacles: true
+
+  - id: synthesize-wisdom
+    agent: o-biblista
+    description: "Synthesize comprehensive wisdom guidance"
+    input_from: ["apply-principle", "research-scripture"]
+    dependencies: ["apply-principle"]
+    output: "Comprehensive spiritual guidance with wisdom, scriptures, and action steps"
+
+  - id: provide-scriptures
+    agent: scripture-researcher
+    description: "Provide supporting passages in multiple translations"
+    input_from: ["synthesize-wisdom"]
+    task: lookup-scripture
+    parameters:
+      translations: ["all"]
+      include_cross_references: true
+
+  - id: closing-prayer
+    agent: daily-guide
+    description: "Offer closing prayer or meditation"
+    input_from: ["synthesize-wisdom"]
+    interaction: false
+
+outputs:
+  - name: "complete_guidance"
+    type: "markdown"
+    sections:
+      - "Understanding Your Situation"
+      - "Biblical Perspective"
+      - "Key Scripture Passages (multiple translations)"
+      - "Practical Application Steps"
+      - "Obstacles & How to Overcome Them"
+      - "Prayer & Encouragement"
+      - "Follow-up Suggestions"
+
+  - name: "scriptural_foundation"
+    type: "object"
+    contains: "Key passages with references"
+
+  - name: "action_plan"
+    type: "array"
+    contains: "Specific steps to take"
+
+flow_chart: |
+  Welcome & Understand Situation
+        ↓
+  Analyze Situation Deeply
+        ↓
+  Research Relevant Scripture
+        ↓
+  Extract Biblical Principles
+        ↓
+  Apply Principle to Situation
+        ↓
+  Synthesize Comprehensive Wisdom
+        ↓
+  Provide Supporting Scriptures
+        ↓
+  Offer Closing Prayer
+
+error_handling:
+  - if: "No relevant scripture found"
+    then: "Suggest related themes and continue with principle-based guidance"
+
+  - if: "Situation requires professional help"
+    then: "Refer to appropriate professionals (therapist, doctor, lawyer) while offering spiritual perspective"
+
+  - if: "Seeker is in crisis"
+    then: "Provide crisis resources and encourage immediate professional help"
+
+success_criteria:
+  - Seeker has clear biblical perspective on situation
+  - Seeker has concrete action steps to take
+  - Seeker has scriptural encouragement
+  - Seeker feels heard and supported
+  - Follow-up path is clear
+
+handoff_to:
+  - the_maestro: "For synthesis into larger decision-making"
+  - copy_chief: "If creating values-aligned messaging"
+
+created: 2026-01-27
+last_updated: 2026-01-27
+status: active

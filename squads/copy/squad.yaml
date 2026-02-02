@@ -1,0 +1,854 @@
+---
+# Copy Squad — Elite Copywriting Team v3.1
+# Migrated from: copy/ (expansion pack format)
+# Created: 2026-01-29
+# Based on: Copy Squad v3.1 with Tier System & Research-First Methodology
+
+squad:
+  id: copy
+  name: "Copy — Elite Copywriting Squad"
+  version: "3.1.0"
+  created: "2026-01-29T00:00:00Z"
+  status: production
+
+description: |
+  Elite team of legendary copywriters organized by Tier for high-conversion copy.
+  Research-first methodology with 19 specialized agents, 37+ tasks, and 7 automated workflows.
+
+  Features:
+  - Tier System: Diagnosis (0) → Masters (1) → Systematizers (2) → Specialists (3) → Tools
+  - Research-First: All major tasks have 500+ line methodology documents
+  - YOLO Mode: Autonomous workflow execution with phase-based checkpoints
+  - Clone Combinations: Validated synergies between copywriters
+  - 7 Complete Workflows: Full Launch, Paid Traffic, High-Ticket, Organic, Email, Optimization, Direct Mail
+
+metadata:
+  author: "squad-creator + AIOS Team"
+  slash_prefix: "copywriting"
+  slash_aliases: ["cw", "copychief", "elite-copy"]
+  icon: "✍️"
+  note: "/copy is a built-in Claude Code command. Use /copywriting instead."
+  source_format: "expansion-pack"
+  migrated_from: "copy/"
+  use_cases:
+    - Sales page creation
+    - VSL script writing
+    - Email sequence development
+    - Ad copy for paid traffic
+    - Webinar scripts
+    - Lead magnet copy
+    - High-ticket offer copy
+    - Funnel optimization
+    - Direct mail campaigns
+
+# ============================================================================
+# TIER SYSTEM
+# ============================================================================
+tier_system:
+  philosophy: |
+    Tiers organize copywriters by FUNCTION, not quality.
+    Each tier has a specific role in the copy creation workflow.
+    ALWAYS start with Tier 0 for diagnosis before execution.
+
+  tier_0:
+    name: "Foundation & Diagnosis"
+    purpose: "ALWAYS first — diagnose before writing"
+    agents: ["claude-hopkins", "eugene-schwartz", "robert-collier"]
+
+  tier_1:
+    name: "Documented Masters ($500M+)"
+    purpose: "High-performance copy execution"
+    agents: ["gary-halbert", "gary-bencivenga", "david-ogilvy", "john-carlton", "clayton-makepeace", "parris-lampropoulos"]
+
+  tier_2:
+    name: "Modern Systematizers"
+    purpose: "Reproducible frameworks and systems"
+    agents: ["dan-kennedy", "todd-brown", "stefan-georgi"]
+
+  tier_3:
+    name: "Format Specialists"
+    purpose: "Expertise in specific formats"
+    agents: ["jon-benson", "andre-chaperon", "ben-settle", "jim-rutz", "david-deutsch"]
+
+  tools:
+    name: "Post-Copy Validation"
+    purpose: "Apply AFTER writing, BEFORE publishing"
+    items: ["joe-sugarman"]  # 30 Triggers Checklist
+
+# ============================================================================
+# AGENTS (19 total + 1 tool)
+# ============================================================================
+agents:
+  # Orchestrator
+  - id: copy-chief
+    name: "Copy Chief"
+    title: "Creative Director & Copywriter Orchestrator"
+    icon: "✍️"
+    tier: orchestrator
+    type: "Orchestrator Agent"
+    status: production
+    path: "./agents/copy-chief.md"
+    description: |
+      Directs the elite copywriter team. Tier-based workflow, diagnosis,
+      and delegation. Analyzes briefings and recommends ideal copywriter.
+    commands:
+      - name: help
+        description: "Show all commands and team"
+      - name: diagnose
+        description: "Start Tier 0 diagnosis (awareness + sophistication)"
+      - name: recommend
+        description: "Recommend ideal copywriter based on diagnosis"
+      - name: team
+        description: "View complete team by tier"
+      - name: audit-copy
+        description: "Hopkins: scientific copy audit"
+      - name: sugarman-check
+        description: "Apply 30 Triggers checklist"
+
+  # Tier 0 — Foundation & Diagnosis
+  - id: claude-hopkins
+    name: "Claude Hopkins"
+    title: "Father of Direct Response"
+    icon: "🔬"
+    tier: 0
+    era: "Classic (1866-1932)"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/claude-hopkins.md"
+    specialty: "Scientific Advertising — Audits & Testing"
+    best_for: "Final audit of any copy, split test setup"
+    key_work: "Scientific Advertising (1923)"
+
+  - id: eugene-schwartz
+    name: "Eugene Schwartz"
+    title: "Greatest Copywriting Theorist"
+    icon: "🧠"
+    tier: 0
+    era: "Classic (1927-1995)"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/eugene-schwartz.md"
+    specialty: "5 Awareness Levels & Market Sophistication"
+    best_for: "Initial diagnosis, launches, saturated markets"
+    key_work: "Breakthrough Advertising (1966)"
+
+  - id: robert-collier
+    name: "Robert Collier"
+    title: "Mental Conversation Master"
+    icon: "💭"
+    tier: 0
+    era: "Classic (1885-1950)"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/robert-collier.md"
+    specialty: "Enter the Conversation — 6 Primary Motives"
+    best_for: "Avatar research and mental conversation analysis"
+    key_work: "The Robert Collier Letter Book (1931)"
+
+  # Tier 1 — Documented Masters ($500M+)
+  - id: gary-halbert
+    name: "Gary Halbert"
+    title: "The Prince of Print"
+    icon: "👑"
+    tier: 1
+    era: "Classic (1938-2007)"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/gary-halbert.md"
+    specialty: "Sales Letters & Visceral Storytelling"
+    results: "$1 BILLION+ in sales"
+    best_for: "Long sales pages, sales letters, emotional copy"
+    key_work: "The Boron Letters, Coat of Arms letter"
+
+  - id: gary-bencivenga
+    name: "Gary Bencivenga"
+    title: "World's Greatest Living Copywriter"
+    icon: "🎯"
+    tier: 1
+    era: "Classic/Modern"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/gary-bencivenga.md"
+    specialty: "Bullets & Fascinations"
+    results: "80% win rate on controls"
+    best_for: "Benefit lists, hypnotic bullets, newsletters"
+
+  - id: david-ogilvy
+    name: "David Ogilvy"
+    title: "Father of Advertising"
+    icon: "🎩"
+    tier: 1
+    era: "Classic (1911-1999)"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/david-ogilvy.md"
+    specialty: "Branding & Elegant Copy"
+    best_for: "Premium brands, institutional copy, high-ticket"
+    key_work: "Ogilvy on Advertising"
+
+  - id: john-carlton
+    name: "John Carlton"
+    title: "The Most Ripped-Off Copywriter"
+    icon: "⚡"
+    tier: 1
+    era: "Modern"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/john-carlton.md"
+    specialty: "Long-Form Sales Letters & SWS Method"
+    best_for: "Golf, fitness, biz-op niches"
+
+  - id: clayton-makepeace
+    name: "Clayton Makepeace"
+    title: "Master of Financial Copy"
+    icon: "💰"
+    tier: 1
+    era: "Modern (1951-2020)"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/clayton-makepeace.md"
+    specialty: "Financial & Health Copy"
+    results: "$1.5 BILLION+ in sales"
+    best_for: "Investment newsletters, health supplements"
+
+  - id: parris-lampropoulos
+    name: "Parris Lampropoulos"
+    title: "Bullet Writing Virtuoso"
+    icon: "🔥"
+    tier: 1
+    era: "Modern"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/parris-lampropoulos.md"
+    specialty: "Bullets, Fascinations, Financial Copy"
+    best_for: "Headlines, bullets, long-form promos"
+
+  # Tier 2 — Modern Systematizers
+  - id: dan-kennedy
+    name: "Dan Kennedy"
+    title: "The Millionaire Maker"
+    icon: "💵"
+    tier: 2
+    era: "Transition (1980-2010)"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/dan-kennedy.md"
+    specialty: "Direct Response & Urgency"
+    results: "300K GKIC members, $100M+ royalties"
+    best_for: "Deadline offers, scarcity, aggressive NO B.S. copy"
+    key_frameworks: "3Ms (NOT 4Ms), P.A.S., 10 Rules"
+
+  - id: todd-brown
+    name: "Todd Brown"
+    title: "The E5 Method Creator"
+    icon: "💡"
+    tier: 2
+    era: "Modern (active)"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/todd-brown.md"
+    specialty: "Big Ideas & Unique Mechanisms"
+    best_for: "Launches, differentiation, saturated markets"
+
+  - id: stefan-georgi
+    name: "Stefan Georgi"
+    title: "RMBC Method Creator"
+    icon: "📊"
+    tier: 2
+    era: "Modern (active)"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/stefan-georgi.md"
+    specialty: "RMBC Method & Systematic Copy"
+    results: "$700M+ in tracked revenue"
+    best_for: "Structured copy, supplements, info-products"
+
+  # Tier 3 — Format Specialists
+  - id: jon-benson
+    name: "Jon Benson"
+    title: "Inventor of the VSL"
+    icon: "🎬"
+    tier: 3
+    era: "Modern (active)"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/jon-benson.md"
+    specialty: "VSL (Video Sales Letter) Scripts"
+    results: "$1 BILLION+ via VSL"
+    best_for: "VSL scripts, video copy"
+
+  - id: andre-chaperon
+    name: "André Chaperon"
+    title: "Email Story Master"
+    icon: "📧"
+    tier: 3
+    era: "Modern (active)"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/andre-chaperon.md"
+    specialty: "Soap Opera Sequences & Story-Driven Email"
+    best_for: "Email sequences, automated nurture"
+
+  - id: ben-settle
+    name: "Ben Settle"
+    title: "Daily Email Emperor"
+    icon: "📨"
+    tier: 3
+    era: "Modern (active)"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/ben-settle.md"
+    specialty: "Daily Infotainment Emails"
+    best_for: "Daily emails, personality-driven lists"
+
+  - id: jim-rutz
+    name: "Jim Rutz"
+    title: "Direct Mail Legend"
+    icon: "📬"
+    tier: 3
+    era: "Classic/Modern"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/jim-rutz.md"
+    specialty: "Magalogs & Direct Mail"
+    best_for: "Magalogs, physical mail campaigns"
+
+  - id: david-deutsch
+    name: "David Deutsch"
+    title: "Multi-Channel Maestro"
+    icon: "📺"
+    tier: 3
+    era: "Modern"
+    type: "Personality Clone"
+    status: production
+    path: "./agents/david-deutsch.md"
+    specialty: "TV, Radio, Print Integration"
+    best_for: "Multi-channel campaigns, infomercials"
+
+  # Tool (NOT a clone)
+  - id: joe-sugarman
+    name: "Joe Sugarman"
+    title: "30 Psychological Triggers"
+    icon: "🎚️"
+    tier: tool
+    type: "Checklist Tool"
+    status: production
+    path: "./agents/joe-sugarman.md"
+    specialty: "30 Triggers Checklist"
+    best_for: "Apply AFTER writing, BEFORE publishing"
+    note: "CRITICAL: 30 triggers (NOT 31). Tool, not clone."
+
+# ============================================================================
+# ARCHIVED AGENTS
+# ============================================================================
+archived_agents:
+  location: "./archive/agents/"
+  reason: "Not direct response copywriters"
+  agents:
+    - id: alex-hormozi
+      reason: "Business strategist, not copywriter"
+    - id: dan-koe
+      reason: "Content creator, not direct response"
+    - id: frank-kern
+      reason: "Marketing strategist, not copywriter"
+    - id: ramit-sethi
+      reason: "Personal finance educator, not copywriter"
+
+# ============================================================================
+# TASKS (37 tasks organized by category)
+# ============================================================================
+tasks:
+  # Agent Creation Tasks
+  - id: create-copywriter-agent
+    name: "Create Copywriter Agent"
+    category: agent-creation
+    path: "./tasks/create-copywriter-agent.md"
+
+  - id: extract-communication-dna
+    name: "Extract Communication DNA"
+    category: agent-creation
+    path: "./tasks/extract-communication-dna.md"
+
+  - id: extract-frameworks
+    name: "Extract Frameworks"
+    category: agent-creation
+    path: "./tasks/extract-frameworks.md"
+
+  - id: extract-signature-phrases
+    name: "Extract Signature Phrases"
+    category: agent-creation
+    version: "2.0.0"
+    lines: 1197
+    path: "./tasks/extract-signature-phrases.md"
+
+  - id: build-authority-arsenal
+    name: "Build Authority Arsenal"
+    category: agent-creation
+    path: "./tasks/build-authority-arsenal.md"
+
+  - id: create-objection-algorithms
+    name: "Create Objection Algorithms"
+    category: agent-creation
+    path: "./tasks/create-objection-algorithms.md"
+
+  # Tier 0 Diagnosis Tasks
+  - id: audit-copy-hopkins
+    name: "Hopkins Scientific Audit"
+    category: diagnosis
+    tier: 0
+    agent: claude-hopkins
+    path: "./tasks/audit-copy-hopkins.md"
+
+  - id: diagnose-awareness-level
+    name: "Diagnose Awareness Level"
+    category: diagnosis
+    tier: 0
+    agent: eugene-schwartz
+    path: "./tasks/diagnose-awareness-level.md"
+
+  - id: diagnose-market-sophistication
+    name: "Diagnose Market Sophistication"
+    category: diagnosis
+    tier: 0
+    agent: eugene-schwartz
+    path: "./tasks/diagnose-market-sophistication.md"
+
+  - id: analyze-mental-conversation
+    name: "Analyze Mental Conversation"
+    category: diagnosis
+    tier: 0
+    agent: robert-collier
+    path: "./tasks/analyze-mental-conversation.md"
+
+  - id: map-6-primary-motives
+    name: "Map 6 Primary Motives"
+    category: diagnosis
+    tier: 0
+    agent: robert-collier
+    path: "./tasks/map-6-primary-motives.md"
+
+  - id: setup-split-test
+    name: "Setup Split Test"
+    category: diagnosis
+    tier: 0
+    agent: claude-hopkins
+    path: "./tasks/setup-split-test.md"
+
+  # Research Tasks
+  - id: copysearch
+    name: "Competitive Copy Research"
+    category: research
+    path: "./tasks/copysearch.md"
+
+  # Sales Pages & Funnels
+  - id: create-sales-page
+    name: "Create Sales Page"
+    category: creation
+    path: "./tasks/create-sales-page.md"
+
+  - id: create-upsell-page
+    name: "Create Upsell Page"
+    category: creation
+    path: "./tasks/create-upsell-page.md"
+
+  - id: create-downsell-page
+    name: "Create Downsell Page"
+    category: creation
+    path: "./tasks/create-downsell-page.md"
+
+  - id: create-order-bump
+    name: "Create Order Bump"
+    category: creation
+    path: "./tasks/create-order-bump.md"
+
+  - id: create-lead-magnet
+    name: "Create Lead Magnet"
+    category: creation
+    version: "2.0.0"
+    lines: 1249
+    path: "./tasks/create-lead-magnet.md"
+
+  - id: create-abandoned-cart
+    name: "Create Abandoned Cart Sequence"
+    category: creation
+    version: "2.0.0"
+    lines: 1165
+    path: "./tasks/create-abandoned-cart.md"
+
+  # Email Tasks
+  - id: create-daily-email
+    name: "Create Daily Email"
+    category: email
+    agent: ben-settle
+    path: "./tasks/create-daily-email.md"
+
+  - id: create-soap-opera-sequence
+    name: "Create Soap Opera Sequence"
+    category: email
+    agent: andre-chaperon
+    path: "./tasks/create-soap-opera-sequence.md"
+
+  - id: create-cold-email
+    name: "Create Cold Email"
+    category: email
+    path: "./tasks/create-cold-email.md"
+
+  # Video & Ads
+  - id: create-vsl
+    name: "Create VSL Script"
+    category: video
+    tier: 3
+    agent: jon-benson
+    path: "./tasks/create-vsl.md"
+
+  - id: create-ad-copy
+    name: "Create Ad Copy"
+    category: ads
+    path: "./tasks/create-ad-copy.md"
+
+  - id: create-ad-script
+    name: "Create Ad Script"
+    category: ads
+    path: "./tasks/create-ad-script.md"
+
+  - id: create-youtube-ads
+    name: "Create YouTube Ads"
+    category: ads
+    path: "./tasks/create-youtube-ads.md"
+
+  # Other Creation
+  - id: create-webinar-script
+    name: "Create Webinar Script"
+    category: creation
+    path: "./tasks/create-webinar-script.md"
+
+  - id: create-close-script
+    name: "Create Close Script"
+    category: creation
+    path: "./tasks/create-close-script.md"
+
+  - id: create-magalog
+    name: "Create Magalog"
+    category: creation
+    agent: jim-rutz
+    path: "./tasks/create-magalog.md"
+
+  - id: evaluate-offer
+    name: "Evaluate Offer"
+    category: strategy
+    path: "./tasks/evaluate-offer.md"
+
+  - id: write-visceral-copy
+    name: "Write Visceral Copy"
+    category: creation
+    agent: clayton-makepeace
+    path: "./tasks/write-visceral-copy.md"
+
+  - id: write-lampropoulos-bullets
+    name: "Write Lampropoulos Bullets"
+    category: creation
+    agent: parris-lampropoulos
+    path: "./tasks/write-lampropoulos-bullets.md"
+
+  # Collaboration Tasks
+  - id: blend
+    name: "Blend Copywriter Styles"
+    category: collaboration
+    path: "./tasks/blend.md"
+
+# ============================================================================
+# WORKFLOWS (7 automated workflows)
+# ============================================================================
+workflows:
+  - id: wf-1-full-launch
+    name: "Full Product Launch"
+    duration: "5-7 days"
+    phases: 5
+    path: "./workflows/wf-1-full-launch.yaml"
+    description: "Complete launch with all copy assets"
+    recommended_for:
+      - "New product launches"
+      - "Complete funnel builds"
+      - "High-budget campaigns"
+
+  - id: wf-2-paid-traffic
+    name: "Paid Traffic Campaign"
+    duration: "2-3 days"
+    phases: 3
+    path: "./workflows/wf-2-paid-traffic.yaml"
+    description: "Quick ad campaign setup"
+    recommended_for:
+      - "Facebook/Google ads"
+      - "Quick traffic tests"
+      - "Existing products"
+
+  - id: wf-3-high-ticket
+    name: "High-Ticket Sales"
+    duration: "7-10 days"
+    phases: 4
+    path: "./workflows/wf-3-high-ticket.yaml"
+    description: "Premium $5k+ offers with sales calls"
+    recommended_for:
+      - "Coaching/consulting"
+      - "Premium programs"
+      - "B2B sales"
+
+  - id: wf-4-organic-content
+    name: "Organic Content System"
+    duration: "Ongoing"
+    phases: 6
+    path: "./workflows/wf-4-organic-content.yaml"
+    description: "Content marketing machine"
+    recommended_for:
+      - "Brand building"
+      - "Long-term growth"
+      - "Authority positioning"
+
+  - id: wf-5-email-marketing
+    name: "Email Marketing System"
+    duration: "Setup + Ongoing"
+    phases: 4
+    path: "./workflows/wf-5-email-marketing.yaml"
+    description: "Complete email infrastructure"
+    recommended_for:
+      - "List building"
+      - "Nurture sequences"
+      - "Launch sequences"
+
+  - id: wf-6-funnel-optimization
+    name: "Funnel Optimization"
+    duration: "3-5 days"
+    phases: 4
+    path: "./workflows/wf-6-funnel-optimization.yaml"
+    description: "Diagnose and fix existing funnels"
+    recommended_for:
+      - "Underperforming funnels"
+      - "Conversion optimization"
+      - "A/B testing setup"
+
+  - id: wf-7-direct-mail
+    name: "Direct Mail Campaign"
+    duration: "2-3 weeks"
+    phases: 4
+    path: "./workflows/wf-7-direct-mail.yaml"
+    description: "Physical mail campaigns"
+    recommended_for:
+      - "High-value lists"
+      - "B2B outreach"
+      - "Premium positioning"
+
+# ============================================================================
+# TEMPLATES (12 templates)
+# ============================================================================
+templates:
+  # Core Templates
+  - id: sales-page-tmpl
+    name: "Sales Page Template"
+    path: "./templates/sales-page-tmpl.yaml"
+
+  - id: email-sequence-tmpl
+    name: "Email Sequence Template"
+    path: "./templates/email-sequence-tmpl.yaml"
+
+  - id: ad-copy-tmpl
+    name: "Ad Copy Template"
+    path: "./templates/ad-copy-tmpl.yaml"
+
+  - id: vsl-tmpl
+    name: "VSL Script Template"
+    path: "./templates/vsl-tmpl.yaml"
+
+  # Agent Creation Templates
+  - id: copywriter-agent-tmpl
+    name: "Copywriter Agent Template"
+    path: "./templates/copywriter-agent-tmpl.yaml"
+
+  - id: communication-dna-tmpl
+    name: "Communication DNA Template"
+    path: "./templates/communication-dna-tmpl.yaml"
+
+  - id: signature-phrases-tmpl
+    name: "Signature Phrases Template"
+    path: "./templates/signature-phrases-tmpl.yaml"
+
+  - id: authority-arsenal-tmpl
+    name: "Authority Arsenal Template"
+    path: "./templates/authority-arsenal-tmpl.yaml"
+
+  - id: objection-algorithms-tmpl
+    name: "Objection Algorithms Template"
+    path: "./templates/objection-algorithms-tmpl.yaml"
+
+  # Format Templates
+  - id: soap-opera-tmpl
+    name: "Soap Opera Sequence Template"
+    path: "./templates/soap-opera-tmpl.yaml"
+
+  - id: daily-email-tmpl
+    name: "Daily Email Template"
+    path: "./templates/daily-email-tmpl.yaml"
+
+  - id: magalog-tmpl
+    name: "Magalog Template"
+    path: "./templates/magalog-tmpl.yaml"
+
+# ============================================================================
+# CHECKLISTS (9 checklists)
+# ============================================================================
+checklists:
+  - id: copy-quality-checklist
+    name: "Copy Quality Checklist"
+    path: "./checklists/copy-quality-checklist.md"
+
+  - id: copywriter-quality-checklist
+    name: "Copywriter Quality Checklist"
+    path: "./checklists/copywriter-quality-checklist.md"
+
+  - id: hopkins-audit-checklist
+    name: "Hopkins Audit Checklist"
+    tier: 0
+    path: "./checklists/hopkins-audit-checklist.md"
+
+  - id: schwartz-diagnosis-checklist
+    name: "Schwartz Diagnosis Checklist"
+    tier: 0
+    path: "./checklists/schwartz-diagnosis-checklist.md"
+
+  - id: copywriter-agent-creation-checklist
+    name: "Copywriter Agent Creation Checklist"
+    path: "./checklists/copywriter-agent-creation-checklist.md"
+
+  - id: copysearch-checklist
+    name: "Copy Research Checklist"
+    path: "./checklists/copysearch-checklist.md"
+
+  - id: sugarman-30-triggers
+    name: "Sugarman 30 Triggers Checklist"
+    type: tool
+    path: "./checklists/sugarman-30-triggers.md"
+    note: "CRITICAL: 30 triggers (NOT 31)"
+
+  - id: email-infotainment-checklist
+    name: "Email Infotainment Checklist"
+    path: "./checklists/email-infotainment-checklist.md"
+
+  - id: magalog-checklist
+    name: "Magalog Checklist"
+    path: "./checklists/magalog-checklist.md"
+
+# ============================================================================
+# KNOWLEDGE / DATA
+# ============================================================================
+knowledge:
+  - id: copywriting-kb
+    name: "Copywriting Knowledge Base"
+    path: "./knowledge/copywriting-kb.md"
+
+data:
+  - id: copywriting-kb-data
+    name: "Copywriting KB Data"
+    path: "./data/copywriting-kb.md"
+
+# ============================================================================
+# YOLO MODE — Autonomous Execution
+# ============================================================================
+yolo_mode:
+  enabled: true
+  version: "2.0.0"
+  description: "100% autonomous workflow execution with phase-based checkpoints"
+  script:
+    entry_point: "./scripts/copy.sh"
+    discovery_pipeline: "./scripts/copy-discovery.sh"
+  signals:
+    complete: "<promise>COMPLETE</promise>"
+    checkpoint: "<promise>CHECKPOINT:PHASE-X</promise>"
+    blocked: "<promise>BLOCKED:reason</promise>"
+
+# ============================================================================
+# CLONE COMBINATIONS
+# ============================================================================
+clone_combinations:
+  proven:
+    - combo: "Schwartz + Anyone"
+      reason: "Always diagnose awareness first"
+      usage: "PHASE-1 of any workflow"
+    - combo: "Todd Brown + Georgi"
+      reason: "Mechanism + production"
+      usage: "Strategy phases"
+    - combo: "Halbert + Makepeace"
+      reason: "Story + emotion"
+      usage: "Long-form copy"
+    - combo: "Chaperon + Settle"
+      reason: "Hybrid email"
+      usage: "Email marketing"
+    - combo: "Bencivenga + Lampropoulos"
+      reason: "Bullet power"
+      usage: "Fascinations, sales pages"
+    - combo: "Kennedy + Todd Brown"
+      reason: "Avatar + differentiation"
+      usage: "Market positioning"
+    - combo: "Hopkins + Sugarman"
+      reason: "Testing + triggers"
+      usage: "Optimization phases"
+  caution:
+    - combo: "Halbert + Carlton same piece"
+      reason: "Style conflict - both dominant voices"
+    - combo: "Ogilvy + Makepeace"
+      reason: "Tone conflict - elegant vs visceral"
+    - combo: "All 30 Sugarman triggers"
+      reason: "Overkill - creates distrust"
+
+# ============================================================================
+# DEPENDENCIES & CONFIGURATION
+# ============================================================================
+dependencies:
+  required:
+    - aios-core
+  optional:
+    - The_Veritas
+    - The_CMO
+    - mmos  # Future: Mind Mapping Operating System
+
+config:
+  mmos_integration:
+    enabled: false
+    fallback_behavior: "graceful"
+
+# ============================================================================
+# VALIDATION
+# ============================================================================
+validation:
+  schema: "squad-schema.json"
+  minimum_score: 9.0
+
+# ============================================================================
+# DISTRIBUTION
+# ============================================================================
+distribution:
+  local:
+    path: "./squads/copy/"
+    status: "active"
+  public:
+    repo: "github.com/SynkraAI/aios-squads"
+    status: "ready-for-publish"
+
+# ============================================================================
+# LIFECYCLE
+# ============================================================================
+lifecycle:
+  created: "2026-01-29"
+  updated: "2026-01-29"
+  source_version: "3.1.0"
+  deprecated: false
+
+tags:
+  - copywriting
+  - direct-response
+  - sales
+  - marketing
+  - conversion
+  - tier-system
+  - research-first
+  - email-marketing
+  - vsl
+  - funnels

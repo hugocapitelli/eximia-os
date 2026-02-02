@@ -1,0 +1,380 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "visual_designer_input_v1.0.0",
+  "title": "Visual Designer Input Schema",
+  "description": "Input schema for the Visual Designer agent - the design specialist of the Carousel Squad",
+  "type": "object",
+  "required": ["briefing"],
+  "properties": {
+    "briefing": {
+      "type": "object",
+      "description": "The visual design briefing",
+      "required": ["mood"],
+      "properties": {
+        "mood": {
+          "type": "object",
+          "description": "The desired visual mood and feeling",
+          "required": ["primary_mood"],
+          "properties": {
+            "primary_mood": {
+              "type": "string",
+              "description": "The primary visual mood",
+              "enum": [
+                "clean",
+                "bold",
+                "minimal",
+                "editorial",
+                "vibrant",
+                "corporate",
+                "playful",
+                "premium",
+                "energetic",
+                "calming",
+                "professional",
+                "creative"
+              ],
+              "examples": ["clean"]
+            },
+            "secondary_mood": {
+              "type": "string",
+              "description": "Secondary mood to complement primary",
+              "examples": ["trustworthy", "modern"]
+            },
+            "mood_keywords": {
+              "type": "array",
+              "description": "Keywords describing the desired feel",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["modern", "trustworthy", "young but not juvenile"]]
+            }
+          }
+        },
+        "brand_guidelines": {
+          "type": "object",
+          "description": "Brand guidelines to follow",
+          "properties": {
+            "colors": {
+              "type": "object",
+              "description": "Brand color specifications",
+              "properties": {
+                "primary": {
+                  "type": "string",
+                  "description": "Primary brand color (hex or name)",
+                  "examples": ["#4361EE", "Blue"]
+                },
+                "secondary": {
+                  "type": "string",
+                  "description": "Secondary brand color",
+                  "examples": ["#1A1A2E", "Dark navy"]
+                },
+                "accent": {
+                  "type": "string",
+                  "description": "Accent color for highlights",
+                  "examples": ["#FF6B6B", "Coral"]
+                },
+                "background": {
+                  "type": "string",
+                  "description": "Preferred background color",
+                  "examples": ["#F8F9FA", "Off-white"]
+                }
+              }
+            },
+            "fonts": {
+              "type": "object",
+              "description": "Brand typography specifications",
+              "properties": {
+                "headline_font": {
+                  "type": "string",
+                  "examples": ["Inter", "Montserrat", "Clash Display"]
+                },
+                "body_font": {
+                  "type": "string",
+                  "examples": ["Inter", "Open Sans"]
+                },
+                "accent_font": {
+                  "type": "string",
+                  "description": "Optional accent font for special elements"
+                }
+              }
+            },
+            "logo": {
+              "type": "object",
+              "description": "Logo usage specifications",
+              "properties": {
+                "include_logo": {
+                  "type": "boolean",
+                  "default": false
+                },
+                "logo_position": {
+                  "type": "string",
+                  "enum": ["top_left", "top_right", "bottom_left", "bottom_right", "none"],
+                  "default": "none"
+                },
+                "logo_size": {
+                  "type": "string",
+                  "enum": ["small", "medium", "large"],
+                  "default": "small"
+                }
+              }
+            },
+            "style_guide_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Link to full brand style guide if available"
+            }
+          }
+        },
+        "narrative_structure": {
+          "type": "object",
+          "description": "Narrative structure from Story Architect",
+          "properties": {
+            "total_slides": {
+              "type": "integer",
+              "description": "Total number of slides",
+              "minimum": 2,
+              "maximum": 20
+            },
+            "slide_functions": {
+              "type": "array",
+              "description": "Function of each slide",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "slide_number": {
+                    "type": "integer"
+                  },
+                  "function": {
+                    "type": "string"
+                  },
+                  "content_direction": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "mood_evolution": {
+              "type": "array",
+              "description": "How visual mood should evolve",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "slides": {
+                    "type": "string",
+                    "examples": ["1-4", "5-8", "9-10"]
+                  },
+                  "mood": {
+                    "type": "string",
+                    "examples": ["tense", "hopeful", "bright"]
+                  }
+                }
+              }
+            },
+            "emphasis_moments": {
+              "type": "array",
+              "description": "Slides needing visual emphasis",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "slide": {
+                    "type": "integer"
+                  },
+                  "emphasis_type": {
+                    "type": "string"
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "style_references": {
+          "type": "array",
+          "description": "Reference accounts or styles to draw inspiration from",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["@brandsdecoded__", "@notjournal.ai", "@visualizevalue"]]
+        },
+        "content_elements": {
+          "type": "object",
+          "description": "Types of content elements to design for",
+          "properties": {
+            "has_numbers": {
+              "type": "boolean",
+              "description": "Will there be large numbers/statistics?",
+              "default": false
+            },
+            "has_quotes": {
+              "type": "boolean",
+              "description": "Will there be quotes?",
+              "default": false
+            },
+            "has_lists": {
+              "type": "boolean",
+              "description": "Will there be bullet/numbered lists?",
+              "default": false
+            },
+            "has_images": {
+              "type": "boolean",
+              "description": "Will there be photos/images?",
+              "default": false
+            },
+            "has_icons": {
+              "type": "boolean",
+              "description": "Should icons be used?",
+              "default": false
+            },
+            "has_data_viz": {
+              "type": "boolean",
+              "description": "Will there be charts/graphs?",
+              "default": false
+            }
+          }
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "description": "Design constraints",
+      "properties": {
+        "platform": {
+          "type": "string",
+          "description": "Target platform",
+          "enum": ["instagram", "linkedin", "facebook", "twitter", "tiktok"],
+          "default": "instagram"
+        },
+        "format": {
+          "type": "object",
+          "description": "Carousel format specifications",
+          "properties": {
+            "dimensions": {
+              "type": "string",
+              "description": "Canvas dimensions",
+              "enum": ["1080x1080", "1080x1350", "1080x1920"],
+              "default": "1080x1080"
+            },
+            "orientation": {
+              "type": "string",
+              "enum": ["square", "portrait", "story"],
+              "default": "square"
+            }
+          }
+        },
+        "accessibility": {
+          "type": "object",
+          "description": "Accessibility requirements",
+          "properties": {
+            "min_contrast_ratio": {
+              "type": "number",
+              "description": "Minimum contrast ratio for text",
+              "default": 4.5
+            },
+            "min_font_size": {
+              "type": "integer",
+              "description": "Minimum font size in pt",
+              "default": 14
+            }
+          }
+        },
+        "max_colors": {
+          "type": "integer",
+          "description": "Maximum colors per slide",
+          "default": 4
+        },
+        "max_fonts": {
+          "type": "integer",
+          "description": "Maximum font families",
+          "default": 3
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "description": "Handoff information from previous agent",
+      "properties": {
+        "from": {
+          "type": "string",
+          "description": "Agent that sent this handoff",
+          "enum": ["Carousel_Maestro", "Story_Architect", "direct_request"]
+        },
+        "context": {
+          "type": "object",
+          "description": "Context from previous agent"
+        },
+        "instructions": {
+          "type": "array",
+          "description": "Specific instructions from previous agent",
+          "items": {
+            "type": "string"
+          }
+        },
+        "constraints": {
+          "type": "array",
+          "description": "Design constraints from previous agent",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "briefing": {
+        "mood": {
+          "primary_mood": "clean",
+          "secondary_mood": "energetic",
+          "mood_keywords": ["modern", "trustworthy", "professional"]
+        },
+        "brand_guidelines": {
+          "colors": {
+            "primary": "#4361EE",
+            "secondary": "#1A1A2E",
+            "accent": "#FF6B6B",
+            "background": "#F8F9FA"
+          },
+          "fonts": {
+            "headline_font": "Inter",
+            "body_font": "Inter"
+          }
+        },
+        "narrative_structure": {
+          "total_slides": 10,
+          "mood_evolution": [
+            {"slides": "1-3", "mood": "attention-grabbing"},
+            {"slides": "4-8", "mood": "informative"},
+            {"slides": "9-10", "mood": "action-oriented"}
+          ],
+          "emphasis_moments": [
+            {"slide": 1, "emphasis_type": "high_contrast", "reason": "Hook slide"},
+            {"slide": 10, "emphasis_type": "cta_highlight", "reason": "Drive action"}
+          ]
+        },
+        "style_references": ["@brandsdecoded__", "@notjournal.ai"],
+        "content_elements": {
+          "has_numbers": true,
+          "has_lists": true,
+          "has_icons": false
+        }
+      },
+      "constraints": {
+        "platform": "instagram",
+        "format": {
+          "dimensions": "1080x1080",
+          "orientation": "square"
+        },
+        "accessibility": {
+          "min_contrast_ratio": 4.5,
+          "min_font_size": 14
+        }
+      },
+      "handoff": {
+        "from": "Story_Architect",
+        "instructions": ["Emphasize visual progression from dark to bright", "Use bold typography for emotional peaks"]
+      }
+    }
+  ]
+}

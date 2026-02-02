@@ -1,0 +1,521 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "copy_master_output_v1.0.0",
+  "title": "Copy Master Output Schema",
+  "description": "Output schema for the Copy Master agent - complete copy for all slides plus caption",
+  "type": "object",
+  "required": ["carousel_copy"],
+  "properties": {
+    "carousel_copy": {
+      "type": "object",
+      "description": "Complete copy for the carousel",
+      "required": ["overview", "slides", "caption"],
+      "properties": {
+        "overview": {
+          "type": "object",
+          "description": "Overview of the copy approach",
+          "required": ["objective", "tone", "promise"],
+          "properties": {
+            "objective": {
+              "type": "string",
+              "description": "What the copy aims to achieve",
+              "examples": ["Educate about common mistakes and gain followers"]
+            },
+            "tone": {
+              "type": "string",
+              "description": "The tone of voice used",
+              "examples": ["Friendly expert, accessible, jargon-free"]
+            },
+            "promise": {
+              "type": "string",
+              "description": "The main promise of the carousel",
+              "examples": ["Avoid the 5 most expensive beginner mistakes"]
+            },
+            "framework_used": {
+              "type": "string",
+              "description": "The copywriting framework applied",
+              "enum": ["aida", "pas", "bab", "4us", "custom"],
+              "examples": ["aida"]
+            }
+          }
+        },
+        "slides": {
+          "type": "array",
+          "description": "Copy for each slide",
+          "items": {
+            "type": "object",
+            "required": ["slide_number", "headline"],
+            "properties": {
+              "slide_number": {
+                "type": "integer",
+                "description": "Slide number",
+                "minimum": 1
+              },
+              "slide_type": {
+                "type": "string",
+                "description": "Type of slide",
+                "enum": ["hook", "content", "proof", "cta", "transition"],
+                "examples": ["hook", "content"]
+              },
+              "headline": {
+                "type": "object",
+                "description": "Main headline copy",
+                "required": ["text"],
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "description": "The headline text",
+                    "examples": ["5 mistakes that make\nBEGINNERS\nlose money"]
+                  },
+                  "character_count": {
+                    "type": "integer",
+                    "description": "Character count"
+                  },
+                  "formatting_notes": {
+                    "type": "string",
+                    "description": "Notes on formatting (caps, line breaks, etc.)",
+                    "examples": ["BEGINNERS in all caps for emphasis"]
+                  }
+                }
+              },
+              "subheadline": {
+                "type": "object",
+                "description": "Subheadline if applicable",
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  },
+                  "character_count": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "body": {
+                "type": "object",
+                "description": "Body copy if applicable",
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  },
+                  "character_count": {
+                    "type": "integer"
+                  },
+                  "bullet_points": {
+                    "type": "array",
+                    "description": "If content is in bullet form",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "cta": {
+                "type": "object",
+                "description": "Call-to-action if applicable",
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "examples": ["Follow for more beginner tips"]
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": ["follow", "save", "share", "comment", "link", "dm", "swipe"]
+                  }
+                }
+              },
+              "open_loop_technique": {
+                "type": "object",
+                "description": "Open loop used if applicable",
+                "properties": {
+                  "technique": {
+                    "type": "string",
+                    "examples": ["Tease #3 as most common", "Incomplete list"]
+                  },
+                  "closes_at_slide": {
+                    "type": "integer",
+                    "description": "Slide where this loop closes"
+                  }
+                }
+              },
+              "copy_notes": {
+                "type": "string",
+                "description": "Notes about the copy approach for this slide",
+                "examples": ["Hook uses curiosity gap with '(#3 is most common)'"]
+              }
+            }
+          },
+          "minItems": 2
+        },
+        "headline_alternatives": {
+          "type": "array",
+          "description": "Alternative headlines for key slides",
+          "items": {
+            "type": "object",
+            "properties": {
+              "slide_number": {
+                "type": "integer"
+              },
+              "alternatives": {
+                "type": "array",
+                "description": "Alternative headline options",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    },
+                    "angle": {
+                      "type": "string",
+                      "description": "The angle or approach",
+                      "examples": ["fear-based", "curiosity-based", "benefit-focused"]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "caption": {
+          "type": "object",
+          "description": "Instagram/social media caption",
+          "required": ["main_text"],
+          "properties": {
+            "main_text": {
+              "type": "string",
+              "description": "The main caption text",
+              "examples": ["These 5 mistakes cost money - literally. #3 is the most common one I see beginners making.\n\nSave this post and share with someone starting to invest.\n\nWhich mistake have you made? Tell me in the comments"]
+            },
+            "character_count": {
+              "type": "integer",
+              "description": "Character count of caption"
+            },
+            "engagement_hook": {
+              "type": "string",
+              "description": "The engagement question/hook in caption",
+              "examples": ["Which mistake have you made? Tell me in the comments"]
+            },
+            "cta_in_caption": {
+              "type": "string",
+              "description": "CTA included in caption",
+              "examples": ["Save this post and share with someone starting to invest"]
+            }
+          }
+        },
+        "cta_alternatives": {
+          "type": "array",
+          "description": "Alternative CTAs for final slide",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": ["follow", "save", "share", "comment", "link", "dm"]
+              },
+              "use_case": {
+                "type": "string",
+                "description": "When to use this alternative",
+                "examples": ["If goal is saves instead of follows"]
+              }
+            }
+          },
+          "examples": [[
+            {"text": "Save this carousel to check before investing", "type": "save", "use_case": "If goal is saves"},
+            {"text": "Comment which mistake you made", "type": "comment", "use_case": "If goal is engagement"}
+          ]]
+        }
+      }
+    },
+    "copy_strategy": {
+      "type": "object",
+      "description": "Documentation of copy strategy decisions",
+      "properties": {
+        "hook_strategy": {
+          "type": "object",
+          "description": "Strategy for the hook/first slide",
+          "properties": {
+            "technique": {
+              "type": "string",
+              "description": "Hook technique used",
+              "examples": ["Curiosity gap", "Bold statement", "Question"]
+            },
+            "4us_score": {
+              "type": "object",
+              "description": "Score against 4 U's framework",
+              "properties": {
+                "useful": {"type": "boolean"},
+                "urgent": {"type": "boolean"},
+                "unique": {"type": "boolean"},
+                "ultra_specific": {"type": "boolean"}
+              }
+            }
+          }
+        },
+        "persuasion_elements": {
+          "type": "array",
+          "description": "Persuasion elements used throughout",
+          "items": {
+            "type": "object",
+            "properties": {
+              "element": {
+                "type": "string",
+                "enum": ["social_proof", "scarcity", "authority", "reciprocity", "specificity", "story", "objection_handling"]
+              },
+              "used_in_slide": {
+                "type": "integer"
+              },
+              "example": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "tone_execution": {
+          "type": "object",
+          "description": "How tone was executed",
+          "properties": {
+            "tone_achieved": {
+              "type": "string",
+              "examples": ["Friendly expert who speaks plainly"]
+            },
+            "you_count": {
+              "type": "integer",
+              "description": "Number of times 'you/your' was used"
+            },
+            "power_words_used": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "description": "Handoff protocol information",
+      "properties": {
+        "from": {
+          "type": "string",
+          "const": "Copy_Master"
+        },
+        "to": {
+          "type": "string",
+          "description": "Next agent to receive the work",
+          "enum": ["Growth_Hacker", "Visual_Designer", "production"]
+        },
+        "context_summary": {
+          "type": "string",
+          "description": "Brief summary for receiving agent"
+        },
+        "copy_finalized": {
+          "type": "boolean",
+          "description": "Is the copy finalized or needs iteration?"
+        },
+        "ab_test_suggestions": {
+          "type": "array",
+          "description": "Suggested A/B tests for Growth Hacker",
+          "items": {
+            "type": "object",
+            "properties": {
+              "element": {
+                "type": "string",
+                "examples": ["hook headline", "CTA"]
+              },
+              "variant_a": {
+                "type": "string"
+              },
+              "variant_b": {
+                "type": "string"
+              },
+              "hypothesis": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "quality_checklist": {
+      "type": "object",
+      "description": "Quality checklist for the copy",
+      "properties": {
+        "promises_deliverable": {
+          "type": "boolean",
+          "description": "All promises can be fulfilled"
+        },
+        "cta_clear": {
+          "type": "boolean",
+          "description": "CTA is clear and specific"
+        },
+        "max_lines_respected": {
+          "type": "boolean",
+          "description": "Copy respects line limits"
+        },
+        "you_focused": {
+          "type": "boolean",
+          "description": "Copy uses 'you' more than 'I/we'"
+        },
+        "no_generic_headlines": {
+          "type": "boolean",
+          "description": "No generic headlines like 'Marketing tips'"
+        },
+        "specific_not_vague": {
+          "type": "boolean",
+          "description": "Copy is specific, not vague"
+        },
+        "no_clickbait_without_delivery": {
+          "type": "boolean",
+          "description": "No clickbait that doesn't deliver"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadata about the copy",
+      "properties": {
+        "version": {
+          "type": "string",
+          "default": "1.0.0"
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "agent": {
+          "type": "string",
+          "const": "Copy_Master"
+        },
+        "frameworks_used": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["AIDA", "4 U's", "Open Loop Technique"]]
+        },
+        "total_slides": {
+          "type": "integer"
+        },
+        "total_word_count": {
+          "type": "integer",
+          "description": "Total words across all slides"
+        },
+        "avg_words_per_slide": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "carousel_copy": {
+        "overview": {
+          "objective": "Educate about mistakes and gain followers",
+          "tone": "Friendly expert, accessible, jargon-free",
+          "promise": "Avoid the 5 most expensive beginner mistakes",
+          "framework_used": "aida"
+        },
+        "slides": [
+          {
+            "slide_number": 1,
+            "slide_type": "hook",
+            "headline": {
+              "text": "5 mistakes that make\nBEGINNERS\nlose money",
+              "character_count": 35,
+              "formatting_notes": "BEGINNERS in caps for emphasis"
+            },
+            "subheadline": {
+              "text": "(#3 is the most common)",
+              "character_count": 23
+            },
+            "open_loop_technique": {
+              "technique": "Tease specific item",
+              "closes_at_slide": 4
+            },
+            "copy_notes": "Curiosity gap with specific number + tease"
+          },
+          {
+            "slide_number": 2,
+            "slide_type": "content",
+            "headline": {
+              "text": "MISTAKE #1",
+              "character_count": 10
+            },
+            "body": {
+              "text": "Investing without emergency fund\n\nYou need 6 months of expenses\nBEFORE putting a cent in the market.\n\nOtherwise, any emergency forces you\nto sell at a loss.",
+              "character_count": 150
+            }
+          },
+          {
+            "slide_number": 10,
+            "slide_type": "cta",
+            "headline": {
+              "text": "Want to learn to invest\nWITHOUT these mistakes?",
+              "character_count": 40
+            },
+            "cta": {
+              "text": "Follow for more beginner\ninvestment tips",
+              "type": "follow"
+            }
+          }
+        ],
+        "headline_alternatives": [
+          {
+            "slide_number": 1,
+            "alternatives": [
+              {"text": "Why 90% of beginners lose money - and how to avoid it", "angle": "curiosity-based"},
+              {"text": "I lost R$5,000 with mistake #2. You don't have to.", "angle": "personal story"},
+              {"text": "STOP before investing. Are you making these mistakes?", "angle": "fear-based"}
+            ]
+          }
+        ],
+        "caption": {
+          "main_text": "These 5 mistakes cost money - literally. #3 is what I see most beginners doing.\n\nSave this post and share with someone starting to invest now.\n\nWhich of these have you made? Tell me in the comments",
+          "character_count": 230,
+          "engagement_hook": "Which of these have you made?",
+          "cta_in_caption": "Save this post and share"
+        },
+        "cta_alternatives": [
+          {"text": "Save this carousel to check before investing", "type": "save", "use_case": "If goal is saves"},
+          {"text": "Comment which mistake you made", "type": "comment", "use_case": "If goal is engagement"}
+        ]
+      },
+      "copy_strategy": {
+        "hook_strategy": {
+          "technique": "Curiosity gap with specific tease",
+          "4us_score": {
+            "useful": true,
+            "urgent": false,
+            "unique": false,
+            "ultra_specific": true
+          }
+        },
+        "tone_execution": {
+          "tone_achieved": "Friendly expert who speaks plainly",
+          "you_count": 15,
+          "power_words_used": ["lose", "mistake", "before", "never"]
+        }
+      },
+      "quality_checklist": {
+        "promises_deliverable": true,
+        "cta_clear": true,
+        "max_lines_respected": true,
+        "you_focused": true,
+        "no_generic_headlines": true,
+        "specific_not_vague": true,
+        "no_clickbait_without_delivery": true
+      },
+      "metadata": {
+        "version": "1.0.0",
+        "agent": "Copy_Master",
+        "frameworks_used": ["AIDA", "4 U's", "Open Loop"],
+        "total_slides": 10,
+        "total_word_count": 320,
+        "avg_words_per_slide": 32
+      }
+    }
+  ]
+}

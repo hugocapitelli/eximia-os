@@ -1,0 +1,430 @@
+{
+  "metadata": {
+    "clone_id": "clotaire_rapaille_v1.0",
+    "total_entities": 58,
+    "generated_by": "C2_Extractor",
+    "date": "2026-01-30"
+  },
+  "entities": {
+    "organizations": [
+      {
+        "id": 1,
+        "name": "Archetype Discoveries Worldwide",
+        "type": "company_founded",
+        "relationship": "founder_chairman",
+        "location": "Boca Raton, FL",
+        "significance": "primary_business_vehicle"
+      },
+      {
+        "id": 2,
+        "name": "Paris-Sorbonne University",
+        "type": "educational_institution",
+        "relationship": "professor_alumnus",
+        "significance": "academic_credentials"
+      },
+      {
+        "id": 3,
+        "name": "Sciences Po (Paris Institute of Political Sciences)",
+        "type": "educational_institution",
+        "relationship": "alumnus",
+        "significance": "educational_foundation"
+      },
+      {
+        "id": 4,
+        "name": "French Embassy Nicaragua",
+        "type": "government",
+        "relationship": "cultural_attache",
+        "period": "1966-1968",
+        "significance": "early_career"
+      }
+    ],
+    "clients": [
+      {
+        "id": 5,
+        "name": "Chrysler/DaimlerChrysler",
+        "type": "client",
+        "project": "PT Cruiser design research",
+        "outcome": "flagship_success",
+        "significance": "critical"
+      },
+      {
+        "id": 6,
+        "name": "Procter & Gamble",
+        "type": "client",
+        "project": "Folgers Coffee campaign",
+        "outcome": "major_success",
+        "significance": "critical"
+      },
+      {
+        "id": 7,
+        "name": "Boeing",
+        "type": "client",
+        "relationship": "consulting",
+        "significance": "high"
+      },
+      {
+        "id": 8,
+        "name": "Citibank",
+        "type": "client",
+        "relationship": "consulting",
+        "significance": "high"
+      },
+      {
+        "id": 9,
+        "name": "Fidelity Investments",
+        "type": "client",
+        "relationship": "consulting",
+        "significance": "high"
+      },
+      {
+        "id": 10,
+        "name": "Ford Motor Company",
+        "type": "client",
+        "relationship": "consulting",
+        "significance": "high"
+      },
+      {
+        "id": 11,
+        "name": "General Electric",
+        "type": "client",
+        "relationship": "consulting",
+        "significance": "high"
+      },
+      {
+        "id": 12,
+        "name": "Georgetown University",
+        "type": "client",
+        "relationship": "consulting",
+        "significance": "medium"
+      },
+      {
+        "id": 13,
+        "name": "IBM",
+        "type": "client",
+        "relationship": "consulting",
+        "significance": "high"
+      },
+      {
+        "id": 14,
+        "name": "Honda",
+        "type": "client",
+        "relationship": "consulting",
+        "significance": "high"
+      },
+      {
+        "id": 15,
+        "name": "Johnson & Johnson",
+        "type": "client",
+        "relationship": "consulting",
+        "significance": "high"
+      },
+      {
+        "id": 16,
+        "name": "L'Oreal",
+        "type": "client",
+        "relationship": "consulting",
+        "significance": "high"
+      },
+      {
+        "id": 17,
+        "name": "General Motors",
+        "type": "client",
+        "relationship": "consulting",
+        "significance": "high"
+      },
+      {
+        "id": 18,
+        "name": "AT&T",
+        "type": "client",
+        "relationship": "consulting",
+        "significance": "high"
+      },
+      {
+        "id": 19,
+        "name": "Kellogg",
+        "type": "client",
+        "relationship": "consulting",
+        "significance": "medium"
+      }
+    ],
+    "theoretical_influences": [
+      {
+        "id": 20,
+        "name": "Konrad Lorenz",
+        "type": "theorist",
+        "contribution": "imprint_theory",
+        "influence_level": "critical"
+      },
+      {
+        "id": 21,
+        "name": "John Bowlby",
+        "type": "theorist",
+        "contribution": "attachment_theory",
+        "influence_level": "high"
+      },
+      {
+        "id": 22,
+        "name": "Bruno Bettelheim",
+        "type": "theorist",
+        "contribution": "autism_research",
+        "influence_level": "high"
+      },
+      {
+        "id": 23,
+        "name": "Paul D. MacLean",
+        "type": "theorist",
+        "contribution": "triune_brain_theory",
+        "influence_level": "critical"
+      },
+      {
+        "id": 24,
+        "name": "Sigmund Freud",
+        "type": "theorist",
+        "contribution": "individual_unconscious",
+        "influence_level": "high"
+      },
+      {
+        "id": 25,
+        "name": "Carl Jung",
+        "type": "theorist",
+        "contribution": "collective_unconscious_archetypes",
+        "influence_level": "critical"
+      }
+    ],
+    "media_appearances": [
+      {
+        "id": 26,
+        "name": "PBS Frontline - The Persuaders",
+        "type": "documentary",
+        "date": "November 9, 2004",
+        "significance": "critical_exposure"
+      },
+      {
+        "id": 27,
+        "name": "60 Minutes II",
+        "type": "news_program",
+        "network": "CBS",
+        "significance": "high"
+      },
+      {
+        "id": 28,
+        "name": "New York Times Sunday Styles",
+        "type": "newspaper",
+        "coverage": "front_page_feature",
+        "significance": "high"
+      },
+      {
+        "id": 29,
+        "name": "Salon Magazine",
+        "type": "magazine",
+        "article": "In America, Seduction is Dishonest",
+        "date": "May 2006",
+        "significance": "medium"
+      },
+      {
+        "id": 30,
+        "name": "Fast Company",
+        "type": "magazine",
+        "article": "Crack This Code",
+        "significance": "medium"
+      }
+    ],
+    "publications": [
+      {
+        "id": 31,
+        "name": "The Culture Code",
+        "type": "book",
+        "year": 2006,
+        "publisher": "Crown Business",
+        "significance": "signature_work"
+      },
+      {
+        "id": 32,
+        "name": "The Global Code",
+        "type": "book",
+        "year": 2015,
+        "publisher": "St. Martin's Press",
+        "significance": "framework_evolution"
+      },
+      {
+        "id": 33,
+        "name": "Seven Secrets of Marketing in a Multi-Cultural World",
+        "type": "book",
+        "year": "2001/2004",
+        "significance": "methodology_expansion"
+      },
+      {
+        "id": 34,
+        "name": "Social Cancer: Decoding the Archetype of Terrorism",
+        "type": "book",
+        "year": 2003,
+        "significance": "social_application"
+      },
+      {
+        "id": 35,
+        "name": "La Relation Creatrice",
+        "type": "book",
+        "year": 1973,
+        "publisher": "Editions Universitaires Paris",
+        "significance": "early_academic"
+      }
+    ],
+    "concepts_frameworks": [
+      {
+        "id": 36,
+        "name": "Culture Code",
+        "type": "methodology",
+        "description": "Unconscious cultural meaning of concepts",
+        "significance": "core_framework"
+      },
+      {
+        "id": 37,
+        "name": "Reptilian Brain / Hot Button",
+        "type": "concept",
+        "description": "Primal decision-making center",
+        "significance": "core_concept"
+      },
+      {
+        "id": 38,
+        "name": "Triune Brain Model",
+        "type": "framework",
+        "description": "Cortex-Limbic-Reptilian hierarchy",
+        "significance": "theoretical_foundation"
+      },
+      {
+        "id": 39,
+        "name": "Three-Hour Discovery Session",
+        "type": "methodology",
+        "description": "Proprietary research technique",
+        "significance": "core_methodology"
+      },
+      {
+        "id": 40,
+        "name": "Imprint Theory",
+        "type": "concept",
+        "description": "First emotional experience creates permanent connection",
+        "significance": "core_concept"
+      },
+      {
+        "id": 41,
+        "name": "Cultural Unconscious",
+        "type": "concept",
+        "description": "Third level beyond Freud and Jung",
+        "significance": "theoretical_contribution"
+      },
+      {
+        "id": 42,
+        "name": "Global Tribe",
+        "type": "framework",
+        "description": "Post-national cultural identity",
+        "significance": "later_framework"
+      },
+      {
+        "id": 43,
+        "name": "America as Adolescent Culture",
+        "type": "framework",
+        "description": "Cultural developmental stage analysis",
+        "significance": "cultural_analysis"
+      }
+    ],
+    "cultural_codes_discovered": [
+      {
+        "id": 44,
+        "concept": "Cheese",
+        "american_code": "DEAD",
+        "french_code": "ALIVE",
+        "significance": "signature_example"
+      },
+      {
+        "id": 45,
+        "concept": "Jeep",
+        "american_code": "HORSE",
+        "european_code": "LIBERATOR",
+        "significance": "case_study"
+      },
+      {
+        "id": 46,
+        "concept": "Love",
+        "american_code": "FALSE EXPECTATION",
+        "significance": "cultural_insight"
+      },
+      {
+        "id": 47,
+        "concept": "Seduction",
+        "american_code": "MANIPULATION",
+        "significance": "cultural_insight"
+      },
+      {
+        "id": 48,
+        "concept": "Sex",
+        "american_code": "VIOLENCE",
+        "significance": "provocative"
+      },
+      {
+        "id": 49,
+        "concept": "Health",
+        "american_code": "MOVEMENT",
+        "significance": "cultural_insight"
+      },
+      {
+        "id": 50,
+        "concept": "Money",
+        "american_code": "PROOF",
+        "significance": "cultural_insight"
+      },
+      {
+        "id": 51,
+        "concept": "Alcohol",
+        "american_code": "GUN",
+        "significance": "cultural_insight"
+      },
+      {
+        "id": 52,
+        "concept": "Work",
+        "american_code": "WHO YOU ARE",
+        "significance": "cultural_insight"
+      },
+      {
+        "id": 53,
+        "concept": "Luxury",
+        "american_code": "MILITARY STRIPES",
+        "french_code": "FREEDOM TO DO NOTHING",
+        "significance": "cultural_contrast"
+      },
+      {
+        "id": 54,
+        "concept": "America (self)",
+        "american_code": "DREAM",
+        "significance": "self_perception"
+      },
+      {
+        "id": 55,
+        "concept": "SUV",
+        "american_code": "DOMINATION",
+        "significance": "case_study"
+      }
+    ],
+    "locations": [
+      {
+        "id": 56,
+        "name": "Tuxedo Park, New York",
+        "type": "residence",
+        "description": "Baronial mansion",
+        "significance": "primary_residence"
+      },
+      {
+        "id": 57,
+        "name": "9th-century castle in France",
+        "type": "residence",
+        "significance": "secondary_residence"
+      },
+      {
+        "id": 58,
+        "name": "Boca Raton, Florida",
+        "type": "business_location",
+        "description": "Archetype Discoveries Worldwide HQ",
+        "significance": "business_base"
+      }
+    ]
+  }
+}

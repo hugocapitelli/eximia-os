@@ -1,0 +1,213 @@
+---
+translations:
+  king_james_1611:
+    id: "KJV"
+    name: "King James Version (1611)"
+    language: "English"
+    publication_year: 1611
+    philosophy: "Formal equivalence (word-for-word)"
+    strengths:
+      - "Literary beauty and poetry"
+      - "Formal, reverent language"
+      - "Familiar to many English speakers"
+      - "Traditional theological terminology"
+    best_for: "Memorization, traditional churches, literary appreciation"
+    original_language_proximity: "High"
+    readability_score: 7.5
+    church_usage: "High (traditional churches)"
+    copyright_status: "Public domain"
+    translators: "52 scholars"
+    notes: "Contains Apocrypha in some editions"
+
+  acf_portuguese:
+    id: "ACF"
+    name: "Almeida Corrigida Fiel (Portuguese)"
+    language: "Portuguese"
+    publication_year: 1993
+    philosophy: "Formal equivalence (word-for-word)"
+    strengths:
+      - "Faithful to original languages"
+      - "Formally equivalent"
+      - "Widely used in evangelical churches"
+      - "Good for word studies"
+    best_for: "Theological study, evangelical churches, serious Bible reading"
+    original_language_proximity: "Very High"
+    readability_score: 7
+    church_usage: "Very High (evangelical churches)"
+    copyright_status: "Protected"
+    based_on: "João Ferreira de Almeida (1628-1691)"
+    notes: "Multiple revisions over centuries"
+
+  ara_portuguese:
+    id: "ARA"
+    name: "Almeida Revista e Atualizada (Portuguese)"
+    language: "Portuguese"
+    publication_year: 1959
+    philosophy: "Balanced (word-for-word and thought-for-thought)"
+    strengths:
+      - "Good balance of accuracy and readability"
+      - "Modernized Portuguese"
+      - "Suitable for general reading"
+      - "Good for pastoral use"
+    best_for: "General reading, study, pastoral ministry"
+    original_language_proximity: "High"
+    readability_score: 8
+    church_usage: "High (broad spectrum)"
+    copyright_status: "Protected"
+    publisher: "SBB (Brazilian Bible Society)"
+    notes: "Most balanced Portuguese translation"
+
+  ntlh_portuguese:
+    id: "NTLH"
+    name: "Nova Tradução na Linguagem de Hoje (Portuguese)"
+    language: "Portuguese"
+    publication_year: 1988 (NT), 2001 (Complete)
+    philosophy: "Dynamic equivalence (thought-for-thought)"
+    strengths:
+      - "Highly readable"
+      - "Clear modern Portuguese"
+      - "Accessible to all literacy levels"
+      - "Includes explanatory notes"
+    best_for: "New believers, youth, devotional reading, understanding meaning"
+    original_language_proximity: "Moderate"
+    readability_score: 9.5
+    church_usage: "Moderate (newer churches)"
+    copyright_status: "Protected"
+    publisher: "SBB (Brazilian Bible Society)"
+    notes: "Most accessible Portuguese translation"
+
+  nvt_portuguese:
+    id: "NVT"
+    name: "Nova Versão Transformadora (Portuguese)"
+    language: "Portuguese"
+    publication_year: 2016
+    philosophy: "Thought-for-thought (meaning-centered)"
+    strengths:
+      - "Contemporary language"
+      - "Emphasis on life transformation"
+      - "Accessible and engaging"
+      - "Modern relevance"
+    best_for: "Personal devotion, modern readers, life application focus"
+    original_language_proximity: "Moderate"
+    readability_score: 9.5
+    church_usage: "Moderate (contemporary churches)"
+    copyright_status: "Protected"
+    notes: "Latest Portuguese translation, very modern"
+
+  kjv_english:
+    id: "KJV-ENG"
+    name: "King James Version (English)"
+    language: "English"
+    publication_year: 1611
+    philosophy: "Formal equivalence"
+    strengths:
+      - "Literary masterpiece"
+      - "Historically important"
+      - "Formal language"
+    best_for: "Literary study, traditional use"
+    readability_score: 7
+    copyright_status: "Public domain"
+
+  nkjv_english:
+    id: "NKJV"
+    name: "New King James Version"
+    language: "English"
+    publication_year: 1982
+    philosophy: "Formal equivalence with modern English"
+    strengths:
+      - "Maintains KJV style with modern English"
+      - "Good word choice"
+      - "Popular in evangelical churches"
+    best_for: "Study, memorization, traditional churches"
+    readability_score: 8
+    copyright_status: "Protected"
+
+  esv_english:
+    id: "ESV"
+    name: "English Standard Version"
+    language: "English"
+    publication_year: 2001
+    philosophy: "Word-for-word (formal equivalence)"
+    strengths:
+      - "Word-for-word accuracy"
+      - "Readable"
+      - "Popular in evangelical churches"
+    best_for: "Study, teaching, accurate comparison"
+    readability_score: 8.5
+    church_usage: "Very High"
+    copyright_status: "Protected"
+
+  nasb_english:
+    id: "NASB"
+    name: "New American Standard Bible"
+    language: "English"
+    publication_year: 1971
+    philosophy: "Literal (most word-for-word)"
+    strengths:
+      - "Closest to original languages"
+      - "Excellent for detailed study"
+      - "Best for word studies"
+    best_for: "Serious Bible study, word study, theological research"
+    readability_score: 7
+    original_language_proximity: "Highest"
+    copyright_status: "Protected"
+
+  niv_english:
+    id: "NIV"
+    name: "New International Version"
+    language: "English"
+    publication_year: 1978
+    philosophy: "Balanced (word-for-word and thought-for-thought)"
+    strengths:
+      - "Readable yet accurate"
+      - "Good balance"
+      - "Popular for general reading"
+    best_for: "General reading, personal study, devotion"
+    readability_score: 8.5
+    church_usage: "Very High"
+    copyright_status: "Protected"
+
+translation_philosophy:
+  formal_equivalence:
+    description: "Word-for-word translation prioritizing literal correspondence"
+    translations: ["KJV", "ACF", "NASB", "ESV", "NKJV"]
+    strengths: "Precision, theological accuracy, word study capability"
+    challenges: "Sometimes awkward English, harder to read"
+    best_for: "Serious study, precise meaning"
+
+  dynamic_equivalence:
+    description: "Thought-for-thought translation prioritizing meaning conveyance"
+    translations: ["NTLH", "NVT"]
+    strengths: "Readability, clarity, natural flow"
+    challenges: "Some nuance lost, interpretation more visible"
+    best_for: "Understanding, accessibility, devotional reading"
+
+  balanced_approach:
+    description: "Balances literal accuracy with readable flow"
+    translations: ["ARA", "NIV"]
+    strengths: "Good balance of accuracy and readability"
+    challenges: "Can satisfy neither literalists nor readability advocates"
+    best_for: "General reading and study"
+
+default_translations:
+  primary: "King James 1611"
+  secondary: ["ACF", "NVT"]
+  comprehensive: ["King James 1611", "ACF", "ARA", "NTLH", "NVT", "ESV", "NKJV"]
+  scholarly: ["NASB", "ESV", "ACF"]
+  accessible: ["NTLH", "NVT", "NIV"]
+
+accessibility_levels:
+  high_literacy: ["NASB", "ESV", "ACF", "ARA"]
+  moderate_literacy: ["KJV", "NKJV", "NIV"]
+  lower_literacy: ["NTLH", "NVT"]
+
+usage_recommendations:
+  scripture_lookup: ["King James 1611", "ACF", "NVT"]
+  detailed_study: ["NASB", "ACF", "ESV"]
+  devotional_reading: ["NVT", "NTLH", "NIV"]
+  memorization: ["KJV", "NKJV"]
+  teaching: ["ESV", "NIV", "ARA"]
+  word_study: ["NASB", "ACF", "ESV"]
+
+last_updated: 2026-01-27
+version: 1.0.0

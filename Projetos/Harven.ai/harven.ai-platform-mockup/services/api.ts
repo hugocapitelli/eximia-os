@@ -1,4 +1,55 @@
 import axios from 'axios';
+import type {
+  LoginResponse,
+  DashboardStats,
+  Discipline,
+  DisciplineCreateRequest,
+  DisciplineUpdateRequest,
+  Course,
+  CourseCreateRequest,
+  CourseUpdateRequest,
+  Chapter,
+  ChapterCreateRequest,
+  ChapterUpdateRequest,
+  Content,
+  ContentCreateRequest,
+  ContentUpdateRequest,
+  Question,
+  QuestionCreateRequest,
+  QuestionUpdateRequest,
+  UserData,
+  UserCreateRequest,
+  UserUpdateRequest,
+  SystemSettings,
+  AdminAction,
+  Notification,
+  NotificationCreateRequest,
+  ChatSession,
+  ChatMessage,
+  ChatMessageCreateRequest,
+  ChatSessionCreateRequest,
+  AIQuestionGenerationRequest,
+  AISocraticDialogueRequest,
+  AIDetectionRequest,
+  AIEditRequest,
+  AIValidateRequest,
+  AIOrganizeSessionRequest,
+  TTSGenerateRequest,
+  TTSSummaryRequest,
+  TranscriptionRequest,
+  UploadResponse,
+  UserStats,
+  UserActivity,
+  UserActivityCreateRequest,
+  Certificate,
+  Achievement,
+  CourseProgress,
+  IntegrationStatus,
+  SyncLog,
+  MoodleExportFilters,
+  SearchResults,
+  LogSearchParams,
+} from '../types';
 
 // URL da API configuravel via variavel de ambiente
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
@@ -21,15 +72,15 @@ api.interceptors.request.use((config) => {
 });
 
 export const authApi = {
-    login: async (ra: string, password: string) => {
-        const response = await api.post('/auth/login', { ra, password });
+    login: async (ra: string, password: string): Promise<LoginResponse> => {
+        const response = await api.post<LoginResponse>('/auth/login', { ra, password });
         return response.data;
     }
 };
 
 export const dashboardApi = {
-    getStats: async (userId?: string) => {
-        const response = await api.get('/dashboard/stats', {
+    getStats: async (userId?: string): Promise<DashboardStats> => {
+        const response = await api.get<DashboardStats>('/dashboard/stats', {
             params: userId ? { user_id: userId } : {}
         });
         return response.data;
@@ -50,29 +101,29 @@ const getLoggedUser = () => {
 };
 
 export const disciplinesApi = {
-    list: async (userId?: string, role?: string) => {
+    list: async (userId?: string, role?: string): Promise<Discipline[]> => {
         // Se não passar parâmetros, tenta pegar do usuário logado
         const user = getLoggedUser();
-        const params: any = {};
+        const params: Record<string, string> = {};
         if (userId || user?.id) {
             params.user_id = userId || user?.id;
         }
         if (role || user?.role) {
             params.role = role || user?.role;
         }
-        const response = await api.get('/disciplines', { params });
+        const response = await api.get<Discipline[]>('/disciplines', { params });
         return response.data;
     },
-    create: async (data: any) => {
-        const response = await api.post('/disciplines', data);
+    create: async (data: DisciplineCreateRequest): Promise<Discipline> => {
+        const response = await api.post<Discipline>('/disciplines', data);
         return response.data;
     },
-    get: async (disciplineId: string) => {
-        const response = await api.get(`/disciplines/${disciplineId}`);
+    get: async (disciplineId: string): Promise<Discipline> => {
+        const response = await api.get<Discipline>(`/disciplines/${disciplineId}`);
         return response.data;
     },
-    update: async (disciplineId: string, data: any) => {
-        const response = await api.put(`/disciplines/${disciplineId}`, data);
+    update: async (disciplineId: string, data: DisciplineUpdateRequest): Promise<Discipline> => {
+        const response = await api.put<Discipline>(`/disciplines/${disciplineId}`, data);
         return response.data;
     },
     getStats: async (disciplineId: string) => {
@@ -114,6 +165,18 @@ export const disciplinesApi = {
             headers: { 'Content-Type': 'multipart/form-data' }
         });
         return response.data;
+    },
+    getCourses: async (disciplineId: string) => {
+        const response = await api.get(`/disciplines/${disciplineId}/courses`);
+        return response.data;
+    },
+    getChapters: async (disciplineId: string) => {
+        const response = await api.get(`/disciplines/${disciplineId}/chapters`);
+        return response.data;
+    },
+    createChapter: async (disciplineId: string, data: ChapterCreateRequest): Promise<Chapter> => {
+        const response = await api.post<Chapter>(`/disciplines/${disciplineId}/chapters`, data);
+        return response.data;
     }
 };
 
@@ -134,8 +197,8 @@ export const adminApi = {
         const response = await api.get('/admin/settings');
         return response.data;
     },
-    saveSettings: async (settings: any) => {
-        const response = await api.post('/admin/settings', settings);
+    saveSettings: async (settings: SystemSettings): Promise<SystemSettings> => {
+        const response = await api.post<SystemSettings>('/admin/settings', settings);
         return response.data;
     },
     // Upload system logo
@@ -219,25 +282,25 @@ export const adminApi = {
 };
 
 export const usersApi = {
-    list: async (role?: string) => {
+    list: async (role?: string): Promise<UserData[]> => {
         const params = role ? { role } : {};
-        const response = await api.get('/users', { params });
+        const response = await api.get<UserData[]>('/users', { params });
         return response.data;
     },
-    create: async (user: any) => {
-        const response = await api.post('/users', user);
+    create: async (user: UserCreateRequest): Promise<UserData> => {
+        const response = await api.post<UserData>('/users', user);
         return response.data;
     },
-    createBatch: async (users: any[]) => {
-        const response = await api.post('/users/batch', users);
+    createBatch: async (users: UserCreateRequest[]): Promise<{ message: string; count: number }> => {
+        const response = await api.post<{ message: string; count: number }>('/users/batch', users);
         return response.data;
     },
-    update: async (id: string, data: any) => {
-        const response = await api.put(`/users/${id}`, data);
+    update: async (id: string, data: UserUpdateRequest): Promise<UserData> => {
+        const response = await api.put<UserData>(`/users/${id}`, data);
         return response.data;
     },
-    get: async (id: string) => {
-        const response = await api.get(`/users/${id}`);
+    get: async (id: string): Promise<UserData> => {
+        const response = await api.get<UserData>(`/users/${id}`);
         return response.data;
     },
     uploadAvatar: async (id: string, file: File) => {
@@ -257,33 +320,33 @@ export const usersApi = {
 };
 
 export const coursesApi = {
-    list: async (userId?: string, role?: string) => {
+    list: async (userId?: string, role?: string): Promise<Course[]> => {
         // Lista todos os cursos filtrados por usuário
         const user = getLoggedUser();
-        const params: any = {};
+        const params: Record<string, string> = {};
         if (userId || user?.id) {
             params.user_id = userId || user?.id;
         }
         if (role || user?.role) {
             params.role = role || user?.role;
         }
-        const response = await api.get('/courses', { params });
+        const response = await api.get<Course[]>('/courses', { params });
         return response.data;
     },
-    listByClass: async (classId: string) => {
-        const response = await api.get(`/classes/${classId}/courses`);
+    listByClass: async (classId: string): Promise<Course[]> => {
+        const response = await api.get<Course[]>(`/classes/${classId}/courses`);
         return response.data;
     },
-    get: async (courseId: string) => {
-        const response = await api.get(`/courses/${courseId}`);
+    get: async (courseId: string): Promise<Course> => {
+        const response = await api.get<Course>(`/courses/${courseId}`);
         return response.data;
     },
-    create: async (classId: string, data: any) => {
-        const response = await api.post(`/classes/${classId}/courses`, data);
+    create: async (classId: string, data: CourseCreateRequest): Promise<Course> => {
+        const response = await api.post<Course>(`/classes/${classId}/courses`, data);
         return response.data;
     },
-    update: async (courseId: string, data: any) => {
-        const response = await api.put(`/courses/${courseId}`, data);
+    update: async (courseId: string, data: CourseUpdateRequest): Promise<Course> => {
+        const response = await api.put<Course>(`/courses/${courseId}`, data);
         return response.data;
     },
     delete: async (courseId: string) => {
@@ -301,44 +364,42 @@ export const coursesApi = {
 };
 
 export const chaptersApi = {
-    list: async (courseId: string) => {
-        const response = await api.get(`/courses/${courseId}/chapters`);
+    list: async (courseId: string): Promise<Chapter[]> => {
+        const response = await api.get<Chapter[]>(`/courses/${courseId}/chapters`);
         return response.data;
     },
-    create: async (courseId: string, data: any) => {
-        const response = await api.post(`/courses/${courseId}/chapters`, data);
+    create: async (courseId: string, data: ChapterCreateRequest): Promise<Chapter> => {
+        const response = await api.post<Chapter>(`/courses/${courseId}/chapters`, data);
         return response.data;
     },
-    update: async (chapterId: string, data: any) => {
-        const response = await api.put(`/chapters/${chapterId}`, data);
+    update: async (chapterId: string, data: ChapterUpdateRequest): Promise<Chapter> => {
+        const response = await api.put<Chapter>(`/chapters/${chapterId}`, data);
         return response.data;
     },
-    delete: async (chapterId: string) => {
-        const response = await api.delete(`/chapters/${chapterId}`);
-        return response.data;
+    delete: async (chapterId: string): Promise<void> => {
+        await api.delete(`/chapters/${chapterId}`);
     }
 };
 
 export const contentsApi = {
-    list: async (chapterId: string) => {
-        const response = await api.get(`/chapters/${chapterId}/contents`);
+    list: async (chapterId: string): Promise<Content[]> => {
+        const response = await api.get<Content[]>(`/chapters/${chapterId}/contents`);
         return response.data;
     },
-    get: async (contentId: string) => {
-        const response = await api.get(`/contents/${contentId}`);
+    get: async (contentId: string): Promise<Content> => {
+        const response = await api.get<Content>(`/contents/${contentId}`);
         return response.data;
     },
-    create: async (chapterId: string, data: any) => {
-        const response = await api.post(`/chapters/${chapterId}/contents`, data);
+    create: async (chapterId: string, data: ContentCreateRequest): Promise<Content> => {
+        const response = await api.post<Content>(`/chapters/${chapterId}/contents`, data);
         return response.data;
     },
-    update: async (contentId: string, data: any) => {
-        const response = await api.put(`/contents/${contentId}`, data);
+    update: async (contentId: string, data: ContentUpdateRequest): Promise<Content> => {
+        const response = await api.put<Content>(`/contents/${contentId}`, data);
         return response.data;
     },
-    delete: async (contentId: string) => {
-        const response = await api.delete(`/contents/${contentId}`);
-        return response.data;
+    delete: async (contentId: string): Promise<void> => {
+        await api.delete(`/contents/${contentId}`);
     },
     uploadFile: async (chapterId: string, file: File) => {
         const formData = new FormData();
@@ -353,24 +414,23 @@ export const contentsApi = {
 };
 
 export const questionsApi = {
-    list: async (contentId: string) => {
-        const response = await api.get(`/contents/${contentId}/questions`);
+    list: async (contentId: string): Promise<Question[]> => {
+        const response = await api.get<Question[]>(`/contents/${contentId}/questions`);
         return response.data;
     },
-    create: async (contentId: string, items: any[]) => {
-        const response = await api.post(`/contents/${contentId}/questions`, { items });
+    create: async (contentId: string, items: QuestionCreateRequest[]): Promise<Question[]> => {
+        const response = await api.post<Question[]>(`/contents/${contentId}/questions`, { items });
         return response.data;
     },
-    update: async (questionId: string, data: any) => {
-        const response = await api.put(`/questions/${questionId}`, data);
+    update: async (questionId: string, data: QuestionUpdateRequest): Promise<Question> => {
+        const response = await api.put<Question>(`/questions/${questionId}`, data);
         return response.data;
     },
-    delete: async (questionId: string) => {
-        const response = await api.delete(`/questions/${questionId}`);
-        return response.data;
+    delete: async (questionId: string): Promise<void> => {
+        await api.delete(`/questions/${questionId}`);
     },
-    updateBatch: async (contentId: string, questions: any[]) => {
-        const response = await api.put(`/contents/${contentId}/questions/batch`, { items: questions });
+    updateBatch: async (contentId: string, questions: QuestionUpdateRequest[]): Promise<Question[]> => {
+        const response = await api.put<Question[]>(`/contents/${contentId}/questions/batch`, { items: questions });
         return response.data;
     }
 };
@@ -466,11 +526,7 @@ export const aiApi = {
     },
 
     // 3. Harven_Analyst - Detectar conteudo de IA
-    detectAI: async (data: {
-        text: string;
-        context?: any;
-        interaction_metadata?: any;
-    }) => {
+    detectAI: async (data: AIDetectionRequest) => {
         const response = await api.post('/api/ai/analyst/detect', data, {
             timeout: 20000 // 20 segundos
         });
@@ -478,10 +534,7 @@ export const aiApi = {
     },
 
     // 4. Harven_Editor - Refinar respostas do tutor
-    editResponse: async (data: {
-        orientador_response: string;
-        context?: any;
-    }) => {
+    editResponse: async (data: AIEditRequest) => {
         const response = await api.post('/api/ai/editor/edit', data, {
             timeout: 30000 // 30 segundos
         });
@@ -489,10 +542,7 @@ export const aiApi = {
     },
 
     // 5. Harven_Tester - Validar qualidade das respostas
-    validateResponse: async (data: {
-        edited_response: string;
-        context?: any;
-    }) => {
+    validateResponse: async (data: AIValidateRequest) => {
         const response = await api.post('/api/ai/tester/validate', data, {
             timeout: 30000 // 30 segundos
         });
@@ -500,11 +550,7 @@ export const aiApi = {
     },
 
     // 6. Harven_Organizer - Gerenciar sessoes e exportacoes
-    organizeSession: async (data: {
-        action: 'save_message' | 'finalize_session' | 'export_to_moodle' | 'get_session_status' | 'validate_export_payload';
-        payload: any;
-        metadata?: any;
-    }) => {
+    organizeSession: async (data: AIOrganizeSessionRequest) => {
         const response = await api.post('/api/ai/organizer/session', data, {
             timeout: 20000 // 20 segundos
         });
@@ -512,7 +558,7 @@ export const aiApi = {
     },
 
     // Preparar exportacao para Moodle
-    prepareMoodleExport: async (sessionData: any) => {
+    prepareMoodleExport: async (sessionData: Record<string, unknown>) => {
         const response = await api.post('/api/ai/organizer/prepare-export', sessionData);
         return response.data;
     },

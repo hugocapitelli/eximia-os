@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "a3_master_input_schema",
+  "title": "A3 Master Input Schema",
+  "description": "Schema para validar inputs do A3 Master Agent",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "#/definitions/build_request" },
+    { "$ref": "#/definitions/evaluate_request" },
+    { "$ref": "#/definitions/teach_request" }
+  ],
+  "definitions": {
+    "build_request": {
+      "type": "object",
+      "title": "Requisição de Construção de A3",
+      "required": ["mode", "a3_type"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "const": "build",
+          "description": "Modo de construção de A3"
+        },
+        "a3_type": {
+          "type": "string",
+          "enum": ["estrategico", "tatico", "operacional"],
+          "description": "Tipo de A3 a ser construído"
+        },
+        "hoshin_context": {
+          "type": "object",
+          "description": "Contexto estratégico do Hoshin Kanri",
+          "properties": {
+            "objetivo_estrategico": {
+              "type": "string",
+              "description": "Objetivo estratégico vinculado"
+            },
+            "driver_estrategico": {
+              "type": "string",
+              "description": "Driver estratégico associado"
+            },
+            "indicador_estrategico": {
+              "type": "string",
+              "description": "KPI estratégico do Hoshin"
+            },
+            "meta_estrategica": {
+              "type": "string",
+              "description": "Meta do ano do Hoshin"
+            }
+          }
+        },
+        "problem_context": {
+          "type": "string",
+          "description": "Descrição do problema/necessidade",
+          "minLength": 50
+        },
+        "evidence_data": {
+          "type": "array",
+          "description": "Evidências quantitativas (mínimo 3)",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "required": ["tipo", "valor", "fonte"],
+            "properties": {
+              "tipo": {
+                "type": "string",
+                "enum": ["indicador", "tendencia", "estratificacao", "comparativo"],
+                "description": "Tipo de evidência"
+              },
+              "descricao": {
+                "type": "string",
+                "description": "Descrição da evidência"
+              },
+              "valor": {
+                "type": "string",
+                "description": "Valor quantitativo"
+              },
+              "fonte": {
+                "type": "string",
+                "description": "Fonte do dado"
+              },
+              "periodo": {
+                "type": "string",
+                "description": "Período de referência"
+              }
+            }
+          }
+        },
+        "scope": {
+          "type": "object",
+          "description": "Escopo do A3",
+          "properties": {
+            "areas_envolvidas": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "sponsor": {
+              "type": "string",
+              "description": "Patrocinador do A3"
+            },
+            "horizonte": {
+              "type": "string",
+              "enum": ["anual", "semestral", "trimestral", "outro"],
+              "description": "Horizonte de tempo"
+            },
+            "codigo": {
+              "type": "string",
+              "pattern": "^[0-9]{2}\\.[0-9]{2}(\\.[0-9]{2})?$",
+              "description": "Código do A3 (ex: 04.04, 04.04.01)"
+            }
+          }
+        },
+        "a3_tatico_origem": {
+          "type": "object",
+          "description": "A3 Tático de origem (apenas para A3 Operacional)",
+          "properties": {
+            "codigo": { "type": "string" },
+            "nome": { "type": "string" },
+            "iniciativa": { "type": "string" }
+          }
+        }
+      }
+    },
+    "evaluate_request": {
+      "type": "object",
+      "title": "Requisição de Avaliação de A3",
+      "required": ["mode", "a3_content"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "const": "evaluate",
+          "description": "Modo de avaliação de A3"
+        },
+        "a3_content": {
+          "type": "string",
+          "description": "Conteúdo completo do A3 para avaliação",
+          "minLength": 500
+        },
+        "a3_type": {
+          "type": "string",
+          "enum": ["estrategico", "tatico", "operacional"],
+          "description": "Tipo do A3 sendo avaliado"
+        },
+        "evaluation_focus": {
+          "type": "array",
+          "description": "Critérios específicos para focar (opcional)",
+          "items": {
+            "type": "string",
+            "enum": [
+              "alinhamento_estrategico",
+              "contexto",
+              "evidencias",
+              "objetivos",
+              "ishikawa",
+              "5_porques",
+              "contramedidas",
+              "cronograma",
+              "monitoramento",
+              "coerencia"
+            ]
+          }
+        }
+      }
+    },
+    "teach_request": {
+      "type": "object",
+      "title": "Requisição de Ensino de Conceito",
+      "required": ["mode", "topic"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "const": "teach",
+          "description": "Modo de ensino"
+        },
+        "topic": {
+          "type": "string",
+          "enum": [
+            "fundamentos_a3",
+            "pdca",
+            "5_porques",
+            "ishikawa_6m",
+            "contramedida_vs_acao",
+            "nemawashi",
+            "catchball",
+            "modelo_shingo",
+            "hoshin_kanri",
+            "erros_comuns"
+          ],
+          "description": "Tópico a ser ensinado"
+        },
+        "context": {
+          "type": "string",
+          "description": "Contexto específico para exemplificar (opcional)"
+        },
+        "depth": {
+          "type": "string",
+          "enum": ["basico", "intermediario", "avancado"],
+          "default": "intermediario",
+          "description": "Nível de profundidade"
+        }
+      }
+    }
+  }
+}

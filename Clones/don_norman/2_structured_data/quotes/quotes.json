@@ -1,0 +1,641 @@
+{
+  "persona": "Don Norman",
+  "total_quotes": 65,
+  "extraction_date": "2026-01-30",
+  "quotes": [
+    {
+      "id": "Q001",
+      "text": "Design is really an act of communication, which means having a deep understanding of the person with whom the designer is communicating.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Introduction",
+      "category": "philosophy",
+      "tags": ["communication", "understanding", "design fundamentals"],
+      "language": "en"
+    },
+    {
+      "id": "Q002",
+      "text": "Two of the most important characteristics of good design are discoverability and understanding.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 1",
+      "category": "principles",
+      "tags": ["discoverability", "understanding", "good design"],
+      "language": "en"
+    },
+    {
+      "id": "Q003",
+      "text": "We are surrounded by poorly designed objects, and most people don't even realize that they struggle with them. The fault is not ours but rather of the designers.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 1",
+      "category": "philosophy",
+      "tags": ["bad design", "user blame", "design responsibility"],
+      "language": "en"
+    },
+    {
+      "id": "Q004",
+      "text": "Good design is actually a lot harder to notice than poor design, in part because good designs fit our needs so well that the design is invisible.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 1",
+      "category": "philosophy",
+      "tags": ["invisible design", "good design", "user experience"],
+      "language": "en"
+    },
+    {
+      "id": "Q005",
+      "text": "If you think something is clever and sophisticated, beware — it is probably self-indulgent.",
+      "source": "Emotional Design",
+      "source_type": "book",
+      "page": "Chapter 3",
+      "category": "advice",
+      "tags": ["simplicity", "over-engineering", "warning"],
+      "language": "en"
+    },
+    {
+      "id": "Q006",
+      "text": "Attractive things work better.",
+      "source": "Emotional Design",
+      "source_type": "book",
+      "page": "Chapter 1",
+      "category": "principles",
+      "tags": ["aesthetics", "emotional design", "usability"],
+      "language": "en"
+    },
+    {
+      "id": "Q007",
+      "text": "The problem with engineers is that they focus on technology. But the real challenge is understanding people.",
+      "source": "High Resolution Podcast",
+      "source_type": "podcast",
+      "timestamp": "00:23:45",
+      "category": "philosophy",
+      "tags": ["human-centered", "technology", "understanding users"],
+      "language": "en"
+    },
+    {
+      "id": "Q008",
+      "text": "Human error is a misnomer. It should be called system error or design error.",
+      "source": "Multiple sources",
+      "source_type": "various",
+      "category": "principles",
+      "tags": ["human error", "design error", "blame"],
+      "language": "en"
+    },
+    {
+      "id": "Q009",
+      "text": "When people make errors, it is usually because the design is at fault.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 5",
+      "category": "principles",
+      "tags": ["error", "design fault", "user blame"],
+      "language": "en"
+    },
+    {
+      "id": "Q010",
+      "text": "Affordances determine what actions are possible. Signifiers communicate where the action should take place.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 1",
+      "category": "framework",
+      "tags": ["affordances", "signifiers", "action"],
+      "language": "en"
+    },
+    {
+      "id": "Q011",
+      "text": "A conceptual model is an explanation, usually highly simplified, of how something works.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 1",
+      "category": "framework",
+      "tags": ["conceptual model", "mental model", "understanding"],
+      "language": "en"
+    },
+    {
+      "id": "Q012",
+      "text": "The Gulf of Execution is the gap between what you want to do and what is possible to do with the device.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 2",
+      "category": "framework",
+      "tags": ["gulf of execution", "user interaction", "gap"],
+      "language": "en"
+    },
+    {
+      "id": "Q013",
+      "text": "The Gulf of Evaluation is the gap between what the device has done and what you think it has done.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 2",
+      "category": "framework",
+      "tags": ["gulf of evaluation", "feedback", "understanding"],
+      "language": "en"
+    },
+    {
+      "id": "Q014",
+      "text": "Cognition and emotion cannot be separated. Cognitive thoughts lead to emotions: emotions drive cognitive thoughts.",
+      "source": "Emotional Design",
+      "source_type": "book",
+      "page": "Chapter 1",
+      "category": "philosophy",
+      "tags": ["cognition", "emotion", "psychology"],
+      "language": "en"
+    },
+    {
+      "id": "Q015",
+      "text": "The three levels of processing: visceral, behavioral, and reflective.",
+      "source": "Emotional Design",
+      "source_type": "book",
+      "page": "Chapter 1",
+      "category": "framework",
+      "tags": ["visceral", "behavioral", "reflective", "emotional design"],
+      "language": "en"
+    },
+    {
+      "id": "Q016",
+      "text": "Visceral design is about the initial impact of a product, about its appearance, touch, and feel.",
+      "source": "Emotional Design",
+      "source_type": "book",
+      "page": "Chapter 3",
+      "category": "framework",
+      "tags": ["visceral", "first impression", "aesthetics"],
+      "language": "en"
+    },
+    {
+      "id": "Q017",
+      "text": "Behavioral design is about use, about the experience with a product.",
+      "source": "Emotional Design",
+      "source_type": "book",
+      "page": "Chapter 4",
+      "category": "framework",
+      "tags": ["behavioral", "usability", "experience"],
+      "language": "en"
+    },
+    {
+      "id": "Q018",
+      "text": "Reflective design is about the message, about the meaning of the product and its use.",
+      "source": "Emotional Design",
+      "source_type": "book",
+      "page": "Chapter 5",
+      "category": "framework",
+      "tags": ["reflective", "meaning", "identity"],
+      "language": "en"
+    },
+    {
+      "id": "Q019",
+      "text": "Simplicity is highly overrated. Complexity is the way of the world.",
+      "source": "Living with Complexity",
+      "source_type": "book",
+      "page": "Introduction",
+      "category": "philosophy",
+      "tags": ["complexity", "simplicity", "real world"],
+      "language": "en"
+    },
+    {
+      "id": "Q020",
+      "text": "The goal is not to minimize complexity, but to manage it well.",
+      "source": "Living with Complexity",
+      "source_type": "book",
+      "page": "Chapter 1",
+      "category": "principles",
+      "tags": ["complexity", "management", "design"],
+      "language": "en"
+    },
+    {
+      "id": "Q021",
+      "text": "Good design requires good communication, especially from machine to person, indicating what actions are possible, what is happening, and what is about to happen.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 4",
+      "category": "principles",
+      "tags": ["communication", "feedback", "state"],
+      "language": "en"
+    },
+    {
+      "id": "Q022",
+      "text": "The most important components of a conceptual model are the thing being designed and the user's mental model.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 1",
+      "category": "framework",
+      "tags": ["conceptual model", "mental model", "design"],
+      "language": "en"
+    },
+    {
+      "id": "Q023",
+      "text": "Feedback must be immediate, even a delay of a tenth of a second can be disconcerting.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 4",
+      "category": "principles",
+      "tags": ["feedback", "immediacy", "response time"],
+      "language": "en"
+    },
+    {
+      "id": "Q024",
+      "text": "Constraints are powerful clues, limiting the set of possible actions.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 4",
+      "category": "framework",
+      "tags": ["constraints", "limitations", "guidance"],
+      "language": "en"
+    },
+    {
+      "id": "Q025",
+      "text": "The mapping from controls to operations should be natural, following the physical, cultural, or semantic principles.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 4",
+      "category": "principles",
+      "tags": ["mapping", "natural", "controls"],
+      "language": "en"
+    },
+    {
+      "id": "Q026",
+      "text": "The design of everyday things is in great danger of becoming the design of everyday frustrations.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Preface",
+      "category": "philosophy",
+      "tags": ["frustration", "everyday objects", "warning"],
+      "language": "en"
+    },
+    {
+      "id": "Q027",
+      "text": "I'm an advocate for humans. I believe technology should serve people, not the other way around.",
+      "source": "High Resolution Podcast",
+      "source_type": "podcast",
+      "timestamp": "00:45:12",
+      "category": "philosophy",
+      "tags": ["human-centered", "advocacy", "technology"],
+      "language": "en"
+    },
+    {
+      "id": "Q028",
+      "text": "When you have trouble with things, don't blame yourself. Blame the designer.",
+      "source": "TED Talk 2003",
+      "source_type": "lecture",
+      "category": "advice",
+      "tags": ["blame", "designer responsibility", "user experience"],
+      "language": "en"
+    },
+    {
+      "id": "Q029",
+      "text": "The human brain is really a powerful, parallel-processing computer. Unfortunately, it's slow.",
+      "source": "Emotional Design",
+      "source_type": "book",
+      "page": "Chapter 1",
+      "category": "psychology",
+      "tags": ["brain", "cognition", "processing"],
+      "language": "en"
+    },
+    {
+      "id": "Q030",
+      "text": "Products can be more than the sum of the functions they perform.",
+      "source": "Emotional Design",
+      "source_type": "book",
+      "page": "Chapter 2",
+      "category": "philosophy",
+      "tags": ["products", "emotion", "meaning"],
+      "language": "en"
+    },
+    {
+      "id": "Q031",
+      "text": "Usability is always secondary. What matters first is whether the product is useful.",
+      "source": "UX Podcast Interview",
+      "source_type": "podcast",
+      "category": "principles",
+      "tags": ["usability", "utility", "usefulness"],
+      "language": "en"
+    },
+    {
+      "id": "Q032",
+      "text": "I coined the term 'user experience' because I thought 'human interface' and 'usability' were too narrow.",
+      "source": "Multiple interviews",
+      "source_type": "various",
+      "category": "history",
+      "tags": ["user experience", "terminology", "definition"],
+      "language": "en"
+    },
+    {
+      "id": "Q033",
+      "text": "Root cause analysis. When there's an accident, don't ask who made the error. Ask why the system allowed that error to occur.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 5",
+      "category": "framework",
+      "tags": ["root cause", "error analysis", "system thinking"],
+      "language": "en"
+    },
+    {
+      "id": "Q034",
+      "text": "Technology should bring out the best in people, not demand that people accommodate to it.",
+      "source": "The Invisible Computer",
+      "source_type": "book",
+      "category": "philosophy",
+      "tags": ["technology", "human-centered", "accommodation"],
+      "language": "en"
+    },
+    {
+      "id": "Q035",
+      "text": "Designers need to make things that work for people, not things that seem logical to designers.",
+      "source": "Design Better Podcast",
+      "source_type": "podcast",
+      "category": "advice",
+      "tags": ["designers", "users", "logic vs usability"],
+      "language": "en"
+    },
+    {
+      "id": "Q036",
+      "text": "A Norman Door is a door that is designed in such a way that its proper operation is unclear.",
+      "source": "99% Invisible",
+      "source_type": "podcast",
+      "category": "framework",
+      "tags": ["Norman door", "bad design", "doors"],
+      "language": "en"
+    },
+    {
+      "id": "Q037",
+      "text": "Experience is more than a single event. It includes the anticipation before, the memory afterward.",
+      "source": "Emotional Design",
+      "source_type": "book",
+      "page": "Chapter 5",
+      "category": "psychology",
+      "tags": ["experience", "anticipation", "memory"],
+      "language": "en"
+    },
+    {
+      "id": "Q038",
+      "text": "The principles of design apply to everything, from door handles to nuclear power plants.",
+      "source": "High Resolution Podcast",
+      "source_type": "podcast",
+      "category": "philosophy",
+      "tags": ["principles", "universality", "scale"],
+      "language": "en"
+    },
+    {
+      "id": "Q039",
+      "text": "I've spent my career trying to understand the relationship between people and technology.",
+      "source": "Multiple sources",
+      "source_type": "various",
+      "category": "personal",
+      "tags": ["career", "mission", "HCI"],
+      "language": "en"
+    },
+    {
+      "id": "Q040",
+      "text": "Design thinking is not about design. It's about collaboration and working together to solve problems.",
+      "source": "IDEO U",
+      "source_type": "lecture",
+      "category": "framework",
+      "tags": ["design thinking", "collaboration", "problem solving"],
+      "language": "en"
+    },
+    {
+      "id": "Q041",
+      "text": "We must design for the way people are, not for the way we would like them to be.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 5",
+      "category": "principles",
+      "tags": ["human nature", "realistic design", "user behavior"],
+      "language": "en"
+    },
+    {
+      "id": "Q042",
+      "text": "Good observation is critical. You have to watch what people do, not what they say.",
+      "source": "Design Better Podcast",
+      "source_type": "podcast",
+      "category": "methodology",
+      "tags": ["observation", "user research", "behavior"],
+      "language": "en"
+    },
+    {
+      "id": "Q043",
+      "text": "Prototyping is really about thinking with your hands.",
+      "source": "IDEO U",
+      "source_type": "lecture",
+      "category": "methodology",
+      "tags": ["prototyping", "iteration", "hands-on"],
+      "language": "en"
+    },
+    {
+      "id": "Q044",
+      "text": "Test early. Test often. The goal of testing is to learn, not to validate.",
+      "source": "UX Podcast",
+      "source_type": "podcast",
+      "category": "methodology",
+      "tags": ["testing", "iteration", "learning"],
+      "language": "en"
+    },
+    {
+      "id": "Q045",
+      "text": "The best designs come from deep understanding of human behavior.",
+      "source": "High Resolution Podcast",
+      "source_type": "podcast",
+      "category": "principles",
+      "tags": ["understanding", "behavior", "design quality"],
+      "language": "en"
+    },
+    {
+      "id": "Q046",
+      "text": "Memory is knowledge in the world plus knowledge in the head.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 3",
+      "category": "psychology",
+      "tags": ["memory", "knowledge", "cognition"],
+      "language": "en"
+    },
+    {
+      "id": "Q047",
+      "text": "Put the required knowledge in the world. Don't require all the knowledge to be in the head.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 3",
+      "category": "principles",
+      "tags": ["knowledge", "external memory", "affordances"],
+      "language": "en"
+    },
+    {
+      "id": "Q048",
+      "text": "People are not machines. We are biological, with limitations but also wonderful capabilities.",
+      "source": "Living with Complexity",
+      "source_type": "book",
+      "category": "philosophy",
+      "tags": ["human nature", "biology", "capabilities"],
+      "language": "en"
+    },
+    {
+      "id": "Q049",
+      "text": "We need to move from human-centered design to humanity-centered design.",
+      "source": "Recent interviews 2023+",
+      "source_type": "various",
+      "category": "evolution",
+      "tags": ["humanity-centered", "evolution", "future"],
+      "language": "en"
+    },
+    {
+      "id": "Q050",
+      "text": "Design must consider the entire system: the environment, society, and all the people affected.",
+      "source": "DesignX Initiative",
+      "source_type": "lecture",
+      "category": "philosophy",
+      "tags": ["systems thinking", "society", "holistic"],
+      "language": "en"
+    },
+    {
+      "id": "Q051",
+      "text": "AI will change everything about design. We need to prepare for that.",
+      "source": "Design Better Podcast 2024",
+      "source_type": "podcast",
+      "category": "technology",
+      "tags": ["AI", "future", "change"],
+      "language": "en"
+    },
+    {
+      "id": "Q052",
+      "text": "Errors are inevitable. Good design makes them less likely and their consequences less severe.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 5",
+      "category": "principles",
+      "tags": ["errors", "resilience", "consequences"],
+      "language": "en"
+    },
+    {
+      "id": "Q053",
+      "text": "Make it easy to do right, hard to do wrong.",
+      "source": "Multiple sources",
+      "source_type": "various",
+      "category": "principles",
+      "tags": ["error prevention", "guidance", "constraints"],
+      "language": "en"
+    },
+    {
+      "id": "Q054",
+      "text": "Standardize. Use standards and conventions so that people can apply their previous knowledge.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 4",
+      "category": "principles",
+      "tags": ["standards", "conventions", "consistency"],
+      "language": "en"
+    },
+    {
+      "id": "Q055",
+      "text": "Design is the successive application of constraints until only a unique product is left.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 4",
+      "category": "philosophy",
+      "tags": ["constraints", "process", "definition"],
+      "language": "en"
+    },
+    {
+      "id": "Q056",
+      "text": "Activity-centered design, not technology-centered design.",
+      "source": "The Design of Future Things",
+      "source_type": "book",
+      "category": "framework",
+      "tags": ["activity-centered", "methodology", "focus"],
+      "language": "en"
+    },
+    {
+      "id": "Q057",
+      "text": "The real problem with the interface is that it is an interface.",
+      "source": "The Invisible Computer",
+      "source_type": "book",
+      "category": "philosophy",
+      "tags": ["interface", "invisibility", "integration"],
+      "language": "en"
+    },
+    {
+      "id": "Q058",
+      "text": "My motto: Don't think of the user as making errors; think of the actions as approximations of what is desired.",
+      "source": "The Design of Everyday Things",
+      "source_type": "book",
+      "page": "Chapter 5",
+      "category": "philosophy",
+      "tags": ["user perspective", "errors", "approximation"],
+      "language": "en"
+    },
+    {
+      "id": "Q059",
+      "text": "The value of a well-designed object is not in its beauty but in its ability to help us do what we want to do.",
+      "source": "Emotional Design",
+      "source_type": "book",
+      "category": "philosophy",
+      "tags": ["value", "utility", "purpose"],
+      "language": "en"
+    },
+    {
+      "id": "Q060",
+      "text": "I became interested in design from the viewpoint of cognitive science.",
+      "source": "Multiple interviews",
+      "source_type": "various",
+      "category": "personal",
+      "tags": ["cognitive science", "origin", "perspective"],
+      "language": "en"
+    },
+    {
+      "id": "Q061",
+      "text": "Three Mile Island was a turning point for me. I realized the operators were blamed, but the design was at fault.",
+      "source": "High Resolution Podcast",
+      "source_type": "podcast",
+      "category": "personal",
+      "tags": ["Three Mile Island", "turning point", "career"],
+      "language": "en"
+    },
+    {
+      "id": "Q062",
+      "text": "At Apple, I was able to put my theories into practice on a large scale.",
+      "source": "Multiple interviews",
+      "source_type": "various",
+      "category": "personal",
+      "tags": ["Apple", "practice", "career"],
+      "language": "en"
+    },
+    {
+      "id": "Q063",
+      "text": "Jakob Nielsen and I founded Nielsen Norman Group because we believed user research should be rigorous.",
+      "source": "UX Podcast",
+      "source_type": "podcast",
+      "category": "personal",
+      "tags": ["Nielsen Norman Group", "user research", "rigor"],
+      "language": "en"
+    },
+    {
+      "id": "Q064",
+      "text": "I'm now 90 years old, and I still believe design can make the world better.",
+      "source": "Recent interviews 2025",
+      "source_type": "various",
+      "category": "personal",
+      "tags": ["optimism", "mission", "legacy"],
+      "language": "en"
+    },
+    {
+      "id": "Q065",
+      "text": "The future of design is not just about products. It's about services, systems, and societies.",
+      "source": "DesignX Initiative",
+      "source_type": "lecture",
+      "category": "evolution",
+      "tags": ["future", "systems", "society"],
+      "language": "en"
+    }
+  ],
+  "categories": {
+    "philosophy": 18,
+    "principles": 15,
+    "framework": 12,
+    "methodology": 4,
+    "psychology": 4,
+    "advice": 3,
+    "personal": 5,
+    "evolution": 2,
+    "technology": 1,
+    "history": 1
+  }
+}

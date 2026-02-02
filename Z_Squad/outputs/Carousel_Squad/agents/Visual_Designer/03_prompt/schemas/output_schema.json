@@ -1,0 +1,594 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "visual_designer_output_v1.0.0",
+  "title": "Visual Designer Output Schema",
+  "description": "Output schema for the Visual Designer agent - complete visual specifications for the carousel",
+  "type": "object",
+  "required": ["visual_specification"],
+  "properties": {
+    "visual_specification": {
+      "type": "object",
+      "description": "Complete visual specification for the carousel",
+      "required": ["style_overview", "color_palette", "typography_system", "layout_grid"],
+      "properties": {
+        "style_overview": {
+          "type": "object",
+          "description": "High-level style overview",
+          "required": ["mood", "visual_tone"],
+          "properties": {
+            "mood": {
+              "type": "string",
+              "description": "The visual mood in 2-3 words",
+              "examples": ["Clean & Energetic", "Bold & Professional"]
+            },
+            "visual_tone": {
+              "type": "string",
+              "description": "Description of the visual tone",
+              "enum": [
+                "clean",
+                "bold",
+                "minimal",
+                "editorial",
+                "vibrant",
+                "corporate",
+                "playful",
+                "premium"
+              ],
+              "examples": ["clean"]
+            },
+            "references": {
+              "type": "array",
+              "description": "Style references used",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["@brandsdecoded__", "@notjournal.ai"]]
+            },
+            "design_principles": {
+              "type": "array",
+              "description": "Key design principles applied",
+              "items": {
+                "type": "string"
+              },
+              "examples": [["Clarity over decoration", "Single focal point per slide", "Consistent spacing"]]
+            }
+          }
+        },
+        "color_palette": {
+          "type": "object",
+          "description": "Complete color palette specification",
+          "required": ["colors"],
+          "properties": {
+            "colors": {
+              "type": "array",
+              "description": "Color definitions",
+              "items": {
+                "type": "object",
+                "required": ["role", "name", "hex", "usage"],
+                "properties": {
+                  "role": {
+                    "type": "string",
+                    "description": "The role of this color",
+                    "enum": ["primary_60", "secondary_30", "accent_10", "text_primary", "text_secondary", "background", "highlight"],
+                    "examples": ["primary_60"]
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "Human-readable color name",
+                    "examples": ["Off-white", "Electric blue", "Dark navy"]
+                  },
+                  "hex": {
+                    "type": "string",
+                    "description": "Hex color code",
+                    "pattern": "^#[0-9A-Fa-f]{6}$",
+                    "examples": ["#F8F9FA", "#4361EE"]
+                  },
+                  "rgb": {
+                    "type": "object",
+                    "description": "RGB values",
+                    "properties": {
+                      "r": {"type": "integer", "minimum": 0, "maximum": 255},
+                      "g": {"type": "integer", "minimum": 0, "maximum": 255},
+                      "b": {"type": "integer", "minimum": 0, "maximum": 255}
+                    }
+                  },
+                  "usage": {
+                    "type": "string",
+                    "description": "How to use this color",
+                    "examples": ["Backgrounds, large areas", "CTAs, highlights, numbers"]
+                  },
+                  "percentage": {
+                    "type": "string",
+                    "description": "Approximate percentage of usage",
+                    "examples": ["60%", "30%", "10%"]
+                  }
+                }
+              },
+              "minItems": 3
+            },
+            "color_rule": {
+              "type": "string",
+              "description": "The color distribution rule applied",
+              "default": "60-30-10",
+              "examples": ["60-30-10"]
+            },
+            "contrast_checks": {
+              "type": "array",
+              "description": "Contrast ratio checks performed",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "combination": {
+                    "type": "string",
+                    "examples": ["text_primary on background"]
+                  },
+                  "ratio": {
+                    "type": "number",
+                    "examples": [12.5]
+                  },
+                  "passes_wcag_aa": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "typography_system": {
+          "type": "object",
+          "description": "Complete typography specification",
+          "required": ["levels"],
+          "properties": {
+            "levels": {
+              "type": "array",
+              "description": "Typography hierarchy levels",
+              "items": {
+                "type": "object",
+                "required": ["level", "font", "weight", "size", "usage"],
+                "properties": {
+                  "level": {
+                    "type": "string",
+                    "description": "Typography level",
+                    "enum": ["h1", "h2", "body", "caption", "numbers", "cta"],
+                    "examples": ["h1"]
+                  },
+                  "font": {
+                    "type": "string",
+                    "description": "Font family name",
+                    "examples": ["Inter", "Montserrat", "Clash Display"]
+                  },
+                  "weight": {
+                    "type": "string",
+                    "description": "Font weight",
+                    "enum": ["light", "regular", "medium", "semi-bold", "bold", "black"],
+                    "examples": ["bold"]
+                  },
+                  "size": {
+                    "type": "string",
+                    "description": "Font size range in pt",
+                    "examples": ["48-72pt", "32-40pt", "20-28pt"]
+                  },
+                  "line_height": {
+                    "type": "number",
+                    "description": "Line height multiplier",
+                    "examples": [1.1, 1.2, 1.4]
+                  },
+                  "letter_spacing": {
+                    "type": "string",
+                    "description": "Letter spacing",
+                    "examples": ["0", "-0.02em", "0.05em"]
+                  },
+                  "usage": {
+                    "type": "string",
+                    "description": "How to use this level",
+                    "examples": ["Main headlines, one per slide", "Subheadlines, supporting text"]
+                  },
+                  "max_per_slide": {
+                    "type": "integer",
+                    "description": "Maximum instances per slide",
+                    "examples": [1, 2]
+                  }
+                }
+              },
+              "minItems": 3
+            },
+            "font_pairing_rationale": {
+              "type": "string",
+              "description": "Why these fonts work together",
+              "examples": ["Inter provides clean, modern readability across all sizes"]
+            }
+          }
+        },
+        "layout_grid": {
+          "type": "object",
+          "description": "Grid system specification",
+          "required": ["canvas", "margins", "columns"],
+          "properties": {
+            "canvas": {
+              "type": "object",
+              "description": "Canvas dimensions",
+              "properties": {
+                "width": {
+                  "type": "integer",
+                  "examples": [1080]
+                },
+                "height": {
+                  "type": "integer",
+                  "examples": [1080, 1350, 1920]
+                },
+                "unit": {
+                  "type": "string",
+                  "default": "px"
+                }
+              }
+            },
+            "margins": {
+              "type": "object",
+              "description": "Safe margins",
+              "properties": {
+                "top": {"type": "integer", "examples": [60]},
+                "right": {"type": "integer", "examples": [60]},
+                "bottom": {"type": "integer", "examples": [60]},
+                "left": {"type": "integer", "examples": [60]}
+              }
+            },
+            "content_area": {
+              "type": "object",
+              "description": "Usable content area",
+              "properties": {
+                "width": {"type": "integer", "examples": [960]},
+                "height": {"type": "integer", "examples": [960]}
+              }
+            },
+            "columns": {
+              "type": "integer",
+              "description": "Number of columns in grid",
+              "examples": [4, 6, 12]
+            },
+            "rows": {
+              "type": "integer",
+              "description": "Number of rows in grid",
+              "examples": [4, 6]
+            },
+            "gutter": {
+              "type": "integer",
+              "description": "Gutter width in pixels",
+              "examples": [20, 24, 40]
+            },
+            "safe_zone": {
+              "type": "string",
+              "description": "Description of safe zone for important content",
+              "examples": ["Keep critical content within 960x960 center area"]
+            },
+            "grid_visualization": {
+              "type": "string",
+              "description": "ASCII representation of the grid",
+              "examples": ["See slide specs for grid layouts"]
+            }
+          }
+        },
+        "slide_specifications": {
+          "type": "array",
+          "description": "Slide-by-slide visual specifications",
+          "items": {
+            "type": "object",
+            "required": ["slide_number", "layout_type", "focal_point"],
+            "properties": {
+              "slide_number": {
+                "type": "integer",
+                "description": "Slide number"
+              },
+              "slide_type": {
+                "type": "string",
+                "description": "Type of slide",
+                "enum": ["hook", "content", "content_emphasis", "data", "quote", "cta", "transition"],
+                "examples": ["hook", "content"]
+              },
+              "layout_type": {
+                "type": "string",
+                "description": "Layout pattern",
+                "enum": [
+                  "centered_headline",
+                  "headline_subheadline",
+                  "headline_body",
+                  "split_vertical",
+                  "split_horizontal",
+                  "full_bleed",
+                  "card",
+                  "list",
+                  "number_highlight",
+                  "quote"
+                ],
+                "examples": ["centered_headline"]
+              },
+              "layout_description": {
+                "type": "string",
+                "description": "Description of the layout",
+                "examples": ["Large centered headline with supporting subtext below"]
+              },
+              "layout_wireframe": {
+                "type": "string",
+                "description": "ASCII wireframe of the layout"
+              },
+              "focal_point": {
+                "type": "string",
+                "description": "The primary visual focus of this slide",
+                "examples": ["Large number '5'", "Headline text", "CTA button"]
+              },
+              "elements": {
+                "type": "array",
+                "description": "Visual elements on this slide",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "element_type": {
+                      "type": "string",
+                      "enum": ["headline", "subheadline", "body", "number", "icon", "image", "shape", "cta_button", "swipe_indicator", "logo"]
+                    },
+                    "position": {
+                      "type": "string",
+                      "examples": ["center", "top-third", "bottom-quarter"]
+                    },
+                    "style_notes": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "color_treatment": {
+                "type": "object",
+                "description": "Color usage for this slide",
+                "properties": {
+                  "background": {
+                    "type": "string",
+                    "examples": ["primary_60", "#F8F9FA"]
+                  },
+                  "text": {
+                    "type": "string",
+                    "examples": ["text_primary", "#1A1A2E"]
+                  },
+                  "accent_usage": {
+                    "type": "string",
+                    "examples": ["Number highlight", "CTA button"]
+                  }
+                }
+              },
+              "special_treatment": {
+                "type": "string",
+                "description": "Any special visual treatment needed",
+                "examples": ["Use high contrast for hook impact", "Subtle swipe indicator arrow"]
+              }
+            }
+          }
+        },
+        "visual_consistency_rules": {
+          "type": "object",
+          "description": "Rules for maintaining visual consistency",
+          "properties": {
+            "margin_consistency": {
+              "type": "boolean",
+              "description": "Margins must be consistent across slides"
+            },
+            "typography_consistency": {
+              "type": "boolean",
+              "description": "Typography must follow the defined system"
+            },
+            "color_consistency": {
+              "type": "boolean",
+              "description": "Colors must stay within the palette"
+            },
+            "focal_point_rule": {
+              "type": "string",
+              "description": "Rule for focal points",
+              "default": "One clear focal point per slide"
+            },
+            "additional_rules": {
+              "type": "array",
+              "description": "Additional consistency rules",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "consistency_checklist": {
+          "type": "object",
+          "description": "Checklist for validating visual consistency",
+          "properties": {
+            "margins_consistent": {"type": "boolean"},
+            "typography_consistent": {"type": "boolean"},
+            "colors_within_palette": {"type": "boolean"},
+            "contrast_adequate": {"type": "boolean"},
+            "focal_point_clear": {"type": "boolean"},
+            "mobile_readable": {"type": "boolean"}
+          }
+        }
+      }
+    },
+    "design_assets": {
+      "type": "object",
+      "description": "Information about design assets needed",
+      "properties": {
+        "icons_needed": {
+          "type": "array",
+          "description": "Icons that need to be sourced/created",
+          "items": {
+            "type": "object",
+            "properties": {
+              "icon_name": {"type": "string"},
+              "usage": {"type": "string"},
+              "style": {"type": "string", "examples": ["line", "filled", "outline"]}
+            }
+          }
+        },
+        "images_needed": {
+          "type": "array",
+          "description": "Images that need to be sourced/created",
+          "items": {
+            "type": "object",
+            "properties": {
+              "description": {"type": "string"},
+              "slide": {"type": "integer"},
+              "requirements": {"type": "string"}
+            }
+          }
+        },
+        "suggested_tools": {
+          "type": "array",
+          "description": "Suggested tools for creating the carousel",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["Figma", "Canva", "Adobe Illustrator"]]
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "description": "Handoff protocol information",
+      "properties": {
+        "from": {
+          "type": "string",
+          "const": "Visual_Designer"
+        },
+        "to": {
+          "type": "string",
+          "description": "Next agent to receive the work",
+          "enum": ["Copy_Master", "Growth_Hacker", "production"]
+        },
+        "context_summary": {
+          "type": "string",
+          "description": "Brief summary for receiving agent"
+        },
+        "design_constraints_for_copy": {
+          "type": "array",
+          "description": "Constraints Copy Master should consider",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["Max 3 lines for headlines", "Keep body text under 50 words per slide"]]
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadata about the visual specification",
+      "properties": {
+        "version": {
+          "type": "string",
+          "default": "1.0.0"
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "agent": {
+          "type": "string",
+          "const": "Visual_Designer"
+        },
+        "frameworks_used": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["60-30-10 Color Rule", "Typography Hierarchy", "Gestalt Principles"]]
+        },
+        "platform_optimized_for": {
+          "type": "string",
+          "examples": ["Instagram"]
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "visual_specification": {
+        "style_overview": {
+          "mood": "Clean & Energetic",
+          "visual_tone": "clean",
+          "references": ["@brandsdecoded__", "@notjournal.ai"],
+          "design_principles": ["Clarity over decoration", "Single focal point per slide"]
+        },
+        "color_palette": {
+          "color_rule": "60-30-10",
+          "colors": [
+            {"role": "primary_60", "name": "Off-white", "hex": "#F8F9FA", "usage": "Background", "percentage": "60%"},
+            {"role": "secondary_30", "name": "Dark blue", "hex": "#1A1A2E", "usage": "Text, elements", "percentage": "30%"},
+            {"role": "accent_10", "name": "Electric blue", "hex": "#4361EE", "usage": "CTAs, numbers", "percentage": "10%"}
+          ],
+          "contrast_checks": [
+            {"combination": "text_primary on background", "ratio": 12.5, "passes_wcag_aa": true}
+          ]
+        },
+        "typography_system": {
+          "levels": [
+            {"level": "h1", "font": "Inter", "weight": "black", "size": "48-72pt", "line_height": 1.1, "usage": "Headlines", "max_per_slide": 1},
+            {"level": "h2", "font": "Inter", "weight": "semi-bold", "size": "32-40pt", "line_height": 1.2, "usage": "Subheadlines"},
+            {"level": "body", "font": "Inter", "weight": "regular", "size": "20-28pt", "line_height": 1.4, "usage": "Body text"},
+            {"level": "numbers", "font": "Clash Display", "weight": "bold", "size": "72pt", "usage": "Number highlights"}
+          ],
+          "font_pairing_rationale": "Inter provides clean readability; Clash Display adds impact for numbers"
+        },
+        "layout_grid": {
+          "canvas": {"width": 1080, "height": 1080, "unit": "px"},
+          "margins": {"top": 60, "right": 60, "bottom": 60, "left": 60},
+          "content_area": {"width": 960, "height": 960},
+          "columns": 4,
+          "rows": 4,
+          "gutter": 20,
+          "safe_zone": "Keep critical content within 960x960 center area"
+        },
+        "slide_specifications": [
+          {
+            "slide_number": 1,
+            "slide_type": "hook",
+            "layout_type": "number_highlight",
+            "focal_point": "Large number '5' in accent color",
+            "elements": [
+              {"element_type": "number", "position": "center", "style_notes": "72pt Clash Display, accent color"},
+              {"element_type": "headline", "position": "below-number", "style_notes": "Multi-line, centered"},
+              {"element_type": "swipe_indicator", "position": "bottom", "style_notes": "Subtle arrow"}
+            ],
+            "color_treatment": {
+              "background": "#F8F9FA",
+              "text": "#1A1A2E",
+              "accent_usage": "Number highlight"
+            }
+          },
+          {
+            "slide_number": 10,
+            "slide_type": "cta",
+            "layout_type": "centered_headline",
+            "focal_point": "CTA text",
+            "elements": [
+              {"element_type": "headline", "position": "center-upper", "style_notes": "Question format"},
+              {"element_type": "cta_button", "position": "center-lower", "style_notes": "Accent background, white text"}
+            ],
+            "color_treatment": {
+              "background": "#F8F9FA",
+              "text": "#1A1A2E",
+              "accent_usage": "CTA button background"
+            }
+          }
+        ],
+        "consistency_checklist": {
+          "margins_consistent": true,
+          "typography_consistent": true,
+          "colors_within_palette": true,
+          "contrast_adequate": true,
+          "focal_point_clear": true,
+          "mobile_readable": true
+        }
+      },
+      "design_assets": {
+        "suggested_tools": ["Figma", "Canva Pro"]
+      },
+      "metadata": {
+        "version": "1.0.0",
+        "agent": "Visual_Designer",
+        "frameworks_used": ["60-30-10 Color Rule", "Typography Hierarchy", "Gestalt Principles"],
+        "platform_optimized_for": "Instagram"
+      }
+    }
+  ]
+}

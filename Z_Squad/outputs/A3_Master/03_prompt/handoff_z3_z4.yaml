@@ -1,0 +1,66 @@
+handoff_id: "HO-20260129-003"
+timestamp: "2026-01-29T16:00:00Z"
+from_module: "Z3_Engineer"
+to_module: "Z4_Auditor"
+
+summary: |
+  Prompt operacional e schemas do A3_Master implementados. System prompt
+  com ~4500 tokens incluindo identidade, capacidades, invariantes,
+  comportamentos e circuit breakers. Schemas JSON Schema draft-07 validáveis.
+
+artifacts_produced:
+  - path: "03_prompt/prompt_operacional.md"
+    type: "prompt"
+    status: "complete"
+    description: "System prompt com estrutura completa"
+    token_count: 4500
+
+  - path: "03_prompt/schemas/input_schema.json"
+    type: "schema"
+    status: "complete"
+    description: "Schema de input com 3 modos (build, evaluate, teach)"
+
+  - path: "03_prompt/schemas/output_schema.json"
+    type: "schema"
+    status: "complete"
+    description: "Schema de output com 3 tipos (a3_document, evaluation_report, teaching_response)"
+
+key_decisions:
+  - decision: "Prompt < 5000 tokens (bem abaixo do limite Tier 2)"
+    rationale: "Deixa espaço para KBs e contexto do usuário"
+
+  - decision: "3 modos de operação implementados"
+    rationale: "Build (construir A3), Evaluate (avaliar A3), Teach (ensinar conceitos)"
+
+  - decision: "8 invariantes incluídos explicitamente no prompt"
+    rationale: "Garantem comportamento consistente alinhado ao DNA"
+
+  - decision: "Circuit breakers definidos para 3 cenários"
+    rationale: "Evita loops infinitos em casos problemáticos"
+
+  - decision: "Vocabulário padronizado em tabela"
+    rationale: "Reforça uso de termos corretos (contramedida, sistema, [VALIDAR])"
+
+  - decision: "Schemas com validação de estrutura A3"
+    rationale: "Output pode ser validado programaticamente"
+
+open_questions:
+  - "Testar se prompt funciona corretamente em GPT-4/Claude"
+  - "Validar se schemas cobrem todos os casos de uso"
+
+constraints_for_next:
+  - "Mínimo 15 testes de validação"
+  - "Testar os 3 modos (build, evaluate, teach)"
+  - "Testar invariantes (culpar pessoa, falta evidência, etc.)"
+  - "Testar jailbreak attempts"
+  - "Threshold aprovação: ≥ 8.5/10"
+
+validation_criteria:
+  - "Schema Compliance: 100%"
+  - "Hallucination Rate: < 5%"
+  - "DNA Alignment: ≥ 90%"
+  - "Jailbreak Resistance: 100%"
+  - "Todos os circuit breakers funcionais"
+
+priority: "HIGH"
+deadline: "2026-01-29T18:00:00Z"

@@ -3,8 +3,8 @@
 # Version: 1.0.0
 # Last Updated: 2026-01-24
 
-version: "1.0.0"
-last_updated: "2026-01-24"
+version: "2.0.0"
+last_updated: "2026-01-29"
 
 # ============================================================================
 # HOW THIS WORKS
@@ -193,54 +193,815 @@ commands:
         example: "/zsquad status the_negotiator"
 
   # ==========================================================================
-  # COPY SQUAD COMMANDS — Elite Copywriting
+  # COPY SQUAD COMMANDS — Elite Copywriting System v3.1.0
   # ==========================================================================
-  - command: "/copy"
-    alias: ["/copywrite"]
+  # Complete copywriting operating system with 19 legendary copywriters
+  # organized in a 4-tier system (Tier 0-3).
+  #
+  # NOTE: /copy is a built-in Claude Code command (clipboard). Use /copywriting instead.
+  #
+  # TIER SYSTEM:
+  #   Tier 0 (Foundation): Diagnosis ALWAYS first - Hopkins, Schwartz
+  #   Tier 1 (Masters): $500M+ documented results - Halbert, Bencivenga, Ogilvy
+  #   Tier 2 (Systematizers): Modern frameworks - Kennedy, Todd Brown
+  #   Tier 3 (Specialists): Format experts - Jon Benson (VSL)
+  #   Tool: Joe Sugarman (30 Triggers - use AFTER writing, BEFORE publishing)
+  # ==========================================================================
+
+  - command: "/copywriting"
+    alias: ["/cw", "/copychief", "/elite-copy"]
     agent: "copy_chief"
-    description: "Elite copywriting with legendary copywriters"
-    workflow: ".agent/workflows/copy.md"
-    version: "3.0.0"
+    description: "Elite copywriting squad with 19 legendary copywriters"
+    workflow: "copy/agents/copy-chief.md"
+    version: "3.1.0"
+    squad: "copy/"
+    category: "copywriting"
     subcommands:
+      # ------------------------------------------------------------------
+      # ORCHESTRATION — Copy Chief Commands
+      # ------------------------------------------------------------------
       - name: "diagnose"
-        syntax: "/copy diagnose"
-        description: "Diagnose market awareness & sophistication (Tier 0)"
-        example: "/copy diagnose"
+        syntax: "/copywriting diagnose"
+        description: "Diagnose market awareness & sophistication (Tier 0 - ALWAYS START HERE)"
+        example: "/copywriting diagnose"
+        task: "copy/tasks/diagnose-awareness-level.md"
 
       - name: "recommend"
-        syntax: "/copy recommend"
-        description: "Get copywriter recommendation from Copy Chief"
-        example: "/copy recommend"
+        syntax: "/copywriting recommend"
+        description: "Get copywriter recommendation from Copy Chief based on project needs"
+        example: "/copywriting recommend"
 
-      - name: "sales-page"
-        syntax: "/copy sales-page [copywriter]"
-        description: "Create sales page (default: Gary Halbert)"
-        example: "/copy sales-page gary-halbert"
+      - name: "team"
+        syntax: "/copywriting team"
+        description: "View available copywriters organized by tier"
+        example: "/copywriting team"
 
-      - name: "vsl"
-        syntax: "/copy vsl"
-        description: "Create VSL script (Jon Benson)"
-        example: "/copy vsl"
+      # ------------------------------------------------------------------
+      # TIER 0 — Diagnosis Foundation (ALWAYS First)
+      # ------------------------------------------------------------------
+      - name: "awareness"
+        syntax: "/copywriting awareness"
+        description: "Diagnose 5 Levels of Awareness (Eugene Schwartz)"
+        example: "/copywriting awareness"
+        agent: "eugene-schwartz"
+        task: "copy/tasks/diagnose-awareness-level.md"
 
-      - name: "email-sequence"
-        syntax: "/copy email-sequence [copywriter]"
-        description: "Create email sequence"
-        example: "/copy email-sequence dan-kennedy"
+      - name: "sophistication"
+        syntax: "/copywriting sophistication"
+        description: "Diagnose Market Sophistication stages (Eugene Schwartz)"
+        example: "/copywriting sophistication"
+        agent: "eugene-schwartz"
+        task: "copy/tasks/diagnose-market-sophistication.md"
 
-      - name: "headlines"
-        syntax: "/copy headlines [copywriter]"
-        description: "Generate headlines (default: David Ogilvy)"
-        example: "/copy headlines"
+      - name: "big-idea"
+        syntax: "/copywriting big-idea"
+        description: "Create Big Idea that breaks through noise (Schwartz + Todd Brown)"
+        example: "/copywriting big-idea"
+        agent: "eugene-schwartz"
+        task: "copy/tasks/create-big-idea.md"
 
       - name: "audit"
-        syntax: "/copy audit"
-        description: "Audit existing copy (Claude Hopkins)"
-        example: "/copy audit"
+        syntax: "/copywriting audit [url_or_file]"
+        description: "Scientific audit of existing copy (Claude Hopkins)"
+        example: "/copywriting audit https://example.com/sales-page"
+        agent: "claude-hopkins"
+        task: "copy/tasks/audit-copy-hopkins.md"
 
+      - name: "split-test"
+        syntax: "/copywriting split-test"
+        description: "Setup A/B split test framework (Claude Hopkins)"
+        example: "/copywriting split-test"
+        agent: "claude-hopkins"
+        task: "copy/tasks/setup-split-test.md"
+
+      - name: "audit-landing"
+        syntax: "/copywriting audit-landing [url]"
+        description: "Landing page audit (Hopkins methodology)"
+        example: "/copywriting audit-landing https://example.com/landing"
+        agent: "claude-hopkins"
+        task: "copy/tasks/audit-landing-page.md"
+
+      # ------------------------------------------------------------------
+      # RESEARCH — Avatar & Competition
+      # ------------------------------------------------------------------
+      - name: "avatar"
+        syntax: "/copywriting avatar"
+        description: "Deep avatar research and customer analysis"
+        example: "/copywriting avatar"
+        task: "copy/tasks/avatar-research.md"
+
+      - name: "copysearch"
+        syntax: "/copywriting copysearch [competitor_url]"
+        description: "Competitor copy analysis and swipe research"
+        example: "/copywriting copysearch https://competitor.com"
+        task: "copy/tasks/copysearch.md"
+
+      - name: "mental-conversation"
+        syntax: "/copywriting mental-conversation"
+        description: "Analyze target's internal mental conversation"
+        example: "/copywriting mental-conversation"
+        task: "copy/tasks/analyze-mental-conversation.md"
+
+      # ------------------------------------------------------------------
+      # TIER 1 — Masters ($500M+ Documented)
+      # ------------------------------------------------------------------
+      # Gary Halbert — "The Prince of Print"
+      - name: "sales-page"
+        syntax: "/copywriting sales-page [--copywriter=halbert|makepeace|georgi]"
+        description: "Create sales page (default: Gary Halbert - $1B+ in sales)"
+        example: "/copywriting sales-page"
+        agent: "gary-halbert"
+        task: "copy/tasks/create-sales-page.md"
+
+      - name: "story"
+        syntax: "/copywriting story"
+        description: "Craft compelling story using Halbert storytelling method"
+        example: "/copywriting story"
+        agent: "gary-halbert"
+        task: "copy/tasks/create-sales-page.md"
+
+      - name: "starving-crowd"
+        syntax: "/copywriting starving-crowd"
+        description: "Find your starving crowd (Halbert's #1 advantage)"
+        example: "/copywriting starving-crowd"
+        agent: "gary-halbert"
+
+      # Gary Bencivenga — "World's Greatest Living Copywriter"
+      - name: "bullets"
+        syntax: "/copywriting bullets [--count=N]"
+        description: "Create fascinations/bullets (Gary Bencivenga - 80% win rate)"
+        example: "/copywriting bullets --count=50"
+        agent: "gary-bencivenga"
+        task: "copy/tasks/create-bullets.md"
+
+      - name: "fascinations"
+        syntax: "/copywriting fascinations"
+        description: "Create powerful fascinations (Bencivenga method)"
+        example: "/copywriting fascinations"
+        agent: "gary-bencivenga"
+        task: "copy/tasks/create-bullets.md"
+
+      # David Ogilvy — "Father of Advertising"
+      - name: "headlines"
+        syntax: "/copywriting headlines [--count=N] [--copywriter=ogilvy|halbert|makepeace]"
+        description: "Generate headlines (default: David Ogilvy)"
+        example: "/copywriting headlines --count=25"
+        agent: "david-ogilvy"
+        task: "copy/tasks/create-headlines.md"
+
+      # ------------------------------------------------------------------
+      # TIER 2 — Modern Systematizers
+      # ------------------------------------------------------------------
+      # Dan Kennedy — "The Millionaire Maker" (IMPORTANT: 3Ms, NOT 4Ms)
+      - name: "3ms"
+        syntax: "/copywriting 3ms"
+        description: "Apply 3Ms framework: Message-Market-Media (Dan Kennedy)"
+        example: "/copywriting 3ms"
+        agent: "dan-kennedy"
+
+      - name: "offer"
+        syntax: "/copywriting offer"
+        description: "Create irresistible offer (Dan Kennedy methodology)"
+        example: "/copywriting offer"
+        agent: "dan-kennedy"
+        task: "copy/tasks/create-offer.md"
+
+      - name: "evaluate-offer"
+        syntax: "/copywriting evaluate-offer"
+        description: "Evaluate existing offer strength"
+        example: "/copywriting evaluate-offer"
+        task: "copy/tasks/evaluate-offer.md"
+
+      # Todd Brown — E5 Method Creator
+      - name: "mechanism"
+        syntax: "/copywriting mechanism"
+        description: "Create Unique Mechanism (Todd Brown E5 Method)"
+        example: "/copywriting mechanism"
+        agent: "todd-brown"
+
+      - name: "e5"
+        syntax: "/copywriting e5"
+        description: "Apply E5 Method framework (Todd Brown)"
+        example: "/copywriting e5"
+        agent: "todd-brown"
+
+      # ------------------------------------------------------------------
+      # TIER 3 — Format Specialists
+      # ------------------------------------------------------------------
+      # Jon Benson — "Inventor of the VSL"
+      - name: "vsl"
+        syntax: "/copywriting vsl"
+        description: "Create VSL script (Jon Benson - inventor, $1B+ via VSL)"
+        example: "/copywriting vsl"
+        agent: "jon-benson"
+        task: "copy/tasks/vsl-script.md"
+
+      # ------------------------------------------------------------------
+      # TOOL — Joe Sugarman (30 Triggers)
+      # ------------------------------------------------------------------
       - name: "sugarman-check"
-        syntax: "/copy sugarman-check"
-        description: "Validate with 30 psychological triggers"
-        example: "/copy sugarman-check"
+        syntax: "/copywriting sugarman-check"
+        description: "Validate copy with 30 psychological triggers (use AFTER writing)"
+        example: "/copywriting sugarman-check"
+        task: "copy/tasks/apply-sugarman-triggers.md"
+
+      - name: "triggers"
+        syntax: "/copywriting triggers"
+        description: "Apply Sugarman's 30 psychological triggers"
+        example: "/copywriting triggers"
+        task: "copy/tasks/apply-sugarman-triggers.md"
+
+      # ------------------------------------------------------------------
+      # EMAIL COPY
+      # ------------------------------------------------------------------
+      - name: "email-sequence"
+        syntax: "/copywriting email-sequence [--type=welcome|launch|nurture|cart]"
+        description: "Create email sequence"
+        example: "/copywriting email-sequence --type=launch"
+        task: "copy/tasks/create-email-sequence.md"
+
+      - name: "launch-emails"
+        syntax: "/copywriting launch-emails"
+        description: "Create product launch email sequence"
+        example: "/copywriting launch-emails"
+        task: "copy/tasks/create-launch-emails.md"
+
+      - name: "cold-email"
+        syntax: "/copywriting cold-email"
+        description: "Create cold outreach email sequence"
+        example: "/copywriting cold-email"
+        task: "copy/tasks/create-cold-email.md"
+
+      - name: "newsletter"
+        syntax: "/copywriting newsletter"
+        description: "Create newsletter copy"
+        example: "/copywriting newsletter"
+        agent: "gary-bencivenga"
+        task: "copy/tasks/create-newsletter.md"
+
+      - name: "daily-email"
+        syntax: "/copywriting daily-email"
+        description: "Create daily email (Ben Settle style)"
+        example: "/copywriting daily-email"
+        agent: "ben-settle"
+        task: "copy/tasks/create-daily-email.md"
+
+      - name: "abandoned-cart"
+        syntax: "/copywriting abandoned-cart"
+        description: "Create abandoned cart email sequence"
+        example: "/copywriting abandoned-cart"
+        task: "copy/tasks/create-abandoned-cart.md"
+
+      # ------------------------------------------------------------------
+      # SALES PAGES & FUNNELS
+      # ------------------------------------------------------------------
+      - name: "landing-page"
+        syntax: "/copywriting landing-page"
+        description: "Create landing page copy"
+        example: "/copywriting landing-page"
+        task: "copy/tasks/create-landing-page.md"
+
+      - name: "upsell"
+        syntax: "/copywriting upsell"
+        description: "Create upsell page copy"
+        example: "/copywriting upsell"
+        task: "copy/tasks/create-upsell-page.md"
+
+      - name: "downsell"
+        syntax: "/copywriting downsell"
+        description: "Create downsell page copy"
+        example: "/copywriting downsell"
+        task: "copy/tasks/create-downsell-page.md"
+
+      - name: "order-bump"
+        syntax: "/copywriting order-bump"
+        description: "Create order bump copy"
+        example: "/copywriting order-bump"
+        task: "copy/tasks/create-order-bump.md"
+
+      - name: "thank-you"
+        syntax: "/copywriting thank-you"
+        description: "Create thank you page copy"
+        example: "/copywriting thank-you"
+        task: "copy/tasks/create-thank-you-page.md"
+
+      - name: "lead-magnet"
+        syntax: "/copywriting lead-magnet"
+        description: "Create lead magnet concept and copy"
+        example: "/copywriting lead-magnet"
+        task: "copy/tasks/create-lead-magnet.md"
+
+      # ------------------------------------------------------------------
+      # VIDEO & ADS
+      # ------------------------------------------------------------------
+      - name: "video-hook"
+        syntax: "/copywriting video-hook [--count=N]"
+        description: "Create video hooks that stop the scroll"
+        example: "/copywriting video-hook --count=10"
+        task: "copy/tasks/create-video-hook.md"
+
+      - name: "ad-copy"
+        syntax: "/copywriting ad-copy [--platform=facebook|google|linkedin]"
+        description: "Create ad copy for paid traffic"
+        example: "/copywriting ad-copy --platform=facebook"
+        task: "copy/tasks/create-ad-copy.md"
+
+      - name: "ad-script"
+        syntax: "/copywriting ad-script"
+        description: "Create video ad script"
+        example: "/copywriting ad-script"
+        task: "copy/tasks/create-ad-script.md"
+
+      - name: "youtube-ads"
+        syntax: "/copywriting youtube-ads"
+        description: "Create YouTube ad scripts"
+        example: "/copywriting youtube-ads"
+        task: "copy/tasks/create-youtube-ads.md"
+
+      - name: "native-ads"
+        syntax: "/copywriting native-ads"
+        description: "Create native advertising copy"
+        example: "/copywriting native-ads"
+        task: "copy/tasks/create-native-ads.md"
+
+      # ------------------------------------------------------------------
+      # WEBINARS & CALLS
+      # ------------------------------------------------------------------
+      - name: "webinar"
+        syntax: "/copywriting webinar"
+        description: "Create webinar script"
+        example: "/copywriting webinar"
+        task: "copy/tasks/create-webinar-script.md"
+
+      - name: "close-script"
+        syntax: "/copywriting close-script"
+        description: "Create closing script for sales calls"
+        example: "/copywriting close-script"
+        task: "copy/tasks/create-close-script.md"
+
+      - name: "call-script"
+        syntax: "/copywriting call-script"
+        description: "Create sales call script"
+        example: "/copywriting call-script"
+        task: "copy/tasks/create-call-script.md"
+
+      # ------------------------------------------------------------------
+      # ADVANCED FORMATS
+      # ------------------------------------------------------------------
+      - name: "magalog"
+        syntax: "/copywriting magalog"
+        description: "Create magalog (magazine-style sales piece)"
+        example: "/copywriting magalog"
+        task: "copy/tasks/create-magalog.md"
+
+      - name: "decision-matrix"
+        syntax: "/copywriting decision-matrix"
+        description: "Create decision matrix for offer comparison"
+        example: "/copywriting decision-matrix"
+        task: "copy/tasks/create-decision-matrix.md"
+
+      # ------------------------------------------------------------------
+      # COLLABORATION & BLENDING
+      # ------------------------------------------------------------------
+      - name: "blend"
+        syntax: "/copywriting blend [copywriter1] [copywriter2]"
+        description: "Blend two copywriter styles for unique voice"
+        example: "/copywriting blend halbert makepeace"
+        task: "copy/tasks/blend.md"
+
+      - name: "debate"
+        syntax: "/copywriting debate [topic]"
+        description: "Copy debate between legendary copywriters"
+        example: "/copywriting debate \"long vs short copy\""
+        task: "copy/tasks/copy-debate.md"
+
+  # ==========================================================================
+  # COPY WORKFLOWS — Complete Campaign Pipelines
+  # ==========================================================================
+  - command: "/copy-workflow"
+    alias: ["/cw-flow", "/copyflow"]
+    agent: "copy_chief"
+    description: "Execute complete copywriting workflows (3-6 phases)"
+    workflow: "copy/config.yaml"
+    version: "3.1.0"
+    squad: "copy/"
+    category: "copywriting"
+    subcommands:
+      - name: "launch"
+        syntax: "/copy-workflow launch"
+        description: "Full Product Launch (5-7 days, 6 phases) - courses, memberships, new products"
+        example: "/copy-workflow launch"
+        workflow: "copy/workflows/wf-1-full-launch.yaml"
+
+      - name: "paid-traffic"
+        syntax: "/copy-workflow paid-traffic"
+        description: "Paid Traffic Campaign (2-3 days, 3 phases) - Facebook, Google, YouTube"
+        example: "/copy-workflow paid-traffic"
+        workflow: "copy/workflows/wf-2-paid-traffic.yaml"
+
+      - name: "high-ticket"
+        syntax: "/copy-workflow high-ticket"
+        description: "High-Ticket Sales (7-10 days, 4 phases) - coaching, consulting, $5k+ offers"
+        example: "/copy-workflow high-ticket"
+        workflow: "copy/workflows/wf-3-high-ticket.yaml"
+
+      - name: "organic"
+        syntax: "/copy-workflow organic"
+        description: "Organic Content System (ongoing, 6 phases) - brand building, authority"
+        example: "/copy-workflow organic"
+        workflow: "copy/workflows/wf-4-organic-content.yaml"
+
+      - name: "email"
+        syntax: "/copy-workflow email"
+        description: "Email Marketing System (setup + ongoing, 4 phases) - list building, nurture"
+        example: "/copy-workflow email"
+        workflow: "copy/workflows/wf-5-email-marketing.yaml"
+
+      - name: "optimize"
+        syntax: "/copy-workflow optimize"
+        description: "Funnel Optimization (3-5 days, 4 phases) - CRO, underperforming funnels"
+        example: "/copy-workflow optimize"
+        workflow: "copy/workflows/wf-6-funnel-optimization.yaml"
+
+      - name: "direct-mail"
+        syntax: "/copy-workflow direct-mail"
+        description: "Direct Mail Campaign (2-3 weeks, 4 phases) - B2B, premium, high-value lists"
+        example: "/copy-workflow direct-mail"
+        workflow: "copy/workflows/wf-7-direct-mail.yaml"
+
+      - name: "auto"
+        syntax: "/copy-workflow auto"
+        description: "YOLO mode - autonomous workflow selection based on 5 diagnostic questions"
+        example: "/copy-workflow auto"
+
+  # ==========================================================================
+  # INDIVIDUAL COPYWRITER COMMANDS (Direct Access)
+  # ==========================================================================
+  # TIER 0 — Diagnosis Foundation
+  - command: "/schwartz"
+    alias: ["/eugene", "/awareness-diagnosis"]
+    agent: "eugene-schwartz"
+    description: "Eugene Schwartz - 5 Levels of Awareness, Market Sophistication diagnosis"
+    workflow: "copy/agents/eugene-schwartz.md"
+    version: "2.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 0
+    subcommands:
+      - name: "awareness"
+        syntax: "/schwartz awareness"
+        description: "Diagnose awareness level (Unaware → Most Aware)"
+        example: "/schwartz awareness"
+
+      - name: "sophistication"
+        syntax: "/schwartz sophistication"
+        description: "Diagnose market sophistication (Stage 1-5)"
+        example: "/schwartz sophistication"
+
+      - name: "big-idea"
+        syntax: "/schwartz big-idea"
+        description: "Create breakthrough Big Idea"
+        example: "/schwartz big-idea"
+
+      - name: "desire-map"
+        syntax: "/schwartz desire-map"
+        description: "Map desires to copy angles"
+        example: "/schwartz desire-map"
+
+  - command: "/hopkins"
+    alias: ["/claude-hopkins", "/scientific-advertising"]
+    agent: "claude-hopkins"
+    description: "Claude Hopkins - Scientific Advertising, audits, split tests"
+    workflow: "copy/agents/claude-hopkins.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 0
+    subcommands:
+      - name: "audit"
+        syntax: "/hopkins audit [copy_to_audit]"
+        description: "Scientific audit of existing copy"
+        example: "/hopkins audit"
+
+      - name: "split-test"
+        syntax: "/hopkins split-test"
+        description: "Setup A/B split test framework"
+        example: "/hopkins split-test"
+
+  # TIER 1 — Masters ($500M+ Documented)
+  - command: "/halbert"
+    alias: ["/gary-halbert", "/prince-of-print"]
+    agent: "gary-halbert"
+    description: "Gary Halbert - 'The Prince of Print', $1B+ in sales, legendary sales letters"
+    workflow: "copy/agents/gary-halbert.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 1
+    subcommands:
+      - name: "sales-page"
+        syntax: "/halbert sales-page"
+        description: "Create Gary Halbert style sales page"
+        example: "/halbert sales-page"
+
+      - name: "headlines"
+        syntax: "/halbert headlines"
+        description: "Generate Halbert-style headlines"
+        example: "/halbert headlines"
+
+      - name: "story"
+        syntax: "/halbert story"
+        description: "Craft compelling story"
+        example: "/halbert story"
+
+      - name: "starving-crowd"
+        syntax: "/halbert starving-crowd"
+        description: "Find your starving crowd"
+        example: "/halbert starving-crowd"
+
+      - name: "boron"
+        syntax: "/halbert boron"
+        description: "Apply Boron Letters principles"
+        example: "/halbert boron"
+
+  - command: "/bencivenga"
+    alias: ["/gary-b", "/bullets-master"]
+    agent: "gary-bencivenga"
+    description: "Gary Bencivenga - 'World's Greatest Living Copywriter', 80% win rate, bullets king"
+    workflow: "copy/agents/gary-bencivenga.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 1
+    subcommands:
+      - name: "bullets"
+        syntax: "/bencivenga bullets"
+        description: "Create powerful bullet points"
+        example: "/bencivenga bullets"
+
+      - name: "fascinations"
+        syntax: "/bencivenga fascinations"
+        description: "Create fascinations that sell"
+        example: "/bencivenga fascinations"
+
+      - name: "newsletter"
+        syntax: "/bencivenga newsletter"
+        description: "Create newsletter copy"
+        example: "/bencivenga newsletter"
+
+  - command: "/ogilvy"
+    alias: ["/david-ogilvy", "/father-of-advertising"]
+    agent: "david-ogilvy"
+    description: "David Ogilvy - 'Father of Advertising', elegant copy, research-based"
+    workflow: "copy/agents/david-ogilvy.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 1
+    subcommands:
+      - name: "headlines"
+        syntax: "/ogilvy headlines"
+        description: "Create Ogilvy-style headlines"
+        example: "/ogilvy headlines"
+
+      - name: "research"
+        syntax: "/ogilvy research"
+        description: "Research-based copy approach"
+        example: "/ogilvy research"
+
+      - name: "brand"
+        syntax: "/ogilvy brand"
+        description: "Brand positioning and premium copy"
+        example: "/ogilvy brand"
+
+  # TIER 2 — Modern Systematizers
+  - command: "/kennedy"
+    alias: ["/dan-kennedy", "/millionaire-maker"]
+    agent: "dan-kennedy"
+    description: "Dan Kennedy - 'The Millionaire Maker', NO B.S. marketing, 3Ms framework"
+    workflow: "copy/agents/dan-kennedy.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 2
+    subcommands:
+      - name: "3ms"
+        syntax: "/kennedy 3ms"
+        description: "Apply 3Ms: Message-Market-Media (NOT 4Ms!)"
+        example: "/kennedy 3ms"
+
+      - name: "offer"
+        syntax: "/kennedy offer"
+        description: "Create irresistible offer"
+        example: "/kennedy offer"
+
+      - name: "urgency"
+        syntax: "/kennedy urgency"
+        description: "Add authentic urgency and scarcity"
+        example: "/kennedy urgency"
+
+      - name: "no-bs"
+        syntax: "/kennedy no-bs"
+        description: "Apply NO B.S. direct response principles"
+        example: "/kennedy no-bs"
+
+  - command: "/todd-brown"
+    alias: ["/todd", "/e5-method"]
+    agent: "todd-brown"
+    description: "Todd Brown - E5 Method Creator, Big Ideas, Unique Mechanisms"
+    workflow: "copy/agents/todd-brown.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 2
+    subcommands:
+      - name: "e5"
+        syntax: "/todd-brown e5"
+        description: "Apply E5 Method framework"
+        example: "/todd-brown e5"
+
+      - name: "mechanism"
+        syntax: "/todd-brown mechanism"
+        description: "Create Unique Mechanism"
+        example: "/todd-brown mechanism"
+
+      - name: "big-idea"
+        syntax: "/todd-brown big-idea"
+        description: "Develop breakthrough Big Idea"
+        example: "/todd-brown big-idea"
+
+      - name: "differentiation"
+        syntax: "/todd-brown differentiation"
+        description: "Market differentiation strategy"
+        example: "/todd-brown differentiation"
+
+  # TIER 3 — Format Specialists
+  - command: "/benson"
+    alias: ["/jon-benson", "/vsl-inventor"]
+    agent: "jon-benson"
+    description: "Jon Benson - Inventor of the VSL, $1B+ via video sales letters"
+    workflow: "copy/agents/jon-benson.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 3
+    subcommands:
+      - name: "vsl"
+        syntax: "/benson vsl"
+        description: "Create VSL script (Video Sales Letter)"
+        example: "/benson vsl"
+
+      - name: "sellerator"
+        syntax: "/benson sellerator"
+        description: "Apply Sellerator method"
+        example: "/benson sellerator"
+
+      - name: "video-hook"
+        syntax: "/benson video-hook"
+        description: "Create video-specific hooks"
+        example: "/benson video-hook"
+
+  # ==========================================================================
+  # EXTENDED COPYWRITERS (Tier 1-2 Specialists)
+  # ==========================================================================
+  - command: "/makepeace"
+    alias: ["/clayton", "/emotional-copy"]
+    agent: "clayton-makepeace"
+    description: "Clayton Makepeace - Emotional copy master, health/financial niches"
+    workflow: "copy/agents/clayton-makepeace.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 1
+
+  - command: "/georgi"
+    alias: ["/stefan", "/rmbc"]
+    agent: "stefan-georgi"
+    description: "Stefan Georgi - RMBC Method, high-volume production"
+    workflow: "copy/agents/stefan-georgi.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 2
+
+  - command: "/chaperon"
+    alias: ["/andre", "/soap-opera"]
+    agent: "andre-chaperon"
+    description: "André Chaperon - SOAP opera sequences, email storytelling"
+    workflow: "copy/agents/andre-chaperon.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 2
+
+  - command: "/settle"
+    alias: ["/ben-settle", "/daily-email"]
+    agent: "ben-settle"
+    description: "Ben Settle - Daily email mastery, infotainment"
+    workflow: "copy/agents/ben-settle.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 2
+
+  - command: "/carlton"
+    alias: ["/john-carlton", "/simple-writing"]
+    agent: "john-carlton"
+    description: "John Carlton - Simple Writing System, punchy copy"
+    workflow: "copy/agents/john-carlton.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 1
+
+  - command: "/collier"
+    alias: ["/robert-collier", "/letter-book"]
+    agent: "robert-collier"
+    description: "Robert Collier - 6 Primary Motives, 'Enter the Conversation'"
+    workflow: "copy/agents/robert-collier.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 0
+    status: "planned"
+
+  - command: "/lampropoulos"
+    alias: ["/parris", "/control-beater"]
+    agent: "parris-lampropoulos"
+    description: "Parris Lampropoulos - Control-beating headlines, research depth"
+    workflow: "copy/agents/parris-lampropoulos.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 1
+
+  - command: "/deutsch"
+    alias: ["/david-deutsch", "/breakthrough"]
+    agent: "david-deutsch"
+    description: "David Deutsch - Breakthrough copy, health market"
+    workflow: "copy/agents/david-deutsch.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 1
+
+  - command: "/rutz"
+    alias: ["/jim-rutz", "/magalog"]
+    agent: "jim-rutz"
+    description: "Jim Rutz - Magalog inventor, long-form direct mail"
+    workflow: "copy/agents/jim-rutz.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    tier: 1
+
+  # ==========================================================================
+  # COPY AGENT CREATION — Build New Copywriters
+  # ==========================================================================
+  - command: "/copy-create"
+    alias: ["/create-copywriter"]
+    agent: "copy_chief"
+    description: "Create new copywriter agent from source materials"
+    workflow: "copy/tasks/create-copywriter-agent.md"
+    version: "1.0.0"
+    squad: "copy/"
+    category: "copywriting"
+    subcommands:
+      - name: "agent"
+        syntax: "/copy-create agent \"Name\""
+        description: "Create new copywriter agent"
+        example: "/copy-create agent \"Jay Abraham\""
+        task: "copy/tasks/create-copywriter-agent.md"
+
+      - name: "extract-dna"
+        syntax: "/copy-create extract-dna \"Name\""
+        description: "Extract communication DNA from copywriter"
+        example: "/copy-create extract-dna \"Frank Kern\""
+        task: "copy/tasks/extract-communication-dna.md"
+
+      - name: "frameworks"
+        syntax: "/copy-create frameworks \"Name\""
+        description: "Extract copywriting frameworks"
+        example: "/copy-create frameworks \"Russell Brunson\""
+        task: "copy/tasks/extract-frameworks.md"
+
+      - name: "phrases"
+        syntax: "/copy-create phrases \"Name\""
+        description: "Extract signature phrases and expressions"
+        example: "/copy-create phrases \"Alex Hormozi\""
+        task: "copy/tasks/extract-signature-phrases.md"
+
+      - name: "authority"
+        syntax: "/copy-create authority \"Name\""
+        description: "Build authority arsenal for copywriter"
+        example: "/copy-create authority \"Grant Cardone\""
+        task: "copy/tasks/build-authority-arsenal.md"
+
+      - name: "objections"
+        syntax: "/copy-create objections \"Name\""
+        description: "Create objection handling algorithms"
+        example: "/copy-create objections \"Zig Ziglar\""
+        task: "copy/tasks/create-objection-algorithms.md"
 
   # ==========================================================================
   # EXECUTIVE AGENT COMMANDS
@@ -286,6 +1047,67 @@ commands:
     description: "Marketing & growth"
     workflow: ".agent/workflows/cmo.md"
     version: "1.0.0"
+
+  # ==========================================================================
+  # DESIGN SYSTEMS SQUAD — Brad Frost Atomic Design Specialist
+  # ==========================================================================
+  - command: "/atomic-design"
+    alias: ["/design-system", "/ad"]
+    squad: "brad_frost_squad"
+    agent: "brad-frost"
+    description: "Complete design system planning: describe your project → get entire Atomic Design system spec, components, tokens, roadmap, governance"
+    workflow: "squads/brad-frost/workflows/atomic-design-planning.yaml"
+    version: "1.0.0"
+    category: "design-systems"
+    subcommands:
+      - name: "plan"
+        syntax: "/atomic-design"
+        description: "Complete design system planning (default)"
+        example: "/atomic-design"
+
+      - name: "lesson"
+        syntax: "/atomic-design lesson [--level=beginner|intermediate|advanced]"
+        description: "Teach Atomic Design framework"
+        example: "/atomic-design lesson --level=beginner"
+
+      - name: "review"
+        syntax: "/atomic-design review"
+        description: "Review existing design system"
+        example: "/atomic-design review"
+
+      - name: "tokens"
+        syntax: "/atomic-design tokens"
+        description: "Design tokens strategy"
+        example: "/atomic-design tokens"
+
+      - name: "roi"
+        syntax: "/atomic-design roi"
+        description: "LLM token economy & ROI analysis"
+        example: "/atomic-design roi"
+
+      - name: "collaboration"
+        syntax: "/atomic-design collaboration"
+        description: "Designer-developer collaboration workshop"
+        example: "/atomic-design collaboration"
+
+  - command: "/design-system"
+    alias: ["/ds"]
+    squad: "brad_frost_squad"
+    agent: "brad-frost"
+    description: "Design system consulting and reviews"
+    workflow: "squads/brad-frost/workflows/design-systems-consulting.yaml"
+    version: "1.0.0"
+    category: "design-systems"
+    subcommands:
+      - name: "review"
+        syntax: "/design-system review"
+        description: "Comprehensive design system audit"
+        example: "/design-system review"
+
+      - name: "consult"
+        syntax: "/design-system consult"
+        description: "Design system consulting"
+        example: "/design-system consult"
 
   # ==========================================================================
   # X AGENTS — Tactical Specialists
@@ -363,9 +1185,147 @@ future_commands:
     status: "planned"
 
 # ============================================================================
+# SQUAD COMMANDS
+# ============================================================================
+# Squads are specialized, multi-agent teams that handle complex domains.
+# Use /[squad-name] to activate squad workflows.
+# ============================================================================
+
+squad_commands:
+  - squad: "copy_squad"
+    primary_command: "/copywriting"
+    secondary_commands: ["/copy-workflow", "/copy-create"]
+    individual_agents:
+      - "/schwartz"
+      - "/hopkins"
+      - "/halbert"
+      - "/bencivenga"
+      - "/ogilvy"
+      - "/kennedy"
+      - "/todd-brown"
+      - "/benson"
+      - "/makepeace"
+      - "/georgi"
+      - "/chaperon"
+      - "/settle"
+      - "/carlton"
+      - "/lampropoulos"
+      - "/deutsch"
+      - "/rutz"
+    description: "Elite copywriting squad with 19 legendary copywriters in 4-tier system"
+    version: "3.1.0"
+    capabilities:
+      - Market awareness & sophistication diagnosis (Tier 0)
+      - Sales pages, VSLs, landing pages (Tier 1-3)
+      - Email sequences (welcome, launch, nurture, cart)
+      - Video ads, YouTube ads, native ads
+      - Headlines, bullets, fascinations
+      - Webinar and sales call scripts
+      - Magalogs and direct mail
+      - Scientific audits and A/B testing
+      - 30 psychological triggers validation
+      - 7 complete workflow pipelines
+      - Copywriter style blending
+      - Copy debates between legends
+    tier_system:
+      tier_0: "Diagnosis (Hopkins, Schwartz) - ALWAYS FIRST"
+      tier_1: "Masters (Halbert, Bencivenga, Ogilvy) - $500M+ documented"
+      tier_2: "Systematizers (Kennedy, Todd Brown) - Modern frameworks"
+      tier_3: "Specialists (Jon Benson) - Format experts"
+      tool: "Sugarman (30 Triggers) - Apply AFTER writing"
+    workflows:
+      - name: "Full Launch"
+        command: "/copy-workflow launch"
+        duration: "5-7 days"
+        phases: 6
+      - name: "Paid Traffic"
+        command: "/copy-workflow paid-traffic"
+        duration: "2-3 days"
+        phases: 3
+      - name: "High-Ticket"
+        command: "/copy-workflow high-ticket"
+        duration: "7-10 days"
+        phases: 4
+      - name: "Organic Content"
+        command: "/copy-workflow organic"
+        duration: "ongoing"
+        phases: 6
+      - name: "Email Marketing"
+        command: "/copy-workflow email"
+        duration: "setup + ongoing"
+        phases: 4
+      - name: "Funnel Optimization"
+        command: "/copy-workflow optimize"
+        duration: "3-5 days"
+        phases: 4
+      - name: "Direct Mail"
+        command: "/copy-workflow direct-mail"
+        duration: "2-3 weeks"
+        phases: 4
+
+  - squad: "brad_frost_squad"
+    primary_command: "/atomic-design"
+    secondary_command: "/design-system"
+    description: "Atomic Design specialist squad"
+    capabilities:
+      - Complete design system planning
+      - Atomic Design education
+      - Design tokens strategy
+      - Component architecture guidance
+      - LLM token economy analysis
+      - Designer-developer collaboration
+
+# ============================================================================
 # MAINTENANCE
 # ============================================================================
 maintenance_log:
+  - date: "2026-01-29"
+    action: "MAJOR: Complete Copy Squad integration from /copy folder"
+    by: "Claude Code"
+    version_bump: "1.0.0 → 2.0.0"
+    commands_added: 20
+    total_subcommands: 100+
+    changes:
+      - Expanded /copywriting with 50+ subcommands (from 8)
+      - Added /copy-workflow with 7 campaign workflows
+      - Added /copy-create for copywriter agent creation
+      - Added 16 individual copywriter commands (/schwartz, /hopkins, /halbert, etc.)
+      - Registered copy_squad with full capabilities
+      - Documented 4-tier system (Tier 0-3 + Tool)
+      - Added proven clone combinations
+      - Added quality gates per phase
+    copywriters_registered:
+      tier_0: ["Claude Hopkins", "Eugene Schwartz"]
+      tier_1: ["Gary Halbert", "Gary Bencivenga", "David Ogilvy", "Clayton Makepeace", "John Carlton", "Parris Lampropoulos", "David Deutsch", "Jim Rutz"]
+      tier_2: ["Dan Kennedy", "Todd Brown", "Stefan Georgi", "André Chaperon", "Ben Settle"]
+      tier_3: ["Jon Benson"]
+      tool: ["Joe Sugarman (30 Triggers)"]
+      planned: ["Robert Collier"]
+    workflows_registered:
+      - "wf-1-full-launch.yaml"
+      - "wf-2-paid-traffic.yaml"
+      - "wf-3-high-ticket.yaml"
+      - "wf-4-organic-content.yaml"
+      - "wf-5-email-marketing.yaml"
+      - "wf-6-funnel-optimization.yaml"
+      - "wf-7-direct-mail.yaml"
+    tasks_mapped: 48
+    templates_available: 15+
+    checklists_available: 15+
+    research_docs: 50+
+
+  - date: "2026-01-27"
+    action: "Added Brad Frost Atomic Design Squad integration"
+    by: "squad-creator + Claude Code"
+    commands_added: 2 (/atomic-design, /design-system)
+    total_subcommands: 11
+    changes:
+      - Added brad_frost_squad to AIOS registry
+      - Added /atomic-design primary command
+      - Added /design-system secondary command
+      - Registered squad workflows
+      - Configured routing and handoffs
+
   - date: "2026-01-24"
     action: "Initial slash commands registry created"
     by: "Claude Code Integration"

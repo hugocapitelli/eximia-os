@@ -1,0 +1,125 @@
+{
+  "analyst": "C2A_JunguianAnalyst",
+  "version": "1.0",
+  "subject": "Philip Hampson Knight",
+  "analysis_date": "2026-01-31",
+  "sources_analyzed": {
+    "count": 15,
+    "types": ["autobiography", "interview", "analysis"]
+  },
+
+  "cognitive_profile": {
+    "mbti_type": "INTJ",
+    "confidence": 92,
+
+    "dominant_function": {
+      "function": "Ni",
+      "description": "Intuição Introvertida",
+      "evidence": [
+        {
+          "quote": "The cowards never started and the weak died along the way. That leaves us, ladies and gentlemen. Us.",
+          "source": "Shoe Dog",
+          "analysis": "Visão de longo prazo, padrão abstrato de identificação com pioneiros do Oregon Trail"
+        },
+        {
+          "quote": "I'd tell men and women in their mid-twenties not to settle for a job or a profession or even a career. Seek a calling.",
+          "source": "Shoe Dog",
+          "analysis": "Ni dominante - visão de propósito transcendente, não apenas metas concretas"
+        },
+        {
+          "quote": "I believed in running. I believed that if people got out and ran a few miles every day, the world would be a better place.",
+          "source": "Shoe Dog",
+          "analysis": "Visão singular e convicção interna típica de Ni dominante"
+        }
+      ],
+      "frequency": "very_high"
+    },
+
+    "auxiliary_function": {
+      "function": "Te",
+      "description": "Pensamento Extrovertido",
+      "evidence": [
+        {
+          "quote": "Play by the rules, but be ferocious.",
+          "source": "Shoe Dog",
+          "analysis": "Te - eficiência e resultados dentro de estruturas"
+        },
+        {
+          "quote": "I wasn't much for setting goals, but this goal kept flashing through my mind every day: Fail fast.",
+          "source": "Shoe Dog",
+          "analysis": "Te auxiliar - orientação a resultados mensuráveis e feedback rápido"
+        }
+      ],
+      "frequency": "high"
+    },
+
+    "tertiary_function": {
+      "function": "Fi",
+      "description": "Sentimento Introvertido",
+      "notes": "Valores pessoais profundos mas não verbalizados. Lealdade intensa a pessoas específicas (Bowerman, Buttface team). Dificuldade em expressar apreciação diretamente."
+    },
+
+    "inferior_function": {
+      "function": "Se",
+      "description": "Sensação Extrovertida",
+      "notes": "Ponto cego típico de INTJ. Knight admite ser 'low profile', desconfortável com atenção pública, raramente sem óculos escuros."
+    }
+  },
+
+  "enneagram": {
+    "type": 5,
+    "wing": 6,
+    "full_type": "5w6",
+    "name": "The Problem Solver",
+    "confidence": 88,
+    "core_fear": "Ser incompetente, incapaz de lidar com o mundo",
+    "core_desire": "Ser capaz, competente, autossuficiente",
+    "interpretation": "Knight exibe características clássicas de Type 5 - reservado, observador, acumulador de conhecimento (MBA Stanford, estudo do mercado japonês). A asa 6 aparece na lealdade extrema ao 'Buttface' team e desconfiança de outsiders.",
+    "instinctual_variant": "SP",
+    "evidence": [
+      {
+        "quote": "For me, an extrovert was a person who stared at other people's shoes.",
+        "source": "Shoe Dog",
+        "analysis": "Humor autodepreciativo típico de 5 - reconhece introversão extrema"
+      },
+      {
+        "quote": "I'd learned to expect setbacks. The only time you must not fail is the last time you try.",
+        "source": "Stanford Interview",
+        "analysis": "5w6 - preparação mental para adversidade, cautela combinada com persistência"
+      }
+    ]
+  },
+
+  "information_processing": {
+    "intake_preference": "Observação silenciosa > Interação direta",
+    "time_orientation": "Futuro (visão) > Presente > Passado",
+    "abstraction_level": "Alto - pensa em padrões e tendências macro",
+    "evidence": [
+      {
+        "quote": "In a class about small businesses at Stanford, Knight initially conceived of the idea for a shoe company, arguing that Japanese shoe production could outpace that of Germany.",
+        "source": "Biography",
+        "analysis": "Pensamento em padrões macro e tendências de mercado"
+      }
+    ]
+  },
+
+  "decision_making": {
+    "primary_mode": "Intuição validada por dados",
+    "secondary_mode": "Confiança em pessoas selecionadas",
+    "speed": "Deliberado para decisões grandes, delega rapidamente para operacional",
+    "evidence": [
+      {
+        "quote": "Don't tell people how to do things, tell them what to do and let them surprise you with the results.",
+        "source": "Shoe Dog (citando Patton)",
+        "analysis": "Prefere definir direção e delegar execução"
+      }
+    ]
+  },
+
+  "analysis_notes": "Phil Knight é um INTJ clássico com Eneagrama 5w6. A combinação explica seu estilo reservado mas visionário, sua capacidade de ver tendências macro (mercado japonês nos anos 60) combinada com desconforto social, e sua lealdade intensa a um pequeno círculo de confiança.",
+
+  "handoff": {
+    "to": "C3_Creator",
+    "data_path": "2_structured_data/cognitive_profile/junguian_analysis.json"
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-01-27",
+  "description": "Bible Concordance Index - Keywords and Themes mapped to Passages",
+  "note": "This is a starter concordance. Expand as needed with additional keywords and passages.",
+
+  "keywords": {
+    "faith": {
+      "count": 47,
+      "passages": [
+        { "reference": "Hebrews 11:1", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "Romans 3:28", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "Mark 11:24", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "John 3:16", "translations": ["KJV", "ACF", "NVT"] },
+        { "reference": "Proverbs 3:5-6", "translations": ["KJV", "ACF"] }
+      ]
+    },
+
+    "love": {
+      "count": 123,
+      "passages": [
+        { "reference": "1 Corinthians 13", "translations": ["KJV", "ACF", "NVT"] },
+        { "reference": "John 13:34-35", "translations": ["KJV", "ACF"] },
+        { "reference": "1 John 4:7-8", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "John 3:16", "translations": ["KJV", "ACF", "NVT"] },
+        { "reference": "Romans 13:8-10", "translations": ["KJV", "ACF"] }
+      ]
+    },
+
+    "grace": {
+      "count": 156,
+      "passages": [
+        { "reference": "Ephesians 2:8-9", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "Romans 3:21-26", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "Titus 2:11-14", "translations": ["KJV", "ACF"] },
+        { "reference": "Hebrews 4:16", "translations": ["KJV", "ACF", "ESV"] }
+      ]
+    },
+
+    "hope": {
+      "count": 89,
+      "passages": [
+        { "reference": "Romans 8:24-25", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "1 Peter 1:3-4", "translations": ["KJV", "ACF"] },
+        { "reference": "Colossians 1:27", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "Psalm 42:5", "translations": ["KJV", "ACF"] }
+      ]
+    },
+
+    "trust": {
+      "count": 45,
+      "passages": [
+        { "reference": "Proverbs 3:5-6", "translations": ["KJV", "ACF"] },
+        { "reference": "Psalm 37:3-5", "translations": ["KJV", "ACF"] },
+        { "reference": "Isaiah 26:3", "translations": ["KJV", "ACF"] }
+      ]
+    },
+
+    "forgiveness": {
+      "count": 87,
+      "passages": [
+        { "reference": "Ephesians 4:32", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "Colossians 3:13", "translations": ["KJV", "ACF"] },
+        { "reference": "Matthew 6:14-15", "translations": ["KJV", "ACF"] }
+      ]
+    },
+
+    "prayer": {
+      "count": 234,
+      "passages": [
+        { "reference": "1 Thessalonians 5:16-18", "translations": ["KJV", "ACF"] },
+        { "reference": "Philippians 4:6-7", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "Matthew 7:7-8", "translations": ["KJV", "ACF"] }
+      ]
+    },
+
+    "joy": {
+      "count": 99,
+      "passages": [
+        { "reference": "Philippians 4:4", "translations": ["KJV", "ACF", "NVT"] },
+        { "reference": "Psalm 100", "translations": ["KJV", "ACF"] },
+        { "reference": "John 15:11", "translations": ["KJV", "ACF"] }
+      ]
+    },
+
+    "peace": {
+      "count": 112,
+      "passages": [
+        { "reference": "John 14:27", "translations": ["KJV", "ACF"] },
+        { "reference": "Philippians 4:6-7", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "Isaiah 26:3", "translations": ["KJV", "ACF"] }
+      ]
+    },
+
+    "strength": {
+      "count": 134,
+      "passages": [
+        { "reference": "Philippians 4:13", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "Psalm 46:5", "translations": ["KJV", "ACF"] },
+        { "reference": "2 Corinthians 12:9", "translations": ["KJV", "ACF"] }
+      ]
+    },
+
+    "wisdom": {
+      "count": 145,
+      "passages": [
+        { "reference": "Proverbs 1:7", "translations": ["KJV", "ACF"] },
+        { "reference": "James 1:5", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "Proverbs 3:13-18", "translations": ["KJV", "ACF"] }
+      ]
+    },
+
+    "redemption": {
+      "count": 89,
+      "passages": [
+        { "reference": "Ephesians 1:7-8", "translations": ["KJV", "ACF"] },
+        { "reference": "Romans 3:24", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "Colossians 1:13-14", "translations": ["KJV", "ACF"] }
+      ]
+    },
+
+    "mercy": {
+      "count": 78,
+      "passages": [
+        { "reference": "Psalm 86:15", "translations": ["KJV", "ACF"] },
+        { "reference": "Luke 6:36", "translations": ["KJV", "ACF"] },
+        { "reference": "1 Peter 1:3", "translations": ["KJV", "ACF"] }
+      ]
+    },
+
+    "justice": {
+      "count": 67,
+      "passages": [
+        { "reference": "Amos 5:24", "translations": ["KJV", "ACF"] },
+        { "reference": "Isaiah 1:17", "translations": ["KJV", "ACF"] },
+        { "reference": "Matthew 23:23", "translations": ["KJV", "ACF"] }
+      ]
+    },
+
+    "suffering": {
+      "count": 112,
+      "passages": [
+        { "reference": "Romans 8:28", "translations": ["KJV", "ACF", "ESV"] },
+        { "reference": "Philippians 1:29", "translations": ["KJV", "ACF"] },
+        { "reference": "1 Peter 1:6-7", "translations": ["KJV", "ACF"] }
+      ]
+    }
+  },
+
+  "themes": {
+    "faith_and_trust": {
+      "primary_passages": ["Hebrews 11", "Romans 3:28", "Proverbs 3:5-6"],
+      "related_themes": ["hope", "trust", "belief"],
+      "key_concepts": ["believing God", "trusting provision", "faith in action"]
+    },
+
+    "love_and_compassion": {
+      "primary_passages": ["1 Corinthians 13", "John 13:34-35", "1 John 4"],
+      "related_themes": ["mercy", "forgiveness", "service"],
+      "key_concepts": ["agape love", "loving others", "self-sacrificing"]
+    },
+
+    "grace_and_mercy": {
+      "primary_passages": ["Ephesians 2:8-9", "Romans 3:21-26", "Titus 2:11-14"],
+      "related_themes": ["forgiveness", "redemption", "salvation"],
+      "key_concepts": ["unmerited favor", "compassion", "second chances"]
+    },
+
+    "hope_and_redemption": {
+      "primary_passages": ["1 Peter 1:3-4", "Colossians 1:27", "Romans 8:24-25"],
+      "related_themes": ["faith", "eternal life", "resurrection"],
+      "key_concepts": ["confident expectation", "Christ's work", "future glory"]
+    },
+
+    "justice_and_righteousness": {
+      "primary_passages": ["Amos 5:24", "Isaiah 1:17", "Matthew 23:23"],
+      "related_themes": ["mercy", "stewardship", "service"],
+      "key_concepts": ["fair judgment", "social justice", "moral conduct"]
+    },
+
+    "stewardship_and_responsibility": {
+      "primary_passages": ["1 Peter 4:10", "Matthew 25:14-30", "Genesis 2:15"],
+      "related_themes": ["justice", "wisdom", "service"],
+      "key_concepts": ["managing gifts", "accountability", "faithful care"]
+    },
+
+    "wisdom_and_understanding": {
+      "primary_passages": ["Proverbs 1:7", "James 1:5", "Proverbs 3:13-18"],
+      "related_themes": ["knowledge", "discernment", "guidance"],
+      "key_concepts": ["fear of God", "moral discernment", "life application"]
+    },
+
+    "suffering_and_perseverance": {
+      "primary_passages": ["Romans 8:28", "Hebrews 12:1-2", "James 1:2-4"],
+      "related_themes": ["faith", "hope", "glory"],
+      "key_concepts": ["endurance", "growth through hardship", "purpose in pain"]
+    },
+
+    "worship_and_praise": {
+      "primary_passages": ["Psalm 100", "John 4:23-24", "Romans 12:1"],
+      "related_themes": ["thanksgiving", "devotion", "surrender"],
+      "key_concepts": ["honoring God", "expression of faith", "whole-life worship"]
+    },
+
+    "community_and_fellowship": {
+      "primary_passages": ["Hebrews 10:24-25", "1 John 1:7", "1 Corinthians 12:12-27"],
+      "related_themes": ["love", "service", "unity"],
+      "key_concepts": ["body of Christ", "mutual encouragement", "shared life"]
+    }
+  },
+
+  "cross_references": {
+    "John_3_16": {
+      "primary_themes": ["love", "grace", "redemption", "faith"],
+      "related_passages": [
+        "Romans 5:8",
+        "1 John 4:9-10",
+        "John 1:12",
+        "Ephesians 2:8"
+      ]
+    },
+
+    "Romans_8_28": {
+      "primary_themes": ["faith", "hope", "suffering", "god_providence"],
+      "related_passages": [
+        "Jeremiah 29:11",
+        "Proverbs 3:5-6",
+        "Philippians 1:6",
+        "1 Peter 1:6-7"
+      ]
+    },
+
+    "1_Corinthians_13": {
+      "primary_themes": ["love", "faith", "hope"],
+      "related_passages": [
+        "John 13:34-35",
+        "1 John 4:7-8",
+        "1 Peter 4:8",
+        "Colossians 3:14"
+      ]
+    }
+  },
+
+  "search_optimization": {
+    "partial_matches": true,
+    "case_insensitive": true,
+    "stemming_enabled": true,
+    "language": ["portuguese", "english"]
+  }
+}

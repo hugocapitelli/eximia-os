@@ -1,0 +1,266 @@
+{
+  "analyst": "C2D_BiographicAnalyst",
+  "version": "2.0",
+  "subject": "Philip Hampson Knight",
+  "analysis_date": "2026-01-31",
+  "sources_analyzed": 15,
+
+  "core_identity": {
+    "core_fear": {
+      "primary": "Irrelevância - viver uma vida comum sem propósito",
+      "secondary": "Fracasso público após exposição",
+      "evidence": [
+        {
+          "quote": "I'd tell men and women in their mid-twenties not to settle for a job or a profession or even a career. Seek a calling.",
+          "source": "Shoe Dog",
+          "analysis": "Medo de 'settle' - viver sem calling transcendente"
+        },
+        {
+          "quote": "The cowards never started and the weak died along the way.",
+          "source": "Shoe Dog",
+          "analysis": "Identifica-se com sobreviventes, medo de ser 'fraco' ou 'covarde'"
+        }
+      ],
+      "origin": "Pai exigente que oferecia elogios escassos, criando necessidade de provar valor"
+    },
+    "core_desire": {
+      "primary": "Deixar um legado significativo através de uma 'calling'",
+      "secondary": "Provar que introvertidos podem construir impérios",
+      "evidence": [
+        {
+          "quote": "I believed in running. I believed that if people got out and ran a few miles every day, the world would be a better place.",
+          "source": "Shoe Dog",
+          "analysis": "Desejo de impacto positivo no mundo através de sua paixão"
+        }
+      ]
+    },
+    "core_values": [
+      {
+        "value": "Autenticidade",
+        "rank": 1,
+        "manifestation": "Só consegue vender o que genuinamente acredita",
+        "evidence": "I'm not a natural-born salesman, but if I have a product I really believe in, I can overcome some of the shyness."
+      },
+      {
+        "value": "Persistência",
+        "rank": 2,
+        "manifestation": "Nunca desistir, apenas mudar de abordagem",
+        "evidence": "Giving up doesn't mean stopping. Don't ever stop."
+      },
+      {
+        "value": "Lealdade",
+        "rank": 3,
+        "manifestation": "Círculo interno de confiança absoluta (Buttface team)",
+        "evidence": "Parceria 51-49 com Bowerman mantida por décadas"
+      },
+      {
+        "value": "Excelência de Produto",
+        "rank": 4,
+        "manifestation": "Produto antes de marketing",
+        "evidence": "Bowerman focused on the products while Knight handled operations"
+      }
+    ],
+    "core_beliefs": {
+      "about_self": [
+        {
+          "belief": "Sou introvertido mas posso liderar através de outros",
+          "confidence": 0.95,
+          "evidence": "He hired well. More importantly once hired he let people do their jobs."
+        },
+        {
+          "belief": "Minha força está na visão de longo prazo, não na execução diária",
+          "confidence": 0.90,
+          "evidence": "Tell them what to do and let them surprise you with the results."
+        }
+      ],
+      "about_others": [
+        {
+          "belief": "Pessoas apaixonadas superam pessoas credenciadas",
+          "confidence": 0.90,
+          "evidence": "He hired runners who cared about the product as much as he did."
+        },
+        {
+          "belief": "Confiança deve ser conquistada, mas uma vez dada, é total",
+          "confidence": 0.85,
+          "evidence": "Buttface team - pequeno grupo de extrema confiança"
+        }
+      ],
+      "about_world": [
+        {
+          "belief": "O mundo recompensa os persistentes, não os talentosos",
+          "confidence": 0.95,
+          "evidence": "The only time you must not fail is the last time you try."
+        },
+        {
+          "belief": "Grandes mudanças vêm de quem vê tendências antes dos outros",
+          "confidence": 0.85,
+          "evidence": "Japanese shoe production could outpace that of Germany (tese Stanford 1962)"
+        }
+      ],
+      "about_success": [
+        {
+          "belief": "Sucesso verdadeiro é encontrar uma calling, não riqueza",
+          "confidence": 0.95,
+          "evidence": "Seek a calling, not a career."
+        },
+        {
+          "belief": "Sucesso é uma maratona, não um sprint",
+          "confidence": 0.90,
+          "evidence": "Nike construída ao longo de décadas, não exit rápido"
+        }
+      ]
+    }
+  },
+
+  "narrative_arc": {
+    "primary_type": "hero_journey",
+    "secondary_type": "rags_to_riches",
+    "confidence": 0.90,
+    "stages": {
+      "ordinary_world": "Jovem introvertido de Oregon, filho de pai exigente, corredor universitário mediano",
+      "call_to_adventure": "Tese de Stanford sobre mercado japonês de tênis (1962)",
+      "crossing_threshold": "Viagem solo ao Japão, visita à fábrica Onitsuka",
+      "tests_allies_enemies": "Anos de luta financeira, conflito com Onitsuka, competição com Adidas",
+      "ordeal": "Múltiplas crises de fluxo de caixa, quase falência, processo Onitsuka",
+      "reward": "Criação da marca Nike, IPO, dominância global",
+      "return": "Filantropia massiva, memórias (Shoe Dog), mentoria de próxima geração"
+    },
+    "recurring_themes": [
+      "Introvertido conquistando mundo extrovertido",
+      "Persistência sobre talento natural",
+      "Confiança em poucos, desconfiança de muitos",
+      "Produto como extensão de crença pessoal"
+    ]
+  },
+
+  "formative_events": [
+    {
+      "id": "FE001",
+      "event": "Infância com pai exigente",
+      "age_range": "0-18",
+      "impact": "very_high",
+      "description": "William Knight oferecia 'praise sparingly', criando drive de aprovação",
+      "lasting_effect": "Dificuldade em dar elogios, alta autodisciplina, busca constante de validação através de conquistas",
+      "evidence": "His father was a newspaper publisher who 'offered praise sparingly'."
+    },
+    {
+      "id": "FE002",
+      "event": "Corrida universitária em Oregon",
+      "age_range": "18-22",
+      "impact": "high",
+      "description": "Corredor mediano mas dedicado, exposto à cultura de excelência de Bowerman",
+      "lasting_effect": "Crença de que persistência supera talento, running como metáfora de vida",
+      "evidence": "He was a middle-distance runner under the legendary Bill Bowerman."
+    },
+    {
+      "id": "FE003",
+      "event": "MBA Stanford e tese sobre Japão",
+      "age_range": "23-24",
+      "impact": "critical",
+      "description": "Tese prevendo que Japão superaria Alemanha em produção de tênis",
+      "lasting_effect": "Validação de pensamento estratégico, confiança em análise de tendências",
+      "evidence": "In a class about small businesses at Stanford, Knight initially conceived of the idea."
+    },
+    {
+      "id": "FE004",
+      "event": "Viagem solo ao Japão (1962)",
+      "age_range": "24",
+      "impact": "critical",
+      "description": "Viagem de formatura transformada em missão de negócios",
+      "lasting_effect": "Confiança em agir sobre visões, importância de experiência em primeira mão",
+      "evidence": "Upon graduating from Stanford in 1962, Knight traveled to Japan, where he toured the Onitsuka factory."
+    },
+    {
+      "id": "FE005",
+      "event": "Parceria com Bowerman",
+      "age_range": "24",
+      "impact": "critical",
+      "description": "Professor/mentor torna-se sócio 51-49 (Knight controlando)",
+      "lasting_effect": "Modelo de parceria baseada em complementaridade, valor de mentores",
+      "evidence": "Knight and Bowerman each contributed $500 to start Blue Ribbon Sports."
+    },
+    {
+      "id": "FE006",
+      "event": "Crises financeiras repetidas (1960s-1970s)",
+      "age_range": "25-35",
+      "impact": "high",
+      "description": "Múltiplas quase-falências, bancos cortando crédito",
+      "lasting_effect": "Resiliência extrema, criatividade sob pressão, 'every day is a crisis'",
+      "evidence": "For an entrepreneur, every day is a crisis."
+    },
+    {
+      "id": "FE007",
+      "event": "Ruptura com Onitsuka e criação da Nike",
+      "age_range": "33",
+      "impact": "critical",
+      "description": "Conflito com fornecedor japonês força criação de marca própria",
+      "lasting_effect": "Independência como valor, confiança em visão própria",
+      "evidence": "The creation of Nike came from necessity when the Onitsuka relationship deteriorated."
+    }
+  ],
+
+  "relationships": {
+    "key_influences": [
+      {
+        "person": "Bill Bowerman",
+        "relationship": "Mentor, sócio, figura paterna alternativa",
+        "influence": "Excelência de produto, inovação constante, padrões elevados",
+        "duration": "1959-1999"
+      },
+      {
+        "person": "William Knight (pai)",
+        "relationship": "Pai",
+        "influence": "Drive de aprovação, disciplina, elogios escassos",
+        "duration": "1938-?"
+      },
+      {
+        "person": "Penny Knight (esposa)",
+        "relationship": "Esposa desde 1968",
+        "influence": "Estabilidade emocional, suporte durante crises",
+        "duration": "1968-presente"
+      },
+      {
+        "person": "Jeff Johnson",
+        "relationship": "Primeiro funcionário",
+        "influence": "Modelo de dedicação obsessiva ao produto",
+        "duration": "1965-?"
+      }
+    ],
+    "trusted_circle": {
+      "name": "Buttface",
+      "description": "Grupo interno de executivos com confiança total",
+      "characteristics": [
+        "Acesso direto a Knight",
+        "Liberdade para discordar",
+        "Lealdade testada ao longo de anos",
+        "Comunicação informal e direta"
+      ]
+    }
+  },
+
+  "cross_validation": {
+    "core_fear_vs_enneagram": {
+      "consistency": "HIGH",
+      "c2d_fear": "Irrelevância - viver vida comum",
+      "c2a_enneagram_fear": "Ser incompetente, incapaz de lidar com mundo",
+      "note": "Ambos apontam para medo de inadequação/irrelevância"
+    },
+    "core_desire_vs_enneagram": {
+      "consistency": "HIGH",
+      "c2d_desire": "Legado significativo através de calling",
+      "c2a_enneagram_desire": "Ser capaz, competente, autossuficiente",
+      "note": "Calling é forma de demonstrar competência duradoura"
+    },
+    "core_values_vs_priority_rules": {
+      "consistency": "HIGH",
+      "c2d_values": ["Autenticidade", "Persistência", "Lealdade", "Excelência"],
+      "c2c_priority_rules": ["Calling > Career", "Product > Marketing", "Long-term > Short-term"],
+      "note": "Valores e regras de prioridade altamente alinhados"
+    }
+  },
+
+  "handoff": {
+    "to": "C3_Creator",
+    "data_path": "2_structured_data/cognitive_profile/biographic_analysis.json"
+  }
+}

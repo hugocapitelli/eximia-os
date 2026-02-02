@@ -1,0 +1,194 @@
+---
+# Daily Devotional Theme Rotation System
+# This provides systematic variety while covering essential biblical themes
+
+weekly_rotation:
+  monday:
+    name: "Foundation Monday"
+    category: "Core Spiritual Truths"
+    themes:
+      - "God's Character & Attributes"
+      - "Christ's Identity & Work"
+      - "Holy Spirit's Role & Power"
+    description: "Start the week grounded in foundational truths about God"
+    typical_tone: "Reverent, affirming, strengthening"
+
+  tuesday:
+    name: "Challenge Tuesday"
+    category: "Growth & Transformation"
+    themes:
+      - "Overcoming Fear & Doubt"
+      - "Breaking Unhealthy Patterns"
+      - "Character Development"
+    description: "Address areas where growth is needed"
+    typical_tone: "Encouraging, challenging, motivational"
+
+  wednesday:
+    name: "Story Wednesday"
+    category: "Biblical Examples"
+    themes:
+      - "Stories of Biblical Figures"
+      - "Character Studies (David, Ruth, Peter, etc.)"
+      - "God's Faithfulness Through History"
+    description: "Learn from those who came before us"
+    typical_tone: "Narrative, relatable, instructive"
+
+  thursday:
+    name: "Community Thursday"
+    category: "Relationships & Fellowship"
+    themes:
+      - "Love & Compassion"
+      - "Forgiveness & Reconciliation"
+      - "Church & Fellowship"
+      - "Serving Others"
+    description: "How we live with and for others"
+    typical_tone: "Warm, connective, service-oriented"
+
+  friday:
+    name: "Surrender Friday"
+    category: "Trust & Obedience"
+    themes:
+      - "Letting Go & Trusting God"
+      - "Surrendering Control"
+      - "Faith in Uncertainty"
+    description: "Release what we cannot control to God"
+    typical_tone: "Peaceful, inviting surrender, reassuring"
+
+  saturday:
+    name: "Joy Saturday"
+    category: "Celebration & Gratitude"
+    themes:
+      - "Praise & Celebration"
+      - "Gratitude & Blessing"
+      - "Hope & Redemption"
+    description: "Celebrate God's goodness and mercy"
+    typical_tone: "Joyful, celebratory, hopeful"
+
+  sunday:
+    name: "Wholeness Sunday"
+    category: "Integration & Worship"
+    themes:
+      - "Whole-Life Worship"
+      - "Putting It Together"
+      - "Living Out Your Faith"
+      - "Corporate Worship"
+    description: "Integrate the week's learning into wholehearted living"
+    typical_tone: "Integrative, worshipful, commitment-focused"
+
+monthly_theme_rotation:
+  # This 12-month rotation ensures comprehensive coverage of major biblical themes
+  # Each month emphasizes one major theme
+
+  january:
+    theme: "Faith & Trust"
+    passages: ["Hebrews 11:1", "Romans 3:28", "Proverbs 3:5-6"]
+    focus: "Trusting God in new beginnings"
+
+  february:
+    theme: "Love & Compassion"
+    passages: ["1 Corinthians 13", "John 13:34-35", "1 John 4:7-8"]
+    focus: "Love as central to Christian life"
+
+  march:
+    theme: "Grace & Mercy"
+    passages: ["Ephesians 2:8-9", "Romans 3:21-26", "Psalm 86:15"]
+    focus: "God's unmerited favor and compassion"
+
+  april:
+    theme: "Hope & Redemption"
+    passages: ["1 Peter 1:3-4", "Colossians 1:27", "Revelation 22:17"]
+    focus: "Confidence in God's redemptive work"
+
+  may:
+    theme: "Stewardship & Responsibility"
+    passages: ["1 Peter 4:10", "Matthew 25:14-30", "Genesis 2:15"]
+    focus: "Managing God's gifts faithfully"
+
+  june:
+    theme: "Wisdom & Understanding"
+    passages: ["Proverbs 1:7", "James 1:5", "Proverbs 3:13-18"]
+    focus: "Seeking God's wisdom for life"
+
+  july:
+    theme: "Justice & Righteousness"
+    passages: ["Amos 5:24", "Isaiah 1:17", "Matthew 23:23"]
+    focus: "Speaking up for the vulnerable"
+
+  august:
+    theme: "Suffering & Perseverance"
+    passages: ["Romans 8:28", "Hebrews 12:1-2", "James 1:2-4"]
+    focus: "Finding God's purpose in hardship"
+
+  september:
+    theme: "Community & Fellowship"
+    passages: ["Hebrews 10:24-25", "1 John 1:7", "1 Corinthians 12:12-27"]
+    focus: "Living life together in Christ"
+
+  october:
+    theme: "Worship & Praise"
+    passages: ["Psalm 100", "John 4:23-24", "Romans 12:1"]
+    focus: "Honoring God with whole being"
+
+  november:
+    theme: "Gratitude & Thanksgiving"
+    passages: ["Colossians 3:17", "Philippians 4:4-7", "Psalm 107:2"]
+    focus: "Cultivating thankful hearts"
+
+  december:
+    theme: "Hope & Joy in Christ"
+    passages: ["Luke 2:10-11", "John 15:11", "Philippians 4:4"]
+    focus: "Celebrating Christ's coming and presence"
+
+special_occasions:
+  easter:
+    date: "Variable (Spring)"
+    themes: ["Resurrection", "Victory", "New Life", "Redemption"]
+    duration: "Easter week focus"
+
+  christmas:
+    date: "December 25"
+    themes: ["Incarnation", "God's Love", "Light", "Hope"]
+    duration: "December focus"
+
+  pentecost:
+    date: "50 days after Easter"
+    themes: ["Holy Spirit", "Power", "Transformation", "Outpouring"]
+
+quarterly_deep_dives:
+  q1:
+    theme: "Who Is God?"
+    sub_themes: ["God's nature", "God's character", "God's promises"]
+    depth: "Comprehensive exploration"
+
+  q2:
+    theme: "Jesus & Redemption"
+    sub_themes: ["Jesus's life and teaching", "The cross", "Resurrection and return"]
+    depth: "Comprehensive exploration"
+
+  q3:
+    theme: "Holy Spirit & Transformation"
+    sub_themes: ["Holy Spirit's person", "Spiritual gifts", "Christian living"]
+    depth: "Comprehensive exploration"
+
+  q4:
+    theme: "Kingdom & Eternity"
+    sub_themes: ["God's kingdom now", "Future hope", "Eternal perspective"]
+    depth: "Comprehensive exploration"
+
+customization_options:
+  user_preference: "Users can request specific theme"
+  seasonal_adjustment: "Themes can shift based on liturgical calendar"
+  topical_focus: "Focus on personal growth areas"
+  book_study: "Follow specific Bible book's themes"
+
+algorithm_for_selection:
+  1: "Check if user has preference"
+  2: "Check day of week for default theme"
+  3: "Check month for monthly theme integration"
+  4: "Vary within category to prevent monotony"
+  5: "Balance challenge with encouragement"
+  6: "Ensure seasonal/quarterly alignment"
+
+last_updated: 2026-01-27
+version: 1.0.0
+notes: "This provides systematic variety while ensuring essential themes are covered regularly"

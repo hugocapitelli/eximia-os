@@ -886,11 +886,6 @@ Harven.AI Course Ready
 - [PRD-Journey-v5.0.md](../01_Journey/PRD-Journey-v5.0.md) — Sugestões baseadas em Goals
 - [PRD-Brand-v5.0.md](../03_Brand/PRD-Brand-v5.0.md) — Skills e expertise
 - [MANIFESTO.md](../MANIFESTO.md) — Visão e filosofia
-
-### Sobre Harven.AI
-
-Academy é o piloto para **Harven.AI** — plataforma educacional corporativa que usa IA socrática para treinamento empresarial. O pipeline de 6 agentes foi projetado desde o início para escalar para B2B.
-
 ---
 
 *Academy v5.1 — Perguntas que Transformam*

@@ -1,0 +1,150 @@
+---
+# Bible Expert Squad - O Biblista
+# Created: 2026-01-27
+# Status: Production-Ready
+# Classification: Tier 2 (Executive) - 6-12h creation, 7 KBs
+
+squad:
+  id: bible-expert
+  name: "Bible Expert Squad — O Biblista"
+  version: "1.0.0"
+  created: "2026-01-27T00:00:00Z"
+  status: production
+  tier: 2
+
+description: |
+  Multiuse Bible Expert squad providing spiritual guidance, scriptural research,
+  copy inspiration, and daily devotional insights. Combines scholarly biblical
+  interpretation with practical application. Features all major Bible translations
+  (King James 1611, ACF, ARA, NTLH, NVT, ESV, NKJV, etc.) with no external
+  dependencies—purely local squad for eximIA.OS ecosystem.
+
+metadata:
+  author: "Squad Creator - eximIA.OS Team"
+  classification: "Spiritual Guidance & Biblical Research"
+  use_cases:
+    - Scripture research and lookup
+    - Spiritual guidance and application
+    - Copy writing inspired by biblical principles
+    - Daily devotional content generation
+    - Theological analysis and interpretation
+    - Theme-based biblical studies
+    - Translation comparison
+    - Principle application to daily life
+
+  tags:
+    - spiritual
+    - biblical
+    - copywriting
+    - guidance
+    - research
+    - theology
+
+# Squad Components
+components:
+  agents:
+    - o-biblista
+    - scripture-researcher
+    - copy-alchemist
+    - daily-guide
+    - translation-comparator
+
+  tasks:
+    - lookup-scripture
+    - analyze-passage
+    - daily-devotional
+    - copy-analysis-biblical
+    - copy-generation-bible-inspired
+    - theme-study
+    - translation-compare
+    - principle-application
+
+  workflows:
+    - spiritual-guidance
+    - copy-creation-bible-inspired
+    - daily-devotional-generation
+    - theological-research
+
+  knowledge_bases:
+    - KB_01_IDENTITY
+    - KB_02_TRANSLATIONS
+    - KB_03_THEOLOGY
+    - KB_04_THEMES
+    - KB_05_COPY_PRINCIPLES
+    - KB_06_DAILY_GUIDANCE
+    - KB_07_PRINCIPLES
+
+# Paths
+paths:
+  root: "squads/bible-expert/"
+  agents: "squads/bible-expert/agents/"
+  tasks: "squads/bible-expert/tasks/"
+  workflows: "squads/bible-expert/workflows/"
+  knowledge: "squads/bible-expert/knowledge/"
+  data: "squads/bible-expert/data/"
+  templates: "squads/bible-expert/templates/"
+
+# Primary workflow
+primary_workflow: "spiritual-guidance"
+
+# Integration
+integration:
+  routing_keywords:
+    - "scripture"
+    - "bible"
+    - "spiritual guidance"
+    - "devotional"
+    - "biblical principle"
+    - "theological"
+    - "church"
+    - "faith"
+    - "prayer"
+    - "wisdom"
+    - "biblical copy"
+    - "values alignment"
+
+  handoff_from:
+    - the_maestro: "For spiritual guidance routing"
+    - the_ceo: "For values alignment in strategy"
+    - the_cmo: "For copy with biblical/values foundation"
+    - copy_chief: "For copy inspiration"
+
+  handoff_to:
+    - the_cmo: "For copy creation"
+    - copy_chief: "For copywriting optimization"
+    - the_veritas: "For fact verification"
+
+  commands:
+    - "*scripture-lookup"
+    - "*analyze-passage"
+    - "*daily-devotional"
+    - "*copy-inspiration"
+    - "*theme-study"
+    - "*translation-compare"
+    - "*spiritual-guidance"
+
+# Dependencies
+dependencies:
+  required: []
+  optional: ["the_veritas", "copy_chief"]
+
+# Quality Metrics
+metrics:
+  fidelity_score: 9.0
+  production_ready: true
+  last_validated: "2026-01-27"
+  knowledge_bases: 7
+  tasks: 8
+  workflows: 4
+  agents: 5
+
+# Configuration
+config:
+  max_concurrent_tasks: 5
+  default_response_format: "markdown"
+  logging_level: "info"
+  cache_enabled: true
+  cache_ttl: 3600
+  default_translation: "King James 1611"
+  include_cross_references: true
+  include_related_themes: true

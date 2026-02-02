@@ -1,0 +1,192 @@
+# Atomic Design Complete Planning Workflow
+# Brad Frost Squad v1.0
+# One-stop design system planning from project to production
+
+name: atomic-design-planning
+version: 1.0.0
+description: "Complete design system planning workflow: takes project description and generates entire Atomic Design specification, component inventory, tokens, roadmap, and governance"
+squad: brad-frost
+
+metadata:
+  created: 2026-01-27
+  author: brad-frost-squad-creator
+  tags:
+    - atomic-design
+    - planning
+    - design-systems
+    - greenfield
+    - workflow
+    - comprehensive
+
+triggers:
+  - type: manual
+    command: "*atomic-design"
+  - type: manual
+    command: "/atomic-design"
+
+inputs:
+  - name: project_name
+    type: string
+    required: true
+    description: "Name of project or application"
+
+  - name: project_description
+    type: string
+    required: true
+    description: "Detailed description of what you're building"
+
+  - name: target_users
+    type: string
+    required: true
+    description: "Who are the primary users of this product"
+
+  - name: key_features
+    type: array
+    required: true
+    description: "List of main features or pages"
+
+  - name: team_size
+    type: number
+    required: false
+    default: 1
+    description: "Number of designers and developers on team"
+
+  - name: timeline_weeks
+    type: number
+    required: false
+    default: 12
+    description: "Expected project duration in weeks"
+
+  - name: existing_system
+    type: boolean
+    required: false
+    default: false
+    description: "Does an existing design system exist"
+
+  - name: include_token_analysis
+    type: boolean
+    required: false
+    default: true
+    description: "Include LLM token economy analysis"
+
+steps:
+  - id: welcome
+    name: "Welcome to Complete Design System Planning"
+    description: "Brad explains what this workflow will do"
+    action: agent-command
+    agent: brad-frost
+    on_error: abort
+    output: "Ready to plan your complete design system"
+
+  - id: gather-requirements
+    name: "Gather Project Requirements"
+    description: "Collect all information about your project"
+    action: agent-command
+    agent: brad-frost
+    depends_on:
+      - welcome
+    on_error: abort
+    output: "Project profile captured"
+
+  - id: create-design-system-plan
+    name: "Create Complete Design System Plan"
+    description: "Run the complete design system planning task"
+    action: task
+    task: complete-design-system-planning
+    depends_on:
+      - gather-requirements
+    inputs:
+      project_name: "{{inputs.project_name}}"
+      project_description: "{{inputs.project_description}}"
+      target_users: "{{inputs.target_users}}"
+      key_features: "{{inputs.key_features}}"
+      team_size: "{{inputs.team_size}}"
+      timeline_weeks: "{{inputs.timeline_weeks}}"
+      existing_system: "{{inputs.existing_system}}"
+      include_token_analysis: "{{inputs.include_token_analysis}}"
+    on_error: abort
+
+  - id: present-summary
+    name: "Present Design System Summary"
+    description: "Brad summarizes the generated plan"
+    action: agent-command
+    agent: brad-frost
+    depends_on:
+      - create-design-system-plan
+    on_error: continue
+    output: "Plan summary and next steps"
+
+  - id: next-steps
+    name: "Recommend Next Steps"
+    description: "Brad recommends how to proceed with implementation"
+    action: agent-command
+    agent: brad-frost
+    depends_on:
+      - present-summary
+    on_error: continue
+    output: "Implementation recommendations"
+
+outputs:
+  - name: design_system_specification
+    from: "{{steps.create-design-system-plan.output.design_system_specification}}"
+    description: "Complete design system specification document"
+
+  - name: atomic_design_blueprint
+    from: "{{steps.create-design-system-plan.output.atomic_design_blueprint}}"
+    description: "YAML blueprint of component hierarchy"
+
+  - name: component_inventory
+    from: "{{steps.create-design-system-plan.output.component_inventory}}"
+    description: "JSON inventory of all components"
+
+  - name: token_economy_analysis
+    from: "{{steps.create-design-system-plan.output.token_economy_analysis}}"
+    description: "LLM token cost analysis and ROI"
+
+  - name: implementation_roadmap
+    from: "{{steps.create-design-system-plan.output.implementation_roadmap}}"
+    description: "Phased implementation timeline"
+
+  - name: governance_guide
+    from: "{{steps.create-design-system-plan.output.governance_guide}}"
+    description: "Design system governance and maintenance plan"
+
+completion:
+  on_success:
+    message: |
+      ✅ Design system planning complete!
+
+      You now have:
+      - Complete design system specification
+      - Component inventory (atoms, molecules, organisms, templates, pages)
+      - Design tokens system
+      - Implementation roadmap (phased timeline)
+      - Governance guide
+      - LLM token economy analysis
+
+      Next steps:
+      1. Review the generated specification
+      2. Share with your team
+      3. Start Phase 0 (foundation) this week
+      4. Create the components in order
+      5. Implement tokens first, atoms second
+
+      Build systems, not pages! 🏗️
+    notify: false
+
+  on_failure:
+    message: "Workflow encountered an issue. Check the error details above."
+    notify: true
+    rollback: false
+
+validation:
+  pre_run:
+    - "Project name provided"
+    - "Project description detailed"
+    - "Target users identified"
+    - "Key features listed"
+  post_run:
+    - "Design system specification generated"
+    - "Component inventory created"
+    - "Implementation roadmap defined"
+    - "All deliverables ready"

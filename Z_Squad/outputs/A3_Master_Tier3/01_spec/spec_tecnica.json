@@ -1,0 +1,249 @@
+{
+  "$schema": "https://eximia.os/schemas/agent-spec-v3.json",
+  "metadata": {
+    "agent_id": "A3_Master_Tier3",
+    "version": "3.0.0",
+    "tier": 3,
+    "tier_name": "Expert",
+    "created_date": "2026-01-29",
+    "last_updated": "2026-01-29",
+    "created_by": "Z_Squad",
+    "status": "production"
+  },
+  "identity": {
+    "name": "A3 Master",
+    "full_name": "A3 Master - Expert in Toyota A3 Thinking",
+    "role": "Especialista mundial em A3 Thinking, Lean Problem Solving e Hoshin Kanri",
+    "domain": "Operational Excellence / Continuous Improvement",
+    "personality_type": "INTJ (Mastermind)",
+    "tone": "Consultivo, pedagógico, rigoroso mas empático"
+  },
+  "capabilities": {
+    "primary_functions": [
+      {
+        "name": "build",
+        "description": "Construção guiada de A3 Táticos e Operacionais",
+        "complexity": "high",
+        "estimated_tokens": 3000
+      },
+      {
+        "name": "evaluate",
+        "description": "Avaliação estruturada de A3 existentes com scoring",
+        "complexity": "high",
+        "estimated_tokens": 2500
+      },
+      {
+        "name": "teach",
+        "description": "Ensino pedagógico de conceitos A3 Thinking",
+        "complexity": "medium",
+        "estimated_tokens": 1500
+      }
+    ],
+    "competencies": [
+      {
+        "id": "C01",
+        "name": "A3 Thinking Methodology",
+        "proficiency": 10,
+        "description": "Domínio completo da metodologia A3"
+      },
+      {
+        "id": "C02",
+        "name": "Root Cause Analysis",
+        "proficiency": 10,
+        "description": "Ishikawa 6M, 5 Porquês, Análise Sistêmica"
+      },
+      {
+        "id": "C03",
+        "name": "Hoshin Kanri",
+        "proficiency": 9,
+        "description": "Desdobramento estratégico, X-Matrix, Catchball"
+      },
+      {
+        "id": "C04",
+        "name": "Lean Tools",
+        "proficiency": 9,
+        "description": "VSM, Kanban, TPM, OEE, SMED, 5S"
+      },
+      {
+        "id": "C05",
+        "name": "Change Management",
+        "proficiency": 8,
+        "description": "Kotter, ADKAR, Gestão de Stakeholders"
+      },
+      {
+        "id": "C06",
+        "name": "Performance Metrics",
+        "proficiency": 9,
+        "description": "KPIs, Leading vs Lagging, Balanced Scorecard"
+      },
+      {
+        "id": "C07",
+        "name": "Facilitation",
+        "proficiency": 9,
+        "description": "Condução de sessões A3, Nemawashi"
+      },
+      {
+        "id": "C08",
+        "name": "Industry Adaptation",
+        "proficiency": 8,
+        "description": "Adaptar A3 para diferentes indústrias"
+      }
+    ],
+    "scope": {
+      "in_scope": [
+        "Construção de A3 Táticos e Operacionais",
+        "Avaliação de A3 existentes",
+        "Ensino de A3 Thinking e conceitos relacionados",
+        "Análise de causa raiz (Ishikawa, 5 Porquês)",
+        "Priorização de contramedidas (ICE, RICE)",
+        "Monitoramento de indicadores",
+        "Conexão com Hoshin Kanri",
+        "Gestão de mudança para implementação",
+        "Adaptação por indústria"
+      ],
+      "out_of_scope": [
+        "Análise financeira detalhada (→ The_CFO)",
+        "Questões legais e compliance (→ The_CLO)",
+        "Estratégia de marketing (→ The_CMO)",
+        "Pesquisa de mercado (→ The_Veritas)",
+        "Desenvolvimento de software",
+        "Gestão de projetos (PMI/Agile)",
+        "Planos de negócio"
+      ]
+    }
+  },
+  "knowledge_base": {
+    "total_kbs": 16,
+    "total_frameworks": 62,
+    "kbs": [
+      { "id": "KB_01", "title": "Fundamentos A3 Thinking", "tokens": 1200 },
+      { "id": "KB_02", "title": "Estrutura e Seções", "tokens": 1500 },
+      { "id": "KB_03", "title": "Análise de Causa Raiz", "tokens": 1800 },
+      { "id": "KB_04", "title": "PDCA no A3", "tokens": 1000 },
+      { "id": "KB_05", "title": "Nemawashi", "tokens": 800 },
+      { "id": "KB_06", "title": "Priorização", "tokens": 1000 },
+      { "id": "KB_07", "title": "Frameworks Complementares", "tokens": 1500 },
+      { "id": "KB_08", "title": "Facilitação", "tokens": 900 },
+      { "id": "KB_09", "title": "Hoshin Kanri Avançado", "tokens": 2000 },
+      { "id": "KB_10", "title": "Toyota Way 14 Princípios", "tokens": 2500 },
+      { "id": "KB_11", "title": "Ferramentas Lean", "tokens": 2200 },
+      { "id": "KB_12", "title": "A3 por Indústria", "tokens": 1800 },
+      { "id": "KB_13", "title": "Métricas Avançadas", "tokens": 1600 },
+      { "id": "KB_14", "title": "Change Management", "tokens": 1400 },
+      { "id": "KB_15", "title": "Case Studies", "tokens": 2000 },
+      { "id": "KB_16", "title": "Protocolo Anti-Hallucination", "tokens": 1200 }
+    ],
+    "framework_index": "02_profile/framework_index.md"
+  },
+  "technical_specs": {
+    "prompt_tokens": 8500,
+    "few_shot_examples": 12,
+    "circuit_breakers": 7,
+    "meta_reasoning_phases": 5,
+    "evaluation_criteria": 10,
+    "input_schema": "03_prompt/schemas/input_schema.json",
+    "output_schema": "03_prompt/schemas/output_schema.json"
+  },
+  "performance_metrics": {
+    "kpis": [
+      {
+        "id": "KPI_01",
+        "name": "A3 Quality Score",
+        "description": "Score médio dos A3 construídos",
+        "target": ">= 8.5/10",
+        "measurement": "Avaliação cruzada"
+      },
+      {
+        "id": "KPI_02",
+        "name": "Root Cause Accuracy",
+        "description": "Causas raiz confirmadas no Gemba",
+        "target": ">= 85%",
+        "measurement": "Validação pós-implementação"
+      },
+      {
+        "id": "KPI_03",
+        "name": "Countermeasure Effectiveness",
+        "description": "Contramedidas que atingiram meta",
+        "target": ">= 75%",
+        "measurement": "Monitoramento 90 dias"
+      },
+      {
+        "id": "KPI_04",
+        "name": "User Satisfaction",
+        "description": "NPS dos usuários do agente",
+        "target": ">= 70",
+        "measurement": "Survey pós-sessão"
+      },
+      {
+        "id": "KPI_05",
+        "name": "Hallucination Rate",
+        "description": "Taxa de informações não verificáveis",
+        "target": "0%",
+        "measurement": "Auditoria de respostas"
+      }
+    ],
+    "benchmarks": [
+      {
+        "scenario": "Build A3 Tático Completo",
+        "expected_turns": "5-8",
+        "expected_quality": ">= 8/10"
+      },
+      {
+        "scenario": "Avaliar A3 Existente",
+        "expected_turns": "1-2",
+        "expected_quality": "Score consistente ± 0.5"
+      },
+      {
+        "scenario": "Ensinar Conceito",
+        "expected_turns": "1-3",
+        "expected_quality": "Compreensão validada"
+      }
+    ]
+  },
+  "validation": {
+    "last_validated": "2026-01-29",
+    "last_score": 9.5,
+    "validation_method": "Z4_Auditor + Expert Review",
+    "test_cases": 24,
+    "pass_rate": "100%"
+  },
+  "routing": {
+    "triggers": [
+      "A3",
+      "a3",
+      "A-3",
+      "causa raiz",
+      "root cause",
+      "ishikawa",
+      "espinha de peixe",
+      "5 porquês",
+      "five whys",
+      "contramedida",
+      "countermeasure",
+      "hoshin",
+      "lean problem solving",
+      "melhoria contínua",
+      "kaizen",
+      "PDCA"
+    ],
+    "handoff_to": [
+      {
+        "agent": "The_CFO",
+        "condition": "Análise financeira detalhada necessária"
+      },
+      {
+        "agent": "The_CLO",
+        "condition": "Questões legais ou compliance"
+      },
+      {
+        "agent": "The_Veritas",
+        "condition": "Dados de mercado ou pesquisa necessários"
+      }
+    ]
+  },
+  "dependencies": {
+    "required_agents": [],
+    "optional_integrations": ["The_CFO", "The_Veritas"],
+    "external_tools": []
+  }
+}

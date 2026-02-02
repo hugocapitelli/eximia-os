@@ -25,6 +25,271 @@ maintained_by: "The_Maestro"
 # ============================================================================
 
 # ============================================================================
+# SQUAD REGISTRY — AIOS Squads (Team-Based Agents)
+# ============================================================================
+squads:
+
+  - id: copy_squad
+    name: "Copy — Elite Copywriting Squad"
+    alias: "elite-copywriting-team"
+    version: "3.1.0"
+    tier: 3
+    status: production
+    domain: "Copywriting & Direct Response Marketing"
+
+    description: |
+      Elite team of legendary copywriters organized by Tier for high-conversion copy.
+      Features 19 personality clones of the greatest copywriters in history, research-first
+      methodology, 7 automated workflows (Full Launch, Paid Traffic, High-Ticket, etc.),
+      and autonomous YOLO mode execution. Tier-based workflow: always diagnose with Tier 0
+      (Hopkins/Schwartz) before execution.
+
+    competencies:
+      - "Sales page & VSL creation"
+      - "Email sequences (daily, soap opera, automated)"
+      - "Ad copy (Facebook, Google, YouTube, Native)"
+      - "Funnel optimization"
+      - "High-ticket offer copy"
+      - "Webinar scripts"
+      - "Lead magnet copy"
+      - "Direct mail campaigns"
+      - "Copy diagnosis & scientific audits"
+      - "Tier-based copywriter matching"
+
+    paths:
+      root: "squads/copy/"
+      agents: "squads/copy/agents/"
+      tasks: "squads/copy/tasks/"
+      workflows: "squads/copy/workflows/"
+      manifest: "squads/copy/squad.yaml"
+      knowledge: "squads/copy/knowledge/"
+      checklists: "squads/copy/checklists/"
+      templates: "squads/copy/templates/"
+
+    primary_workflow: "wf-1-full-launch"
+
+    routing_keywords:
+      - "copywriting"
+      - "copy"
+      - "sales page"
+      - "VSL"
+      - "email sequence"
+      - "ad copy"
+      - "headlines"
+      - "sales letter"
+      - "direct response"
+      - "conversion"
+      - "funnel"
+      - "lead magnet"
+      - "webinar script"
+      - "upsell"
+      - "downsell"
+      - "order bump"
+
+    handoff_from:
+      - the_maestro: "For copywriting projects"
+      - the_cmo: "For marketing campaigns"
+      - the_ceo: "For high-ticket offers"
+
+    handoff_to:
+      - "@dev": "For landing page implementation"
+      - the_veritas: "For claim verification"
+      - the_cmo: "For campaign integration"
+
+    commands:
+      - "/copywriting"
+      - "/cw"
+      - "*diagnose"
+      - "*recommend"
+      - "*sales-page"
+      - "*vsl"
+      - "*email-sequence"
+      - "*ads"
+      - "*audit-copy"
+      - "*sugarman-check"
+
+    tier_system:
+      tier_0: ["claude-hopkins", "eugene-schwartz", "robert-collier"]
+      tier_1: ["gary-halbert", "gary-bencivenga", "david-ogilvy", "john-carlton", "clayton-makepeace", "parris-lampropoulos"]
+      tier_2: ["dan-kennedy", "todd-brown", "stefan-georgi"]
+      tier_3: ["jon-benson", "andre-chaperon", "ben-settle", "jim-rutz", "david-deutsch"]
+      tools: ["joe-sugarman"]
+
+    dependencies:
+      required: []
+      optional: ["the_veritas", "the_cmo", "mmos"]
+
+    metrics:
+      fidelity_score: 9.5
+      production_ready: true
+      last_validated: "2026-01-29"
+      agents: 19
+      tasks: 37
+      workflows: 7
+      checklists: 9
+      templates: 12
+
+  - id: brad_frost_squad
+    name: "Brad Frost — Atomic Design Squad"
+    alias: "design-systems-specialist"
+    version: "1.0.0"
+    tier: 2
+    status: production
+    domain: "Design Systems & Atomic Design"
+
+    description: |
+      Complete Atomic Design specialist squad. Provides end-to-end design system
+      planning, Atomic Design education, component architecture guidance, design
+      tokens strategy, designer-developer collaboration workshops, and LLM token
+      economy analysis. One-command design system planning from scratch.
+
+    competencies:
+      - "Atomic Design methodology (5-level framework)"
+      - "Design system architecture & governance"
+      - "Component library design"
+      - "Design tokens strategy"
+      - "Designer-developer collaboration"
+      - "LLM token economy analysis"
+      - "Design system ROI calculation"
+      - "Implementation roadmaps"
+
+    paths:
+      root: "squads/brad-frost/"
+      agents: "squads/brad-frost/agents/"
+      tasks: "squads/brad-frost/tasks/"
+      workflows: "squads/brad-frost/workflows/"
+      manifest: "squads/brad-frost/squad.yaml"
+      knowledge: "squads/brad-frost/knowledge/"
+
+    primary_workflow: "atomic-design-planning"
+
+    routing_keywords:
+      - "atomic design"
+      - "design system"
+      - "component library"
+      - "design tokens"
+      - "designer-developer collaboration"
+      - "component architecture"
+      - "design system planning"
+      - "ui components"
+
+    handoff_from:
+      - the_maestro: "For design system strategy"
+      - the_cmo: "For brand system alignment"
+      - the_ceo: "For design system governance"
+      - the_cfo: "For design system ROI analysis"
+
+    handoff_to:
+      - "@dev": "For component implementation"
+      - "@qa": "For design system validation"
+      - "@architect": "For frontend architecture decisions"
+      - the_veritas: "For design trends verification"
+
+    commands:
+      - "*atomic-design"
+      - "*design-system-review"
+      - "*atomic-design-lesson"
+      - "*collaboration-workshop"
+      - "*design-tokens"
+      - "*component-architecture"
+      - "*performance-as-design"
+      - "*token-roi-analysis"
+
+    dependencies:
+      required: []
+      optional: ["the_veritas"]
+
+    metrics:
+      fidelity_score: 9.3
+      production_ready: true
+      last_validated: "2026-01-27"
+      knowledge_bases: 9
+      tasks: 8
+      workflows: 4
+
+  - id: bible-expert
+    name: "Bible Expert Squad — O Biblista"
+    alias: "spiritual-guidance-specialist"
+    version: "1.0.0"
+    tier: 2
+    status: production
+    domain: "Spiritual Guidance & Biblical Research"
+
+    description: |
+      Comprehensive Bible Expert squad combining scholarly biblical interpretation
+      with practical spiritual guidance. Features all major translations (King James 1611,
+      ACF, ARA, NTLH, NVT, ESV, NKJV, etc.), copy writing inspired by biblical principles,
+      and daily devotional content. Completely standalone—no external dependencies.
+
+    competencies:
+      - "Scripture research and lookup (all translations)"
+      - "Biblical interpretation and exegesis"
+      - "Theological analysis and church history"
+      - "Theme-based biblical studies"
+      - "Copy writing grounded in biblical principles"
+      - "Daily devotional content generation"
+      - "Spiritual guidance and life application"
+      - "Translation comparison and analysis"
+
+    paths:
+      root: "squads/bible-expert/"
+      agents: "squads/bible-expert/agents/"
+      tasks: "squads/bible-expert/tasks/"
+      workflows: "squads/bible-expert/workflows/"
+      knowledge: "squads/bible-expert/knowledge/"
+      data: "squads/bible-expert/data/"
+      manifest: "squads/bible-expert/squad.yaml"
+
+    primary_workflow: "spiritual-guidance"
+
+    routing_keywords:
+      - "scripture"
+      - "bible"
+      - "spiritual guidance"
+      - "devotional"
+      - "biblical principle"
+      - "theological"
+      - "church"
+      - "faith"
+      - "prayer"
+      - "wisdom"
+      - "biblical copy"
+      - "values alignment"
+
+    handoff_from:
+      - the_maestro: "For spiritual guidance routing"
+      - the_ceo: "For values alignment in strategy"
+      - the_cmo: "For copy with biblical/values foundation"
+      - copy_chief: "For copy inspiration"
+
+    handoff_to:
+      - the_cmo: "For copy creation"
+      - copy_chief: "For copywriting optimization"
+      - the_veritas: "For fact verification"
+
+    commands:
+      - "*scripture-lookup"
+      - "*analyze-passage"
+      - "*daily-devotional"
+      - "*copy-inspiration"
+      - "*theme-study"
+      - "*translation-compare"
+      - "*spiritual-guidance"
+      - "*apply-principle"
+
+    dependencies:
+      required: []
+      optional: ["the_veritas", "copy_chief"]
+
+    metrics:
+      fidelity_score: 9.0
+      production_ready: true
+      last_validated: "2026-01-27"
+      knowledge_bases: 7
+      tasks: 8
+      workflows: 4
+
+# ============================================================================
 # EXECUTIVE AGENTS — C-Suite do Ecossistema
 # ============================================================================
 executive_agents:
@@ -337,6 +602,61 @@ z_squad_outputs:
       prompt: "Z_Squad/outputs/Harven_Creator/03_prompt/prompt_operacional.md"
     created_by: "Z Squad Pipeline"
 
+  - id: a3_master_tier3
+    name: "A3 Master"
+    alias: "Lean Problem Solving Expert"
+    version: "3.0.0"
+    tier: 3
+    status: production
+    domain: "A3 Thinking & Lean Problem Solving"
+    description: "Especialista mundial em A3 Thinking com 25+ anos de experiência em Toyota Production System, Hoshin Kanri e Lean Management. Modos: Build, Evaluate, Teach."
+    competencies:
+      - "A3 Thinking Methodology"
+      - "Root Cause Analysis (Ishikawa 6M, 5 Whys)"
+      - "Hoshin Kanri (X-Matrix, Catchball, Bowling Chart)"
+      - "Lean Tools (VSM, Kanban, TPM, OEE)"
+      - "Change Management (Kotter, ADKAR)"
+      - "Performance Metrics (KRI/KPI/KMI)"
+      - "Industry Adaptation (6 sectors)"
+    dependencies:
+      required: []
+      optional: ["the_veritas", "the_cfo"]
+    paths:
+      root: "Z_Squad/outputs/A3_Master_Tier3/"
+      spec: "Z_Squad/outputs/A3_Master_Tier3/01_spec/spec_tecnica.json"
+      profile: "Z_Squad/outputs/A3_Master_Tier3/02_profile/"
+      prompt: "Z_Squad/outputs/A3_Master_Tier3/03_prompt/prompt_operacional.md"
+      kbs: "Z_Squad/outputs/A3_Master_Tier3/02_profile/knowledge_base/"
+      validation: "Z_Squad/outputs/A3_Master_Tier3/04_validation/"
+      framework_index: "Z_Squad/outputs/A3_Master_Tier3/02_profile/framework_index.md"
+    metrics:
+      token_budget: 8500
+      knowledge_bases: 16
+      frameworks: 62
+      few_shot_examples: 12
+      circuit_breakers: 7
+      meta_reasoning_phases: 5
+      last_score: 9.5
+      last_validated: "2026-01-29"
+    routing_keywords:
+      - "A3"
+      - "a3"
+      - "causa raiz"
+      - "root cause"
+      - "ishikawa"
+      - "5 porquês"
+      - "five whys"
+      - "contramedida"
+      - "hoshin"
+      - "lean problem solving"
+      - "PDCA"
+    handoff_to:
+      - the_cfo: "Análise financeira detalhada"
+      - the_clo: "Questões legais ou compliance"
+      - the_veritas: "Dados de mercado ou pesquisa"
+    created_by: "Z Squad Pipeline"
+    created_at: "2026-01-29"
+
   - id: memo
     name: "Memo"
     alias: "Smart Idea Bank"
@@ -565,6 +885,47 @@ clones:
       heuristics: 28
     validated_by: "C4_Auditor"
     created_at: "2026-01-25"
+
+  - id: brad_frost
+    name: "Brad Frost"
+    version: "1.0.0"
+    status: production
+    domain: "Design Systems & Atomic Design"
+    description: "Clone de alta fidelidade do criador de Atomic Design, especialista em design systems, component-driven development e colaboração designer-developer"
+    tags:
+      - "design_systems"
+      - "atomic_design"
+      - "production_ready"
+      - "education"
+    paths:
+      root: "Clones/brad_frost/"
+      system_prompt: "Clones/brad_frost/3_clone_output/SYSTEM_PROMPT.md"
+      dna: "Clones/brad_frost/3_clone_output/CLONE_DNA.md"
+      knowledge_bases: "Clones/brad_frost/3_clone_output/knowledge_bases/"
+    metrics:
+      turing_score: 9.2
+      final_score: 9.3
+      total_sources: 20
+      knowledge_bases: 9
+      qna_pairs: 85
+    competencies:
+      - "Atomic Design Methodology"
+      - "Design Systems Architecture"
+      - "Pattern Lab Expertise"
+      - "Component-Driven Development"
+      - "Designer-Developer Collaboration"
+      - "Design Tokens"
+      - "Performance as Design"
+      - "Pattern Libraries"
+    validated_by: "C4_Auditor"
+    created_at: "2026-01-19"
+    use_cases:
+      - "Design systems consulting"
+      - "Atomic Design education"
+      - "Team collaboration guidance"
+      - "Frontend architecture"
+      - "Performance advocacy"
+      - "Accessibility guidance"
 
 # ============================================================================
 # COPY SQUAD — Elite Copywriting Agents (Expansion Pack)
@@ -881,10 +1242,10 @@ deprecated:
 # STATISTICS
 # ============================================================================
 statistics:
-  total_agents: 35  # Updated with The_Scheduler
+  total_agents: 36  # Updated with A3_Master_Tier3
   by_category:
     executive_agents: 6
-    z_squad_outputs: 2 # CFO, Marketplace
+    z_squad_outputs: 3 # CFO, Marketplace, A3_Master_Tier3
     x_agents: 3        # The_Scheduler, The_Prototyper, StratOS
     clones: 3
     copy_squad: 10     # Copy Chief + 8 copywriters + 1 tool
@@ -911,6 +1272,11 @@ statistics:
 # MAINTENANCE LOG
 # ============================================================================
 maintenance_log:
+  - date: "2026-01-29"
+    action: "A3_Master_Tier3 adicionado - Especialista em A3 Thinking"
+    by: "Z Squad Pipeline"
+    details: "Agente Tier 3 completo para A3 Thinking. 16 Knowledge Bases, 62 frameworks indexados, 12 few-shot examples, 7 circuit breakers, 5-phase meta-reasoning. Score: 9.5/10. Modos: Build, Evaluate, Teach. Cobre manufatura, healthcare, serviços, tecnologia, construção e educação."
+
   - date: "2026-01-25"
     action: "The_Scheduler v1.2 - Batch execution adicionado"
     by: "Claude Code Direct Implementation"

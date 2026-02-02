@@ -1,0 +1,151 @@
+---
+name: theological-research
+version: 1.0.0
+description: "Comprehensive biblical research: question → scripture → analysis → translation comparison → synthesis"
+category: "Research & Study"
+
+triggers:
+  - command: "*research-theme"
+  - command: "/bible-research"
+  - command: "*theme-study"
+
+metadata:
+  estimated_time: "10-20 minutes"
+  complexity: "high"
+  requires_interaction: true
+  can_be_scheduled: false
+
+steps:
+  - id: define-research
+    agent: o-biblista
+    description: "Clarify research question or theme"
+    interaction: true
+    elicit:
+      - question: "What theme or question would you like to research?"
+      - question: "What depth? (overview/comprehensive/scholarly)"
+    output: "Clear research focus"
+
+  - id: comprehensive-study
+    task: theme-study
+    agent: o-biblista
+    description: "Comprehensive theme exploration"
+    input_from: ["define-research"]
+    parameters:
+      depth: "from user choice"
+      include_ot_and_nt: true
+      include_character_examples: true
+
+  - id: compare-translations
+    task: translation-compare
+    agent: translation-comparator
+    description: "Analyze key passages across versions"
+    input_from: ["comprehensive-study"]
+    parameters:
+      analysis_type: "detailed-analysis"
+      include_translation_philosophy: true
+
+  - id: deep-analysis
+    task: analyze-passage
+    agent: o-biblista
+    description: "In-depth theological interpretation"
+    input_from: ["comprehensive-study"]
+    parameters:
+      analysis_depth: "scholarly"
+      include_original_languages: true
+
+  - id: synthesize-research
+    agent: o-biblista
+    description: "Comprehensive research synthesis"
+    input_from: ["comprehensive-study", "compare-translations", "deep-analysis"]
+    logic: "Integrate all research into cohesive understanding"
+
+outputs:
+  - name: "theme_research_document"
+    type: "markdown"
+    sections:
+      - "Research Question/Theme"
+      - "Definition & Significance"
+      - "Key Scripture Passages"
+      - "OT Development"
+      - "NT Fulfillment/Development"
+      - "Theological Perspectives"
+      - "Character Examples"
+      - "Modern Application"
+      - "Related Themes"
+      - "Study Guide"
+
+  - name: "key_scripture_passages"
+    type: "array"
+    contains: "Major passages with multiple translations"
+
+  - name: "theological_analysis"
+    type: "markdown"
+    contains: "Deep theological interpretation"
+
+  - name: "translation_insights"
+    type: "markdown"
+    contains: "How different translations affect understanding"
+
+  - name: "study_guide"
+    type: "markdown"
+    contains: |
+      - How to study this theme
+      - Key passages to read
+      - Reflection questions
+      - Personal application exercises
+      - Prayer focus
+      - Recommended depth of study
+
+  - name: "bibliography"
+    type: "array"
+    contains: "Recommended scriptures and further reading"
+
+flow_chart: |
+  Define Research Question/Theme
+        ↓
+  Comprehensive Theme Study
+        ↓
+     ↙  ↓  ↘
+  Translation  Deep    Synthesize
+  Comparison  Analysis
+     ↘  ↓  ↙
+  Synthesize Research
+        ↓
+  Create Study Guide
+        ↓
+  Provide Bibliography
+
+research_options:
+  - scope: "Quick overview (5-10 min) | Comprehensive (15-20 min) | Scholarly (30+ min)"
+  - translations: "Select which versions to compare"
+  - character_examples: "Include biblical figures who exemplified theme"
+  - modern_application: "Include contemporary relevance"
+
+success_criteria:
+  - Research question is thoroughly explored
+  - Multiple scripture perspectives included
+  - Translation nuances understood
+  - Theological frameworks presented
+  - Practical study guide provided
+  - Bibliography for further exploration
+  - Reader has deeper understanding
+
+related_features:
+  - Personal study journaling
+  - Sermon note integration
+  - Study group discussion guides
+  - Character study focus
+  - Topical index expansion
+
+workflow_notes: |
+  This workflow is ideal for:
+  - Deep personal Bible study
+  - Sermon preparation
+  - Discipleship teaching
+  - Apologetic study
+  - Spiritual formation
+  - Academic biblical studies
+
+created: 2026-01-27
+last_updated: 2026-01-27
+status: active
