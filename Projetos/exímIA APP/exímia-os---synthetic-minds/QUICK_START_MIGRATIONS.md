@@ -138,12 +138,9 @@ Depois das migrations, configure o OAuth:
 **Supabase Dashboard → Authentication → Providers → Google**
 
 ```
-Client ID: <SEU_GOOGLE_CLIENT_ID>
-Client Secret: <SEU_GOOGLE_CLIENT_SECRET>
+Client ID: 768106348116-u308ah6svgo9tf7e33its3dkrl99oo7o.apps.googleusercontent.com
+Client Secret: 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
 ```
-
-> ⚠️ **Obtenha suas credenciais em:** [Google Cloud Console](https://console.cloud.google.com/apis/credentials)
-
 ---
 
 **Dúvidas?** Veja `APPLY_MIGRATIONS_GUIDE.md` para detalhes completos.
