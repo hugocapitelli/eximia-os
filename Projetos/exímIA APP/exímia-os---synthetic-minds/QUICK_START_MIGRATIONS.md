@@ -142,6 +142,8 @@ Client ID: <SEU_GOOGLE_CLIENT_ID>
 Client Secret: <SEU_GOOGLE_CLIENT_SECRET>
 ```
 
+> ⚠️ **Obtenha suas credenciais em:** [Google Cloud Console](https://console.cloud.google.com/apis/credentials)
+
 ---
 
 **Dúvidas?** Veja `APPLY_MIGRATIONS_GUIDE.md` para detalhes completos.
