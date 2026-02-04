@@ -79,5 +79,23 @@ export {
   getBookSummaries,
 } from './summaries';
 
+// Description Service (Story 7.4.0)
+export {
+  getBookDescription,
+  clearDescriptionCache,
+  getDescriptionCacheStats,
+  cleanExpiredDescriptionCache,
+  warmDescriptionCache,
+} from './descriptionService';
+
 // Notes - additional aliases
 export { getNotes as getBookNotes } from './notes';
+
+// Authors (Story 7.2.0)
+export {
+  createAuthor,
+  linkAuthorToBook,
+  checkAuthorExists,
+  getAuthorByName,
+  getAuthorBooks,
+} from './authorService';
