@@ -26,6 +26,11 @@ export interface Author {
   mind_id?: string;
   created_at: string;
   updated_at: string;
+
+  // Story 7.1.0: New fields for author profiles
+  biography?: string;
+  social_links?: Record<string, string>;
+  is_verified?: boolean;
 }
 
 export interface BookCatalog {
@@ -50,6 +55,13 @@ export interface BookCatalog {
   created_at: string;
   updated_at: string;
   added_by?: string;
+
+  // Story 7.1.0: New fields for library enhancements
+  tags?: string[];
+  book_file_path?: string;
+  is_available?: boolean;
+  synopsys_source?: 'api' | 'manual' | 'ai';
+  synopsys_fetched_at?: string;
 }
 
 export interface BookCatalogView extends BookCatalog {
@@ -106,6 +118,25 @@ export interface BibliotecaStats {
   inProgress: number;
   completed: number;
   notStarted: number;
+}
+
+// Story 7.1.0: New types for file and tag management
+export interface BookFile {
+  id: string;
+  catalog_id: string;
+  file_path: string;
+  file_type: 'pdf' | 'epub' | 'json' | 'yaml';
+  file_size: number;
+  mime_type: string;
+  uploaded_at: string;
+  uploaded_by?: string;
+}
+
+export interface BookTag {
+  id: string;
+  catalog_id: string;
+  tag: string;
+  created_at: string;
 }
 
 export interface SummaryChapter {
