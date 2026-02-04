@@ -1,26 +1,120 @@
+import React, { ReactNode } from 'react';
+import { TOKENS, CategoryColor } from '../../src/design-tokens';
 
-import React from 'react';
+// ============================================================
+// BADGE ATOM COMPONENT
+// ============================================================
+// Display category badge with proper colors from design tokens
+// Supports multiple sizes and custom categories
 
-type BadgeVariant = 'default' | 'primary' | 'success' | 'warning' | 'outline';
+export type BadgeSize = 'sm' | 'md' | 'lg';
 
-interface BadgeProps {
-  children: React.ReactNode;
-  variant?: BadgeVariant;
+export interface BadgeProps {
+  /** Badge content */
+  children: ReactNode;
+
+  /** Size of the badge */
+  size?: BadgeSize;
+
+  /** Category object with color and bgColor (for book categories) */
+  category?: CategoryColor;
+
+  /** Custom background color (if not using category) */
+  bgColor?: string;
+
+  /** Custom text color (if not using category) */
+  textColor?: string;
+
+  /** Optional CSS class */
   className?: string;
+
+  /** Optional aria-label */
+  ariaLabel?: string;
 }
 
-const VARIANTS: Record<BadgeVariant, string> = {
-  default: 'bg-zinc-900 text-zinc-400 border border-zinc-800',
-  primary: 'bg-amber-500/10 text-amber-500 border border-amber-500/20 shadow-[0_0_10px_rgba(245,158,11,0.1)]',
-  success: 'bg-emerald-500/10 text-emerald-500 border border-emerald-500/20',
-  warning: 'bg-orange-500/10 text-orange-500 border border-orange-500/20',
-  outline: 'bg-transparent text-zinc-500 border border-zinc-700',
-};
+/**
+ * Badge Atom Component
+ *
+ * Displays category badges with consistent styling from design tokens.
+ * Can use predefined category colors or custom colors.
+ *
+ * @example
+ * // Using category object
+ * <Badge category={TOKENS.categories[0]}>
+ *   Produtividade
+ * </Badge>
+ *
+ * // Using custom colors
+ * <Badge textColor="#10b981" bgColor="#d1fae5">
+ *   Custom
+ * </Badge>
+ */
+export const Badge: React.FC<BadgeProps> = ({
+  children,
+  size = 'md',
+  category,
+  bgColor,
+  textColor,
+  className = '',
+  ariaLabel,
+}) => {
+  // ============================================================
+  // SIZE STYLES
+  // ============================================================
 
-export const Badge: React.FC<BadgeProps> = ({ children, variant = 'default', className = '' }) => {
+  const sizeStyles: Record<BadgeSize, string> = {
+    sm: 'px-2 py-0.5 text-xs',
+    md: 'px-2.5 py-1 text-sm',
+    lg: 'px-3 py-1.5 text-base',
+  };
+
+  // ============================================================
+  // GET COLORS
+  // ============================================================
+
+  const getFinalColors = (): { bg: string; text: string } => {
+    if (category) {
+      return {
+        bg: category.bgColor,
+        text: category.color,
+      };
+    }
+
+    return {
+      bg: bgColor || TOKENS.colors.tech.border,
+      text: textColor || TOKENS.colors.eximia[400],
+    };
+  };
+
+  const colors = getFinalColors();
+
   return (
-    <span className={`inline-flex items-center px-2.5 py-0.5 rounded text-[9px] uppercase tracking-widest font-bold font-sans ${VARIANTS[variant]} ${className}`}>
+    <span
+      className={`
+        inline-flex
+        items-center
+        justify-center
+        rounded-md
+        font-semibold
+        uppercase
+        tracking-wider
+        transition-all
+        duration-200
+        border
+        border-opacity-20
+        ${sizeStyles[size]}
+        ${className}
+      `.trim()}
+      style={{
+        backgroundColor: colors.bg,
+        color: colors.text,
+        borderColor: colors.text,
+      }}
+      aria-label={ariaLabel}
+    >
       {children}
     </span>
   );
 };
+
+export default Badge;
