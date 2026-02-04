@@ -1,3 +1,26 @@
+---
+title: "Dashboard & Data Viz Masterclass: B2B Patterns"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dashboard-data-viz-masterclass"
+  - "dashboard & data viz mastercla"
+  - "1. the core shift: from "repor"
+  - "2. information architecture: t"
+  - "3. data visualization rules"
+  - "4. complex filtering patterns"
+  - "5. agent instructions for prd "
+  - "codex"
+  - "knowledge"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Dashboard & Data Viz Masterclass: B2B Patterns
 
 **Source Authority:** Edward Tufte, Stephen Few, Google Material Data.
@@ -32,3 +55,5 @@ B2B users scan dashboards in an "F" shape.
     *   *Refresh Rate:* Real-time vs. Daily
 2.  **Empty States:** Define the "Zero Data" state. Don't show an empty grid. Show "Get Started" actions.
 3.  **Actionability:** Every widget must handle a "Click" event. "What happens when I click this number?" -> Navigate to the detailed report.
+
+#galaxy-codex

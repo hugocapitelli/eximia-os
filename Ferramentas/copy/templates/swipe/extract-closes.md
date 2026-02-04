@@ -1,3 +1,22 @@
+---
+title: "CLOSE/CTA EXTRACTION PROMPT"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "extract-closes"
+  - "close/cta extraction prompt"
+  - "close types"
+  - "extraction rules"
+  - "output"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # CLOSE/CTA EXTRACTION PROMPT
 
 You are extracting closes and CTAs from proven copy.
@@ -41,3 +60,5 @@ You are extracting closes and CTAs from proven copy.
 
 ## OUTPUT
 Extract ALL qualifying closes. Output ONLY valid YAML array.
+
+#galaxy-tools

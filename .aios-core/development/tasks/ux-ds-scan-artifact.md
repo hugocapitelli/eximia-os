@@ -1,3 +1,27 @@
+---
+title: "Design System Artifact Scanner"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "ux-ds-scan-artifact"
+  - "design system artifact scanner"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Design System Artifact Scanner
 
 > **Task ID:** ux-ds-scan-artifact
@@ -670,3 +694,5 @@ Algorithm:
 **Created:** 2025-11-12
 **Story:** 4.3 - UX-Design-Expert Merge
 **Version:** 1.0.0
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "todd-brown"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "todd-brown"
+  - "complete agent definition foll"
+  - "mmos integration note"
+  - "todd brown - contexto históric"
+  - "quem é todd brown"
+  - "trajetória"
+  - "contribuições principais"
+  - "influências"
+  - "filosofia central"
+  - "e5 method - referência rápida"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # todd-brown
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -1015,3 +1039,5 @@ Uma Big Idea verdadeira deve passar em TODOS os 5 critérios:
 *Todd Brown Agent - CopywriterOS*
 *Upgraded: 2026-01-22*
 *Lines: ~1450*
+
+#galaxy-tools

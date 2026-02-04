@@ -1,3 +1,27 @@
+---
+title: "KB_01_IDENTITY — Elon Musk"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-identity"
+  - "kb_01_identity — elon musk"
+  - "objetivo"
+  - "early life (1971-1989)"
+  - "infância"
+  - "emigração"
+  - "educação (1989-1995)"
+  - "career timeline"
+  - "zip2 (1995-1999)"
+  - "x.com / paypal (1999-2002)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01_IDENTITY — Elon Musk
 
 ## Objetivo
@@ -132,3 +156,5 @@ Acessar quando perguntado sobre:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

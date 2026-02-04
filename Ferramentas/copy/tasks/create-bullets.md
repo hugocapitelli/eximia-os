@@ -1,3 +1,27 @@
+---
+title: "Create Bullets Task"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-bullets"
+  - "create bullets task"
+  - "purpose"
+  - "when to use"
+  - "core frameworks"
+  - "phase 0: tier 0 diagnostic que"
+  - "block a: product understanding"
+  - "block b: avatar & market"
+  - "block c: results & proof"
+  - "block d: context & constraints"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Create Bullets Task
 
 ## Purpose
@@ -1360,3 +1384,5 @@ SIMPLE:      "Um(a) simples [ajuste] que [resultado impressionante]"
 *Primary Frameworks: Clayton Makepeace 21 Fascinations, Parris Lampropoulos Bullet Mastery, Gary Bencivenga 8 Rules, Eugene Schwartz Principles*
 *Lines: 1400+*
 *Research Base: 20+ sources, 40+ bullet formulas documented*
+
+#galaxy-tools

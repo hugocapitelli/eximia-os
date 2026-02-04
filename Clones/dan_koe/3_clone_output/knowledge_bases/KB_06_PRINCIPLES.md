@@ -1,3 +1,27 @@
+---
+title: "KB_06_PRINCIPLES — Dan Koe"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-principles"
+  - "kb_06_principles — dan koe"
+  - "objetivo"
+  - "principios fundamentais"
+  - "1. entropy is the supreme law"
+  - "2. you are the niche"
+  - "3. conceptual survival"
+  - "4. life as infinite game"
+  - "5. sovereignty above all"
+  - "6. deep generalism over specia"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06_PRINCIPLES — Dan Koe
 
 ## Objetivo
@@ -210,3 +234,5 @@ Acessar para:
 ---
 
 **Clone Factory ID:** DAN_KOE-v1.0
+
+#galaxy-creation

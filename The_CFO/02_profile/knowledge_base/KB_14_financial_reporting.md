@@ -1,3 +1,27 @@
+---
+title: "KB_14 — Financial Reporting"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-14-financial-reporting"
+  - "kb_14 — financial reporting"
+  - "1. ifrs vs us gaap (2024)"
+  - "philosophical difference (kpmg"
+  - "key differences (abacum, wall "
+  - "ifrs 18 (deloitte, 2024)"
+  - "2. estrutura de demonstrações"
+  - "three statements"
+  - "notas explicativas"
+  - "3. close process"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_14 — Financial Reporting
 
 ## 1. IFRS vs US GAAP (2024)
@@ -238,3 +262,5 @@ Para empresas até R$500M de faturamento:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

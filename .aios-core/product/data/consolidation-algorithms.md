@@ -1,3 +1,24 @@
+---
+title: "Pattern Consolidation Algorithms"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "consolidation-algorithms"
+  - "pattern consolidation algorith"
+  - "color clustering (hsl-based)"
+  - "button semantic analysis"
+  - "spacing scale generation"
+  - "consolidation targets"
+  - "references"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Pattern Consolidation Algorithms
 
 **Agent:** Brad (Design System Architect)
@@ -140,3 +161,5 @@ Output: xs=4, sm=8, md=16, lg=24, xl=32, 2xl=48, 3xl=64
 
 - HSL color space: https://en.wikipedia.org/wiki/HSL_and_HSV
 - Brad Frost patterns: https://bradfrost.com/blog/
+
+#galaxy-runtime

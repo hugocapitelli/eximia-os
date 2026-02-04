@@ -1,3 +1,27 @@
+---
+title: "KB_04 — Fundraising & Cap Table"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-fundraising"
+  - "kb_04 — fundraising & cap tabl"
+  - "1. fundraising fundamentals"
+  - "round naming convention (yc, 2"
+  - "valuation methods by stage"
+  - "2. saas metrics framework"
+  - "the 16 metrics (a16z, 2015)"
+  - "burn multiple (bessemer, 2020)"
+  - "3. cap table management"
+  - "dilution math (yc, 2020)"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_04 — Fundraising & Cap Table
 
 ## 1. Fundraising Fundamentals
@@ -138,3 +162,5 @@ Fonte: Distrito, LAVCA (2024)
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

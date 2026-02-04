@@ -1,3 +1,27 @@
+---
+title: "Named Protocols — Z Squad Standard"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "protocol"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "named-protocols"
+  - "named protocols — z squad stan"
+  - "🎯 propósito"
+  - "1. o que são named protocols?"
+  - "2. convenção de nomes"
+  - "3. named protocols por módulo"
+  - "z1 architect"
+  - "z2 profiler"
+  - "z3 engineer"
+  - "z4 auditor"
+tags:
+  - "galaxy-creation"
+  - "protocol"
+---
+
 # Named Protocols — Z Squad Standard
 
 ## 🎯 Propósito
@@ -184,3 +208,5 @@ protocol:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

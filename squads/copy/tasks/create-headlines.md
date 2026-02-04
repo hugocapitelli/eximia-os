@@ -1,3 +1,27 @@
+---
+title: "Create Headlines Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-headlines"
+  - "create headlines task"
+  - "metadata"
+  - "fase 0: diagnóstico de nível d"
+  - "o conceito mais importante de "
+  - "os 5 níveis de consciência de "
+  - "diagnóstico de awareness"
+  - "fase 1: coleta de inputs"
+  - "inputs obrigatórios"
+  - "inputs opcionais"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Headlines Task
 
 Task completo para gerar headlines e hooks de alta conversão usando metodologias dos maiores copywriters da história.
@@ -2132,3 +2156,5 @@ desire_hierarchy:
 *Enrichment Source: Eugene Schwartz Artifacts (MMOS Mind)*
 *Files: Blueprint_Cognitivo_Definitivo.md, Análise_Completa_Arquitetura_Cognitiva_DEEP.md*
 *Extraction Date: 2026-01-23*
+
+#galaxy-operational

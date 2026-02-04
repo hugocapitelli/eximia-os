@@ -1,3 +1,27 @@
+---
+title: "Métricas de Distintividade - CopywriterOS"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "distinctiveness-metrics"
+  - "métricas de distintividade - c"
+  - "purpose"
+  - "why distinctiveness matters"
+  - "1. métricas quantitativas"
+  - "1.1 sentence length average (s"
+  - "1.2 vocabulary richness (vr)"
+  - "1.3 power words ratio (pwr)"
+  - "1.4 question frequency (qf)"
+  - "1.5 first person usage (fpu)"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Métricas de Distintividade - CopywriterOS
 
 ## Purpose
@@ -412,3 +436,5 @@ TOTAL DISTINCTIVENESS: 65% ✅ (above 50% threshold)
 *Version: 1.0*
 *CopywriterOS - Elite Copywriting Squad*
 *Última atualização: 2026-01-15*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "KB_02 — COGNITION"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-cognition"
+  - "kb_02 — cognition"
+  - "napoleon hill clone knowledge "
+  - "cognitive type: enfj"
+  - "the protagonist"
+  - "function stack"
+  - "function analysis"
+  - "fe (extraverted feeling) — dom"
+  - "ni (introverted intuition) — a"
+  - "se (extraverted sensing) — ter"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — COGNITION
 ## Napoleon Hill Clone Knowledge Base
 
@@ -221,3 +245,5 @@ When Ti-inferior activates:
 ---
 
 *KB_02 Complete — Cognitive Architecture Established*
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Task: Load CSV Data Safely"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-load-csv"
+  - "task: load csv data safely"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Load CSV Data Safely
 
 **Purpose**: Import CSV data using PostgreSQL COPY with staging table and validation
@@ -591,3 +615,5 @@ But COPY is **10-100x faster** for bulk loads!
 
 - [PostgreSQL COPY Documentation](https://www.postgresql.org/docs/current/sql-copy.html)
 - [psql \copy Command](https://www.postgresql.org/docs/current/app-psql.html)
+
+#galaxy-runtime

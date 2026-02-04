@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Jesse Itzler Living Together Story"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-13-jesse-itzler-living-together-story"
+  - "david goggins - jesse itzler l"
+  - "the origin story"
+  - "first encounter (100-mile race"
+  - "the proposition"
+  - "itzler's goal"
+  - "the approach"
+  - "the agreement"
+  - "goggins' one rule"
+  - "the experience"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Jesse Itzler Living Together Story
 
 **Source:** Web Search - "David Goggins relationships Jesse Itzler living together story"
@@ -179,3 +203,5 @@ Story inspired many to push their limits and seek discomfort intentionally.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

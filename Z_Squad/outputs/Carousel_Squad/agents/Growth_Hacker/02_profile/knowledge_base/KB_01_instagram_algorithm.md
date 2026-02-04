@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Instagram Algorithm Deep Dive"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-instagram-algorithm"
+  - "kb_01 — instagram algorithm de"
+  - "como o algoritmo funciona (202"
+  - "os 3 algoritmos"
+  - "sinais de ranking (feed)"
+  - "carrosséis vs. outros formatos"
+  - "por que carrosséis performam m"
+  - "a vantagem da "segunda chance""
+  - "sinais que boosteiam distribui"
+  - "tier 1 (maior impacto)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Instagram Algorithm Deep Dive
 
 **Agente:** Growth Hacker
@@ -176,3 +200,5 @@ RECOMENDAÇÃO:
 - [Adam Mosseri (Head of Instagram) Updates](https://twitter.com/maboroshi)
 - Social Insider Research 2025
 - Later.com Algorithm Studies
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "C2A JUNGUIAN ANALYSIS — Napoleon Hill"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2a-junguian-analysis"
+  - "c2a junguian analysis — napole"
+  - "mbti type: **enfj** (the prota"
+  - "confidence assessment"
+  - "cognitive function stack"
+  - "function analysis"
+  - "fe (extraverted feeling) — dom"
+  - "ni (introverted intuition) — a"
+  - "se (extraverted sensing) — ter"
+  - "ti (introverted thinking) — in"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2A JUNGUIAN ANALYSIS — Napoleon Hill
 
 **Agent:** C2A_JunguianAnalyst
@@ -226,3 +250,5 @@ COGNITIVE STACK — ENFJ
 ---
 
 *C2A Analysis Complete — Ready for C2B Psychometric Analysis*
+
+#galaxy-creation

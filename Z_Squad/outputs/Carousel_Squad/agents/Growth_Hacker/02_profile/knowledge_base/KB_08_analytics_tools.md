@@ -1,3 +1,27 @@
+---
+title: "KB_08 — Analytics Tools"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-analytics-tools"
+  - "kb_08 — analytics tools"
+  - "ecossistema de analytics"
+  - "hierarquia de ferramentas"
+  - "instagram insights (nativo)"
+  - "como acessar"
+  - "secoes disponiveis"
+  - "insights por post individual"
+  - "limitacoes do instagram insigh"
+  - "meta business suite"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08 — Analytics Tools
 
 **Agente:** Growth Hacker
@@ -543,3 +567,5 @@ AUTOMACOES UTEIS:
 - Later.com - Analytics Guide
 - Sprout Social - Social Analytics Report
 - Social Media Examiner - Tools Comparison
+
+#galaxy-creation

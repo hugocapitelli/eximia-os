@@ -1,3 +1,27 @@
+---
+title: "KB_06_CONTEXT — Dr. G. Clotaire Rapaille"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-context"
+  - "kb_06_context — dr. g. clotair"
+  - "contexto atual e histórico"
+  - "status profissional atual"
+  - "timeline de carreira"
+  - "fase 1: formação acadêmica (19"
+  - "fase 2: transição e fundação ("
+  - "fase 3: consolidação corporati"
+  - "fase 4: fama pública (2004-201"
+  - "fase 5: evolução e continuidad"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06_CONTEXT — Dr. G. Clotaire Rapaille
 
 ## Contexto Atual e Histórico
@@ -239,3 +263,5 @@ Em "The Global Code" (2015), Rapaille expandiu framework:
 **Knowledge Base ID:** KB_06_CONTEXT
 **Clone:** clotaire_rapaille_v1.0
 **Last Updated:** 2026-01-30
+
+#galaxy-creation

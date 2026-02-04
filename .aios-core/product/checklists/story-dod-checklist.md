@@ -1,3 +1,22 @@
+---
+title: "Story Definition of Done (DoD) Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "story-dod-checklist"
+  - "story definition of done (dod)"
+  - "instructions for developer age"
+  - "checklist items"
+  - "final confirmation"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Story Definition of Done (DoD) Checklist
 
 ## Instructions for Developer Agent
@@ -99,4 +118,5 @@ After completing the checklist:
 Be honest - it's better to flag issues now than have them discovered later.]]
 
 - [ ] I, the Developer Agent, confirm that all applicable items above have been addressed.
- 
+
+#galaxy-runtime

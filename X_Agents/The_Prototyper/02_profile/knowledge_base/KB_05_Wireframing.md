@@ -1,3 +1,27 @@
+---
+title: "KB-05: Wireframing & Visual Prototyping"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-wireframing"
+  - "kb-05: wireframing & visual pr"
+  - "1. fundamentos de wireframing"
+  - "1.1 o que é um wireframe?"
+  - "1.2 níveis de fidelidade"
+  - "1.3 quando usar cada fidelidad"
+  - "2. breadboarding (shape up)"
+  - "2.1 conceito"
+  - "2.2 elementos"
+  - "2.3 sintaxe de breadboard"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB-05: Wireframing & Visual Prototyping
 
 ## 1. Fundamentos de Wireframing
@@ -583,3 +607,5 @@ Gaps Identified:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

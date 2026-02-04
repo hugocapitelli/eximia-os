@@ -1,3 +1,27 @@
+---
+title: "KB_03 — Multi-Agent Framework Principles"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-multiagent-framework"
+  - "kb_03 — multi-agent framework "
+  - "🎯 propósito"
+  - "1. quando criar um agente vs u"
+  - "regra de ouro (anti micro-mana"
+  - "checklist de viabilidade"
+  - "2. single responsibility princ"
+  - "como aplicar"
+  - "exemplo"
+  - "3. hierárquico vs swarm"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03 — Multi-Agent Framework Principles
 
 ## 🎯 Propósito
@@ -144,3 +168,5 @@ open_questions:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

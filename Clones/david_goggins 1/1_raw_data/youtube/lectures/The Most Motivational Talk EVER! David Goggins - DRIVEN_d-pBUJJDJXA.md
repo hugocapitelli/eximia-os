@@ -1,3 +1,24 @@
+---
+title: "The Most Motivational Talk EVER! David Goggins - DRIVEN"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "the most motivational talk ever! david goggins - driven-d-pbujjdjxa"
+  - "the most motivational talk eve"
+  - "transcrição"
+  - "metadados técnicos"
+  - "obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # The Most Motivational Talk EVER! David Goggins - DRIVEN
 
 **URL:** https://www.youtube.com/watch?v=d-pBUJJDJXA
@@ -778,3 +799,5 @@ it  took  a  while  to  get  to  that  point
 **Family:** [[Clones]]
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

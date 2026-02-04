@@ -1,3 +1,27 @@
+---
+title: "KB_18: Innovation Techniques"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-18-innovation"
+  - "kb_18: innovation techniques"
+  - "🎯 when to apply"
+  - "🧠 triz principles (selected)"
+  - "1. segmentation"
+  - "2. extraction"
+  - "3. inversion"
+  - "4. dynamization"
+  - "5. partial action"
+  - "6. nesting"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_18: Innovation Techniques
 
 > **Category**: STRATEGY  
@@ -84,3 +108,5 @@ When stuck:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

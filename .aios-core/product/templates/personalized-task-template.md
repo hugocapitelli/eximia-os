@@ -1,3 +1,27 @@
+---
+title: "{Task Name}"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "personalized-task-template"
+  - "{task name}"
+  - "purpose"
+  - "parameters"
+  - "workflow"
+  - "step 1: {step name}"
+  - "📊 task execution report"
+  - "status"
+  - "output"
+  - "metrics"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # {Task Name}
 
 ## Purpose
@@ -342,3 +366,5 @@ params:
 **Template Version:** 1.0
 **Last Updated:** 2025-01-14
 **Applies to:** All tasks using personalized agents (Story 6.1.2+)
+
+#galaxy-runtime

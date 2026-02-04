@@ -1,3 +1,27 @@
+---
+title: "Create Webinar Script Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-webinar-script"
+  - "create webinar script task"
+  - "purpose"
+  - "tier 0: diagnostic questions"
+  - "inputs"
+  - "the big domino principle"
+  - "formula"
+  - "template"
+  - "big domino statement"
+  - "webinar psychology stack"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Webinar Script Task
 
 ## Purpose
@@ -1365,3 +1389,5 @@ changelog:
 *Task Version: 2.0*
 *Lines: 1100+*
 *Framework: Perfect Webinar (Brunson) + Epiphany Bridge + Fladlien 9 Triggers*
+
+#galaxy-operational

@@ -1,3 +1,27 @@
+---
+title: "Task: Create Database Snapshot"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-snapshot"
+  - "task: create database snapshot"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Create Database Snapshot
 
 **Purpose**: Create schema-only snapshot for rollback capability
@@ -567,3 +591,5 @@ find supabase/snapshots -name "daily_*.sql" -mtime +7 -delete
 - `*rollback {snapshot}` - Restore snapshot
 - `*apply-migration {path}` - Includes automatic snapshots
 - `*env-check` - Verify pg_dump available
+
+#galaxy-runtime

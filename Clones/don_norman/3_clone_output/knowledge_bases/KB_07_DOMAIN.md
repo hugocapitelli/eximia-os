@@ -1,3 +1,27 @@
+---
+title: "KB_07_DOMAIN — Don Norman"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-domain"
+  - "kb_07_domain — don norman"
+  - "objetivo"
+  - "1. usabilidade (usability)"
+  - "definição"
+  - "componentes (iso 9241-11)"
+  - "métodos de avaliação"
+  - "heurísticas de nielsen (colabo"
+  - "2. human-computer interaction "
+  - "histórico"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07_DOMAIN — Don Norman
 
 ## Objetivo
@@ -259,3 +283,5 @@ Acessar esta KB quando:
 
 **Atualizado:** 2026-01-30
 **Clone Factory ID:** don_norman-v1.0
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "DNA Mental: Peter Thiel"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "04-dna-mental"
+  - "dna mental: peter thiel"
+  - "1. arquétipo"
+  - "2. crenças fundamentais"
+  - "crença 1: competição é para pe"
+  - "crença 2: segredos existem e p"
+  - "crença 3: tecnologia > globali"
+  - "crença 4: otimismo definido su"
+  - "crença 5: coragem é mais rara "
+  - "crença 6: a lei de potência go"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental: Peter Thiel
 
 ## 1. ARQUÉTIPO
@@ -240,3 +264,5 @@ O que não vai funcionar é o pensamento indefinido de 'veremos o que acontece.'
 *DNA Mental v1.0 | El_Clonador Pipeline*
 *Confidence: 95% | Sources: 52*
 *eximIA.OS*
+
+#galaxy-creation

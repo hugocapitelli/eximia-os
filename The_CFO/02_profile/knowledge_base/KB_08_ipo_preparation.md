@@ -1,3 +1,27 @@
+---
+title: "KB_08 — IPO Preparation"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-ipo-preparation"
+  - "kb_08 — ipo preparation"
+  - "1. fundamentos de ipo"
+  - "o que é um ipo"
+  - "motivações para ipo"
+  - "2. ipo readiness timeline"
+  - "cronograma típico (12-24 meses"
+  - "3. ipo workstreams"
+  - "legal & compliance"
+  - "financial"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_08 — IPO Preparation
 
 ## 1. Fundamentos de IPO
@@ -258,3 +282,5 @@ Segundo Ritter (IPO Data, 2023):
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

@@ -1,3 +1,27 @@
+---
+title: "KB_07: ROI de Treinamento — Phillips Methodology"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-phillips-roi"
+  - "kb_07: roi de treinamento — ph"
+  - "visão geral"
+  - "os 5 níveis phillips"
+  - "fórmula do roi"
+  - "cálculo básico"
+  - "exemplo prático"
+  - "processo de cálculo"
+  - "passo 1: coletar dados de níve"
+  - "passo 2: isolar efeitos do tre"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_07: ROI de Treinamento — Phillips Methodology
 
 ## Visão Geral
@@ -225,3 +249,5 @@ Alguns benefícios são difíceis de monetizar, mas ainda são valiosos:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

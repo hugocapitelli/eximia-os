@@ -1,3 +1,27 @@
+---
+title: "PRP-07: Governance - Review & Catchball"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prp-07-governance"
+  - "prp-07: governance - review & "
+  - "1. objetivo"
+  - "2. user stories"
+  - "3. requisitos funcionais"
+  - "4. wireframe principal - revie"
+  - "5. wireframe - catchball threa"
+  - "6. wireframe - history log"
+  - "7. wireframe - ai summary"
+  - "8. api endpoints"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # PRP-07: Governance - Review & Catchball
 
 > **Module:** Governance (Revisão e Catchball)
@@ -449,3 +473,5 @@ POST /api/governance/:cycleId/review/export
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

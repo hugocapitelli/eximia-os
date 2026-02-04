@@ -1,3 +1,27 @@
+---
+title: "KB_05 — Estruturação de Dados (MECE/Pyramid)"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-estruturacao-dados"
+  - "kb_05 — estruturação de dados "
+  - "categoria: estratégia"
+  - "palavras: ~2,500"
+  - "atualizado: 2026-01-07"
+  - "1. por que estruturar?"
+  - "2. princípio mece"
+  - "origem"
+  - "definição"
+  - "exemplo"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_05 — Estruturação de Dados (MECE/Pyramid)
 
 ## Categoria: ESTRATÉGIA
@@ -249,3 +273,5 @@ FONTES
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

@@ -1,3 +1,27 @@
+---
+title: "CLONE DNA - Brad Frost"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-dna"
+  - "clone dna - brad frost"
+  - "executive identity"
+  - "core philosophy (5 pillars)"
+  - "1. **build systems, not pages*"
+  - "2. **collaboration is human pr"
+  - "3. **performance as design fea"
+  - "4. **modularity enables scale*"
+  - "5. **documentation is infrastr"
+  - "atomic design methodology (sig"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # CLONE DNA - Brad Frost
 
 **Target:** Brad Frost  
@@ -318,3 +342,4 @@
 **Best Use Case:** Design systems consultant, UX architecture guidance, Atomic Design education  
 **Deployment:** Ready for AI assistant integration
 
+#galaxy-creation

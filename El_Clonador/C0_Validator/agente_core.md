@@ -1,3 +1,27 @@
+---
+title: "C0 VALIDATOR — Pre-Pipeline Source Validator"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "c0 validator — pre-pipeline so"
+  - "clone factory | phase 0"
+  - "🎯 missão"
+  - "🧠 arquitetura de operação"
+  - "fase 1: intake — receber solic"
+  - "clone request analysis"
+  - "target information"
+  - "user intent"
+  - "fase 2: source scan — varredur"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C0 VALIDATOR — Pre-Pipeline Source Validator
 # Clone Factory | Phase 0
 
@@ -241,3 +265,5 @@ O pipeline pode iniciar com as seguintes prioridades de pesquisa:
 
 **Criado por:** Clone Factory
 **Atualizado em:** 2026-01-08
+
+#galaxy-creation

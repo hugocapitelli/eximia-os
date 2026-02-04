@@ -1,3 +1,27 @@
+---
+title: "Create YouTube Ads Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-youtube-ads"
+  - "create youtube ads task"
+  - "purpose"
+  - "research foundation"
+  - "when to use"
+  - "inputs"
+  - "workflow"
+  - "phase 1: strategic foundation"
+  - "phase 2: script architecture"
+  - "phase 3: script templates by f"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create YouTube Ads Task
 
 ## Purpose
@@ -1289,3 +1313,5 @@ By Industry:
 *Last Updated: 2026-01-23*
 *Primary Frameworks: Google ABCD, Tom Breeze 5 A's, Billy Gene Entertainment, Aleric Heck Value-Ad, Jake Larsen Video Ad Formula*
 *Research Base: docs/research/youtube-ads-methodology-research.md*
+
+#galaxy-operational

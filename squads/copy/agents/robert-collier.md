@@ -1,3 +1,27 @@
+---
+title: "robert-collier"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "robert-collier"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "operational frameworks"
+  - "communication dna"
+  - "signature phrases"
+  - "authority proof arsenal"
+  - "objection algorithms"
+  - "dependencies"
+  - "mmos integration note"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # robert-collier
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -980,3 +1004,5 @@ capabilities:
 ## MMOS Integration Note
 
 When MMOS integration is active, this agent can be enhanced with cognitive clone data from `minds.slug: robert_collier` if available.
+
+#galaxy-operational

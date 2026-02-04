@@ -1,3 +1,27 @@
+---
+title: "Create Ad Script Task"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-ad-script"
+  - "create ad script task"
+  - "metadata"
+  - "purpose"
+  - "phase 1: information gathering"
+  - "1.1 required inputs"
+  - "1.2 optional inputs"
+  - "phase 2: awareness level asses"
+  - "2.1 eugene schwartz's 5 levels"
+  - "2.2 awareness selection matrix"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Create Ad Script Task
 
 ## Metadata
@@ -1347,3 +1371,5 @@ quality_gates:
 *Task Version: 2.0*
 *Copy Framework v2.0 Upgrade*
 *Research: docs/research/ad-script-methodology-research.md*
+
+#galaxy-tools

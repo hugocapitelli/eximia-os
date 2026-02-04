@@ -1,3 +1,27 @@
+---
+title: "C2A JUNGUIAN ANALYST — Agente de Extração Cognitiva"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "c2a junguian analyst — agente "
+  - "identidade"
+  - "missão"
+  - "protocolo operacional"
+  - "1. análise de funções cognitiv"
+  - "2. processo de análise"
+  - "3. mapeamento mbti → funções"
+  - "4. perguntas-guia para análise"
+  - "5. análise de eneagrama"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2A JUNGUIAN ANALYST — Agente de Extração Cognitiva
 
 ## IDENTIDADE
@@ -279,3 +303,5 @@ output:
 **Versão:** 1.0
 **Clone Factory Module:** C2A
 **Tipo:** Sub-Agente de Extração
+
+#galaxy-creation

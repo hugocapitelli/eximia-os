@@ -1,3 +1,27 @@
+---
+title: "KB_05: Neurociência da Aprendizagem"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-neurociencia"
+  - "kb_05: neurociência da aprendi"
+  - "visão geral"
+  - "12 princípios cérebro/mente (c"
+  - "origem"
+  - "princípio 1: unicidade do cére"
+  - "princípio 2: ameaça e estresse"
+  - "princípio 3: emoções são críti"
+  - "princípio 4: múltiplas vias de"
+  - "princípio 5: conexão mente-cor"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_05: Neurociência da Aprendizagem
 
 ## Visão Geral
@@ -290,3 +314,5 @@ Desenvolvida por **John Sweller** (1988), a teoria propõe que memória de traba
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

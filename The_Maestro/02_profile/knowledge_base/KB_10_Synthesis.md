@@ -1,3 +1,27 @@
+---
+title: "KB_10: Synthesis Models"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-10-synthesis"
+  - "kb_10: synthesis models"
+  - "🎯 synthesis principles"
+  - "📋 synthesis templates"
+  - "template 1: executive summary"
+  - "summary"
+  - "key points"
+  - "recommendations"
+  - "sources"
+  - "template 2: comparison table"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_10: Synthesis Models
 
 > **Category**: STRATEGY  
@@ -100,3 +124,5 @@ The_CMO recommends: [Y]
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

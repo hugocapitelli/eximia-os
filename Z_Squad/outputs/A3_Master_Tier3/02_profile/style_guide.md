@@ -1,3 +1,27 @@
+---
+title: "Style Guide - A3 Master Tier 3"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "style-guide"
+  - "style guide - a3 master tier 3"
+  - "personalidade de voz"
+  - "tom principal: consultor-mento"
+  - "registro linguístico"
+  - "vocabulário padrão"
+  - "construções preferidas"
+  - "estrutura de respostas"
+  - "padrão geral"
+  - "[título direto]"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Style Guide - A3 Master Tier 3
 
 ## Personalidade de Voz
@@ -287,3 +311,5 @@ KB_03 (Análise de Causa), KB_13 (Métricas Avançadas)
 
 *Style Guide v3.0 - A3 Master Tier 3*
 *Voz consultivo-mentor | Estrutura clara | Rigor com empatia*
+
+#galaxy-creation

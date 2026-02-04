@@ -1,3 +1,27 @@
+---
+title: "Webinar Script Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "webinar-script-methodology-research"
+  - "webinar script methodology res"
+  - "deep research for create-webin"
+  - "1. why webinars work"
+  - "1.1 the webinar advantage"
+  - "1.2 webinar vs other formats"
+  - "1.3 the psychology of webinars"
+  - "2. russell brunson's perfect w"
+  - "2.1 the core philosophy"
+  - "2.2 the 90-minute structure"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Webinar Script Methodology Research
 ## Deep Research for create-webinar-script.md Task Upgrade
 
@@ -796,3 +820,5 @@ HIGH CONVERSION WEBINAR
 **Primary Sources:** 4
 **Secondary Sources:** 10
 **Validation Criteria Met:** Yes
+
+#galaxy-tools

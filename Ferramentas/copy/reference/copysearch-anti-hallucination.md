@@ -1,3 +1,27 @@
+---
+title: "CopySearch Appendix A: Anti-Hallucination Protocols"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copysearch-anti-hallucination"
+  - "copysearch appendix a: anti-ha"
+  - "metadata"
+  - "core principle"
+  - "red flag statements (require i"
+  - "1. statistics without explicit"
+  - "2. quotes attributed to indivi"
+  - "3. "studies show..." without c"
+  - "4. superlatives"
+  - "5. specific percentages or num"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # CopySearch Appendix A: Anti-Hallucination Protocols
 
 ## Metadata
@@ -334,3 +358,5 @@ This applies doubly to AI research. AI systems:
 
 *Appendix A for: tasks/copysearch.md*
 *Based on: docs/research/david-ogilvy-research-engineering-meta-framework.md*
+
+#galaxy-tools

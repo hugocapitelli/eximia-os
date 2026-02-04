@@ -1,3 +1,27 @@
+---
+title: "jon-benson"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "benson"
+  - "jon-benson"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "vsl structure (sellerator meth"
+  - "video hooks"
+  - "commands"
+  - "jon benson — quick reference"
+  - "vsl structure (sellerator)"
+  - "quick commands"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # jon-benson
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -252,3 +276,5 @@ dependencies:
 *Jon Benson — Inventor of the VSL*
 *Tier 3 Format Specialist — $1B+ via Video*
 *Era: Modern (active)*
+
+#galaxy-runtime

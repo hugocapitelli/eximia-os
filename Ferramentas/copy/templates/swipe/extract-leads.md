@@ -1,3 +1,23 @@
+---
+title: "LEAD EXTRACTION PROMPT"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "extract-leads"
+  - "lead extraction prompt"
+  - "source material"
+  - "lead types (from schwartz)"
+  - "extraction rules"
+  - "output"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # LEAD EXTRACTION PROMPT
 
 You are extracting opening leads (first 50-200 words) from proven copy.
@@ -51,3 +71,5 @@ You are extracting opening leads (first 50-200 words) from proven copy.
 
 ## OUTPUT
 Extract ALL qualifying leads. Output ONLY valid YAML array.
+
+#galaxy-tools

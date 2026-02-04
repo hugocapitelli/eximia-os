@@ -1,3 +1,27 @@
+---
+title: "META ANALYSIS: Mapa de Riscos Corporativos"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "meta-analysis-risk"
+  - "meta analysis: mapa de riscos "
+  - "1. visão geral"
+  - "2. taxonomia de riscos jurídic"
+  - "3. matriz de impacto × probabi"
+  - "quadrante de priorização"
+  - "4. mapa de interdependência re"
+  - "sobreposições críticas"
+  - "tabela de conflitos potenciais"
+  - "5. cenários de risco crítico"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # META ANALYSIS: Mapa de Riscos Corporativos
 
 **Agente:** Themis Sentinel CLO  
@@ -291,3 +315,5 @@ Este mapa de riscos serve como base para o funcionamento do Themis Sentinel CLO.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

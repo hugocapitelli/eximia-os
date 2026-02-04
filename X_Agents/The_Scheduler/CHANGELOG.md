@@ -1,3 +1,27 @@
+---
+title: "Changelog — The Scheduler"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "changelog"
+  - "changelog — the scheduler"
+  - "[1.2.0] - 2026-01-25"
+  - "added"
+  - "changed"
+  - "documentation"
+  - "[1.1.0] - 2026-01-24"
+  - "[1.0.0] - 2026-01-24"
+  - "validated"
+  - "[planned for 1.1.0]"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Changelog — The Scheduler
 
 All notable changes to The Scheduler will be documented in this file.
@@ -239,3 +263,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 **Maintainer:** eximIA.OS Core Team
 **Created:** 2026-01-24
 **Last Updated:** 2026-01-25
+
+#galaxy-specialist

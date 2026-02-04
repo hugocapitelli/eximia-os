@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5a62a51ac8e10917",
+        "id": "1f2cb24fd0eecf6a",
         "type": "tabs",
         "children": [
           {
-            "id": "3986883e28dbeb7a",
+            "id": "6b2a319ab7a4c1b2",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -18,35 +18,16 @@
             }
           },
           {
-            "id": "a3c80041f0c85961",
+            "id": "b3ddd68d98e0cb31",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_Codex/Knowledge/Learning_Design/Problem_Based_Learning/KB_01_Foundations.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "KB_01_Foundations"
-            }
-          },
-          {
-            "id": "3503a5a3b65688c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projetos/Diagnóstico empresarial/Pontos cegos e insights.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Pontos cegos e insights"
+              "title": "Nova aba"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +100,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Codex/Knowledge/Learning_Design/Problem_Based_Learning/KB_01_Foundations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +109,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para KB_01_Foundations"
+              "title": "Backlinks"
             }
           },
           {
@@ -206,9 +186,29 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "3503a5a3b65688c2",
+  "active": "6b2a319ab7a4c1b2",
   "lastOpenFiles": [
-    "Projetos/exímIA APP",
+    "Projetos/harven-jacad-sync.js",
+    "Projetos/test-jacad-diagnostico.js",
+    "Projetos/test-jacad-auth-methods.js",
+    "Projetos/RELATORIO_TESTE_JACAD_REAL.md",
+    "Projetos/test-jacad-produção.js",
+    "Projetos/RESUMO_FINAL_TESTES.txt",
+    "Projetos/TESTE_JACAD_REAL_GUIA.md",
+    "Projetos/test-jacad-real.js",
+    "Projetos/RESUMO_TESTES_JACAD.txt",
+    "Projetos/JACAD_API_TEST_REPORT.md",
+    "Projetos/test-jacad-api.js",
+    "Projetos/test_jacad_simple.py",
+    "Projetos/test_jacad_connection.py",
+    "Projetos/BROWNFIELD_ANALYSIS_HARVEN_AI.md",
+    "IMPLEMENTATION_COMPLETE.md",
+    "FIX_GALAXY_COLORS.md",
+    "Clones/david_goggins 1/1_raw_data/youtube/podcasts/David Goggins The New Full Uncut Interview You've Never Seen_nxyO1Pv8CbU.md",
+    "scripts/add-visible-tags.js",
+    "00_Codex/Knowledge/Learning_Design/NEUROSCIENCE_INDEX.md",
+    "00_Codex/Knowledge/Learning_Design/README.md",
+    "Projetos/Diagnóstico empresarial/Pontos cegos e insights.md",
     "Projetos/Diagnóstico empresarial/wireframes/README.md",
     "Projetos/Diagnóstico empresarial/wireframes/PRP-08_Configuracoes.md",
     "Projetos/Diagnóstico empresarial/wireframes/PRP-07_Historico.md",
@@ -219,30 +219,10 @@
     "Projetos/Diagnóstico empresarial/wireframes/PRP-02_Onboarding.md",
     "Projetos/Diagnóstico empresarial/wireframes/PRP-01_Autenticacao.md",
     "Projetos/Diagnóstico empresarial/wireframes/MAPA_COMPLETO_TELAS.md",
-    "Projetos/Diagnóstico empresarial/wireframes",
     "Projetos/Diagnóstico empresarial/PRD + Épicos.md",
-    "Projetos/Site exímIA/pages/Profile.tsx",
-    "Projetos/Site exímIA/pages/Login.tsx",
-    "Projetos/Site exímIA/pages/LabelExport.tsx",
-    "Projetos/Site exímIA/pages/Dashboard.tsx",
-    "Projetos/Site exímIA/pages/CategoryView.tsx",
-    "Projetos/Site exímIA/pages/BookDetail.tsx",
-    "Projetos/Site exímIA/pages",
     "Projetos/Diagnóstico empresarial/MARKET_VALIDATION_REPORT.md",
     "Projetos/Diagnóstico empresarial/PRD_AUTOMATOR_SALES_ENGINE.md",
     "Projetos/Diagnóstico empresarial/PRD_AutomatorSalesEngine_v2.0.md",
-    "Projetos/Diagnóstico empresarial/Pontos cegos e insights.md",
-    "Projetos/Diagnóstico empresarial/Definição do problema.md",
-    "Projetos/Diagnóstico empresarial/Brief do projeto.md",
-    "Sem título.md",
-    "00_Codex/Knowledge/Learning_Design/Problem_Based_Learning/KB_01_Foundations.md",
-    "Projetos/Diagnóstico empresarial",
-    "00_Codex/eximia_data/00_INBOX/imersao_pratica_ia_para_negocios_academia_lendaria.md",
-    "00_Codex/Knowledge/Learning_Design/Problem_Based_Learning/FRAMEWORKS_MASTER_CONSOLIDATED.md",
-    "00_Codex/eximia_data/02_PROCESSED/RALPH_Eximia_Insights.md",
-    "check_keys.py",
-    "Clones/elon_musk/2_structured_data/cognitive_profile/C2B_psychometric_analysis.md",
-    "00_Codex/eximia_data/03_EXPORTS/LXD_Architect_KBs_2026-01-17/README.md",
-    "00_Codex/eximia_data/03_EXPORTS/LXD_Architect_KBs_2026-01-17/KB_16_brasil_td.md"
+    "Projetos/Diagnóstico empresarial/Definição do problema.md"
   ]
 }

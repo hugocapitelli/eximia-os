@@ -1,3 +1,27 @@
+---
+title: "po"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "po"
+  - "complete agent definition foll"
+  - "all commands require * prefix "
+  - "command availability rules (st"
+  - "quick commands"
+  - "agent collaboration"
+  - "🎯 product owner guide (*guide"
+  - "when to use me"
+  - "prerequisites"
+  - "typical workflow"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # po
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -254,3 +278,5 @@ Type `*help` to see all commands.
 - **@qa (Quinn)** - Validates quality gates in stories
 
 ---
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "github-devops"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "devops"
+  - "github-devops"
+  - "complete agent definition foll"
+  - "all commands require * prefix "
+  - "quick commands"
+  - "agent collaboration"
+  - "⚡ devops guide (*guide command"
+  - "when to use me"
+  - "prerequisites"
+  - "typical workflow"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # github-devops
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -408,3 +432,5 @@ Type `*help` to see all commands.
 - **@sm (River)** - Coordinates sprint push workflow
 
 ---
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "A3 Master Agent"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "a3 master agent"
+  - "visão geral"
+  - "quick start"
+  - "modo construção de a3"
+  - "modo avaliação de a3"
+  - "tipos de a3 suportados"
+  - "estrutura do agente"
+  - "competências do agente"
+  - "clones mentores"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # A3 Master Agent
 
 **Versão:** 3.0.0
@@ -179,3 +203,5 @@ A3_Master/
 ---
 
 *Criado via Z_Squad Pipeline v2.0*
+
+#galaxy-creation

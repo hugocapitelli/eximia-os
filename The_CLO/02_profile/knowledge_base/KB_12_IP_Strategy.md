@@ -1,3 +1,27 @@
+---
+title: "KB_12: Propriedade Intelectual"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-12-ip-strategy"
+  - "kb_12: propriedade intelectual"
+  - "1. tipos de pi"
+  - "2. marcas (lei 9.279/96)"
+  - "2.1 tipos de marca"
+  - "2.2 classificação nice"
+  - "2.3 proteção"
+  - "3. patentes (lei 9.279/96)"
+  - "3.1 requisitos"
+  - "3.2 o que não é patenteável (a"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_12: Propriedade Intelectual
 
 **Categoria:** ESTRATEGIA  
@@ -189,3 +213,5 @@ triggers:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

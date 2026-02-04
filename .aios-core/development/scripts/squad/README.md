@@ -1,3 +1,27 @@
+---
+title: "Squad Scripts Module"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "squad scripts module"
+  - "overview"
+  - "components"
+  - "usage"
+  - "squad loader"
+  - "error handling"
+  - "error codes"
+  - "manifest files"
+  - "integration with squad-creator"
+tags:
+  - "galaxy-runtime"
+  - "documentation"
+---
+
 # Squad Scripts Module
 
 Utilities for the squad-creator agent to manage squads in AIOS projects.
@@ -110,3 +134,5 @@ npm test -- tests/unit/squad/squad-loader.test.js --coverage --collectCoverageFr
 | Version | Date | Description |
 |---------|------|-------------|
 | 1.0.0 | 2025-12-18 | Initial implementation (Story SQS-2) |
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "No checklists needed - interactive KB mode facilitation task, no validation workflow required"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-mode-interaction"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+  - "tools"
+tags:
+  - "galaxy-runtime"
+  - "knowledge-base"
+---
+
 <!--
 ## Execution Modes
 
@@ -281,4 +305,5 @@ Or ask me about anything else related to @synkra/aios-core!
 **User**: Tell me about workflows
 
 **Assistant**: [Provides focused information about workflows from the KB, then offers to explore specific workflow types or related topics]
- 
+
+#galaxy-runtime

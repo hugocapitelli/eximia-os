@@ -1,3 +1,27 @@
+---
+title: "Eximia Runtime — Guia de Comandos"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "commands"
+  - "eximia runtime — guia de coman"
+  - "configuração inicial"
+  - "1. configurar api key"
+  - "2. configurar mcp (antigravity"
+  - "slash commands (antigravity) �"
+  - "cli commands"
+  - "listar agentes"
+  - "filtrar por tier (1=tactical, "
+  - "filtrar por categoria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Eximia Runtime — Guia de Comandos
 
 ## Configuração Inicial
@@ -142,3 +166,5 @@ Após configurar o MCP, peça ao Antigravity:
 | `DEFAULT_MODEL` | Modelo padrão LiteLLM | `gemini/gemini-2.0-flash` |
 | `REDIS_URL` | URL do Redis | `redis://localhost:6379` |
 | `LOG_LEVEL` | Nível de log | `INFO` |
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "Generate Visual Shock Report"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "generate-shock-report"
+  - "generate visual shock report"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Generate Visual Shock Report
 
 > Task ID: brad-generate-shock-report
@@ -499,3 +523,5 @@ Browser displays:
 - Brad recommends: Send to decision-makers before meetings
 - Update report after consolidation to show progress
 - Use this to justify design system investment
+
+#galaxy-runtime

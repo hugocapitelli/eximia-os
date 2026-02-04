@@ -1,3 +1,27 @@
+---
+title: "Learning Design - Knowledge Hub"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "learning design - knowledge hu"
+  - "📚 biblioteca de conhecimento"
+  - "🗂️ estrutura de conteúdo"
+  - "🧠 neurociência da aprendizage"
+  - "📖 problem-based learning (pbl"
+  - "🎯 casos de uso"
+  - "para designers instrucionais"
+  - "para product managers / pos"
+  - "para desenvolvedores"
+tags:
+  - "galaxy-codex"
+  - "documentation"
+---
+
 # Learning Design - Knowledge Hub
 
 > **Centro de conhecimento** sobre design de experiências de aprendizagem baseado em evidências
@@ -348,3 +372,5 @@ version: 2.0
 **Versão:** 2.0
 **Data:** 2026-02-01
 **Licença:** Uso interno eximIA Ventures
+
+#galaxy-codex

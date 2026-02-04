@@ -1,3 +1,27 @@
+---
+title: "Create Sales Page Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-sales-page"
+  - "create sales page task"
+  - "metadata"
+  - "overview"
+  - "phase 0: pre-flight check"
+  - "0.1 validação de inputs obriga"
+  - "0.2 perguntas de elicitação"
+  - "phase 1: diagnóstico schwartz "
+  - "1.1 análise de awareness level"
+  - "1.2 análise de market sophisti"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Sales Page Task
 
 ## Metadata
@@ -2226,3 +2250,5 @@ uso_pratico:
 *Fonte primária: outputs/minds/gary_halbert/sources/swipe/PDF/ (90+ letters)*
 *Fonte secundária: outputs/minds/gary_halbert/sources/gary_halbert_knowledge_extract.md*
 *Enrichment: ENR-006 - Copy Framework v2.0*
+
+#galaxy-operational

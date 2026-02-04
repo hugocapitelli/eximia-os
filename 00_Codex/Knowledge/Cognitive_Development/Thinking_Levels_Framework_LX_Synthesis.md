@@ -1,3 +1,27 @@
+---
+title: "Framework de Níveis de Pensamento - Síntese LX"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "thinking-levels-framework-lx-synthesis"
+  - "framework de níveis de pensame"
+  - "🎯 síntese executiva"
+  - "📐 as 5 dimensões do pensament"
+  - "1️⃣ lines of thinking (linhas "
+  - "2️⃣ levels of thinking (níveis"
+  - "3️⃣ altitude of thinking (alti"
+  - "4️⃣ four quadrants (4d thinkin"
+  - "5️⃣ time dimension (5d thinkin"
+  - "🧠 o mecanismo central"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Framework de Níveis de Pensamento - Síntese LX
 
 > **Tipo:** Deep Synthesis (A_Refinaria)
@@ -856,3 +880,5 @@ eximia_relevance: 10/10
 **Data:** 2026-02-01
 **Status:** ✅ Pronto para implementação
 **Next steps:** Review com The_Maestro para priorização de action items
+
+#galaxy-codex

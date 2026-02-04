@@ -1,3 +1,27 @@
+---
+title: "Synkra AIOS Development Rules for Cursor"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "cursor-rules"
+  - "synkra aios development rules "
+  - "core development rules"
+  - "agent integration"
+  - "story-driven development"
+  - "code quality standards"
+  - "testing protocol"
+  - "aios framework structure"
+  - "development workflow"
+  - "best practices"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Synkra AIOS Development Rules for Cursor
 
 You are working with Synkra AIOS, an AI-Orchestrated System for Full Stack Development.
@@ -112,4 +136,6 @@ async function operation() {
 ```
 
 ---
-*Synkra AIOS Cursor Configuration v1.0* 
+*Synkra AIOS Cursor Configuration v1.0*
+
+#galaxy-runtime

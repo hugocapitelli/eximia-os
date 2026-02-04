@@ -1,3 +1,27 @@
+---
+title: "environment-bootstrap"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "environment-bootstrap"
+  - "purpose"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # environment-bootstrap
 
 **Task ID:** environment-bootstrap
@@ -1309,3 +1333,5 @@ gh repo delete REPO_NAME --yes
 **Status:** ✅ Production Ready
 **Tested On:** Windows 11, macOS Sonoma, Ubuntu 22.04
 **Minimum Requirements:** Windows 10 1809+, macOS 12+, Ubuntu 20.04+
+
+#galaxy-runtime

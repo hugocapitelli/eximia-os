@@ -1,3 +1,27 @@
+---
+title: "Clone Factory Pipeline Upgrade Report v2.1"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "pipeline-upgrade-report-v2.1"
+  - "clone factory pipeline upgrade"
+  - "metadata"
+  - "executive summary"
+  - "arquivos criados/modificados"
+  - "novos arquivos"
+  - "arquivos modificados"
+  - "validação de qualidade (z-squa"
+  - "checklist de design review"
+  - "cobertura de extração (antes v"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Clone Factory Pipeline Upgrade Report v2.1
 
 ## Metadata
@@ -237,3 +261,5 @@ Testar novas extrações em clone validado (David Goggins v4.1):
 **Versão:** 2.1.0
 **Status:** Ready for Z-Squad Review
 **Changelog:** Initial implementation based on neuroscience research
+
+#galaxy-creation

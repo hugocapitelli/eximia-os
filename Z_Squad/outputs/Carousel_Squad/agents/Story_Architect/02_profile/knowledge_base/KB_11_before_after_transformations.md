@@ -1,3 +1,27 @@
+---
+title: "KB_11 — Before/After Transformations"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-11-before-after-transformations"
+  - "kb_11 — before/after transform"
+  - "o poder do before/after"
+  - "anatomia da transformacao"
+  - "os 3 elementos essenciais"
+  - "por que funciona:"
+  - "os 7 tipos de transformacao"
+  - "1. transformacao quantitativa"
+  - "2. transformacao qualitativa"
+  - "3. transformacao de status"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_11 — Before/After Transformations
 
 **Agente:** Story Architect
@@ -343,3 +367,5 @@ Voce mostra o que VOCE valoriza, nao o que o LEITOR quer.
 - Eugene Schwartz, Breakthrough Advertising
 - Alex Hormozi, $100M Offers
 - Russell Brunson, Expert Secrets
+
+#galaxy-creation

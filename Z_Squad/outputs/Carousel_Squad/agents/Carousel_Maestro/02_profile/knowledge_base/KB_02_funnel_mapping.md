@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Funnel Mapping for Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-funnel-mapping"
+  - "kb_02 — funnel mapping for car"
+  - "o funil de carrosséis: tofu-mo"
+  - "visão geral"
+  - "tofu: carrosséis de awareness"
+  - "características"
+  - "tipos de carrossel ideais"
+  - "ctas típicos"
+  - "métricas de sucesso"
+  - "exemplo de estrutura tofu"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — Funnel Mapping for Carousels
 
 **Agente:** Carousel Maestro
@@ -229,3 +253,5 @@ Quando um carrossel MOFU gera engajamento:
 - [Instagram Funnel Strategy - Hootsuite](https://blog.hootsuite.com/instagram-carousel/)
 - Russell Brunson, Expert Secrets
 - Seth Godin, Permission Marketing
+
+#galaxy-creation

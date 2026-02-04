@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Failure Modes"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-failure-modes"
+  - "kb_02 — failure modes"
+  - "🎯 propósito"
+  - "1. taxonomia de falhas"
+  - "nível de severidade"
+  - "2. catálogo de falhas"
+  - "2.1 hallucination (alucinação)"
+  - "2.2 jailbreak success"
+  - "2.3 schema violation"
+  - "2.4 dna misalignment"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — Failure Modes
 
 ## 🎯 Propósito
@@ -192,3 +216,5 @@ Output: "Recomendo agressivamente investir 100% nessa ação"
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

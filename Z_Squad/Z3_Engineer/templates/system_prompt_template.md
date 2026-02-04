@@ -1,3 +1,27 @@
+---
+title: "AGENTE [NOME] — System Prompt v1.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt-template"
+  - "agente [nome] — system prompt "
+  - "identidade"
+  - "missão"
+  - "base de conhecimento"
+  - "framework 1: [nome]"
+  - "framework 2: [nome]"
+  - "conceitos fundamentais"
+  - "comportamento"
+  - "estilo de comunicação"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # AGENTE [NOME] — System Prompt v1.0
 
 **Gerado por:** Z3 Engineer
@@ -156,3 +180,5 @@ criado_por: "Z Squad"
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Changelog — A3 Master"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "changelog"
+  - "changelog — a3 master"
+  - "[2.0.0] - 2026-01-29"
+  - "added"
+  - "changed"
+  - "improved"
+  - "validated"
+  - "[1.0.0] - 2026-01-xx (original"
+  - "known issues (resolvidos em 2."
+  - "roadmap"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Changelog — A3 Master
 
 Todas as mudanças notáveis neste agente serão documentadas neste arquivo.
@@ -82,3 +106,5 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 ---
 
 *Changelog mantido via Z5_Evolver — Pipeline Z_Squad v2.0*
+
+#galaxy-creation

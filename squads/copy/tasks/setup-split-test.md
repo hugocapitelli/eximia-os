@@ -1,3 +1,27 @@
+---
+title: "Setup Split Test - Hopkins Methodology"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "setup-split-test"
+  - "setup split test - hopkins met"
+  - "purpose"
+  - "when to use"
+  - "hopkins on testing"
+  - "inputs"
+  - "hopkins' testing principles"
+  - "principle 1: one variable at a"
+  - "principle 2: test hypotheses, "
+  - "principle 3: coded tracking (a"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Setup Split Test - Hopkins Methodology
 
 ## Purpose
@@ -492,3 +516,5 @@ Test small → Learn → Scale what works
 - **Precedes**: Scale/rollout decisions
 - **Follows**: audit-copy-hopkins.md (validate copy quality first)
 - **Related**: hopkins-audit-checklist.md
+
+#galaxy-operational

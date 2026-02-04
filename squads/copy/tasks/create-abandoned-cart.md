@@ -1,3 +1,27 @@
+---
+title: "Create Abandoned Cart Recovery Sequence"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-abandoned-cart"
+  - "create abandoned cart recovery"
+  - "purpose"
+  - "when to use"
+  - "primary use cases"
+  - "secondary use cases"
+  - "inputs required"
+  - "theoretical foundation"
+  - "why people abandon carts (addr"
+  - "cialdini's 6 principles for ca"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Abandoned Cart Recovery Sequence
 
 **Task ID:** create-abandoned-cart
@@ -1163,3 +1187,5 @@ This task is based on comprehensive research documented in:
 *Last Updated: 2026-01-23*
 *Primary Framework: Dan Kennedy 3-Letter Sequence + Cialdini 6 Principles*
 *Minimum Output: 4-email sequence with A/B test variations*
+
+#galaxy-operational

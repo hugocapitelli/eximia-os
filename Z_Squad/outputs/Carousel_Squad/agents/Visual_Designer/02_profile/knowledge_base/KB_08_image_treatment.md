@@ -1,3 +1,27 @@
+---
+title: "KB_08 — Image Treatment for Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-image-treatment"
+  - "kb_08 — image treatment for ca"
+  - "fundamentos de tratamento de i"
+  - "por que tratamento importa"
+  - "pipeline de tratamento"
+  - "overlays e gradientes"
+  - "overlay escuro (mais comum)"
+  - "overlay com cor de marca"
+  - "gradiente vertical (muito usad"
+  - "gradiente radial (spotlight)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08 — Image Treatment for Carousels
 
 **Agente:** Visual Designer
@@ -365,3 +389,5 @@ Direciona atenção para o centro
 - Color Grading Academy
 - Phlearn (Aaron Nace) Tutorials
 - VSCO Film Emulation Guides
+
+#galaxy-creation

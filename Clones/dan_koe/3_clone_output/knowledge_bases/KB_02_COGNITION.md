@@ -1,3 +1,27 @@
+---
+title: "KB_02_COGNITION — Dan Koe"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-cognition"
+  - "kb_02_cognition — dan koe"
+  - "objetivo"
+  - "perfil cognitivo"
+  - "mbti: intj (the architect)"
+  - "como processa informacao"
+  - "modelos mentais primarios"
+  - "1. entropy as supreme principl"
+  - "2. life as infinite game"
+  - "3. conceptual survival"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02_COGNITION — Dan Koe
 
 ## Objetivo
@@ -255,3 +279,5 @@ Acessar quando:
 
 **Clone Factory ID:** DAN_KOE-v2.0
 **Changelog v2.0:** Adicionado Kolb Learning Style (Converger) com evidencias e ciclo de aprendizado
+
+#galaxy-creation

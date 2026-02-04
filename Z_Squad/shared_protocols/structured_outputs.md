@@ -1,3 +1,27 @@
+---
+title: "Structured Outputs — Pydantic-Style Schemas"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "structured-outputs"
+  - "structured outputs — pydantic-"
+  - "🎯 propósito"
+  - "1. por que structured outputs?"
+  - "2. schemas por módulo"
+  - "2.1 z1 architect — spectecnica"
+  - "2.2 z2 profiler — dnamental"
+  - "2.3 z3 engineer — agentefinal"
+  - "2.4 z4 auditor — validationrep"
+  - "3. validação em runtime"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Structured Outputs — Pydantic-Style Schemas
 
 ## 🎯 Propósito
@@ -262,3 +286,5 @@ def z1_produce_spec(user_input: str) -> SpecTecnica:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

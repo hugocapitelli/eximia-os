@@ -1,3 +1,27 @@
+---
+title: "KB_09: User Intent Classification"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-user-intent"
+  - "kb_09: user intent classificat"
+  - "🎯 intent categories"
+  - "category 1: information seekin"
+  - "category 2: decision support"
+  - "category 3: task execution"
+  - "category 4: analysis"
+  - "category 5: strategic planning"
+  - "🔍 disambiguation protocol"
+  - "bad examples"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_09: User Intent Classification
 
 > **Category**: STRATEGY  
@@ -91,3 +115,5 @@ If input could mean multiple things:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

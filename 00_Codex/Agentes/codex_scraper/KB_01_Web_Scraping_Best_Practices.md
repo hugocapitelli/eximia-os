@@ -1,3 +1,27 @@
+---
+title: "Web Scraping Best Practices"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-web-scraping-best-practices"
+  - "web scraping best practices"
+  - "overview"
+  - "princípios fundamentais"
+  - "1. respeitar robots.txt"
+  - "2. rate limiting"
+  - "3. user-agent apropriado"
+  - "técnicas de extração"
+  - "1. trafilatura (recomendado pa"
+  - "2. beautifulsoup (fallback)"
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
+
 # Web Scraping Best Practices
 
 ## Overview
@@ -208,3 +232,5 @@ async def fetch_many(urls):
 - [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [robots.txt Specification](https://www.robotstxt.org/)
 - [Schema.org Reference](https://schema.org/)
+
+#galaxy-codex

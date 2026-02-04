@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Biography and Early Life"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-01-biography-early-life"
+  - "david goggins - biography and "
+  - "early life and childhood"
+  - "early childhood (1981)"
+  - "escape from abuse (age 8)"
+  - "educational challenges"
+  - "military and athletic career"
+  - "navy seal journey"
+  - "army ranger school (2004)"
+  - "record achievement"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # David Goggins - Biography and Early Life
 
 **Source:** Web Search - "David Goggins biography complete life story early childhood"
@@ -77,3 +101,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

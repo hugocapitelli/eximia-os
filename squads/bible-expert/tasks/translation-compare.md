@@ -59,7 +59,9 @@ Saida:
     descricao: "Side-by-side table of all translations"
     estrutura: |
       | Translation | Text |
-      |---|---|
+      |---
+
+|---|
       | King James 1611 | "For God so loved the world..." |
       | ACF | "Porque Deus amou o mundo..." |
       | NVT | "Porque Deus ama o mundo..." |
@@ -148,3 +150,5 @@ Notas:
 
 Status: ready-for-implementation
 Ultimo_Update: 2026-01-27
+
+#galaxy-operational

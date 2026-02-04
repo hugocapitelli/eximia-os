@@ -1,3 +1,27 @@
+---
+title: "WCAG Compliance Guide"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "wcag-compliance-guide"
+  - "wcag compliance guide"
+  - "quick reference: wcag aa requi"
+  - "color contrast"
+  - "use browser dev tools or:"
+  - "keyboard navigation"
+  - "aria attributes"
+  - "wcag aaa (target, not required"
+  - "component-specific guidelines"
+  - "buttons"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # WCAG Compliance Guide
 
 **Standard:** WCAG 2.1 Level AA (minimum), AAA target
@@ -265,3 +289,5 @@ test('Button is accessible', async () => {
 - Be tested with screen readers
 
 **Non-negotiable. Brad says: "Accessibility is quality."**
+
+#galaxy-runtime

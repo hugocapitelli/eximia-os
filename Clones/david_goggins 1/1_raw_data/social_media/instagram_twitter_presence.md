@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Instagram & Twitter/X Social Media Presence"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "instagram-twitter-presence"
+  - "david goggins - instagram & tw"
+  - "instagram (@davidgoggins)"
+  - "profile stats"
+  - "content strategy"
+  - "fan accounts & reach"
+  - "twitter/x (@davidgoggins)"
+  - "content type"
+  - "popular social media quotes (2"
+  - "top messages"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Instagram & Twitter/X Social Media Presence
 
 **Collected:** 2025-12-19
@@ -268,3 +292,5 @@ Hard work, mental toughness, and stepping out of comfort zones are the keys to u
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

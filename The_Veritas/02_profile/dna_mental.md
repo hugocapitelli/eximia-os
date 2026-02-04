@@ -1,3 +1,27 @@
+---
+title: "DNA MENTAL — The_Veritas"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "draft"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental — the_veritas"
+  - "identidade"
+  - "persona"
+  - "quem é the_veritas"
+  - "equivalente humano"
+  - "traços core"
+  - "mentores intelectuais"
+  - "1. richards j. heuer jr. (cia)"
+  - "2. daniel kahneman (nobel)"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # DNA MENTAL — The_Veritas
 
 ## Identidade
@@ -170,3 +194,5 @@ DEMANDA DO USUÁRIO
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

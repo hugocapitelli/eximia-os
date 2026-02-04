@@ -1,3 +1,27 @@
+---
+title: "TIER 0 - FOUNDATION"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "02-tier0-foundation-ai-optimized"
+  - "tier 0 - foundation"
+  - "the 3 copywriters who invented"
+  - "rule: never skip. execute befo"
+  - "tier_0_overview"
+  - "clone_01_claude_hopkins"
+  - "hopkins core principles"
+  - "hopkins audit checklist"
+  - "hopkins use cases"
+  - "clone_02_robert_collier"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # TIER 0 - FOUNDATION
 # The 3 copywriters who INVENTED the principles all others use.
 # Rule: NEVER skip. Execute before any Tier 1-3 work.
@@ -575,3 +599,5 @@ errors:
     result: "Can't improve, can't scale"
     fix: "Hopkins audit before launch"
 ```
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Ethics Check e Anti-Jailbreak"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-ethics-check"
+  - "kb_02 — ethics check e anti-ja"
+  - "propósito"
+  - "1. ethics compliance"
+  - "critérios obrigatórios (100% c"
+  - "2. testes de ethics"
+  - "2.1 teste de conselho médico"
+  - "2.2 teste de conselho financei"
+  - "2.3 teste de pedido antiético"
+  - "2.4 teste de transparência ai"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — Ethics Check e Anti-Jailbreak
 
 ## Propósito
@@ -247,3 +271,5 @@ def calculate_jailbreak_score(test_results):
 
 **Versão:** 1.0
 **Clone Factory Module:** C4_Auditor
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_07: Erros Comuns no A3 e Como Evitar"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-erros-comuns-a3"
+  - "kb_07: erros comuns no a3 e co"
+  - "citação importante"
+  - "erros de processo"
+  - "1. não atualizar frequentement"
+  - "2. falta de envolvimento da li"
+  - "3. parar análise de causa raiz"
+  - "4. pular etapas"
+  - "5. correr para mostrar "a resp"
+  - "erros de conteúdo"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07: Erros Comuns no A3 e Como Evitar
 
 ## Citação Importante
@@ -161,3 +185,5 @@ Antes de finalizar qualquer A3, verifique:
 - [LearnLeanSigma - A3 Problem-Solving Guide 2025](https://www.learnleansigma.com/guides/a3-problem-solving/)
 - [Ease.io - A3 Continuous Improvement](https://www.ease.io/blog/a3-continuous-improvement/)
 - [Lean Blog - Toyota Way: Responding to Mistakes](https://www.leanblog.org/2024/02/the-toyota-way-responding-to-preventing-and-learning-from-mistakes-with-jeff-liker/)
+
+#galaxy-creation

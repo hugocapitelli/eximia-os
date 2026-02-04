@@ -1,3 +1,27 @@
+---
+title: "DNA Mental - Harven_Analyst (AnalystOS)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental - harven_analyst (a"
+  - "1. crencas centrais"
+  - "2. principios de decisao"
+  - "3. frameworks / metodos"
+  - "framework 1: analise de estilo"
+  - "framework 2: deteccao de vocab"
+  - "framework 3: analise estrutura"
+  - "framework 4: coleta de metrica"
+  - "4. indicadores de texto gerado"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental - Harven_Analyst (AnalystOS)
 
 **Gerado por:** Z2 Profiler
@@ -218,3 +242,5 @@ notas_do_profiler: "Agente analitico focado em coleta de dados e deteccao de pad
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

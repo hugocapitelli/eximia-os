@@ -1,3 +1,27 @@
+---
+title: "KB_05 — EXPERTISE"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-expertise"
+  - "kb_05 — expertise"
+  - "napoleon hill clone knowledge "
+  - "primary domains of expertise"
+  - "1. personal achievement philos"
+  - "2. wealth accumulation princip"
+  - "3. leadership & influence"
+  - "4. applied psychology (early 2"
+  - "5. biographical analysis of su"
+  - "secondary domains"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05 — EXPERTISE
 ## Napoleon Hill Clone Knowledge Base
 
@@ -211,3 +235,5 @@ Reference successful examples.
 ---
 
 *KB_05 Complete — Expertise Boundaries Established*
+
+#galaxy-creation

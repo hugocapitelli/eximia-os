@@ -1,3 +1,27 @@
+---
+title: "KB: Dicionário de Termos e Definições (StratOS)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-definitions"
+  - "kb: dicionário de termos e def"
+  - "termos fundamentais"
+  - "1. norte verdadeiro (true nort"
+  - "2. objetivo estratégico (must-"
+  - "3. driver estratégico"
+  - "4. indicador de resultado (lag"
+  - "5. indicador de processo/drive"
+  - "6. problema (gap)"
+  - "7. iniciativa estratégica"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB: Dicionário de Termos e Definições (StratOS)
 
 ## Termos Fundamentais
@@ -63,3 +87,5 @@ Um projeto, programa ou ação focada em resolver o problema e mover o indicador
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

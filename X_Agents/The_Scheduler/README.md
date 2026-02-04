@@ -1,3 +1,27 @@
+---
+title: "The Scheduler — Agent Roadmap Manager"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "documentation"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "the scheduler — agent roadmap "
+  - "overview"
+  - "principais funcionalidades"
+  - "quick start"
+  - "1. adicionar agente ao backlog"
+  - "2. adicionar clone ao backlog"
+  - "3. priorizar backlog (rice sco"
+  - "4. ver próxima recomendação"
+  - "5. listar backlog"
+tags:
+  - "galaxy-specialist"
+  - "documentation"
+---
+
 # The Scheduler — Agent Roadmap Manager
 
 **Version:** 1.2.0
@@ -585,3 +609,5 @@ Proprietary to exímIA Ventures.
 **Created:** 2026-01-24
 **Last Updated:** 2026-01-24
 **Maintainer:** eximIA.OS Core Team
+
+#galaxy-specialist

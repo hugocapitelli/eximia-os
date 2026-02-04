@@ -157,3 +157,5 @@ async function validateSquad(options) {
 - **Dependencies:** squad-loader.js, squad-validator.js
 - **Schema:** .aios-core/schemas/squad-schema.json
 - **Agent:** @squad-creator (Craft)
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "KB_07 — Caption Writing"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-caption-writing"
+  - "kb_07 — caption writing"
+  - "a arte da caption"
+  - "anatomia da caption perfeita"
+  - "estrutura de 5 partes"
+  - "o hook: os 125 caracteres mais"
+  - "porque 125?"
+  - "templates de hook por categori"
+  - "corpo: desenvolvendo o hook"
+  - "principios de escrita"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07 — Caption Writing
 
 **Agente:** Copy Master
@@ -495,3 +519,5 @@ BOA CAPTION:
 ---
 
 *"A caption nao e legenda. E uma segunda chance de vender sua ideia."* — Copy Master
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "ben-settle"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "ben-settle"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "operational frameworks"
+  - "communication dna"
+  - "signature phrases"
+  - "authority proof arsenal"
+  - "objection algorithms"
+  - "signature techniques (expanded"
+  - "the infotainment test"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # ben-settle
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -1381,3 +1405,5 @@ Ben Settle represents the modern era of email marketing where personality and au
 *Upgrade Date: 2026-01-23*
 *Lines: 1000+*
 *Primary Frameworks: Daily Email System, Infotainment Methodology, 3X Personality, Polarization Strategy*
+
+#galaxy-operational

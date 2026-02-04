@@ -1,3 +1,27 @@
+---
+title: "The Adolescence of Technology"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dario-amodei-adolescence-of-technology"
+  - "the adolescence of technology"
+  - "summary"
+  - "key principles for addressing "
+  - "definition of "powerful ai""
+  - "five categories of risk"
+  - "1. autonomy risks ("i'm sorry,"
+  - "2. misuse for destruction ("a "
+  - "3. misuse for seizing power (""
+  - "4. economic disruption ("playe"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # The Adolescence of Technology
 
 **Author:** Dario Amodei (CEO, Anthropic)
@@ -124,3 +148,5 @@ Key tensions:
 ## Personal Notes
 
 This essay represents one of the most comprehensive treatments of AI risks from an AI lab CEO. Key insight: the risks are not hypothetical but require immediate, calibrated action while avoiding both dismissal and doom.
+
+#galaxy-codex

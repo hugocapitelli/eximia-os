@@ -1,3 +1,27 @@
+---
+title: "init-project-status"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "init-project-status"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+  - "tools"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # init-project-status
 
 **Task ID:** init-project-status
@@ -504,3 +528,5 @@ To disable project status tracking:
 **Status:** ✅ Production Ready
 **Tested On:** Windows, Linux, macOS
 **Git Requirement:** git >= 2.0 (2.22+ recommended)
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "the_prototyper Response"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "2026-01-11-224846-contexto-o-usuário-quer-produtizar-o-age"
+  - "the_prototyper response"
+  - "1. problema de validação"
+  - "2. escopo definição"
+  - "3. critérios de sucesso"
+  - "4. articulação da solução"
+  - "prd: transformação do prototyp"
+  - "1. declaração do problema"
+  - "2. objetivos e não-objetivos"
+  - "objetivos (dentro do escopo)"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # the_prototyper Response
 
 **Timestamp:** 2026-01-11T22:48:46.879493
@@ -149,3 +173,5 @@ Este PRD fornece uma base sólida para desenvolver a plataforma SaaS 'The Protot
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-runtime

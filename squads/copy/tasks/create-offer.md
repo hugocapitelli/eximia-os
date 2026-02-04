@@ -1,3 +1,27 @@
+---
+title: "Create Offer Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-offer"
+  - "create offer task"
+  - "purpose"
+  - "when to use"
+  - "core frameworks"
+  - "phase 0: tier 0 diagnostic que"
+  - "block a: market & avatar under"
+  - "block b: product & transformat"
+  - "block c: proof & authority"
+  - "block d: business constraints"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Offer Task
 
 ## Purpose
@@ -1940,3 +1964,5 @@ Uma Grand Slam Offer combina cinco componentes críticos:
 *Hormozi Framework Enrichment - ENR-004*
 *Fontes: 01_FRAMEWORKS_OPERACIONAIS.md, 02_VALUE_EQUATION_ENGINE.md, 03_OFFER_CREATION_SYSTEM.md*
 *Data da Extração: 2026-01-23*
+
+#galaxy-operational

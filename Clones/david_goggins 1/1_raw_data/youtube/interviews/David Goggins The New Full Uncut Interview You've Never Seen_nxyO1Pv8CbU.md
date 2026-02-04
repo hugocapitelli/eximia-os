@@ -1,3 +1,24 @@
+---
+title: "David Goggins The New Full Uncut Interview You've Never Seen"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "david goggins the new full uncut interview you've never seen-nxyo1pv8cbu"
+  - "david goggins the new full unc"
+  - "transcrição"
+  - "metadados técnicos"
+  - "obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins The New Full Uncut Interview You've Never Seen
 
 **URL:** https://www.youtube.com/watch?v=nxyO1Pv8CbU
@@ -1378,3 +1399,5 @@
 **Family:** [[Clones]]
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

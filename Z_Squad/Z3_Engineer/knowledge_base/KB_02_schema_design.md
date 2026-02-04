@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Schema Design Patterns"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-schema-design"
+  - "kb_02 — schema design patterns"
+  - "🎯 propósito"
+  - "1. por que usar schemas?"
+  - "2. json schema 101"
+  - "tipos básicos"
+  - "validações comuns"
+  - "3. padrões para input schema"
+  - "3.1 estrutura base"
+  - "3.2 padrões de campos"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — Schema Design Patterns
 
 ## 🎯 Propósito
@@ -206,3 +230,5 @@ regras:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

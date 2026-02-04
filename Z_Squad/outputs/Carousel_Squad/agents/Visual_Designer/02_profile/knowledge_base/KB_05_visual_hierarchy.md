@@ -1,3 +1,27 @@
+---
+title: "KB_05 — Visual Hierarchy for Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-visual-hierarchy"
+  - "kb_05 — visual hierarchy for c"
+  - "fundamentos de hierarquia visu"
+  - "o que é hierarquia visual"
+  - "os 3 níveis de hierarquia"
+  - "as 7 ferramentas de hierarquia"
+  - "1. tamanho (size)"
+  - "2. peso (weight)"
+  - "3. cor (color)"
+  - "4. posição (position)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05 — Visual Hierarchy for Carousels
 
 **Agente:** Visual Designer
@@ -398,3 +422,5 @@ Nada se destaca            Caminho claro
 - Robin Williams, "The Non-Designer's Design Book"
 - Gestalt Principles of Visual Perception
 - Nielsen Norman Group - Visual Hierarchy Research
+
+#galaxy-creation

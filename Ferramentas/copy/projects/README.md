@@ -1,3 +1,27 @@
+---
+title: "Copy Projects - Estrutura Padrão"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "copy projects - estrutura padr"
+  - "estrutura de diretórios"
+  - "criando um novo projeto"
+  - "arquivos por projeto"
+  - "prd.json"
+  - "prompt.md"
+  - "progress.txt"
+  - "copy-state.json"
+  - "handoff.md"
+tags:
+  - "galaxy-tools"
+  - "documentation"
+---
+
 # Copy Projects - Estrutura Padrão
 
 > Cada projeto Copy YOLO segue esta estrutura padronizada.
@@ -107,3 +131,5 @@ O sistema usa signals para comunicação:
 
 ---
 *Copy Expansion Pack v2.0*
+
+#galaxy-tools

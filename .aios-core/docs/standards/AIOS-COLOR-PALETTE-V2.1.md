@@ -1,3 +1,27 @@
+---
+title: "AIOS Color Palette v2.1"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "aios-color-palette-v2.1"
+  - "aios color palette v2.1"
+  - "🎨 brand identity"
+  - "logo inspiration"
+  - "primary brand reference"
+  - "🌈 core color palette"
+  - "brand colors"
+  - "functional colors"
+  - "neutral colors"
+  - "gradient palette"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # AIOS Color Palette v2.1
 
 **Version:** 2.1.0  
@@ -352,3 +376,4 @@ For future design system integration:
 
 — Uma, desenhando com empatia 💝
 
+#galaxy-runtime

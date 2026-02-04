@@ -1,3 +1,27 @@
+---
+title: "Product Manager (PM) Requirements Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "pm-checklist"
+  - "product manager (pm) requireme"
+  - "1. problem definition & contex"
+  - "1.1 problem statement"
+  - "1.2 business goals & success m"
+  - "1.3 user research & insights"
+  - "2. mvp scope definition"
+  - "2.1 core functionality"
+  - "2.2 scope boundaries"
+  - "2.3 mvp validation approach"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Product Manager (PM) Requirements Checklist
 
 This checklist serves as a comprehensive framework to ensure the Product Requirements Document (PRD) and Epic definitions are complete, well-structured, and appropriately scoped for MVP development. The PM should systematically work through each item during the product definition process.
@@ -373,4 +397,5 @@ After presenting the report, ask if the user wants:
 
 - **READY FOR ARCHITECT**: The PRD and epics are comprehensive, properly structured, and ready for architectural design.
 - **NEEDS REFINEMENT**: The requirements documentation requires additional work to address the identified deficiencies.
- 
+
+#galaxy-runtime

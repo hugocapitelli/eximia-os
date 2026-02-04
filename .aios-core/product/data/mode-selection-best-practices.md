@@ -1,3 +1,27 @@
+---
+title: "Mode Selection Best Practices"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "mode-selection-best-practices"
+  - "mode selection best practices"
+  - "quick mode selector"
+  - "by story complexity"
+  - "by story type"
+  - "by risk level"
+  - "mode characteristics"
+  - "yolo mode 🚀"
+  - "interactive mode 💬"
+  - "pre-flight planning mode ✈️"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Mode Selection Best Practices
 
 **Quick Reference Guide**
@@ -469,3 +493,5 @@ When in doubt      → Interactive 💬 (default)
 **Version**: 1.0.0
 **Story**: 3.13 - Developer Experience Enhancement
 **Last Updated**: 2025-10-31
+
+#galaxy-runtime

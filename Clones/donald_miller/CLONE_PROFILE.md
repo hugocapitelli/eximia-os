@@ -1,3 +1,27 @@
+---
+title: "Clone Profile: Donald Miller"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-profile"
+  - "clone profile: donald miller"
+  - "overview"
+  - "subject summary"
+  - "key identifiers"
+  - "background"
+  - "professional journey"
+  - "companies"
+  - "core frameworks"
+  - "1. storybrand 7-part framework"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # Clone Profile: Donald Miller
 
 ## Overview
@@ -269,3 +293,5 @@ donald_miller/
 
 *Clone created by eximIA.OS El_Clonador Pipeline v4.0*
 *Powered by The_Veritas Research Engine*
+
+#galaxy-creation

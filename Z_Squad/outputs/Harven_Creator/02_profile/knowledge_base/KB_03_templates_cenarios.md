@@ -1,3 +1,27 @@
+---
+title: "KB_03: Templates de Cenarios para Perguntas Socraticas"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-templates-cenarios"
+  - "kb_03: templates de cenarios p"
+  - "por que usar cenarios?"
+  - "template 1: o consultor"
+  - "estrutura"
+  - "exemplo"
+  - "skill: aplicacao/analise"
+  - "template 2: o dilema"
+  - "skill: avaliacao/reflexao"
+  - "template 3: o contraditorio"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03: Templates de Cenarios para Perguntas Socraticas
 
 ## Por que Usar Cenarios?
@@ -221,3 +245,5 @@ Para 3 perguntas, usar pelo menos 2 com cenarios:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_04: Frameworks de Design Instrucional"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-frameworks-design"
+  - "kb_04: frameworks de design in"
+  - "visão geral"
+  - "1. addie — o framework clássic"
+  - "origem"
+  - "as 5 fases"
+  - "fase 1: analyze (análise)"
+  - "fase 2: design (projeto)"
+  - "fase 3: development (desenvolv"
+  - "fase 4: implementation (implem"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_04: Frameworks de Design Instrucional
 
 ## Visão Geral
@@ -356,3 +380,5 @@ Desenvolvido por **Grant Wiggins** e **Jay McTighe** (1998).
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

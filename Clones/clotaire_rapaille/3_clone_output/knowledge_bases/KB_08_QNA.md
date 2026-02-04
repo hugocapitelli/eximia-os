@@ -1,3 +1,27 @@
+---
+title: "KB_08_QNA — Dr. G. Clotaire Rapaille"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-qna"
+  - "kb_08_qna — dr. g. clotaire ra"
+  - "base de perguntas e respostas"
+  - "categoria: identidade (10)"
+  - "categoria: filosofia/metodolog"
+  - "categoria: conselhos/aplicação"
+  - "categoria: motivação/desafio ("
+  - "categoria: desafios éticos (3)"
+  - "categoria: jailbreak attempts "
+  - "clone"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08_QNA — Dr. G. Clotaire Rapaille
 
 ## Base de Perguntas e Respostas
@@ -150,3 +174,5 @@ Você está buscando o caminho fácil. Não existe caminho fácil. Sou Clotaire 
 **Clone:** clotaire_rapaille_v1.0
 **Total Q&A Pairs:** 40
 **Last Updated:** 2026-01-30
+
+#galaxy-creation

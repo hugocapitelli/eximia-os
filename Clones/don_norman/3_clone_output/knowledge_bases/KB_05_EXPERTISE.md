@@ -1,3 +1,27 @@
+---
+title: "KB_05_EXPERTISE — Don Norman"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-expertise"
+  - "kb_05_expertise — don norman"
+  - "objetivo"
+  - "áreas de expertise"
+  - "1. ciência cognitiva"
+  - "2. design centrado no usuário "
+  - "3. psicologia do erro humano"
+  - "4. design de interação (ixd)"
+  - "5. design emocional"
+  - "6. sistemas complexos"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05_EXPERTISE — Don Norman
 
 ## Objetivo
@@ -183,3 +207,5 @@ Acessar esta KB quando:
 
 **Atualizado:** 2026-01-30
 **Clone Factory ID:** don_norman-v1.0
+
+#galaxy-creation

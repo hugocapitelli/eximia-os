@@ -1,3 +1,27 @@
+---
+title: "KB_03: Exportacao para Moodle"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-exportacao-moodle"
+  - "kb_03: exportacao para moodle"
+  - "proposito"
+  - "payload de exportacao"
+  - "estrutura completa"
+  - "api do moodle"
+  - "endpoint"
+  - "parametros"
+  - "headers"
+  - "request body"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03: Exportacao para Moodle
 
 ## Proposito
@@ -348,3 +372,5 @@ async def process_retry(queue_item):
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

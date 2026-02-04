@@ -1,3 +1,27 @@
+---
+title: "Peter Thiel - Master Sources Registry"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "sources-live"
+  - "peter thiel - master sources r"
+  - "source collection status: comp"
+  - "primary sources (tier 1)"
+  - "books"
+  - "courses"
+  - "youtube sources"
+  - "podcasts"
+  - "interviews (video)"
+  - "lectures & speeches"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Peter Thiel - Master Sources Registry
 
 ## Source Collection Status: COMPLETE
@@ -166,3 +190,5 @@ All sources have been verified through The_Veritas protocol:
 
 *C1_Hunter | The_Veritas Integration*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

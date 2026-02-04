@@ -1,3 +1,27 @@
+---
+title: "PBL Frameworks Master Consolidated"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "frameworks-master-consolidated"
+  - "pbl frameworks master consolid"
+  - "purpose of this document"
+  - "🎯 core frameworks (tier 1 - f"
+  - "framework 1: the barrows-tambl"
+  - "framework 2: hmelo-silver pbl "
+  - "framework 3: the 5 goals of pb"
+  - "framework 4: schmidt's cogniti"
+  - "🏗️ implementation frameworks "
+  - "framework 5: barrows' pbl taxo"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # PBL Frameworks Master Consolidated
 
 **Document Type:** Meta-Framework Consolidation
@@ -938,3 +962,5 @@ Abstract Conceptualization → Active Experimentation → (repeat)
 **Version:** 1.0
 **Status:** Production Ready for LXD, Research, Agent Training
 **Date:** 2026-01-23
+
+#galaxy-codex

@@ -1,3 +1,27 @@
+---
+title: "KB_04_FRAMEWORKS — Dr. G. Clotaire Rapaille"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-frameworks"
+  - "kb_04_frameworks — dr. g. clot"
+  - "framework principal: o código "
+  - "definição"
+  - "características dos códigos"
+  - "processo de descoberta"
+  - "framework do cérebro triuno (t"
+  - "origem"
+  - "os três níveis"
+  - "princípio fundamental"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04_FRAMEWORKS — Dr. G. Clotaire Rapaille
 
 ## Framework Principal: O Código Cultural (The Culture Code)
@@ -302,3 +326,5 @@ Três experiências culturais profundas tornam indivíduo "internacional" com re
 **Knowledge Base ID:** KB_04_FRAMEWORKS
 **Clone:** clotaire_rapaille_v1.0
 **Last Updated:** 2026-01-30
+
+#galaxy-creation

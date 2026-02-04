@@ -1,3 +1,27 @@
+---
+title: "Authority Arsenal Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "authority-arsenal-methodology-research"
+  - "authority arsenal methodology "
+  - "deep research for build-author"
+  - "research metadata"
+  - "executive summary"
+  - "part 1: theoretical foundation"
+  - "1.1 robert cialdini's principl"
+  - "1.2 gary bencivenga's proof-to"
+  - "1.3 dan kennedy's direct respo"
+  - "part 2: the seven types of per"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Authority Arsenal Methodology Research
 # Deep Research for build-authority-arsenal.md Task Upgrade
 
@@ -1109,3 +1133,5 @@ Proof Templates: Transformation + Results + Credibility + Social
 *Research Document: 587 lines*
 *Generated: 2026-01-23*
 *For: US-043 build-authority-arsenal.md upgrade*
+
+#galaxy-tools

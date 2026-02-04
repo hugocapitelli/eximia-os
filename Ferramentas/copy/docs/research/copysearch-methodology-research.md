@@ -1,3 +1,27 @@
+---
+title: "CopySearch Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copysearch-methodology-research"
+  - "copysearch methodology researc"
+  - "deep research for copysearch.m"
+  - "research metadata"
+  - "executive summary"
+  - "part 1: the ogilvy research en"
+  - "1.1 david ogilvy's research ph"
+  - "1.2 the ogilvy research stack "
+  - "1.3 the evidence hierarchy"
+  - "part 2: the swipe file methodo"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # CopySearch Methodology Research
 # Deep Research for copysearch.md Task Documentation
 
@@ -710,3 +734,5 @@ The `copysearch.md` task represents a **complete, gold-standard implementation**
 *Generated: 2026-01-23*
 *For: US-044 copysearch.md documentation*
 *Assessment: Task already complete, no rewrite needed*
+
+#galaxy-tools

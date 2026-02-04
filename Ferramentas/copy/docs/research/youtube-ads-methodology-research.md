@@ -1,3 +1,27 @@
+---
+title: "YouTube Ads Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "youtube-ads-methodology-research"
+  - "youtube ads methodology resear"
+  - "executive summary"
+  - "seção 1: google abcd framework"
+  - "1.1 overview do framework"
+  - "1.2 a - attention (atenção)"
+  - "1.3 b - branding"
+  - "1.4 c - connection (conexão)"
+  - "1.5 d - direction (direção)"
+  - "seção 2: tom breeze - viewabil"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # YouTube Ads Methodology Research
 
 ## Executive Summary
@@ -1489,3 +1513,5 @@ FOR ADVANCED:
 *Linhas: 1350+*
 *Última Atualização: 2026-01-23*
 *Copy Framework v2.0 - Research Phase*
+
+#galaxy-tools

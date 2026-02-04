@@ -1,3 +1,27 @@
+---
+title: "ELC_Architect"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "elc_architect"
+  - "experiential learning cycle+ a"
+  - "visao geral"
+  - "modelo central: elc+ 2026"
+  - "capacidades"
+  - "quando usar este agente"
+  - "estrutura do agente"
+  - "exemplo de uso"
+  - "origem"
+tags:
+  - "galaxy-specialist"
+  - "documentation"
+---
+
 # ELC_Architect
 
 ## Experiential Learning Cycle+ Architect
@@ -128,3 +152,5 @@ Modelo: ELC+ 2026
 
 *ELC_Architect — Design de Aprendizagem Experiencial 6 Etapas*
 *eximIA.OS*
+
+#galaxy-specialist

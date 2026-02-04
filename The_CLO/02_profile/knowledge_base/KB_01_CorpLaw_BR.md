@@ -1,3 +1,27 @@
+---
+title: "KB_01: Direito Societário Brasileiro"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-corplaw-br"
+  - "kb_01: direito societário bras"
+  - "1. lei das sociedades por açõe"
+  - "1.1 visão geral"
+  - "1.2 atualizações recentes"
+  - "2. responsabilidade de adminis"
+  - "2.1 artigos fundamentais"
+  - "2.2 art. 158 — regra geral"
+  - "2.3 art. 159 — ação de respons"
+  - "2.4 deveres fiduciários"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_01: Direito Societário Brasileiro
 
 **Categoria:** TEORIA  
@@ -239,3 +263,5 @@ MEMORIZE:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

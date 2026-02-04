@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Childhood Trauma, Abuse & Overcoming Adversity"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-11-childhood-trauma-abuse-adversity"
+  - "david goggins - childhood trau"
+  - "childhood trauma and abuse"
+  - "living in fear"
+  - "forced labor (age 6+)"
+  - "the abuse"
+  - "escape (age 8)"
+  - "additional adversity after esc"
+  - "post-traumatic stress disorder"
+  - "educational deprivation"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Childhood Trauma, Abuse & Overcoming Adversity
 
 **Source:** Web Search - "David Goggins childhood trauma abuse overcome adversity"
@@ -139,3 +163,5 @@ His message resonates because:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

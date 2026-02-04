@@ -1,3 +1,27 @@
+---
+title: "Local Memory Architecture — Z Squad"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "local-memory"
+  - "local memory architecture — z "
+  - "🎯 propósito"
+  - "1. o problema: context overloa"
+  - "sintomas"
+  - "solução"
+  - "2. tipos de memória"
+  - "3. memória por módulo"
+  - "z1 architect"
+  - "z2 profiler"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Local Memory Architecture — Z Squad
 
 ## 🎯 Propósito
@@ -197,3 +221,5 @@ Sempre usar `handoff_payload.yaml` com **summary**, não raw data.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

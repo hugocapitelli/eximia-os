@@ -1,3 +1,27 @@
+---
+title: "Benchmark Scorecard Template — Z1 Architect"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "benchmark-scorecard-template"
+  - "benchmark scorecard template —"
+  - "🎯 propósito"
+  - "1. agent overview"
+  - "2. competency benchmarks"
+  - "3. quality metrics"
+  - "4. process metrics"
+  - "5. aggregate score"
+  - "calculation"
+  - "target"
+tags:
+  - "galaxy-creation"
+  - "template"
+---
+
 # Benchmark Scorecard Template — Z1 Architect
 
 ## 🎯 Propósito
@@ -122,3 +146,5 @@ Comparar o agente proposto com o **Top 1%** do domínio.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

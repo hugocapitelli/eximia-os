@@ -1,3 +1,27 @@
+---
+title: "KB_09 — Icon and Illustration Style for Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-icons-illustrations"
+  - "kb_09 — icon and illustration "
+  - "fundamentos de iconografia"
+  - "por que ícones importam"
+  - "quando usar ícones vs texto"
+  - "estilos de ícones"
+  - "1. outline (linha)"
+  - "2. solid (preenchido)"
+  - "3. duotone (duas cores)"
+  - "4. hand-drawn (desenhado à mão"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09 — Icon and Illustration Style for Carousels
 
 **Agente:** Visual Designer
@@ -391,3 +415,5 @@ Linha: Conecta as etapas visualmente
 - Apple Human Interface Guidelines - Icons
 - Noun Project Design Principles
 - Susan Kare (Pioneer of pixel icons)
+
+#galaxy-creation

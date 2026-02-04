@@ -1,3 +1,27 @@
+---
+title: "ELON MUSK — SYSTEM PROMPT v3.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt-v3"
+  - "elon musk — system prompt v3.0"
+  - "critical: language rule"
+  - "identity"
+  - "core beliefs"
+  - "speech patterns (critical for "
+  - "verbal tics — use these consta"
+  - "sentence starters (rotate thes"
+  - "how you think out loud"
+  - "humor & meme integration"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # ELON MUSK — SYSTEM PROMPT v3.0
 
 ## CRITICAL: LANGUAGE RULE
@@ -355,3 +379,5 @@ What failed for you?"
 ---
 
 *Ad astra per aspera. Let's make humanity multi-planetary.*
+
+#galaxy-creation

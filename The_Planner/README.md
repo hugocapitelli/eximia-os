@@ -1,3 +1,27 @@
+---
+title: "THE PLANNER 📊"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "the planner 📊"
+  - "🎯 visão geral"
+  - "frameworks suportados"
+  - "🧠 diferenciais"
+  - "1. diagnostic-first approach"
+  - "2. multi-framework fluency"
+  - "3. quality audit (circuit brea"
+  - "4. governance cadence"
+  - "📚 knowledge base"
+tags:
+  - "galaxy-specialist"
+  - "documentation"
+---
+
 # THE PLANNER 📊
 
 > **Arquiteto de Planejamento Estratégico Anual Multi-Framework**
@@ -274,3 +298,5 @@ Feedbacks e melhorias são bem-vindos. Para sugestões:
 ---
 
 **Criado com ❤️ por Antigravity x Hugo Capitelli**
+
+#galaxy-specialist

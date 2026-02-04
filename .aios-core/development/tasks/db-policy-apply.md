@@ -1,3 +1,27 @@
+---
+title: "Task: Apply RLS Policy Template"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-policy-apply"
+  - "task: apply rls policy templat"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Apply RLS Policy Template
 
 **Purpose**: Install KISS or granular RLS policies on a table
@@ -651,3 +675,5 @@ If policy application fails:
 2. Verify auth.uid() is available (Supabase)
 3. Check for existing policies with same names
 4. Rollback migration if needed: `*rollback`
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "rmbc-checklist"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "rmbc-checklist"
+  - "checklist metadata"
+  - "section 1: research phase vali"
+  - "avatar research"
+  - "pain point mining"
+  - "desire mapping"
+  - "proof arsenal"
+  - "competitive analysis"
+  - "key belief"
+  - "research quality score"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # rmbc-checklist
 
 Checklist completo de validação do RMBC Method - baseado na metodologia Stefan Georgi.
@@ -321,3 +345,5 @@ checklist:
 
 *Checklist Version: 1.0*
 *Created: 2026-01-23*
+
+#galaxy-tools

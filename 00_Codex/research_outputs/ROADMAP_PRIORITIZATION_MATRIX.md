@@ -1,3 +1,27 @@
+---
+title: "EXÍMIA FINANCE — Roadmap Prioritization Matrix"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "roadmap-prioritization-matrix"
+  - "exímia finance — roadmap prior"
+  - "quick reference for feature se"
+  - "quick prioritization framework"
+  - "tier 1: mvp must-have (weeks 1"
+  - "tier 2: v1.5 post-mvp quick wi"
+  - "tier 3: v2.0 strategic expansi"
+  - "user-centric impact matrix"
+  - "who benefits most (by user seg"
+  - "competitive advantage scoring"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # EXÍMIA FINANCE — Roadmap Prioritization Matrix
 ## Quick Reference for Feature Selection
 
@@ -344,3 +368,4 @@ BUFFER: None (tight but doable)
 **Validation Level:** HIGH CONFIDENCE
 **Next Review:** End of Sprint 2 (Week 4)
 
+#galaxy-codex

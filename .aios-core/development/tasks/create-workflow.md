@@ -368,4 +368,6 @@ ELICIT: Resources and Dependencies
 - Workflows are selected during project initialization
 - Each stage execution is logged in memory
 - Progress tracking available through memory queries
-- Agents automatically receive stage-specific context 
+- Agents automatically receive stage-specific context
+
+#galaxy-runtime

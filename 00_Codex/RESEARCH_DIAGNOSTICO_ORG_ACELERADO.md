@@ -1,3 +1,27 @@
+---
+title: "RESEARCH: Diagnóstico Organizacional Acelerado por IA"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "research-diagnostico-org-acelerado"
+  - "research: diagnóstico organiza"
+  - "📌 executive summary"
+  - "🎯 frameworks consolidados"
+  - "1. bpm/bpmn (business process "
+  - "2. bpr - business process reen"
+  - "3. lean six sigma - dmaic cycl"
+  - "4. agentic ai & ai discovery"
+  - "5. intelligent document proces"
+  - "👤 mentores & referências"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # RESEARCH: Diagnóstico Organizacional Acelerado por IA
 
 **Data:** 2026-01-24
@@ -392,3 +416,5 @@ Consultoria Manual       +      Ferramentas Técnicas       =        Nada que at
 **Data de conclusão:** 2026-01-24
 **Status:** ✅ Pronto para implementação
 **Próximo passo:** Iniciar MVP com foco em BPR + DMAIC + Agentic AI
+
+#galaxy-codex

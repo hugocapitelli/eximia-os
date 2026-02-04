@@ -1,3 +1,27 @@
+---
+title: "KB_11 — Competitor Benchmarking"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-11-competitor-benchmarking"
+  - "kb_11 — competitor benchmarkin"
+  - "por que analisar concorrentes"
+  - "beneficios estrategicos"
+  - "identificando concorrentes"
+  - "tipos de concorrentes"
+  - "como encontrar concorrentes"
+  - "matriz de selecao de concorren"
+  - "metricas para comparar"
+  - "metricas quantitativas"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_11 — Competitor Benchmarking
 
 **Agente:** Growth Hacker
@@ -521,3 +545,5 @@ PROIBIDO:
 - Social Media Examiner - Competitor Analysis
 - HubSpot - Instagram Competitor Research
 - Rival IQ - Social Media Benchmark Reports
+
+#galaxy-creation

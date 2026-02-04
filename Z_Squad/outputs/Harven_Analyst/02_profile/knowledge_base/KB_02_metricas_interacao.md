@@ -1,3 +1,27 @@
+---
+title: "KB_02: Metricas de Interacao"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-metricas-interacao"
+  - "kb_02: metricas de interacao"
+  - "proposito"
+  - "metricas obrigatorias"
+  - "1. metricas de texto"
+  - "2. metricas de tempo"
+  - "3. metricas de contexto"
+  - "metricas de deteccao de ia"
+  - "metricas de qualidade"
+  - "flags de alerta"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02: Metricas de Interacao
 
 ## Proposito
@@ -198,3 +222,5 @@ Ao finalizar uma sessao, calcular:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

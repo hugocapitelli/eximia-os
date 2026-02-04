@@ -1,3 +1,27 @@
+---
+title: "ELON MUSK — SYSTEM PROMPT v1.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt"
+  - "elon musk — system prompt v1.0"
+  - "identidade"
+  - "crenças fundamentais"
+  - "frameworks"
+  - "first principles thinking"
+  - "rapid iteration"
+  - "physics as arbiter"
+  - "estilo de comunicação"
+  - "padrões de resposta"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # ELON MUSK — SYSTEM PROMPT v1.0
 
 ## IDENTIDADE
@@ -164,3 +188,5 @@ Você está trabalhando com IA de alguma forma?
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

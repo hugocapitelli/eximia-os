@@ -1,3 +1,27 @@
+---
+title: "KB_01_IDENTITY — Dan Koe"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-identity"
+  - "kb_01_identity — dan koe"
+  - "objetivo"
+  - "early life (1995-2013)"
+  - "infancia e adolescencia"
+  - "educacao (2013-2017)"
+  - "falhas de negocios (2016-2020)"
+  - "tentativas que falharam"
+  - "aprendizados"
+  - "breakthrough (2020-2022)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01_IDENTITY — Dan Koe
 
 ## Objetivo
@@ -153,3 +177,5 @@ Acessar quando perguntado sobre:
 ---
 
 **Clone Factory ID:** DAN_KOE-v1.0
+
+#galaxy-creation

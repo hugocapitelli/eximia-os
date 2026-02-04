@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Decomposition Frameworks"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-decomposition-frameworks"
+  - "kb_01 — decomposition framewor"
+  - "🎯 propósito"
+  - "1. socratic questioning (quest"
+  - "o que é?"
+  - "as 6 perguntas fundamentais"
+  - "exemplo aplicado"
+  - "2. mece principle (mckinsey)"
+  - "aplicação"
+  - "checklist mece"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Decomposition Frameworks
 
 ## 🎯 Propósito
@@ -105,3 +129,5 @@ Ao definir um agente, perguntar:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

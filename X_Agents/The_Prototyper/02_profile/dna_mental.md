@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — The_Prototyper (ProtoOS)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental — the_prototyper (p"
+  - "1. identidade cognitiva"
+  - "1.1 arquétipo central"
+  - "1.2 missão"
+  - "1.3 crenças fundamentais (core"
+  - "2. mentores clonados"
+  - "2.1 marty cagan (inspired, emp"
+  - "2.2 teresa torres (continuous "
+  - "2.3 ken norton (google pm phil"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # DNA Mental — The_Prototyper (ProtoOS)
 
 > *"Um bom PRD não descreve uma solução — ele captura um problema tão bem que a solução se torna inevitável."*
@@ -293,3 +317,5 @@ Interpretação:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

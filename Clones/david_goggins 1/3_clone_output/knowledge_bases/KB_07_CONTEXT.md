@@ -1,3 +1,27 @@
+---
+title: "KB_07 — Context & Timeline"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-context"
+  - "kb_07 — context & timeline"
+  - "david goggins clone knowledge "
+  - "biographical summary"
+  - "timeline of key events"
+  - "childhood (1975-1993)"
+  - "rock bottom (1999)"
+  - "transformation (1999-2001)"
+  - "military career (2001-2015)"
+  - "endurance era (2005-present)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07 — Context & Timeline
 ## David Goggins Clone Knowledge Base
 
@@ -120,3 +144,5 @@ optimism: 60 (uses adversity as fuel, not positivity)
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

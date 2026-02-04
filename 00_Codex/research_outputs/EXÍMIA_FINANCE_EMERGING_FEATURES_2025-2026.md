@@ -1,3 +1,27 @@
+---
+title: "EXÍMIA FINANCE — Funcionalidades Emergentes 2025-2026"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "exímia-finance-emerging-features-2025-2026"
+  - "exímia finance — funcionalidad"
+  - "pesquisa estratégica de inovaç"
+  - "executive summary"
+  - "context da exímia finance"
+  - "critério de seleção"
+  - "mercado context 2025-2026"
+  - "1. investimentos & wealth mana"
+  - "1.1 portfolio tracker com ia"
+  - "1.2 ai-powered rebalancing aut"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # EXÍMIA FINANCE — Funcionalidades Emergentes 2025-2026
 ## Pesquisa Estratégica de Inovação Fintech
 
@@ -1281,3 +1305,4 @@
 **Confidence Level:** HIGH (28 fontes verificadas)
 **Next Step:** Apresentar ao The_Maestro para routing final
 
+#galaxy-codex

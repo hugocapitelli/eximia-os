@@ -1,3 +1,27 @@
+---
+title: "Neurociência da Aprendizagem - Estudo Consolidado"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "neuroscience-of-learning-comprehensive-study"
+  - "neurociência da aprendizagem -"
+  - "📋 sumário executivo"
+  - "🧠 parte 1: os 12 princípios c"
+  - "contexto histórico"
+  - "princípio 1: unicidade do cére"
+  - "princípio 2: ameaça e estresse"
+  - "princípio 3: emoções são críti"
+  - "princípio 4: múltiplas vias de"
+  - "princípio 5: conexão mente-cor"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Neurociência da Aprendizagem - Estudo Consolidado
 
 > **Estudo produzido em:** 2026-02-01
@@ -1158,3 +1182,5 @@ credibility_score: 9.5
 status: validated
 language: pt-BR
 ```
+
+#galaxy-codex

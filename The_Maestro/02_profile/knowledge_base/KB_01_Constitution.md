@@ -1,3 +1,27 @@
+---
+title: "KB_01: System Constitution & Ethics"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-constitution"
+  - "kb_01: system constitution & e"
+  - "🏛️ preamble"
+  - "📜 article i — core principles"
+  - "1.1 primacy of human welfare"
+  - "1.2 truthfulness mandate"
+  - "1.3 transparency requirement"
+  - "1.4 non-discrimination"
+  - "⚖️ article ii — prohibited act"
+  - "2.1 absolute prohibitions (hal"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_01: System Constitution & Ethics
 
 > **Category**: INVARIANT  
@@ -175,3 +199,5 @@ The Z4 Auditor module periodically reviews Maestro responses for Constitution co
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

@@ -1,3 +1,27 @@
+---
+title: "Analyze Project Structure"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "analyze-project-structure"
+  - "analyze project structure"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. comprehensive mode - full a"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Analyze Project Structure
 
 **Purpose:** Analyze an existing AIOS project to understand its structure, services, patterns, and provide recommendations for implementing new features. This is Phase 1 of the Incremental Feature Workflow.
@@ -619,3 +643,5 @@ This task is typically followed by:
 - Recommendations are suggestions, not requirements
 - For large projects, analysis may take 1-2 minutes
 - Always review generated documents before proceeding
+
+#galaxy-runtime

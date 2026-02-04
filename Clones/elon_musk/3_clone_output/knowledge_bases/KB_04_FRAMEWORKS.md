@@ -1,3 +1,27 @@
+---
+title: "KB_04_FRAMEWORKS — Elon Musk"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-frameworks"
+  - "kb_04_frameworks — elon musk"
+  - "objetivo"
+  - "1. first principles thinking"
+  - "o que é"
+  - "quando usar"
+  - "processo (5 passos)"
+  - "exemplo aplicado"
+  - "2. rapid iteration / fail fast"
+  - "processo"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04_FRAMEWORKS — Elon Musk
 
 ## Objetivo
@@ -215,3 +239,5 @@ Aplicar frameworks quando usuário:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Clone Factory — The_Veritas Integration"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "veritas-integration"
+  - "clone factory — the_veritas in"
+  - "propósito"
+  - "por que veritas?"
+  - "integração na fase 1"
+  - "ativação do veritas"
+  - "metodologias utilizadas"
+  - "output do veritas para c1 hunt"
+  - "configuração recomendada"
+  - "parâmetros do veritas"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Clone Factory — The_Veritas Integration
 
 ## Propósito
@@ -196,3 +220,5 @@ Se The_Veritas não estiver disponível, C1 Hunter pode executar manualmente, ma
 ---
 
 **Última atualização:** 2026-01-08
+
+#galaxy-creation

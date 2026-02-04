@@ -1,3 +1,27 @@
+---
+title: "Handoff: Copy Workflows YOLO"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "handoff"
+  - "handoff: copy workflows yolo"
+  - "estado atual"
+  - "context mínimo"
+  - "erros a evitar"
+  - "arquivos tocados"
+  - "validação"
+  - "status do projeto - final"
+  - "todas as stories"
+  - "próxima story"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Handoff: Copy Workflows YOLO
 
 ## Estado Atual
@@ -93,3 +117,5 @@
 - 19 agents
 - 15 checklists
 - 19 templates
+
+#galaxy-tools

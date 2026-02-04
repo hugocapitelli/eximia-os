@@ -1,3 +1,27 @@
+---
+title: "Z Squad Pipeline Guide — For The CEO"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "pipeline-guide"
+  - "z squad pipeline guide — for t"
+  - "🎯 propósito"
+  - "📋 table of contents"
+  - "1. visão geral do pipeline"
+  - "2. como solicitar um novo agen"
+  - "passo 1: formular o request"
+  - "passo 2: acionar o z squad"
+  - "passo 3: revisar spec (z1)"
+  - "passo 4: aguardar pipeline"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Z Squad Pipeline Guide — For The CEO
 
 ## 🎯 Propósito
@@ -173,3 +197,5 @@ Z_Squad/Z5_Evolver/agent_registry.yaml
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

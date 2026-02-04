@@ -1,3 +1,27 @@
+---
+title: "Validation Report — {NOME DO ESPECIALISTA}"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "08-validation"
+  - "validation report — {nome do e"
+  - "metadata"
+  - "1. scores por dimensão"
+  - "2. turing test results"
+  - "resumo"
+  - "detalhes por cenário"
+  - "3. style compliance"
+  - "checklist"
+  - "4. ethics compliance"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Validation Report — {NOME DO ESPECIALISTA}
 
 ## Metadata
@@ -154,3 +178,5 @@ Se APPROVED:
 **Avaliador:** C4_Auditor
 **Data:** {data}
 **Clone Factory Version:** 1.0
+
+#galaxy-creation

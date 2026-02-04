@@ -1,3 +1,27 @@
+---
+title: "Task: DB Smoke Test"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-smoke-test"
+  - "task: db smoke test"
+  - "process"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: DB Smoke Test
 
 **Purpose**: Run post-migration validation checks
@@ -349,3 +373,5 @@ SELECT 1 FROM protected_table LIMIT 1;
 → Consider rollback: `*rollback {snapshot}`  
 → Fix migration  
 → Retry
+
+#galaxy-runtime

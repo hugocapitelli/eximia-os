@@ -1,3 +1,27 @@
+---
+title: "Lex Fridman Podcast #400 — Elon Musk Transcript Excerpts"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "lex-fridman-400"
+  - "lex fridman podcast #400 — elo"
+  - "verbatim quotes extracted"
+  - "on war and human nature"
+  - "on physics and truth"
+  - "on philosophy and consciousnes"
+  - "on ai"
+  - "on multi-planetary life"
+  - "on aliens and transparency"
+  - "on simulation theory"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Lex Fridman Podcast #400 — Elon Musk Transcript Excerpts
 
 **Source:** https://lexfridman.com/elon-musk-4-transcript/
@@ -148,3 +172,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

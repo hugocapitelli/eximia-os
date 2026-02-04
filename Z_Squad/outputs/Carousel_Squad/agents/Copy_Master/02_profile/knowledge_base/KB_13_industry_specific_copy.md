@@ -1,3 +1,27 @@
+---
+title: "KB_13 — Industry-Specific Copy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-13-industry-specific-copy"
+  - "kb_13 — industry-specific copy"
+  - "por que copy varia por industr"
+  - "setor 1: b2b (business-to-busi"
+  - "caracteristicas do publico"
+  - "tom e linguagem b2b"
+  - "estrutura de copy b2b"
+  - "templates b2b"
+  - "setor 2: b2c (business-to-cons"
+  - "tom e linguagem b2c"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_13 — Industry-Specific Copy
 
 **Agente:** Copy Master
@@ -392,3 +416,5 @@ X Assumir que "funciona pra todo mundo"
 ---
 
 *"Nao existe copy bom ou ruim. Existe copy certo ou errado para aquele publico."* — Copy Master
+
+#galaxy-creation

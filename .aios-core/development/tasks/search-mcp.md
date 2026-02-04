@@ -1,3 +1,27 @@
+---
+title: "Search MCP Catalog Task"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "search-mcp"
+  - "search mcp catalog task"
+  - "task definition"
+  - "pre-conditions"
+  - "interactive elicitation"
+  - "step 1: search query"
+  - "step 2: display results"
+  - "step 3: show mcp details (opti"
+  - "implementation steps"
+  - "1. search the catalog"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Search MCP Catalog Task
 
 > Search and discover available MCP servers in the Docker MCP Toolkit catalog.
@@ -307,3 +331,5 @@ updated_at: 2025-12-17
 agents:
   - devops
 ```
+
+#galaxy-runtime

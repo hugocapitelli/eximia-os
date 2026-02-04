@@ -1,3 +1,27 @@
+---
+title: "KB_14 — NASA/USDA Data Products"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-14-nasa-usda-data"
+  - "kb_14 — nasa/usda data product"
+  - "categoria: estratégia"
+  - "palavras: ~2,000"
+  - "atualizado: 2026-01-07"
+  - "1. nasa agricultural data"
+  - "nasa harvest"
+  - "earthdata (nasa)"
+  - "fews net (usaid/nasa)"
+  - "2. usda data products"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_14 — NASA/USDA Data Products
 
 ## Categoria: ESTRATÉGIA
@@ -134,3 +158,5 @@ Parâmetros:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

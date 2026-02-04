@@ -301,3 +301,5 @@ const { syncStoryToPM } = require('../.aios-core/scripts/story-manager');
 
 await syncStoryToPM(storyPath);
 ```
+
+#galaxy-runtime

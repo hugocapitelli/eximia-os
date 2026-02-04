@@ -1,3 +1,27 @@
+---
+title: "Map 6 Primary Motives - Collier Method"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "map-6-primary-motives"
+  - "map 6 primary motives - collie"
+  - "purpose"
+  - "when to use"
+  - "collier's 6 primary motives"
+  - "inputs"
+  - "workflow"
+  - "step 1: understand each motive"
+  - "step 2: analyze your prospect"
+  - "step 3: determine the hierarch"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Map 6 Primary Motives - Collier Method
 
 ## Purpose
@@ -559,3 +583,5 @@ MOTIVE MISMATCH RED FLAGS:
 - **Uses**: Mental conversation analysis, customer research
 - **Next step**: Start writing copy with clear motive focus
 - **Agent**: @robert-collier (Tier 0 - Conversation Master)
+
+#galaxy-tools

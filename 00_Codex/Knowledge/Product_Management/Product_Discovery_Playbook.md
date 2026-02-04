@@ -1,3 +1,27 @@
+---
+title: "Product Discovery Playbook: Continuous Discovery & OST"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "product-discovery-playbook"
+  - "product discovery playbook: co"
+  - "1. the mindset: continuous dis"
+  - "2. the opportunity solution tr"
+  - "structure"
+  - "pruning the tree"
+  - "3. validating assumptions (not"
+  - "4. the product trio"
+  - "5. agent instructions for prd "
+  - "codex"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Product Discovery Playbook: Continuous Discovery & OST
 
 **Source Authority:** Teresa Torres, Marty Cagan.
@@ -41,3 +65,5 @@ Discovery is performed by the **Trio**:
 1.  **OST Integration:** In the `Context` section of the PRD, briefly describe the "Opportunity" being addressed and link it to the "Business Outcome".
 2.  **Risk Assessment:** Create a section called `Discovery Risks` where you list specific Assumption Tests that *were* or *should be* run (e.g., "Assumption: Users want to share reports. Validation: 4/5 users clicked the 'Share' dummy button in interviews.").
 3.  **Iterative Mindset:** Define "Success" not as "feature deployed" but as "Outcome impacted".
+
+#galaxy-codex

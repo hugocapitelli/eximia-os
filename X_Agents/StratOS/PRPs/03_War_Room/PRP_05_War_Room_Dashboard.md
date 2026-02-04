@@ -1,3 +1,27 @@
+---
+title: "PRP-05: War Room - Executive Dashboard"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prp-05-war-room-dashboard"
+  - "prp-05: war room - executive d"
+  - "1. objetivo"
+  - "2. user stories"
+  - "3. arquitetura de componentes"
+  - "4. requisitos funcionais"
+  - "5. wireframe principal"
+  - "6. wireframe - bsc card drill-"
+  - "7. cálculo de status"
+  - "7.1 lógica de agregação"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # PRP-05: War Room - Executive Dashboard
 
 > **Module:** War Room (Dashboard Executivo)
@@ -517,3 +541,5 @@ POST /api/war-room/:cycleId/share-link
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

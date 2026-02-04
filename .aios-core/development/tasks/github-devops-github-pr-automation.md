@@ -1,3 +1,27 @@
+---
+title: "github-pr-automation.md"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "github-devops-github-pr-automation"
+  - "github-pr-automation.md"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # github-pr-automation.md
 
 **Task**: GitHub Pull Request Automation (Repository-Agnostic)
@@ -662,3 +686,5 @@ github:
 - Gracefully handles missing story file
 - Uses GitHub CLI for reliability
 - Repository context from detector
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "KB_05 — Open Loop Techniques"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-open-loop-techniques"
+  - "kb_05 — open loop techniques"
+  - "o que sao open loops?"
+  - "tipos de open loops"
+  - "1. loop de curiosidade"
+  - "2. loop de padrão"
+  - "3. loop de narrativa"
+  - "4. loop de promessa"
+  - "5. loop de contraste"
+  - "6. loop de identidade"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05 — Open Loop Techniques
 
 **Agente:** Story Architect
@@ -299,3 +323,5 @@ Se voce adia uma revelacao, o conteudo entre o loop e o fechamento deve valer a 
 - George Loewenstein, The Psychology of Curiosity
 - Chip Heath, Made to Stick
 - Andrew Davis, Town Inc.
+
+#galaxy-creation

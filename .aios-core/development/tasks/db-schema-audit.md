@@ -1,3 +1,27 @@
+---
+title: "Task: Schema Audit"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-schema-audit"
+  - "task: schema audit"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Schema Audit
 
 **Purpose**: Comprehensive audit of database schema quality and best practices
@@ -1009,3 +1033,5 @@ ORDER BY conrelid::regclass::TEXT, conname;
 - [PostgreSQL Audit Trigger](https://wiki.postgresql.org/wiki/Audit_trigger)
 - [pgAudit Extension](https://www.pgaudit.org/)
 - [pgTAP Documentation](https://pgtap.org/)
+
+#galaxy-runtime

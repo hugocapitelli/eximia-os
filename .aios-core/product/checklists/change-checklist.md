@@ -1,3 +1,25 @@
+---
+title: "Change Navigation Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "change-checklist"
+  - "change navigation checklist"
+  - "1. understand the trigger & co"
+  - "2. epic impact assessment"
+  - "3. artifact conflict & impact "
+  - "4. path forward evaluation"
+  - "5. sprint change proposal comp"
+  - "6. final review & handoff"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Change Navigation Checklist
 
 **Purpose:** To systematically guide the selected Agent and user through the analysis and planning required when a significant change (pivot, tech issue, missing requirement, failed story) is identified during the AIOS workflow.
@@ -180,4 +202,5 @@ Keep it action-oriented and forward-looking.]]
 - [ ] **Confirm Next Steps:** Reiterate the handoff plan and the next actions to be taken by specific agents.
 
 ---
- 
+
+#galaxy-runtime

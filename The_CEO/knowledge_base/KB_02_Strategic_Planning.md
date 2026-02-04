@@ -1,3 +1,27 @@
+---
+title: "KB_02: Planejamento Estratégico Ágil (Strategic Roadmap)"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-strategic-planning"
+  - "kb_02: planejamento estratégic"
+  - "1. o pipeline de planejamento"
+  - "2. template de roadmap (markdo"
+  - "roadmap estratégico: [nome pro"
+  - "objetivos (okrs)"
+  - "fases de execução"
+  - "fase 1: fundação (semana 1)"
+  - "fase 2: construção (semana 2)"
+  - "3. priorização (rice score)"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_02: Planejamento Estratégico Ágil (Strategic Roadmap)
 
 Como o CEO transforma "visão" em "tarefas".
@@ -53,3 +77,5 @@ Para decidir o que fazer primeiro:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

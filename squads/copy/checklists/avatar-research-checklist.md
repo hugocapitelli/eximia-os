@@ -1,3 +1,27 @@
+---
+title: "Avatar Research Checklist"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "avatar-research-checklist"
+  - "avatar research checklist"
+  - "metadata"
+  - "1. coleta de dados (15 pontos)"
+  - "fontes (5 pontos)"
+  - "qualidade das citações (10 pon"
+  - "2. dados gerais (10 pontos)"
+  - "demográficos (5 pontos)"
+  - "completude (5 pontos)"
+  - "3. gosto pessoal (10 pontos)"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Avatar Research Checklist
 
 ## Metadata
@@ -175,3 +199,5 @@ Data: __________________________
 Score: _______ / 100
 Status: [ ] Aprovado  [ ] Revisar  [ ] Refazer
 ```
+
+#galaxy-operational

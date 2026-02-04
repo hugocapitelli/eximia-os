@@ -1,3 +1,27 @@
+---
+title: "KB_08 — Content Calendar Strategy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-content-calendar-strategy"
+  - "kb_08 — content calendar strat"
+  - "por que planejamento de 30-60 "
+  - "anatomia de um calendário de c"
+  - "estrutura base (30 dias)"
+  - "framework de distribuição de c"
+  - "proporção tofu-mofu-bofu (12 p"
+  - "distribuição por tipo de carro"
+  - "sistema de pilares de conteúdo"
+  - "definindo seus 3-5 pilares"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08 — Content Calendar Strategy
 
 **Agente:** Carousel Maestro
@@ -354,3 +378,5 @@ INSPIRACIONAL:
 - [Later: Social Media Content Calendar Guide](https://later.com)
 - Ann Handley, *Everybody Writes* (2014)
 - Joe Pulizzi, *Content Inc* (2021)
+
+#galaxy-creation

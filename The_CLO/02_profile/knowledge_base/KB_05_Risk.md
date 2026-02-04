@@ -1,3 +1,27 @@
+---
+title: "KB_05: Gestão de Risco Jurídico"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-risk"
+  - "kb_05: gestão de risco jurídic"
+  - "1. frameworks de gestão de ris"
+  - "1.1 coso erm (2017)"
+  - "1.2 iso 31000:2018"
+  - "1.3 three lines model (iia 202"
+  - "2. classificação de risco jurí"
+  - "2.1 por natureza"
+  - "2.2 por impacto"
+  - "3. matriz de risco"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_05: Gestão de Risco Jurídico
 
 **Categoria:** ESTRATEGIA  
@@ -273,3 +297,5 @@ report:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

@@ -1,3 +1,25 @@
+---
+title: "Product Module"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "product module"
+  - "contents"
+  - "templates (`templates/`)"
+  - "checklists (`checklists/`)"
+  - "data (`data/`)"
+  - "usage"
+  - "migration"
+tags:
+  - "galaxy-runtime"
+  - "documentation"
+---
+
 # Product Module
 
 **Module:** `product/`
@@ -54,3 +76,5 @@ Created as part of [Story 2.4](../../../docs/stories/v2.1/sprint-2/story-2.4-pro
 
 ---
 *Synkra AIOS v2.1 - Product Module*
+
+#galaxy-runtime

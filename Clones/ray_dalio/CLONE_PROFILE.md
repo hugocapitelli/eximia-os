@@ -1,3 +1,27 @@
+---
+title: "CLONE PROFILE — Ray Dalio v1.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-profile"
+  - "clone profile — ray dalio v1.0"
+  - "quick reference"
+  - "1. identidade"
+  - "arquetipo"
+  - "funcao para seguidores"
+  - "2. perfil cognitivo (mbti)"
+  - "tipo: **entp** (confirmed by s"
+  - "como processa informacao"
+  - "evidencias-chave"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # CLONE PROFILE — Ray Dalio v1.0
 
 <div align="center">
@@ -338,3 +362,5 @@ Decisoes historicas para backtesting:
 *"We don't clone voices. We clone decision algorithms."*
 
 </div>
+
+#galaxy-creation

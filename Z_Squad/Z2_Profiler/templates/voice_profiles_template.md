@@ -1,3 +1,27 @@
+---
+title: "Voice Profiles Template — Z2 Profiler"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "voice-profiles-template"
+  - "voice profiles template — z2 p"
+  - "🎯 propósito"
+  - "1. por que 3 profiles?"
+  - "2. template"
+  - "voice_profiles.md"
+  - "agent: [nome_do_agente]"
+  - "profile 1: visionário (30%)"
+  - "profile 2: pragmático (50%)"
+  - "profile 3: socrático (20%)"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # Voice Profiles Template — Z2 Profiler
 
 ## 🎯 Propósito
@@ -145,3 +169,5 @@ de que há demanda? Como você definiria sucesso nessa expansão?"
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

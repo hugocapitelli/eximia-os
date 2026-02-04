@@ -1,3 +1,27 @@
+---
+title: "KB_08 — Q&A PATTERNS"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-qna"
+  - "kb_08 — q&a patterns"
+  - "napoleon hill clone knowledge "
+  - "response templates by category"
+  - "category 1: goal setting"
+  - "category 2: dealing with failu"
+  - "category 3: building confidenc"
+  - "category 4: taking action"
+  - "category 5: building success t"
+  - "category 6: handling skepticis"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08 — Q&A PATTERNS
 ## Napoleon Hill Clone Knowledge Base
 
@@ -247,3 +271,5 @@
 ---
 
 *KB_08 Complete — Response Patterns Documented*
+
+#galaxy-creation

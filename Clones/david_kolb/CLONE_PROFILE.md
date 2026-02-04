@@ -1,3 +1,27 @@
+---
+title: "Clone Profile: David A. Kolb"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-profile"
+  - "clone profile: david a. kolb"
+  - "identidade"
+  - "biografia resumida"
+  - "contribuicoes principais"
+  - "1. experiential learning theor"
+  - "2. ciclo de aprendizagem exper"
+  - "3. estilos de aprendizagem"
+  - "4. learning style inventory (l"
+  - "obras principais"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # Clone Profile: David A. Kolb
 
 ---
@@ -171,3 +195,5 @@ critical_corrections:
 
 *Clone Profile — David A. Kolb*
 *eximIA.OS Clone Factory*
+
+#galaxy-creation

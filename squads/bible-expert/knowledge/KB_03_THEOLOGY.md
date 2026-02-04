@@ -1,3 +1,27 @@
+---
+title: "KB_03: Theological Frameworks & Interpretive Approaches"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-theology"
+  - "kb_03: theological frameworks "
+  - "introduction"
+  - "major theological traditions"
+  - "1. reformed theology (calvinis"
+  - "2. arminian theology (wesleyan"
+  - "3. catholic theology"
+  - "4. orthodox theology (eastern "
+  - "5. pentecostal/charismatic the"
+  - "6. evangelical theology"
+tags:
+  - "galaxy-operational"
+  - "knowledge-base"
+---
+
 # KB_03: Theological Frameworks & Interpretive Approaches
 
 ## Introduction
@@ -330,3 +354,5 @@ This knowledge base documents major theological frameworks, interpretive approac
 **Last Updated**: 2026-01-27
 **Version**: 1.0.0
 **Note**: This KB documents theology descriptively, not prescriptively. O Biblista holds all these in respect and helps seekers understand them.
+
+#galaxy-operational

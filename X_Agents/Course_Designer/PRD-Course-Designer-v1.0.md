@@ -1,3 +1,27 @@
+---
+title: "PRD — Course Designer"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prd-course-designer-v1.0"
+  - "prd — course designer"
+  - "sumário executivo"
+  - "índice"
+  - "1. visão geral"
+  - "1.1 por que course_designer ex"
+  - "1.2 posicionamento no ecossist"
+  - "1.3 casos de uso"
+  - "1.4 ui/ux inspiration (lendári"
+  - "dashboard metrics"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # PRD — Course Designer
 **Agent:** X_Agents/Course_Designer
 **Versão:** 1.0
@@ -571,3 +595,5 @@ OKR Workshop Materials
 
 *Course_Designer v1.0 — Where Learning Architecture Becomes Science*
 *eximIA.OS — 2026*
+
+#galaxy-specialist

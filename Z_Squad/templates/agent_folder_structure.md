@@ -1,3 +1,27 @@
+---
+title: "Agent Folder Structure — Z Squad Standard"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agent-folder-structure"
+  - "agent folder structure — z squ"
+  - "📁 estrutura padrão"
+  - "🏷️ convenções de nomenclatura"
+  - "🔢 numeração de pastas"
+  - "📝 readme.md padrão"
+  - "{agent name} v{version}"
+  - "quick start"
+  - "competências"
+  - "arquivos importantes"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Agent Folder Structure — Z Squad Standard
 
 ## 📁 Estrutura Padrão
@@ -112,3 +136,5 @@ Cada agente deve ter um `README.md` na raiz com:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

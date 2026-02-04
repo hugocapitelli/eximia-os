@@ -1,3 +1,27 @@
+---
+title: "KB_07: Problem-Based Learning - Brazilian & Portuguese Sources"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-brazilian-portuguese-sources"
+  - "kb_07: problem-based learning "
+  - "resumo executivo"
+  - "terminologia em português"
+  - "tradução de termos-chave"
+  - "livros fundamentais em portugu"
+  - "1. aprendizagem baseada em pro"
+  - "2. aprendizagem baseada em pro"
+  - "3. abp – aprendizagem baseada "
+  - "autores brasileiros de referên"
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
+
 # KB_07: Problem-Based Learning - Brazilian & Portuguese Sources
 
 **Knowledge Base:** PBL em Português (Brasil e Portugal)
@@ -861,3 +885,5 @@ Este Knowledge Base documenta **29 fontes** sobre Aprendizagem Baseada em Proble
 **Confidence:** 85% (Tier 1-2 Brazilian sources via SCIELO and academic institutions)
 **Version:** 1.0
 **Status:** Production Ready
+
+#galaxy-codex

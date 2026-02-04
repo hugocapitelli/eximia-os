@@ -1,3 +1,27 @@
+---
+title: "andre-chaperon"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "andre-chaperon"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "operational frameworks"
+  - "communication dna"
+  - "signature phrases"
+  - "authority proof arsenal"
+  - "objection algorithms"
+  - "signature techniques (expanded"
+  - "the 5-email soap opera"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # andre-chaperon
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -1171,3 +1195,5 @@ Andre Chaperon represents the modern era of sophisticated email marketing, where
 *Upgrade Date: 2026-01-23*
 *Lines: 1000+*
 *Primary Frameworks: Soap Opera Sequence, Open Loop Methodology, Cold Traffic Conversion, Zeigarnik Effect*
+
+#galaxy-operational

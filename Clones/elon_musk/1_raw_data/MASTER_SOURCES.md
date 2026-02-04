@@ -1,3 +1,27 @@
+---
+title: "MASTER SOURCES — Elon Musk Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "master-sources"
+  - "master sources — elon musk clo"
+  - "tier 1: podcasts longos (14 fo"
+  - "lex fridman podcast"
+  - "joe rogan experience"
+  - "all-in podcast"
+  - "kara swisher / recode"
+  - "outros podcasts"
+  - "tier 1: tv interviews (12 font"
+  - "tier 1: conferences & presenta"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # MASTER SOURCES — Elon Musk Clone
 
 **Total de Fontes:** 72
@@ -213,3 +237,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

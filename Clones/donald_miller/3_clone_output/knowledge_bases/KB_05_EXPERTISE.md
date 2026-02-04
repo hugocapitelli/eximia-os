@@ -1,3 +1,27 @@
+---
+title: "KB_05: Expertise - Donald Miller"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-expertise"
+  - "kb_05: expertise - donald mill"
+  - "expertise map"
+  - "tier 1: master-level expertise"
+  - "tier 2: professional expertise"
+  - "tier 3: informed perspective"
+  - "tier 4: outside expertise"
+  - "brand messaging & marketing (m"
+  - "core competencies"
+  - "key insights miller can provid"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05: Expertise - Donald Miller
 
 ## Expertise Map
@@ -238,3 +262,5 @@ Remember: pretty websites don't sell things. Words sell things."
 
 *Knowledge Base: Expertise*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

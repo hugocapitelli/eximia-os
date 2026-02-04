@@ -1,3 +1,27 @@
+---
+title: "book_processor Response"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "2026-01-10-014509-analyze-and-summarize-this-article-exame"
+  - "book_processor response"
+  - "exame: aliado ouve atendimento"
+  - "resumo"
+  - "investidores e parceiros"
+  - "conclusão"
+  - "para quem é"
+  - "para quem não é"
+  - "veredicto"
+  - "metadata"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # book_processor Response
 
 **Timestamp:** 2026-01-10T01:45:09.118640
@@ -50,3 +74,5 @@ A Aliado oferece um produto inovador que tem potencial para transformar a maneir
 - **Model:** ollama/qwen2.5:14b
 - **Tokens:** 4647
 - **Time:** 133098.151ms
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "Copy Debate & Critique Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copy-debate-methodology-research"
+  - "copy debate & critique methodo"
+  - "executive summary"
+  - "part 1: foundational debate me"
+  - "1.1 socratic method (método so"
+  - "1.2 pragma-dialectics (pragma-"
+  - "1.3 argumentation theory (teor"
+  - "part 2: modern critique framew"
+  - "2.1 steel-manning (vs straw-ma"
+  - "2.2 devil's advocate (advogado"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Copy Debate & Critique Methodology Research
 
 ## Executive Summary
@@ -1921,3 +1945,5 @@ ROUND 4: SYNTHESIS - Copy Chief decide
 *Generated: 2026-01-23*
 *Copy Framework v2.0 Upgrade - US-041*
 *Total Lines: 1150+*
+
+#galaxy-tools

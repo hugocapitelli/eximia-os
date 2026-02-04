@@ -1,3 +1,27 @@
+---
+title: "Framework Index — Themis Sentinel CLO"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "framework-index"
+  - "framework index — themis senti"
+  - "1. raciocínio jurídico (8 fram"
+  - "2. gestão de risco (10 framewo"
+  - "3. compliance & anticorrupção "
+  - "4. contratos (8 frameworks)"
+  - "5. negociação (6 frameworks)"
+  - "6. m&a & due diligence (6 fram"
+  - "7. governança corporativa (6 f"
+  - "8. litígio & arbitragem (5 fra"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Framework Index — Themis Sentinel CLO
 
 **Total de Frameworks:** 62  
@@ -192,3 +216,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

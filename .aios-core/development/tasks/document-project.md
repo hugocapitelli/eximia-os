@@ -550,4 +550,6 @@ Apply the advanced elicitation task after major sections to refine based on user
 - References actual files rather than duplicating content when possible
 - Documents technical debt, workarounds, and constraints honestly
 - For brownfield projects with PRD: Provides clear enhancement impact analysis
-- The goal is PRACTICAL documentation for AI agents doing real work 
+- The goal is PRACTICAL documentation for AI agents doing real work
+
+#galaxy-runtime

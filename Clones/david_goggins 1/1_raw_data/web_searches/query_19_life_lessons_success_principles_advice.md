@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Life Lessons, Success Principles & Advice"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-19-life-lessons-success-principles-advice"
+  - "david goggins - life lessons, "
+  - "background context"
+  - "core success principles"
+  - "1. the 40% rule"
+  - "2. mental toughness"
+  - "3. the accountability mirror"
+  - "4. the cookie jar"
+  - "5. discipline over motivation"
+  - "6. embrace discomfort"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Life Lessons, Success Principles & Advice
 
 **Source:** Web Search - "David Goggins life lessons advice success principles"
@@ -328,3 +352,5 @@ Push past comfort, discover what you're truly capable of.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

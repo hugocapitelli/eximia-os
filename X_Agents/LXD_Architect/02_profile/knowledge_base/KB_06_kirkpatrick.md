@@ -1,3 +1,27 @@
+---
+title: "KB_06: Avaliação de Treinamento — Kirkpatrick"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-kirkpatrick"
+  - "kb_06: avaliação de treinament"
+  - "visão geral"
+  - "os 4 níveis"
+  - "nível 1: reação"
+  - "o que mede"
+  - "métodos de avaliação"
+  - "perguntas típicas"
+  - "target"
+  - "limitações"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_06: Avaliação de Treinamento — Kirkpatrick
 
 ## Visão Geral
@@ -237,3 +261,5 @@ EXECUÇÃO: Nível 1 → 2 → 3 → 4
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

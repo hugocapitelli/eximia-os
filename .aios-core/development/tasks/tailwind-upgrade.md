@@ -1,3 +1,27 @@
+---
+title: "Tailwind CSS v4 Upgrade Playbook"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "tailwind-upgrade"
+  - "tailwind css v4 upgrade playbo"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Tailwind CSS v4 Upgrade Playbook
 
 > Task ID: brad-tailwind-upgrade  
@@ -292,3 +316,5 @@ Plan and execute migration from Tailwind CSS v3 (or earlier) to v4 (Oxide engine
 - Tailwind plugins may require v4-compatible versions (@tailwindcss/forms/typography/container-queries)
 - Validate IDE tooling (Tailwind IntelliSense, Prettier plugin) upgraded to v4-aware releases
 - Encourage incremental adoption: keep feature flags until confidence is high
+
+#galaxy-runtime

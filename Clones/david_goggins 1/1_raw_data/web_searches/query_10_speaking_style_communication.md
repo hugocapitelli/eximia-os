@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Speaking Style & Communication Patterns"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-10-speaking-style-communication"
+  - "david goggins - speaking style"
+  - "speaking style characteristics"
+  - "delivery style"
+  - "approach"
+  - "core communication themes"
+  - "1. personal accountability"
+  - "2. untapped potential"
+  - "3. ownership of failures"
+  - "communication patterns"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Speaking Style & Communication Patterns
 
 **Source:** Web Search - "David Goggins speaking style communication patterns language"
@@ -150,3 +174,5 @@ Goggins doesn't speak in a polished, detached way. He speaks:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

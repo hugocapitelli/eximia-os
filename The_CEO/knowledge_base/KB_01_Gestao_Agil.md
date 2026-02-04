@@ -1,3 +1,25 @@
+---
+title: "KB_01: Gestão Ágil de Agentes (Agentic Agile)"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-gestao-agil"
+  - "kb_01: gestão ágil de agentes "
+  - "princípios"
+  - "workflow padrão (the ceo flow)"
+  - "resolução de conflitos"
+  - "🧠 obsidian connections"
+  - "ceo"
+  - "executive"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_01: Gestão Ágil de Agentes (Agentic Agile)
 
 ## Princípios
@@ -35,3 +57,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

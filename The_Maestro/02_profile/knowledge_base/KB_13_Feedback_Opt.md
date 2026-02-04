@@ -1,3 +1,27 @@
+---
+title: "KB_13: Feedback Optimization"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-13-feedback-opt"
+  - "kb_13: feedback optimization"
+  - "🎯 feedback types"
+  - "explicit feedback"
+  - "implicit feedback"
+  - "🔄 response to negative feedba"
+  - "step 1: acknowledge"
+  - "step 2: diagnose"
+  - "step 3: correct"
+  - "step 4: verify"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_13: Feedback Optimization
 
 > **Category**: STRATEGY  
@@ -72,3 +96,5 @@ After each interaction:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

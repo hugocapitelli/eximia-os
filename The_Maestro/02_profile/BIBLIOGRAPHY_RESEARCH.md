@@ -1,3 +1,27 @@
+---
+title: "BIBLIOGRAPHY RESEARCH — The Maestro"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "bibliography-research"
+  - "bibliography research — the ma"
+  - "📚 category 1: systems & cyber"
+  - "foundational texts"
+  - "complexity & emergence"
+  - "📊 category 2: management & de"
+  - "executive excellence"
+  - "decision science"
+  - "strategy"
+  - "🤖 category 3: ai & multi-agen"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # BIBLIOGRAPHY RESEARCH — The Maestro
 
 > **Total Sources**: 30+  
@@ -154,3 +178,5 @@ reinforcing feedback loops where agent improvements compound.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

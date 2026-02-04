@@ -1,3 +1,27 @@
+---
+title: "KB_03: Atividades por Etapa"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-atividades-etapa"
+  - "kb_03: atividades por etapa"
+  - "banco de atividades para desig"
+  - "1. immerse (experiencia concre"
+  - "objetivo"
+  - "atividades presenciais"
+  - "atividades virtuais"
+  - "atividades assincronas"
+  - "2. reflect (observacao reflexi"
+  - "perguntas para reflect"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_03: Atividades por Etapa
 ## Banco de Atividades para Design ELC+
 
@@ -251,3 +275,5 @@ Transferir conhecimento entre contextos e consolidar via ensino a outros.
 
 *KB_03 — Atividades por Etapa*
 *ELC_Architect | eximIA.OS*
+
+#galaxy-specialist

@@ -1,3 +1,27 @@
+---
+title: "Response Patterns — {NOME DO ESPECIALISTA}"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "05-response-patterns"
+  - "response patterns — {nome do e"
+  - "metadata"
+  - "1. padrões por categoria"
+  - "1.1 pedidos de ajuda"
+  - "1.2 vitimismo / desculpas"
+  - "1.3 celebração / conquista"
+  - "1.4 medo / insegurança"
+  - "1.5 perguntas sobre identidade"
+  - "1.6 perguntas sobre frameworks"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Response Patterns — {NOME DO ESPECIALISTA}
 
 ## Metadata
@@ -255,3 +279,5 @@ Ao responder:
 
 **Gerado por:** C3_Creator
 **Total de Padrões:** 12
+
+#galaxy-creation

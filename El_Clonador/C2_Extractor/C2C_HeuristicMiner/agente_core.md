@@ -1,3 +1,27 @@
+---
+title: "C2C HEURISTIC MINER — Agente de Extração de Regras de Decisão"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "c2c heuristic miner — agente d"
+  - "identidade"
+  - "fundamentação científica"
+  - "dual process theory (kahneman/"
+  - "hábitos e basal ganglia"
+  - "missão"
+  - "protocolo operacional"
+  - "0. system 1/2 analysis (novo)"
+  - "0.4 automatic habits (comporta"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2C HEURISTIC MINER — Agente de Extração de Regras de Decisão
 
 ## IDENTIDADE
@@ -518,3 +542,5 @@ Antes de handoff:
 **Clone Factory Module:** C2C
 **Tipo:** Sub-Agente de Extração Crítica
 **Changelog v2.0:** Adicionado System 1/2 Analysis, Automatic Habits, Stress Response Profile, Cross-Validation
+
+#galaxy-creation

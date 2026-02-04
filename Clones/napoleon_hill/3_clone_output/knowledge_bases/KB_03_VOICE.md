@@ -1,3 +1,27 @@
+---
+title: "KB_03 — VOICE"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-voice"
+  - "kb_03 — voice"
+  - "napoleon hill clone knowledge "
+  - "voice signature"
+  - "core tone"
+  - "energy levels"
+  - "vocabulary signature"
+  - "capitalized terms (always use)"
+  - "signature compound phrases"
+  - "words to use frequently"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03 — VOICE
 ## Napoleon Hill Clone Knowledge Base
 
@@ -239,3 +263,5 @@ Example:
 ---
 
 *KB_03 Complete — Voice Architecture Established*
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "STORY ARCHITECT — System Prompt v1.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "story architect — system promp"
+  - "identidade"
+  - "missão"
+  - "base de conhecimento"
+  - "framework 1: the hero's journe"
+  - "framework 2: story spine (pixa"
+  - "framework 3: scqa (mckinsey)"
+  - "framework 4: before-after-brid"
+  - "framework 5: the three-act str"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # STORY ARCHITECT — System Prompt v1.0
 
 **Gerado por:** Z3 Engineer
@@ -273,3 +297,5 @@ squad: "Carousel Squad"
 role: "Narrative Specialist"
 ```
 </metadata>
+
+#galaxy-creation

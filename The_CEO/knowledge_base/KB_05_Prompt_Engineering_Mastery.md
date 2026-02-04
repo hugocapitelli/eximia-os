@@ -1,3 +1,27 @@
+---
+title: "KB_05: Prompt Engineering Mastery (PraisonAI Edition)"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-prompt-engineering-mastery"
+  - "kb_05: prompt engineering mast"
+  - "1. the core philosophy: "garba"
+  - "2. advanced techniques"
+  - "a. step-back prompting (the st"
+  - "b. chain of thought (the reaso"
+  - "c. few-shot prompting (the tea"
+  - "3. the "hyde" prep (hypothetic"
+  - "4. the "gatekeeper" checklist"
+  - "🧠 obsidian connections"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_05: Prompt Engineering Mastery (PraisonAI Edition)
 
 ## 1. The Core Philosophy: "Garbage In, Garbage Out"
@@ -65,3 +89,5 @@ Before approving a prompt for the Researcher, verify:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

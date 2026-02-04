@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Typography Mastery for Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-typography-mastery"
+  - "kb_02 — typography mastery for"
+  - "fundamentos tipográficos"
+  - "a importância da tipografia"
+  - "anatomia tipográfica essencial"
+  - "font pairing strategies"
+  - "the 2+1 rule"
+  - "pairing techniques"
+  - "proven font combinations for s"
+  - "typographic hierarchy"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — Typography Mastery for Carousels
 
 **Agente:** Visual Designer
@@ -275,3 +299,5 @@ Users scroll quickly. Typography must:
 - Robert Bringhurst, "The Elements of Typographic Style"
 - Google Material Design Typography Guidelines
 - Apple Human Interface Guidelines - Typography
+
+#galaxy-creation

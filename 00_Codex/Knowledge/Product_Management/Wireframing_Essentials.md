@@ -1,3 +1,27 @@
+---
+title: "Wireframing Essentials & Best Practices"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "wireframing-essentials"
+  - "wireframing essentials & best "
+  - "philosophy"
+  - "the process"
+  - "1. low-fidelity (lo-fi) - "the"
+  - "2. mid-fidelity (mi-fi) - "the"
+  - "3. high-fidelity (hi-fi) - "th"
+  - "best practices for ai-driven p"
+  - "checklist"
+  - "codex"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Wireframing Essentials & Best Practices
 
 ## Philosophy
@@ -39,3 +63,5 @@ When building wireframes to be consumed by AI Agents (like `generate_image` or c
 - [ ] Is the primary call-to-action (CTA) obvious?
 - [ ] Is the navigation consistent?
 - [ ] Are we using real text to test content fit?
+
+#galaxy-codex

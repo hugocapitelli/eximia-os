@@ -1,3 +1,27 @@
+---
+title: "Evaluate Offer Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "evaluate-offer-methodology-research"
+  - "evaluate offer methodology res"
+  - "research foundation for copy f"
+  - "part 1: alex hormozi value equ"
+  - "1.1 the core value formula"
+  - "1.2 maximizing each variable"
+  - "1.3 the grand slam offer compo"
+  - "1.4 value equation scoring mat"
+  - "part 2: dan kennedy's irresist"
+  - "2.1 the usp (unique selling pr"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Evaluate Offer Methodology Research
 
 ## Research Foundation for Copy Framework v2.0
@@ -1053,3 +1077,5 @@ P.S. [Restate main benefit + urgency]
 
 *Research compiled for Copy Framework v2.0 upgrade*
 *Total: 520+ lines of methodology research*
+
+#galaxy-tools

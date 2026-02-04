@@ -1,3 +1,27 @@
+---
+title: "Agent Health Status"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agent-health"
+  - "agent health status"
+  - "última atualização: 2026-01-08"
+  - "🟢 agentes operacionais"
+  - "📊 x-agents por squad"
+  - "squad 1: decisão"
+  - "squad 2: execução"
+  - "squad 3: conhecimento"
+  - "squad 4: negócio"
+  - "📈 métricas de performance"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # Agent Health Status
 ## Última Atualização: 2026-01-08
 
@@ -109,3 +133,5 @@ Dashboard de status operacional dos agentes coordenados pelo Maestro.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

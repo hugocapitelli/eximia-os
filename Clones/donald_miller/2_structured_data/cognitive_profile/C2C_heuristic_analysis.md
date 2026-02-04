@@ -1,3 +1,27 @@
+---
+title: "C2C: Heuristic Analysis - Donald Miller"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2c-heuristic-analysis"
+  - "c2c: heuristic analysis - dona"
+  - "overview"
+  - "master heuristic index"
+  - "category 1: communication & me"
+  - "category 2: business & strateg"
+  - "category 3: sales & marketing"
+  - "category 4: personal developme"
+  - "category 5: leadership"
+  - "decision trees"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2C: Heuristic Analysis - Donald Miller
 
 ## Overview
@@ -236,3 +260,5 @@ START: Life feels stuck or meaningless
 
 *Analysis conducted using behavioral pattern extraction methodology*
 *C2C_HeuristicMiner | El_Clonador Pipeline v4.0*
+
+#galaxy-creation

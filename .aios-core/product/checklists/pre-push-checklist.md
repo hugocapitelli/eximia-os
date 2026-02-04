@@ -1,3 +1,22 @@
+---
+title: "Pre-Push Quality Gate Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "pre-push-checklist"
+  - "pre-push quality gate checklis"
+  - "instructions for devops agent"
+  - "checklist items"
+  - "final confirmation"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Pre-Push Quality Gate Checklist
 
 ## Instructions for DevOps Agent
@@ -106,3 +125,5 @@ After completing the checklist:
 Only push when confident in quality.]]
 
 - [ ] I, the DevOps Agent, confirm that all quality gates have passed and the code is safe to push to remote.
+
+#galaxy-runtime

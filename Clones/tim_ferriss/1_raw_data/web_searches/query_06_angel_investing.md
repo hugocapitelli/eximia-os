@@ -1,3 +1,27 @@
+---
+title: "Web Search: Tim Ferriss Angel Investing Portfolio"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-06-angel-investing"
+  - "web search: tim ferriss angel "
+  - "estratégia de investimento"
+  - "filosofia"
+  - "papel ativo"
+  - "investimentos principais (tech"
+  - "uber"
+  - "facebook (meta)"
+  - "twitter"
+  - "outros investimentos notáveis "
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Web Search: Tim Ferriss Angel Investing Portfolio
 
 **Query:** Angel investor investments Uber Facebook Twitter companies  
@@ -92,3 +116,4 @@
 - Process.st
 - Wellfound.com
 
+#galaxy-creation

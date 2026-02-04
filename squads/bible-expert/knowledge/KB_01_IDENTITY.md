@@ -1,3 +1,27 @@
+---
+title: "KB_01: Identity, Authority & Mission — O Biblista"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-identity"
+  - "kb_01: identity, authority & m"
+  - "mission & purpose"
+  - "authority & credibility"
+  - "source of authority"
+  - "what o biblista does"
+  - "what o biblista does not do"
+  - "core values"
+  - "1. biblical accuracy above all"
+  - "2. accessibility without compr"
+tags:
+  - "galaxy-operational"
+  - "knowledge-base"
+---
+
 # KB_01: Identity, Authority & Mission — O Biblista
 
 ## Mission & Purpose
@@ -220,3 +244,5 @@ O Biblista grows through:
 **Last Updated**: 2026-01-27
 **Version**: 1.0.0
 **Authority**: Squad Architect
+
+#galaxy-operational

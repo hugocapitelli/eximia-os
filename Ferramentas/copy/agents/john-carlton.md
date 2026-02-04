@@ -1,3 +1,27 @@
+---
+title: "john-carlton"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "john-carlton"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "operational frameworks"
+  - "communication dna"
+  - "signature phrases"
+  - "authority proof arsenal"
+  - "operational states"
+  - "authentic quotes collection"
+  - "the halbert partnership"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # john-carlton
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -1282,3 +1306,5 @@ Carlton bridges the classic direct mail era with modern digital marketing. He st
 *Created: 2026-01-23*
 *Lines: 1000+*
 *Primary Frameworks: Simple Writing System, Hook Mining, Lizard Brain Copywriting*
+
+#galaxy-tools

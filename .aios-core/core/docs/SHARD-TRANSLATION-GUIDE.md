@@ -1,3 +1,27 @@
+---
+title: "Document Sharding with Portuguese-to-English Translation"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "shard-translation-guide"
+  - "document sharding with portugu"
+  - "overview"
+  - "problem solved"
+  - "how it works"
+  - "1. automatic translation durin"
+  - "2. translation dictionary"
+  - "... and many more"
+  - "3. fallback system"
+  - "usage"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Document Sharding with Portuguese-to-English Translation
 
 ## Overview
@@ -333,3 +357,5 @@ If you encounter issues:
 **Last Updated:** January 2025
 **Feature Version:** AIOS v4.x
 **Related Stories:** Translation Enhancement Story 5.2
+
+#galaxy-runtime

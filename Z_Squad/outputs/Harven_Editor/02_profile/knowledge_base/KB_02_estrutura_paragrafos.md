@@ -1,3 +1,27 @@
+---
+title: "KB_02: Estrutura de Paragrafos"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-estrutura-paragrafos"
+  - "kb_02: estrutura de paragrafos"
+  - "regra de ouro"
+  - "estrutura visual"
+  - "cenarios de ajuste"
+  - "cenario 1: input com 1 paragra"
+  - "cenario 2: input com 3+ paragr"
+  - "cenario 3: input com pergunta "
+  - "cenario 4: input com multiplas"
+  - "tamanho dos paragrafos"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02: Estrutura de Paragrafos
 
 ## Regra de Ouro
@@ -176,3 +200,5 @@ Antes de entregar, verificar:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

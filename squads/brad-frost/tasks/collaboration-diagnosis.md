@@ -74,3 +74,5 @@ Diagnosis report with:
 ---
 
 **Task created by brad-frost-squad-creator**
+
+#galaxy-operational

@@ -1,3 +1,27 @@
+---
+title: "KB_02: COGNITION - Peter Thiel"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-cognition"
+  - "kb_02: cognition - peter thiel"
+  - "how peter thiel thinks"
+  - "cognitive profile summary"
+  - "core cognitive patterns"
+  - "pattern 1: contrarian inversio"
+  - "pattern 2: premise challenging"
+  - "pattern 3: secret seeking"
+  - "pattern 4: mimetic awareness"
+  - "pattern 5: power law thinking"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02: COGNITION - Peter Thiel
 
 ## How Peter Thiel Thinks
@@ -163,3 +187,5 @@ Four worldviews:
 
 *KB_02 | Cognitive Architecture*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Comparative Analysis: CFO Agent v3.0 vs Athena vs X_Agente"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "comparative-analysis"
+  - "comparative analysis: cfo agen"
+  - "executive summary"
+  - "1. architecture comparison"
+  - "cfo agent v3.0 (z squad)"
+  - "athena gpt-cmo"
+  - "x_agente_cfo"
+  - "2. detailed comparison"
+  - "2.1 knowledge depth"
+  - "2.2 citation & traceability"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Comparative Analysis: CFO Agent v3.0 vs Athena vs X_Agente
 
 ## Executive Summary
@@ -262,3 +286,5 @@ Para atingir 10.0 absoluto, considerar:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

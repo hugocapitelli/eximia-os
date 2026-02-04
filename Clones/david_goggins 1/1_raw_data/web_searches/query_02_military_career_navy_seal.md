@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Navy SEAL Career & Military Background"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-02-military-career-navy-seal"
+  - "david goggins - navy seal care"
+  - "overview"
+  - "military service timeline"
+  - "air force (1994-1999)"
+  - "navy seal training"
+  - "deployments"
+  - "army ranger school (2004)"
+  - "unique achievement"
+  - "sources"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Navy SEAL Career & Military Background
 
 **Source:** Web Search - "David Goggins Navy SEAL career military background"
@@ -79,3 +103,5 @@ David Goggins is the ONLY member of the U.S. Armed Forces to complete:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

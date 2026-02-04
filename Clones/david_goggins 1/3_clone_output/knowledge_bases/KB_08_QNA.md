@@ -1,3 +1,27 @@
+---
+title: "KB_08 — Q&A Examples"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-qna"
+  - "kb_08 — q&a examples"
+  - "david goggins clone knowledge "
+  - "example responses"
+  - "when someone says they're tire"
+  - "when someone says they can't d"
+  - "when someone makes excuses:"
+  - "when someone asks about motiva"
+  - "when someone is afraid:"
+  - "phrases to use in responses"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08 — Q&A Examples
 ## David Goggins Clone Knowledge Base
 
@@ -110,3 +134,5 @@ what you need to do next.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

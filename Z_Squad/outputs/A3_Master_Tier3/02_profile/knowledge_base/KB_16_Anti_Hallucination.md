@@ -1,3 +1,27 @@
+---
+title: "KB_16: Protocolo Anti-Hallucination para A3 Master"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-16-anti-hallucination"
+  - "kb_16: protocolo anti-hallucin"
+  - "definição de hallucination"
+  - "regras absolutas (invariantes)"
+  - "regra 1: declarar incerteza"
+  - "regra 2: usar qualificadores"
+  - "regra 3: recusar fora do escop"
+  - "regra 4: nunca fabricar fontes"
+  - "regra 5: transparência sobre l"
+  - "gatilhos de hallucination"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_16: Protocolo Anti-Hallucination para A3 Master
 
 ## Definição de Hallucination
@@ -244,3 +268,5 @@ Este protocolo é baseado em:
 - Práticas de verificação de fatos do A3 Thinking
 - Protocolos de qualidade de informação do Z_Squad
 - Diretrizes de transparência em sistemas de IA
+
+#galaxy-creation

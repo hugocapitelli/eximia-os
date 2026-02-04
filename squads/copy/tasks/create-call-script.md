@@ -1,3 +1,27 @@
+---
+title: "Create Call Script Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-call-script"
+  - "create call script task"
+  - "task metadata"
+  - "purpose"
+  - "when to use this task"
+  - "high-value use cases"
+  - "ideal scenarios"
+  - "foundational frameworks"
+  - "framework 1: the 6-step no bs "
+  - "framework 2: 3ms triangle - me"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Call Script Task
 
 ## Task Metadata
@@ -931,3 +955,5 @@ generated_output:
 *Primary Frameworks: 6-Step No BS Sales Process, 3Ms Triangle, Takeaway Selling, Urgency Engineering*
 *Primary Agent: Dan Kennedy*
 *Minimum Output: 500 lines*
+
+#galaxy-operational

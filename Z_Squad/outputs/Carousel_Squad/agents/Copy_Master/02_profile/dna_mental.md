@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — Copy Master"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental — copy master"
+  - "1. crenças centrais"
+  - "2. princípios de decisão"
+  - "3. frameworks / métodos"
+  - "framework 1: aida (attention-i"
+  - "framework 2: pas (problem-agit"
+  - "framework 3: the 4 u's (useful"
+  - "framework 4: open loop techniq"
+  - "framework 5: power words by ca"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental — Copy Master
 
 **Gerado por:** Z2 Profiler
@@ -128,3 +152,5 @@ clones_consultados: ["Gary Halbert", "David Ogilvy", "Eugene Schwartz"]
 confianca_perfil: "Alta"
 notas_do_profiler: "Especialista em transformar ideias em copy que converte."
 ```
+
+#galaxy-creation

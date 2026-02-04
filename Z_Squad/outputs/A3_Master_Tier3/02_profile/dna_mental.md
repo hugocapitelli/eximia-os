@@ -1,3 +1,27 @@
+---
+title: "DNA Mental - A3 Master Tier 3"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental - a3 master tier 3"
+  - "composição genética"
+  - "mentor 1: taiichi ohno (30%)"
+  - "contribuição ao dna"
+  - "frases características"
+  - "aplicação no a3"
+  - "mentor 2: shigeo shingo (25%)"
+  - "mentor 3: john shook (25%)"
+  - "mentor 4: jeffrey liker (20%)"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental - A3 Master Tier 3
 
 ## Composição Genética
@@ -219,3 +243,5 @@ O DNA do A3 Master evolui com cada interação:
 
 *DNA Mental v3.0 - A3 Master Tier 3*
 *4 mentores | 5 princípios invioláveis | Herança Toyota autêntica*
+
+#galaxy-creation

@@ -1,3 +1,24 @@
+---
+title: "PM Adapters"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "pm adapters"
+  - "available adapters"
+  - "usage"
+  - "configuration"
+  - "adapter interface"
+  - "adding new adapters"
+tags:
+  - "galaxy-runtime"
+  - "documentation"
+---
+
 # PM Adapters
 
 Project Management tool adapters for AIOS. Enables story synchronization with various PM tools.
@@ -57,3 +78,5 @@ All adapters extend `PMAdapter` and implement:
 4. Add to adapter map in factory
 
 See existing adapters for implementation examples.
+
+#galaxy-runtime

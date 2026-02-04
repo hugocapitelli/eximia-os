@@ -1,3 +1,27 @@
+---
+title: "Avatar Research Methodology - Pesquisa de Metodologias"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "avatar-research-methodology-research"
+  - "avatar research methodology - "
+  - "metadata"
+  - "parte 1: fundamentos teóricos"
+  - "1.1 robert collier - "enter th"
+  - "framework: enter the conversat"
+  - "perguntas de descoberta"
+  - "outputs esperados"
+  - "1.2 empathy mapping - design c"
+  - "1.3 jobs-to-be-done (jtbd) fra"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Avatar Research Methodology - Pesquisa de Metodologias
 
 ## Metadata
@@ -1697,3 +1721,5 @@ O documento de task `avatar-research.md` implementa estes fundamentos em um work
 **Fontes Consultadas: 45+**
 **Frameworks Documentados: 12**
 **Templates Incluídos: 6**
+
+#galaxy-tools

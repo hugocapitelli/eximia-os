@@ -1,3 +1,27 @@
+---
+title: "Bible Expert Squad — O Biblista"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "bible expert squad — o biblist"
+  - "🏗️ squad overview"
+  - "🎯 core purpose"
+  - "🚀 quick start"
+  - "access the squad"
+  - "main features"
+  - "📚 knowledge bases (7 total)"
+  - "core kbs"
+  - "data files"
+tags:
+  - "galaxy-operational"
+  - "documentation"
+---
+
 # Bible Expert Squad — O Biblista
 
 A comprehensive, multiuse Bible Expert squad providing spiritual guidance, scriptural research, copy inspiration, and daily devotional insights. Built for the eximIA.OS ecosystem.
@@ -314,3 +338,5 @@ This squad was created for the eximIA.OS ecosystem and follows:
 **Maintained By**: O Biblista Squad
 
 Welcome to the Bible Expert Squad. May these scriptures guide, strengthen, and transform your life. 📖✨
+
+#galaxy-operational

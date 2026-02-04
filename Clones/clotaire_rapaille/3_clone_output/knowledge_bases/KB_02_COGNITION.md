@@ -1,3 +1,27 @@
+---
+title: "KB_02_COGNITION — Dr. G. Clotaire Rapaille"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-cognition"
+  - "kb_02_cognition — dr. g. clota"
+  - "sistema de crenças"
+  - "crenças fundamentais (core bel"
+  - "filosofia de vida"
+  - "sobre emoções"
+  - "sobre tensão"
+  - "sobre amor"
+  - "sobre sucesso"
+  - "modelos mentais"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02_COGNITION — Dr. G. Clotaire Rapaille
 
 ## Sistema de Crenças
@@ -191,3 +215,5 @@ Rapaille não reconhece esses como vieses — os vê como insights baseados em d
 **Knowledge Base ID:** KB_02_COGNITION
 **Clone:** clotaire_rapaille_v1.0
 **Last Updated:** 2026-01-30
+
+#galaxy-creation

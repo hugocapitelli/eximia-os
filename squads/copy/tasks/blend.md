@@ -1,3 +1,27 @@
+---
+title: "Blend Task - Copy Style Blending Master Protocol"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "draft"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "blend"
+  - "blend task - copy style blendi"
+  - "meta"
+  - "purpose"
+  - "when to use"
+  - "ideal use cases"
+  - "when not to use"
+  - "inputs"
+  - "the seven-dimensional voice pr"
+  - "core dimensions"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Blend Task - Copy Style Blending Master Protocol
 
 ## Meta
@@ -1544,3 +1568,5 @@ Click below to discover the full protocol...
 *Task Version: 2.0.0*
 *Copy Framework v2.0 - Elite Copywriting Squad*
 *Research Source: docs/research/copy-blending-methodology-research.md*
+
+#galaxy-operational

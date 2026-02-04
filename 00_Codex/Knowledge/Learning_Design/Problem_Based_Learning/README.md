@@ -1,3 +1,27 @@
+---
+title: "Problem-Based Learning (PBL) - Knowledge Base"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "problem-based learning (pbl) -"
+  - "overview"
+  - "knowledge base structure"
+  - "kb_01_foundations.md"
+  - "kb_02_core_process.md"
+  - "kb_03_frameworks.md"
+  - "kb_04_research_evidence.md"
+  - "kb_05_implementation_guide.md"
+  - "kb_06_bibliography.md"
+tags:
+  - "galaxy-codex"
+  - "documentation"
+---
+
 # Problem-Based Learning (PBL) - Knowledge Base
 
 **Last Updated:** 2026-01-23
@@ -189,3 +213,5 @@ This Knowledge Base consolidates comprehensive research on **Problem-Based Learn
 **Last Reviewed:** 2026-01-23
 **Version:** 1.0.0
 **License:** Internal Use - exímIA Ventures
+
+#galaxy-codex

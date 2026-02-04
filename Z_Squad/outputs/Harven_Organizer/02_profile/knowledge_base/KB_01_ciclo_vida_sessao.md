@@ -1,3 +1,27 @@
+---
+title: "KB_01: Ciclo de Vida da Sessao"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-ciclo-vida-sessao"
+  - "kb_01: ciclo de vida da sessao"
+  - "proposito"
+  - "estados da sessao"
+  - "1. active"
+  - "2. completed"
+  - "3. exported"
+  - "4. export_failed"
+  - "5. abandoned (opcional)"
+  - "diagrama de estados"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01: Ciclo de Vida da Sessao
 
 ## Proposito
@@ -275,3 +299,5 @@ ORDER BY q.created_at ASC;
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

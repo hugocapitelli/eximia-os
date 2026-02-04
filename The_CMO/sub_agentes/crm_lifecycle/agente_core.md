@@ -1,3 +1,26 @@
+---
+title: "SUB-AGENT: CRM & LIFECYCLE — Elite v4.2 (Deepened)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "sub-agent: crm & lifecycle — e"
+  - "🎯 identidade profunda"
+  - "🧠 competências core (deep div"
+  - "🛡️ invariantes (proibições ab"
+  - "📦 output schema"
+  - "🧠 obsidian connections"
+  - "cmo"
+  - "marketing"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # SUB-AGENT: CRM & LIFECYCLE — Elite v4.2 (Deepened)
 
 **Função:** Customer Lifetime Value Maximizer
@@ -82,3 +105,5 @@ Você automatiza a empatia em escala.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

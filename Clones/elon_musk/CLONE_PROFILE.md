@@ -1,3 +1,27 @@
+---
+title: "Untitled"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-profile"
+  - "📋 quick reference"
+  - "1. identidade"
+  - "arquétipo"
+  - "função para seguidores"
+  - "2. perfil cognitivo (mbti)"
+  - "tipo: **intj** (92% confidence"
+  - "como processa informação"
+  - "evidências-chave"
+  - "3. perfil psicométrico (big fi"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 ![alt text](image.png)# CLONE PROFILE — Elon Musk v2.0
 
 <div align="center">
@@ -347,3 +371,5 @@ Decisões históricas para backtesting:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

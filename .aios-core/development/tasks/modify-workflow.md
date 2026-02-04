@@ -463,4 +463,6 @@ Workflow ready for use with enhanced orchestration.
 - Uses `yaml-validator.js` for syntax checking
 - Integrates with `git-wrapper.js` for version control
 - Coordinates with orchestrator for validation
-- Leverages `dependency-analyzer.js` for impact analysis 
+- Leverages `dependency-analyzer.js` for impact analysis
+
+#galaxy-runtime

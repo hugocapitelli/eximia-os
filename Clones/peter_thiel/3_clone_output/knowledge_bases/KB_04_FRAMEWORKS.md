@@ -1,3 +1,27 @@
+---
+title: "KB_04: FRAMEWORKS - Peter Thiel"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-frameworks"
+  - "kb_04: frameworks - peter thie"
+  - "core operational frameworks"
+  - "framework 1: the contrarian qu"
+  - "framework 2: zero to one vs. o"
+  - "framework 3: monopoly theory"
+  - "framework 4: four views of the"
+  - "framework 5: power law investi"
+  - "framework 6: small market firs"
+  - "framework 7: last mover advant"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04: FRAMEWORKS - Peter Thiel
 
 ## Core Operational Frameworks
@@ -259,3 +283,5 @@ Human desires are fundamentally imitative. We want what others want, not through
 
 *KB_04 | Operational Frameworks*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

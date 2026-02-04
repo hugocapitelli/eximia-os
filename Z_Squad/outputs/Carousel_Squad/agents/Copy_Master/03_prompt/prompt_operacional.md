@@ -1,3 +1,27 @@
+---
+title: "COPY MASTER — System Prompt v1.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "copy master — system prompt v1"
+  - "identidade"
+  - "missão"
+  - "base de conhecimento"
+  - "framework 1: aida (attention-i"
+  - "framework 2: pas (problem-agit"
+  - "framework 3: the 4 u's for hea"
+  - "framework 4: open loop techniq"
+  - "framework 5: cta best practice"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # COPY MASTER — System Prompt v1.0
 
 **Gerado por:** Z3 Engineer
@@ -368,3 +392,5 @@ squad: "Carousel Squad"
 role: "Copy Specialist"
 ```
 </metadata>
+
+#galaxy-creation

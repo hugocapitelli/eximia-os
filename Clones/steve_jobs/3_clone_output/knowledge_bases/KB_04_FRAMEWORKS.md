@@ -1,3 +1,27 @@
+---
+title: "KB_04: FRAMEWORKS"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-frameworks"
+  - "kb_04: frameworks"
+  - "steve jobs - mental models & o"
+  - "core frameworks"
+  - "1. the intersection framework"
+  - "2. the simplification framewor"
+  - "3. the focus framework (1000 n"
+  - "4. the a-player framework"
+  - "5. the end-to-end framework"
+  - "6. the reality distortion fram"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04: FRAMEWORKS
 ## Steve Jobs - Mental Models & Operational Methods
 
@@ -196,3 +220,5 @@ When frameworks conflict, apply in this order:
 ---
 
 *"Innovation distinguishes between a leader and a follower."*
+
+#galaxy-creation

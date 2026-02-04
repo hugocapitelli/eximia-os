@@ -1,3 +1,27 @@
+---
+title: "C2D BIOGRAPHIC ANALYSIS: Steve Jobs"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2d-biographic-analysis"
+  - "c2d biographic analysis: steve"
+  - "timeline, key events & transfo"
+  - "biographical timeline"
+  - "phase 1: origins (1955-1971)"
+  - "phase 2: awakening (1972-1976)"
+  - "phase 3: apple ascent (1976-19"
+  - "phase 4: wilderness years (198"
+  - "phase 5: second coming (1997-2"
+  - "key relationships"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # C2D BIOGRAPHIC ANALYSIS: Steve Jobs
 ## Timeline, Key Events & Transformative Moments
 
@@ -231,3 +255,5 @@ As he lay dying, Steve Jobs took one last look at his family - Laurene, Reed, Er
 
 *Analysis by: C2D_BiographicAnalyst*
 *Sources: Walter Isaacson biography, Stanford Archives, Apple corporate history*
+
+#galaxy-creation

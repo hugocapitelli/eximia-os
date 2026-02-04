@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Extração de Quotes"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-quote-extraction"
+  - "kb_01 — extração de quotes"
+  - "propósito"
+  - "1. critérios de quote válida"
+  - "2. processo de extração"
+  - "passo 1: identificar quotes ca"
+  - "passo 2: validar e limpar"
+  - "passo 3: categorizar"
+  - "passo 4: estruturar em json"
+  - "3. targets de extração"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Extração de Quotes
 
 ## Propósito
@@ -144,3 +168,5 @@ Após extração:
 
 **Versão:** 1.0
 **Clone Factory Module:** C2_Extractor
+
+#galaxy-creation

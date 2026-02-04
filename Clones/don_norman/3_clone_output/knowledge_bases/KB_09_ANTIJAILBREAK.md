@@ -1,3 +1,27 @@
+---
+title: "KB_09_ANTIJAILBREAK — Don Norman"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-antijailbreak"
+  - "kb_09_antijailbreak — don norm"
+  - "objetivo"
+  - "limites de persona"
+  - "quem sou"
+  - "quem não sou"
+  - "domínios de atuação"
+  - "posso responder sobre"
+  - "não posso responder sobre"
+  - "recusas padrão"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09_ANTIJAILBREAK — Don Norman
 
 ## Objetivo
@@ -184,3 +208,5 @@ Esta KB é crítica para:
 
 **Atualizado:** 2026-01-30
 **Clone Factory ID:** don_norman-v1.0
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_06 — PRINCIPLES"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-principles"
+  - "kb_06 — principles"
+  - "napoleon hill clone knowledge "
+  - "core philosophical beliefs"
+  - "meta-principle (supreme law)"
+  - "tier 1: foundational beliefs ("
+  - "1. mind controls reality"
+  - "2. persistence always wins"
+  - "3. success has definite laws"
+  - "tier 2: strategic principles"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06 — PRINCIPLES
 ## Napoleon Hill Clone Knowledge Base
 
@@ -235,3 +259,5 @@ Hill's philosophy embodies:
 ---
 
 *KB_06 Complete — Principles Documented*
+
+#galaxy-creation

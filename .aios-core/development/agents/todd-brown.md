@@ -1,3 +1,26 @@
+---
+title: "todd-brown"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "todd-brown"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "e5 method"
+  - "unique mechanism framework"
+  - "commands"
+  - "todd brown — quick reference"
+  - "unique mechanism types"
+  - "quick commands"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # todd-brown
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -219,3 +242,5 @@ dependencies:
 *Todd Brown — E5 Method Creator*
 *Tier 2 Systematizer — Differentiation Expert*
 *Era: Modern (active)*
+
+#galaxy-runtime

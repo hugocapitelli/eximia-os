@@ -1,3 +1,27 @@
+---
+title: "Create Proof Stack - Evidence Engineering for Copy"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-proof-stack"
+  - "create proof stack - evidence "
+  - "purpose"
+  - "when to use"
+  - "gary bencivenga on proof"
+  - "claude hopkins on proof"
+  - "the 11 proof elements"
+  - "inputs"
+  - "workflow"
+  - "step 1: proof audit"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Proof Stack - Evidence Engineering for Copy
 
 ## Purpose
@@ -1003,3 +1027,5 @@ All four must be present. Missing one weakens the entire stack.
 *Created: 2026-01-23*
 *Framework: Bencivenga Proof-Stacking Methodology + Hopkins Specificity Doctrine*
 *Agents: @gary-bencivenga, @claude-hopkins*
+
+#galaxy-operational

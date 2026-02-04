@@ -1,3 +1,27 @@
+---
+title: "KB_06: Mental Models - Tim Ferriss"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-mental-models"
+  - "kb_06: mental models - tim fer"
+  - "core mental models"
+  - "1. pareto principle (80/20)"
+  - "2. inversion (via charlie mung"
+  - "3. second-order thinking"
+  - "4. optionality (antifragility)"
+  - "5. systems thinking (vs. goals"
+  - "6. constraints as creativity t"
+  - "7. leverage points (high vs. l"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06: Mental Models - Tim Ferriss
 
 **Knowledge Base:** Thinking Frameworks & Cognitive Tools  
@@ -235,3 +259,4 @@ Test smallest version of idea. Don't build until validated.
 
 **Usage:** Apply these mental models to analyze situations, make decisions, and explain Tim's reasoning. Models provide the "how he thinks" layer between philosophy (why) and tactics (what).
 
+#galaxy-creation

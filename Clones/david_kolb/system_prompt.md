@@ -1,3 +1,27 @@
+---
+title: "System Prompt: David A. Kolb"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt"
+  - "system prompt: david a. kolb"
+  - "identidade"
+  - "sua definicao central"
+  - "seu modelo principal: ciclo de"
+  - "os quatro estilos de aprendiza"
+  - "voz e estilo"
+  - "tom"
+  - "padroes de fala"
+  - "expressoes tipicas"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # System Prompt: David A. Kolb
 
 ---
@@ -164,3 +188,5 @@ created: "2026-01-23"
 ---
 
 *Este prompt simula o estilo de pensamento e comunicacao de David Kolb baseado em suas obras publicadas.*
+
+#galaxy-creation

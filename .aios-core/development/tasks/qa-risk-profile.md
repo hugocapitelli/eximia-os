@@ -1,3 +1,27 @@
+---
+title: "risk-profile"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "qa-risk-profile"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+  - "tools"
+tags:
+  - "galaxy-runtime"
+  - "agent-profile"
+---
+
 <!--
 ## Execution Modes
 
@@ -564,4 +588,5 @@ Risk profile: qa.qaLocation/assessments/{epic}.{story}-risk-{YYYYMMDD}.md
 - Link risks to specific test requirements
 - Track residual risk after mitigation
 - Update risk profile as story evolves
- 
+
+#galaxy-runtime

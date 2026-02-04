@@ -1,3 +1,27 @@
+---
+title: "rmbc-method"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "rmbc-method"
+  - "task metadata"
+  - "overview"
+  - "phase 1: research (r) - 30% do"
+  - "1.1 o objetivo da research"
+  - "1.2 as 5 áreas de research"
+  - "avatar research template"
+  - "demographics"
+  - "psychographics"
+  - "situação atual"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # rmbc-method
 
 Task completa para criar copy usando o RMBC Method de Stefan Georgi - o sistema de 4 etapas que gerou $700M+ em vendas com 80% de taxa de sucesso.
@@ -957,3 +981,5 @@ Mas aqui está a verdade: [RESPOSTA]"
 *Created: 2026-01-23*
 *Lines: 850+*
 *Methodology: Stefan Georgi RMBC Method*
+
+#galaxy-operational

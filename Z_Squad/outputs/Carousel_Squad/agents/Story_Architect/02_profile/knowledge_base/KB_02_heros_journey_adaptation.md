@@ -1,3 +1,27 @@
+---
+title: "KB_02 — The Hero's Journey Adaptation"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-heros-journey-adaptation"
+  - "kb_02 — the hero's journey ada"
+  - "a jornada do heroi de joseph c"
+  - "os 12 estagios adaptados para "
+  - "acao 1: partida (slides 1-3)"
+  - "acao 2: iniciacao (slides 4-7)"
+  - "acao 3: retorno (slides 8-10)"
+  - "framework condensado: jornada "
+  - "arquetipos do leitor como hero"
+  - "quem e o heroi?"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — The Hero's Journey Adaptation
 
 **Agente:** Story Architect
@@ -182,3 +206,5 @@ Slide 10: RETORNO — "Agora e sua vez. [CTA]"
 - Christopher Vogler, The Writer's Journey
 - Donald Miller, Building a StoryBrand
 - Nancy Duarte, Resonate
+
+#galaxy-creation

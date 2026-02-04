@@ -1,3 +1,27 @@
+---
+title: "Guia do Usuário Synkra AIOS"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "user-guide"
+  - "guia do usuário synkra aios"
+  - "visão geral"
+  - "as duas inovações chave"
+  - "pré-requisitos"
+  - "instalação e configuração inic"
+  - "instalando aios-fullstack"
+  - "navegue para o diretório do se"
+  - "execute o instalador (versão r"
+  - "ou usando npm direto (produção"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Guia do Usuário Synkra AIOS
 
 ## Visão Geral
@@ -1411,3 +1435,5 @@ Veja `Squads/` para exemplos de:
 
 *Synkra AIOS User Guide v2.0*
 *Última atualização: Janeiro 2025*
+
+#galaxy-runtime

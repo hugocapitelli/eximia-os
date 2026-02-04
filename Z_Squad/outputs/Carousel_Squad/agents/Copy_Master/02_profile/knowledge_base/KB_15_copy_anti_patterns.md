@@ -1,3 +1,27 @@
+---
+title: "KB_15 — Copy Anti-Patterns"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-15-copy-anti-patterns"
+  - "kb_15 — copy anti-patterns"
+  - "o que sao anti-patterns?"
+  - "categoria 1: headlines que fra"
+  - "anti-pattern: headline generic"
+  - "anti-pattern: clickbait sem su"
+  - "anti-pattern: headline que ent"
+  - "categoria 2: erros de estrutur"
+  - "anti-pattern: muro de texto"
+  - "anti-pattern: falta de progres"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_15 — Copy Anti-Patterns
 
 **Agente:** Copy Master
@@ -459,3 +483,5 @@ reescreva.
 ---
 
 *"Os melhores copywriters erram menos. E erram menos porque conhecem os erros comuns de cor."* — Copy Master
+
+#galaxy-creation

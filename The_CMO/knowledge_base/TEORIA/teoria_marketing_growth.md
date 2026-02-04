@@ -1,3 +1,27 @@
+---
+title: "TEORIA: MARKETING & GROWTH FUNDAMENTALS"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "teoria-marketing-growth"
+  - "teoria: marketing & growth fun"
+  - "1. structured growth framework"
+  - "1.1 the aarrr funnel (pirate m"
+  - "1.2 brand archetypes (jungian)"
+  - "2. funnel economics (the physi"
+  - "2.1 ltv:cac ratio"
+  - "2.2 payback period"
+  - "3. psychology of persuasion (c"
+  - "🧠 obsidian connections"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # TEORIA: MARKETING & GROWTH FUNDAMENTALS
 
 **Domínio:** Chief Marketing Officer (CMO)
@@ -69,3 +93,5 @@ Tempo para recuperar o CAC.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

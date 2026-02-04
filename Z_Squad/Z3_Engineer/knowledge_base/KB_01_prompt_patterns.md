@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Prompt Structure Patterns"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-prompt-patterns"
+  - "kb_01 — prompt structure patte"
+  - "🎯 propósito"
+  - "1. anatomia de um system promp"
+  - "2. formatos de estruturação"
+  - "2.1 xml tags (recomendado)"
+  - "2.2 markdown (alternativa)"
+  - "identidade"
+  - "missão"
+  - "conhecimento"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Prompt Structure Patterns
 
 ## 🎯 Propósito
@@ -188,3 +212,5 @@ Regras inquebráveis em formato IF/THEN.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

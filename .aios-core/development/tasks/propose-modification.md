@@ -840,4 +840,6 @@ module.exports = ProposeModificationTask;
 - Ensure proper access control for proposals
 - Sanitize file paths and content
 - Log all proposal activities for audit
-- Protect sensitive component information 
+- Protect sensitive component information
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "FRAMEWORK_INDEX.md — LXD Architect"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "framework-index"
+  - "framework_index.md — lxd archi"
+  - "catálogo de 61+ frameworks"
+  - "categoria 1: teorias de aprend"
+  - "categoria 2: heutagogia e auto"
+  - "categoria 3: aprendizagem expe"
+  - "categoria 4: design instrucion"
+  - "categoria 5: neurociência e co"
+  - "categoria 6: avaliação e mediç"
+  - "categoria 7: taxonomias de obj"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # FRAMEWORK_INDEX.md — LXD Architect
 
 ## Catálogo de 61+ Frameworks
@@ -155,3 +179,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

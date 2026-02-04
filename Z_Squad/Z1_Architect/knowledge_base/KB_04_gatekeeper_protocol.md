@@ -1,3 +1,27 @@
+---
+title: "KB_04 — Gatekeeper Protocol"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-gatekeeper-protocol"
+  - "kb_04 — gatekeeper protocol"
+  - "🎯 propósito"
+  - "1. o que é o gatekeeper?"
+  - "2. workflow do gatekeeper"
+  - "3. técnicas de refinamento"
+  - "3.1 step-back prompting"
+  - "3.2 context injection ([contex"
+  - "3.3 intent clarification ([int"
+  - "3.4 hyde seed ([hyde_seed])"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04 — Gatekeeper Protocol
 
 ## 🎯 Propósito
@@ -177,3 +201,5 @@ gatekeeper_result:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "repository-cleanup.md"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "github-devops-repository-cleanup"
+  - "repository-cleanup.md"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # repository-cleanup.md
 
 **Task**: Repository Cleanup (Repository-Agnostic)
@@ -372,3 +396,5 @@ Called by `@github-devops` via `*cleanup` command.
 - Works with ANY repository
 - Safe defaults (no force delete)
 - Dry-run mode available
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "POST 001 — BEM-VINDO exímIA"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "post 001 — bem-vindo exímia"
+  - "📁 arquivos nesta pasta"
+  - "copywriting (3 versões)"
+  - "prompts de imagem"
+  - "🎯 recomendação de uso"
+  - "para linkedin (público executi"
+  - "para instagram (público dinâmi"
+  - "para audiência fria (awareness"
+  - "🎨 paleta de cores da marca"
+tags:
+  - "galaxy-tools"
+  - "documentation"
+---
+
 # POST 001 — BEM-VINDO exímIA
 
 **Data de criação**: 30/01/2026
@@ -115,3 +139,5 @@ Seja bem-vindo ao futuro que já começou.
 
 **Criado com**: Copy_Chief (Ogilvy, Schwartz, Halbert) + Direção de Arte Premium
 **Para**: exímIA — Human-Centered AI Agency
+
+#galaxy-tools

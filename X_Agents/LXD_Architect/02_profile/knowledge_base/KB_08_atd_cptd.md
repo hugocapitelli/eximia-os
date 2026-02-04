@@ -1,3 +1,27 @@
+---
+title: "KB_08: Competências ATD/CPTD"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-atd-cptd"
+  - "kb_08: competências atd/cptd"
+  - "visão geral"
+  - "talent development capability "
+  - "10 áreas de expertise"
+  - "detalhamento das 10 áreas"
+  - "1. acumen pessoal e profission"
+  - "2. acumen de negócio"
+  - "3. acumen em dados e analytics"
+  - "4. design de aprendizagem"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_08: Competências ATD/CPTD
 
 ## Visão Geral
@@ -229,3 +253,5 @@ A **ATD (Association for Talent Development)** é a principal associação globa
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

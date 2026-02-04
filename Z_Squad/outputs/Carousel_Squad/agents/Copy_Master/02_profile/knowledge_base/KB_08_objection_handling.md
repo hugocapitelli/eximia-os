@@ -1,3 +1,27 @@
+---
+title: "KB_08 — Objection Handling in Copy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-objection-handling"
+  - "kb_08 — objection handling in "
+  - "a psicologia das objecoes"
+  - "as 7 objecoes universais"
+  - "objecao 1: "nao tenho tempo""
+  - "objecao 2: "nao tenho dinheiro"
+  - "objecao 3: "nao vai funcionar "
+  - "objecao 4: "nao confio em voce"
+  - "objecao 5: "nao preciso disso "
+  - "objecao 6: "e muito complicado"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08 — Objection Handling in Copy
 
 **Agente:** Copy Master
@@ -396,3 +420,5 @@ X Prometer demais para compensar
 ---
 
 *"Toda venda tem uma objecao. O copy que vence e o que responde antes de ser perguntado."* — Copy Master
+
+#galaxy-creation

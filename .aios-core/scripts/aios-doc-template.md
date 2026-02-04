@@ -1,3 +1,27 @@
+---
+title: "AIOS Document Template Specification"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "aios-doc-template"
+  - "aios document template specifi"
+  - "overview"
+  - "template structure"
+  - "core fields"
+  - "template metadata"
+  - "workflow configuration"
+  - "section properties"
+  - "required fields"
+  - "optional fields"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # AIOS Document Template Specification
 
 ## Overview
@@ -323,3 +347,5 @@ When converting from markdown+frontmatter templates:
 5. Convert `{{placeholders}}` to proper variable syntax
 
 This specification ensures templates are both human-readable and machine-processable while maintaining the flexibility needed for complex document generation.
+
+#galaxy-runtime

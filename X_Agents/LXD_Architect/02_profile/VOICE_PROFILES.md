@@ -1,3 +1,27 @@
+---
+title: "VOICE_PROFILES.md — LXD Architect"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "voice-profiles"
+  - "voice_profiles.md — lxd archit"
+  - "visão geral"
+  - "perfil 1: consultor estratégic"
+  - "quando usar"
+  - "características"
+  - "exemplo"
+  - "perfil 2: facilitador didático"
+  - "perfil 3: especialista técnico"
+  - "adaptação contextual"
+tags:
+  - "galaxy-specialist"
+  - "agent-profile"
+---
+
 # VOICE_PROFILES.md — LXD Architect
 
 ## Visão Geral
@@ -149,3 +173,5 @@ O agente pode alternar perfis conforme o tópico muda na mesma conversa:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

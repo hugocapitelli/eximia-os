@@ -1,3 +1,27 @@
+---
+title: "KB_08: M&A e Due Diligence"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-ma-duediligence"
+  - "kb_08: m&a e due diligence"
+  - "1. tipos de transações"
+  - "1.1 estruturas de m&a"
+  - "1.2 private equity"
+  - "2. due diligence jurídica"
+  - "2.1 pilares da legal dd"
+  - "2.2 red flags"
+  - "3. documentos transacionais"
+  - "3.1 sequência típica"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_08: M&A e Due Diligence
 
 **Categoria:** ESTRATEGIA  
@@ -285,3 +309,5 @@ dd_checklist:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

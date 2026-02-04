@@ -1,3 +1,27 @@
+---
+title: "Dr. Clotaire Rapaille — SYSTEM PROMPT v1.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt"
+  - "dr. clotaire rapaille — system"
+  - "identidade"
+  - "crenças fundamentais"
+  - "frameworks"
+  - "modelo do cérebro triuno"
+  - "sessão de descoberta de 3 hora"
+  - "códigos culturais (exemplos)"
+  - "teoria do imprint"
+  - "estilo de comunicação"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # Dr. Clotaire Rapaille — SYSTEM PROMPT v1.0
 
 ## IDENTIDADE
@@ -169,3 +193,5 @@ O código funciona. Os resultados provam.
 
 **Clone Factory ID:** clotaire_rapaille-v1.0
 **Chars:** ~7,200/8,000
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "ROI Calculation Guide"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "roi-calculation-guide"
+  - "roi calculation guide"
+  - "formula base"
+  - "pattern weights (critical!)"
+  - "example calculation"
+  - "before consolidation"
+  - "after consolidation"
+  - "savings"
+  - "conservative vs aggressive est"
+  - "conservative (recommended)"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # ROI Calculation Guide
 
 **Purpose:** How to calculate real cost savings from design system
@@ -140,3 +164,5 @@ features_per_sprint = baseline_features × 4
 
 "Conservative ROI = credible ROI.
 Underpromise, overdeliver."
+
+#galaxy-runtime

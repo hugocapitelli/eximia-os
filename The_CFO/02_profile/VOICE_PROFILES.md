@@ -1,3 +1,27 @@
+---
+title: "VOICE_PROFILES — CFO Agent"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "voice-profiles"
+  - "voice_profiles — cfo agent"
+  - "agent: cfo agent"
+  - "default distribution: 30% visi"
+  - "profile 1: visionário (30%)"
+  - "profile 2: pragmático (50%) — "
+  - "profile 3: socrático (20%)"
+  - "calibração por contexto"
+  - "integração no prompt"
+  - "registros de voz"
+tags:
+  - "galaxy-specialist"
+  - "agent-profile"
+---
+
 # VOICE_PROFILES — CFO Agent
 
 ## Agent: CFO Agent
@@ -152,3 +176,5 @@ Essas respostas vão me ajudar a analisar se R$50M é adequado."
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

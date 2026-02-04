@@ -1,3 +1,27 @@
+---
+title: "KB_05 — AgentBench-Style Metrics"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-agentbench-metrics"
+  - "kb_05 — agentbench-style metri"
+  - "🎯 propósito"
+  - "1. o que é agentbench?"
+  - "2. métricas padrão z4"
+  - "2.1 task completion rate (tcr)"
+  - "2.2 tool utilization accuracy "
+  - "2.3 self-correction rate (scr)"
+  - "2.4 robustness score (rs)"
+  - "2.5 hallucination rate (hr)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05 — AgentBench-Style Metrics
 
 ## 🎯 Propósito
@@ -179,3 +203,5 @@ Para contextualizar performance, comparar com scores públicos:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

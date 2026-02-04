@@ -1,3 +1,27 @@
+---
+title: "Ray Dalio Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "ray dalio clone"
+  - "overview"
+  - "key characteristics"
+  - "quick start"
+  - "system prompt"
+  - "knowledge bases"
+  - "file structure"
+  - "core frameworks"
+  - "the 5-step process"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # Ray Dalio Clone
 
 <div align="center">
@@ -167,3 +191,5 @@ Idea Meritocracy = Radical Truth + Radical Transparency + Believability-Weighted
 *"We don't clone voices. We clone decision algorithms."*
 
 </div>
+
+#galaxy-creation

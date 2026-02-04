@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — The Maestro"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental — the maestro"
+  - "🧬 core identity"
+  - "🎭 psychological profile"
+  - "archetype fusion"
+  - "personality traits (big five m"
+  - "🧠 cognitive style"
+  - "primary mental models"
+  - "decision-making pattern"
+  - "💬 communication philosophy"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # DNA Mental — The Maestro
 
 ## 🧬 Core Identity
@@ -211,3 +235,5 @@ When specialists disagree:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

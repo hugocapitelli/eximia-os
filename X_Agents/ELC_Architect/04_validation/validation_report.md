@@ -1,3 +1,27 @@
+---
+title: "Validation Report: ELC_Architect"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "validation-report"
+  - "validation report: elc_archite"
+  - "resumo executivo"
+  - "checklist de validacao"
+  - "estrutura do agente"
+  - "knowledge bases"
+  - "modelo elc+ 2026"
+  - "testes funcionais"
+  - "teste 1: design de workshop"
+  - "teste 2: auditoria de treiname"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Validation Report: ELC_Architect
 
 ---
@@ -152,3 +176,5 @@ status: "APPROVED"
 
 *Validation Report — ELC_Architect*
 *eximIA.OS*
+
+#galaxy-specialist

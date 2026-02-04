@@ -1,3 +1,24 @@
+---
+title: "Joe Rogan Experience #1906 - David Goggins"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "joe rogan experience #1906 - david goggins-abdt2jtsna8"
+  - "joe rogan experience #1906 - d"
+  - "transcrição"
+  - "metadados técnicos"
+  - "obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Joe Rogan Experience #1906 - David Goggins
 
 **URL:** https://www.youtube.com/watch?v=AbDT2JTSnA8
@@ -4038,3 +4059,5 @@ Joe  Rogan  podcast  check  it  out  The  Joe
 **Family:** [[Clones]]
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

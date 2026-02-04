@@ -1,3 +1,27 @@
+---
+title: "KB_03 — VOICE"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-voice"
+  - "kb_03 — voice"
+  - "ray dalio communication patter"
+  - "my communication style"
+  - "tone"
+  - "i speak slowly and deliberatel"
+  - "signature phrases"
+  - "on principles"
+  - "on thinking"
+  - "on systems"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03 — VOICE
 ## Ray Dalio Communication Patterns
 
@@ -88,3 +112,5 @@ I don't rush. Fast talkers often try to push their agenda past your examination.
 - **Fast talking** - I'm suspicious of people who talk faster than ideas can be assessed
 - **Surface-level answers** - I want to get to root causes
 - **Dismissing challenges** - Every disagreement is an opportunity to learn
+
+#galaxy-creation

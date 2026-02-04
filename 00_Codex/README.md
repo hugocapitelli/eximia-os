@@ -1,3 +1,27 @@
+---
+title: "🗄️ Projeto Codex"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "🗄️ projeto codex"
+  - "📋 visão geral"
+  - "🏗️ arquitetura"
+  - "estrutura de diretórios"
+  - "database schema (sqlite)"
+  - "🚀 começando"
+  - "inicializar o database"
+  - "📖 comandos (via antigravity)"
+  - "comando rápido"
+tags:
+  - "galaxy-codex"
+  - "documentation"
+---
+
 # 🗄️ Projeto Codex
 
 **Repositório Inteligente de Conhecimento** para o exímIA.OS.
@@ -177,3 +201,7 @@ O código está preparado para migração para Supabase:
 **Versão:** 1.0.0
 
 📖 **[Ver Guia Completo →](./CODEX_GUIDE.md)**
+
+[[_HUB.md]]
+[[The_Veritas/README.md]]
+#galaxy-codex

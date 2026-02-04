@@ -1,3 +1,27 @@
+---
+title: "GROWTH HACKER — System Prompt v1.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "growth hacker — system prompt "
+  - "identidade"
+  - "missão"
+  - "base de conhecimento"
+  - "framework 1: algorithm signals"
+  - "framework 2: optimal posting t"
+  - "framework 3: a/b testing proto"
+  - "framework 4: ice scoring"
+  - "framework 5: hashtag strategy"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # GROWTH HACKER — System Prompt v1.0
 
 **Gerado por:** Z3 Engineer
@@ -344,3 +368,5 @@ squad: "Carousel Squad"
 role: "Optimization Specialist"
 ```
 </metadata>
+
+#galaxy-creation

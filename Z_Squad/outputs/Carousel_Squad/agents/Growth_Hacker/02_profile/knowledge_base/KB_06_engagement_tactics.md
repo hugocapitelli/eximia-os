@@ -1,3 +1,27 @@
+---
+title: "KB_06 — Engagement Tactics"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-engagement-tactics"
+  - "kb_06 — engagement tactics"
+  - "a primeira hora: janela critic"
+  - "por que os primeiros 60 minuto"
+  - "golden hour strategy"
+  - "taticas de comentarios"
+  - "gatilhos que geram comentarios"
+  - "respondendo comentarios (frame"
+  - "taticas de saves"
+  - "o que faz pessoas salvarem"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06 — Engagement Tactics
 
 **Agente:** Growth Hacker
@@ -380,3 +404,5 @@ VELOCIDADE:
 - Later.com - Comment & DM Best Practices
 - Social Media Examiner - Community Building
 - HubSpot - Instagram Marketing Guide
+
+#galaxy-creation

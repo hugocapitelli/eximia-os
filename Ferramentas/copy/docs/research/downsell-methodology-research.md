@@ -1,3 +1,27 @@
+---
+title: "Downsell Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "downsell-methodology-research"
+  - "downsell methodology research"
+  - "deep research for copy framewo"
+  - "1. executive summary"
+  - "2. psychology of downselling"
+  - "2.1 the five hesitation driver"
+  - "2.2 the loss aversion principl"
+  - "2.3 the foot-in-the-door techn"
+  - "2.4 anchoring effect"
+  - "2.5 the contrast principle"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Downsell Methodology Research
 ## Deep Research for Copy Framework v2.0
 
@@ -718,3 +742,5 @@ Pause your access to [premium features]
 *Lines: 680+*
 *Sources: 10+ authoritative sources*
 *Ready for task file creation*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — Don Norman"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "04-dna-mental"
+  - "dna mental — don norman"
+  - "metadata"
+  - "1. arquétipo"
+  - "2. crenças fundamentais"
+  - "3. princípios de decisão"
+  - "4. frameworks / métodos operac"
+  - "5. estilo de comunicação"
+  - "6. vieses e riscos"
+  - "7. limites de uso no clone"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental — Don Norman
 
 ## Metadata
@@ -169,3 +193,5 @@ Dito isso, tenho uma política de não fazer julgamentos definitivos sobre produ
 **Gerado por:** C3_Creator
 **Versão:** 1.0
 **Clone Factory ID:** don_norman-v1.0
+
+#galaxy-creation

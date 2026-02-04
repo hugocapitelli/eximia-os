@@ -1,3 +1,27 @@
+---
+title: "KB_10 — Cross-Platform Adaptation"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-10-cross-platform-adaptation"
+  - "kb_10 — cross-platform adaptat"
+  - "por que adaptar para múltiplas"
+  - "comparativo de plataformas par"
+  - "especificações técnicas"
+  - "perfil de audiência"
+  - "instagram: o padrão de carross"
+  - "características do instagram"
+  - "formato ideal instagram"
+  - "o que funciona no instagram"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_10 — Cross-Platform Adaptation
 
 **Agente:** Carousel Maestro
@@ -335,3 +359,5 @@ CHECKLIST CULTURAL:
 - [TikTok Creator Portal](https://www.tiktok.com/creators/)
 - [LinkedIn Marketing Solutions Blog](https://business.linkedin.com/marketing-solutions/blog)
 - [Meta Business Help Center](https://www.facebook.com/business/help)
+
+#galaxy-creation

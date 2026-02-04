@@ -1,3 +1,27 @@
+---
+title: "VSL (Video Sales Letter) Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "vsl-methodology-research"
+  - "vsl (video sales letter) metho"
+  - "deep research for vsl-script.m"
+  - "1. what is a vsl and why it wo"
+  - "1.1 definition and origin"
+  - "1.2 why vsls outperform text"
+  - "1.3 the psychology behind vsl "
+  - "2. jon benson's 3x vsl formula"
+  - "2.1 the original framework"
+  - "2.2 the 9-step million dollar "
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # VSL (Video Sales Letter) Methodology Research
 ## Deep Research for vsl-script.md Task Upgrade
 
@@ -992,3 +1016,5 @@ VSL Conversion =
 **Primary Sources:** 5
 **Secondary Sources:** 8
 **Validation Criteria Met:** Yes
+
+#galaxy-tools

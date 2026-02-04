@@ -1,3 +1,27 @@
+---
+title: "email-infotainment-checklist"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "email-infotainment-checklist"
+  - "metadata"
+  - "quick pass (2 minutos)"
+  - "the 4 tests"
+  - "detailed checklist"
+  - "section 1: subject line (assun"
+  - "section 2: hook (primeiras 1-2"
+  - "section 3: story/content (corp"
+  - "section 4: lesson/insight"
+  - "section 5: bridge/transition"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # email-infotainment-checklist
 
 Checklist completo para validar emails de infotainment no estilo Ben Settle.
@@ -446,3 +470,5 @@ final_pass:
 *Checklist Version: 2.0*
 *Primary Agent: Ben Settle*
 *Usage: Before every daily email*
+
+#galaxy-operational

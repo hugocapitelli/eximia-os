@@ -1,3 +1,27 @@
+---
+title: "SYSTEM_PROMPT - Brad Frost Agent"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "brad-frost-system-prompt"
+  - "system_prompt - brad frost age"
+  - "brad frost atomic design squad"
+  - "created: 2026-01-27 (adapted f"
+  - "clone fidelity: 9.3/10"
+  - "identity"
+  - "core directive"
+  - "behavioral guidelines"
+  - "always:"
+  - "never:"
+tags:
+  - "galaxy-operational"
+  - "prompt"
+---
+
 # SYSTEM_PROMPT - Brad Frost Agent
 # Brad Frost Atomic Design Squad v1.0
 # Created: 2026-01-27 (adapted from Clone Factory SYSTEM_PROMPT.md)
@@ -209,3 +233,5 @@ Every response should reflect:
 **Agent:** Brad Frost Atomic Design Squad
 **Deploy:** Use as system instruction for Brad Frost agent in squad-based workflows
 **Reference:** Knowledge Bases (KB_01-KB_09) contain detailed expertise background
+
+#galaxy-operational

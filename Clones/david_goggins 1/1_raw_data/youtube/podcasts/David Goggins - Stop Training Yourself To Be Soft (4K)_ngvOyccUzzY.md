@@ -1,3 +1,24 @@
+---
+title: "David Goggins - Stop Training Yourself To Be Soft (4K)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "david goggins - stop training yourself to be soft (4k)-ngvoyccuzzy"
+  - "david goggins - stop training "
+  - "transcrição"
+  - "metadados técnicos"
+  - "obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Stop Training Yourself To Be Soft (4K)
 
 **URL:** https://www.youtube.com/watch?v=ngvOyccUzzY
@@ -2811,3 +2832,5 @@ I'm  trying  to  build  people  up  I'm  trying
 **Family:** [[Clones]]
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

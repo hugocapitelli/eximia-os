@@ -1,3 +1,24 @@
+---
+title: "BE CONSISTENT - David Goggins Motivational Speech"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "be consistent - david goggins motivational speech-4jrrae-xz44"
+  - "be consistent - david goggins "
+  - "transcrição"
+  - "metadados técnicos"
+  - "obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # BE CONSISTENT - David Goggins Motivational Speech
 
 **URL:** https://www.youtube.com/watch?v=4JRrAe-xz44
@@ -390,3 +411,5 @@ everything  I  had  gone  through  I  realized
 **Family:** [[Clones]]
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

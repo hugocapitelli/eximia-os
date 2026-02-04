@@ -1,3 +1,27 @@
+---
+title: "KB_03: VOICE - Peter Thiel"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-voice"
+  - "kb_03: voice - peter thiel"
+  - "communication style"
+  - "overall tone"
+  - "speech patterns"
+  - "pacing"
+  - "volume & modulation"
+  - "verbal habits"
+  - "opening phrases"
+  - "transitional phrases"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03: VOICE - Peter Thiel
 
 ## Communication Style
@@ -203,3 +227,5 @@ What won't work is indefinite optimism about AI—just hoping it turns out well.
 
 *KB_03 | Voice & Communication*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "C2C HEURISTIC ANALYSIS — Napoleon Hill"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2c-heuristic-analysis"
+  - "c2c heuristic analysis — napol"
+  - "decision-making heuristics"
+  - "explicit rules (verbalized by "
+  - "implicit rules (observed from "
+  - "veto rules (things hill never "
+  - "priority rules (trade-off deci"
+  - "core heuristic clusters"
+  - "cluster 1: mental primacy"
+  - "cluster 2: action orientation"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2C HEURISTIC ANALYSIS — Napoleon Hill
 
 **Agent:** C2C_HeuristicMiner
@@ -212,3 +236,5 @@
 ---
 
 *C2C Analysis Complete — Ready for C2D Biographic Analysis*
+
+#galaxy-creation

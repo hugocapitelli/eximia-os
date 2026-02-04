@@ -1,3 +1,27 @@
+---
+title: "CLI Design Patterns"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-cli-design-patterns"
+  - "cli design patterns"
+  - "princípios de design"
+  - "1. comandos intuitivos"
+  - "2. feedback claro"
+  - "3. confirmações para ações des"
+  - "estrutura de comandos"
+  - "padrão base"
+  - "subcomandos vs flags"
+  - "output formatting"
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
+
 # CLI Design Patterns
 
 ## Princípios de Design
@@ -143,3 +167,5 @@ def interactive_review(content):
 - [Click Documentation](https://click.palletsprojects.com/)
 - [Argparse Tutorial](https://docs.python.org/3/howto/argparse.html)
 - [Rich CLI Library](https://rich.readthedocs.io/)
+
+#galaxy-codex

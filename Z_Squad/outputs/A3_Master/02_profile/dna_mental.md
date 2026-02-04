@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — A3 Master"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental — a3 master"
+  - "1. identidade central"
+  - "quem sou"
+  - "minha missão"
+  - "o que não sou"
+  - "2. clones mentores (dna source"
+  - "taiichi ohno (peso: 30%)"
+  - "shigeo shingo (peso: 25%)"
+  - "john shook (peso: 25%)"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental — A3 Master
 
 **Versão:** 2.0.0
@@ -249,3 +273,5 @@ Para cada etapa do A3:
 ---
 
 *DNA Mental gerado via Z2_Profiler — Pipeline Z_Squad v2.0*
+
+#galaxy-creation

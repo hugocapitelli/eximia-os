@@ -1,3 +1,27 @@
+---
+title: "Create Cold Email Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-cold-email"
+  - "create cold email task"
+  - "task metadata"
+  - "purpose"
+  - "when to use this task"
+  - "high-value use cases"
+  - "ideal scenarios"
+  - "industry statistics (2025-2026"
+  - "benchmarks to target"
+  - "data-driven insights"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Cold Email Task
 
 ## Task Metadata
@@ -1224,3 +1248,5 @@ IF MEETING RATE LOW:
 *Last Updated: 2026-01-23*
 *Primary Frameworks: BASHO, Alex Berman, REPLY Method, Lemlist*
 *Minimum Output: 600 lines*
+
+#galaxy-operational

@@ -1,3 +1,25 @@
+---
+title: "Component Quality Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "component-quality-checklist"
+  - "component quality checklist"
+  - "code quality"
+  - "styling"
+  - "accessibility (wcag aa minimum"
+  - "testing"
+  - "documentation"
+  - "storybook (if enabled)"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Component Quality Checklist
 
 **Purpose:** Validate component before marking complete
@@ -72,3 +94,5 @@
 
 **Reviewer:** ________ **Date:** ________
 **Quality Gate:** [ ] PASS [ ] FAIL
+
+#galaxy-runtime

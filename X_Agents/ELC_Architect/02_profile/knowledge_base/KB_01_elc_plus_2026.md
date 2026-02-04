@@ -1,3 +1,27 @@
+---
+title: "KB_01: ELC+ 2026"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-elc-plus-2026"
+  - "kb_01: elc+ 2026"
+  - "experiential learning cycle pl"
+  - "visao geral"
+  - "o modelo completo"
+  - "tabela resumo das 6 etapas"
+  - "comparativo: kolb original vs."
+  - "por que calibrate antes de int"
+  - "distribuicao de tempo recomend"
+  - "acronimo mnemonico"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_01: ELC+ 2026
 ## Experiential Learning Cycle Plus — Modelo de 6 Etapas
 
@@ -267,3 +291,5 @@ elc_plus_checklist:
 *KB_01 — ELC+ 2026 Model*
 *ELC_Architect | eximIA.OS*
 *Versao: 1.0.0 | Data: 2026-01-23*
+
+#galaxy-specialist

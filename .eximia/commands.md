@@ -1,3 +1,27 @@
+---
+title: "eximIA.OS Quick Commands Reference"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "commands"
+  - "eximia.os quick commands refer"
+  - "📅 scheduler — agent/clone roa"
+  - "💡 memo — idea bank"
+  - "🧬 clone factory"
+  - "🏗️ z squad — agent creation"
+  - "✍️ copy squad — elite copywrit"
+  - "🎯 executive agents"
+  - "🔧 x agents — specialists"
+  - "📖 help commands"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # eximIA.OS Quick Commands Reference
 
 **Para ver esta lista a qualquer momento, digite:** `/eximia` ou `help eximia`
@@ -113,3 +137,5 @@ help eximia                    # This guide
 
 **Full documentation:** `.eximia/SLASH_COMMANDS_GUIDE.md`
 **Registry:** `.eximia/SLASH_COMMANDS.yaml`
+
+#galaxy-operational

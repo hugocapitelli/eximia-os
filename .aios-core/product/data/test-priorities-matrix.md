@@ -1,3 +1,27 @@
+---
+title: "Test Priorities Matrix"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "test-priorities-matrix"
+  - "test priorities matrix"
+  - "priority levels"
+  - "p0 - critical (must test)"
+  - "p1 - high (should test)"
+  - "p2 - medium (nice to test)"
+  - "p3 - low (test if time permits"
+  - "risk-based priority adjustment"
+  - "increase priority when:"
+  - "decrease priority when:"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 <!-- Powered by AIOS™ Core -->
 
 # Test Priorities Matrix
@@ -172,4 +196,5 @@ Review and adjust priorities based on:
 - Usage analytics
 - Test failure history
 - Business priority changes
- 
+
+#galaxy-runtime

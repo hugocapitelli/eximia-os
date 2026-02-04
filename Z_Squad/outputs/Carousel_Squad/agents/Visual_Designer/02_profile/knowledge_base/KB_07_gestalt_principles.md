@@ -1,3 +1,27 @@
+---
+title: "KB_07 — Gestalt Principles Applied to Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-gestalt-principles"
+  - "kb_07 — gestalt principles app"
+  - "fundamentos da gestalt"
+  - "o que é gestalt"
+  - "por que gestalt importa em des"
+  - "os 7 princípios gestalt"
+  - "1. proximidade (proximity)"
+  - "2. similaridade (similarity)"
+  - "3. fechamento (closure)"
+  - "4. continuidade (continuity)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07 — Gestalt Principles Applied to Carousels
 
 **Agente:** Visual Designer
@@ -361,3 +385,5 @@ ERRADO:                     CERTO:
 - Rudolf Arnheim, "Art and Visual Perception"
 - Don Norman, "The Design of Everyday Things"
 - Steven Bradley, "Design Fundamentals"
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "PRP-01: Authentication & Onboarding"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prp-01-auth-onboarding"
+  - "prp-01: authentication & onboa"
+  - "1. objetivo"
+  - "2. user stories"
+  - "3. requisitos funcionais"
+  - "3.1 autenticação"
+  - "3.2 onboarding (first-time use"
+  - "3.3 roles & permissions (rbac)"
+  - "4. regras de negócio"
+  - "5. wireframes"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # PRP-01: Authentication & Onboarding
 
 > **Module:** Foundation
@@ -464,3 +488,5 @@ export function middleware(request: NextRequest) {
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

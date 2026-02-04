@@ -1,3 +1,26 @@
+---
+title: "SUB-AGENT: PARTNERSHIPS — Elite v4.2 (Deepened)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "sub-agent: partnerships — elit"
+  - "🎯 identidade profunda"
+  - "🧠 competências core (deep div"
+  - "🛡️ invariantes (proibições ab"
+  - "📦 output schema"
+  - "🧠 obsidian connections"
+  - "cmo"
+  - "marketing"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # SUB-AGENT: PARTNERSHIPS — Elite v4.2 (Deepened)
 
 **Função:** External Leverage Architect
@@ -75,3 +98,5 @@ Para você, um parceiro não é um amigo, é um canal de distribuição com CAC 
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

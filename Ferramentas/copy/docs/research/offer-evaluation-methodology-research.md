@@ -1,3 +1,27 @@
+---
+title: "Deep Research: Offer Evaluation Methodology"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "offer-evaluation-methodology-research"
+  - "deep research: offer evaluatio"
+  - "executive summary"
+  - "part 1: the value equation fra"
+  - "1.1 alex hormozi's value equat"
+  - "1.2 component deep dive"
+  - "1.3 value equation scoring"
+  - "part 2: grand slam offer compo"
+  - "2.1 the five elements"
+  - "part 3: dan kennedy's offer pr"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Deep Research: Offer Evaluation Methodology
 
 **Research ID:** offer-evaluation-methodology
@@ -666,3 +690,5 @@ Test in this order:
 *Research compiled by Ralph Autonomous Agent*
 *Copy Framework v2.0 Upgrade Project*
 *Story: US-032*
+
+#galaxy-tools

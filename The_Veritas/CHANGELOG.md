@@ -1,3 +1,27 @@
+---
+title: "Changelog — The Veritas"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "changelog"
+  - "changelog — the veritas"
+  - "[unreleased]"
+  - "added"
+  - "[1.0.0] - 2026-01-07"
+  - "knowledge base"
+  - "performance"
+  - "validation"
+  - "🧠 obsidian connections"
+  - "veritas"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # Changelog — The Veritas
 
 Todas as mudanças notáveis neste agente serão documentadas aqui.
@@ -50,3 +74,5 @@ Todas as mudanças notáveis neste agente serão documentadas aqui.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

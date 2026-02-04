@@ -1,3 +1,24 @@
+---
+title: "FASE 1: COMPETENCY MAP — Summary"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "fase-01-competency-map"
+  - "fase 1: competency map — summa"
+  - "🎯 objetivo"
+  - "🧠 competências"
+  - "🧠 obsidian connections"
+  - "cmo"
+  - "marketing"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # FASE 1: COMPETENCY MAP — Summary
 
 **Agente:** x_agente_cmo (Power House)
@@ -34,3 +55,5 @@ Mapear as competências desta Power House que unifica 8 funções de marketing.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

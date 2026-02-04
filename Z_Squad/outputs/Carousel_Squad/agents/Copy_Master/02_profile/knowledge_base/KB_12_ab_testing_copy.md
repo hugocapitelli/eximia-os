@@ -1,3 +1,27 @@
+---
+title: "KB_12 — A/B Testing Copy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-12-ab-testing-copy"
+  - "kb_12 — a/b testing copy"
+  - "por que testar copy?"
+  - "o framework cientifico de test"
+  - "o metodo cientifico aplicado"
+  - "o que testar no copy (por prio"
+  - "tier 1: alto impacto (teste pr"
+  - "tier 2: medio impacto"
+  - "tier 3: ajuste fino"
+  - "tipos de testes"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_12 — A/B Testing Copy
 
 **Agente:** Copy Master
@@ -446,3 +470,5 @@ Nasce de centenas de testes e iteracoes.
 ---
 
 *"Nao pergunte ao seu cliente o que ele quer. Teste e deixe o comportamento dele te dizer."* — Copy Master
+
+#galaxy-creation

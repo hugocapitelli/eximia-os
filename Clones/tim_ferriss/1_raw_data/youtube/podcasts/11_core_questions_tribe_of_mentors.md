@@ -1,3 +1,27 @@
+---
+title: "Tim Ferriss - The 11 Core Interview Questions (Tribe of Mentors)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "11-core-questions-tribe-of-mentors"
+  - "tim ferriss - the 11 core inte"
+  - "the 11 questions"
+  - "1. books as gifts"
+  - "2. best purchase under $100"
+  - "3. favorite failure"
+  - "4. billboard message"
+  - "5. best investment"
+  - "6. unusual hab it or absurd th"
+  - "7. new belief/behavior/habit ("
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Tim Ferriss - The 11 Core Interview Questions (Tribe of Mentors)
 
 **Source:** "Tribe of Mentors" book + podcast usage  
@@ -280,3 +304,4 @@
 - Proven effective
 - Core to Tim's methodology
 
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "C2E LINGUISTIC ANALYST — Agente de Assinatura Linguística"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "c2e linguistic analyst — agent"
+  - "identidade"
+  - "missão"
+  - "fundamentação científica"
+  - "hipótese lexical"
+  - "idioleto"
+  - "protocolo operacional"
+  - "1. análise de vocabulário"
+  - "2. padrões sintáticos"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2E LINGUISTIC ANALYST — Agente de Assinatura Linguística
 
 ## IDENTIDADE
@@ -587,3 +611,5 @@ output:
 **Clone Factory Module:** C2E
 **Tipo:** Sub-Agente de Extração Linguística
 **Base Científica:** LIWC, Hipótese Lexical, Análise de Idioleto
+
+#galaxy-creation

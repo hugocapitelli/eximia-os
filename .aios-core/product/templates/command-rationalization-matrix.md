@@ -1,3 +1,27 @@
+---
+title: "Command Rationalization Matrix Template"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "command-rationalization-matrix"
+  - "command rationalization matrix"
+  - "usage instructions"
+  - "decision criteria"
+  - "usage count classification"
+  - "recommendation categories"
+  - "decision rules"
+  - "command analysis matrix"
+  - "usage count calculation method"
+  - "count command usage across all"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Command Rationalization Matrix Template
 
 **Purpose:** Systematic framework for evaluating agent commands for rationalization
@@ -150,3 +174,5 @@ Before finalizing rationalization:
 - Archive historical analyses for reference
 - Use consistent categorization across analyses
 - Always validate with actual usage data, not assumptions
+
+#galaxy-runtime

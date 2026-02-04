@@ -1,3 +1,27 @@
+---
+title: "KB_15: Kaizen — Melhoria Contínua"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-15-kaizen"
+  - "kb_15: kaizen — melhoria contí"
+  - "o que é kaizen"
+  - "filosofia kaizen"
+  - "tipos de kaizen"
+  - "1. kaizen do dia-a-dia (daily "
+  - "2. kaizen de projeto (project "
+  - "3. kaizen blitz / evento kaize"
+  - "4. kaikaku (melhoria radical)"
+  - "kaizen vs kaikaku"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_15: Kaizen — Melhoria Contínua
 
 ## O que é Kaizen
@@ -248,3 +272,5 @@ Padrão atual → Kaizen → Novo padrão → Kaizen → Novo padrão → ...
 - Imai, Masaaki. "Gemba Kaizen" (1997)
 - Liker, Jeffrey. "The Toyota Way" (2004)
 - [Lean Enterprise Institute - Kaizen](https://www.lean.org/lexicon-terms/kaizen/)
+
+#galaxy-creation

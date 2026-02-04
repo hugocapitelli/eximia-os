@@ -1,3 +1,24 @@
+---
+title: "FASE 2: BENCHMARK SCORECARD — Summary"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "fase-02-benchmark-scorecard"
+  - "fase 2: benchmark scorecard — "
+  - "🎯 objetivo"
+  - "🏆 benchmarks"
+  - "🧠 obsidian connections"
+  - "cmo"
+  - "marketing"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # FASE 2: BENCHMARK SCORECARD — Summary
 
 **Agente:** x_agente_cmo
@@ -29,3 +50,5 @@ Definir o padrão de excelência (Top 1%).
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

@@ -1,3 +1,27 @@
+---
+title: "KB_13: Métricas Avançadas para A3"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-13-metricas-avancadas"
+  - "kb_13: métricas avançadas para"
+  - "hierarquia de indicadores"
+  - "pirâmide de métricas"
+  - "tipos de indicadores"
+  - "kri - key result indicators"
+  - "kpi - key performance indicato"
+  - "kmi - key monitoring indicator"
+  - "opi - operational performance "
+  - "leading vs lagging indicators"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_13: Métricas Avançadas para A3
 
 ## Hierarquia de Indicadores
@@ -268,3 +292,5 @@ FOCO: Selo na Linha A, Turno 2
 - Parmenter, D. (2015). *Key Performance Indicators*. Wiley.
 - Eckerson, W. (2010). *Performance Dashboards*. Wiley.
 - Kaplan & Norton (1996). *The Balanced Scorecard*. HBS Press.
+
+#galaxy-creation

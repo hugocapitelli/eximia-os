@@ -1,3 +1,27 @@
+---
+title: "EXTRACT-HOOKS Template"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "extract-hooks"
+  - "extract-hooks template"
+  - "opening hooks - first 5-15 sec"
+  - "based on hormozi framework: $1"
+  - "context"
+  - "hook types (8 categories from "
+  - "hook triggers (7 primitive tri"
+  - "yaml format (output structure)"
+  - "hooks_batch_{n}.yaml"
+  - "extracted from: [source]"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # EXTRACT-HOOKS Template
 # Opening Hooks - First 5-15 seconds/words pattern interrupts
 # Based on Hormozi Framework: $100M Money Models + David Ogilvy SwipeFile
@@ -222,3 +246,5 @@ entries:
 5. **Jon Benson** - VSL openings
 6. **John Carlton** - One-legged golfer style
 7. **Tested ads** - Any with documented results
+
+#galaxy-tools

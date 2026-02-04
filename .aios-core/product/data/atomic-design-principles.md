@@ -1,3 +1,27 @@
+---
+title: "Atomic Design Principles"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "atomic-design-principles"
+  - "atomic design principles"
+  - "the five levels"
+  - "atoms"
+  - "molecules"
+  - "organisms"
+  - "templates"
+  - "pages"
+  - "benefits"
+  - "atlas implementation"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Atomic Design Principles
 
 **Source:** Brad Frost's Atomic Design methodology
@@ -106,3 +130,5 @@ design-system/
 **Atlas builds:** atoms first → molecules → organisms → templates
 
 **Reference:** https://atomicdesign.bradfrost.com/
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "IDE Sync"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "ide sync"
+  - "overview"
+  - "pre-commit integration (story "
+  - "bypass"
+  - "commands"
+  - "sync"
+  - "validate"
+  - "options"
+  - "configuration"
+tags:
+  - "galaxy-runtime"
+  - "documentation"
+---
+
 # IDE Sync
 
 **Story 6.19** - IDE Command Auto-Sync System
@@ -182,3 +206,5 @@ Or rely on the pre-commit hook to auto-stage changes.
 
 - Story 6.19: IDE Command Auto-Sync System
 - Story TD-4: IDE Sync Pre-commit Auto-Stage
+
+#galaxy-runtime

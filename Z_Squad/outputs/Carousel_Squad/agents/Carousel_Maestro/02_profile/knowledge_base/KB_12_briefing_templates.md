@@ -1,3 +1,27 @@
+---
+title: "KB_12 — Briefing Templates"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-12-briefing-templates"
+  - "kb_12 — briefing templates"
+  - "a importância do briefing"
+  - "briefing master: template comp"
+  - "briefings específicos por agen"
+  - "brief para copy queen (copywri"
+  - "brief para design dynamo (desi"
+  - "brief para hook hunter (especi"
+  - "brief para data detective (pes"
+  - "briefing rápido (quick brief)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_12 — Briefing Templates
 
 **Agente:** Carousel Maestro
@@ -403,3 +427,5 @@ CHECKLIST DE QUALIDADE DO BRIEF
 - [How to Write a Creative Brief - HubSpot](https://hubspot.com)
 - [The Perfect Brief Template - Column Five](https://columnfivemedia.com)
 - Ogilvy, David. *Ogilvy on Advertising* (1983)
+
+#galaxy-creation

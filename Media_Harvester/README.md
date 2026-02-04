@@ -1,3 +1,27 @@
+---
+title: "Media_Harvester"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "media_harvester"
+  - "quick start"
+  - "1. instalar dependências"
+  - "ffmpeg (necessário)"
+  - "python packages"
+  - "2. usar"
+  - "download único"
+  - "busca e download"
+  - "playlist inteira"
+tags:
+  - "galaxy-tools"
+  - "documentation"
+---
+
 # Media_Harvester
 
 > Agente especializado em download e transcrição de vídeos/podcasts para alimentar pipelines de clones e agentes do eximIA.OS.
@@ -268,3 +292,5 @@ Clone_Factory Pipeline:
 ## Licença
 
 Uso interno eximIA Ventures. Não redistribuir conteúdo baixado.
+
+#galaxy-tools

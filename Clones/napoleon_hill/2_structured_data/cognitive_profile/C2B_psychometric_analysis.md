@@ -1,3 +1,27 @@
+---
+title: "C2B PSYCHOMETRIC ANALYSIS — Napoleon Hill"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2b-psychometric-analysis"
+  - "c2b psychometric analysis — na"
+  - "big five (ocean) profile"
+  - "scores"
+  - "detailed analysis"
+  - "disc profile"
+  - "type: **i/d (influencer/driver"
+  - "behavioral analysis"
+  - "values assessment (schwartz)"
+  - "primary values"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2B PSYCHOMETRIC ANALYSIS — Napoleon Hill
 
 **Agent:** C2B_PsychometricAnalyst
@@ -268,3 +292,5 @@
 ---
 
 *C2B Analysis Complete — Ready for C2C Heuristic Analysis*
+
+#galaxy-creation

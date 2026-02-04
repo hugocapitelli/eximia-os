@@ -1,3 +1,27 @@
+---
+title: "Workflow Management"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "workflow"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "workflow-management"
+  - "workflow management"
+  - "dynamic workflow loading"
+  - "workflow commands"
+  - "/workflows"
+  - "/workflow-start {workflow-id}"
+  - "/workflow-status"
+  - "/workflow-resume"
+  - "/workflow-next"
+  - "execution flow"
+tags:
+  - "galaxy-runtime"
+  - "workflow"
+---
+
 # Workflow Management
 
 Enables AIOS orchestrator to manage and execute team workflows.
@@ -67,3 +91,5 @@ Handle conditional paths by asking clarifying questions when needed.
 ## Agent Integration
 
 Agents should be workflow-aware: know active workflow, their role, access artifacts, understand expected outputs.
+
+#galaxy-runtime

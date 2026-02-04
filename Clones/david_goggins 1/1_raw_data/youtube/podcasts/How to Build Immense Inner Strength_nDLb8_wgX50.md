@@ -1,3 +1,24 @@
+---
+title: "YouTube Transcript"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "how to build immense inner strength-ndlb8-wgx50"
+  - "youtube transcript"
+  - "full transcript"
+  - "plain text (for processing)"
+  - "🧠 obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # YouTube Transcript
 
 **Title:** How to Build Immense Inner Strength 
@@ -3939,3 +3960,5 @@ ANDREW HUBERMAN: Welcome to the Huberman Lab podcast where we discuss science an
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

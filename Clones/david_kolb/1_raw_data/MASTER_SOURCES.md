@@ -1,3 +1,27 @@
+---
+title: "MASTER SOURCES — David A. Kolb Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "master-sources"
+  - "master sources — david a. kolb"
+  - "resumo de fontes"
+  - "tier 1: fontes primarias (alta"
+  - "livros"
+  - "videos oficiais (ebls - verifi"
+  - "podcasts identificados"
+  - "tier 2: fontes academicas veri"
+  - "publicacoes recentes"
+  - "criticas e meta-analises (crit"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # MASTER SOURCES — David A. Kolb Clone
 
 ## Resumo de Fontes
@@ -189,3 +213,5 @@ note: "David Kolb (86) raramente aparece em entrevistas publicas"
 *MASTER_SOURCES — David A. Kolb Clone*
 *eximIA.OS Clone Factory*
 *Pesquisa: The_Veritas | 2026-01-24*
+
+#galaxy-creation

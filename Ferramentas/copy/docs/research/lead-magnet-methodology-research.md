@@ -1,3 +1,27 @@
+---
+title: "Lead Magnet Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "lead-magnet-methodology-research"
+  - "lead magnet methodology resear"
+  - "deep research for create-lead-"
+  - "1. foundational principles"
+  - "1.1 the robert collier princip"
+  - "1.2 cialdini's reciprocity pri"
+  - "1.3 the value exchange framewo"
+  - "2. alex hormozi's $100m leads "
+  - "2.1 the lead magnet value equa"
+  - "2.2 the "free content that sel"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Lead Magnet Methodology Research
 ## Deep Research for create-lead-magnet.md Task Upgrade
 
@@ -687,3 +711,5 @@ TIER 4 (Relationship Building):
 **Primary Sources:** 5+
 **Secondary Sources:** 9+
 **Validation Criteria Met:** Yes
+
+#galaxy-tools

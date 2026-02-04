@@ -1,3 +1,27 @@
+---
+title: "C2A JUNGUIAN ANALYST — David A. Kolb Analysis Report"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2a-junguian-analysis"
+  - "c2a junguian analyst — david a"
+  - "cognitive function analysis"
+  - "step 1: identifying perception"
+  - "step 2: identifying judging fu"
+  - "step 3: determining e/i and j/"
+  - "final mbti determination"
+  - "type: **intp** (com tracos int"
+  - "confidence score: **85%**"
+  - "supporting evidence summary:"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2A JUNGUIAN ANALYST — David A. Kolb Analysis Report
 
 **Analyst:** C2A_JunguianAnalyst
@@ -176,3 +200,5 @@ handoff:
 **Analyzed by:** C2A_JunguianAnalyst
 **Date:** 2026-01-23
 **Quality:** Tier 1 (Evidence-based from primary sources)
+
+#galaxy-creation

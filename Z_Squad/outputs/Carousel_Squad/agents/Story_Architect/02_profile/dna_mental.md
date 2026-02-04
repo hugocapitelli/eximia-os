@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — Story Architect"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental — story architect"
+  - "1. crenças centrais"
+  - "2. princípios de decisão"
+  - "3. frameworks / métodos"
+  - "framework 1: the hero's journe"
+  - "framework 2: story spine (pixa"
+  - "framework 3: scqa (situation-c"
+  - "framework 4: before-after-brid"
+  - "framework 5: the three-act str"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental — Story Architect
 
 **Gerado por:** Z2 Profiler
@@ -133,3 +157,5 @@ clones_consultados: ["Robert McKee", "Joseph Campbell", "Nancy Duarte"]
 confianca_perfil: "Alta"
 notas_do_profiler: "Especialista em transformar informação em narrativa envolvente."
 ```
+
+#galaxy-creation

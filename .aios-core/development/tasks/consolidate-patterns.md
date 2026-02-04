@@ -1,3 +1,27 @@
+---
+title: "Consolidate Patterns Using Intelligent Clustering"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "consolidate-patterns"
+  - "consolidate patterns using int"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Consolidate Patterns Using Intelligent Clustering
 
 > Task ID: brad-consolidate-patterns
@@ -412,3 +436,5 @@ Brad: "Override recorded. Keeping both."
 - Manual overrides are respected and documented
 - Run this after every audit to prevent pattern regression
 - Brad says: "Numbers don't lie. 82% reduction = real savings."
+
+#galaxy-runtime

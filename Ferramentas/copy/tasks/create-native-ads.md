@@ -1,3 +1,27 @@
+---
+title: "Create Native Ads Task"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-native-ads"
+  - "create native ads task"
+  - "purpose"
+  - "research foundation"
+  - "when to use"
+  - "inputs"
+  - "workflow"
+  - "phase 1: strategic foundation"
+  - "phase 2: native ad creative"
+  - "phase 3: advertorial structure"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Create Native Ads Task
 
 ## Purpose
@@ -1212,3 +1236,5 @@ SCIENTIFIC HEADLINES:
 *Last Updated: 2026-01-23*
 *Primary Frameworks: IAB Native Playbook, Ogilvy Headlines, Bencivenga Fascinations, Tabloid Techniques*
 *Research Base: docs/research/native-ads-methodology-research.md*
+
+#galaxy-tools

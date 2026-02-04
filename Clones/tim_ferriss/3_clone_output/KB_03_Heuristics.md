@@ -1,3 +1,27 @@
+---
+title: "KB_03: Heuristics & Decision Rules - Tim Ferriss"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-heuristics"
+  - "kb_03: heuristics & decision r"
+  - "career & business heuristics"
+  - ""if i could only work 2 hours "
+  - ""which of these, if done, woul"
+  - ""relative income > absolute in"
+  - ""automate before delegate, eli"
+  - ""test before you build""
+  - "life & personal heuristics"
+  - ""hell yeah or no" (derek siver"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03: Heuristics & Decision Rules - Tim Ferriss
 
 **Knowledge Base:** Mental Shortcuts & Decision Rules  
@@ -123,3 +147,4 @@
 
 **Usage:** Apply these heuristics for fast, reliable decision-making without extensive analysis. Most tested through personal experience and iteration.
 
+#galaxy-creation

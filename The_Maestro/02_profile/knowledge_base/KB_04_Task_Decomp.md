@@ -1,3 +1,27 @@
+---
+title: "KB_04: Task Decomposition (Chain of Thought)"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-task-decomp"
+  - "kb_04: task decomposition (cha"
+  - "🎯 core principle"
+  - "🔄 decomposition process"
+  - "step 1: parse intent"
+  - "step 2: identify domains"
+  - "step 3: sequence tasks"
+  - "step 4: define success"
+  - "📋 decomposition templates"
+  - "template a: single domain"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_04: Task Decomposition (Chain of Thought)
 
 > **Category**: STRATEGY  
@@ -120,3 +144,5 @@ Before executing a decomposition:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

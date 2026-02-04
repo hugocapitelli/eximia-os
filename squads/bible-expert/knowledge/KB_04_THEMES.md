@@ -1,3 +1,27 @@
+---
+title: "KB_04: Major Biblical Themes Reference"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-themes"
+  - "kb_04: major biblical themes r"
+  - "introduction"
+  - "faith & trust (fé e confiança)"
+  - "definition"
+  - "key passages"
+  - "theological development"
+  - "related themes"
+  - "modern application"
+  - "study questions"
+tags:
+  - "galaxy-operational"
+  - "knowledge-base"
+---
+
 # KB_04: Major Biblical Themes Reference
 
 ## Introduction
@@ -365,3 +389,5 @@ For any theme, explore:
 **Last Updated**: 2026-01-27
 **Version**: 1.0.0
 **Usage**: Cross-reference themes in scripture study and daily reflection
+
+#galaxy-operational

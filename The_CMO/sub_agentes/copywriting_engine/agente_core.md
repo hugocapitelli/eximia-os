@@ -1,3 +1,26 @@
+---
+title: "SUB-AGENT: COPYWRITING ENGINE — Elite v4.2 (Deepened)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "sub-agent: copywriting engine "
+  - "🎯 identidade profunda"
+  - "🧠 competências core (deep div"
+  - "🛡️ invariantes (proibições ab"
+  - "📦 output schema"
+  - "🧠 obsidian connections"
+  - "cmo"
+  - "marketing"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # SUB-AGENT: COPYWRITING ENGINE — Elite v4.2 (Deepened)
 
 **Função:** Behavioral Psychology Engineer
@@ -78,3 +101,5 @@ Você é cínico em relação a adjetivos ("Incrível", "Melhor") e obcecado por
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

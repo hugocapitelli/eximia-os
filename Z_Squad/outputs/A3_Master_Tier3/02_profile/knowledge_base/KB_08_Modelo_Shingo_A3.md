@@ -1,3 +1,27 @@
+---
+title: "KB_08: Integração Modelo Shingo e A3"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-modelo-shingo-a3"
+  - "kb_08: integração modelo shing"
+  - "o que é o modelo shingo"
+  - "o diamante da transformação"
+  - "fluxo causal (crítico para a3)"
+  - "os três níveis de princípios s"
+  - "1. cultural enablers (habilita"
+  - "2. continuous improvement (mel"
+  - "3. enterprise alignment (alinh"
+  - "aplicação no a3"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08: Integração Modelo Shingo e A3
 
 ## O que é o Modelo Shingo
@@ -176,3 +200,5 @@ Este princípio Shingo é **OBRIGATÓRIO** em todo A3:
 - [Interfacing - Measuring What Matters in Operational Excellence](https://interfacing.com/the-shingo-model)
 - [Value Capture - Guiding Principles of the Shingo Model](http://www.valuecapturellc.com/guiding-principles-shingo-model)
 - [Manufacturing Institute - The Shingo Model](https://manufacturinginstitute.co.uk/the-shingo-model/)
+
+#galaxy-creation

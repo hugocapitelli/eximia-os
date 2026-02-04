@@ -1,3 +1,27 @@
+---
+title: "Product Requirement Prompts (PRP) Playbook"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prp-agentic-playbook"
+  - "product requirement prompts (p"
+  - "definition"
+  - "the prp framework"
+  - "structure of a prp"
+  - "workflow: from prd to prp"
+  - "example prp template"
+  - "role"
+  - "context"
+  - "visual context (wireframe)"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Product Requirement Prompts (PRP) Playbook
 
 ## Definition
@@ -71,3 +95,5 @@ Create a `Login.tsx` component that matches the wireframe above.
 - Strict Typescript usage.
 - No `any` types.
 ```
+
+#galaxy-codex

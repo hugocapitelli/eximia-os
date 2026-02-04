@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Criação de Knowledge Bases"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-kb-creation"
+  - "kb_02 — criação de knowledge b"
+  - "propósito"
+  - "1. knowledge bases obrigatória"
+  - "2. template de kb"
+  - "kb_{num}_{topic} — {nome}"
+  - "objetivo"
+  - "conteúdo"
+  - "{seção 1}"
+  - "{seção 2}"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — Criação de Knowledge Bases
 
 ## Propósito
@@ -203,3 +227,5 @@ def generate_all_kbs(structured_data, dna_mental):
 
 **Versão:** 1.0
 **Clone Factory Module:** C3_Creator
+
+#galaxy-creation

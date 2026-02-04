@@ -1,3 +1,27 @@
+---
+title: "{agent-id}"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "personalized-agent-template"
+  - "{agent-id}"
+  - "complete agent definition foll"
+  - "all commands require * prefix "
+  - "personality configuration guid"
+  - "archetype selection"
+  - "tone guidelines"
+  - "vocabulary selection"
+  - "builder (dev)"
+  - "guardian (qa)"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # {agent-id}
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -256,3 +280,5 @@ Before committing agent file:
 **Template Version:** 1.0
 **Last Updated:** 2025-01-14
 **Applies to:** Story 6.1.2 - Agent File Updates
+
+#galaxy-runtime

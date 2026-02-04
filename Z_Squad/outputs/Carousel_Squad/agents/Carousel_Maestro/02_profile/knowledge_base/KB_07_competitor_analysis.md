@@ -1,3 +1,27 @@
+---
+title: "KB_07 — Competitor Analysis Framework"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-competitor-analysis"
+  - "kb_07 — competitor analysis fr"
+  - "por que analisar concorrentes?"
+  - "framework scope de análise com"
+  - "s - style (estilo visual)"
+  - "c - content (conteúdo)"
+  - "o - outcomes (resultados)"
+  - "p - patterns (padrões)"
+  - "e - engagement (interação)"
+  - "passo 1: identificar concorren"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07 — Competitor Analysis Framework
 
 **Agente:** Carousel Maestro
@@ -322,3 +346,5 @@ Leia os comentários dos top posts e categorize:
 - [Hootsuite: How to Do a Competitive Analysis](https://blog.hootsuite.com)
 - Porter, Michael. *Competitive Strategy* (1980)
 - [Social Media Examiner: Competitor Research](https://socialmediaexaminer.com)
+
+#galaxy-creation

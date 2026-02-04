@@ -1,3 +1,27 @@
+---
+title: "DNA Mental - Harven_Tester (TesterOS)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental - harven_tester (te"
+  - "1. crencas centrais"
+  - "2. principios de decisao"
+  - "3. frameworks / metodos"
+  - "framework 1: checklist de 6 cr"
+  - "framework 2: escala de severid"
+  - "framework 3: deteccao de respo"
+  - "framework 4: scoring de aprova"
+  - "4. criterios detalhados"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental - Harven_Tester (TesterOS)
 
 **Gerado por:** Z2 Profiler
@@ -278,3 +302,5 @@ notas_do_profiler: "Agente guardiao da qualidade. Rigoroso nos principios fundam
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

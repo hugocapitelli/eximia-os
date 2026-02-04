@@ -1,3 +1,27 @@
+---
+title: "KB_05: Contramedida vs Ação vs Solução"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-contramedida-vs-acao"
+  - "kb_05: contramedida vs ação vs"
+  - "por que toyota usa "contramedi"
+  - "definições"
+  - "contramedida (countermeasure) "
+  - "ação"
+  - "solução (solution) - termo a e"
+  - "por que essa distinção importa"
+  - "hierarquia de ações (a.d.p.)"
+  - "1. administrativas (a) - mais "
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05: Contramedida vs Ação vs Solução
 
 ## Por que Toyota usa "Contramedida" e não "Solução"
@@ -146,3 +170,5 @@ Cada contramedida deve ter um critério de "pronto" (Definition of Done):
 - [Velaction - Countermeasures](https://www.velaction.com/countermeasures/)
 - [Creative Safety Supply - Countermeasure](https://www.creativesafetysupply.com/glossary/countermeasure/)
 - [LeanSixSigmaDefinition - Countermeasure](https://www.leansixsigmadefinition.com/glossary/countermeasure/)
+
+#galaxy-creation

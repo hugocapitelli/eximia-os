@@ -1,3 +1,27 @@
+---
+title: "KB_03: Aprendizagem Experiencial — Ciclo de Kolb"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-kolb-experiencial"
+  - "kb_03: aprendizagem experienci"
+  - "visão geral"
+  - "o ciclo de 4 estágios"
+  - "detalhamento dos 4 estágios"
+  - "1. ec — experiência concreta ("
+  - "2. or — observação reflexiva ("
+  - "3. ca — conceituação abstrata "
+  - "4. ea — experimentação ativa ("
+  - "os 4 estilos de aprendizagem"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_03: Aprendizagem Experiencial — Ciclo de Kolb
 
 ## Visão Geral
@@ -321,3 +345,5 @@ Características:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

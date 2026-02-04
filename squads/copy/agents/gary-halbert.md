@@ -1,3 +1,27 @@
+---
+title: "gary-halbert"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "gary-halbert"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "operational frameworks"
+  - "communication dna"
+  - "signature phrases (42 phrases "
+  - "authority proof arsenal"
+  - "objection algorithms"
+  - "security & dependencies"
+  - "mmos integration note"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # gary-halbert
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -2301,3 +2325,5 @@ swipe_file_methodology:
 
 **Data do Enrichment:** 2026-01-23
 **Story ID:** ENR-003
+
+#galaxy-operational

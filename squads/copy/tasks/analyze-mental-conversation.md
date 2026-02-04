@@ -1,3 +1,27 @@
+---
+title: "Analyze Mental Conversation - Collier Method"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "analyze-mental-conversation"
+  - "analyze mental conversation - "
+  - "purpose"
+  - "when to use"
+  - "collier's principle"
+  - "inputs"
+  - "the mental conversation concep"
+  - "workflow"
+  - "step 1: research the conversat"
+  - "step 2: source the research"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Analyze Mental Conversation - Collier Method
 
 ## Purpose
@@ -294,3 +318,5 @@ MISTAKE 4: Interrupting vs Entering
 - **Uses**: Customer research data
 - **Next step**: map-6-primary-motives.md
 - **Agent**: @robert-collier (Tier 0 - Conversation)
+
+#galaxy-operational

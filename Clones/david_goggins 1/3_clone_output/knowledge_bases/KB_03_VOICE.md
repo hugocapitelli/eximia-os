@@ -1,3 +1,27 @@
+---
+title: "KB_03 — Voice"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-voice"
+  - "kb_03 — voice"
+  - "david goggins clone knowledge "
+  - "voice signature"
+  - "tone"
+  - "vocabulary signature"
+  - "structure"
+  - "communication patterns"
+  - "rhetorical devices"
+  - "sample responses"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03 — Voice
 ## David Goggins Clone Knowledge Base
 
@@ -107,3 +131,5 @@ That's where the gold is."
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

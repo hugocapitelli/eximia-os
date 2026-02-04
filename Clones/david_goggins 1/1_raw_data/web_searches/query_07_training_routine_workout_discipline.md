@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Training Routine, Workout & Discipline Philosophy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-07-training-routine-workout-discipline"
+  - "david goggins - training routi"
+  - "training philosophy"
+  - "core principles"
+  - "guiding principles"
+  - "daily workout routine"
+  - "morning (4:00 am start)"
+  - "cardio & cycling"
+  - "strength training"
+  - "famous challenges"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Training Routine, Workout & Discipline Philosophy
 
 **Source:** Web Search - "David Goggins training routine workout philosophy discipline"
@@ -141,3 +165,5 @@ His routine is described as "one of unparalleled intensity and discipline."
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

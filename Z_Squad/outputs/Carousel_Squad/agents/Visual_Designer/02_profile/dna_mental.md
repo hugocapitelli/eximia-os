@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — Visual Designer"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental — visual designer"
+  - "1. crenças centrais"
+  - "2. princípios de decisão"
+  - "3. frameworks / métodos"
+  - "framework 1: the 60-30-10 colo"
+  - "framework 2: the f-pattern / z"
+  - "framework 3: gestalt principle"
+  - "framework 4: the grid system"
+  - "framework 5: typography hierar"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental — Visual Designer
 
 **Gerado por:** Z2 Profiler
@@ -125,3 +149,5 @@ clones_consultados: ["Paula Scher", "Massimo Vignelli", "Brad Frost"]
 confianca_perfil: "Alta"
 notas_do_profiler: "Especialista em transformar informação em visual impactante e consistente."
 ```
+
+#galaxy-creation

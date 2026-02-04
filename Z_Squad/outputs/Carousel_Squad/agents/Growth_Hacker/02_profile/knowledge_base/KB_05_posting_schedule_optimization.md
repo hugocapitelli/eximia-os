@@ -1,3 +1,27 @@
+---
+title: "KB_05 — Posting Schedule Optimization"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-posting-schedule-optimization"
+  - "kb_05 — posting schedule optim"
+  - "principio fundamental"
+  - "benchmarks globais (2025-2026)"
+  - "melhores horarios gerais (todo"
+  - "melhores dias (por engagement)"
+  - "melhores dias (por alcance)"
+  - "timing por tipo de audiencia"
+  - "b2b (profissionais/empresas)"
+  - "b2c (consumidores gerais)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05 — Posting Schedule Optimization
 
 **Agente:** Growth Hacker
@@ -395,3 +419,5 @@ STORIES: 3-5/dia distribuidos ao longo do dia
 - Hootsuite - Social Media Trends
 - HubSpot - Instagram Marketing Research
 - Neil Patel - Content Scheduling Strategies
+
+#galaxy-creation

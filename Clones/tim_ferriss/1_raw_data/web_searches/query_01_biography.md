@@ -1,3 +1,27 @@
+---
+title: "Web Search: Tim Ferriss Biography"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-01-biography"
+  - "web search: tim ferriss biogra"
+  - "biografia completa"
+  - "infância e saúde"
+  - "educação secundária"
+  - "princeton university"
+  - "pós-princeton"
+  - "fontes"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # Web Search: Tim Ferriss Biography
 
 **Query:** Tim Ferriss biography complete life story early life childhood education Princeton  
@@ -49,3 +73,4 @@ Timothy "Tim" Ferriss nasceu em **20 de julho de 1977** em East Hampton, Nova Yo
 - Kiddle.co
 - Tim.blog (site oficial)
 
+#galaxy-creation

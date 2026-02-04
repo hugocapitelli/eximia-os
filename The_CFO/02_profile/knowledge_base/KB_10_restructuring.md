@@ -1,3 +1,27 @@
+---
+title: "KB_10 — Financial Restructuring"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-10-restructuring"
+  - "kb_10 — financial restructurin"
+  - "1. fundamentos de reestruturaç"
+  - "o que é reestruturação finance"
+  - "tipos de reestruturação"
+  - "2. sinais de distress"
+  - "early warning signs (altman z-"
+  - "red flags financeiros"
+  - "3. opções de reestruturação"
+  - "out-of-court options"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_10 — Financial Restructuring
 
 ## 1. Fundamentos de Reestruturação
@@ -238,3 +262,5 @@ Best Alternative to Negotiated Agreement:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

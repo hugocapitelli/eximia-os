@@ -1,3 +1,27 @@
+---
+title: "COMPARATIVE ANALYSIS — The_Maestro"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "comparative-analysis"
+  - "comparative analysis — the_mae"
+  - "🎯 purpose"
+  - "📊 competitors analyzed"
+  - "🔍 feature comparison"
+  - "🏆 the_maestro advantages"
+  - "1. veritas first protocol"
+  - "2. domain-specific specialists"
+  - "3. conflict resolution"
+  - "4. brazilian localization"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # COMPARATIVE ANALYSIS — The_Maestro
 
 ## 🎯 Purpose
@@ -135,3 +159,5 @@ Compare The_Maestro against leading multi-agent orchestration frameworks.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

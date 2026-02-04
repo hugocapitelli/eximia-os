@@ -1,3 +1,27 @@
+---
+title: "Harven_Tester (TesterOS)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "harven_tester (testeros)"
+  - "visao geral"
+  - "papel no sistema"
+  - "identidade"
+  - "missao"
+  - "os 6 criterios"
+  - "regras de veredicto"
+  - "input/output"
+  - "input"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # Harven_Tester (TesterOS)
 
 **Validador de Qualidade Socratica**
@@ -255,3 +279,5 @@ Criado pela metodologia Z Squad para a plataforma Harven.AI.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

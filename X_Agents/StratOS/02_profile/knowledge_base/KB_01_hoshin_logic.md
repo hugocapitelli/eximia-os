@@ -1,3 +1,24 @@
+---
+title: "KB: Lógica do Hoshin Kanri e Desdobramento (Cascade)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-hoshin-logic"
+  - "kb: lógica do hoshin kanri e d"
+  - "1. o que é o hoshin kanri (nes"
+  - "2. a cadeia de causa e efeito"
+  - "3. regras de ouro do desdobram"
+  - "4. o papel do catchball"
+  - "🧠 obsidian connections"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB: Lógica do Hoshin Kanri e Desdobramento (Cascade)
 
 ## 1. O que é o Hoshin Kanri (nesta metodologia)
@@ -44,3 +65,5 @@ O Catchball é a negociação entre níveis.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

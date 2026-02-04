@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Criticisms, Controversies & Extreme Methods"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-14-criticisms-controversies-extreme-methods"
+  - "david goggins - criticisms, co"
+  - "health and safety concerns"
+  - "dangerous and unsustainable me"
+  - "overtraining warnings"
+  - "extreme level = dangerous"
+  - "lack of nuance and psychologic"
+  - "one-size-fits-all problem"
+  - "missing psychological support"
+  - "anti-therapy stance"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Criticisms, Controversies & Extreme Methods
 
 **Source:** Web Search - "David Goggins criticisms controversies criticism extreme methods"
@@ -220,3 +244,5 @@ His methods worked for HIS specific situation:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

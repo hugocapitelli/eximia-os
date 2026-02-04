@@ -1,3 +1,27 @@
+---
+title: "KB_12 — Social Proof Stories"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-12-social-proof-stories"
+  - "kb_12 — social proof stories"
+  - "social proof como narrativa"
+  - "por que social proof funciona"
+  - "principios psicologicos:"
+  - "os 6 tipos de social proof sto"
+  - "1. case study narrative"
+  - "2. testimonial compilation"
+  - "3. before/after showcase"
+  - "4. journey spotlight"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_12 — Social Proof Stories
 
 **Agente:** Story Architect
@@ -335,3 +359,5 @@ Usar depoimento sem autorizacao.
 - Donald Miller, Building a StoryBrand
 - Case Study Research Methods
 - FTC Guidelines on Testimonials
+
+#galaxy-creation

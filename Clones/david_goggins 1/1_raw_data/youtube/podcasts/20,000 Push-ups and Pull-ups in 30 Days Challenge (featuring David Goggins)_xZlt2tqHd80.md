@@ -1,3 +1,24 @@
+---
+title: "YouTube Transcript"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "20,000 push-ups and pull-ups in 30 days challenge (featuring david goggins)-xzlt2tqhd80"
+  - "youtube transcript"
+  - "full transcript"
+  - "plain text (for processing)"
+  - "🧠 obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # YouTube Transcript
 
 **Title:** 20,000 Push-ups and Pull-ups in 30 Days Challenge (featuring David Goggins)
@@ -459,3 +480,5 @@ a few days ago I tweeted I will do as many push ups and pull ups next 30 days as
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

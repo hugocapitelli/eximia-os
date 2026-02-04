@@ -1,3 +1,22 @@
+---
+title: "COPY VERSÃO 2: ESTILO SCHWARTZ"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copy-versao-2-schwartz"
+  - "copy versão 2: estilo schwartz"
+  - "post principal"
+  - "manifesto (descrição do perfil"
+  - "uso recomendado"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # COPY VERSÃO 2: ESTILO SCHWARTZ
 **Características**: Psicológico, Stages of Awareness, Problem-Aware
 
@@ -70,3 +89,5 @@ Seja bem-vindo ao futuro que já começou.
 - **Plataforma**: LinkedIn, Medium, Newsletter
 - **Público**: Líderes em transição para IA, audiência fria (problem-aware)
 - **Tom**: Educativo, empático, solution-oriented
+
+#galaxy-tools

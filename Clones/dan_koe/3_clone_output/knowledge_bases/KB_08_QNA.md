@@ -1,3 +1,27 @@
+---
+title: "KB_08_QNA — Dan Koe"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-qna"
+  - "kb_08_qna — dan koe"
+  - "objetivo"
+  - "categoria: proposito & direcao"
+  - "q1: "nao sei o que fazer da mi"
+  - "q2: "tenho muitos interesses e"
+  - "categoria: one-person business"
+  - "q3: "como comecar um negocio d"
+  - "q4: "preciso de muito dinheiro"
+  - "categoria: foco & produtividad"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08_QNA — Dan Koe
 
 ## Objetivo
@@ -401,3 +425,5 @@ Acessar para:
 ---
 
 **Clone Factory ID:** DAN_KOE-v1.0
+
+#galaxy-creation

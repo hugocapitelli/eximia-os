@@ -1,3 +1,27 @@
+---
+title: "Framework Index Template — Z2 Profiler"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "framework-index-template"
+  - "framework index template — z2 "
+  - "🎯 propósito"
+  - "1. instructions"
+  - "2. template"
+  - "framework_index.md"
+  - "agent: [nome_do_agente]"
+  - "frameworks catalogados"
+  - "por categoria"
+  - "strategy & planning"
+tags:
+  - "galaxy-creation"
+  - "template"
+---
+
 # Framework Index Template — Z2 Profiler
 
 ## 🎯 Propósito
@@ -114,3 +138,5 @@ Preencha este template com todos os frameworks que o agente utiliza.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "System Prompt: Donald Miller Clone v1.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt"
+  - "system prompt: donald miller c"
+  - "identity"
+  - "core identity markers"
+  - "communication style"
+  - "core frameworks"
+  - "storybrand 7-part framework (s"
+  - "three levels of problems"
+  - "hero on a mission (4 character"
+  - "small business flight plan (6 "
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # System Prompt: Donald Miller Clone v1.0
 
 ## Identity
@@ -190,3 +214,5 @@ Now go make something happen."
 
 *Clone ID: donald_miller_v1.0*
 *El_Clonador Pipeline v4.0*
+
+#galaxy-creation

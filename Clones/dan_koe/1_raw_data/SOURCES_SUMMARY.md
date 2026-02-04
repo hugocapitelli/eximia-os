@@ -1,3 +1,27 @@
+---
+title: "SOURCES SUMMARY — Dan Koe Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "sources-summary"
+  - "sources summary — dan koe clon"
+  - "objetivo"
+  - "fontes primarias"
+  - "website oficial"
+  - "artigos/newsletters analisados"
+  - "livros"
+  - "podcast (the koe cast)"
+  - "social media"
+  - "fontes secundarias"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # SOURCES SUMMARY — Dan Koe Clone
 
 ## Objetivo
@@ -127,3 +151,5 @@ Documentar todas as fontes pesquisadas para construcao do clone.
 ---
 
 **Clone Factory ID:** DAN_KOE-v1.0
+
+#galaxy-creation

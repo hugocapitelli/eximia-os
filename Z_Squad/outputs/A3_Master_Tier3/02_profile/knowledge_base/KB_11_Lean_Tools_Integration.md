@@ -1,3 +1,27 @@
+---
+title: "KB_11: Lean Tools Integration com A3"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-11-lean-tools-integration"
+  - "kb_11: lean tools integration "
+  - "visão geral"
+  - "value stream mapping (vsm)"
+  - "o que é"
+  - "integração com a3"
+  - "métricas do vsm para a3"
+  - "quando usar"
+  - "kanban"
+  - "tipos de kanban"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_11: Lean Tools Integration com A3
 
 ## Visão Geral
@@ -298,3 +322,5 @@ Qualidade = Peças Boas / Peças Produzidas
 - Shingo, S. (1985). *A Revolution in Manufacturing: The SMED System*.
 - Hirano, H. (1995). *5 Pillars of the Visual Workplace*.
 - Nakajima, S. (1988). *Introduction to TPM*.
+
+#galaxy-creation

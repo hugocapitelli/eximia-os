@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Metrics Deep Dive"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-metrics-deep-dive"
+  - "kb_02 — metrics deep dive"
+  - "o framework aarrr para carross"
+  - "metricas primarias (tier 1)"
+  - "1. engagement rate (er)"
+  - "2. save rate"
+  - "3. share rate"
+  - "metricas secundarias (tier 2)"
+  - "4. reach rate"
+  - "5. swipe-through rate (str)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — Metrics Deep Dive
 
 **Agente:** Growth Hacker
@@ -297,3 +321,5 @@ CONTENT MIX PERFORMANCE
 - Neil Patel Digital Marketing Research
 - Sean Ellis - Growth Hacking Framework
 - Later.com Instagram Engagement Studies
+
+#galaxy-creation

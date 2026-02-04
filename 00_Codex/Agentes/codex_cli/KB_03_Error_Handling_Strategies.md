@@ -1,3 +1,27 @@
+---
+title: "Error Handling Strategies"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-error-handling-strategies"
+  - "error handling strategies"
+  - "princípios"
+  - "tipos de erros"
+  - "1. user errors (esperados)"
+  - "2. system errors (recuperáveis"
+  - "3. unexpected errors (críticos"
+  - "hierarquia de exceções"
+  - "uso"
+  - "validação de input"
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
+
 # Error Handling Strategies
 
 ## Princípios
@@ -239,3 +263,5 @@ if not data:
 - [Python Exception Hierarchy](https://docs.python.org/3/library/exceptions.html)
 - [Error Handling Best Practices](https://realpython.com/python-exceptions/)
 - [Logging HOWTO](https://docs.python.org/3/howto/logging.html)
+
+#galaxy-codex

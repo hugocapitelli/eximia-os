@@ -1,3 +1,27 @@
+---
+title: "Knowledge Base Index — The_Prototyper"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-index"
+  - "knowledge base index — the_pro"
+  - "overview"
+  - "knowledge base files"
+  - "quick reference"
+  - "when to use each kb"
+  - "framework cross-reference"
+  - "dependências"
+  - "changelog"
+  - "🧠 obsidian connections"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # Knowledge Base Index — The_Prototyper
 
 ## Overview
@@ -99,3 +123,5 @@ Total de KBs: 5 | Frameworks catalogados: 25+ | Última atualização: 2026-01-1
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

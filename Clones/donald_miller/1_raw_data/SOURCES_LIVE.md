@@ -1,3 +1,27 @@
+---
+title: "Donald Miller - Source Registry"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "sources-live"
+  - "donald miller - source registr"
+  - "overview"
+  - "source categories"
+  - "1. books by donald miller (pri"
+  - "2. podcast appearances (primar"
+  - "3. youtube content"
+  - "4. official websites and platf"
+  - "5. third-party analysis and re"
+  - "6. news articles and press"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Donald Miller - Source Registry
 
 ## Overview
@@ -166,3 +190,5 @@ When citing Donald Miller:
 
 *Compiled by The_Veritas Research Protocol*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

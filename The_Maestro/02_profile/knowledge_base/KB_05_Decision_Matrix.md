@@ -1,3 +1,27 @@
+---
+title: "KB_05: Decision Matrix"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-decision-matrix"
+  - "kb_05: decision matrix"
+  - "🎯 core principle"
+  - "⚖️ conflict resolution priorit"
+  - "default hierarchy"
+  - "rationale"
+  - "📊 decision frameworks"
+  - "framework 1: eisenhower matrix"
+  - "framework 2: ooda loop"
+  - "framework 3: regret minimizati"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_05: Decision Matrix
 
 > **Category**: STRATEGY  
@@ -93,3 +117,5 @@ Every conflict resolution MUST include:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

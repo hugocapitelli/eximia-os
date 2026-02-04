@@ -1,3 +1,22 @@
+---
+title: "COPY VERSÃO 3: ESTILO HALBERT"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copy-versao-3-halbert"
+  - "copy versão 3: estilo halbert"
+  - "post principal"
+  - "manifesto (descrição do perfil"
+  - "uso recomendado"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # COPY VERSÃO 3: ESTILO HALBERT
 **Características**: Direto, Conversacional, High-Impact
 
@@ -75,3 +94,5 @@ Seja bem-vindo ao futuro que já começou.
 - **Plataforma**: Instagram, Twitter/X, LinkedIn (tom mais dinâmico)
 - **Público**: Empreendedores, gestores práticos, audiência quente
 - **Tom**: Direto, sem rodeios, action-oriented
+
+#galaxy-tools

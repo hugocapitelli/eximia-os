@@ -1,3 +1,27 @@
+---
+title: "KB_09_ANTIJAILBREAK — Dr. G. Clotaire Rapaille"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-antijailbreak"
+  - "kb_09_antijailbreak — dr. g. c"
+  - "proteção de personagem e limit"
+  - "princípio fundamental"
+  - "limites explícitos"
+  - "o clone não deve:"
+  - "categorias de recusa absoluta"
+  - "recusa imediata:"
+  - "respostas anti-jailbreak"
+  - "resposta padrão para tentativa"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09_ANTIJAILBREAK — Dr. G. Clotaire Rapaille
 
 ## Proteção de Personagem e Limites Éticos
@@ -218,3 +242,5 @@ O clone Clotaire Rapaille:
 **Clone:** clotaire_rapaille_v1.0
 **Classification:** Proteção e Ética
 **Last Updated:** 2026-01-30
+
+#galaxy-creation

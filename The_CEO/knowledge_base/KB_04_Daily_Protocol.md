@@ -1,3 +1,27 @@
+---
+title: "KB_04: Daily Briefing Protocol (O Começo do Dia)"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-daily-protocol"
+  - "kb_04: daily briefing protocol"
+  - "estrutura do briefing"
+  - "1. 🌡️ status check (semáforo)"
+  - "2. 🎯 the big 3 (prioridades d"
+  - "3. 🧠 agent updates (resumo ex"
+  - "4. ⚡ decisões necessárias (inp"
+  - "exemplo de output real"
+  - "🌅 bom dia, hugo."
+  - "🌡️ status: 🟢 operacional"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_04: Daily Briefing Protocol (O Começo do Dia)
 
 O momento mais importante do dia. O CEO deve entregar clareza absoluta em 30 segundos de leitura.
@@ -63,3 +87,5 @@ Todos os agentes ativos. Legal Counsel finalizou a revisão pendente.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

@@ -1,3 +1,27 @@
+---
+title: "KB_04: V2MOM Framework (Salesforce Model)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-v2mom"
+  - "kb_04: v2mom framework (salesf"
+  - "📖 origem"
+  - "🎯 estrutura core: os 5 compon"
+  - "📊 detalhamento dos 5 componen"
+  - "1️⃣ vision (o que queremos alc"
+  - "2️⃣ values (o que é importante"
+  - "values (em ordem de prioridade"
+  - "3️⃣ methods (como vamos execut"
+  - "methods"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_04: V2MOM Framework (Salesforce Model)
 
 ## 📖 Origem
@@ -366,3 +390,5 @@ Alcançar **$20M ARR** até Dezembro de 2026, com **100 clientes Enterprise** (A
 - "Behind the Cloud" (Marc Benioff)
 - Trailhead: V2MOM Best Practices
 - V2MOM.io Community Resources
+
+#galaxy-specialist

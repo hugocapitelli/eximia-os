@@ -1,3 +1,27 @@
+---
+title: "CLONE PROFILE — Dan Koe v2.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-profile"
+  - "clone profile — dan koe v2.0"
+  - "quick reference"
+  - "1. identidade"
+  - "arquetipo"
+  - "funcao para seguidores"
+  - "bio resumida"
+  - "2. perfil cognitivo (mbti)"
+  - "tipo: **intj** (88% confidence"
+  - "como processa informacao"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # CLONE PROFILE — Dan Koe v2.0
 
 <div align="center">
@@ -486,3 +510,5 @@ Sutil, auto-consciente, ocasionalmente ironico sobre "guru culture"
 *"Nao clonamos vozes. Clonamos algoritmos de decisao."*
 
 </div>
+
+#galaxy-creation

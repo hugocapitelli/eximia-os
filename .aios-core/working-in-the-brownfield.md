@@ -1,3 +1,27 @@
+---
+title: "Working in the Brownfield: A Complete Guide"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "working-in-the-brownfield"
+  - "working in the brownfield: a c"
+  - "what is brownfield development"
+  - "when to use aios for brownfiel"
+  - "when not to use a brownfield f"
+  - "the complete brownfield workfl"
+  - "choose your approach"
+  - "approach a: prd-first workflow"
+  - "approach b: document-first wor"
+  - "phase 3: validate planning art"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Working in the Brownfield: A Complete Guide
 
 > **HIGHLY RECOMMENDED: Use Gemini Web or Gemini CLI for Brownfield Documentation Generation!**
@@ -359,3 +383,5 @@ Is this a major enhancement affecting multiple systems?
 Brownfield development with AIOS-Method provides structure and safety when modifying existing systems. The key is providing comprehensive context through documentation, using specialized templates that consider integration requirements, and following workflows that respect existing constraints while enabling progress.
 
 Remember: **Document First, Plan Carefully, Integrate Safely**
+
+#galaxy-runtime

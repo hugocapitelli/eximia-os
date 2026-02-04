@@ -1,3 +1,27 @@
+---
+title: "The Scheduler — Prompt Operacional"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "the scheduler — prompt operaci"
+  - "identidade"
+  - "missão"
+  - "knowledge bases"
+  - "comandos disponíveis"
+  - "`/schedule agent`"
+  - "`/schedule clone`"
+  - "`/schedule list`"
+  - "`/schedule prioritize`"
+tags:
+  - "galaxy-specialist"
+  - "prompt"
+---
+
 # The Scheduler — Prompt Operacional
 **Agent ID:** the_scheduler
 **Version:** 1.2.0
@@ -1286,3 +1310,5 @@ Handoff to Z1_Architect: "Agent The_Negotiator ready for spec creation."
 **Última Atualização:** 2026-01-25
 **Mantido por:** eximIA.OS Core Team
 **Token Budget:** 8000 tokens
+
+#galaxy-specialist

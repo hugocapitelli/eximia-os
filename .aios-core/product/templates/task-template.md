@@ -1,3 +1,27 @@
+---
+title: "{{TASK_TITLE}}"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "task-template"
+  - "{{task_title}}"
+  - "⚠️ naming convention"
+  - "agent-specific tasks"
+  - "shared tasks"
+  - "how to apply"
+  - "description"
+  - "context required"
+  - "prerequisites"
+  - "workflow"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # {{TASK_TITLE}}
 
 > Task ID: {{TASK_ID}}
@@ -120,4 +144,6 @@ This task uses interactive elicitation to gather information from the user.
 ## Notes
 {{#EACH_NOTES}}
 - {{NOTE}}
-{{/EACH_NOTES}} 
+{{/EACH_NOTES}}
+
+#galaxy-runtime

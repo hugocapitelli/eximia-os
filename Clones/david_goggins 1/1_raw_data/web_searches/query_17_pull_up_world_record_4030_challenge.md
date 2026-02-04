@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Pull-Up World Record: 4,030 in 17 Hours"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-17-pull-up-world-record-4030-challenge"
+  - "david goggins - pull-up world "
+  - "the world record"
+  - "training leading up to record"
+  - "six-month preparation"
+  - "total pull-ups (training + att"
+  - "the failed attempts"
+  - "first attempt - the today show"
+  - "second attempt"
+  - "the successful third attempt"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Pull-Up World Record: 4,030 in 17 Hours
 
 **Source:** Web Search - "David Goggins pull-up world record 4030 17 hours challenge"
@@ -193,3 +217,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

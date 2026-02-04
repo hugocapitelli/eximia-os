@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Ultra Marathon & Endurance Racing Achievements"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-06-ultra-marathon-endurance-achievements"
+  - "david goggins - ultra marathon"
+  - "major recognition"
+  - "notable race results by year"
+  - "2025"
+  - "2020"
+  - "2016"
+  - "2008"
+  - "2006"
+  - "2005"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Ultra Marathon & Endurance Racing Achievements
 
 **Source:** Web Search - "David Goggins ultra marathon endurance racing achievements records"
@@ -109,3 +133,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

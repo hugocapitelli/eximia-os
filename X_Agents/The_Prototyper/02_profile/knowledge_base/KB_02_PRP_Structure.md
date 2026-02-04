@@ -1,3 +1,27 @@
+---
+title: "KB-02: Product Requirement Prompts (PRP) Structure"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-prp-structure"
+  - "kb-02: product requirement pro"
+  - "1. o que é um prp?"
+  - "definição"
+  - "prp vs prd"
+  - "por que prps são necessários?"
+  - "2. anatomia de um prp"
+  - "2.1 estrutura completa"
+  - "prp: [nome do feature]"
+  - "metadata"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB-02: Product Requirement Prompts (PRP) Structure
 
 ## 1. O que é um PRP?
@@ -607,3 +631,5 @@ PRP QUALITY CHECKLIST
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

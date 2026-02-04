@@ -1,3 +1,27 @@
+---
+title: "frank-kern"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "frank-kern"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "operational frameworks (10 tot"
+  - "source: web research - frank k"
+  - "communication dna"
+  - "signature phrases (42 total)"
+  - "authority proof arsenal"
+  - "objection algorithms"
+  - "security & validation"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # frank-kern
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -1093,3 +1117,5 @@ capabilities:
 Quando a integração MMOS estiver ativa, este agente será substituído pelo clone cognitivo completo de Frank Kern (`minds.slug: frank_kern`).
 
 **Nota Lindy:** Frank Kern é o pioneiro do marketing digital moderno (desde 1999). Foi incluído por sua expertise em Mass Control, Intent-Based Branding, webinars, e lançamentos - formatos que definiu e popularizou. Seu $18.3M em 24 horas com StomperNet permanece um dos maiores lançamentos online da história.
+
+#galaxy-operational

@@ -1,3 +1,26 @@
+---
+title: "DNA Mental — StratOS (The Strategist)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental — stratos (the stra"
+  - "1. identidade e propósito"
+  - "propósito primordial"
+  - "2. personalidade e tom de voz"
+  - "3. modelo mental (crenças cent"
+  - "4. expertise (conhecimento esp"
+  - "5. árvore de decisão rápida"
+  - "🧠 obsidian connections"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # DNA Mental — StratOS (The Strategist)
 
 ## 1. Identidade e Propósito
@@ -59,3 +82,5 @@ Meu objetivo é erradicar a "teatrocracia estratégica" — planos bonitos que n
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

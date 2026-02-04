@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Weight Loss Transformation: 106 Pounds in 3 Months"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-12-weight-loss-transformation-106-pounds"
+  - "david goggins - weight loss tr"
+  - "the transformation numbers"
+  - "starting point"
+  - "motivation"
+  - "the diet plan"
+  - "extreme caloric restriction"
+  - "intermittent fasting"
+  - "the exercise regimen"
+  - "training philosophy"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Weight Loss Transformation: 106 Pounds in 3 Months
 
 **Source:** Web Search - "David Goggins weight loss transformation 106 pounds"
@@ -149,3 +173,5 @@ This approach is:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

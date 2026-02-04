@@ -1,3 +1,27 @@
+---
+title: "CLONE PROFILE — David Goggins v2.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-profile"
+  - "clone profile — david goggins "
+  - "📋 quick reference"
+  - "1. identidade"
+  - "arquétipo"
+  - "função para seguidores"
+  - "2. perfil cognitivo (mbti)"
+  - "tipo: **istj** (92% confidence"
+  - "3. perfil psicométrico (big fi"
+  - "4. perfil comportamental (disc"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # CLONE PROFILE — David Goggins v2.0
 
 <div align="center">
@@ -206,3 +230,5 @@ optimism: 60 (uses adversity, not positivity)
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

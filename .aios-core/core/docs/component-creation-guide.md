@@ -1,3 +1,27 @@
+---
+title: "Component Creation Guide"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "component-creation-guide"
+  - "component creation guide"
+  - "overview"
+  - "table of contents"
+  - "creating agents"
+  - "using the interactive command"
+  - "interactive elicitation proces"
+  - "example session"
+  - "generated agent structure"
+  - "data analysis expert"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Component Creation Guide
 
 ## Overview
@@ -456,3 +480,5 @@ Config file format:
 3. **Build workflows**: Combine tasks into processes
 4. **Test thoroughly**: Validate all components
 5. **Document usage**: Help others use your components
+
+#galaxy-runtime

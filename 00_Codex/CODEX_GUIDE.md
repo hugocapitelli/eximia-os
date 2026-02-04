@@ -1,3 +1,27 @@
+---
+title: "🗄️ Projeto Codex - Guia Completo"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "codex-guide"
+  - "🗄️ projeto codex - guia compl"
+  - "📖 o que é o codex?"
+  - "🎯 conceito central"
+  - "🏗️ arquitetura"
+  - "estrutura de diretórios"
+  - "database schema (sqlite)"
+  - "fluxo de dados"
+  - "🎮 comandos completos"
+  - "📥 ingestão de conteúdo"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # 🗄️ Projeto Codex - Guia Completo
 
 > **Repositório Inteligente de Conhecimento**  
@@ -699,3 +723,5 @@ R: SQLite suporta até ~280 TB. Você está seguro! 😄
 **Status:** MVP em desenvolvimento  
 **Versão:** 1.0.0  
 **Licença:** Uso interno exímIA Ventures
+
+#galaxy-codex

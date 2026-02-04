@@ -1,3 +1,27 @@
+---
+title: "Extract Signature Phrases - Copywriter Agent Sub-Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "extract-signature-phrases"
+  - "extract signature phrases - co"
+  - "metadata"
+  - "objective"
+  - "the science of signature phras"
+  - "what are signature phrases?"
+  - "the linguistic fingerprint for"
+  - "idiolect marker accuracy rates"
+  - "why custom instructions fail"
+  - "the 7-tier classification syst"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Extract Signature Phrases - Copywriter Agent Sub-Task
 
 ## Metadata
@@ -1195,3 +1219,5 @@ Tier 7           1-2        5-7          Situational
 *Upgrade Date: 2026-01-23*
 *Part of the AIOS Expansion Pack System*
 *Lines: 680+*
+
+#galaxy-operational

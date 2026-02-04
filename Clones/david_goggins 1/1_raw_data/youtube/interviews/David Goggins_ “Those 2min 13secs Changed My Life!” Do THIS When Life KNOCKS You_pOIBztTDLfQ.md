@@ -1,3 +1,24 @@
+---
+title: "YouTube Transcript"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "david goggins- “those 2min 13secs changed my life!” do this when life knocks you-poibzttdlfq"
+  - "youtube transcript"
+  - "full transcript"
+  - "plain text (for processing)"
+  - "🧠 obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # YouTube Transcript
 
 **Title:** David Goggins: “Those 2min 13secs Changed My Life!” Do THIS When Life KNOCKS You Down!
@@ -2412,3 +2433,5 @@ the one piece I was missing was me Having the courage to face myself and once yo
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Synkra AIOS Development Rules for Roo Code"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "roo-rules"
+  - "synkra aios development rules "
+  - "core framework understanding"
+  - "agent system"
+  - "agent activation (roo mode sel"
+  - "agent context"
+  - "development methodology"
+  - "story-driven development"
+  - "code standards"
+  - "testing requirements"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Synkra AIOS Development Rules for Roo Code
 
 You are working with Synkra AIOS, an AI-Orchestrated System for Full Stack Development.
@@ -84,3 +108,5 @@ docs/
 
 ---
 *Synkra AIOS Roo Code Configuration v2.1*
+
+#galaxy-runtime

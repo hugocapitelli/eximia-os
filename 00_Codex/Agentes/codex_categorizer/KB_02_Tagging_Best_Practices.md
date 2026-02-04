@@ -1,3 +1,27 @@
+---
+title: "Tagging Best Practices"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-tagging-best-practices"
+  - "tagging best practices"
+  - "princípios de tags eficazes"
+  - "1. específicas mas abrangentes"
+  - "2. consistência"
+  - "3. granularidade balanceada"
+  - "tag limits"
+  - "hierarquia de tags"
+  - "nível 1: domínio (1-2 tags)"
+  - "nível 2: área (2-3 tags)"
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
+
 # Tagging Best Practices
 
 ## Princípios de Tags Eficazes
@@ -163,3 +187,5 @@ def normalize_tag(tag):
 - Tags devem facilitar descoberta
 - Pens ar em como você buscaria
 - Equilibrar SEO + utilidade
+
+#galaxy-codex

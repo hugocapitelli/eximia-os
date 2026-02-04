@@ -1,3 +1,27 @@
+---
+title: "KB_07 — Micro-Story Formats"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-micro-story-formats"
+  - "kb_07 — micro-story formats"
+  - "micro-stories: definicao"
+  - "formato 5 slides — lightning s"
+  - "quando usar:"
+  - "estrutura padrao"
+  - "template a: quick win"
+  - "template b: myth buster"
+  - "template c: daily lesson"
+  - "formato 7 slides — complete mi"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07 — Micro-Story Formats
 
 **Agente:** Story Architect
@@ -331,3 +355,5 @@ Slide 10: CTA + MORAL
 - LinkedIn Carousel Analytics
 - Buffer Social Media Reports
 - Pattern analysis of viral carousels 2022-2024
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_06: PRINCIPLES"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-principles"
+  - "kb_06: principles"
+  - "steve jobs - core values & dec"
+  - "foundational beliefs"
+  - "1. make a dent in the universe"
+  - "2. the crazy ones change the w"
+  - "3. excellence over popularity"
+  - "4. simplicity is the ultimate "
+  - "5. your time is limited"
+  - "6. follow your heart and intui"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06: PRINCIPLES
 ## Steve Jobs - Core Values & Decision Principles
 
@@ -125,3 +149,5 @@ These principles made Apple great. They also made me difficult. I'm okay with th
 ---
 
 *"Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful—that's what matters to me."*
+
+#galaxy-creation

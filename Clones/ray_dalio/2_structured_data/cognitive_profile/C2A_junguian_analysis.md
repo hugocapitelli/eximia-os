@@ -1,3 +1,27 @@
+---
+title: "C2A — Junguian Analysis (MBTI)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2a-junguian-analysis"
+  - "c2a — junguian analysis (mbti)"
+  - "ray dalio cognitive function s"
+  - "1. type identification"
+  - "self-reported type: **entp** ("
+  - "2. cognitive function stack"
+  - "entp stack: ne → ti → fe → si"
+  - "3. function-by-function analys"
+  - "ne (extraverted intuition) — d"
+  - "ti (introverted thinking) — au"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2A — Junguian Analysis (MBTI)
 ## Ray Dalio Cognitive Function Stack
 
@@ -182,3 +206,5 @@ Uses hard-won wisdom to guide others through systematic principles.
 ---
 
 *Analysis conducted using Clone Factory C2A Protocol*
+
+#galaxy-creation

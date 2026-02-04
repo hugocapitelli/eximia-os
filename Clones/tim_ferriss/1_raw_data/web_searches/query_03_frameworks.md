@@ -1,3 +1,27 @@
+---
+title: "Web Search: Tim Ferriss Frameworks & Methodologies"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-03-frameworks"
+  - "web search: tim ferriss framew"
+  - "framework 1: disss method (apr"
+  - "d - deconstruction (desconstru"
+  - "s - selection (seleção)"
+  - "s - sequencing (sequenciamento"
+  - "s - stakes (apostas/consequênc"
+  - "framework 2: fear-setting (def"
+  - "exercício de 3 páginas:"
+  - "framework 3: 80/20 principle ("
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Web Search: Tim Ferriss Frameworks & Methodologies
 
 **Query:** Tim Ferriss frameworks DiSSS fear-setting 80/20 principle methodologies  
@@ -107,3 +131,4 @@ Princípio fundamental em muitas metodologias de Ferriss.
 - 4over4.com
 - SixSigmaStudyGuide.com
 
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Clone Factory — Handoff Protocol"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "protocol"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "handoff-protocol"
+  - "clone factory — handoff protoc"
+  - "propósito"
+  - "estrutura do handoff"
+  - "handoff_{origem}_{destino}.yam"
+  - "handoffs do pipeline"
+  - "1. research → etl"
+  - "handoff_c1_c2.yaml"
+  - "2. etl → generation"
+  - "handoff_c2_c3.yaml"
+tags:
+  - "galaxy-creation"
+  - "protocol"
+---
+
 # Clone Factory — Handoff Protocol
 
 ## Propósito
@@ -236,3 +260,5 @@ Cada fase atualiza o `.checkpoint.json`:
 ---
 
 **Última atualização:** 2026-01-08
+
+#galaxy-creation

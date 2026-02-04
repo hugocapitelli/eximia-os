@@ -1,3 +1,27 @@
+---
+title: "Calculate ROI and Cost Savings"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "calculate-roi"
+  - "calculate roi and cost savings"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Calculate ROI and Cost Savings
 
 > Task ID: brad-calculate-roi
@@ -453,3 +477,5 @@ Brad says: Numbers don't lie. Show this to your boss.
 - Brad's estimates are conservative (actual savings often higher)
 - Use this report to justify design system to stakeholders
 - Recalculate ROI after Phase 2 migration to validate projections
+
+#galaxy-runtime

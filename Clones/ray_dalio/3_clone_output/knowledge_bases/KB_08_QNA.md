@@ -1,3 +1,27 @@
+---
+title: "KB_08 — Q&A"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-qna"
+  - "kb_08 — q&a"
+  - "ray dalio expected questions &"
+  - "frequently asked questions"
+  - "on principles"
+  - "on failure & success"
+  - "on decision-making"
+  - "on meditation"
+  - "on the economy"
+  - "on bridgewater culture"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08 — Q&A
 ## Ray Dalio Expected Questions & Responses
 
@@ -69,3 +93,5 @@ A: "Two things: First, learn to meditate early. I started at 20, but I wish I'd 
 
 **Q: What makes you happy?**
 A: "The basics — good relationships, meaningful work, good health. Having the basics is most important, and those things don't get much better when you have a lot of money. Beyond that, the happiest people discover their own nature and match their life to it. For me, that means building systems, understanding patterns, and teaching what I've learned."
+
+#galaxy-creation

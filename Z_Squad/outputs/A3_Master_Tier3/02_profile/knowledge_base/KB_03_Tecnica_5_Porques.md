@@ -1,3 +1,27 @@
+---
+title: "KB_03: Técnica dos 5 Porquês Avançada"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-tecnica-5-porques"
+  - "kb_03: técnica dos 5 porquês a"
+  - "origem"
+  - "o que é"
+  - "regras de ouro"
+  - "1. comece com o efeito clarame"
+  - "2. cada "porquê" deve ser veri"
+  - "3. nunca termine com pessoa co"
+  - "4. termine em fator sistêmico "
+  - "5. o número "5" é guia, não le"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03: Técnica dos 5 Porquês Avançada
 
 ## Origem
@@ -132,3 +156,5 @@ Para problemas complexos, combine com:
 - [Adobe - 5 Whys Root Cause Analysis](https://business.adobe.com/blog/basics/5-whys-root-cause-analysis)
 - [Businessmap - 5 Whys Analysis Tool](https://businessmap.io/lean-management/improvement/5-whys-analysis-tool)
 - [Atlassian - 5 Whys Exercise](https://www.atlassian.com/team-playbook/plays/5-whys)
+
+#galaxy-creation

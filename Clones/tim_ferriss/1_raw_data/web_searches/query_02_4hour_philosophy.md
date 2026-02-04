@@ -1,3 +1,27 @@
+---
+title: "Web Search: Tim Ferriss 4-Hour Workweek Philosophy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-02-4hour-philosophy"
+  - "web search: tim ferriss 4-hour"
+  - "filosofia central: lifestyle d"
+  - "framework deal"
+  - "d - definition (definição)"
+  - "e - elimination (eliminação)"
+  - "a - automation (automação)"
+  - "l - liberation (liberação)"
+  - "conceitos-chave"
+  - "the new rich (os novos ricos)"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Web Search: Tim Ferriss 4-Hour Workweek Philosophy
 
 **Query:** Tim Ferriss 4-Hour Workweek philosophy lifestyle design core principles  
@@ -68,3 +92,4 @@ A filosofia do "4-Hour Workweek" visa liberar indivíduos do modelo tradicional 
 - Tim.blog
 - TripOfALifestyle.com
 
+#galaxy-creation

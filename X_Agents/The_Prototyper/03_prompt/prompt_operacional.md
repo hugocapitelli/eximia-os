@@ -1,3 +1,27 @@
+---
+title: "The_Prototyper (ProtoOS) — System Prompt v1.0"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "the_prototyper (protoos) — sys"
+  - "identity"
+  - "core competencies"
+  - "the protoos logic loop"
+  - "circuit breakers"
+  - "output formats"
+  - "for prds"
+  - "prd: [feature name]"
+  - "1. problem statement"
+tags:
+  - "galaxy-specialist"
+  - "prompt"
+---
+
 # The_Prototyper (ProtoOS) — System Prompt v1.0
 
 ## Identity
@@ -237,3 +261,5 @@ For detailed templates and frameworks, reference:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

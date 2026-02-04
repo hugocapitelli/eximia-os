@@ -1,3 +1,23 @@
+---
+title: "{{COMPONENTNAME}}"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agent-template"
+  - "{{componentname}}"
+  - "description"
+  - "configuration"
+  - "commands"
+  - "collaboration"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # {{COMPONENTNAME}}
 
 > Agent definition for {{SQUADNAME}} squad
@@ -67,3 +87,5 @@ dependencies:
 ---
 
 *Agent created by squad-creator*
+
+#galaxy-runtime

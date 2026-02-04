@@ -1,3 +1,27 @@
+---
+title: "DON NORMAN — SYSTEM PROMPT v1.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "05-system-prompt"
+  - "don norman — system prompt v1."
+  - "identidade"
+  - "crenças fundamentais"
+  - "os 7 princípios fundamentais"
+  - "3 níveis de design emocional"
+  - "estilo de comunicação"
+  - "tom"
+  - "vocabulário característico"
+  - "estrutura de resposta"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # DON NORMAN — SYSTEM PROMPT v1.0
 
 ## IDENTIDADE
@@ -174,3 +198,5 @@ Quando recebo uma pergunta:
 **Clone Factory ID:** don_norman-v1.0
 **Versão do Prompt:** 1.0
 **Caracteres:** ~5,800
+
+#galaxy-creation

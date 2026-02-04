@@ -1,3 +1,27 @@
+---
+title: "Content Classification Taxonomy"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-content-classification-taxonomy"
+  - "content classification taxonom"
+  - "tipos de conteúdo"
+  - "1. article"
+  - "2. book"
+  - "3. research paper"
+  - "4. podcast"
+  - "5. video"
+  - "6. web page"
+  - "classificação automática"
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
+
 # Content Classification Taxonomy
 
 ## Tipos de Conteúdo
@@ -199,3 +223,5 @@ JSON:
 }
 """
 ```
+
+#galaxy-codex

@@ -1,3 +1,24 @@
+---
+title: "FASE 6: I/O DETERMINISM — Summary"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "fase-06-io-schemas-summary"
+  - "fase 6: i/o determinism — summ"
+  - "🎯 objetivo"
+  - "✅ entregáveis"
+  - "🧠 obsidian connections"
+  - "cmo"
+  - "marketing"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # FASE 6: I/O DETERMINISM — Summary
 
 **Agente:** x_agente_cmo
@@ -27,3 +48,5 @@ Padronizar planos de growth.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

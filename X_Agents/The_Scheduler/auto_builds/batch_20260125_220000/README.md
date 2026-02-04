@@ -1,3 +1,27 @@
+---
+title: "Batch Execution: batch_20260125_220000"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "batch execution: batch_2026012"
+  - "status: initiated"
+  - "📊 queue overview"
+  - "🗂️ files in this batch"
+  - "📁 clone output locations"
+  - "🔍 how to check progress"
+  - "option 1: read the log file"
+  - "option 2: check queue status"
+  - "⏰ execution timeline (estimate"
+tags:
+  - "galaxy-specialist"
+  - "documentation"
+---
+
 # Batch Execution: batch_20260125_220000
 
 ## Status: INITIATED
@@ -134,3 +158,5 @@ This order creates a conceptual build:
 
 **Batch initiated by:** The Scheduler v1.2.0
 **User approved at:** 2026-01-25 22:00:00
+
+#galaxy-specialist

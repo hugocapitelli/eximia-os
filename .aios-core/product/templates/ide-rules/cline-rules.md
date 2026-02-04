@@ -1,3 +1,27 @@
+---
+title: "Synkra AIOS Development Rules for Cline"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "cline-rules"
+  - "synkra aios development rules "
+  - "core framework understanding"
+  - "agent system"
+  - "agent activation"
+  - "agent context"
+  - "development methodology"
+  - "story-driven development"
+  - "code standards"
+  - "testing requirements"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Synkra AIOS Development Rules for Cline
 
 You are working with Synkra AIOS, an AI-Orchestrated System for Full Stack Development.
@@ -82,3 +106,5 @@ Cline requires explicit approval for:
 
 ---
 *Synkra AIOS Cline Configuration v2.1*
+
+#galaxy-runtime

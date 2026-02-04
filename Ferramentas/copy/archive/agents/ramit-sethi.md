@@ -1,3 +1,27 @@
+---
+title: "ramit-sethi"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "ramit-sethi"
+  - "complete agent definition foll"
+  - "mmos integration note"
+  - "ramit sethi - contexto históri"
+  - "quem é ramit sethi"
+  - "educação e formação"
+  - "linha do tempo de sucesso"
+  - "contribuições principais para "
+  - "empresas e produtos"
+  - "filantropia"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # ramit-sethi
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -1150,3 +1174,5 @@ INVISIBLE SCRIPTS NO COPY:
 *Last Updated: 2026-01-22*
 *Agent: ramit-sethi | Lines: 1300+*
 *Source: Web research (no mind available)*
+
+#galaxy-tools

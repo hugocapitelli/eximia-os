@@ -1,3 +1,27 @@
+---
+title: "C2D: Biographic Analysis - Donald Miller"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2d-biographic-analysis"
+  - "c2d: biographic analysis - don"
+  - "timeline of formative events"
+  - "era 1: foundational trauma (19"
+  - "era 2: search and discovery (1"
+  - "era 3: breakthrough and fame ("
+  - "era 4: personal transformation"
+  - "era 5: business empire (2014-p"
+  - "key relationships"
+  - "father (absent)"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # C2D: Biographic Analysis - Donald Miller
 
 ## Timeline of Formative Events
@@ -300,3 +324,5 @@
 
 *Analysis conducted using biographical mapping methodology*
 *C2D_BiographicAnalyst | El_Clonador Pipeline v4.0*
+
+#galaxy-creation

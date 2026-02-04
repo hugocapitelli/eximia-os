@@ -1,3 +1,27 @@
+---
+title: "carlton-simplicity-checklist"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "carlton-simplicity-checklist"
+  - "checklist metadata"
+  - "section 1: one idea per senten"
+  - "sentence length check"
+  - "sentence structure check"
+  - "fragmentation check"
+  - "one idea score"
+  - "section 2: conversational tone"
+  - "natural language check"
+  - "direct address check"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # carlton-simplicity-checklist
 
 Checklist completo de validação de simplicidade e clareza - baseado no Simple Writing System de John Carlton.
@@ -465,3 +489,5 @@ Use esta versão para revisão rápida:
 *Checklist Version: 1.0*
 *Created: 2026-01-23*
 *Based on: John Carlton's Simple Writing System*
+
+#galaxy-tools

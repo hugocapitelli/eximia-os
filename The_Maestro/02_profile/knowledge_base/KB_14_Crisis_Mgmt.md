@@ -1,3 +1,27 @@
+---
+title: "KB_14: Crisis Management"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-14-crisis-mgmt"
+  - "kb_14: crisis management"
+  - "🚨 crisis categories"
+  - "level 1: operational"
+  - "level 2: quality"
+  - "level 3: safety"
+  - "🔄 crisis response protocol"
+  - "1. stabilize"
+  - "2. assess"
+  - "3. act"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_14: Crisis Management
 
 > **Category**: PROTOCOL  
@@ -73,3 +97,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

@@ -1,3 +1,27 @@
+---
+title: "Índice de Estudos sobre Neurociência da Aprendizagem"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "neuroscience-index"
+  - "índice de estudos sobre neuroc"
+  - "📂 arquivos disponíveis"
+  - "1️⃣ estudo consolidado complet"
+  - "2️⃣ referência rápida"
+  - "3️⃣ visual cheatsheet"
+  - "4️⃣ readme do hub"
+  - "🎯 fluxos de uso recomendados"
+  - "fluxo 1: quick start (30 min)"
+  - "fluxo 2: fundamentação (3-4 ho"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Índice de Estudos sobre Neurociência da Aprendizagem
 
 > **Índice consolidado** de todos os recursos sobre neurociência salvos no Codex
@@ -473,3 +497,5 @@ Este hub de neurociência consolida **6 frameworks fundamentais** baseados em ev
 **Credibilidade:** 9.5/10
 
 **Aplicação:** Design de experiências de aprendizagem baseado em neurociência.
+
+#galaxy-codex

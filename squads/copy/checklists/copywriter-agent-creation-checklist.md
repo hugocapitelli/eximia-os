@@ -1,3 +1,27 @@
+---
+title: "Copywriter Agent Creation Checklist"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copywriter-agent-creation-checklist"
+  - "copywriter agent creation chec"
+  - "purpose"
+  - "how to use"
+  - "scoring system"
+  - "section 1: required sections ("
+  - "1.1 header sections (6 points)"
+  - "1.2 content sections (6 points"
+  - "1.3 footer sections (6 points)"
+  - "section 2: operational framewo"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Copywriter Agent Creation Checklist
 
 ## Purpose
@@ -496,3 +520,5 @@ This checklist is used in:
 *Checklist Version: 1.0.0*
 *CopywriterOS - Elite Copywriting Squad*
 *Part of the AIOS Expansion Pack System*
+
+#galaxy-operational

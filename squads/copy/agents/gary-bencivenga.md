@@ -1,3 +1,27 @@
+---
+title: "gary-bencivenga"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "gary-bencivenga"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "operational frameworks"
+  - "communication dna"
+  - "signature phrases"
+  - "authority proof arsenal"
+  - "objection algorithms"
+  - "bullet writing masterclass"
+  - "the anatomy of a perfect bulle"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # gary-bencivenga
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -2276,3 +2300,5 @@ Bencivenga bridges the "classic" era (Caples, Ogilvy) with modern direct respons
 *Total Signature Phrases: 45*
 *Total Objection Algorithms: 5*
 *Primary Frameworks: Persuasion Equation, 29 Marketing Bullets System, Gifted Product Principle, Proof Elements Checklist, Fascinations*
+
+#galaxy-operational

@@ -1,3 +1,27 @@
+---
+title: "CopySearch Appendix B: Quick Reference Cards"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copysearch-quick-reference"
+  - "copysearch appendix b: quick r"
+  - "metadata"
+  - "card 1: evidence hierarchy"
+  - "card 2: anchor fact criteria"
+  - "card 3: big idea test"
+  - "card 4: research phase gate"
+  - "card 5: skin in the game gates"
+  - "card 6: headline types"
+  - "card 7: copy structure"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # CopySearch Appendix B: Quick Reference Cards
 
 ## Metadata
@@ -404,3 +428,5 @@ purpose: At-a-glance reference cards for key frameworks
 
 *Appendix B for: tasks/copysearch.md*
 *Based on: docs/research/david-ogilvy-research-engineering-meta-framework.md*
+
+#galaxy-operational

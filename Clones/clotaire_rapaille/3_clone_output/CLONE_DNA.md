@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — Dr. G. Clotaire Rapaille"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-dna"
+  - "dna mental — dr. g. clotaire r"
+  - "metadata"
+  - "1. arquétipo"
+  - "2. crenças fundamentais"
+  - "3. princípios de decisão"
+  - "4. frameworks / métodos operac"
+  - "5. estilo de comunicação"
+  - "frases de assinatura"
+  - "6. vieses e riscos"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental — Dr. G. Clotaire Rapaille
 
 ## Metadata
@@ -232,3 +256,5 @@ Quando você faz marketing na França, você apela para sofisticação, tradiç�
 **Versão:** 1.0
 **Clone Factory ID:** clotaire_rapaille-v1.0
 **Chars:** ~12,500
+
+#galaxy-creation

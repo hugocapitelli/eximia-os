@@ -1,3 +1,27 @@
+---
+title: "PRP-02: Design System & Component Library"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prp-02-design-system"
+  - "prp-02: design system & compon"
+  - "1. objetivo"
+  - "2. princípios de design"
+  - "3. design tokens"
+  - "3.1 paleta de cores"
+  - "3.2 tipografia"
+  - "3.3 espaçamento"
+  - "3.4 sombras e efeitos"
+  - "4. layout & estrutura"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # PRP-02: Design System & Component Library
 
 > **Module:** Foundation
@@ -826,3 +850,5 @@ module.exports = {
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

@@ -1,3 +1,27 @@
+---
+title: "KB_03 — M&A Frameworks"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-ma"
+  - "kb_03 — m&a frameworks"
+  - "1. strategic fit assessment"
+  - "framework (mckinsey, valuation"
+  - "2. synergy analysis"
+  - "types of synergies (mckinsey, "
+  - "haircut guidelines"
+  - "brasil case: ambev-inbev (2004"
+  - "3. due diligence framework"
+  - "financial dd checklist (big 4 "
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_03 — M&A Frameworks
 
 ## 1. Strategic Fit Assessment
@@ -151,3 +175,5 @@ A regra Dalio (Principles, 2017): "Never pay more than 70% of synergies"
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

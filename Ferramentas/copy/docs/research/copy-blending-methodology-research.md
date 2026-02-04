@@ -1,3 +1,27 @@
+---
+title: "Copy Blending Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copy-blending-methodology-research"
+  - "copy blending methodology rese"
+  - "deep research document for tas"
+  - "executive summary"
+  - "table of contents"
+  - "1. foundational frameworks"
+  - "1.1 the wtf framework (brand v"
+  - "1.2 the four dimensions of ton"
+  - "1.3 the seven-dimensional voic"
+  - "2. voice analysis methodologie"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Copy Blending Methodology Research
 ## Deep Research Document for Task Upgrade
 
@@ -1048,3 +1072,5 @@ enthusiasm:       (_×_%) + (_×_%) + (_×_%) = ___
 *Line Count: 500+ lines*
 *Version: 1.0*
 *Date: 2026-01-23*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "PRP-01: Onboarding & Tutorial"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prp-01-onboarding-tutorial"
+  - "prp-01: onboarding & tutorial"
+  - "1. objetivo"
+  - "2. user stories"
+  - "3. requisitos funcionais"
+  - "4. wireframes"
+  - "4.1 welcome screen"
+  - "4.2 methodology tour - hierarq"
+  - "4.3 methodology tour - bsc"
+  - "4.4 methodology tour - ai co-p"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # PRP-01: Onboarding & Tutorial
 
 > **Module:** Foundation
@@ -280,3 +304,5 @@ Criar um fluxo de onboarding educacional que apresenta o StratOS aos novos usuá
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

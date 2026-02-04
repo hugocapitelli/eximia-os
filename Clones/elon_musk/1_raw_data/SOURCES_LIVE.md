@@ -1,3 +1,27 @@
+---
+title: "SOURCES LIVE — Elon Musk"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "sources-live"
+  - "sources live — elon musk"
+  - "tier 1: alta autoridade (prima"
+  - "podcasts 1h+"
+  - "lectures/talks"
+  - "tier 2: média-alta autoridade"
+  - "biographies"
+  - "news/analysis"
+  - "tier 3: compilações"
+  - "social media"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # SOURCES LIVE — Elon Musk
 
 **Clone ID:** elon_musk
@@ -105,3 +129,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Upsell Page Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "upsell-methodology-research"
+  - "upsell page methodology resear"
+  - "deep research for create-upsel"
+  - "1. foundational concepts"
+  - "1.1 definitions and distinctio"
+  - "1.2 the economics of upselling"
+  - "1.3 why upsells work"
+  - "2. alex hormozi's money model "
+  - "2.1 the four core offer types"
+  - "2.2 the hormozi value equation"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Upsell Page Methodology Research
 ## Deep Research for create-upsell-page.md Task Upgrade
 
@@ -786,3 +810,5 @@ HIGH CONVERSION UPSELL
 **Primary Sources:** 4
 **Secondary Sources:** 10+
 **Validation Criteria Met:** Yes
+
+#galaxy-tools

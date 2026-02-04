@@ -1,3 +1,27 @@
+---
+title: "KB_02: Kolb Original"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-kolb-original"
+  - "kb_02: kolb original"
+  - "referencia ao modelo classico "
+  - "visao geral"
+  - "o ciclo de 4 etapas (kolb orig"
+  - "os quatro modos"
+  - "os quatro estilos de aprendiza"
+  - "dimensoes estruturais"
+  - "preensao (como captamos experi"
+  - "transformacao (como processamo"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_02: Kolb Original
 ## Referencia ao Modelo Classico de David Kolb
 
@@ -104,3 +128,5 @@ ATIVA (EA)                             REFLEXIVA (OR)
 
 *KB_02 — Kolb Original Reference*
 *ELC_Architect | eximIA.OS*
+
+#galaxy-specialist

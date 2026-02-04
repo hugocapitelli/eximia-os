@@ -1,3 +1,27 @@
+---
+title: "KB_05 — Decision Principles"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-decision-principles"
+  - "kb_05 — decision principles"
+  - "1. principles (ray dalio)"
+  - "core framework (dalio, princip"
+  - "decision-making principles"
+  - "pain-to-benefit ratio"
+  - "2. margin of safety (graham/bu"
+  - "framework (graham, the intelli"
+  - "safety margins por tipo de ati"
+  - "buffett's rules (berkshire let"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_05 — Decision Principles
 
 ## 1. Principles (Ray Dalio)
@@ -153,3 +177,5 @@ Antes de decisão (Klein, 1989):
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

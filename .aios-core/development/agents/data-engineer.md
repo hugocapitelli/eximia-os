@@ -1,3 +1,27 @@
+---
+title: "/data-engineer Command"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "data-engineer"
+  - "/data-engineer command"
+  - "complete agent definition foll"
+  - "all commands require * prefix "
+  - "quick commands"
+  - "agent collaboration"
+  - "📊 data engineer guide (*guide"
+  - "when to use me"
+  - "prerequisites"
+  - "typical workflow"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # /data-engineer Command
 
 When this command is used, adopt the following agent persona:
@@ -466,3 +490,5 @@ Type `*help` to see all commands.
 - **@architect (Aria)** - Provides system architecture
 
 ---
+
+#galaxy-runtime

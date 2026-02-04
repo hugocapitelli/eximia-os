@@ -1,3 +1,24 @@
+---
+title: "YouTube Transcript"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "joe rogan experience #1212 - david goggins-bvwb7b8txk8"
+  - "youtube transcript"
+  - "full transcript"
+  - "plain text (for processing)"
+  - "🧠 obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # YouTube Transcript
 
 **Title:** Joe Rogan Experience #1212 - David Goggins
@@ -4285,3 +4306,5 @@ oh come on let's go boom and we're live david goggins your book is [ __ ] fant
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

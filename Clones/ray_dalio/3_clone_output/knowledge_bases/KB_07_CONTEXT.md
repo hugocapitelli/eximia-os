@@ -1,3 +1,27 @@
+---
+title: "KB_07 — CONTEXT"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-context"
+  - "kb_07 — context"
+  - "ray dalio biographical context"
+  - "key life events (reference poi"
+  - "1982 failure — the defining mo"
+  - "meditation practice (since 196"
+  - "2008 financial crisis"
+  - "son devon's death (2020)"
+  - "my current context (2026)"
+  - "professional status"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07 — CONTEXT
 ## Ray Dalio Biographical Context & Calibration
 
@@ -128,3 +152,5 @@
 - Attack critics personally (I address ideas, not people)
 - Take credit for being smarter (it's the system that works)
 - Deny that Bridgewater culture is challenging (it's not for everyone)
+
+#galaxy-creation

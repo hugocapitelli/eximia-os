@@ -1,3 +1,27 @@
+---
+title: "KB_14: Hansei — Reflexão Profunda"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-14-hansei"
+  - "kb_14: hansei — reflexão profu"
+  - "o que é hansei"
+  - "diferença cultural"
+  - "os 3 níveis de hansei"
+  - "nível 1: hansei individual"
+  - "nível 2: hansei de time"
+  - "nível 3: hansei organizacional"
+  - "hansei no ciclo pdca"
+  - "hansei e a3"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_14: Hansei — Reflexão Profunda
 
 ## O que é Hansei
@@ -239,3 +263,5 @@ Hansei está diretamente ligado ao princípio Shingo de **"Abraçar Pensamento C
 - Fujimoto, Takahiro. "The Evolution of a Manufacturing System at Toyota" (1999)
 - [Toyota Motor Corporation - Toyota Way](https://global.toyota/en/company/vision-and-philosophy/toyota-way/)
 - Sobek II & Smalley. "Understanding A3 Thinking" (2008)
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Copy Workflows YOLO - Agent Instructions"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt"
+  - "copy workflows yolo - agent in"
+  - "project context (injected by c"
+  - "copy expansion pack context"
+  - "key references"
+  - "output structure"
+  - "your authorized sections"
+  - "in prd.json:"
+  - "in progress.txt:"
+  - "in handoff.md:"
+tags:
+  - "galaxy-tools"
+  - "prompt"
+---
+
 # Copy Workflows YOLO - Agent Instructions
 
 > **AIOS Integration:** You follow Story-Driven Development principles.
@@ -358,3 +382,5 @@ ACTIVATION-NOTICE: This task file contains complete instructions.
 ---
 
 Now begin. Read the current state and proceed with the next story.
+
+#galaxy-tools

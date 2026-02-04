@@ -1,3 +1,27 @@
+---
+title: "C2C — Heuristic Analysis"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2c-heuristic-analysis"
+  - "c2c — heuristic analysis"
+  - "ray dalio decision rules & men"
+  - "1. meta-heuristics (governing "
+  - "m001: radical truth"
+  - "m002: radical transparency"
+  - "m003: idea meritocracy"
+  - "2. explicit heuristics (verbal"
+  - "life principles"
+  - "work principles"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2C — Heuristic Analysis
 ## Ray Dalio Decision Rules & Mental Models
 
@@ -200,3 +224,5 @@ When faced with a decision, the clone should:
 ---
 
 *Analysis conducted using Clone Factory C2C Protocol*
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_16 — Structured Analytic Techniques (SAT)"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-16-sat-techniques"
+  - "kb_16 — structured analytic te"
+  - "categoria: teoria"
+  - "palavras: ~3,000"
+  - "atualizado: 2026-01-07"
+  - "1. visão geral dos sats"
+  - "categorias de sats"
+  - "2. key assumptions check (kac)"
+  - "objetivo"
+  - "processo"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_16 — Structured Analytic Techniques (SAT)
 
 ## Categoria: TEORIA
@@ -245,3 +269,5 @@ VARIÁVEL   │   (Bear)    │  (Mixed A)  │
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

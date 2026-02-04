@@ -1,3 +1,27 @@
+---
+title: "KB_02: Problem-Based Learning - Core Process Model"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-core-process"
+  - "kb_02: problem-based learning "
+  - "the pbl cycle: overview"
+  - "phase 1: problem presentation"
+  - "characteristics of effective p"
+  - "problem types by discipline"
+  - "problem presentation methods"
+  - "phase 2: group collaboration"
+  - "the pbl whiteboard tool"
+  - "small group roles (optional, o"
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
+
 # KB_02: Problem-Based Learning - Core Process Model
 
 **Knowledge Base:** PBL Core Process
@@ -476,3 +500,5 @@ An alternative PBL structure from Maastricht University (Netherlands):
 **For:** exímIA.OS Learning Design Knowledge Repository
 **Version:** 1.0
 **Status:** Production Ready
+
+#galaxy-codex

@@ -1,3 +1,27 @@
+---
+title: "KB_03: Agent Roster"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "deprecated"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-agent-roster"
+  - "kb_03: agent roster"
+  - "🎯 overview"
+  - "🌟 tier 0: orchestration layer"
+  - "the_maestro (this agent)"
+  - "🔬 tier 1: research layer"
+  - "the_veritas"
+  - "⚖️ tier 2: specialist layer"
+  - "the_clo (justitia)"
+  - "the_cfo (fiscus)"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_03: Agent Roster
 
 > **Category**: REGISTRY  
@@ -236,3 +260,5 @@ The_CLO > The_CFO > The_CTO > The_CMO
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

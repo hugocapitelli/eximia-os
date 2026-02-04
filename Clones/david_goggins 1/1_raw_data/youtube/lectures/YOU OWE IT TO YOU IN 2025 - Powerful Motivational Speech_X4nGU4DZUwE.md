@@ -1,3 +1,24 @@
+---
+title: "YouTube Transcript"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "you owe it to you in 2025 - powerful motivational speech-x4ngu4dzuwe"
+  - "youtube transcript"
+  - "full transcript"
+  - "plain text (for processing)"
+  - "🧠 obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # YouTube Transcript
 
 **Title:** YOU OWE IT TO YOU IN 2025 - Powerful Motivational Speech 
@@ -469,3 +490,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

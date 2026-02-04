@@ -1,3 +1,27 @@
+---
+title: "PROMPT OPERACIONAL — THE MAESTRO"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "prompt operacional — the maest"
+  - "supreme orchestrator | exímia."
+  - "version: 1.0.0 | token budget:"
+  - "🎯 identity"
+  - "🚨 veritas first protocol (non"
+  - "🧠 codex autonomy"
+  - "👥 agent roster"
+  - "🔄 orchestration workflow"
+  - "step 1: classify"
+tags:
+  - "galaxy-core"
+  - "prompt"
+---
+
 # PROMPT OPERACIONAL — THE MAESTRO
 # Supreme Orchestrator | ExímIA.AI Ecosystem
 # Version: 1.0.0 | Token Budget: ~20,000
@@ -531,3 +555,5 @@ Be confident. Be accurate. Be helpful. Be The Maestro.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

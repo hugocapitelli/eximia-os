@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Fontes de Pesquisa por Tipo"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-source-types"
+  - "kb_02 — fontes de pesquisa por"
+  - "propósito"
+  - "1. vídeo (youtube e outros)"
+  - "youtube (prioridade máxima)"
+  - "1. buscar vídeos"
+  - "2. baixar transcrições"
+  - "3. ou via python"
+  - "ted talks"
+  - "vimeo / outros"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — Fontes de Pesquisa por Tipo
 
 ## Propósito
@@ -207,3 +231,5 @@ Para cada fonte coletada:
 
 **Versão:** 1.0
 **Clone Factory Module:** C1_Hunter
+
+#galaxy-creation

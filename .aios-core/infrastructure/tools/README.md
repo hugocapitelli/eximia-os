@@ -1,3 +1,27 @@
+---
+title: "AIOS Tools - Integrations Directory"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "aios tools - integrations dire"
+  - "directory structure"
+  - "cli tools"
+  - "available cli tools"
+  - "local tools"
+  - "available local tools"
+  - "mcp integrations"
+  - "available mcp servers"
+  - "using tools in agents"
+tags:
+  - "galaxy-runtime"
+  - "documentation"
+---
+
 # AIOS Tools - Integrations Directory
 
 This directory contains tool integration definitions for Synkra AIOS agents. Tools are external capabilities that agents can discover and use to accomplish tasks.
@@ -220,3 +244,5 @@ node .aios-core/infrastructure/scripts/tool-resolver.js
 ---
 
 *Last updated: 2025-10-22 - Documentation Sync Initiative*
+
+#galaxy-runtime

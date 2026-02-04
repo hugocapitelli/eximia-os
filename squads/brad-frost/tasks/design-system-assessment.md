@@ -100,3 +100,5 @@ Structure: Current state → Issues → Pragmatic solutions
 ---
 
 **Task created by brad-frost-squad-creator**
+
+#galaxy-operational

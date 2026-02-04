@@ -1,3 +1,27 @@
+---
+title: "Z2 — THE PROFILER"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "z2 — the profiler"
+  - "🎯 missão"
+  - "🧬 fundamentação (@the_cloner)"
+  - "🧠 arquitetura cognitiva"
+  - "fase 1: spec ingestion (leitur"
+  - "fase 2: clone selection (seleç"
+  - "fase 3: dna extraction (extraç"
+  - "fase 4: knowledge base constru"
+  - "fase 5: style guide definition"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Z2 — THE PROFILER
 
 **Função:** Engenheiro de Modelos Mentais
@@ -155,3 +179,5 @@ perfil_estruturado/
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

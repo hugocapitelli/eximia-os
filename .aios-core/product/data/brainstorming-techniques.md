@@ -1,3 +1,24 @@
+---
+title: "Brainstorming Techniques Data"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "brainstorming-techniques"
+  - "brainstorming techniques data"
+  - "creative expansion"
+  - "structured frameworks"
+  - "collaborative techniques"
+  - "deep exploration"
+  - "advanced techniques"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Brainstorming Techniques Data
 
 ## Creative Expansion
@@ -34,4 +55,5 @@
 18. **Resource Constraints**: "What if you had only $10 and 1 hour?"
 19. **Metaphor Mapping**: Use extended metaphors to explore solutions
 20. **Question Storming**: Generate questions instead of answers first
- 
+
+#galaxy-runtime

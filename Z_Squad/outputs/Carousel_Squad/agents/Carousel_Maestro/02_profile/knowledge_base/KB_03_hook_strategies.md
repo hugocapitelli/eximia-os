@@ -1,3 +1,27 @@
+---
+title: "KB_03 — Hook Strategies for Slide 1"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-hook-strategies"
+  - "kb_03 — hook strategies for sl"
+  - "a importância do slide 1"
+  - "os 12 tipos de hook comprovado"
+  - "1. the number hook"
+  - "2. the controversial statement"
+  - "3. the question hook"
+  - "4. the result/transformation h"
+  - "5. the "secret" hook"
+  - "6. the myth-buster hook"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03 — Hook Strategies for Slide 1
 
 **Agente:** Carousel Maestro
@@ -224,3 +248,5 @@ Neil Patel: "If you are publishing carousels, they should be 7 to 10 slides long
 - [Best Hooks for Instagram Carousel - Resont](https://resont.com/blog/top-instagram-carousel-hooks/)
 - [Carousel Copywriting Framework - PostNitro](https://postnitro.ai/blog/post/carousel-copywriting-framework)
 - Neil Patel, Instagram Marketing Research
+
+#galaxy-creation

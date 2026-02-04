@@ -1,3 +1,25 @@
+---
+title: "{topic} — Narrative Post Engine Output"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "output-readme-template"
+  - "{topic} — narrative post engin"
+  - "resumo"
+  - "arquivos gerados"
+  - "agentes envolvidos"
+  - "checkpoints de aprovação"
+  - "próximos passos"
+  - "métricas sugeridas"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # {topic} — Narrative Post Engine Output
 
 **Criado em:** {date}
@@ -78,3 +100,5 @@
 ---
 
 *Gerado por Narrative Post Engine v1.0*
+
+#galaxy-runtime

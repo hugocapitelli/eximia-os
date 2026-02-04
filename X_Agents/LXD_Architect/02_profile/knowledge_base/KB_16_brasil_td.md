@@ -1,3 +1,27 @@
+---
+title: "KB_16: Contexto Brasil — T&D Corporativo"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-16-brasil-td"
+  - "kb_16: contexto brasil — t&d c"
+  - "visão geral"
+  - "mercado de t&d no brasil"
+  - "dados abtd (panorama do treina"
+  - "tendências brasil 2024"
+  - "considerações culturais"
+  - "hofstede + brasil"
+  - "características culturais"
+  - "terminologia português/inglês"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_16: Contexto Brasil — T&D Corporativo
 
 ## Visão Geral
@@ -163,3 +187,5 @@ Este KB contextualiza práticas de L&D para a realidade brasileira, incluindo da
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

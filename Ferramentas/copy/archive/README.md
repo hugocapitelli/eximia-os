@@ -1,3 +1,23 @@
+---
+title: "Copy Framework - Archive"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "copy framework - archive"
+  - "purpose"
+  - "archived agents"
+  - "framework v2.0 focus"
+  - "reactivation"
+tags:
+  - "galaxy-tools"
+  - "documentation"
+---
+
 # Copy Framework - Archive
 
 ## Purpose
@@ -35,3 +55,5 @@ To reactivate an archived agent:
 ---
 
 *Archived as part of Copy Framework v2.0 Upgrade*
+
+#galaxy-tools

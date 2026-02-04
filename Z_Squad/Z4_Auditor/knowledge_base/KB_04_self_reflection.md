@@ -1,3 +1,27 @@
+---
+title: "Self-Reflection Protocol — Z4 Auditor"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-self-reflection"
+  - "self-reflection protocol — z4 "
+  - "🎯 propósito"
+  - "1. o que é self-reflection?"
+  - "2. implementação no z4 auditor"
+  - "fase 1: generate (análise inic"
+  - "fase 2: critique (auto-crítica"
+  - "🔍 self-critique checklist"
+  - "cobertura de testes"
+  - "qualidade da análise"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # Self-Reflection Protocol — Z4 Auditor
 
 ## 🎯 Propósito
@@ -167,3 +191,5 @@ Baseado na auto-crítica, o Z4 decide:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

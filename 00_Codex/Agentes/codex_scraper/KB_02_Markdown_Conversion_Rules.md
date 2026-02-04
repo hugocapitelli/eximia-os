@@ -1,3 +1,27 @@
+---
+title: "Markdown Conversion Rules"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-markdown-conversion-rules"
+  - "markdown conversion rules"
+  - "overview"
+  - "sintaxe básica"
+  - "headers"
+  - "h1 - título principal"
+  - "h2 - subtítulo"
+  - "h3 - seção"
+  - "parágrafos"
+  - "ênfase"
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
+
 # Markdown Conversion Rules
 
 ## Overview
@@ -273,3 +297,5 @@ markdown = h.handle(html)
 - [Markdown Guide](https://www.markdownguide.org/)
 - [CommonMark Spec](https://commonmark.org/)
 - [GitHub Flavored Markdown](https://github.github.com/gfm/)
+
+#galaxy-codex

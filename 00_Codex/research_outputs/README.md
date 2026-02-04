@@ -1,3 +1,27 @@
+---
+title: "EXÍMIA FINANCE — Emerging Features Research Package 2025-2026"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "exímia finance — emerging feat"
+  - "overview"
+  - "document guide"
+  - "1. **executive_summary.md** — "
+  - "2. **exímia_finance_emerging_f"
+  - "3. **roadmap_prioritization_ma"
+  - "4. **competitive_analysis_2025"
+  - "feature categories"
+  - "1. investments & wealth manage"
+tags:
+  - "galaxy-codex"
+  - "documentation"
+---
+
 # EXÍMIA FINANCE — Emerging Features Research Package 2025-2026
 
 ## Overview
@@ -366,3 +390,4 @@ This research package contains a comprehensive analysis of emerging fintech feat
 *eximIA.OS — Where AI Agents Come to Life*
 *January 23, 2026*
 
+#galaxy-codex

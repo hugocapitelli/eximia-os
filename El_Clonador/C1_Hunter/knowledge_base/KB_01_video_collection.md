@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Coleta de Vídeos e Transcrições"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-video-collection"
+  - "kb_01 — coleta de vídeos e tra"
+  - "propósito"
+  - "1. métodos de coleta de transc"
+  - "1.1 transcrições automáticas d"
+  - "instalar: pip install youtube-"
+  - "uso"
+  - "instalar: pip install yt-dlp"
+  - "baixar apenas legendas (sem ví"
+  - "converter para texto puro"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Coleta de Vídeos e Transcrições
 
 ## Propósito
@@ -218,3 +242,5 @@ The_Veritas retorna URLs e resumos, C1 Hunter coleta transcrições.
 
 **Versão:** 1.0
 **Clone Factory Module:** C1_Hunter
+
+#galaxy-creation

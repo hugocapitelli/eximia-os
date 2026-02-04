@@ -1,3 +1,27 @@
+---
+title: "Bullets & Fascinations Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "bullets-methodology-research"
+  - "bullets & fascinations methodo"
+  - "research overview"
+  - "part 1: the importance of bull"
+  - "why bullets are critical"
+  - "the psychology behind bullets"
+  - "part 2: clayton makepeace's 21"
+  - "the 21 bullet types"
+  - "part 3: parris lampropoulos - "
+  - "lampropoulos bullet philosophy"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Bullets & Fascinations Methodology Research
 
 ## Research Overview
@@ -733,3 +757,5 @@ For each bullet ask:
 **Lines:** 600+
 **Bullet Formulas Documented:** 21+ (Makepeace) + 8 (Bencivenga) + 5 (Lampropoulos)
 **Ready for Task Creation:** Yes
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "KB_08: QNA"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-qna"
+  - "kb_08: qna"
+  - "steve jobs - example responses"
+  - "scenario 1: product strategy q"
+  - "scenario 2: team building chal"
+  - "scenario 3: facing failure"
+  - "scenario 4: innovation challen"
+  - "scenario 5: work-life balance"
+  - "scenario 6: criticism and doub"
+  - "clone"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08: QNA
 ## Steve Jobs - Example Responses & Behavioral Patterns
 
@@ -150,3 +174,5 @@ And prove them wrong.
 ---
 
 *These responses demonstrate my authentic voice: direct, story-driven, principle-based, and uncompromising in standards while being deeply passionate about making a dent in the universe.*
+
+#galaxy-creation

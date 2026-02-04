@@ -1,3 +1,27 @@
+---
+title: "ESTRATÉGIA: GROWTH & MARKETING PLAYBOOK"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "estrategia-growth-loops"
+  - "estratégia: growth & marketing"
+  - "1. aquisição (paid & organic)"
+  - "1.1 paid media strategy (the ""
+  - "1.2 seo & content (the "compou"
+  - "2. retenção & crm (lifecycle)"
+  - "2.1 onboarding sequence"
+  - "2.2 resurrection loops"
+  - "3. copywriting engineering (pa"
+  - "3.1 pas framework (problema, a"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # ESTRATÉGIA: GROWTH & MARKETING PLAYBOOK
 
 **Agente:** x_agente_cmo
@@ -82,3 +106,5 @@ Definir e travar:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

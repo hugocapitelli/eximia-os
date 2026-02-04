@@ -1,3 +1,27 @@
+---
+title: "Elicitation Methods Data"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "elicitation-methods"
+  - "elicitation methods data"
+  - "core reflective methods"
+  - "structural analysis methods"
+  - "risk and challenge methods"
+  - "creative exploration methods"
+  - "multi-persona collaboration me"
+  - "advanced 2025 techniques"
+  - "game-based elicitation methods"
+  - "process control"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Elicitation Methods Data
 
 ## Core Reflective Methods
@@ -132,4 +156,5 @@
 - Acknowledge choice to finalize current work
 - Accept output as-is or move to next step
 - Prepare to continue without additional elicitation
- 
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "Apply Sugarman 30 Psychological Triggers"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "apply-sugarman-triggers"
+  - "apply sugarman 30 psychologica"
+  - "purpose"
+  - "when to use"
+  - "sugarman's core philosophy"
+  - "inputs"
+  - "workflow"
+  - "phase 1: trigger audit (curren"
+  - "phase 2: gap analysis (missing"
+  - "phase 3: strategic trigger inj"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Apply Sugarman 30 Psychological Triggers
 
 ## Purpose
@@ -479,3 +503,5 @@ REMEMBER:
 - Input: Existing copy draft
 - Output: Enhanced copy with trigger report
 - Agent: joe-sugarman (as tool, not persona)
+
+#galaxy-operational

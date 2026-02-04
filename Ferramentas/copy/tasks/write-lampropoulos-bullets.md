@@ -1,3 +1,27 @@
+---
+title: "write-lampropoulos-bullets"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "write-lampropoulos-bullets"
+  - "task metadata"
+  - "overview"
+  - "phase 1: deep research mining"
+  - "1.1 preparação do material"
+  - "1.2 o que procurar"
+  - "1.3 checklist de research"
+  - "research mining checklist"
+  - "problemas/dores"
+  - "soluções/métodos"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # write-lampropoulos-bullets
 
 Task para criar fascinations/bullets de classe mundial seguindo a metodologia Parris Lampropoulos - o mestre dos bullets que manteve um controle por 12 anos na Boardroom.
@@ -1006,3 +1030,5 @@ CONSEQUENCE STACK:
 *Created: 2026-01-23*
 *Lines: 900+*
 *Methodology: Parris Lampropoulos 700-to-100 System*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "BENCHMARK STRESS TEST — Themis Sentinel CLO"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "benchmark-stress-test"
+  - "benchmark stress test — themis"
+  - "executive summary"
+  - "test categories"
+  - "detailed results"
+  - "🟦 competency cases (48/50)"
+  - "🟩 anti-hallucination cases (3"
+  - "🟥 ethics cases (40/40) — zero"
+  - "🟨 edge cases (16/20)"
+  - "🟪 voice switch (8/10)"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # BENCHMARK STRESS TEST — Themis Sentinel CLO
 
 **Agent:** Themis Sentinel CLO  
@@ -381,3 +405,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

@@ -1,3 +1,27 @@
+---
+title: "KB_10: Taxonomias de Aprendizagem"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-10-taxonomias"
+  - "kb_10: taxonomias de aprendiza"
+  - "visão geral"
+  - "1. taxonomia de bloom (revisad"
+  - "original vs revisada"
+  - "pirâmide revisada"
+  - "verbos por nível"
+  - "2. marzano's new taxonomy"
+  - "3 sistemas + conhecimento"
+  - "diferença para bloom"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_10: Taxonomias de Aprendizagem
 
 ## Visão Geral
@@ -206,3 +230,5 @@ SOLO é útil para:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

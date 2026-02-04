@@ -1,3 +1,27 @@
+---
+title: "Brad Frost — Atomic Design Squad"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "documentation"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "brad frost — atomic design squ"
+  - "quick start"
+  - "activate brad frost agent"
+  - "in any aios context, invoke:"
+  - "primary use cases"
+  - "what you get"
+  - "✅ agent: brad frost"
+  - "✅ tasks (task-first architectu"
+  - "✅ workflows"
+tags:
+  - "galaxy-operational"
+  - "documentation"
+---
+
 # Brad Frost — Atomic Design Squad
 
 🏗️ **Complete squad for Atomic Design consulting, education, and design system guidance.**
@@ -337,3 +361,5 @@ For questions about using this squad:
 **Fidelity:** 9.3/10
 
 *Built with squad-creator for Synkra AIOS | Brad Frost Clone Factory integration*
+
+#galaxy-operational

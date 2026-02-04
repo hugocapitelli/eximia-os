@@ -1,3 +1,27 @@
+---
+title: "KB_06: Direito Trabalhista"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-labor"
+  - "kb_06: direito trabalhista"
+  - "1. fundamentos"
+  - "1.1 clt (decreto-lei 5.452/43)"
+  - "1.2 princípios"
+  - "2. contrato de trabalho"
+  - "2.1 requisitos (art. 3º clt)"
+  - "2.2 tipos de contrato"
+  - "3. rescisão contratual"
+  - "3.1 modalidades"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_06: Direito Trabalhista
 
 **Categoria:** TEORIA  
@@ -223,3 +247,5 @@ triggers:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

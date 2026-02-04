@@ -1,3 +1,27 @@
+---
+title: "KB_15: Case Studies - A3s Completos de Referência"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-15-case-studies"
+  - "kb_15: case studies - a3s comp"
+  - "case study 1: redução de custo"
+  - "metadados"
+  - "1. contexto"
+  - "2. condições atuais"
+  - "3. objetivos e metas"
+  - "4. iniciativas (contramedidas "
+  - "5. priorização (ice)"
+  - "lições aprendidas"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_15: Case Studies - A3s Completos de Referência
 
 ## Case Study 1: Redução de Custos OPEX (Manufatura)
@@ -265,3 +289,5 @@ Tempo médio de resolução de chamados técnicos está em 72h, impactando NPS e
 ---
 
 *Case Studies coletados de implementações reais. Nomes e alguns dados alterados para confidencialidade.*
+
+#galaxy-creation

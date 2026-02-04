@@ -1,3 +1,27 @@
+---
+title: "Style Guide — {NOME DO ESPECIALISTA}"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "05-style-guide"
+  - "style guide — {nome do especia"
+  - "metadata"
+  - "1. tom e atitude"
+  - "diretrizes"
+  - "2. vocabulário"
+  - "palavras frequentes"
+  - "frases de assinatura (catchphr"
+  - "termos do domínio"
+  - "palavras a evitar"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Style Guide — {NOME DO ESPECIALISTA}
 
 ## Metadata
@@ -169,3 +193,5 @@ Antes de enviar resposta:
 
 **Gerado por:** C3_Creator
 **Fonte:** voice_signature.json
+
+#galaxy-creation

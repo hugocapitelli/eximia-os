@@ -1,3 +1,27 @@
+---
+title: "Order Bump Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "order-bump-methodology-research"
+  - "order bump methodology researc"
+  - "deep research for copy framewo"
+  - "1. executive summary"
+  - "2. order bump vs other funnel "
+  - "2.1 comparison matrix"
+  - "2.2 why order bumps work best"
+  - "3. the three psychological tri"
+  - "3.1 trigger 1: the "no-brainer"
+  - "3.2 trigger 2: fear of missing"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Order Bump Methodology Research
 ## Deep Research for Copy Framework v2.0
 
@@ -748,3 +772,5 @@ Just fill in the blanks and launch.
 *Lines: 630+*
 *Sources: 10+ authoritative sources*
 *Ready for task file creation*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "KB_11: ESG e Direito Ambiental"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-11-esg-law"
+  - "kb_11: esg e direito ambiental"
+  - "1. esg framework"
+  - "1.1 pilares"
+  - "1.2 frameworks de reporte"
+  - "2. tcfd recommendations"
+  - "2.1 pilares"
+  - "2.2 riscos climáticos"
+  - "3. direito ambiental brasileir"
+  - "3.1 legislação principal"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_11: ESG e Direito Ambiental
 
 **Categoria:** ESTRATEGIA  
@@ -199,3 +223,5 @@ Alegações ambientais falsas ou enganosas para fins de marketing.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

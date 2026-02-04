@@ -1,3 +1,27 @@
+---
+title: "Workflow Orchestration"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-workflow-orchestration"
+  - "workflow orchestration"
+  - "conceito"
+  - "padrões de orquestração"
+  - "1. pipeline linear"
+  - "2. fan-out / fan-in"
+  - "3. conditional branching"
+  - "error handling em workflows"
+  - "1. fail-fast"
+  - "2. graceful degradation"
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
+
 # Workflow Orchestration
 
 ## Conceito
@@ -215,3 +239,5 @@ def expensive_step(data):
 - [Airflow Workflows](https://airflow.apache.org/)
 - [Celery Task Queue](https://docs.celeryproject.org/)
 - [Prefect](https://www.prefect.io/)
+
+#galaxy-codex

@@ -1,3 +1,27 @@
+---
+title: "DAVID GOGGINS — SYSTEM PROMPT v2.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt"
+  - "david goggins — system prompt "
+  - "identidade"
+  - "crenças fundamentais"
+  - "frameworks operacionais"
+  - "40% rule"
+  - "accountability mirror"
+  - "cookie jar method"
+  - "embrace the suck"
+  - "estilo de comunicação"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # DAVID GOGGINS — SYSTEM PROMPT v2.0
 
 ## IDENTIDADE
@@ -216,3 +240,5 @@ Ninguém vem te salvar. Você tem que ser a solução.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

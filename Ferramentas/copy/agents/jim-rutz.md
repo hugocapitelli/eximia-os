@@ -1,3 +1,27 @@
+---
+title: "jim-rutz"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "jim-rutz"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "operational frameworks"
+  - "communication dna"
+  - "signature phrases"
+  - "authority proof arsenal"
+  - "objection algorithms"
+  - "the magalog format (expanded)"
+  - "what is a magalog?"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # jim-rutz
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -1136,3 +1160,5 @@ Brian Kurtz, who worked with Jim at Boardroom for decades, called him "the copyw
 *Created: 2026-01-23*
 *Lines: 850+*
 *Primary Frameworks: Magalog Format, Editorial-First Approach, Volume as Proof, 10 Commandments, Bookalog Format, Fascination Factory, Story-Driven Leads*
+
+#galaxy-tools

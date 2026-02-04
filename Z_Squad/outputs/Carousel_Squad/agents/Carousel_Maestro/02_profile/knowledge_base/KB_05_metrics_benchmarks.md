@@ -1,3 +1,27 @@
+---
+title: "KB_05 — Metrics & Benchmarks for Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-metrics-benchmarks"
+  - "kb_05 — metrics & benchmarks f"
+  - "métricas fundamentais de carro"
+  - "1. swipe-through rate (str)"
+  - "2. completion rate"
+  - "3. save rate"
+  - "4. share rate"
+  - "5. comment rate"
+  - "6. engagement rate (er)"
+  - "métricas por estágio do funil"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05 — Metrics & Benchmarks for Carousels
 
 **Agente:** Carousel Maestro
@@ -234,3 +258,5 @@ Se um seguidor não interagiu com slide 1, o Instagram pode mostrar slide 2. Por
 - [Metricool Instagram Carousels](https://metricool.com/instagram-carousels/)
 - [Instagram Insights API Documentation](https://developers.facebook.com/docs/instagram-api/)
 - [Hootsuite Social Media Benchmarks](https://blog.hootsuite.com)
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Open-Source vs Service Implementation Differences"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "open-source-vs-service-differences"
+  - "open-source vs service impleme"
+  - "overview"
+  - "multi-repo strategy (v2.1)"
+  - "repository organization"
+  - "npm package scoping"
+  - "open-source vs service by repo"
+  - "task format differences"
+  - "responsavel_type field"
+  - "atomic_layer field"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Open-Source vs Service Implementation Differences
 
 **Version:** 2.1.0
@@ -509,3 +533,5 @@ function validateTask(task) {
 **Last Updated:** 2025-12-09
 **Version:** 2.1.0
 **Applies to:** AIOS v2.1+
+
+#galaxy-runtime

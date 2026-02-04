@@ -1,3 +1,27 @@
+---
+title: "HANDOVER_DOCUMENT — CFO Agent v3.0 (Class 3 Expert)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "handover-document"
+  - "handover_document — cfo agent "
+  - "agent: cfo agent"
+  - "version: 3.0.0"
+  - "date: 2026-01-07"
+  - "status: production"
+  - "class: 3 (expert)"
+  - "1. executive summary"
+  - "2. upgrade path"
+  - "3. deliverables"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # HANDOVER_DOCUMENT — CFO Agent v3.0 (Class 3 Expert)
 
 ## Agent: CFO Agent
@@ -158,3 +182,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

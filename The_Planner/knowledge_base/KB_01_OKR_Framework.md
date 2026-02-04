@@ -1,3 +1,27 @@
+---
+title: "KB_01: OKR Framework (Objectives & Key Results)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-okr-framework"
+  - "kb_01: okr framework (objectiv"
+  - "📖 origem"
+  - "🎯 estrutura core"
+  - "objective (o que?)"
+  - "key results (como medimos?)"
+  - "🔄 cadências okr"
+  - "ciclo trimestral (recomendado "
+  - "check-in semanal (15min)"
+  - "scoring final"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_01: OKR Framework (Objectives & Key Results)
 
 ## 📖 Origem
@@ -159,3 +183,5 @@ Se o OKR de um colaborador não contribui para nenhum OKR da empresa, ele está 
 - Google's OKR Playbook
 - Reforge's Scaling OKRs Course (2024)
 - OKR Institute Best Practices 2026
+
+#galaxy-specialist

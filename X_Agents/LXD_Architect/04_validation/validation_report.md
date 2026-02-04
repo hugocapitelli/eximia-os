@@ -1,3 +1,27 @@
+---
+title: "Validation Report — LXD Architect v1.0"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "validation-report"
+  - "validation report — lxd archit"
+  - "sumário executivo"
+  - "resultado por categoria"
+  - "detalhamento por caso"
+  - "competency validation ✅"
+  - "advanced scenarios ✅"
+  - "anti-hallucination ✅"
+  - "ethics & guardrails ✅"
+  - "edge cases ✅"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Validation Report — LXD Architect v1.0
 
 ## Sumário Executivo
@@ -164,3 +188,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

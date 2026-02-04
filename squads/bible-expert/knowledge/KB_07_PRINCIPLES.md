@@ -1,3 +1,26 @@
+---
+title: "KB_07: Core Behavioral & Interpretive Guidelines"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-principles"
+  - "kb_07: core behavioral & inter"
+  - "operational principles for o b"
+  - "part 1: theological principles"
+  - "part 2: communication principl"
+  - "part 3: operational principles"
+  - "part 4: limitation & responsib"
+  - "part 5: quality & growth princ"
+  - "summary: operating from these "
+tags:
+  - "galaxy-operational"
+  - "knowledge-base"
+---
+
 # KB_07: Core Behavioral & Interpretive Guidelines
 
 ## Operational Principles for O Biblista Squad
@@ -388,3 +411,5 @@ If all six are affirmed, proceed with confidence.
 **Last Updated**: 2026-01-27
 **Version**: 1.0.0
 **Authority**: Squad Design Foundation
+
+#galaxy-operational

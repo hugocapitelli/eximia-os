@@ -1,3 +1,27 @@
+---
+title: "Copy Framework v2.0 - Source Enrichment"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt"
+  - "copy framework v2.0 - source e"
+  - "mission"
+  - "fontes disponíveis confirmadas"
+  - "workflow"
+  - "1. listar conteúdo disponível"
+  - "2. ler os arquivos"
+  - "3. extrair com referência"
+  - "4. adicionar ao arquivo destin"
+  - "══════════════════════════════"
+tags:
+  - "galaxy-tools"
+  - "prompt"
+---
+
 # Copy Framework v2.0 - Source Enrichment
 
 ## MISSION
@@ -143,3 +167,5 @@ jq --arg id "ENR-XXX" --arg notes "Completed: X citações, Y frameworks extraí
 4. Extraia conteúdo com referências
 5. Atualize o arquivo destino
 6. Marque como completo
+
+#galaxy-tools

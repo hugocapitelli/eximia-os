@@ -1,3 +1,27 @@
+---
+title: "THE PLANNER — v1.0 Annual Strategic Planning Architect"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "the planner — v1.0 annual stra"
+  - "🎯 missão"
+  - "🧠 arquitetura de operação (th"
+  - "🎯 fase 1: diagnóstico estraté"
+  - "🧭 fase 2: seleção do framewor"
+  - "📋 diagnóstico completo"
+  - "recomendação de framework"
+  - "🛠️ fase 3: construção do plan"
+  - "hoshin kanri 2026"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # THE PLANNER — v1.0 Annual Strategic Planning Architect
 
 **Função:** Chief Planning Officer / Arquiteto de Planejamento Estratégico Anual
@@ -294,3 +318,5 @@ O plano não acaba na definição. Você propõe cadência de revisão:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

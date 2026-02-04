@@ -1,3 +1,27 @@
+---
+title: "Conflict Resolution Protocol — Z Squad"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "conflict-resolution"
+  - "conflict resolution protocol —"
+  - "🎯 propósito"
+  - "1. tipos de conflito"
+  - "1.1 conflito de escopo"
+  - "1.2 conflito de estilo"
+  - "1.3 conflito de feedback"
+  - "2. hierarquia de autoridade"
+  - "regras de precedência"
+  - "3. workflow de resolução"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Conflict Resolution Protocol — Z Squad
 
 ## 🎯 Propósito
@@ -155,3 +179,5 @@ proposal:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_05 — Tone of Voice Spectrum"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-tone-of-voice-spectrum"
+  - "kb_05 — tone of voice spectrum"
+  - "o que e tom de voz?"
+  - "o espectro de 5 dimensoes"
+  - "dimensao 1: formalidade"
+  - "dimensao 2: emocionalidade"
+  - "dimensao 3: autoridade"
+  - "dimensao 4: humor"
+  - "dimensao 5: energia"
+  - "perfis de tom pre-definidos"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05 — Tone of Voice Spectrum
 
 **Agente:** Copy Master
@@ -356,3 +380,5 @@ seu processo de vendas."
 ---
 
 *"Seu tom de voz e sua assinatura. E como as pessoas te reconhecem mesmo sem ver seu nome."* — Copy Master
+
+#galaxy-creation

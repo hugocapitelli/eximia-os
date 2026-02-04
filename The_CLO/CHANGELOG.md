@@ -1,3 +1,27 @@
+---
+title: "Changelog — The CLO"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "changelog"
+  - "changelog — the clo"
+  - "[unreleased]"
+  - "added"
+  - "[1.0.0] - 2026-01-07"
+  - "sub-agents"
+  - "dependencies"
+  - "🧠 obsidian connections"
+  - "clo"
+  - "legal"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Changelog — The CLO
 
 Todas as mudanças notáveis neste agente serão documentadas aqui.
@@ -44,3 +68,5 @@ Todas as mudanças notáveis neste agente serão documentadas aqui.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

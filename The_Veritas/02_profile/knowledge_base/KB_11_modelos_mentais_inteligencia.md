@@ -1,3 +1,27 @@
+---
+title: "KB_11 — Modelos Mentais de Inteligência (CIA/SAT)"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-11-modelos-mentais-inteligencia"
+  - "kb_11 — modelos mentais de int"
+  - "categoria: teoria"
+  - "palavras: ~3,000"
+  - "atualizado: 2026-01-07"
+  - "1. origem dos sats"
+  - "contexto"
+  - "2. analysis of competing hypot"
+  - "criador"
+  - "conceito"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_11 — Modelos Mentais de Inteligência (CIA/SAT)
 
 ## Categoria: TEORIA
@@ -273,3 +297,5 @@ INDICADORES DE INVALIDAÇÃO:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

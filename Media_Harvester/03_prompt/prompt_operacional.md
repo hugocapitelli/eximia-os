@@ -1,3 +1,27 @@
+---
+title: "Prompt Operacional - Media_Harvester"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "prompt operacional - media_har"
+  - "system prompt"
+  - "competências core"
+  - "decisão de fonte de transcriçã"
+  - "categorização de vídeos"
+  - "regras de comportamento"
+  - "restrições inquebráveis"
+  - "formato de saída"
+  - "transcrição individual"
+tags:
+  - "galaxy-tools"
+  - "prompt"
+---
+
 # Prompt Operacional - Media_Harvester
 
 ## System Prompt
@@ -227,3 +251,5 @@ python harvest.py transcribe "audio.mp3" \
 | Timeout | Retry 3x | "Timeout, retrying... ({n}/3)" |
 | CUDA OOM | Fallback CPU | "GPU OOM, falling back to CPU" |
 | Encoding error | Force UTF-8 | "Encoding fixed to UTF-8" |
+
+#galaxy-tools

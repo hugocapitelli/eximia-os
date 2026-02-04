@@ -1,3 +1,27 @@
+---
+title: "KB_02: Taxonomia de Perguntas Socraticas"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-taxonomia-perguntas"
+  - "kb_02: taxonomia de perguntas "
+  - "visao geral"
+  - "niveis de profundidade (basead"
+  - "nivel 1: clarificacao"
+  - "nivel 2: suposicoes"
+  - "nivel 3: evidencias e razoes"
+  - "nivel 4: perspectivas alternat"
+  - "nivel 5: implicacoes e consequ"
+  - "nivel 6: metacognicao"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02: Taxonomia de Perguntas Socraticas
 
 ## Visao Geral
@@ -143,3 +167,5 @@ Nem todas as perguntas sao iguais. Este guia classifica tipos de perguntas por s
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

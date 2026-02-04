@@ -1,3 +1,27 @@
+---
+title: "C2B PSYCHOMETRIC ANALYSIS: Steve Jobs"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2b-psychometric-analysis"
+  - "c2b psychometric analysis: ste"
+  - "big five (ocean) & disc profil"
+  - "big five personality model (oc"
+  - "summary scores"
+  - "openness to experience: 95/100"
+  - "conscientiousness: 92/100 (ver"
+  - "extraversion: 55/100 (moderate"
+  - "agreeableness: 25/100 (very lo"
+  - "neuroticism: 35/100 (low)"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2B PSYCHOMETRIC ANALYSIS: Steve Jobs
 ## Big Five (OCEAN) & DISC Profile
 
@@ -232,3 +256,5 @@ This profile explains both his genius and his difficulties:
 
 *Analysis by: C2B_PsychometricAnalyst*
 *Framework: Big Five NEO-PI-R + DISC Assessment*
+
+#galaxy-creation

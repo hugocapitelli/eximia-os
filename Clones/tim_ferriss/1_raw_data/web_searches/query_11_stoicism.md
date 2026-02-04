@@ -1,3 +1,27 @@
+---
+title: "Web Search: Tim Ferriss & Stoicism"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-11-stoicism"
+  - "web search: tim ferriss & stoi"
+  - "relationship with stoicism"
+  - "discovery story (2004)"
+  - "why stoicism?"
+  - "core stoic practices (daily in"
+  - "1. fear-setting (premeditatio "
+  - "2. daily reading of stoic text"
+  - "3. practicing discomfort / vol"
+  - "4. focus on controllables"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Web Search: Tim Ferriss & Stoicism
 
 **Query:** Stoicism philosophy Marcus Aurelius Seneca practices daily  
@@ -212,3 +236,4 @@ This led him to:
 - Medium.com (aplicações práticas)
 - RobinWaite.com
 
+#galaxy-creation

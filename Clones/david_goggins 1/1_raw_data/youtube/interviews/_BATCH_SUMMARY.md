@@ -1,3 +1,24 @@
+---
+title: "YouTube Batch Download Summary"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "-batch-summary"
+  - "youtube batch download summary"
+  - "statistics"
+  - "downloaded transcripts"
+  - "obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # YouTube Batch Download Summary
 
 **Search Query:** David Goggins interview full
@@ -38,3 +59,5 @@
 **Family:** [[Clones]]
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "gary-halbert"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "halbert"
+  - "gary-halbert"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "frameworks"
+  - "commands"
+  - "gary halbert — quick reference"
+  - "core philosophy"
+  - "signature techniques"
+  - "quick commands"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # gary-halbert
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -207,3 +231,5 @@ dependencies:
 *Gary Halbert — The Prince of Print*
 *Tier 1 Master — $1B+ Documented Sales*
 *Era: 1938-2007*
+
+#galaxy-runtime

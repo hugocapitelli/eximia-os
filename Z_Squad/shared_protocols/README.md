@@ -1,3 +1,24 @@
+---
+title: "Z Squad — Shared Protocols"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "z squad — shared protocols"
+  - "📋 conteúdo"
+  - "🔗 referência"
+  - "🧠 obsidian connections"
+  - "z-squad"
+  - "agent-creation"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # Z Squad — Shared Protocols
 
 Este diretório contém os protocolos de comunicação e coordenação compartilhados entre todos os módulos do Z Squad.
@@ -37,3 +58,5 @@ Baseado no [Framework Multiagentes ExímIA](../../Conteudo_sintetizado/Framework
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

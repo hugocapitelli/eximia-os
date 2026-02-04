@@ -1,3 +1,27 @@
+---
+title: "{{COMPONENTNAME}} Template"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "template-template"
+  - "{{componentname}} template"
+  - "template variables"
+  - "usage"
+  - "template content"
+  - "{{var1}}"
+  - "section 1"
+  - "subsection 1.1"
+  - "subsection 1.2"
+  - "section 2"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # {{COMPONENTNAME}} Template
 
 > {{DESCRIPTION}}
@@ -95,3 +119,5 @@ const result = await renderTemplate('{{COMPONENTNAME}}.md', {
 ---
 
 *Template created by squad-creator*
+
+#galaxy-runtime

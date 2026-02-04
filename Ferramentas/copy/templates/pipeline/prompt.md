@@ -1,3 +1,27 @@
+---
+title: "Copy Discovery Phase Execution Prompt"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt"
+  - "copy discovery phase execution"
+  - "environment variables (injecte"
+  - "your mission"
+  - "current phase: {{phase_name}}"
+  - "tasks to complete"
+  - "tier system (mandatory)"
+  - "completion protocol"
+  - "during execution"
+  - "phase complete signal"
+tags:
+  - "galaxy-tools"
+  - "prompt"
+---
+
 # Copy Discovery Phase Execution Prompt
 
 ## Environment Variables (injected by script)
@@ -91,3 +115,5 @@ Each task completion requires:
 ## Begin Execution
 
 Read the first task file and begin executing. Report progress as you go.
+
+#galaxy-tools

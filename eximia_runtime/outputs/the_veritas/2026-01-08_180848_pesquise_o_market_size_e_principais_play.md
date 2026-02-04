@@ -1,3 +1,25 @@
+---
+title: "the_veritas Response"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "2026-01-08-180848-pesquise-o-market-size-e-principais-play"
+  - "the_veritas response"
+  - "summary"
+  - "buscas realizadas"
+  - "tendências e oportunidades"
+  - "confidence"
+  - "metadata"
+  - "🧠 obsidian connections"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # the_veritas Response
 
 **Timestamp:** 2026-01-08T18:08:48.354328
@@ -65,3 +87,5 @@ Embora não tenha sido possível identificar o market size exato, algumas tendê
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "KB Segregation Guide — Z2 Profiler"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-segregation-guide"
+  - "kb segregation guide — z2 prof"
+  - "🎯 propósito"
+  - "1. estrutura de diretórios"
+  - "2. conteúdo por nível"
+  - "teoria/ — fundamentos"
+  - "dcf theory"
+  - "fórmula"
+  - "componentes"
+  - "estrategia/ — aplicação prátic"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB Segregation Guide — Z2 Profiler
 
 ## 🎯 Propósito
@@ -187,3 +211,5 @@ invariants:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

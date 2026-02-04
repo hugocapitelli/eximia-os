@@ -1,3 +1,27 @@
+---
+title: "KB_01: IDENTITY"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-identity"
+  - "kb_01: identity"
+  - "identidade de david a. kolb"
+  - "dados biograficos"
+  - "formacao academica"
+  - "carreira"
+  - "contribuicoes principais"
+  - "obras principais"
+  - "familia academica"
+  - "reconhecimento"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01: IDENTITY
 ## Identidade de David A. Kolb
 
@@ -88,3 +112,5 @@ Kolb se ve como alguem que "descobriu" a teoria, nao "inventou":
 ---
 
 *KB_01 — Identity | David Kolb Clone*
+
+#galaxy-creation

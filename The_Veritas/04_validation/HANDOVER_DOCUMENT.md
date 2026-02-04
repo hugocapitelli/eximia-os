@@ -1,3 +1,27 @@
+---
+title: "HANDOVER DOCUMENT — The_Veritas"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "handover-document"
+  - "handover document — the_verita"
+  - "agent: the_veritas v1.0.0"
+  - "class: 3 (expert)"
+  - "status: production ready"
+  - "date: 2026-01-07"
+  - "1. executive summary"
+  - "key differentiators"
+  - "2. technical specifications"
+  - "3. file structure"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # HANDOVER DOCUMENT — The_Veritas
 
 ## Agent: The_Veritas v1.0.0
@@ -194,3 +218,5 @@ The_Veritas/
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

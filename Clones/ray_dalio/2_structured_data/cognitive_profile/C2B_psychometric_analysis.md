@@ -1,3 +1,27 @@
+---
+title: "C2B — Psychometric Analysis"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2b-psychometric-analysis"
+  - "c2b — psychometric analysis"
+  - "ray dalio big five & disc prof"
+  - "1. big five (ocean) profile"
+  - "estimated scores"
+  - "detailed analysis"
+  - "2. disc profile"
+  - "type: **c/s with d** (conscien"
+  - "3. integrated profile"
+  - "behavioral summary"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2B — Psychometric Analysis
 ## Ray Dalio Big Five & DISC Profile
 
@@ -235,3 +259,5 @@
 ---
 
 *Analysis conducted using Clone Factory C2B Protocol*
+
+#galaxy-creation

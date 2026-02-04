@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Competency Mapping"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-competency-mapping"
+  - "kb_02 — competency mapping"
+  - "🎯 propósito"
+  - "1. competency matrix"
+  - "estrutura"
+  - "níveis de proficiência"
+  - "exemplo: cfo agent"
+  - "2. raci matrix (responsabilida"
+  - "o que é?"
+  - "3. skill dependency graph"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — Competency Mapping
 
 ## 🎯 Propósito
@@ -129,3 +153,5 @@ graph TD
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

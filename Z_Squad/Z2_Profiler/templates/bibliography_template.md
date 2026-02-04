@@ -1,3 +1,27 @@
+---
+title: "Bibliography Template — Z2 Profiler"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "bibliography-template"
+  - "bibliography template — z2 pro"
+  - "🎯 propósito"
+  - "template"
+  - "bibliography_research.md"
+  - "agent: [nome_do_agente]"
+  - "domain: [domínio]"
+  - "total sources: [n]"
+  - "1. foundational books (core)"
+  - "2. supplementary books"
+tags:
+  - "galaxy-creation"
+  - "template"
+---
+
 # Bibliography Template — Z2 Profiler
 
 ## 🎯 Propósito
@@ -117,3 +141,5 @@ Hormozi → ($100M Offers, 2021)
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

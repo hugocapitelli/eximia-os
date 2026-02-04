@@ -1,3 +1,27 @@
+---
+title: "Web Search: Tim Ferriss Books Complete List"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-04-books"
+  - "web search: tim ferriss books "
+  - "livros publicados (5 principai"
+  - "1. the 4-hour workweek"
+  - "2. the 4-hour body"
+  - "3. the 4-hour chef"
+  - "4. tools of titans"
+  - "5. tribe of mentors"
+  - "padrão identificado"
+  - "fontes"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Web Search: Tim Ferriss Books Complete List
 
 **Query:** Tim Ferriss books complete list publication dates  
@@ -57,3 +81,4 @@
 - Barnes & Noble
 - Múltiplas livrarias online
 
+#galaxy-creation

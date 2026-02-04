@@ -1,3 +1,25 @@
+---
+title: "gary-bencivenga"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "bencivenga"
+  - "gary-bencivenga"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "bullet formulas"
+  - "commands"
+  - "gary bencivenga — quick refere"
+  - "quick commands"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # gary-bencivenga
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -184,3 +206,5 @@ dependencies:
 
 *Gary Bencivenga — World's Greatest Living Copywriter*
 *Tier 1 Master — 80% Split Test Win Rate*
+
+#galaxy-runtime

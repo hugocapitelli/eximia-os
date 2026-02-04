@@ -1,3 +1,27 @@
+---
+title: "USAGE GUIDE - Tim Ferriss Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "usage-guide"
+  - "usage guide - tim ferriss clon"
+  - "quick start"
+  - "what this clone does best"
+  - "what to use other resources fo"
+  - "how to get best results"
+  - "1. be specific"
+  - "2. provide context"
+  - "3. ask about frameworks"
+  - "4. test and iterate"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # USAGE GUIDE - Tim Ferriss Clone
 
 **Version:** 1.0  
@@ -340,3 +364,4 @@ Clone will say: "In Tim's work, I haven't seen this specific scenario, but here'
 **Ready to use? Start with:**  
 "I'm trying to [specific goal]. What Tim Ferriss framework would you recommend?"
 
+#galaxy-creation

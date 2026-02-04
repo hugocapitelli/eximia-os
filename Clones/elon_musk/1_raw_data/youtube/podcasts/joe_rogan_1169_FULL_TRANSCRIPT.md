@@ -1,3 +1,27 @@
+---
+title: "TRANSCRIÇÃO COMPLETA — Joe Rogan Experience #1169"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "joe-rogan-1169-full-transcript"
+  - "transcrição completa — joe rog"
+  - "1. inteligência artificial e r"
+  - "atitude fatalista sobre ia"
+  - "o "bootloader biológico""
+  - "ai como arma"
+  - "2. teoria da simulação"
+  - "probabilidade de simulação"
+  - "por que simulação?"
+  - "3. neuralink e simbiose humano"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # TRANSCRIÇÃO COMPLETA — Joe Rogan Experience #1169
 
 **Título:** Elon Musk
@@ -164,3 +188,5 @@ Este momento resultou em uma queda temporária de 9% nas ações da Tesla no dia
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

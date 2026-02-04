@@ -1,3 +1,27 @@
+---
+title: "Master Guide: Product Requirements Document (PRD) construction"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prd-master-guide"
+  - "master guide: product requirem"
+  - "overview"
+  - "core philosophy"
+  - "standard prd structure"
+  - "1. header & metadata"
+  - "2. executive summary"
+  - "3. context & opportunity"
+  - "4. problem definition (the "wh"
+  - "5. target audience (user perso"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Master Guide: Product Requirements Document (PRD) construction
 
 ## Overview
@@ -74,3 +98,5 @@ A PRD is not just a list of features; it is a **validated business case** and a 
 2.  **Visuals over Text:** Use tables for comparisons and landscapes.
 3.  **Human-Centric:** Focus heavily on the User Persona and their emotional state (frustrations/desires).
 4.  **Living Document:** The PRD evolves with the product.
+
+#galaxy-codex

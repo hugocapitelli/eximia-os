@@ -1,3 +1,27 @@
+---
+title: "KB_01: Fundamentos do A3 Thinking Toyota"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-fundamentos-a3-thinking-toyota"
+  - "kb_01: fundamentos do a3 think"
+  - "origem e evolução"
+  - "os três significados do a3"
+  - "1. o papel (the paper size)"
+  - "2. o processo de pensamento (t"
+  - "3. o coaching storyboard"
+  - "oito facetas do a3 (lean enter"
+  - "princípios fundamentais"
+  - ""se o trabalhador não aprendeu"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01: Fundamentos do A3 Thinking Toyota
 
 ## Origem e Evolução
@@ -75,3 +99,5 @@ Líderes fazem coaching através de perguntas versus fornecer respostas, garanti
 - [MIT Sloan Management Review - Toyota's Secret: The A3 Report](https://sloanreview.mit.edu/article/toyotas-secret-the-a3-report/)
 - [LearnLeanSigma - A3 Problem-Solving Guide 2025](https://www.learnleansigma.com/guides/a3-problem-solving/)
 - [Nulab - Toyota's A3 Problem Solving Technique](https://nulab.com/learn/project-management/use-toyotas-legendary-a3-problem-solving-technique/)
+
+#galaxy-creation

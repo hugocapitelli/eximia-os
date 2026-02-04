@@ -1,3 +1,27 @@
+---
+title: "DNA Mental – [NOME DO AGENTE]"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental-template"
+  - "dna mental – [nome do agente]"
+  - "1. crenças centrais"
+  - "2. princípios de decisão"
+  - "3. frameworks / métodos"
+  - "framework 1: [nome]"
+  - "framework 2: [nome]"
+  - "4. estilo de comunicação"
+  - "5. vieses e riscos"
+  - "6. limites de uso"
+tags:
+  - "galaxy-creation"
+  - "template"
+---
+
 # DNA Mental – [NOME DO AGENTE]
 
 **Gerado por:** Z2 Profiler
@@ -103,3 +127,5 @@ notas_do_profiler: "[Observações]"
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

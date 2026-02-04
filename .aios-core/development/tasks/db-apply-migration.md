@@ -1,3 +1,27 @@
+---
+title: "Task: Apply Migration (with snapshot + advisory lock)"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-apply-migration"
+  - "task: apply migration (with sn"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Apply Migration (with snapshot + advisory lock)
 
 **Purpose**: Safely apply a migration with pre/post snapshots and exclusive lock
@@ -379,3 +403,5 @@ SELECT * FROM pg_locks WHERE locktype = 'advisory';
 ✅ Transaction-wrapped execution  
 ✅ Automatic diff generation  
 ✅ Rollback instructions provided
+
+#galaxy-runtime

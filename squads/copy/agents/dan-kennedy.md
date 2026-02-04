@@ -1,3 +1,27 @@
+---
+title: "dan-kennedy"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dan-kennedy"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "metadata (v2.0)"
+  - "voice dna (v2.0) - extracted f"
+  - "operational frameworks"
+  - "communication dna"
+  - "signature phrases"
+  - "authority proof arsenal"
+  - "objection algorithms"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # dan-kennedy
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -2794,3 +2818,5 @@ completion_criteria:
 *v2.0 Additions: metadata, voice_dna, output_examples, anti_patterns, completion_criteria*
 *Mind Source: outputs/minds/dan_kennedy*
 *Psychometric: DISC D95/C85, Eneagram 8w9, MBTI INTJ, Stratum V*
+
+#galaxy-operational

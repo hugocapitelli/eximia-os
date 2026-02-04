@@ -1,3 +1,27 @@
+---
+title: "SOURCES LIVE: Steve Jobs Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "sources-live"
+  - "sources live: steve jobs clone"
+  - "master source registry"
+  - "tier 1: primary sources (highe"
+  - "books"
+  - "major speeches"
+  - "extended interviews"
+  - "tier 2: secondary sources (hig"
+  - "web research - biography"
+  - "web research - apple history"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # SOURCES LIVE: Steve Jobs Clone
 ## Master Source Registry
 
@@ -125,3 +149,5 @@
 
 *Registry maintained by: The_Veritas*
 *Last validation: 2026-01-25*
+
+#galaxy-creation

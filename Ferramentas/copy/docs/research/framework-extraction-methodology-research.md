@@ -1,3 +1,27 @@
+---
+title: "Framework Extraction Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "framework-extraction-methodology-research"
+  - "framework extraction methodolo"
+  - "research overview"
+  - "table of contents"
+  - "1. what is a framework?"
+  - "1.1 definition of an operation"
+  - "1.2 framework vs. advice vs. o"
+  - "1.3 the framework spectrum"
+  - "1.4 framework value hierarchy"
+  - "2. pattern recognition theory"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Framework Extraction Methodology Research
 
 ## Research Overview
@@ -1140,3 +1164,5 @@ output_specification:
 
 *CopywriterOS Research Documentation*
 *Part of the Copy Framework v2.0 Upgrade Project*
+
+#galaxy-tools

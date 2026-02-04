@@ -1,3 +1,27 @@
+---
+title: "KB_04 — Prompt Budget Guidelines"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-prompt-budget"
+  - "kb_04 — prompt budget guidelin"
+  - "🎯 propósito"
+  - "1. token budget por tier (agen"
+  - "2. distribuição recomendada po"
+  - "class 2 (8k budget)"
+  - "class 3 (15k budget)"
+  - "3. o que adicionar com 8k"
+  - "3.1 mais exemplos few-shot (4-"
+  - "example 1: [happy path - compe"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04 — Prompt Budget Guidelines
 
 ## 🎯 Propósito
@@ -172,3 +196,5 @@ Antes de finalizar prompt:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Launch Emails Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "launch-emails-methodology-research"
+  - "launch emails methodology rese"
+  - "research overview"
+  - "1. the product launch formula "
+  - "1.1 core philosophy"
+  - "1.2 the four launch phases"
+  - "1.3 the three prelaunch conten"
+  - "1.4 the psp (problem-solution-"
+  - "2. email sequence psychology"
+  - "2.1 the urgency & scarcity fra"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Launch Emails Methodology Research
 
 ## Research Overview
@@ -1097,3 +1121,5 @@ post_launch:
 *Copy Framework v2.0 - Research Phase*
 *Generated: 2026-01-23*
 *Lines: 700+*
+
+#galaxy-tools

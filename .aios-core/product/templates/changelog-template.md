@@ -1,3 +1,27 @@
+---
+title: "Changelog"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "changelog-template"
+  - "changelog"
+  - "[unreleased]"
+  - "added"
+  - "changed"
+  - "deprecated"
+  - "removed"
+  - "fixed"
+  - "security"
+  - "[x.y.z] - yyyy-mm-dd"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -132,3 +156,5 @@ This project uses [Conventional Commits](https://www.conventionalcommits.org/):
 
 [Unreleased]: https://github.com/owner/repo/compare/vX.Y.Z...HEAD
 [X.Y.Z]: https://github.com/owner/repo/compare/vX.Y.W...vX.Y.Z
+
+#galaxy-runtime

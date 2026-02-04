@@ -1,3 +1,27 @@
+---
+title: "Audit Landing Page Task"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "audit-landing-page"
+  - "audit landing page task"
+  - "purpose"
+  - "when to use"
+  - "framework foundation"
+  - "meclabs conversion sequence he"
+  - "alex hormozi value equation"
+  - "storybrand brandscript"
+  - "inputs"
+  - "phase 1: pre-audit setup"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Audit Landing Page Task
 
 ## Purpose
@@ -1221,3 +1245,5 @@ integration:
 *Last Updated: January 2026*
 *Primary Frameworks: MECLABS Conversion Heuristic, Alex Hormozi Value Equation, StoryBrand BrandScript, CXL Heuristic Analysis*
 *Total Lines: 1150+*
+
+#galaxy-tools

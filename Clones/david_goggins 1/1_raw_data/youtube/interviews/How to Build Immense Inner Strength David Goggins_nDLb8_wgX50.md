@@ -1,3 +1,24 @@
+---
+title: "How to Build Immense Inner Strength | David Goggins"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "how to build immense inner strength david goggins-ndlb8-wgx50"
+  - "how to build immense inner str"
+  - "transcrição"
+  - "metadados técnicos"
+  - "obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # How to Build Immense Inner Strength | David Goggins
 
 **URL:** https://www.youtube.com/watch?v=nDLb8_wgX50
@@ -2430,3 +2451,5 @@ interest in science. [MUSIC PLAYING]
 **Family:** [[Clones]]
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

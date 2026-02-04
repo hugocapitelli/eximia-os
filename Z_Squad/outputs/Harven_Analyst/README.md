@@ -1,3 +1,27 @@
+---
+title: "Harven_Analyst (AnalystOS)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "harven_analyst (analystos)"
+  - "visao geral"
+  - "papel no sistema"
+  - "identidade"
+  - "missao"
+  - "principios fundamentais"
+  - "deteccao de ia"
+  - "indicadores analisados"
+  - "frases tipicas de llms"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # Harven_Analyst (AnalystOS)
 
 **Analista de Metricas e Deteccao de IA**
@@ -301,3 +325,5 @@ Criado pela metodologia Z Squad para a plataforma Harven.AI.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

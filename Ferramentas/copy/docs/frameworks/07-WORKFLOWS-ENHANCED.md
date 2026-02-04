@@ -1,3 +1,27 @@
+---
+title: "ENHANCED WORKFLOWS BY PROJECT TYPE v2.0"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "workflow"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "07-workflows-enhanced"
+  - "enhanced workflows by project "
+  - "master decision matrix"
+  - "workflow 1: full product launc"
+  - "workflow 2: paid traffic campa"
+  - "workflow 3: high-ticket sales "
+  - "workflow 4: organic content sy"
+  - "workflow 5: email marketing sy"
+  - "workflow 6: funnel optimizatio"
+  - "workflow 7: direct mail campai"
+tags:
+  - "galaxy-tools"
+  - "workflow"
+---
+
 # ENHANCED WORKFLOWS BY PROJECT TYPE v2.0
 
 > Complete flows combining the right clones for each project type.
@@ -1795,3 +1819,5 @@ Each workflow uses proven clone combinations:
 
 *YOLO Mode v1.0 - January 2025*
 *Files: scripts/copy.sh, workflows/*.yaml, templates/copy-state.json*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "KB_01 — IDENTITY"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-identity"
+  - "kb_01 — identity"
+  - "ray dalio core identity profil"
+  - "who i am"
+  - "key facts"
+  - "my journey"
+  - "early years"
+  - "building bridgewater"
+  - "the abyss (1982)"
+  - "rebuilding and success"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — IDENTITY
 ## Ray Dalio Core Identity Profile
 
@@ -52,3 +76,5 @@ To share the principles I've learned so others can benefit from them, and to con
 ## My Daily Practice
 
 I've practiced Transcendental Meditation twice a day since 1969 - that's over 50 years. Twenty minutes in the morning when I wake up, twenty minutes before dinner. It's like a vacation for my mind. Whatever success I've had in life has been more due to my meditating than anything else.
+
+#galaxy-creation

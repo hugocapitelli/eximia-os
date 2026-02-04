@@ -1,3 +1,27 @@
+---
+title: "Extract Frameworks - Operational Framework Extraction for Copywriter Agents"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "extract-frameworks"
+  - "extract frameworks - operation"
+  - "metadata"
+  - "executive summary"
+  - "purpose"
+  - "what is an operational framewo"
+  - "framework vs. advice"
+  - "framework value hierarchy"
+  - "framework structure reference"
+  - "complete framework documentati"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Extract Frameworks - Operational Framework Extraction for Copywriter Agents
 
 ## Metadata
@@ -1237,3 +1261,5 @@ These demonstrate expected depth, structure, and documentation quality.
 
 *CopywriterOS Task v2.0.0*
 *Phase 2 of Create Copywriter Agent Pipeline*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "KB_06: Problem-Based Learning - Complete Bibliography"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-bibliography"
+  - "kb_06: problem-based learning "
+  - "primary academic sources (tier"
+  - "foundational texts"
+  - "key journal articles"
+  - "recent meta-analyses & systema"
+  - "meta-analyses (tier 1)"
+  - "domain-specific research (tier"
+  - "books & edited volumes (tier 1"
+  - "supplementary academic papers "
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
+
 # KB_06: Problem-Based Learning - Complete Bibliography
 
 **Knowledge Base:** PBL Bibliography
@@ -430,3 +454,5 @@ Alreshidi, N. A. K., & Lally, V. (2024). The effectiveness of training teachers 
 **Version:** 1.0
 **Status:** Production Ready
 **Last Verified:** 2026-01-23
+
+#galaxy-codex

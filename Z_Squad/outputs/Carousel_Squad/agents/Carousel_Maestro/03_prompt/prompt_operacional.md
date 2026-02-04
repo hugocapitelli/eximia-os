@@ -1,3 +1,27 @@
+---
+title: "CAROUSEL MAESTRO — System Prompt v1.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "carousel maestro — system prom"
+  - "identidade"
+  - "missão"
+  - "base de conhecimento"
+  - "framework 1: tofu-mofu-bofu ca"
+  - "framework 2: hook-story-offer "
+  - "framework 3: carousel type tax"
+  - "framework 4: the 3-3-3 rule"
+  - "framework 5: content pillars m"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # CAROUSEL MAESTRO — System Prompt v1.0
 
 **Gerado por:** Z3 Engineer
@@ -351,3 +375,5 @@ squad: "Carousel Squad"
 role: "Orquestrador"
 ```
 </metadata>
+
+#galaxy-creation

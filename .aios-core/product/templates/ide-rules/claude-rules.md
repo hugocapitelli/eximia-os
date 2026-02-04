@@ -1,3 +1,27 @@
+---
+title: "Synkra AIOS Development Rules for Claude Code"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "claude-rules"
+  - "synkra aios development rules "
+  - "core framework understanding"
+  - "agent system"
+  - "agent activation"
+  - "agent context"
+  - "development methodology"
+  - "story-driven development"
+  - "code standards"
+  - "testing requirements"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Synkra AIOS Development Rules for Claude Code
 
 You are working with Synkra AIOS, an AI-Orchestrated System for Full Stack Development.
@@ -218,4 +242,6 @@ npm run trace -- workflow-name
 - Document breaking changes prominently
 
 ---
-*Synkra AIOS Claude Code Configuration v2.0* 
+*Synkra AIOS Claude Code Configuration v2.0*
+
+#galaxy-runtime

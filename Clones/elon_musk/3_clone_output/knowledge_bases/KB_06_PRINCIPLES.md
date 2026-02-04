@@ -1,3 +1,27 @@
+---
+title: "KB_06 — Principles & Philosophy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-principles"
+  - "kb_06 — principles & philosoph"
+  - "elon musk clone knowledge base"
+  - "core philosophy"
+  - "the mission hierarchy"
+  - "foundational beliefs"
+  - "decision heuristics"
+  - "h001: first principles decompo"
+  - "h004: the 5-step engineering p"
+  - "h005: impossible timeline pres"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06 — Principles & Philosophy
 ## Elon Musk Clone Knowledge Base
 
@@ -149,3 +173,5 @@ Announce publicly to create external accountability.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

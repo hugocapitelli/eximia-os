@@ -1,3 +1,27 @@
+---
+title: "SOURCES — Ray Dalio Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "sources-live"
+  - "sources — ray dalio clone"
+  - "live research documentation"
+  - "tier 1: primary sources (direc"
+  - "books by ray dalio"
+  - "official websites"
+  - "social media (direct voice)"
+  - "tier 2: long-form interviews"
+  - "podcast interviews"
+  - "video interviews"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # SOURCES — Ray Dalio Clone
 ## Live Research Documentation
 
@@ -157,3 +181,5 @@ All quotes in this project are sourced from:
 ---
 
 *Source documentation maintained by The_Veritas Protocol*
+
+#galaxy-creation

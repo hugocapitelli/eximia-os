@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Análise de Voice Signature"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-voice-analysis"
+  - "kb_02 — análise de voice signa"
+  - "propósito"
+  - "1. dimensões de análise"
+  - "1.1 tom e atitude"
+  - "1.2 vocabulário"
+  - "1.3 estrutura de sentença"
+  - "2. output: voice signature jso"
+  - "3. quality checks"
+  - "4. uso pelo c3 creator"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — Análise de Voice Signature
 
 ## Propósito
@@ -231,3 +255,5 @@ O C3 usa o voice_signature.json para:
 
 **Versão:** 1.0
 **Clone Factory Module:** C2_Extractor
+
+#galaxy-creation

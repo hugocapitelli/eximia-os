@@ -1,3 +1,27 @@
+---
+title: "StratOS Platform: Implementation Guide & Agent Logic"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "draft"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "stratos-implementation-guide"
+  - "stratos platform: implementati"
+  - "part 1: the build protocol (st"
+  - "1. technology stack"
+  - "2. phase 1: database & core mo"
+  - "3. phase 2: the "forge" ui (fr"
+  - "4. phase 3: the ai engine (bac"
+  - "part 2: the agent logic (how t"
+  - "1. the persona"
+  - "2. logic flow (the "brain")"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # StratOS Platform: Implementation Guide & Agent Logic
 
 > **Target Audience:** AI Assistants (Google AI Studio, Gemini, Claude) & Developers
@@ -151,3 +175,5 @@ Guide the user to build a rigorous strategic plan. You do NOT just generate text
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

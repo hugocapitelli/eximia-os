@@ -1,3 +1,27 @@
+---
+title: "KB_09 — Redação Técnica e Acadêmica"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-redacao-tecnica"
+  - "kb_09 — redação técnica e acad"
+  - "categoria: estratégia"
+  - "palavras: ~2,000"
+  - "atualizado: 2026-01-07"
+  - "fonte: web research 2024"
+  - "1. princípios de redação técni"
+  - "best practices 2024"
+  - "2. estrutura de relatório técn"
+  - "formato padrão (purdue/sussex "
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_09 — Redação Técnica e Acadêmica
 
 ## Categoria: ESTRATÉGIA
@@ -197,3 +221,5 @@ Fonte: Conab (2024)
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

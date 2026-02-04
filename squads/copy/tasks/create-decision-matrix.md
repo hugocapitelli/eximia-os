@@ -1,3 +1,27 @@
+---
+title: "Create Decision Matrix Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-decision-matrix"
+  - "create decision matrix task"
+  - "metadata"
+  - "purpose"
+  - "when to use"
+  - "the 5-question decision matrix"
+  - "inputs"
+  - "workflow"
+  - "step 1: answer q1 - awareness "
+  - "step 2: answer q2 - market sop"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Decision Matrix Task
 
 ACTIVATION-NOTICE: This task file contains complete instructions for workflow selection.
@@ -550,3 +574,5 @@ MISTAKE 5: Starting Without Foundation
 *Task Version: 1.0*
 *Created: 2026-01-23*
 *Purpose: Workflow selection before any Copy project*
+
+#galaxy-operational

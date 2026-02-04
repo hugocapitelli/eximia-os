@@ -1,3 +1,27 @@
+---
+title: "PRP-03: AI Services & Orchestration Layer"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prp-03-ai-services"
+  - "prp-03: ai services & orchestr"
+  - "1. objetivo"
+  - "2. arquitetura geral"
+  - "3. ai modes (tipos de agente)"
+  - "3.1 catálogo de modos"
+  - "4. especificações de prompt"
+  - "4.1 swot researcher"
+  - "4.2 north star refiner"
+  - "4.3 driver suggester"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # PRP-03: AI Services & Orchestration Layer
 
 > **Module:** Foundation
@@ -1024,3 +1048,5 @@ Estratégias de otimização:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

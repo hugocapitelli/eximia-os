@@ -1,3 +1,27 @@
+---
+title: "Copy Debate Task - Multi-Perspective Copywriting Debate"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copy-debate"
+  - "copy debate task - multi-persp"
+  - "metadata"
+  - "purpose"
+  - "when to use"
+  - "cenários ideais"
+  - "quando não usar"
+  - "inputs"
+  - "debate methodology"
+  - "framework teórico"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Copy Debate Task - Multi-Perspective Copywriting Debate
 
 ## Metadata
@@ -1149,3 +1173,5 @@ output_to:
 *Task Version: 2.0*
 *Last Updated: 2026-01-23*
 *Copy Framework v2.0 - Multi-Perspective Debate System*
+
+#galaxy-tools

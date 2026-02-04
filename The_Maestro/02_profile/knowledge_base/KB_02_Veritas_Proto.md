@@ -1,3 +1,27 @@
+---
+title: "KB_02: Veritas Protocol"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-veritas-proto"
+  - "kb_02: veritas protocol"
+  - "🎯 purpose"
+  - "🔄 protocol flow"
+  - "📋 trigger conditions"
+  - "must invoke veritas"
+  - "may skip veritas"
+  - "🔧 invocation protocol"
+  - "step 1: query formulation"
+  - "step 2: invocation"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_02: Veritas Protocol
 
 > **Category**: PROTOCOL  
@@ -197,3 +221,5 @@ When specialist returns:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

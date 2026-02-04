@@ -1,3 +1,22 @@
+---
+title: "Database Design Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "database-design-checklist"
+  - "database design checklist"
+  - "instructions for data engineer"
+  - "checklist items"
+  - "final confirmation"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Database Design Checklist
 
 ## Instructions for Data Engineer Agent
@@ -117,3 +136,5 @@ After completing the checklist:
 Good design is the foundation of reliable systems.]]
 
 - [ ] I, the Data Engineer Agent, confirm that this database design has been thoroughly reviewed and is ready for implementation.
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "KB_07: QA Checklists"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-qa-checklists"
+  - "kb_07: qa checklists"
+  - "✅ pre-response checklist"
+  - "accuracy"
+  - "completeness"
+  - "compliance"
+  - "format"
+  - "📊 definition of done"
+  - "🔍 cross-check protocol"
+  - "📋 specialist output validatio"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_07: QA Checklists
 
 > **Category**: PROTOCOL  
@@ -76,3 +100,5 @@ When receiving from sub-agents:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

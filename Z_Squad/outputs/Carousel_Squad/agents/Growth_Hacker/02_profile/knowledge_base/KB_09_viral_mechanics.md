@@ -1,3 +1,27 @@
+---
+title: "KB_09 — Viral Mechanics"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-viral-mechanics"
+  - "kb_09 — viral mechanics"
+  - "o que define "viral"?"
+  - "metricas de viralidade"
+  - "thresholds de performance"
+  - "os 6 principios de viralidade "
+  - "1. social currency (moeda soci"
+  - "2. triggers (gatilhos)"
+  - "3. emotion (emocao)"
+  - "4. public (publico)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09 — Viral Mechanics
 
 **Agente:** Growth Hacker
@@ -458,3 +482,5 @@ ANALISE QUALITATIVA:
 - Neil Patel - Content Marketing Studies
 - Social Media Examiner - Viral Case Studies
 - Andrew Chen - Growth Loops and Virality
+
+#galaxy-creation

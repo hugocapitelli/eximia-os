@@ -1,3 +1,27 @@
+---
+title: "Validation Report - Harven_Socrates (SocratOS)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "validation-report"
+  - "validation report - harven_soc"
+  - "executive summary"
+  - "1. verificacao de completude"
+  - "artefatos obrigatorios"
+  - "2. verificacao de invariantes"
+  - "3. casos de teste"
+  - "caso 1: resposta correta do al"
+  - "caso 2: resposta errada do alu"
+  - "caso 3: resposta superficial"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Validation Report - Harven_Socrates (SocratOS)
 
 **Gerado por:** Z4 Auditor
@@ -205,3 +229,5 @@ O agente Harven_Socrates (SocratOS) v1.0.0 atende a todos os criterios de qualid
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

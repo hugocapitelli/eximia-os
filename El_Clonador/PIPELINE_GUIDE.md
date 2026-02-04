@@ -1,3 +1,27 @@
+---
+title: "Clone Factory — Pipeline Guide"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "pipeline-guide"
+  - "clone factory — pipeline guide"
+  - "🎯 propósito"
+  - "📋 table of contents"
+  - "1. visão geral do pipeline"
+  - "⚠️ phase 0 gate (novo)"
+  - "2. como solicitar um clone"
+  - "passo 1: definir o especialist"
+  - "clone request"
+  - "target"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Clone Factory — Pipeline Guide
 
 ## 🎯 Propósito
@@ -197,3 +221,5 @@ Se **FAIL**, revisar e reprocessar com C3.
 
 **Última atualização:** 2026-01-08
 **Mantido por:** Clone Factory
+
+#galaxy-creation

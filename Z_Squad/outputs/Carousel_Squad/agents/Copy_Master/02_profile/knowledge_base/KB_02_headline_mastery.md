@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Headline Mastery"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-headline-mastery"
+  - "kb_02 — headline mastery"
+  - "a ciencia por tras das headlin"
+  - "os 7 gatilhos universais de he"
+  - "1. curiosidade"
+  - "2. beneficio direto"
+  - "3. novidade"
+  - "4. especificidade"
+  - "5. urgencia"
+  - "6. negatividade/medo"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — Headline Mastery
 
 **Agente:** Copy Master
@@ -272,3 +296,5 @@ X Usar cliches gastos ("Voce nao vai acreditar")
 ---
 
 *"A headline e o ingresso para o conteudo. Se o ingresso nao vender, o show fica vazio."* — Copy Master
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_07 — Private Equity & LBO"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-private-equity"
+  - "kb_07 — private equity & lbo"
+  - "1. fundamentos de private equi"
+  - "o que é private equity"
+  - "tipos de pe"
+  - "2. lbo fundamentals"
+  - "estrutura de capital lbo (rose"
+  - "key ratios"
+  - "3. lbo model mechanics"
+  - "sources & uses"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_07 — Private Equity & LBO
 
 ## 1. Fundamentos de Private Equity
@@ -230,3 +254,5 @@ Exit: 8x EBITDA (larger, diversified)
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

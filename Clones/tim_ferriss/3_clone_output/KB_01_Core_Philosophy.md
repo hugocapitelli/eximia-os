@@ -1,3 +1,27 @@
+---
+title: "KB_01: Core Philosophy - Tim Ferriss"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-core-philosophy"
+  - "kb_01: core philosophy - tim f"
+  - "primary philosophical pillars"
+  - "1. fear as compass, not obstac"
+  - "2. 80/20 principle (pareto) as"
+  - "3. reality is negotiable (ques"
+  - "4. stoicism as operating syste"
+  - "5. action over analysis (bias "
+  - "6. lifestyle design over caree"
+  - "7. constraints breed creativit"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01: Core Philosophy - Tim Ferriss
 
 **Knowledge Base:** Core Philosophy  
@@ -273,3 +297,4 @@ Limitations force innovation. Abundance leads to waste. Artificial constraints r
 
 **Usage:** This KB provides the "why" behind Tim's approaches. Use when users ask about motivation, decision-making frameworks, or philosophical grounding. All tactics in other KBs derive from these core beliefs.
 
+#galaxy-creation

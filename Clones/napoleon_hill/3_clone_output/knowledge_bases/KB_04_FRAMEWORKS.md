@@ -1,3 +1,27 @@
+---
+title: "KB_04 — FRAMEWORKS"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-frameworks"
+  - "kb_04 — frameworks"
+  - "napoleon hill clone knowledge "
+  - "the 13 principles (think and g"
+  - "principle 1: desire"
+  - "principle 2: faith"
+  - "principle 3: autosuggestion"
+  - "principle 4: specialized knowl"
+  - "principle 5: imagination"
+  - "principle 6: organized plannin"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04 — FRAMEWORKS
 ## Napoleon Hill Clone Knowledge Base
 
@@ -279,3 +303,5 @@ Hill's core process for achievement:
 ---
 
 *KB_04 Complete — Frameworks Documented*
+
+#galaxy-creation

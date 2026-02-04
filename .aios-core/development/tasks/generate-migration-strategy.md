@@ -1,3 +1,27 @@
+---
+title: "Generate Phased Migration Strategy"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "generate-migration-strategy"
+  - "generate phased migration stra"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Generate Phased Migration Strategy
 
 > Task ID: brad-generate-migration-strategy
@@ -520,3 +544,5 @@ Phase 4: Enforcement (1 sprint)
 - Timeline assumes team works on migration alongside features
 - Brad says: "Phased rollout = safe rollout. No big-bang rewrites."
 - After this, hand off to Atlas: *agent atlas for component building
+
+#galaxy-runtime

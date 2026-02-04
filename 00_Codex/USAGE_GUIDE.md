@@ -1,3 +1,27 @@
+---
+title: "Guia de Uso - Projeto Codex"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "usage-guide"
+  - "guia de uso - projeto codex"
+  - "🚀 quick start"
+  - "1. inicializar database (prime"
+  - "2. testar scraper"
+  - "3. testar categorizer"
+  - "configure api key"
+  - "4. usar cli completo"
+  - "adicionar com review"
+  - "adicionar sem review"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Guia de Uso - Projeto Codex
 
 ## 🚀 Quick Start
@@ -221,3 +245,5 @@ Se encontrar erro "database is locked":
 **✅ Status:** Código Python 100% funcional  
 **📍 Uso:** Via CLI Python (`py X_Agents/codex_cli/cli.py`)  
 **🔄 Próximo:** Workflows Antigravity (opcional)
+
+#galaxy-codex

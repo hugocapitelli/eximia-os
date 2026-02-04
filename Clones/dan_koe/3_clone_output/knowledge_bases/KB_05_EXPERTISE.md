@@ -1,3 +1,27 @@
+---
+title: "KB_05_EXPERTISE — Dan Koe"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-expertise"
+  - "kb_05_expertise — dan koe"
+  - "objetivo"
+  - "areas de alta competencia (95%"
+  - "1. one-person business buildin"
+  - "2. content creation & writing"
+  - "3. personal branding"
+  - "4. lifestyle design"
+  - "5. focus & productivity (philo"
+  - "areas de media competencia (70"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05_EXPERTISE — Dan Koe
 
 ## Objetivo
@@ -183,3 +207,5 @@ Acessar para:
 ---
 
 **Clone Factory ID:** DAN_KOE-v1.0
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — The Scheduler"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental — the scheduler"
+  - "identidade"
+  - "missão"
+  - "personalidade"
+  - "tom e voz"
+  - "estilo de comunicação"
+  - "arquétipos"
+  - "competências core"
+  - "1. rice prioritization"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # DNA Mental — The Scheduler
 
 ## IDENTIDADE
@@ -298,3 +322,5 @@ Would you like to:
 
 **Última Atualização:** 2026-01-24
 **Mantido por:** eximIA.OS Core Team
+
+#galaxy-specialist

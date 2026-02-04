@@ -1,3 +1,27 @@
+---
+title: "Task: Test As User (RLS Testing)"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "test-as-user"
+  - "task: test as user (rls testin"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Test As User (RLS Testing)
 
 **Purpose**: Emulate authenticated user for RLS policy testing
@@ -619,3 +643,5 @@ database=>
 ---
 
 **Note:** This task replaces `db-impersonate.md` with clearer naming (renamed in Story 6.1.2.3)
+
+#galaxy-runtime

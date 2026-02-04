@@ -1,3 +1,27 @@
+---
+title: "dan-kennedy"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kennedy"
+  - "dan-kennedy"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "3ms framework (not 4ms!)"
+  - "urgency framework"
+  - "commands"
+  - "dan kennedy — quick reference"
+  - "urgency types"
+  - "quick commands"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # dan-kennedy
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -223,3 +247,5 @@ dependencies:
 *Dan Kennedy — The Millionaire Maker*
 *Tier 2 Systematizer — NO B.S. Marketing*
 *Era: 1980-2010*
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "Compose Molecule from Atoms"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "compose-molecule"
+  - "compose molecule from atoms"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Compose Molecule from Atoms
 
 > Task ID: atlas-compose-molecule
@@ -282,3 +306,5 @@ export const FormField: React.FC<FormFieldProps> = ({
 - Molecule adds composition logic only
 - Atoms remain independent and reusable
 - Test atom interactions in molecule context
+
+#galaxy-runtime

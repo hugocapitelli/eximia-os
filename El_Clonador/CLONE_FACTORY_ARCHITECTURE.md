@@ -1,3 +1,27 @@
+---
+title: "Clone Factory — Advanced Architecture Document"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-factory-architecture"
+  - "clone factory — advanced archi"
+  - "📋 table of contents"
+  - "1. executive summary"
+  - "princípio central"
+  - "2. system architecture overvie"
+  - "3. layer 1: extraction pipelin"
+  - "3.1 multi-analyst architecture"
+  - "3.2 analyst specifications"
+  - "4. layer 2: personality matrix"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Clone Factory — Advanced Architecture Document
 
 <div align="center">
@@ -865,3 +889,5 @@ SPECULATIVE (0-19%): Out of distribution
 *"Não clonamos vozes. Clonamos algoritmos de decisão."*
 
 </div>
+
+#galaxy-creation

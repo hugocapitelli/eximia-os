@@ -1,3 +1,27 @@
+---
+title: "Podcast Analysis: Arnold Schwarzenegger Episodes"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "episodes-arnold-schwarzenegger-analysis"
+  - "podcast analysis: arnold schwa"
+  - "key highlights & quotes"
+  - "on vision & success psychology"
+  - "mental edge in competition"
+  - "on financial independence"
+  - "real estate before acting"
+  - "on growth through hardship"
+  - "core belief:"
+  - "father's advice:"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Podcast Analysis: Arnold Schwarzenegger Episodes
 
 **Episodes:** #60, #696  
@@ -175,3 +199,4 @@
 - Diverse topics covered
 - High-quality conversational examples
 
+#galaxy-creation

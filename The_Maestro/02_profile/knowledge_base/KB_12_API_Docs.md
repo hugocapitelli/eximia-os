@@ -1,3 +1,27 @@
+---
+title: "KB_12: API & Tools Documentation"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-12-api-docs"
+  - "kb_12: api & tools documentati"
+  - "🔧 available tools"
+  - "tool 1: veritas_search"
+  - "tool 2: agent_invoke"
+  - "tool 3: memory_recall"
+  - "📊 response schemas"
+  - "standard response"
+  - "error response"
+  - "🔄 integration patterns"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_12: API & Tools Documentation
 
 > **Category**: TECHNICAL  
@@ -88,3 +112,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

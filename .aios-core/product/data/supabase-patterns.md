@@ -1,3 +1,27 @@
+---
+title: "Supabase Architecture Patterns"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "supabase-patterns"
+  - "supabase architecture patterns"
+  - "project structure"
+  - "recommended organization"
+  - "client initialization"
+  - "browser client (public)"
+  - "server client (service role)"
+  - "authentication patterns"
+  - "sign up with email"
+  - "sign in"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Supabase Architecture Patterns
 
 **Purpose:** Reference guide for Supabase implementation patterns
@@ -328,3 +352,5 @@ async function fetchProfile(userId: string) {
 
 **Reviewer:** ________ **Date:** ________
 **Quality Gate:** [ ] PASS [ ] NEEDS REVIEW
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "Copy Workflows YOLO - Test Results"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "test-results"
+  - "copy workflows yolo - test res"
+  - "test summary"
+  - "files validated"
+  - "scripts"
+  - "workflows (7 total)"
+  - "templates"
+  - "critical tasks (6 total)"
+  - "reference files"
+  - "config"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Copy Workflows YOLO - Test Results
 
 **Data:** 2026-01-23
@@ -107,3 +131,5 @@ O sistema Copy Workflows YOLO está **pronto para produção**:
 
 *Generated: 2026-01-23*
 *Test Runner: Claude Code*
+
+#galaxy-tools

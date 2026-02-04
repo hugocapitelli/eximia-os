@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Identity"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-identity"
+  - "kb_01 — identity"
+  - "david goggins clone knowledge "
+  - "core identity"
+  - "who he is"
+  - "background"
+  - "identity statement"
+  - "function for followers"
+  - "🧠 obsidian connections"
+  - "clone"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Identity
 ## David Goggins Clone Knowledge Base
 
@@ -72,3 +96,5 @@ Provides:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

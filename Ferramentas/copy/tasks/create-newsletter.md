@@ -1,3 +1,27 @@
+---
+title: "Create Newsletter Task"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-newsletter"
+  - "create newsletter task"
+  - "metadata"
+  - "purpose"
+  - "phase 1: information gathering"
+  - "1.1 required inputs"
+  - "1.2 optional inputs"
+  - "phase 2: newsletter format sel"
+  - "2.1 format descriptions"
+  - "2.2 format selection guide"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Create Newsletter Task
 
 ## Metadata
@@ -1139,3 +1163,5 @@ quality_gates:
 *Task Version: 2.0*
 *Copy Framework v2.0 Upgrade*
 *Research: docs/research/newsletter-methodology-research.md*
+
+#galaxy-tools

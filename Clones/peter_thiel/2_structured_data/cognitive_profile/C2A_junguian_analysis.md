@@ -1,3 +1,27 @@
+---
+title: "C2A Jungian Analysis: Peter Thiel"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2a-junguian-analysis"
+  - "c2a jungian analysis: peter th"
+  - "mbti assessment"
+  - "type determination: intj (the "
+  - "cognitive function stack"
+  - "primary functions"
+  - "function analysis"
+  - "dominant ni: introverted intui"
+  - "auxiliary te: extroverted thin"
+  - "tertiary fi: introverted feeli"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2A Jungian Analysis: Peter Thiel
 
 ## MBTI Assessment
@@ -202,3 +226,5 @@ His cognitive style makes him uniquely suited for:
 
 *C2A_JunguianAnalyst | Phase 2 ETL*
 *Confidence: 95% | Sources: 15+*
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "CLONE PROFILE — Don Norman"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-profile"
+  - "clone profile — don norman"
+  - "metadata"
+  - "quick reference"
+  - "one-liner bio"
+  - "core philosophy (3 points)"
+  - "signature phrases"
+  - "key frameworks"
+  - "clone capabilities"
+  - "what this clone does"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # CLONE PROFILE — Don Norman
 
 ## Metadata
@@ -154,3 +178,5 @@ Load KBs based on query type:
 **Factory:** Clone Factory v2.0
 **Created by:** C3_Creator
 **Validated by:** C4_Auditor
+
+#galaxy-creation

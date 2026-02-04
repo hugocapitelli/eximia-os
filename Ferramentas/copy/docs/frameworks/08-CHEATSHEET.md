@@ -1,3 +1,27 @@
+---
+title: "CHEAT SHEET - REFERÊNCIA RÁPIDA"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "08-cheatsheet"
+  - "cheat sheet - referência rápid"
+  - "todos os 17 clones em um olhar"
+  - "preciso de x → usar y"
+  - "por tipo de produto"
+  - "por nível de consciência"
+  - "fluxo decisório simplificado"
+  - "combinações que funcionam"
+  - "correções importantes (v1 → v2"
+  - "regra de ouro"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # CHEAT SHEET - REFERÊNCIA RÁPIDA
 
 > Uma página para consulta imediata.
@@ -219,3 +243,5 @@ Atualizado: Janeiro 2025
 Base: Pesquisa de correlação histórica + validação de fontes
 Acurácia estimada: ~95% (após correções)
 ```
+
+#galaxy-tools

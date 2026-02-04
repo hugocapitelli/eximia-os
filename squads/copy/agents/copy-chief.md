@@ -1,3 +1,27 @@
+---
+title: "copy-chief"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copy-chief"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "tier system"
+  - "tier-based workflow"
+  - "commands"
+  - "team roster (detailed)"
+  - "recommendation logic"
+  - "archived agents"
+  - "security & dependencies"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # copy-chief
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -647,3 +671,5 @@ TOOL (não é clone)
 *Copy Chief v3.0*
 *Upgrade Date: 2026-01-23*
 *Tier-based orchestration system*
+
+#galaxy-operational

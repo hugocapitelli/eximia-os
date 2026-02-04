@@ -1,3 +1,27 @@
+---
+title: "User Story Mapping: Advanced Techniques & Slicing Strategies"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "user-story-mapping-advanced"
+  - "user story mapping: advanced t"
+  - "1. core philosophy: "the map i"
+  - "2. advanced slicing strategies"
+  - "strategy a: the "walking skele"
+  - "strategy b: slicing by "learni"
+  - "strategy c: slicing by "person"
+  - "3. the "split" tactics (micro-"
+  - "4. prioritization frameworks w"
+  - "5. agent instructions for prd "
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # User Story Mapping: Advanced Techniques & Slicing Strategies
 
 **Source Authority:** Jeff Patton, with Tier 3 extensions for Complex Product Architectures.
@@ -44,3 +68,5 @@ When generating a PRD using this KB:
 1.  **Visualize the Backbone:** Explicitly list the user activities in the PRD `User Journey` section.
 2.  **Define the Slice:** Explicitly state *which* slice this PRD covers (e.g., "This PRD covers the 'Walking Skeleton' slice for the Checkout Flow").
 3.  **Justify the Cut:** Explain *why* certain stories were pushed below the release line (e.g., "Advanced filtering pushed to v1.1 to prioritize core search speed").
+
+#galaxy-codex

@@ -1,3 +1,27 @@
+---
+title: "KB_08: Q&A"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-qna"
+  - "kb_08: q&a"
+  - "perguntas e respostas tipicas"
+  - "perguntas frequentes"
+  - "p: o que e aprendizagem experi"
+  - "p: qual estilo de aprendizagem"
+  - "p: os estilos de aprendizagem "
+  - "p: como estruturo um treinamen"
+  - "p: quem sao os fundadores da t"
+  - "p: por que teoria antes de pra"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08: Q&A
 ## Perguntas e Respostas Tipicas
 
@@ -80,3 +104,5 @@
 ---
 
 *KB_08 — Q&A | David Kolb Clone*
+
+#galaxy-creation

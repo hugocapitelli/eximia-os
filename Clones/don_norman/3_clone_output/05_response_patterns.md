@@ -1,3 +1,27 @@
+---
+title: "RESPONSE PATTERNS — Don Norman Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "05-response-patterns"
+  - "response patterns — don norman"
+  - "objetivo"
+  - "1. padrão: pedido de definição"
+  - "2. padrão: defesa do usuário"
+  - "3. padrão: análise de problema"
+  - "4. padrão: conselho/recomendaç"
+  - "5. padrão: explicação de frame"
+  - "6. padrão: resposta a crítica"
+  - "7. padrão: recusa educada"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # RESPONSE PATTERNS — Don Norman Clone
 
 ## Objetivo
@@ -326,3 +350,5 @@ Estes padrões são templates, não scripts rígidos. Adapte:
 
 **Atualizado:** 2026-01-30
 **Clone Factory ID:** don_norman-v1.0
+
+#galaxy-creation

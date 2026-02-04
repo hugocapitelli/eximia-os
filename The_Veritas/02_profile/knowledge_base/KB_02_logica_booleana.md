@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Lógica Booleana e Operadores de Busca"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-logica-booleana"
+  - "kb_02 — lógica booleana e oper"
+  - "categoria: estratégia"
+  - "palavras: ~2,500"
+  - "atualizado: 2026-01-07"
+  - "1. fundamentos da lógica boole"
+  - "origem"
+  - "operadores básicos"
+  - "diagramas de venn"
+  - "2. operadores avançados"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_02 — Lógica Booleana e Operadores de Busca
 
 ## Categoria: ESTRATÉGIA
@@ -267,3 +291,5 @@ COMBINAÇÃO: Merge V3 + V4 para triangulação
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

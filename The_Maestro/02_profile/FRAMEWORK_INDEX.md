@@ -1,3 +1,27 @@
+---
+title: "FRAMEWORK INDEX — The Maestro"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "framework-index"
+  - "framework index — the maestro"
+  - "📋 category 1: strategic decis"
+  - "🧠 category 2: problem solving"
+  - "📊 category 3: project & flow "
+  - "💬 category 4: communication &"
+  - "✅ category 5: quality & improv"
+  - "🎯 framework selection guide"
+  - "by task type"
+  - "by urgency level"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # FRAMEWORK INDEX — The Maestro
 
 > **Total Frameworks**: 51  
@@ -155,3 +179,5 @@ graph TD
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

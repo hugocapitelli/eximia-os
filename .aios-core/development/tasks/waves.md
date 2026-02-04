@@ -1,3 +1,27 @@
+---
+title: "Task: `*waves` - Wave Analysis"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "waves"
+  - "task: `*waves` - wave analysis"
+  - "overview"
+  - "usage"
+  - "arguments"
+  - "options"
+  - "examples"
+  - "analyze current workflow (auto"
+  - "analyze specific workflow"
+  - "visual ascii representation"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: `*waves` - Wave Analysis
 
 <!-- Story: WIS-4 - Wave Analysis Engine -->
@@ -203,3 +227,5 @@ This task is available for:
 | Version | Date | Changes |
 |---------|------|---------|
 | 1.0.0 | 2025-12-25 | Initial implementation (WIS-4) |
+
+#galaxy-runtime

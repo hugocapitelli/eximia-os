@@ -1,3 +1,27 @@
+---
+title: "StratOS - The Strategist"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "stratos - the strategist"
+  - "overview"
+  - "core competencies"
+  - "system architecture"
+  - "tier 3 expert profile"
+  - "iron laws"
+  - "how to use"
+  - "1. deploy via workflow"
+  - "2. direct integration"
+tags:
+  - "galaxy-specialist"
+  - "documentation"
+---
+
 # StratOS - The Strategist
 
 **Tier 3 (Expert) X-Agent — Strategic Planning & Lean Management**
@@ -122,3 +146,5 @@ Z Squad Pipeline | Promoted to X-Agent | exímIA.AI © 2026
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

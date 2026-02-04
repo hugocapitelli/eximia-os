@@ -1,3 +1,27 @@
+---
+title: "Donald Miller Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "donald miller clone"
+  - "quick reference"
+  - "about the subject"
+  - "clone capabilities"
+  - "expert in"
+  - "key frameworks"
+  - "usage"
+  - "load system prompt"
+  - "reference knowledge bases"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # Donald Miller Clone
 
 ## Quick Reference
@@ -134,3 +158,5 @@ Created using **El_Clonador Pipeline v4.0**:
 
 *eximIA.OS Clone Factory*
 *Powered by The_Veritas Research Engine*
+
+#galaxy-creation

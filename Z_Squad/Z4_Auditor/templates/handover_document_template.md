@@ -1,3 +1,27 @@
+---
+title: "Handover Document Template — Z4 Auditor"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "template"
+status: "deprecated"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "handover-document-template"
+  - "handover document template — z"
+  - "🎯 propósito"
+  - "template"
+  - "handover_document.md"
+  - "agent: [nome_do_agente]"
+  - "version: [x.y.z]"
+  - "date: [yyyy-mm-dd]"
+  - "status: [draft | validated | p"
+  - "1. executive summary"
+tags:
+  - "galaxy-creation"
+  - "template"
+---
+
 # Handover Document Template — Z4 Auditor
 
 ## 🎯 Propósito
@@ -139,3 +163,5 @@ Documentar o **status final** do agente para entrega.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

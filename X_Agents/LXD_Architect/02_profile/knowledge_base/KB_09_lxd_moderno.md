@@ -1,3 +1,27 @@
+---
+title: "KB_09: Learning Experience Design Moderno"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-lxd-moderno"
+  - "kb_09: learning experience des"
+  - "visão geral"
+  - "lxd vs instructional design"
+  - "princípios de lxd (niels floor"
+  - "1. human-centered"
+  - "2. goal-oriented"
+  - "3. problem-based"
+  - "4. iterative"
+  - "5. holistic"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_09: Learning Experience Design Moderno
 
 ## Visão Geral
@@ -213,3 +237,5 @@ Nível 4: GERAÇÃO
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

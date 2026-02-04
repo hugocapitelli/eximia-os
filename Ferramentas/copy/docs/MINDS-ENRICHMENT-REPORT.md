@@ -1,3 +1,27 @@
+---
+title: "Relatório de Enriquecimento: Minds → Agentes de Copy"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "minds-enrichment-report"
+  - "relatório de enriquecimento: m"
+  - "resumo executivo"
+  - "1. mapeamento: minds vs agente"
+  - "minds disponíveis com dados ri"
+  - "agentes sem mind correspondent"
+  - "2. dados valiosos por mind"
+  - "claude hopkins (completo)"
+  - "joe sugarman (completo)"
+  - "dan kennedy (médio)"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Relatório de Enriquecimento: Minds → Agentes de Copy
 
 **Data:** 2026-01-23
@@ -337,3 +361,5 @@ outputs/minds/
 └── seth_godin/              # PARCIAL (não é agente de copy)
     └── system_prompts/
 ```
+
+#galaxy-tools

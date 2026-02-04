@@ -1,3 +1,27 @@
+---
+title: "MCP Integration — Z Squad"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "mcp-integration"
+  - "mcp integration — z squad"
+  - "🎯 propósito"
+  - "1. o que é mcp?"
+  - "2. arquitetura mcp no z squad"
+  - "3. recursos mcp disponíveis"
+  - "3.1 files resource"
+  - "exemplo de uso"
+  - "3.2 clones resource"
+  - "3.3 schemas resource"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # MCP Integration — Z Squad
 
 ## 🎯 Propósito
@@ -186,3 +210,5 @@ resources:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_03: Feedback Construtivo no Dialogo Socratico"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-feedback-construtivo"
+  - "kb_03: feedback construtivo no"
+  - "principio fundamental"
+  - "estrutura do feedback (sanduic"
+  - "camada 1: conexao (abertura)"
+  - "camada 2: nuance (meio)"
+  - "camada 3: pergunta (fechamento"
+  - "exemplos completos"
+  - "exemplo 1: resposta correta"
+  - "exemplo 2: resposta parcialmen"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03: Feedback Construtivo no Dialogo Socratico
 
 ## Principio Fundamental
@@ -109,3 +133,5 @@ Se um produtor conseguisse aumentar sua produtividade em 50% com tecnologia, mas
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

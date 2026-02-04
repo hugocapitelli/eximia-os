@@ -1,3 +1,22 @@
+---
+title: "Release Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "release-checklist"
+  - "release checklist"
+  - "instructions for devops agent"
+  - "checklist items"
+  - "final confirmation"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Release Checklist
 
 ## Instructions for DevOps Agent
@@ -120,3 +139,5 @@ After completing the checklist:
 Releases are public commitments to quality.]]
 
 - [ ] I, the DevOps Agent, confirm that all release criteria have been met and the release is ready to proceed.
+
+#galaxy-runtime

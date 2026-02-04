@@ -1,3 +1,27 @@
+---
+title: "{Agent ID} - {Checklist Title}"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "personalized-checklist-template"
+  - "{agent id} - {checklist title}"
+  - "overview"
+  - "pre-execution checks"
+  - "execution validation"
+  - "phase 1: {phase name}"
+  - "phase 2: {phase name}"
+  - "quality checks"
+  - "code quality (if applicable)"
+  - "documentation quality"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # {Agent ID} - {Checklist Title}
 
 **Agent:** {AgentName} ({Archetype})
@@ -338,3 +362,5 @@ jobs:
 - **Dex (Builder):** "Checklists são blueprints. Siga-os à risca e construa com confiança. 🔨"
 - **Quinn (Guardian):** "Cada item é uma proteção. Não pule nenhum. Sua segurança depende disso. 🛡️"
 - **Pax (Balancer):** "Use bom senso. Checklist é guia, não prisão. Adapte ao contexto. ⚖️"
+
+#galaxy-runtime

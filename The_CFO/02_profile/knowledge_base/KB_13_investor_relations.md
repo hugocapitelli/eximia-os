@@ -1,3 +1,27 @@
+---
+title: "KB_13 — Investor Relations"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-13-investor-relations"
+  - "kb_13 — investor relations"
+  - "1. fundamentos de ir"
+  - "o que é investor relations"
+  - "objetivos core"
+  - "2. earnings calls best practic"
+  - "preparation (ir impact, 2024)"
+  - "estrutura da call (q4 blog, 20"
+  - "content best practices (benjam"
+  - "visual aids (q4 blog, 2024)"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_13 — Investor Relations
 
 ## 1. Fundamentos de IR
@@ -218,3 +242,5 @@ from those expressed or implied..."
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

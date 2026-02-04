@@ -1,3 +1,27 @@
+---
+title: "Copy Workflow Agent Instructions"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-copy"
+  - "copy workflow agent instructio"
+  - "project context (injected by c"
+  - "completion signals"
+  - "your task (execute in order)"
+  - "phase 0: decision matrix (if w"
+  - "phase execution loop"
+  - "executing: {task_file}"
+  - "state management"
+  - "copy-state.json updates"
+tags:
+  - "galaxy-tools"
+  - "prompt"
+---
+
 # Copy Workflow Agent Instructions
 
 > **AIOS Integration:** Execute workflows by PHASES using copywriting agents.
@@ -485,3 +509,5 @@ After each session, update handoff.md:
 ---
 
 Now begin. Read copy-state.json and proceed with current phase.
+
+#galaxy-tools

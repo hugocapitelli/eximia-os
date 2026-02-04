@@ -1,3 +1,27 @@
+---
+title: "Pattern Audit Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "pattern-audit-checklist"
+  - "pattern audit checklist"
+  - "scan completeness"
+  - "pattern detection"
+  - "buttons"
+  - "colors"
+  - "spacing"
+  - "typography"
+  - "forms"
+  - "output validation"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Pattern Audit Checklist
 
 **Purpose:** Validate audit results before consolidation
@@ -86,3 +110,5 @@
 
 **Reviewer:** ________ **Date:** ________
 **Audit Quality:** [ ] Excellent [ ] Good [ ] Needs Review
+
+#galaxy-runtime

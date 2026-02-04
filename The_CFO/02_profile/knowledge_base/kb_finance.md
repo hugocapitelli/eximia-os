@@ -1,3 +1,27 @@
+---
+title: "Knowledge Base — CFO Agent"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-finance"
+  - "knowledge base — cfo agent"
+  - "📚 índice"
+  - "1. valuation methods"
+  - "1.1 dcf (discounted cash flow)"
+  - "1.2 comparable companies (comp"
+  - "1.3 precedent transactions"
+  - "2. m&a frameworks"
+  - "2.1 due diligence checklist"
+  - "2.2 synergy analysis"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # Knowledge Base — CFO Agent
 
 ## 📚 Índice
@@ -178,3 +202,5 @@ Diluição: 2/12 = 16.7%
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

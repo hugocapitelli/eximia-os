@@ -1,3 +1,27 @@
+---
+title: "David Goggins - "Stay Hard" Motto & Philosophy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-20-stay-hard-motto-philosophy-meaning"
+  - "david goggins - "stay hard" mo"
+  - "meaning of "stay hard""
+  - "basic translation"
+  - "deeper meaning"
+  - "the philosophy"
+  - "comprehensive approach"
+  - "life philosophy"
+  - "practical application"
+  - "how to apply "stay hard""
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - "Stay Hard" Motto & Philosophy
 
 **Source:** Web Search - "David Goggins stay hard motto catchphrase meaning philosophy"
@@ -270,3 +294,5 @@ Remember times you stayed hard before, use that fuel.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

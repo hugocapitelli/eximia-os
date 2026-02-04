@@ -1,3 +1,27 @@
+---
+title: "atomic-design-expert"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "atomic-design-expert"
+  - "complete agent definition foll"
+  - "all commands require * prefix "
+  - "commands organized by workflow"
+  - "quick commands"
+  - "agent collaboration"
+  - "🏗️ atomic design expert guide"
+  - "when to use me"
+  - "prerequisites"
+  - "typical workflow"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # atomic-design-expert
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -375,3 +399,5 @@ Type `*help` to see all commands, or `*guide` for comprehensive guide.
 - **@architect (Aria)** - Frontend architecture
 
 ---
+
+#galaxy-runtime

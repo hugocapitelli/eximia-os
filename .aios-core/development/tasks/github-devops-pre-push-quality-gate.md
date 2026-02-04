@@ -1,3 +1,27 @@
+---
+title: "pre-push-quality-gate.md"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "github-devops-pre-push-quality-gate"
+  - "pre-push-quality-gate.md"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # pre-push-quality-gate.md
 
 **Task**: Pre-Push Quality Gate Validation (Repository-Agnostic)
@@ -731,3 +755,5 @@ Called via `@github-devops *pre-push` command.
 - Security scan is mandatory (TR-3.14.11)
 - User always has final approval
 - Detailed logging for troubleshooting
+
+#galaxy-runtime

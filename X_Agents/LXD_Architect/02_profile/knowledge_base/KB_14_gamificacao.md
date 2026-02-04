@@ -1,3 +1,27 @@
+---
+title: "KB_14: Gamificação e Engajamento"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-14-gamificacao"
+  - "kb_14: gamificação e engajamen"
+  - "visão geral"
+  - "octalysis framework (yu-kai ch"
+  - "8 core drives"
+  - "aplicação por drive"
+  - "arcs model (keller)"
+  - "4 componentes de motivação"
+  - "elementos de gamificação"
+  - "por categoria"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_14: Gamificação e Engajamento
 
 ## Visão Geral
@@ -159,3 +183,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

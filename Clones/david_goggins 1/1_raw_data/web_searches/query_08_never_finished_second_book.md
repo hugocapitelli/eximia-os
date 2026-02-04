@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Never Finished (Second Book, 2023)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-08-never-finished-second-book"
+  - "david goggins - never finished"
+  - "book information"
+  - "sales & reception"
+  - "core premise"
+  - "evolution from can't hurt me"
+  - "key themes"
+  - "1. mental grit"
+  - "2. the journey never ends"
+  - "3. evolution & humility"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Never Finished (Second Book, 2023)
 
 **Source:** Web Search - "David Goggins second book Never Finished 2023"
@@ -117,3 +141,5 @@ Where Goggins developed:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

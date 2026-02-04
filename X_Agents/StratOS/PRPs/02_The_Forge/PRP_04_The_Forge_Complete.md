@@ -1,3 +1,27 @@
+---
+title: "PRP-04: The Forge - Strategy Creation Module"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prp-04-the-forge-complete"
+  - "prp-04: the forge - strategy c"
+  - "1. objetivo"
+  - "2. visão geral do fluxo"
+  - "3. user stories"
+  - "4. arquitetura de componentes"
+  - "5. step 0: swot analysis"
+  - "5.1 objetivo"
+  - "5.2 requisitos funcionais"
+  - "5.3 wireframe detalhado"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # PRP-04: The Forge - Strategy Creation Module
 
 > **Module:** The Forge (Criação de Estratégia)
@@ -1193,3 +1217,5 @@ POST /api/forge/:cycleId/kpis
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

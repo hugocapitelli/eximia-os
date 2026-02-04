@@ -1,3 +1,27 @@
+---
+title: "SOURCES_LIVE.md - Tim Ferriss Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "sources-live"
+  - "sources_live.md - tim ferriss "
+  - "summary statistics"
+  - "web searches completed (11)"
+  - "01. biography & early life"
+  - "02. 4-hour workweek philosophy"
+  - "03. frameworks & methodologies"
+  - "04. books complete list"
+  - "05. brainquicken startup"
+  - "06. angel investing portfolio"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # SOURCES_LIVE.md - Tim Ferriss Clone
 
 **Updated:** 2026-01-19  
@@ -179,3 +203,4 @@
 - Option A: Proceed to Phase 2 with current sources, accept slightly lower fidelity (~8.5-9.0 target)
 - Option B: Continue Phase 1 with focus on podcast transcripts + social media (2-3h more work)
 
+#galaxy-creation

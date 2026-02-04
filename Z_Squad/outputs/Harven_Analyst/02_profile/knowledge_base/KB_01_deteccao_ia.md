@@ -1,3 +1,27 @@
+---
+title: "KB_01: Deteccao de Texto Gerado por IA"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-deteccao-ia"
+  - "kb_01: deteccao de texto gerad"
+  - "proposito"
+  - "principios fundamentais"
+  - "indicadores de texto gerado po"
+  - "categoria 1: estilo de escrita"
+  - "categoria 2: vocabulario"
+  - "categoria 3: estrutura"
+  - "padroes linguisticos de llms"
+  - "frases tipicas de chatgpt/llms"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01: Deteccao de Texto Gerado por IA
 
 ## Proposito
@@ -268,3 +292,5 @@ certas, e possivel ser sustentavel e lucrativo ao mesmo tempo.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_08 — Anti-Alucinação e Chain-of-Verification (CoVe)"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "draft"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-anti-alucinacao"
+  - "kb_08 — anti-alucinação e chai"
+  - "categoria: invariantes"
+  - "palavras: ~2,500"
+  - "atualizado: 2026-01-07"
+  - "1. o problema da alucinação"
+  - "definição"
+  - "tipos de alucinação"
+  - "2. chain-of-verification (cove"
+  - "origem"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_08 — Anti-Alucinação e Chain-of-Verification (CoVe)
 
 ## Categoria: INVARIANTES
@@ -252,3 +276,5 @@ sem metodologia transparente.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

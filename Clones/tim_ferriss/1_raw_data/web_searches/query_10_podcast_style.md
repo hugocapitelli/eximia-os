@@ -1,3 +1,27 @@
+---
+title: "Web Search: Tim Ferriss Podcast Interview Style"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-10-podcast-style"
+  - "web search: tim ferriss podcas"
+  - "interview technique & approach"
+  - "pre-interview preparation"
+  - "recording philosophy"
+  - "question format & strategy"
+  - "preparation level"
+  - "interview flow"
+  - "core question philosophy"
+  - "personal curiosity driven"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Web Search: Tim Ferriss Podcast Interview Style
 
 **Query:** Tim Ferriss podcast interview technique questions format approach guests  
@@ -170,3 +194,4 @@
 - PodcastReview.org
 - Medium.com (breakdowns de técnica)
 
+#galaxy-creation

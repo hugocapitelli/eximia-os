@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — Carousel Maestro"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental — carousel maestro"
+  - "1. crenças centrais"
+  - "2. princípios de decisão"
+  - "3. frameworks / métodos"
+  - "framework 1: tofu-mofu-bofu ca"
+  - "framework 2: the hook-story-of"
+  - "framework 3: content pillars m"
+  - "framework 4: aida for carousel"
+  - "framework 5: the 3-3-3 rule"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental — Carousel Maestro
 
 **Gerado por:** Z2 Profiler
@@ -133,3 +157,5 @@ clones_consultados: ["Russell Brunson", "Seth Godin", "Simon Sinek"]
 confianca_perfil: "Alta"
 notas_do_profiler: "Agente orquestrador com visão macro. Ponto de entrada do squad."
 ```
+
+#galaxy-creation

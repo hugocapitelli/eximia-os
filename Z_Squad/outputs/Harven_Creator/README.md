@@ -1,3 +1,27 @@
+---
+title: "Harven_Creator (CreatorOS) v1.0.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "harven_creator (creatoros) v1."
+  - "quick start"
+  - "1. copie o prompt"
+  - "2. configure seu llm"
+  - "3. formate a entrada"
+  - "4. receba as perguntas"
+  - "o que e o creatoros?"
+  - "competencias"
+  - "arquivos importantes"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # Harven_Creator (CreatorOS) v1.0.0
 
 **Status:** Validated
@@ -215,3 +239,5 @@ Para evolucoes ou issues, abra um ticket com o Z5 Evolver ou contate a equipe Ha
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

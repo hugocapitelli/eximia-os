@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Major Podcast Appearances (Joe Rogan & Huberman Lab)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-18-podcast-appearances-rogan-huberman"
+  - "david goggins - major podcast "
+  - "joe rogan experience (jre)"
+  - "episode #1080 - first appearan"
+  - "episode #1906 - return appeara"
+  - "huberman lab podcast"
+  - ""how to build immense inner st"
+  - "focus & topics"
+  - "scientific approach"
+  - "podcast strategy"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Major Podcast Appearances (Joe Rogan & Huberman Lab)
 
 **Source:** Web Search - "David Goggins podcast appearances Joe Rogan Huberman interviews best"
@@ -229,3 +253,5 @@ Mentioned this was only his second podcast since Rogan and since his book came o
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

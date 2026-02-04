@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Can't Hurt Me: Book & Philosophy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-03-cant-hurt-me-book-philosophy"
+  - "david goggins - can't hurt me:"
+  - "book overview"
+  - "core narrative"
+  - "key philosophies & concepts"
+  - "1. the 40% rule"
+  - "2. the accountability mirror"
+  - "3. callusing the mind"
+  - "4. the cookie jar"
+  - "5. embrace the suck"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Can't Hurt Me: Book & Philosophy
 
 **Source:** Web Search - "David Goggins Can't Hurt Me book philosophy mindset"
@@ -105,3 +129,5 @@ Goggins' story illuminates a path that anyone can follow to push past pain, demo
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

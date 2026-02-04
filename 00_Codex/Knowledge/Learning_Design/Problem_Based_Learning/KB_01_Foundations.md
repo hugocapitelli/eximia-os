@@ -1,3 +1,26 @@
+---
+title: "KB_01: Problem-Based Learning - Foundations"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-foundations"
+  - "kb_01: problem-based learning "
+  - "core definition"
+  - "key characteristics"
+  - "historical foundation"
+  - "the mcmaster model (1960s-1970"
+  - "the two fundamental postulates"
+  - "postulate 1: usable vs. inert "
+  - "postulate 2: active learning s"
+  - "evolution beyond medical educa"
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
 
 # KB_01: Problem-Based Learning - Foundations
 
@@ -342,3 +365,5 @@ Barrows identified that "PBL" was used for various methods. He created a taxonom
 **For:** exímIA.OS Learning Design Knowledge Repository
 **Version:** 1.0
 **Status:** Production Ready
+
+#galaxy-codex

@@ -1,3 +1,26 @@
+---
+title: "Accessibility (WCAG 3.0 "Silver") & Inclusive Design"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "accessibility-wcag-3.0-guide"
+  - "accessibility (wcag 3.0 "silve"
+  - "1. the core shift: from "pass/"
+  - "2. cognitive accessibility (th"
+  - "3. functional categories for d"
+  - "4. hierarchy of severity (for "
+  - "5. agent instructions for prd "
+  - "codex"
+  - "knowledge"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Accessibility (WCAG 3.0 "Silver") & Inclusive Design
 
 **Source Authority:** W3C WAI (Silver Task Force).
@@ -28,3 +51,5 @@ Design for neurodiversity (ADHD, Dyslexia, Autism, Anxiety).
     *   *Example:* "Focus must move to the modal window immediately upon opening."
 2.  **Cognitive Check:** In the "User Interface" section, explicitly state: "UI must simulate a low-stress environment. No auto-playing media or flashing elements."
 3.  **Alt Text Spec:** Require that all non-decorative images have a defined Alt-Text strategy in the data model.
+
+#galaxy-codex

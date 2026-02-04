@@ -1,3 +1,27 @@
+---
+title: "KB_09 — Social Proof Integration"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-social-proof-integration"
+  - "kb_09 — social proof integrati"
+  - "o principio da prova social"
+  - "os 6 tipos de prova social"
+  - "tipo 1: prova de quantidade (n"
+  - "tipo 2: depoimentos (testimoni"
+  - "tipo 3: casos de sucesso (case"
+  - "tipo 4: endosso de autoridade "
+  - "tipo 5: certificacoes e premio"
+  - "tipo 6: prova social em tempo "
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09 — Social Proof Integration
 
 **Agente:** Copy Master
@@ -391,3 +415,5 @@ Pode ser por audio, texto, o que preferir."
 ---
 
 *"Voce pode dizer que e bom. Mas quando outros dizem, voce PROVA que e bom."* — Copy Master
+
+#galaxy-creation

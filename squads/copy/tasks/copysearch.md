@@ -1,3 +1,27 @@
+---
+title: "CopySearch — David Ogilvy Research Engineering Protocol"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copysearch"
+  - "copysearch — david ogilvy rese"
+  - "metadata"
+  - "core principle"
+  - "purpose"
+  - "the ogilvy research stack (5 l"
+  - "evidence hierarchy (memorize t"
+  - "phase 0: mission briefing"
+  - "*before any research begins*"
+  - "checklist 0.1 — research defin"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # CopySearch — David Ogilvy Research Engineering Protocol
 
 ## Metadata
@@ -918,3 +942,5 @@ Upon completing CopySearch, you will have:
 
 *Task based on: docs/research/david-ogilvy-research-engineering-meta-framework.md*
 *Methodology reconstructed from primary evidence (1935-1985)*
+
+#galaxy-operational

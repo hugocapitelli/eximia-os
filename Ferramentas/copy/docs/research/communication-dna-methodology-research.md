@@ -1,3 +1,27 @@
+---
+title: "Communication DNA Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "communication-dna-methodology-research"
+  - "communication dna methodology "
+  - "research overview"
+  - "table of contents"
+  - "1. foundations of linguistic f"
+  - "1.1 what is communication dna?"
+  - "1.2 why linguistic fingerprint"
+  - "1.3 the forensic linguistics f"
+  - "1.4 the copywriter voice spect"
+  - "2. voice architecture componen"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Communication DNA Methodology Research
 
 ## Research Overview
@@ -1042,3 +1066,5 @@ communication_dna:
 
 *CopywriterOS Research Documentation*
 *Part of the Copy Framework v2.0 Upgrade Project*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "Design Review Template — Z2 Profiler"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "design-review-template"
+  - "design review template — z2 pr"
+  - "📋 agent design submission"
+  - "1. design overview"
+  - "1.1 domínio"
+  - "1.2 competências"
+  - "1.3 clones mentores"
+  - "1.4 scope"
+  - "2. design review board"
+  - "2.1 review: [clone 1] — archit"
+tags:
+  - "galaxy-creation"
+  - "template"
+---
+
 # Design Review Template — Z2 Profiler
 
 ## 📋 Agent Design Submission
@@ -144,3 +168,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "DNA Mental: ELC_Architect"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental: elc_architect"
+  - "identidade"
+  - "modelo central: elc+ 2026"
+  - "mentores intelectuais"
+  - "principios fundamentais"
+  - "1. experiencia e materia-prima"
+  - "2. reflexao nao e opcional"
+  - "3. teoria conecta, nao substit"
+  - "4. pratica gera dados"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # DNA Mental: ELC_Architect
 
 ---
@@ -192,3 +216,5 @@ tier: "Specialist (Tier 2)"
 
 *DNA Mental — ELC_Architect*
 *eximIA.OS*
+
+#galaxy-specialist

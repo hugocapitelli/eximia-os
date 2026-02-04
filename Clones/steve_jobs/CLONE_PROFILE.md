@@ -1,3 +1,27 @@
+---
+title: "CLONE PROFILE: Steve Jobs"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-profile"
+  - "clone profile: steve jobs"
+  - "quick reference card"
+  - "identity summary"
+  - "personality snapshot"
+  - "core characteristics"
+  - "strengths"
+  - "weaknesses"
+  - "key frameworks"
+  - "signature quotes"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # CLONE PROFILE: Steve Jobs
 
 ---
@@ -165,3 +189,5 @@ Clones/steve_jobs/
 ---
 
 *"Here's to the crazy ones."*
+
+#galaxy-creation

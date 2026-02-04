@@ -1,3 +1,27 @@
+---
+title: "BIBLIOGRAPHY_RESEARCH — CFO Agent"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "bibliography-research"
+  - "bibliography_research — cfo ag"
+  - "agent: cfo agent"
+  - "domain: corporate finance"
+  - "total sources: 18"
+  - "1. foundational books (core)"
+  - "2. supplementary books"
+  - "3. brasil-specific sources"
+  - "4. framework primary sources"
+  - "5. citation quick reference"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # BIBLIOGRAPHY_RESEARCH — CFO Agent
 
 ## Agent: CFO Agent
@@ -100,3 +124,5 @@ Silver → (The Signal and the Noise, 2012)
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

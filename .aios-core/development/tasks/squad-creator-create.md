@@ -310,3 +310,5 @@ async function createSquad(options) {
 - **Script:** squad-generator.js
 - **Validator:** squad-validator.js (SQS-3)
 - **Loader:** squad-loader.js (SQS-2)
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "KB_14: Arbitragem e Mediação"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-14-arbitration"
+  - "kb_14: arbitragem e mediação"
+  - "1. arbitragem"
+  - "1.1 conceito"
+  - "1.2 legislação"
+  - "2. cláusula compromissória"
+  - "2.1 elementos essenciais"
+  - "2.2 modelo básico"
+  - "3. câmaras principais"
+  - "3.1 internacionais"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_14: Arbitragem e Mediação
 
 **Categoria:** TEORIA  
@@ -230,3 +254,5 @@ Para disputa de USD 10M:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

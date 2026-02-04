@@ -1,3 +1,27 @@
+---
+title: "Task: EXPLAIN (ANALYZE, BUFFERS)"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-explain"
+  - "task: explain (analyze, buffer"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: EXPLAIN (ANALYZE, BUFFERS)
 
 **Purpose**: Run detailed query plan analysis to assess performance
@@ -629,3 +653,5 @@ Query optimization workflow:
 - `*analyze-hotpaths` - Check common query patterns
 - `*design-indexes` - Plan index strategy
 - `*rls-audit` - Check RLS policy performance
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "AIOS Workflows"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "aios workflows"
+  - "available workflows"
+  - "development workflows"
+  - "configuration workflows"
+  - "setup environment workflow"
+  - "features"
+  - "usage"
+  - "what it does"
+  - "ide rule locations"
+tags:
+  - "galaxy-runtime"
+  - "documentation"
+---
+
 # AIOS Workflows
 
 This directory contains workflow definitions for the Synkra AIOS framework. Workflows define multi-step processes that can be executed by AIOS agents.
@@ -82,3 +106,5 @@ workflow:
 3. Provide clear user feedback
 4. Make workflows idempotent when possible
 5. Document prerequisites and outcomes
+
+#galaxy-runtime

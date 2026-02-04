@@ -1,3 +1,27 @@
+---
+title: "Jobs To Be Done (JTBD): Outcome-Driven Innovation Deep Dive"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "jobs-to-be-done-deep-dive"
+  - "jobs to be done (jtbd): outcom"
+  - "1. the core shift"
+  - "2. the odi framework (outcome-"
+  - "the job map"
+  - "the outcome statement syntax"
+  - "3. the opportunity algorithm"
+  - "4. market segmentation by "job"
+  - "5. agent instructions for prd/"
+  - "codex"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Jobs To Be Done (JTBD): Outcome-Driven Innovation Deep Dive
 
 **Source Authority:** Anthony Ulwick (Strategyn), Clayton Christensen.
@@ -45,3 +69,5 @@ Do not segment by "Small Business vs. Enterprise". Segment by **"The Struggle"**
 1.  **Job Statement First:** Every PRD must start with: "The primary Job-to-be-Done for this feature is: [Action] + [Object] + [Context]."
 2.  **Outcome-Based Requirements:** In the `Functional Requirements` section, write at least 50% of items as Outcome Statements (e.g., "Minimize the likelihood of data entry error...").
 3.  **Satisfaction Gap:** When justifying a feature in a PRP, argue based on the *gap* between current satisfaction and importance.
+
+#galaxy-codex

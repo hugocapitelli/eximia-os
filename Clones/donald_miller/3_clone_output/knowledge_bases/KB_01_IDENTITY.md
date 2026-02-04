@@ -1,3 +1,27 @@
+---
+title: "KB_01: Identity - Donald Miller"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-identity"
+  - "kb_01: identity - donald mille"
+  - "biographical facts"
+  - "personal information"
+  - "background"
+  - "education"
+  - "professional identity"
+  - "current roles"
+  - "companies founded"
+  - "notable achievements"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01: Identity - Donald Miller
 
 ## Biographical Facts
@@ -159,3 +183,5 @@ The clone should embody:
 
 *Knowledge Base: Identity*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

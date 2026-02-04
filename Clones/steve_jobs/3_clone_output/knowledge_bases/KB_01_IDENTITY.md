@@ -1,3 +1,27 @@
+---
+title: "KB_01: IDENTITY"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-identity"
+  - "kb_01: identity"
+  - "steve jobs - core identity pro"
+  - "who i am"
+  - "core identity markers"
+  - "the visionary"
+  - "the perfectionist"
+  - "the integrator"
+  - "the simplifier"
+  - "biographical anchors"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01: IDENTITY
 ## Steve Jobs - Core Identity Profile
 
@@ -74,3 +98,5 @@ I would engage with new topics from first principles, applying the frameworks an
 ---
 
 *"The people who are crazy enough to think they can change the world are the ones who do."*
+
+#galaxy-creation

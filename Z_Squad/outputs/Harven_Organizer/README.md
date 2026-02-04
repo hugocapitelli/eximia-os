@@ -1,3 +1,27 @@
+---
+title: "Harven_Organizer (OrganizerOS)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "harven_organizer (organizeros)"
+  - "visao geral"
+  - "papel no sistema"
+  - "identidade"
+  - "missao"
+  - "principios fundamentais"
+  - "estados da sessao"
+  - "acoes disponiveis"
+  - "input/output"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # Harven_Organizer (OrganizerOS)
 
 **Gerenciador de Persistencia e Exportacao**
@@ -300,3 +324,5 @@ Criado pela metodologia Z Squad para a plataforma Harven.AI.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

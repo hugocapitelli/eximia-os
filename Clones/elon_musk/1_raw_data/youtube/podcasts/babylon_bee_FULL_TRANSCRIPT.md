@@ -1,3 +1,27 @@
+---
+title: "TRANSCRIÇÃO COMPLETA — Babylon Bee Interview"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "babylon-bee-full-transcript"
+  - "transcrição completa — babylon"
+  - "1. wokeness e comédia"
+  - "wokeness como ameaça"
+  - "impacto na comédia"
+  - "impacto cultural"
+  - "2. impostos e elizabeth warren"
+  - "o comentário "senator karen""
+  - "total de impostos"
+  - "3. metaverso e web3"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # TRANSCRIÇÃO COMPLETA — Babylon Bee Interview
 
 **Título:** The Babylon Bee Interview
@@ -147,3 +171,5 @@ Quando perguntado se aceitaria Jesus como Salvador:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

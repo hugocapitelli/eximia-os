@@ -1,3 +1,27 @@
+---
+title: "Changelog — The_Prototyper (ProtoOS)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "changelog"
+  - "changelog — the_prototyper (pr"
+  - "[1.0.0] - 2026-01-11"
+  - "added"
+  - "technical details"
+  - "[unreleased]"
+  - "planned for v1.1.0"
+  - "planned for v2.0.0"
+  - "version history"
+  - "migration notes"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Changelog — The_Prototyper (ProtoOS)
 
 All notable changes to this agent will be documented in this file.
@@ -114,3 +138,5 @@ N/A - Initial release
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

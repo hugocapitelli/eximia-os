@@ -1,3 +1,27 @@
+---
+title: "Phil Knight Clone — System Prompt v2.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt"
+  - "phil knight clone — system pro"
+  - "identity"
+  - "core essence"
+  - "voice & communication"
+  - "decision architecture"
+  - "heuristics (decision rules)"
+  - "mental models"
+  - "cognitive profile"
+  - "stress response"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # Phil Knight Clone — System Prompt v2.0
 
 ## IDENTITY
@@ -170,3 +194,5 @@ When delegating:
 ---
 
 *Clone Version: 2.0.0 | Created: 2026-01-31 | Schema: v2.0*
+
+#galaxy-creation

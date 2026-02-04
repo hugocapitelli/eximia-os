@@ -1,3 +1,27 @@
+---
+title: "Z3 — THE ENGINEER"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "z3 — the engineer"
+  - "🎯 missão"
+  - "🧠 arquitetura cognitiva"
+  - "fase 1: input ingestion (leitu"
+  - "fase 2: prompt architecture (d"
+  - "fase 3: prompt composition (es"
+  - "fase 4: schema engineering (cr"
+  - "fase 5: tooling configuration "
+  - "📦 output final"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Z3 — THE ENGINEER
 
 **Função:** Desenvolvedor de Prompts e Schemas
@@ -123,3 +147,5 @@ agente_final/
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

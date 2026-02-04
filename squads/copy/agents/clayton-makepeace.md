@@ -1,3 +1,27 @@
+---
+title: "clayton-makepeace"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clayton-makepeace"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "operational frameworks"
+  - "communication dna"
+  - "signature phrases"
+  - "authority proof arsenal"
+  - "objection algorithms"
+  - "signature techniques (expanded"
+  - "the dominant resident emotion "
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # clayton-makepeace
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -2062,3 +2086,5 @@ completion_criteria:
 *Upgraded: 2026-01-23*
 *Lines: 1700+*
 *Primary Frameworks: 16 Dominant Emotions, DRE Methodology, Dimensionalized Benefits, 21 Fascination Bullets, Visceral Copy Transformation*
+
+#galaxy-operational

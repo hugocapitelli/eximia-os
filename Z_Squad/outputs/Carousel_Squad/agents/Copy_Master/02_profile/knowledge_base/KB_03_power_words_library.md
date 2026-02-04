@@ -1,3 +1,27 @@
+---
+title: "KB_03 — Power Words Library"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-power-words-library"
+  - "kb_03 — power words library"
+  - "o que sao power words?"
+  - "taxonomia das power words"
+  - "categoria 1: urgencia e escass"
+  - "categoria 2: exclusividade e p"
+  - "categoria 3: facilidade e simp"
+  - "categoria 4: resultados e bene"
+  - "categoria 5: credibilidade e p"
+  - "categoria 6: curiosidade e des"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03 — Power Words Library
 
 **Agente:** Copy Master
@@ -318,3 +342,5 @@ Power words funcionam quando usadas com:
 ---
 
 *"A diferenca entre a palavra certa e a quase certa e a diferenca entre o raio e o vaga-lume."* — Mark Twain
+
+#galaxy-creation

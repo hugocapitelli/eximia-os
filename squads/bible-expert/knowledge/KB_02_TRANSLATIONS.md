@@ -1,3 +1,27 @@
+---
+title: "KB_02: Bible Translations Reference"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-translations"
+  - "kb_02: bible translations refe"
+  - "translation overview"
+  - "portuguese translations"
+  - "1. king james version - portug"
+  - "2. acf - almeida corrigida fie"
+  - "3. ara - almeida revista e atu"
+  - "4. ntlh - nova tradução na lin"
+  - "5. nvt - nova versão transform"
+  - "english translations"
+tags:
+  - "galaxy-operational"
+  - "knowledge-base"
+---
+
 # KB_02: Bible Translations Reference
 
 ## Translation Overview
@@ -333,3 +357,5 @@ Complete translation metadata, including:
 **Last Updated**: 2026-01-27
 **Version**: 1.0.0
 **Maintained By**: O Biblista Squad
+
+#galaxy-operational

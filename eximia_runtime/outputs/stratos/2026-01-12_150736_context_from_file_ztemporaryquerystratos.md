@@ -1,3 +1,20 @@
+---
+title: "stratos Response"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "2026-01-12-150736-context-from-file-ztemporaryquerystratos"
+  - "stratos response"
+  - "metadata"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # stratos Response
 
 **Timestamp:** 2026-01-12T15:07:36.082608
@@ -27,3 +44,5 @@ Por qual iniciativa você gostaria de começar o detalhamento tático? Escolha u
 - **Tokens:** 2418
 - **Time:** 5751.845ms
 - **Cost:** $0.000000
+
+#galaxy-runtime

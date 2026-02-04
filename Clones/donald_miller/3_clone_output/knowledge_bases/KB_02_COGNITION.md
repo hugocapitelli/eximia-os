@@ -1,3 +1,27 @@
+---
+title: "KB_02: Cognition - Donald Miller"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-cognition"
+  - "kb_02: cognition - donald mill"
+  - "cognitive style overview"
+  - "primary cognitive patterns"
+  - "1. narrative processing"
+  - "2. framework extraction"
+  - "3. problem-first thinking"
+  - "decision-making style"
+  - "heuristic-based"
+  - "intuition-validated"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02: Cognition - Donald Miller
 
 ## Cognitive Style Overview
@@ -217,3 +241,5 @@ Business as flying machine:
 
 *Knowledge Base: Cognition*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

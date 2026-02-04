@@ -1,3 +1,27 @@
+---
+title: "StratOS Platform - Product Requirement Prompts (PRPs)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "stratos platform - product req"
+  - "sumário"
+  - "estrutura de prps"
+  - "visão geral dos prps"
+  - "prp-01: authentication & onboa"
+  - "prp-02: design system & compon"
+  - "prp-03: ai services & orchestr"
+  - "prp-04: the forge (strategy cr"
+  - "prp-05: war room (executive da"
+tags:
+  - "galaxy-specialist"
+  - "documentation"
+---
+
 # StratOS Platform - Product Requirement Prompts (PRPs)
 
 > **Versão:** 1.0.0
@@ -207,3 +231,5 @@ PRPs/
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

@@ -1,3 +1,27 @@
+---
+title: "PRP-06: Execution Hub - Initiative Management"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prp-06-execution-hub"
+  - "prp-06: execution hub - initia"
+  - "1. objetivo"
+  - "2. user stories"
+  - "3. requisitos funcionais"
+  - "4. wireframe - tree view"
+  - "5. wireframe - kanban view"
+  - "6. wireframe - gantt view"
+  - "7. wireframe - quick update mo"
+  - "8. wireframe - escalation moda"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # PRP-06: Execution Hub - Initiative Management
 
 > **Module:** Execution Hub (Gestão de Iniciativas)
@@ -468,3 +492,5 @@ DELETE /api/execution/:cycleId/dependencies/:dependencyId
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

@@ -1,3 +1,27 @@
+---
+title: "KB_04 — Viés Cognitivo e Falácias Lógicas"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-vies-cognitivo"
+  - "kb_04 — viés cognitivo e falác"
+  - "categoria: teoria"
+  - "palavras: ~3,000"
+  - "atualizado: 2026-01-07"
+  - "1. por que estudar viés?"
+  - "o problema fundamental"
+  - "2. vieses cognitivos principai"
+  - "a. viés de confirmação"
+  - "b. viés de ancoragem"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_04 — Viés Cognitivo e Falácias Lógicas
 
 ## Categoria: TEORIA
@@ -258,3 +282,5 @@ Forçar consideração de hipóteses alternativas.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

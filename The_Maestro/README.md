@@ -1,3 +1,27 @@
+---
+title: "The_Maestro — Supreme Orchestrator"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "the_maestro — supreme orchestr"
+  - "🎯 overview"
+  - "🚀 quick start"
+  - "using the agent"
+  - "via api"
+  - "📂 directory structure"
+  - "🔑 key features"
+  - "📊 metrics"
+  - "📚 documentation"
+tags:
+  - "galaxy-core"
+  - "documentation"
+---
+
 # The_Maestro — Supreme Orchestrator
 
 > **Tier**: 3 (Expert)  
@@ -92,3 +116,8 @@ The_Maestro/
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+[[The_Veritas/README.md]]
+[[The_CEO/agente_core.md]]
+[[agent_registry.yaml]]
+#galaxy-core

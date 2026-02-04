@@ -1,3 +1,26 @@
+---
+title: "Exemplo de Uso: Planejamento Anual Startup SaaS"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "exemplo-startup-saas"
+  - "exemplo de uso: planejamento a"
+  - "📋 contexto"
+  - "🔍 sessão 1: diagnóstico"
+  - "📊 sessão 2: recomendação de f"
+  - "🛠️ sessão 3: construção do pl"
+  - "✅ sessão 4: quality audit"
+  - "📅 sessão 5: governance & trac"
+  - "📈 resultado final"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Exemplo de Uso: Planejamento Anual Startup SaaS
 
 ## 📋 Contexto
@@ -343,3 +366,5 @@
 **Tempo total:** ~30 minutos de interação
 
 **Valor:** Plano estratégico Q1 2026 pronto para execução, com alta probabilidade de sucesso (frameworks comprovados + validação rigorosa).
+
+#galaxy-specialist

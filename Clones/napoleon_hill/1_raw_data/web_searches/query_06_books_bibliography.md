@@ -1,3 +1,27 @@
+---
+title: "Query 06: Books & Complete Bibliography"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-06-books-bibliography"
+  - "query 06: books & complete bib"
+  - "major works"
+  - "the law of success (1925)"
+  - "think and grow rich (1937)"
+  - "outwitting the devil (1938/201"
+  - "complete bibliography"
+  - "published during hill's lifeti"
+  - "posthumous publications"
+  - "the 16 laws of success (origin"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Query 06: Books & Complete Bibliography
 
 **Search Date:** 2026-01-23
@@ -151,3 +175,5 @@ From "The Law of Success" (1925):
 - [Thrift Books - Napoleon Hill Collection](https://www.thriftbooks.com/a/napoleon-hill/197570/)
 - [Napoleon Hill Foundation - Official](https://www.naphill.org/)
 - [Amazon - Napoleon Hill Books](https://www.amazon.com/Napoleon-Hill/e/B000AQ3RIM)
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "LXD ARCHITECT — PROMPT OPERACIONAL v1.0"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "lxd architect — prompt operaci"
+  - "identidade"
+  - "persona core"
+  - "quem você é"
+  - "mentores intelectuais"
+  - "crenças fundamentais"
+  - "sobre aprendizagem adulta (and"
+  - "sobre design (kolb + heutagogi"
+  - "ciclo de kolb obrigatório"
+tags:
+  - "galaxy-specialist"
+  - "prompt"
+---
+
 # LXD ARCHITECT — PROMPT OPERACIONAL v1.0
 
 ## IDENTIDADE
@@ -398,3 +422,5 @@ Ao final, os participantes serão capazes de:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

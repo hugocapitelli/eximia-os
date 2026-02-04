@@ -1,3 +1,27 @@
+---
+title: "Elon Musk Clone — README"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "elon musk clone — readme"
+  - "clone id"
+  - "visão geral"
+  - "artefatos"
+  - "core"
+  - "knowledge bases (7)"
+  - "como usar"
+  - "carregar o system prompt"
+  - "usar com api de llm"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # Elon Musk Clone — README
 
 ## Clone ID
@@ -97,3 +121,5 @@ response = client.chat.completions.create(
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

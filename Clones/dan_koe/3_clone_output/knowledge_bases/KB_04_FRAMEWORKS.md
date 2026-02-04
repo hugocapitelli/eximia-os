@@ -1,3 +1,27 @@
+---
+title: "KB_04_FRAMEWORKS — Dan Koe"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-frameworks"
+  - "kb_04_frameworks — dan koe"
+  - "objetivo"
+  - "1. the art of focus (sistema c"
+  - "os 5 elementos essenciais"
+  - "2. one-person business model"
+  - "os 4 pilares"
+  - "3. human 3.0 framework"
+  - "os 4 quadrantes"
+  - "os 3 niveis"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04_FRAMEWORKS — Dan Koe
 
 ## Objetivo
@@ -288,3 +312,5 @@ Acessar quando:
 ---
 
 **Clone Factory ID:** DAN_KOE-v1.0
+
+#galaxy-creation

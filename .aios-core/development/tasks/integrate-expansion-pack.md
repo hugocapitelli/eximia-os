@@ -1,3 +1,27 @@
+---
+title: "Integrate with Expansion Pack"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "integrate-expansion-pack"
+  - "integrate with expansion pack"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Integrate with Expansion Pack
 
 > Task ID: atlas-integrate-Squad
@@ -312,3 +336,5 @@ Connect design system with MMOS, CreatorOS, or InnerLens expansion packs. Genera
 - Pack-specific components extend base system
 - Integration is bidirectional (pack ↔ design system)
 - Document in pack's README
+
+#galaxy-runtime

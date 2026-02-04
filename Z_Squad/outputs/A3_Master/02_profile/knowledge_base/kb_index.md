@@ -1,3 +1,27 @@
+---
+title: "Knowledge Base Index — A3 Master"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-index"
+  - "knowledge base index — a3 mast"
+  - "estrutura das knowledge bases"
+  - "core kbs (sempre carregados)"
+  - "análise de causa kbs"
+  - "execução kbs"
+  - "alinhamento estratégico kbs"
+  - "aprendizado kbs"
+  - "referência kbs"
+  - "mapeamento por etapa do a3"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # Knowledge Base Index — A3 Master
 
 **Total de KBs:** 16
@@ -122,3 +146,5 @@
 ---
 
 *KB Index gerado via Z2_Profiler — Pipeline Z_Squad v2.0*
+
+#galaxy-creation

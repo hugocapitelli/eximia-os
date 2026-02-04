@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Famous Quotes & Motivational Sayings"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-05-famous-quotes-motivational"
+  - "david goggins - famous quotes "
+  - "mental toughness & limits"
+  - "the 40% rule"
+  - "persistence"
+  - "obsession & drive"
+  - "total commitment"
+  - "comfort zones"
+  - "danger of comfort"
+  - "pain & growth"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Famous Quotes & Motivational Sayings
 
 **Source:** Web Search - "David Goggins famous quotes sayings motivational"
@@ -93,3 +117,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

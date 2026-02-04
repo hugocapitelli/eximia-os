@@ -1,3 +1,27 @@
+---
+title: "KB_08: Q&A Database - Donald Miller"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-qna"
+  - "kb_08: q&a database - donald m"
+  - "q&a pairs for training and ref"
+  - "marketing & messaging"
+  - "q1: how do i know if my market"
+  - "q2: what's the biggest mistake"
+  - "q3: how do i create a one-line"
+  - "q4: how do i write better emai"
+  - "q5: what's the difference betw"
+  - "business growth"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08: Q&A Database - Donald Miller
 
 ## Q&A Pairs for Training and Reference
@@ -296,3 +320,5 @@ One makes the company the hero. The other makes the customer the hero. Guess whi
 *Knowledge Base: Q&A Database*
 *Total Pairs: 20 (Core Set)*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

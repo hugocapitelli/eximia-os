@@ -1,3 +1,27 @@
+---
+title: "Engineering Handoff Protocol: The RFC "One-Pack""
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "protocol"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "engineering-handoff-protocol"
+  - "engineering handoff protocol: "
+  - "1. the core philosophy: "async"
+  - "2. the handoff artifact struct"
+  - "section a: the context (why)"
+  - "section b: the flows (how)"
+  - "section c: the specs (what)"
+  - "3. the "definition of ready" c"
+  - "4. agent instructions for prd "
+  - "codex"
+tags:
+  - "galaxy-codex"
+  - "protocol"
+---
+
 # Engineering Handoff Protocol: The RFC "One-Pack"
 
 **Source Authority:** Google Engineering Standards, Basecamp Shape Up.
@@ -42,3 +66,5 @@ A PRD is only ready for handoff if:
 2.  **Error Matrix:** Include a table listing every possible user error and the corresponding UI feedback message.
     *   *Ex:* "Password too short" -> "Show Toast: 'Must be 8 chars'."
 3.  **JSON Schema:** When specifying data, use pseudo-JSON blocks to help engineers visualize the payload.
+
+#galaxy-codex

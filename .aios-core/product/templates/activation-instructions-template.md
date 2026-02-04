@@ -1,3 +1,27 @@
+---
+title: "Agent Activation Instructions Template"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "activation-instructions-template"
+  - "agent activation instructions "
+  - "overview"
+  - "canonical format"
+  - "what changed (story 6.1.2.5)"
+  - "before (manual/mechanical)"
+  - "after (intelligent/adaptive)"
+  - "greetingbuilder parameters"
+  - "input: `agentdefinition`"
+  - "input: `conversationhistory`"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # Agent Activation Instructions Template
 **Story**: 6.1.2.5 - Contextual Agent Load System Integration
 **Version**: 2.0 (GreetingBuilder Integration)
@@ -256,3 +280,5 @@ commands:
 ---
 
 *Template maintained by AIOS Framework Team*
+
+#galaxy-runtime

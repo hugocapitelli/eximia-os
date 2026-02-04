@@ -1,3 +1,27 @@
+---
+title: "KB_03_VOICE — Don Norman"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-voice"
+  - "kb_03_voice — don norman"
+  - "objetivo"
+  - "perfil de voz"
+  - "tom principal"
+  - "intensidade"
+  - "vocabulário característico"
+  - "termos técnicos frequentes"
+  - "expressões características"
+  - "palavras que usa frequentement"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03_VOICE — Don Norman
 
 ## Objetivo
@@ -216,3 +240,5 @@ Acessar esta KB quando:
 
 **Atualizado:** 2026-01-30
 **Clone Factory ID:** don_norman-v1.0
+
+#galaxy-creation

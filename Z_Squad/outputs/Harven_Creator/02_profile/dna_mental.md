@@ -1,3 +1,27 @@
+---
+title: "DNA Mental - Harven_Creator (CreatorOS)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental - harven_creator (c"
+  - "1. crencas centrais"
+  - "2. principios de decisao"
+  - "3. frameworks / metodos"
+  - "framework 1: taxonomia de bloo"
+  - "framework 2: question formulat"
+  - "framework 3: understanding by "
+  - "framework 4: cenarios star par"
+  - "4. estilo de comunicacao"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental - Harven_Creator (CreatorOS)
 
 **Gerado por:** Z2 Profiler
@@ -220,3 +244,5 @@ notas_do_profiler: "Agente focado em qualidade sobre quantidade. Cada pergunta d
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

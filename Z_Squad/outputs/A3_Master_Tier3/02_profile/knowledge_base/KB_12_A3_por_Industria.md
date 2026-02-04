@@ -1,3 +1,27 @@
+---
+title: "KB_12: A3 por Indústria - Adaptações e Exemplos"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-12-a3-por-industria"
+  - "kb_12: a3 por indústria - adap"
+  - "visão geral"
+  - "manufatura (origem do a3)"
+  - "características"
+  - "problemas típicos para a3"
+  - "exemplo: a3 tático - redução d"
+  - "healthcare (hospitais, clínica"
+  - "adaptações do ishikawa"
+  - "exemplo: a3 - redução de tempo"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_12: A3 por Indústria - Adaptações e Exemplos
 
 ## Visão Geral
@@ -250,3 +274,5 @@ Independente da indústria, os princípios A3 permanecem:
 - George, M. (2003). *Lean Six Sigma for Service*. McGraw-Hill.
 - Poppendieck, M. & T. (2003). *Lean Software Development*. Addison-Wesley.
 - Ballard, G. (2000). *The Last Planner System*. LCI.
+
+#galaxy-creation

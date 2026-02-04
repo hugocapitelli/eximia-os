@@ -1,3 +1,27 @@
+---
+title: "Task: Analyze Framework"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "analyze-framework"
+  - "task: analyze framework"
+  - "description"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Analyze Framework
 
 ## Description
@@ -694,4 +718,6 @@ Works seamlessly with:
 - `*improve-self` command for implementing suggestions
 - Memory layer for storing analysis history
 - Version control for tracking improvements
-- Component modification tools for applying changes 
+- Component modification tools for applying changes
+
+#galaxy-runtime

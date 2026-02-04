@@ -1,3 +1,27 @@
+---
+title: "david-deutsch"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "david-deutsch"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "operational frameworks"
+  - "communication dna"
+  - "signature phrases"
+  - "authority proof arsenal"
+  - "objection algorithms"
+  - "integration with copywriteros"
+  - "quick reference"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # david-deutsch
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -893,3 +917,5 @@ Develop top 3 fully. Test them all. The one you least expect often wins.
 *Created: 2026-01-23*
 *Lines: 950+*
 *Tier: 1 - Specialist (Multi-Control Mastery)*
+
+#galaxy-operational

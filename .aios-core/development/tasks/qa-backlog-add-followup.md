@@ -1,3 +1,27 @@
+---
+title: "QA Task: Add Follow-up to Backlog"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "qa-backlog-add-followup"
+  - "qa task: add follow-up to back"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # QA Task: Add Follow-up to Backlog
 
 **Agent:** @qa
@@ -423,3 +447,5 @@ Update story? yes
 - `qa-review.md` - Comprehensive story review
 - `qa-gate.md` - Quality gate decision
 - `po-backlog-review.md` - PO reviews all follow-ups
+
+#galaxy-runtime

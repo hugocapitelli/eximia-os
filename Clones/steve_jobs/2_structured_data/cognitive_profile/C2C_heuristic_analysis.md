@@ -1,3 +1,27 @@
+---
+title: "C2C HEURISTIC ANALYSIS: Steve Jobs"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2c-heuristic-analysis"
+  - "c2c heuristic analysis: steve "
+  - "decision rules & mental models"
+  - "core decision heuristics"
+  - "h01: the intersection heuristi"
+  - "h02: the simplification impera"
+  - "h03: the thousand no's"
+  - "h04: the a-player filter"
+  - "h05: the reality distortion pr"
+  - "product decision heuristics"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2C HEURISTIC ANALYSIS: Steve Jobs
 ## Decision Rules & Mental Models Extraction
 
@@ -314,3 +338,5 @@ Is this essential?
 
 *Extracted by: C2C_HeuristicMiner*
 *Validation: Cross-referenced across 55+ sources*
+
+#galaxy-creation

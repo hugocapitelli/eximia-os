@@ -1,3 +1,27 @@
+---
+title: "KB_06_Master_Architecture.md"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-master-architecture"
+  - "kb_06_master_architecture.md"
+  - "1. overview"
+  - "2. orchestration patterns"
+  - "pattern a: the hierarchical ma"
+  - "pattern b: the intelligent rou"
+  - "3. cognitive architecture (mem"
+  - "shared memory"
+  - "knowledge base (the "second br"
+  - "4. persistence (long-term memo"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_06_Master_Architecture.md
 
 ## 1. Overview
@@ -74,3 +98,5 @@ session = Session(session_id="user-123", persistence="sqlite")
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

@@ -1,3 +1,27 @@
+---
+title: "Deep Research: Newsletter Copywriting Methodology"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "newsletter-methodology-research"
+  - "deep research: newsletter copy"
+  - "executive summary"
+  - "part 1: why newsletters still "
+  - "1.1 the email advantage"
+  - "1.2 newsletter vs social media"
+  - "1.3 the growthlab model"
+  - "part 2: newsletter strategy ty"
+  - "2.1 the six newsletter formats"
+  - "2.2 format selection guide"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Deep Research: Newsletter Copywriting Methodology
 
 **Research ID:** newsletter-methodology
@@ -803,3 +827,5 @@ testing_rules:
 *Research compiled by Ralph Autonomous Agent*
 *Copy Framework v2.0 Upgrade Project*
 *Story: US-035*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "Landing Page Audit Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "landing-page-audit-methodology-research"
+  - "landing page audit methodology"
+  - "research foundation for copy f"
+  - "part 1: core cro audit framewo"
+  - "1.1 meclabs conversion sequenc"
+  - "1.2 cxl heuristic analysis fra"
+  - "1.3 unbounce 49-point checklis"
+  - "part 2: alex hormozi's value e"
+  - "2.1 the $100m offers framework"
+  - "2.2 offer audit criteria"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Landing Page Audit Methodology Research
 
 ## Research Foundation for Copy Framework v2.0
@@ -710,3 +734,5 @@ Score each 1-10, multiply for priority.
 
 *Research compiled for Copy Framework v2.0 upgrade*
 *Total: 590+ lines of methodology research*
+
+#galaxy-tools

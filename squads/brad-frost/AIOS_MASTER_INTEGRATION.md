@@ -1,3 +1,27 @@
+---
+title: "Brad Frost Squad Integration with @aios-master"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "aios-master-integration"
+  - "brad frost squad integration w"
+  - "quick integration"
+  - "option 1: register in agent re"
+  - "in executive_agents or special"
+  - "option 2: create slash command"
+  - "integration with @aios-master"
+  - "how it works"
+  - "routing decision logic"
+  - "integration points"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Brad Frost Squad Integration with @aios-master
 
 **Status:** ✅ Ready for Integration
@@ -575,3 +599,5 @@ A: Through the workflow inputs and conversation context.
 
 *Brad Frost Squad Integration Guide | Created 2026-01-27*
 *Status: Ready for @aios-master integration*
+
+#galaxy-operational

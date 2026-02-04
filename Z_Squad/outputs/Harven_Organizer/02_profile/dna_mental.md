@@ -1,3 +1,27 @@
+---
+title: "DNA Mental - Harven_Organizer (OrganizerOS)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental - harven_organizer "
+  - "1. crencas centrais"
+  - "2. principios de decisao"
+  - "3. frameworks / metodos"
+  - "framework 1: ciclo de vida da "
+  - "framework 2: persistencia de m"
+  - "framework 3: export com retry"
+  - "framework 4: payload de export"
+  - "4. operacoes principais"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental - Harven_Organizer (OrganizerOS)
 
 **Gerado por:** Z2 Profiler
@@ -318,3 +342,5 @@ notas_do_profiler: "Agente de infraestrutura focado em confiabilidade. Dados sao
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

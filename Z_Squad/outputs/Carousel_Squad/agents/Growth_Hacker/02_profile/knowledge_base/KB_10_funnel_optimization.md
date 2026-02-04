@@ -1,3 +1,27 @@
+---
+title: "KB_10 — Funnel Optimization"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-10-funnel-optimization"
+  - "kb_10 — funnel optimization"
+  - "o funil de instagram"
+  - "framework tofu/mofu/bofu"
+  - "metricas por etapa do funil"
+  - "tofu metrics"
+  - "mofu metrics"
+  - "bofu metrics"
+  - "conteudo por etapa"
+  - "tofu content strategy"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_10 — Funnel Optimization
 
 **Agente:** Growth Hacker
@@ -458,3 +482,5 @@ SEM ADS (organico):
 - HubSpot - Instagram Marketing Funnel
 - DigitalMarketer - Customer Value Journey
 - Andrew Chen - Growth Funnel Analysis
+
+#galaxy-creation

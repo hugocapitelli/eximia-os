@@ -1,3 +1,27 @@
+---
+title: "KB_04: Uso de Cenarios Praticos"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-cenarios-praticos"
+  - "kb_04: uso de cenarios pratico"
+  - "por que usar cenarios?"
+  - "estrutura de um bom cenario"
+  - "elementos obrigatorios"
+  - "template basico"
+  - "exemplos por tipo"
+  - "tipo 1: cenario de consultoria"
+  - "tipo 2: cenario de decisao"
+  - "tipo 3: cenario de problema"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04: Uso de Cenarios Praticos
 
 ## Por que Usar Cenarios?
@@ -112,3 +136,5 @@ Como voce [ACAO esperada]?
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

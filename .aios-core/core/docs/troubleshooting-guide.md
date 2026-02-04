@@ -1,3 +1,27 @@
+---
+title: "Synkra AIOS Meta-Agent Troubleshooting Guide"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "troubleshooting-guide"
+  - "synkra aios meta-agent trouble"
+  - "overview"
+  - "table of contents"
+  - "component creation issues"
+  - "issue: "component already exis"
+  - "issue: "invalid name format""
+  - "issue: "template not found""
+  - "template processing problems"
+  - "issue: variables not replaced"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Synkra AIOS Meta-Agent Troubleshooting Guide
 
 ## Overview
@@ -623,3 +647,5 @@ If all else fails:
    ```bash
    *restore-from-transaction --id=last-known-good
    ```
+
+#galaxy-runtime

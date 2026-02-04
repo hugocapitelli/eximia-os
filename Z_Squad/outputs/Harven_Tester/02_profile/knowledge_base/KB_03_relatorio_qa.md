@@ -1,3 +1,27 @@
+---
+title: "KB_03: Estrutura do Relatorio de QA"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-relatorio-qa"
+  - "kb_03: estrutura do relatorio "
+  - "visao geral"
+  - "estrutura do relatorio"
+  - "campos detalhados"
+  - "verdict"
+  - "score"
+  - "criteria_results"
+  - "summary"
+  - "recommendation"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03: Estrutura do Relatorio de QA
 
 ## Visao Geral
@@ -286,3 +310,5 @@ Lista de observacoes adicionais, mesmo em caso de aprovacao:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "**Persona [NOME DO PRODUTO/AVATAR]**"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "avatar-research-template"
+  - "**persona [nome do produto/ava"
+  - "**data: [dd/mm/aa]**"
+  - "dados gerais"
+  - "demográficos"
+  - "informações faltantes"
+  - "gosto pessoal"
+  - "pelo que se interessam"
+  - "o que gostam de fazer no tempo"
+  - "opinião pessoal"
+tags:
+  - "galaxy-operational"
+  - "template"
+---
+
 # **Persona [NOME DO PRODUTO/AVATAR]**
 
 # **Data: [DD/MM/AA]**
@@ -383,3 +407,5 @@ O que já passaram antes de chegar?
 *Data: [DD/MM/AA]*
 *Total de citações analisadas: [XX]*
 *Fontes: [Lista de fontes]*
+
+#galaxy-operational

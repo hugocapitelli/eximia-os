@@ -1,3 +1,27 @@
+---
+title: "Sugarman 30 Psychological Triggers Checklist"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "sugarman-30-triggers"
+  - "sugarman 30 psychological trig"
+  - "purpose"
+  - "how to use"
+  - "scoring guide"
+  - "part 1: trust foundation trigg"
+  - "part 2: involvement triggers ("
+  - "part 3: value triggers (8-11)"
+  - "part 4: product triggers (12-1"
+  - "part 5: urgency triggers (16-1"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Sugarman 30 Psychological Triggers Checklist
 
 ## Purpose
@@ -451,3 +475,5 @@ TRIGGER 23 (Curiosity):
 - **Use before**: Publishing any copy
 - **Related tool**: agents/joe-sugarman.md (full 30 triggers reference)
 - **Workflow**: Write → Hopkins Audit → Sugarman Triggers → Publish
+
+#galaxy-operational

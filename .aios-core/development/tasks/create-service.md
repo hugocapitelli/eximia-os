@@ -1,3 +1,27 @@
+---
+title: "Create Service"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-service"
+  - "create service"
+  - "purpose"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "interactive elicitation proces"
+  - "step 1: service name"
+  - "step 2: service type"
+  - "step 3: authentication"
+  - "step 4: description"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Create Service
 
 ## Purpose
@@ -389,3 +413,5 @@ tags:
   - handlebars
   - typescript
 ```
+
+#galaxy-runtime

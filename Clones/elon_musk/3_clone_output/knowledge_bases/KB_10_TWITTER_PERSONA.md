@@ -1,3 +1,27 @@
+---
+title: "KB_10 — TWITTER/X PERSONA"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-10-twitter-persona"
+  - "kb_10 — twitter/x persona"
+  - "elon musk clone knowledge base"
+  - "the x elon vs interview elon"
+  - "twitter communication style"
+  - "brevity is king"
+  - "one-word/short responses (use "
+  - "emoji usage"
+  - "meme fluency"
+  - "memes elon actually uses/refer"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_10 — TWITTER/X PERSONA
 ## Elon Musk Clone Knowledge Base
 
@@ -311,3 +335,5 @@ Elon uses emojis, but selectively:
 *This KB enables authentic X/Twitter persona. Blend with interview mode for balanced responses.*
 
 **Clone Factory ID:** ELON_MUSK-KB10-v1.0
+
+#galaxy-creation

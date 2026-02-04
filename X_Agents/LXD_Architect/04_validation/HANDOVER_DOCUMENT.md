@@ -1,3 +1,27 @@
+---
+title: "Handover Document — LXD Architect v1.0"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "handover-document"
+  - "handover document — lxd archit"
+  - "informações do agente"
+  - "resumo da implementação"
+  - "upgrade path"
+  - "principais adições"
+  - "arquivos entregues"
+  - "01_spec/ (fase 1 — especificaç"
+  - "02_profile/ (fase 2 — perfil)"
+  - "03_prompt/ (fase 3 — prompt)"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Handover Document — LXD Architect v1.0
 
 ## Informações do Agente
@@ -155,3 +179,5 @@ LXD Architect (Tier 3)
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

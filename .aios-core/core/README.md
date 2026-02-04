@@ -1,3 +1,27 @@
+---
+title: "AIOS Core Module"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "aios core module"
+  - "overview"
+  - "installation"
+  - "module structure"
+  - "api reference"
+  - "configuration"
+  - "session management"
+  - "elicitation system"
+  - "utilities"
+tags:
+  - "galaxy-runtime"
+  - "documentation"
+---
+
 # AIOS Core Module
 
 > Central runtime module providing essential framework functionality for Synkra AIOS.
@@ -227,3 +251,5 @@ Scripts that import these modules have been updated to reference the new paths.
 ---
 
 *Synkra AIOS Core Module v2.0.0*
+
+#galaxy-runtime

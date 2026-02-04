@@ -1,3 +1,27 @@
+---
+title: "Add MCP Server Task"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "add-mcp"
+  - "add mcp server task"
+  - "task definition"
+  - "pre-conditions"
+  - "interactive elicitation"
+  - "step 1: search mcp catalog"
+  - "step 2: select from results"
+  - "step 3: configure credentials"
+  - "step 4: confirm addition"
+  - "implementation steps"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Add MCP Server Task
 
 > Dynamically add MCP servers to Docker MCP Toolkit from the catalog.
@@ -434,3 +458,5 @@ changelog:
   1.0.0:
     - Initial version (Story 5.11)
 ```
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "📘 AIOS v2.2 - Livro de Ouro (Future Vision)"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "aios-livro-de-ouro-v2.2-summary"
+  - "📘 aios v2.2 - livro de ouro ("
+  - "🎯 purpose of this document"
+  - "🚀 what's new in v2.2 - execut"
+  - "memory layer (the game changer"
+  - "agent lightning (rl optimizati"
+  - "advanced features matrix"
+  - "🧠 deep dive: memory layer"
+  - "the problem (v2.1)"
+  - "the solution (v2.2)"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # 📘 AIOS v2.2 - Livro de Ouro (Future Vision)
 
 **Version:** 2.2.0-with-memory-layer  
@@ -1337,3 +1361,4 @@ volumes:
 
 ---
 
+#galaxy-runtime

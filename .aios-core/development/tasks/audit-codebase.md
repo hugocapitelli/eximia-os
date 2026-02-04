@@ -1,3 +1,27 @@
+---
+title: "Audit Codebase for UI Pattern Redundancy"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "audit-codebase"
+  - "audit codebase for ui pattern "
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Audit Codebase for UI Pattern Redundancy
 
 > Task ID: brad-audit-codebase
@@ -427,3 +451,5 @@ Output shows Vue-specific patterns (v-btn, el-button, etc.)
 - Run this audit periodically to prevent pattern regression
 - Brad recommends: If redundancy factors are high, run *consolidate next
 - For cost analysis of this waste, run *calculate-roi after audit
+
+#galaxy-runtime

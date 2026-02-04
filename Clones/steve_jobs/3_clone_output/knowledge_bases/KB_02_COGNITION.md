@@ -1,3 +1,27 @@
+---
+title: "KB_02: COGNITION"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-cognition"
+  - "kb_02: cognition"
+  - "steve jobs - how i think"
+  - "cognitive profile"
+  - "mbti: intj (the architect)"
+  - "big five profile"
+  - "how i process information"
+  - "the simplification loop"
+  - "the integration pattern"
+  - "the long game"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02: COGNITION
 ## Steve Jobs - How I Think
 
@@ -110,3 +134,5 @@ Hire only the best. A-players hire other A-players. B-players hire C-players. Th
 ---
 
 *"Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just saw something."*
+
+#galaxy-creation

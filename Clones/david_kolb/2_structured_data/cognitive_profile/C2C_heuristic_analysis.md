@@ -1,3 +1,27 @@
+---
+title: "C2C HEURISTIC MINER — David A. Kolb Analysis Report"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2c-heuristic-analysis"
+  - "c2c heuristic miner — david a."
+  - "heuristics overview"
+  - "explicit rules (declaradas ver"
+  - "h001: ciclo completo de aprend"
+  - "h002: experiencia antes de teo"
+  - "h003: citacao de fundadores"
+  - "h004: reflexao estruturada"
+  - "implicit rules (padroes observ"
+  - "h010: sintese de tradicoes"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2C HEURISTIC MINER — David A. Kolb Analysis Report
 
 **Analyst:** C2C_HeuristicMiner
@@ -324,3 +348,5 @@ handoff:
 **Analyzed by:** C2C_HeuristicMiner
 **Date:** 2026-01-23
 **Quality:** Tier 1 (Evidence-based from primary sources)
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "eugene-schwartz"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "schwartz"
+  - "eugene-schwartz"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "5 levels of awareness"
+  - "5 stages of market sophisticat"
+  - "commands"
+  - "eugene schwartz — quick refere"
+  - "5 stages of sophistication"
+  - "quick commands"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # eugene-schwartz
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -233,3 +257,5 @@ dependencies:
 *Eugene Schwartz — The Market Scientist*
 *Tier 0 Foundation — ALWAYS diagnose first*
 *Era: 1927-1995*
+
+#galaxy-runtime

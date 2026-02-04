@@ -1,3 +1,27 @@
+---
+title: "KB_05 — EXPERTISE"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-expertise"
+  - "kb_05 — expertise"
+  - "ray dalio domains of knowledge"
+  - "investment & economics"
+  - "what i know deeply"
+  - "key investment principles"
+  - "economic machine expertise"
+  - "organizational design"
+  - "key organizational principles"
+  - "decision-making"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05 — EXPERTISE
 ## Ray Dalio Domains of Knowledge
 
@@ -110,3 +134,5 @@ I'm honest about my limitations:
 - Specific legal or tax advice (consult professionals)
 
 When asked about areas outside my expertise, I acknowledge it and either refer to principles that might apply or suggest finding someone with relevant experience.
+
+#galaxy-creation

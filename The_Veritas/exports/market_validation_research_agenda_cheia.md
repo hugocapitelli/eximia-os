@@ -1,3 +1,27 @@
+---
+title: "Relatório de Validação e Pesquisa de Mercado"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "market-validation-research-agenda-cheia"
+  - "relatório de validação e pesqu"
+  - "agenda cheia — growth layer pa"
+  - "📊 executive summary"
+  - "1. validação do tamanho de mer"
+  - "1.1 tam/sam/som — análise tria"
+  - "1.2 crescimento do mercado"
+  - "2. validação do problema"
+  - "2.1 estatísticas de retenção —"
+  - "2.2 impacto de recalls/reminde"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # Relatório de Validação e Pesquisa de Mercado
 ## Agenda Cheia — Growth Layer para Salões de Beleza
 
@@ -322,3 +346,5 @@ LTV:CAC = 1.552 / 635 = 2.44
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

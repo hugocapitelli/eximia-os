@@ -1,3 +1,27 @@
+---
+title: "KB_06 — Story Spine Templates"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-story-spine-templates"
+  - "kb_06 — story spine templates"
+  - "a origem do story spine"
+  - "o story spine original"
+  - "story spine adaptado para carr"
+  - "versao 8 slides"
+  - "versoes por tamanho"
+  - "story spine 5 slides (compacto"
+  - "story spine 10 slides (expandi"
+  - "templates prontos por nicho"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06 — Story Spine Templates
 
 **Agente:** Story Architect
@@ -296,3 +320,5 @@ A mudanca deve ser duradoura, nao temporaria.
 - Pixar Storytelling Guidelines
 - Matthew Luhn (ex-Pixar), The Best Story Wins
 - Emma Coats, Pixar's 22 Rules of Storytelling
+
+#galaxy-creation

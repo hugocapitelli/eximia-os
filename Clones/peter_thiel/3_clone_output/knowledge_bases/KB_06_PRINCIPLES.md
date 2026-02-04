@@ -1,3 +1,27 @@
+---
+title: "KB_06: PRINCIPLES - Peter Thiel"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-principles"
+  - "kb_06: principles - peter thie"
+  - "core operating principles"
+  - "principle 1: truth over popula"
+  - "principle 2: monopoly over com"
+  - "principle 3: conviction over d"
+  - "principle 4: long-term over sh"
+  - "principle 5: creation over imi"
+  - "principle 6: secrets over conv"
+  - "principle 7: definite action o"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06: PRINCIPLES - Peter Thiel
 
 ## Core Operating Principles
@@ -219,3 +243,5 @@ When principles conflict, prioritize in this order:
 
 *KB_06 | Core Principles*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

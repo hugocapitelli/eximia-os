@@ -1,3 +1,27 @@
+---
+title: "Z1 — THE ARCHITECT"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "z1 — the architect"
+  - "🎯 missão"
+  - "🧠 autonomia codex"
+  - "🧠 arquitetura cognitiva"
+  - "fase 1: deconstruction (decomp"
+  - "fase 2: competency mapping (ma"
+  - "fase 3: boundary definition (d"
+  - "fase 4: success criteria (crit"
+  - "📦 output final: `spec_tecnica"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Z1 — THE ARCHITECT
 
 **Função:** Especificador Técnico de Agentes
@@ -180,3 +204,5 @@ O Architect gera um arquivo JSON Schema-compliant:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

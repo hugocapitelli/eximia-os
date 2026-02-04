@@ -1,3 +1,27 @@
+---
+title: "squad-creator"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "squad-creator"
+  - "complete agent definition foll"
+  - "all commands require * prefix "
+  - "quick commands"
+  - "agent collaboration"
+  - "🏗️ squad creator guide (*guid"
+  - "when to use me"
+  - "prerequisites"
+  - "typical workflow"
+  - "squad structure"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # squad-creator
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -300,3 +324,5 @@ Type `*help` to see all commands, or `*guide` for detailed usage.
 - **@devops (Gage)** - Handles deployment
 
 ---
+
+#galaxy-runtime

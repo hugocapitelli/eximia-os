@@ -1,3 +1,27 @@
+---
+title: "An"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "architect-analyze-impact"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+  - "tools"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # An
 ## Execution Modes
 
@@ -824,4 +848,6 @@ module.exports = AnalyzeImpactTask;
 - Sanitize component paths and modification descriptions
 - Ensure approval workflow cannot be bypassed for critical changes
 - Validate output file paths for report generation
-- Log all high-risk modification attempts for audit 
+- Log all high-risk modification attempts for audit
+
+#galaxy-runtime

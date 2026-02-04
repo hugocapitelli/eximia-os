@@ -1,3 +1,27 @@
+---
+title: "KB_02: Antipadroes de Perguntas - O que NUNCA Gerar"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-antipadroes-perguntas"
+  - "kb_02: antipadroes de pergunta"
+  - "proposito"
+  - "categoria 1: perguntas de defi"
+  - "padrao"
+  - "exemplos proibidos"
+  - "por que e ruim"
+  - "como reformular"
+  - "categoria 2: perguntas de list"
+  - "categoria 3: perguntas sim/nao"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02: Antipadroes de Perguntas - O que NUNCA Gerar
 
 ## Proposito
@@ -177,3 +201,5 @@ Antes de entregar uma pergunta, verificar:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -123,3 +123,5 @@ tags:
 ---
 
 *Task definition created by squad-creator*
+
+#galaxy-runtime

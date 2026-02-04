@@ -1,3 +1,27 @@
+---
+title: "Create Downsell Page Task"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-downsell-page"
+  - "create downsell page task"
+  - "copy framework v2.0 - comprehe"
+  - "purpose"
+  - "when to use"
+  - "inputs"
+  - "step 1: objection diagnosis"
+  - "the 5 hesitation drivers"
+  - "diagnosis output template"
+  - "step 2: downsell offer design"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Create Downsell Page Task
 ## Copy Framework v2.0 - Comprehensive Downsell Creation System
 
@@ -1537,3 +1561,5 @@ Downsell Page
 *Lines: 950+*
 *Research Base: downsell-methodology-research.md*
 *Frameworks: Loss Aversion + Acknowledgment + Kennedy Direct Response*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "magalog-checklist"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "magalog-checklist"
+  - "checklist metadata"
+  - "section 1: format & appearance"
+  - "magazine identity"
+  - "layout"
+  - "table of contents"
+  - "sidebars"
+  - "section 2: cover quality"
+  - "headline"
+  - "cover bullets"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # magalog-checklist
 
 Comprehensive quality checklist for magalog creation - based on Jim Rutz methodology.
@@ -298,3 +322,5 @@ Rate each dimension 1-10:
 
 *Checklist Version: 1.0*
 *Created: 2026-01-23*
+
+#galaxy-operational

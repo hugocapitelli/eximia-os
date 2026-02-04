@@ -1,3 +1,27 @@
+---
+title: "architect"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "architect"
+  - "complete agent definition foll"
+  - "all commands require * prefix "
+  - "quick commands"
+  - "agent collaboration"
+  - "🏛️ architect guide (*guide co"
+  - "when to use me"
+  - "prerequisites"
+  - "typical workflow"
+  - "common pitfalls"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # architect
 
 
@@ -361,3 +385,5 @@ Type `*help` to see all commands, or `*yolo` to skip confirmations.
 - **@pm (Morgan)** - Receives requirements from
 
 ---
+
+#galaxy-runtime

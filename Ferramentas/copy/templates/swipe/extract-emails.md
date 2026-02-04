@@ -1,3 +1,23 @@
+---
+title: "EMAIL EXTRACTION PROMPT"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "extract-emails"
+  - "email extraction prompt"
+  - "source material"
+  - "email types"
+  - "extraction rules"
+  - "output"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # EMAIL EXTRACTION PROMPT
 
 You are extracting email templates from proven email copywriters.
@@ -45,3 +65,5 @@ You are extracting email templates from proven email copywriters.
 
 ## OUTPUT
 Extract ALL qualifying emails. Output ONLY valid YAML array.
+
+#galaxy-tools

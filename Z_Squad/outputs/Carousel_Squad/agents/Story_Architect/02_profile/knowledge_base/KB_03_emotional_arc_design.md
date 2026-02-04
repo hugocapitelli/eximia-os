@@ -1,3 +1,27 @@
+---
+title: "KB_03 — Emotional Arc Design"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-emotional-arc-design"
+  - "kb_03 — emotional arc design"
+  - "mapeamento emocional em carros"
+  - "os 6 arcos emocionais universa"
+  - "1. rags to riches (ascensao)"
+  - "2. tragedy (queda)"
+  - "3. man in a hole (queda-ascens"
+  - "4. icarus (ascensao-queda)"
+  - "5. cinderella (ascensao-queda-"
+  - "6. oedipus (queda-ascensao-que"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03 — Emotional Arc Design
 
 **Agente:** Story Architect
@@ -264,3 +288,5 @@ Baixo|x
 - Robert Plutchik, Wheel of Emotions
 - Jonah Berger, Contagious (Arousal Theory)
 - Chip & Dan Heath, Made to Stick
+
+#galaxy-creation

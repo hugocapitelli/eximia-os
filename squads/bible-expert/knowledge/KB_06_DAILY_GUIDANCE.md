@@ -1,3 +1,27 @@
+---
+title: "KB_06: Daily Guidance Methodology"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-daily-guidance"
+  - "kb_06: daily guidance methodol"
+  - "introduction"
+  - "devotional structure (classica"
+  - "components of a complete devot"
+  - "wisdom extraction framework"
+  - "how to pull timeless principle"
+  - "example: extracting principle"
+  - "life application framework"
+  - "the "so what?" method"
+tags:
+  - "galaxy-operational"
+  - "knowledge-base"
+---
+
 # KB_06: Daily Guidance Methodology
 
 ## Introduction
@@ -415,3 +439,5 @@ Rotate through major themes so seekers systematically encounter:
 **Last Updated**: 2026-01-27
 **Version**: 1.0.0
 **Purpose**: Guide Daily Guide agent and teach seekers how to create own devotionals
+
+#galaxy-operational

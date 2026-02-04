@@ -1,3 +1,27 @@
+---
+title: "Infrastructure Module"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "infrastructure module"
+  - "structure"
+  - "dependency direction"
+  - "key components"
+  - "git integration"
+  - "pm integration"
+  - "template & generation"
+  - "validation"
+  - "analysis"
+tags:
+  - "galaxy-runtime"
+  - "documentation"
+---
+
 # Infrastructure Module
 
 Base layer of the AIOS modular architecture. Contains tools, integrations, scripts, and PM adapters.
@@ -124,3 +148,5 @@ if (isPMToolConfigured()) {
 
 Created as part of Story 2.5 - Infrastructure Module Creation.
 See [ADR-002 Migration Map](../../docs/architecture/decisions/ADR-002-migration-map.md).
+
+#galaxy-runtime

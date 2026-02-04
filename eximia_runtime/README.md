@@ -1,3 +1,27 @@
+---
+title: "Eximia Runtime"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "eximia runtime"
+  - "instalação"
+  - "uso"
+  - "cli"
+  - "listar agentes"
+  - "executar agente"
+  - "benchmark"
+  - "api"
+  - "iniciar servidor"
+tags:
+  - "galaxy-runtime"
+  - "documentation"
+---
+
 # Eximia Runtime
 
 Backend Runtime para execução programática dos agentes eximIA.OS.
@@ -60,3 +84,6 @@ REDIS_URL=redis://localhost:6379
 ## Licença
 
 Proprietary - ExímIA Ventures
+
+[[.aios-core/README.md]]
+#galaxy-runtime

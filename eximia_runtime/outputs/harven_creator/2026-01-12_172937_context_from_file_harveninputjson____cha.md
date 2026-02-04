@@ -1,3 +1,22 @@
+---
+title: "Harven_Creator Response"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "2026-01-12-172937-context-from-file-harveninputjson---
+
+-cha"
+  - "harven_creator response"
+  - "metadata"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Harven_Creator Response
 
 **Timestamp:** 2026-01-12T17:29:37.547343
@@ -93,3 +112,5 @@
 - **Tokens:** 13675
 - **Time:** 18530.227ms
 - **Cost:** $0.000000
+
+#galaxy-runtime

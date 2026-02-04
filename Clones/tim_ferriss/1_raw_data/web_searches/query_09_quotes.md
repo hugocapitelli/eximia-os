@@ -1,3 +1,27 @@
+---
+title: "Web Search: Tim Ferriss Famous Quotes & Sayings"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-09-quotes"
+  - "web search: tim ferriss famous"
+  - "top quotes (compilação)"
+  - "on fear & challenges"
+  - "on success & action"
+  - "on productivity"
+  - "on life philosophy"
+  - "on learning & action"
+  - "padrão de voice"
+  - "características das quotes:"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Web Search: Tim Ferriss Famous Quotes & Sayings
 
 **Query:** Famous quotes best sayings what we fear doing most challenges  
@@ -102,3 +126,4 @@ Estas quotes devem ser:
 - TheBusinessQuotes.com
 - Audible.com
 
+#galaxy-creation

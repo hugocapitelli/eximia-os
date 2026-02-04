@@ -1,3 +1,27 @@
+---
+title: "KB_04: Frameworks - Donald Miller"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-frameworks"
+  - "kb_04: frameworks - donald mil"
+  - "framework index"
+  - "core frameworks"
+  - "1. storybrand 7-part framework"
+  - "2. three-level problems framew"
+  - "3. guide characteristics"
+  - "4. hero on a mission (four cha"
+  - "5. small business flight plan "
+  - "6. sales funnel 5-part framewo"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04: Frameworks - Donald Miller
 
 ## Framework Index
@@ -344,3 +368,5 @@ STAGE 3: COMMITMENT
 
 *Knowledge Base: Frameworks*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

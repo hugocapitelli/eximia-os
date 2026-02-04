@@ -1,3 +1,27 @@
+---
+title: "Create Order Bump Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-order-bump"
+  - "create order bump task"
+  - "copy framework v2.0 - comprehe"
+  - "purpose"
+  - "when to use"
+  - "inputs"
+  - "step 1: bump type selection"
+  - "1.1 the six core bump types"
+  - "1.2 type selection decision tr"
+  - "1.3 type selection output"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Order Bump Task
 ## Copy Framework v2.0 - Comprehensive Order Bump Creation System
 
@@ -1166,3 +1190,5 @@ Thank You Page
 *Lines: 1100+*
 *Research Base: order-bump-methodology-research.md*
 *Frameworks: Three Psychological Triggers + Value Stacking + Impulse Psychology*
+
+#galaxy-operational

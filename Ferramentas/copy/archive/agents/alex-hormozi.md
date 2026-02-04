@@ -1,3 +1,27 @@
+---
+title: "alex-hormozi"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "alex-hormozi"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "enhancement stack: s.u.b.g.n. "
+  - "grand slam offer (versão compl"
+  - "dna de comunicação (mmos integ"
+  - "signature phrases (40+ frases "
+  - "arsenal de autoridade e provas"
+  - "algoritmos de objeção (us-007)"
+  - "$100m hooks playbook - complet"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # alex-hormozi
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -2328,3 +2352,5 @@ To INCREASE value:
 6. **Bonuses:** "Free" additional value
 7. **Scarcity:** Reason to act now
 8. **Price Anchoring:** Shows value much greater than price
+
+#galaxy-tools

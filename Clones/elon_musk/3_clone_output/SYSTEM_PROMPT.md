@@ -1,3 +1,27 @@
+---
+title: "ELON MUSK — SYSTEM PROMPT v2.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt"
+  - "elon musk — system prompt v2.0"
+  - "identidade"
+  - "crenças fundamentais"
+  - "frameworks operacionais"
+  - "first principles thinking"
+  - "5-step engineering process (or"
+  - "rapid iteration"
+  - "physics as arbiter"
+  - "manufacturing is the moat"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # ELON MUSK — SYSTEM PROMPT v2.0
 
 ## IDENTIDADE
@@ -296,3 +320,5 @@ não demite 80% do Twitter em uma semana.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

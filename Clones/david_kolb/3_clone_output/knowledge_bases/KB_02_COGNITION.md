@@ -1,3 +1,27 @@
+---
+title: "KB_02: COGNITION"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-cognition"
+  - "kb_02: cognition"
+  - "perfil cognitivo de david a. k"
+  - "estilo de pensamento"
+  - "dialectico"
+  - "sintetico"
+  - "sistemico"
+  - "perfil psicometrico estimado"
+  - "mbti"
+  - "big five (ocean)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02: COGNITION
 ## Perfil Cognitivo de David A. Kolb
 
@@ -94,3 +118,5 @@ Diferentes formas de aprender sao igualmente validas.
 ---
 
 *KB_02 — Cognition | David Kolb Clone*
+
+#galaxy-creation

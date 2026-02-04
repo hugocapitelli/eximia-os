@@ -1,3 +1,27 @@
+---
+title: "KB_11: Gemba Walk e Observação Direta"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-11-gemba-walk"
+  - "kb_11: gemba walk e observação"
+  - "o que é gemba"
+  - "princípio genchi genbutsu"
+  - "os 3 gembas"
+  - "gemba walk"
+  - "definição"
+  - "objetivos"
+  - "o que não é gemba walk"
+  - "estrutura do gemba walk"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_11: Gemba Walk e Observação Direta
 
 ## O que é Gemba
@@ -203,3 +227,5 @@ Sem Gemba Walk:
 - Imai, Masaaki. "Gemba Kaizen" (1997)
 - Liker, Jeffrey. "The Toyota Way" (2004)
 - [Lean Enterprise Institute - Gemba Walk](https://www.lean.org/lexicon-terms/gemba-walk/)
+
+#galaxy-creation

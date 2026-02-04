@@ -1,3 +1,27 @@
+---
+title: "Cognitive Development - Knowledge Hub"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "cognitive development - knowle"
+  - "📚 visão geral"
+  - "🗂️ conteúdo disponível"
+  - "🧠 framework de níveis de pens"
+  - "🎯 conceitos-chave"
+  - "1. lines of thinking (width)"
+  - "2. levels of thinking (depth)"
+  - "3. altitude of thinking (heigh"
+  - "4. four quadrants (4d)"
+tags:
+  - "galaxy-codex"
+  - "documentation"
+---
+
 # Cognitive Development - Knowledge Hub
 
 > **Centro de conhecimento** sobre desenvolvimento cognitivo, meta-cognição e níveis de pensamento
@@ -518,3 +542,5 @@ eximia_relevance: 10/10
 **Data:** 2026-02-01
 **Status:** ✅ Pronto para implementação
 **Licença:** Uso interno eximIA Ventures
+
+#galaxy-codex

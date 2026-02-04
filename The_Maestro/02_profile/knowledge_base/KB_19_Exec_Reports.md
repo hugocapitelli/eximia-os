@@ -1,3 +1,27 @@
+---
+title: "KB_19: Executive Report Standards"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-19-exec-reports"
+  - "kb_19: executive report standa"
+  - "🎯 executive communication pri"
+  - "1. bluf always"
+  - "2. one page maximum"
+  - "3. quantify"
+  - "4. actionable"
+  - "📋 report templates"
+  - "executive summary"
+  - "summary"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_19: Executive Report Standards
 
 > **Category**: BRAND  
@@ -81,3 +105,5 @@ Option [X] because [reason].
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

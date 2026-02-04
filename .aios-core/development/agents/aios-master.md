@@ -1,3 +1,27 @@
+---
+title: "AIOS Master"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "aios-master"
+  - "aios master"
+  - "complete agent definition foll"
+  - "all commands require * prefix "
+  - "quick commands"
+  - "agent collaboration"
+  - "👑 aios master guide (\*guide "
+  - "when to use me"
+  - "prerequisites"
+  - "typical workflow"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # AIOS Master
 
 <!--
@@ -368,3 +392,5 @@ Type `*help` to see all commands, or `*kb` to enable KB mode.
 Use specialized agents for specific tasks - this agent is for orchestration and framework operations only.
 
 ---
+
+#galaxy-runtime

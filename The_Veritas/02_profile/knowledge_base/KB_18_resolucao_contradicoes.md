@@ -1,3 +1,27 @@
+---
+title: "KB_18 — Resolução de Contradições"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-18-resolucao-contradicoes"
+  - "kb_18 — resolução de contradiç"
+  - "categoria: invariantes"
+  - "palavras: ~2,500"
+  - "atualizado: 2026-01-07"
+  - "1. o problema das contradições"
+  - "tipos de contradição"
+  - "2. protocolo de arbitragem"
+  - "3. regras de arbitragem"
+  - "hierarquia de fontes"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_18 — Resolução de Contradições
 
 ## Categoria: INVARIANTES
@@ -207,3 +231,5 @@ escalation_triggers:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

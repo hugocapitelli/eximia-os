@@ -1,3 +1,27 @@
+---
+title: "Task: Apply Seed Data"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-seed"
+  - "task: apply seed data"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Apply Seed Data
 
 **Purpose**: Safely apply seed data to database with idempotent operations
@@ -388,3 +412,5 @@ If seed fails:
 - Never TRUNCATE in production seeds
 - Test seeds in dev/staging first
 - Version seed files in git (supabase/seeds/)
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "SOURCES LIVE - David Goggins"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "sources-live"
+  - "sources live - david goggins"
+  - "youtube - podcasts e entrevist"
+  - "podcasts (1h+)"
+  - "entrevistas"
+  - "palestras e keynotes"
+  - "web searches (15+ queries)"
+  - "biografia"
+  - "pensamento"
+  - "comunicação"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # SOURCES LIVE - David Goggins
 
 **Iniciado em:** 2025-12-19
@@ -86,3 +110,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

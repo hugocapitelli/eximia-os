@@ -1,3 +1,27 @@
+---
+title: "Carousel Squad v1.0 — TIER 3 Expert"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "carousel squad v1.0 — tier 3 e"
+  - "quick start"
+  - "visão geral do squad"
+  - "arquitetura do squad"
+  - "os 5 agentes do squad"
+  - "1. carousel maestro (orquestra"
+  - "2. story architect (narrativa)"
+  - "3. visual designer (design)"
+  - "4. copy master (copywriting)"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # Carousel Squad v1.0 — TIER 3 Expert
 
 **Status:** Validated
@@ -243,3 +267,5 @@ graph LR
 **Mantido por:** Z Squad | ExímIA.AI
 **Versão:** 1.0.0
 **Última Atualização:** 2026-01-30
+
+#galaxy-creation

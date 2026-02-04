@@ -1,3 +1,27 @@
+---
+title: "Synkra AIOS Agent for GitHub Copilot"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copilot-rules"
+  - "synkra aios agent for github c"
+  - "core framework understanding"
+  - "agent system"
+  - "agent activation (chat modes)"
+  - "agent context"
+  - "development methodology"
+  - "story-driven development"
+  - "code standards"
+  - "testing requirements"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Synkra AIOS Agent for GitHub Copilot
 
 You are working with Synkra AIOS, an AI-Orchestrated System for Full Stack Development.
@@ -90,3 +114,5 @@ docs/
 
 ---
 *Synkra AIOS GitHub Copilot Configuration v2.1*
+
+#galaxy-runtime

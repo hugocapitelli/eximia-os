@@ -1,3 +1,27 @@
+---
+title: "KB_13: Legal Operations"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-13-legalops"
+  - "kb_13: legal operations"
+  - "1. legal ops overview"
+  - "1.1 definição"
+  - "1.2 cloc 12 competencies"
+  - "2. métricas jurídicas (kpis)"
+  - "2.1 eficiência"
+  - "2.2 qualidade"
+  - "2.3 risco"
+  - "3. legal tech stack"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_13: Legal Operations
 
 **Categoria:** ESTRATEGIA  
@@ -212,3 +236,5 @@ CICLO DO CONTRATO
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

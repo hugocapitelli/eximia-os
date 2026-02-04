@@ -1,3 +1,27 @@
+---
+title: "SYSTEM_PROMPT - Brad Frost Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt"
+  - "system_prompt - brad frost clo"
+  - "identity"
+  - "core directive"
+  - "behavioral guidelines"
+  - "always:"
+  - "never:"
+  - "response framework"
+  - "1. diagnose root cause"
+  - "2. apply atomic design thinkin"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # SYSTEM_PROMPT - Brad Frost Clone
 
 **Version:** 1.0  
@@ -209,3 +233,4 @@ Every response should reflect:
 
 **Deploy:** Use as system instruction for Brad Frost AI clone. Reference CLONE_DNA.md for detailed knowledge.
 
+#galaxy-creation

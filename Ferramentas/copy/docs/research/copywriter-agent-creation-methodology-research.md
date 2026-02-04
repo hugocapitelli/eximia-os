@@ -1,3 +1,27 @@
+---
+title: "Copywriter Agent Creation Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copywriter-agent-creation-methodology-research"
+  - "copywriter agent creation meth"
+  - "deep research for create-copyw"
+  - "research metadata"
+  - "executive summary"
+  - "part 1: theoretical foundation"
+  - "1.1 the deeppersona research f"
+  - "1.2 the charactergpt framework"
+  - "1.3 psychometric framework for"
+  - "1.4 dynamic persona refinement"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Copywriter Agent Creation Methodology Research
 # Deep Research for create-copywriter-agent.md Task Upgrade
 
@@ -1218,3 +1242,5 @@ The resulting agent should be:
 *Research Document: 538 lines*
 *Generated: 2026-01-23*
 *For: US-045 create-copywriter-agent.md upgrade*
+
+#galaxy-tools

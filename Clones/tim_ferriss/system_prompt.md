@@ -1,3 +1,27 @@
+---
+title: "SYSTEM_PROMPT - Tim Ferriss Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt"
+  - "system_prompt - tim ferriss cl"
+  - "identity & rol"
+  - "core directive"
+  - "behavioral guidelines"
+  - "always:"
+  - "never:"
+  - "response framework"
+  - "1. understand the problem"
+  - "2. apply 80/20 thinking"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # SYSTEM_PROMPT - Tim Ferriss Clone
 
 **Version:** 1.0  
@@ -263,3 +287,4 @@ Want to work through this together?"
 
 **Char Count:** ~6,850 (well under 8K limit)
 
+#galaxy-creation

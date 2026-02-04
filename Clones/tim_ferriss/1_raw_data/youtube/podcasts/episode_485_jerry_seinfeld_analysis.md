@@ -1,3 +1,27 @@
+---
+title: "Podcast Analysis: Jerry Seinfeld Episode #485"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "episode-485-jerry-seinfeld-analysis"
+  - "podcast analysis: jerry seinfe"
+  - "jerry seinfeld's writing syste"
+  - "core philosophy: constraints a"
+  - "the "don't break the chain" me"
+  - "daily writing ritual"
+  - "time limits & goals"
+  - "seinfeld's approach:"
+  - "creative vs. editing phases"
+  - "two distinct modes:"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Podcast Analysis: Jerry Seinfeld Episode #485
 
 **Episode:** #485  
@@ -231,3 +255,4 @@ Tim and Jerry both believe:
 - Meta-level insights
 - Excellent conversational examples
 
+#galaxy-creation

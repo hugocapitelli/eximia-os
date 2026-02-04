@@ -1,3 +1,27 @@
+---
+title: "Accessibility WCAG AA Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "accessibility-wcag-checklist"
+  - "accessibility wcag aa checklis"
+  - "perceivable"
+  - "color & contrast"
+  - "alternative text"
+  - "operable"
+  - "keyboard"
+  - "navigation"
+  - "understandable"
+  - "labels"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Accessibility WCAG AA Checklist
 
 **Purpose:** Ensure WCAG AA compliance for design system components
@@ -78,3 +102,5 @@
 - APCA contrast calculator / Inclusive Colors
 
 **Result:** [ ] WCAG AA ✓ [ ] Issues Found
+
+#galaxy-runtime

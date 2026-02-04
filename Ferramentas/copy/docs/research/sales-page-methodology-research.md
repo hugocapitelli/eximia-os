@@ -1,3 +1,27 @@
+---
+title: "Sales Page Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "sales-page-methodology-research"
+  - "sales page methodology researc"
+  - "metadata"
+  - "executive summary"
+  - "parte 1: diagnóstico pré-escri"
+  - "1.1 os 5 níveis de consciência"
+  - "1.2 os 5 estágios de sofistica"
+  - "parte 2: estrutura halbert de "
+  - "2.1 the halbert sales letter f"
+  - "2.2 o princípio da multidão fa"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Sales Page Methodology Research
 
 ## Metadata
@@ -1016,3 +1040,5 @@ erros_fatais:
 *Created: 2026-01-23*
 *Lines: 680+*
 *Status: Complete - Ready for task rewrite*
+
+#galaxy-tools

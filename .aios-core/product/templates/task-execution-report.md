@@ -1,3 +1,27 @@
+---
+title: "Task Execution Report Template"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "task-execution-report"
+  - "task execution report template"
+  - "structure overview"
+  - "fixed structure (must maintain"
+  - "header section (lines 1-8)"
+  - "📊 task execution report"
+  - "section order (must maintain)"
+  - "personality slots (flexible)"
+  - "status section"
+  - "status"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task Execution Report Template
 
 **Version:** 1.0  
@@ -493,3 +517,4 @@ The validator (`validate-output-pattern.js`) enforces:
 **Last Updated:** 2025-01-15  
 **Story:** 6.1.6 - Output Formatter Implementation
 
+#galaxy-runtime

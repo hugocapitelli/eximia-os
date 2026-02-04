@@ -1,3 +1,27 @@
+---
+title: "Handoff Protocol — Z Squad"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "protocol"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "handoff-protocol"
+  - "handoff protocol — z squad"
+  - "🎯 propósito"
+  - "1. o problema: telephone game"
+  - "sintomas de handoff falho"
+  - "2. solução: handoff estruturad"
+  - "2.1 handoff artifact structure"
+  - "handoff_payload.yaml"
+  - "2.2 exemplo de handoff (z1 → z"
+  - "3. fluxo de handoffs no pipeli"
+tags:
+  - "galaxy-creation"
+  - "protocol"
+---
+
 # Handoff Protocol — Z Squad
 
 ## 🎯 Propósito
@@ -175,3 +199,5 @@ Antes de aceitar um handoff, o módulo receptor deve verificar:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

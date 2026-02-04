@@ -1,3 +1,27 @@
+---
+title: "KB_10 — Ética em Pesquisa e Copyright"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-10-etica-pesquisa"
+  - "kb_10 — ética em pesquisa e co"
+  - "categoria: invariantes"
+  - "palavras: ~2,000"
+  - "atualizado: 2026-01-07"
+  - "fonte: web research 2024"
+  - "1. princípios éticos em pesqui"
+  - "princípios core"
+  - "2. o que não fazer"
+  - "práticas proibidas"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_10 — Ética em Pesquisa e Copyright
 
 ## Categoria: INVARIANTES
@@ -153,3 +177,5 @@ viés comercial deve ser considerado.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

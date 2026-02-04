@@ -1,3 +1,27 @@
+---
+title: "Artifact Analysis Report #{{ARTIFACT_ID}}"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "ds-artifact-analysis"
+  - "artifact analysis report #{{ar"
+  - "{{artifact_name}}"
+  - "📊 overview"
+  - "🎨 color system"
+  - "colors extracted"
+  - "🔤 typography system"
+  - "fonts and scales"
+  - "🧩 components identified"
+  - "📐 design patterns"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Artifact Analysis Report #{{ARTIFACT_ID}}
 ## {{ARTIFACT_NAME}}
 
@@ -68,3 +92,5 @@ typography:
 *Analysis completed: {{TIMESTAMP}}*
 *Report version: 1.0*
 *Design System Agent*
+
+#galaxy-runtime

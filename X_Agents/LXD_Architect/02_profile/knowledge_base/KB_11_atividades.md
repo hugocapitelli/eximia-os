@@ -1,3 +1,27 @@
+---
+title: "KB_11: Estratégias de Atividades por Modalidade"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-11-atividades"
+  - "kb_11: estratégias de atividad"
+  - "visão geral"
+  - "matriz: atividades por etapa k"
+  - "ec — experiência concreta"
+  - "or — observação reflexiva"
+  - "ca — conceituação abstrata"
+  - "ea — experimentação ativa"
+  - "atividades por formato"
+  - "presencial (sala de aula)"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_11: Estratégias de Atividades por Modalidade
 
 ## Visão Geral
@@ -170,3 +194,5 @@ DEPOIS (Assíncrono)
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

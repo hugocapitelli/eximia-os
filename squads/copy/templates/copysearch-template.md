@@ -1,3 +1,27 @@
+---
+title: "CopySearch Report: [PRODUCT/CAMPAIGN NAME]"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copysearch-template"
+  - "copysearch report: [product/ca"
+  - "executive summary"
+  - "part 0: research charter"
+  - "anti-hallucination setup"
+  - "part 1: technical fact sheet"
+  - "1.1 sources consulted"
+  - "1.2 verified facts (minimum 13"
+  - "1.3 anchor fact candidates"
+  - "1.4 rejected claims"
+tags:
+  - "galaxy-operational"
+  - "template"
+---
+
 # CopySearch Report: [PRODUCT/CAMPAIGN NAME]
 
 **Date:** [YYYY-MM-DD]
@@ -637,3 +661,5 @@ UPDATED EVIDENCE HIERARCHY:
 
 *Template based on: docs/research/david-ogilvy-research-engineering-meta-framework.md*
 *Methodology: David Ogilvy Research Engineering (1935-1985)*
+
+#galaxy-operational

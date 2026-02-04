@@ -1,3 +1,27 @@
+---
+title: "Extract Communication DNA - Linguistic Fingerprint Extraction Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "extract-communication-dna"
+  - "extract communication dna - li"
+  - "metadata"
+  - "executive summary"
+  - "purpose"
+  - "what is communication dna?"
+  - "the five pillars of voice"
+  - "why this matters"
+  - "prerequisites"
+  - "required inputs"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Extract Communication DNA - Linguistic Fingerprint Extraction Task
 
 ## Metadata
@@ -1515,3 +1539,5 @@ These demonstrate expected depth, structure, and voice accuracy.
 
 *CopywriterOS Task v2.0.0*
 *Phase 3 of Create Copywriter Agent Pipeline*
+
+#galaxy-operational

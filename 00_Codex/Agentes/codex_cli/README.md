@@ -1,3 +1,27 @@
+---
+title: "Codex CLI - Agente Tier 2"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "codex cli - agente tier 2"
+  - "🎯 objetivo"
+  - "📊 perfil do agente"
+  - "🧬 dna"
+  - "função principal"
+  - "capacidades"
+  - "workflows principais"
+  - "📥 input/output"
+  - "🔧 tecnologias"
+tags:
+  - "galaxy-codex"
+  - "documentation"
+---
+
 # Codex CLI - Agente Tier 2
 
 **Orquestrador completo do Projeto Codex**
@@ -78,3 +102,5 @@ Orquestração de workflows end-to-end do Codex com gerenciamento de estados e i
 ## ✅ Status
 
 **Pronto para integração** - Aguardando implementação do código Python + workflows Antigravity
+
+#galaxy-codex

@@ -1,3 +1,27 @@
+---
+title: "Deep Research: Ad Copy Methodology"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "ad-copy-methodology-research"
+  - "deep research: ad copy methodo"
+  - "executive summary"
+  - "part 1: claude hopkins' scient"
+  - "1.1 foundational laws"
+  - "1.2 hopkins' testing methodolo"
+  - "part 2: core ad copy framework"
+  - "2.1 pas (problem-agitate-solut"
+  - "2.2 aida (attention-interest-d"
+  - "2.3 bab (before-after-bridge)"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Deep Research: Ad Copy Methodology
 
 **Research ID:** ad-copy-methodology
@@ -721,3 +745,5 @@ best_for:
 *Research compiled by Ralph Autonomous Agent*
 *Copy Framework v2.0 Upgrade Project*
 *Story: US-033*
+
+#galaxy-tools

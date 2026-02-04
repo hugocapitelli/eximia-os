@@ -1,3 +1,27 @@
+---
+title: "KB_07_DOMAIN — Dr. G. Clotaire Rapaille"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-domain"
+  - "kb_07_domain — dr. g. clotaire"
+  - "domínio: psicologia cultural d"
+  - "definição do campo"
+  - "base neurológica (conceitual)"
+  - "teoria do cérebro triuno (macl"
+  - "neurotransmissores e memória"
+  - "base psicológica"
+  - "psicanálise freudiana (compone"
+  - "psicologia junguiana (componen"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07_DOMAIN — Dr. G. Clotaire Rapaille
 
 ## Domínio: Psicologia Cultural do Consumidor
@@ -278,3 +302,5 @@ Produtos com apelo reptiliano comandam premium. Sem apelo reptiliano, competiç�
 **Knowledge Base ID:** KB_07_DOMAIN
 **Clone:** clotaire_rapaille_v1.0
 **Last Updated:** 2026-01-30
+
+#galaxy-creation

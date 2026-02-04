@@ -1,3 +1,27 @@
+---
+title: "Create Lead Magnet Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-lead-magnet"
+  - "create lead magnet task"
+  - "task overview"
+  - "purpose"
+  - "tier 0 diagnosis (sempre prime"
+  - "awareness level diagnosis"
+  - "market sophistication diagnosi"
+  - "diagnostic questions"
+  - "inputs"
+  - "required information"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Lead Magnet Task
 
 ## Task Overview
@@ -1438,3 +1462,5 @@ Antes de publicar, verifique:
 *Hormozi Framework Enrichment - ENR-004*
 *Fontes: 02_VALUE_EQUATION_ENGINE.md, 03_OFFER_CREATION_SYSTEM.md*
 *Data da Extração: 2026-01-23*
+
+#galaxy-operational

@@ -1,3 +1,27 @@
+---
+title: "Validation Report - Media_Harvester"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "validation-report"
+  - "validation report - media_harv"
+  - "sumário executivo"
+  - "1. schema validation"
+  - "input schema (input_schema.jso"
+  - "output schema (output_schema.j"
+  - "2. functional testing"
+  - "test cases executados"
+  - "3. edge cases"
+  - "4. dna alignment"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Validation Report - Media_Harvester
 
 **Agente:** Media_Harvester
@@ -219,3 +243,5 @@ O agente Media_Harvester atende todos os critérios de aprovação:
 **Validador:** Z4_Auditor
 **Data:** 2026-01-19
 **Versão do Report:** 1.0
+
+#galaxy-tools

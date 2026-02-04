@@ -1,3 +1,27 @@
+---
+title: "Audit Tailwind v4 Configuration & Utility Health"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "audit-tailwind-config"
+  - "audit tailwind v4 configuratio"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Audit Tailwind v4 Configuration & Utility Health
 
 > Task ID: brad-audit-tailwind-config  
@@ -268,3 +292,5 @@ Review Tailwind CSS v4 setup to guarantee @theme layering, content scanning, uti
 - Encourage automated linting (ESLint + prettier-plugin-tailwindcss) post-audit
 - Document class naming conventions (order: layout → size → spacing → typography → color → effect)
 - Track manual overrides (safelist patterns, arbitrary values) for future cleanup
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "Briefing — Narrative Post Engine"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "briefing-template"
+  - "briefing — narrative post engi"
+  - "1. informações obrigatórias"
+  - "tema"
+  - "objetivo"
+  - "público-alvo"
+  - "formato"
+  - "quantidade de slides"
+  - "canais de destino"
+  - "2. informações opcionais"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # Briefing — Narrative Post Engine
 
 **Data:** {date}
@@ -84,3 +108,5 @@
 
 *Gerado por Narrative Post Engine v1.0*
 *Criado em: {timestamp}*
+
+#galaxy-runtime

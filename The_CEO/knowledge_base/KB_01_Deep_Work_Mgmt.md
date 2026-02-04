@@ -1,3 +1,25 @@
+---
+title: "KB_01: Deep Work Management & Focus Protection"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-deep-work-mgmt"
+  - "kb_01: deep work management & "
+  - "1. o escudo de foco (the shiel"
+  - "2. a esteira de "idea-to-asset"
+  - "3. gestão de energia vs tempo"
+  - "🧠 obsidian connections"
+  - "ceo"
+  - "executive"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_01: Deep Work Management & Focus Protection
 
 No One Person Business, a moeda mais cara não é dinheiro, é a **Atenção do Fundador**.
@@ -35,3 +57,5 @@ Monitore não só o relógio, mas a complexidade cognitiva.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

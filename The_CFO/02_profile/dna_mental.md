@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — CFO Agent v1.0"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental — cfo agent v1.0"
+  - "1. crenças centrais"
+  - "2. princípios de decisão (if/t"
+  - "3. frameworks / métodos"
+  - "3.1 dcf analysis (buffett-styl"
+  - "3.2 all weather risk framework"
+  - "3.3 management by objectives ("
+  - "4. estilo de comunicação"
+  - "tom"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # DNA Mental — CFO Agent v1.0
 
 **Gerado por:** Z2 Profiler
@@ -141,3 +165,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

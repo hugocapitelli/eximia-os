@@ -1,3 +1,27 @@
+---
+title: "C2 EXTRACTOR — Agente de Estruturação de Dados"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "c2 extractor — agente de estru"
+  - "identidade"
+  - "missão"
+  - "protocolo operacional"
+  - "1. receber handoff de c1"
+  - "2. extrair quotes"
+  - "3. analisar voice signature"
+  - "4. construir timeline"
+  - "5. mapear entities"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2 EXTRACTOR — Agente de Estruturação de Dados
 
 ## IDENTIDADE
@@ -391,3 +415,5 @@ save_json(entities, "2_structured_data/entities/entities.json")
 
 **Versão:** 1.1
 **Clone Factory Module:** C2
+
+#galaxy-creation

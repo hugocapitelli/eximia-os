@@ -1,3 +1,27 @@
+---
+title: "The_Veritas — Expert Researcher Agent"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "the_veritas — expert researche"
+  - "🎯 mission"
+  - "📊 specifications"
+  - "⚡ key features"
+  - "chain-of-verification (cove)"
+  - "source tier system"
+  - "triangulation"
+  - "confidence scoring"
+  - "voice profiles"
+tags:
+  - "galaxy-core"
+  - "documentation"
+---
+
 # The_Veritas — Expert Researcher Agent
 
 <div align="center">
@@ -297,3 +321,6 @@ Internal use — eximIA.AI
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+[[The_Maestro/README.md]]
+#galaxy-core

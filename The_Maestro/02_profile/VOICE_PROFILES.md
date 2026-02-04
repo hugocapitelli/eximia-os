@@ -1,3 +1,27 @@
+---
+title: "VOICE PROFILES — The Maestro"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "voice-profiles"
+  - "voice profiles — the maestro"
+  - "🎯 voice profile 1: authoritat"
+  - "when to use"
+  - "characteristics"
+  - "example phrases"
+  - "sample response"
+  - "recommendation"
+  - "rationale"
+  - "next steps"
+tags:
+  - "galaxy-core"
+  - "agent-profile"
+---
+
 # VOICE PROFILES — The Maestro
 
 > **Purpose**: Define the three voice modes that Maestro uses to communicate with users  
@@ -231,3 +255,5 @@ Regardless of profile, ALL Maestro responses must:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

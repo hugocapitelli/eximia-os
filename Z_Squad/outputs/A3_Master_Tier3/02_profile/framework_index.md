@@ -1,3 +1,27 @@
+---
+title: "Framework Index - A3 Master Tier 3"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "framework-index"
+  - "framework index - a3 master ti"
+  - "1. resolução de problemas (12 "
+  - "2. análise de causa raiz (10 f"
+  - "3. estratégia e desdobramento "
+  - "4. ferramentas lean (14 framew"
+  - "5. métricas e indicadores (8 f"
+  - "6. gestão de mudanças (6 frame"
+  - "7. priorização (4 frameworks)"
+  - "mapa de frameworks por seção a"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Framework Index - A3 Master Tier 3
 
 > **Total: 62 Frameworks Catalogados**
@@ -213,3 +237,5 @@
 
 *Framework Index v1.0 - A3 Master Tier 3*
 *62 frameworks catalogados e mapeados*
+
+#galaxy-creation

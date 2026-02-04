@@ -1,3 +1,27 @@
+---
+title: "Meta-Analysis Template — Z1 Architect"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "meta-analysis-template"
+  - "meta-analysis template — z1 ar"
+  - "🎯 propósito"
+  - "1. instructions"
+  - "2. template"
+  - "meta_analysis.md"
+  - "agent: [nome_do_agente]"
+  - "domain: [domínio principal]"
+  - "class: [1/2/3]"
+  - "1. knowledge domain map"
+tags:
+  - "galaxy-creation"
+  - "template"
+---
+
 # Meta-Analysis Template — Z1 Architect
 
 ## 🎯 Propósito
@@ -156,3 +180,5 @@ BEGINNER → INTERMEDIATE → ADVANCED → EXPERT
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

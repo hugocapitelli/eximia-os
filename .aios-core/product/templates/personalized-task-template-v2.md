@@ -1,3 +1,27 @@
+---
+title: "{Task Name}"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "personalized-task-template-v2"
+  - "{task name}"
+  - "purpose"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "workflow"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # {Task Name}
 
 **Task ID:** `{task-identifier}`
@@ -903,3 +927,5 @@ atomic_layer: Molecule
 **Last Updated:** 2025-01-14
 **Applies to:** All tasks with AIOS Task Format V1.0 + Personalized Agents (Story 6.1.2+)
 **Breaking Changes:** Yes (from v1.0 - added execution modes, restructured checklist)
+
+#galaxy-runtime

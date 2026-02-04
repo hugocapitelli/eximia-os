@@ -1,3 +1,27 @@
+---
+title: "Create Thank You Page Task"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-thank-you-page"
+  - "create thank you page task"
+  - "purpose"
+  - "when to use"
+  - "theoretical foundation"
+  - "the critical moment theory"
+  - "buyer's remorse psychology"
+  - "the commitment-consistency pri"
+  - "inputs"
+  - "workflow"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Create Thank You Page Task
 
 ## Purpose
@@ -1425,3 +1449,5 @@ format: markdown
 *Methodology: Post-Purchase Psychology + OTO Conversion + Referral Activation*
 *Based on: CXL, TheGood, ConvertCart, Campaign Monitor, WPFunnels Research*
 *Lines: 1200+*
+
+#galaxy-tools

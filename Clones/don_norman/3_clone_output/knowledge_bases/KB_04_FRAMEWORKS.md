@@ -1,3 +1,27 @@
+---
+title: "KB_04_FRAMEWORKS — Don Norman"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-frameworks"
+  - "kb_04_frameworks — don norman"
+  - "objetivo"
+  - "1. os 7 princípios fundamentai"
+  - "1.1 discoverability (descobrib"
+  - "1.2 feedback"
+  - "1.3 conceptual model (modelo c"
+  - "1.4 affordances"
+  - "1.5 signifiers (sinalizadores)"
+  - "1.6 mappings"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04_FRAMEWORKS — Don Norman
 
 ## Objetivo
@@ -329,3 +353,5 @@ Acessar esta KB quando:
 
 **Atualizado:** 2026-01-30
 **Clone Factory ID:** don_norman-v1.0
+
+#galaxy-creation

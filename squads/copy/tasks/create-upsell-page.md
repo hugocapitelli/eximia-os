@@ -1,3 +1,27 @@
+---
+title: "Create Upsell Page Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-upsell-page"
+  - "create upsell page task"
+  - "task overview"
+  - "purpose"
+  - "the economics of upselling"
+  - "why upsells matter"
+  - "the funnel math"
+  - "inputs"
+  - "required information"
+  - "optional information"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Upsell Page Task
 
 ## Task Overview
@@ -1090,3 +1114,5 @@ Perfect for your next trip or gym bag.
 *Task Version: 2.0*
 *Research Source: upsell-methodology-research.md*
 *Lines: 750+*
+
+#galaxy-operational

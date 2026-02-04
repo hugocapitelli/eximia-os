@@ -1,3 +1,27 @@
+---
+title: "Codex Scraper - Agente Tier 1"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "codex scraper - agente tier 1"
+  - "🎯 objetivo"
+  - "📊 perfil do agente"
+  - "🧬 dna"
+  - "função principal"
+  - "capacidades"
+  - "limitações"
+  - "📥 input/output"
+  - "🔧 tecnologias"
+tags:
+  - "galaxy-codex"
+  - "documentation"
+---
+
 # Codex Scraper - Agente Tier 1
 
 **Extração inteligente de conteúdo web para o Projeto Codex**
@@ -67,3 +91,5 @@ Extração automatizada de conteúdo web com limpeza e conversão para Markdown 
 ## ✅ Status
 
 **Pronto para integração** - Aguardando implementação do código Python
+
+#galaxy-codex

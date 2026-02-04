@@ -1,3 +1,27 @@
+---
+title: "sync-documentation"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "sync-documentation"
+  - "purpose"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "step-by-step execution"
+  - "step 1: parse parameters"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # sync-documentation
 
 **Task ID:** `sync-documentation`  
@@ -862,4 +886,6 @@ module.exports = SyncDocumentationTask;
 - Prevent injection in docs
 - Protect sensitive information
 - Audit sync operations
-- Control write permissions 
+- Control write permissions
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "soap-opera-checklist"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "soap-opera-checklist"
+  - "metadata"
+  - "quick pass (5 minutos)"
+  - "the 5 email check"
+  - "detailed checklist by email"
+  - "email 1: set the stage"
+  - "email 2: high drama"
+  - "email 3: epiphany"
+  - "email 4: hidden benefits"
+  - "email 5: urgency"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # soap-opera-checklist
 
 Checklist completo para validar Soap Opera Sequences no estilo Andre Chaperon.
@@ -491,3 +515,5 @@ EMAIL 5: URGENCY
 *Checklist Version: 2.0*
 *Primary Agent: Andre Chaperon*
 *Usage: Before activating any Soap Opera Sequence*
+
+#galaxy-tools

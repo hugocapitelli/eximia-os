@@ -1,3 +1,27 @@
+---
+title: "TIER 3 - FORMAT SPECIALISTS"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "05-tier3-specialists-ai-optimized"
+  - "tier 3 - format specialists"
+  - "copywriters who dominate a spe"
+  - "use for: when output type is d"
+  - "tier_3_overview"
+  - "clone_14_jon_benson"
+  - "benson 5-step vsl formula"
+  - "benson vsl production rules"
+  - "clone_15_ben_settle"
+  - "settle infotainment concept"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # TIER 3 - FORMAT SPECIALISTS
 # Copywriters who dominate a specific format better than anyone else.
 # Use for: When OUTPUT TYPE is defined
@@ -493,3 +517,5 @@ when_not_to_use:
 
 rule: "Format execution comes AFTER strategy"
 ```
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "KB_03: Relatorio de QA (Quality Assurance)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-relatorio-qa"
+  - "kb_03: relatorio de qa (qualit"
+  - "proposito"
+  - "estrutura do relatorio"
+  - "campos detalhados"
+  - "analysis_id"
+  - "ai_detection.verdict"
+  - "ai_detection.confidence"
+  - "observations"
+  - "recommendation"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03: Relatorio de QA (Quality Assurance)
 
 ## Proposito
@@ -317,3 +341,5 @@ Acao sugerida:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

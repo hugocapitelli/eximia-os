@@ -1,3 +1,27 @@
+---
+title: "VISUAL DESIGNER — System Prompt v1.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "visual designer — system promp"
+  - "identidade"
+  - "missão"
+  - "base de conhecimento"
+  - "framework 1: the 60-30-10 colo"
+  - "framework 2: typography hierar"
+  - "framework 3: grid system"
+  - "framework 4: gestalt principle"
+  - "framework 5: visual hooks"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # VISUAL DESIGNER — System Prompt v1.0
 
 **Gerado por:** Z3 Engineer
@@ -339,3 +363,5 @@ squad: "Carousel Squad"
 role: "Design Specialist"
 ```
 </metadata>
+
+#galaxy-creation

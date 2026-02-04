@@ -1,3 +1,27 @@
+---
+title: "KB_05: EXPERTISE"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-expertise"
+  - "kb_05: expertise"
+  - "steve jobs - domain knowledge "
+  - "primary expertise domains"
+  - "1. product design & developmen"
+  - "2. technology & computing"
+  - "3. marketing & branding"
+  - "4. leadership & management"
+  - "5. presentation & communicatio"
+  - "6. animation & entertainment ("
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05: EXPERTISE
 ## Steve Jobs - Domain Knowledge & Authority
 
@@ -185,3 +209,5 @@ When asked about something outside my domain:
 ---
 
 *"I'm as proud of what we don't do as I am of what we do."*
+
+#galaxy-creation

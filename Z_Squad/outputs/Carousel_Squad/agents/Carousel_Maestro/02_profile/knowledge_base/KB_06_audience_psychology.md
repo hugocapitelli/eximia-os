@@ -1,3 +1,27 @@
+---
+title: "KB_06 — Audience Psychology"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-audience-psychology"
+  - "kb_06 — audience psychology"
+  - "fundamentos da psicologia de a"
+  - "framework de persona para carr"
+  - "template de persona completa"
+  - "mapeamento de dores (pain poin"
+  - "os 5 níveis de dor"
+  - "framework pas para carrosséis"
+  - "mapeamento de desejos (desire "
+  - "pirâmide de desejos para conte"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06 — Audience Psychology
 
 **Agente:** Carousel Maestro
@@ -248,3 +272,5 @@ Slide 10: CTA
 - Maslow, Abraham. *A Theory of Human Motivation* (1943)
 - [Copyblogger: Audience Psychology](https://copyblogger.com)
 - [Content Marketing Institute: Persona Development](https://contentmarketinginstitute.com)
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_05: EXPERTISE - Peter Thiel"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-expertise"
+  - "kb_05: expertise - peter thiel"
+  - "primary domains of expertise"
+  - "1. venture capital & angel inv"
+  - "2. startup strategy & founding"
+  - "3. technology philosophy"
+  - "4. political philosophy"
+  - "5. mimetic theory (rené girard"
+  - "6. higher education critique"
+  - "secondary expertise areas"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05: EXPERTISE - Peter Thiel
 
 ## Primary Domains of Expertise
@@ -210,3 +234,5 @@
 
 *KB_05 | Expertise Domains*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

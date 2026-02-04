@@ -1,3 +1,27 @@
+---
+title: "Query 05: Controversies & Criticism"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-05-controversies-criticism"
+  - "query 05: controversies & crit"
+  - "overview"
+  - "documented fraud & business fa"
+  - "acree-hill lumber company (ear"
+  - "automobile college of washingt"
+  - "george washington institute (1"
+  - "federal trade commission (1919"
+  - "embezzlement (1923)"
+  - "james bernard schafer cult (19"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Query 05: Controversies & Criticism
 
 **Search Date:** 2026-01-23
@@ -148,3 +172,5 @@ Hill claimed to have worked for:
 - [Wikipedia - Napoleon Hill](https://en.wikipedia.org/wiki/Napoleon_Hill)
 - [The Quota - Controversial Creator](https://www.thequota.co/articles/the-story-of-napoleon-hill-controversial-creator-of-the-personal-success-genre)
 - [Inc.com - Real Reason Hill Grew Rich](https://www.inc.com/michael-schein/brthe-real-reason-napoleon-hill-grew-rich-hint-its-not-what-you-think.html)
+
+#galaxy-creation

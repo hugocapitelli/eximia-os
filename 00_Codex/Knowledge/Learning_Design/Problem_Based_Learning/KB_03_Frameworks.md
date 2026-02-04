@@ -1,3 +1,27 @@
+---
+title: "KB_03: Problem-Based Learning - Frameworks & Goals"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-frameworks"
+  - "kb_03: problem-based learning "
+  - "the 5 goals of pbl (hmelo-silv"
+  - "goal 1: flexible knowledge"
+  - "goal 2: effective problem-solv"
+  - "goal 3: self-directed learning"
+  - "goal 4: effective collaboratio"
+  - "goal 5: intrinsic motivation"
+  - "cognitive constructivist proce"
+  - "the pbl cognitive cycle"
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
+
 # KB_03: Problem-Based Learning - Frameworks & Goals
 
 **Knowledge Base:** PBL Frameworks
@@ -448,3 +472,5 @@ An alternative PBL structure widely used in Europe:
 **For:** exímIA.OS Learning Design Knowledge Repository
 **Version:** 1.0
 **Status:** Production Ready
+
+#galaxy-codex

@@ -1,3 +1,27 @@
+---
+title: "KB_14 — Copy Editing Checklist"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-14-copy-editing-checklist"
+  - "kb_14 — copy editing checklist"
+  - "o poder da edicao"
+  - "o processo de edicao em 3 pass"
+  - "passo 1: macro edit (estrutura"
+  - "passo 2: micro edit (frases)"
+  - "passo 3: polish (palavras)"
+  - "checklist completo de edicao"
+  - "nivel 1: estrategia"
+  - "nivel 2: estrutura"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_14 — Copy Editing Checklist
 
 **Agente:** Copy Master
@@ -372,3 +396,5 @@ PUBLICAR: So quando passar em TUDO
 ---
 
 *"Escrever e humano. Editar e divino. A magia esta na reescrita."* — Copy Master
+
+#galaxy-creation

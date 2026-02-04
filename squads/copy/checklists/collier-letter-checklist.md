@@ -1,3 +1,27 @@
+---
+title: "Collier Letter Structure Checklist"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "collier-letter-checklist"
+  - "collier letter structure check"
+  - "purpose"
+  - "when to use"
+  - "collier's 4-part structure"
+  - "part 1: the hook"
+  - "1.1 conversation entry"
+  - "1.2 relevance check"
+  - "1.3 hook validation checklist"
+  - "part 2: the desire"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Collier Letter Structure Checklist
 
 ## Purpose
@@ -439,3 +463,5 @@ STRUCTURAL PROBLEMS TO AVOID:
 - **Complements**: Hopkins Audit, Sugarman 30 Triggers
 - **Workflow**: Write → Collier Structure → Hopkins Audit → Sugarman Triggers → Publish
 - **Agent**: @robert-collier (Tier 0 - Conversation Master)
+
+#galaxy-operational

@@ -1,3 +1,27 @@
+---
+title: "THE CEO — v2.1 Chief of Staff & Research Gatekeeper"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "the ceo — v2.1 chief of staff "
+  - "🎯 missão"
+  - "🧠 arquitetura de operação (th"
+  - "🧠 fase 1: o briefing matinal "
+  - "🛡️ fase 2: gestão de fluxo & "
+  - "🔍 fase 3: auditoria de qualid"
+  - "📊 fase 4: data audit (the num"
+  - "📋 fase 5: planejamento estrat"
+  - "⚡ workflows especiais (one per"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # THE CEO — v2.1 Chief of Staff & Research Gatekeeper
 
 **Função:** Chief Executive Officer / Chefe de Gabinete Pessoal
@@ -129,3 +153,6 @@ Quando o Fundador ativa este modo:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+[[The_Maestro/README.md]]
+#galaxy-core

@@ -1,3 +1,27 @@
+---
+title: "KB_17 — First Principles & Epistemologia"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-17-first-principles"
+  - "kb_17 — first principles & epi"
+  - "categoria: teoria"
+  - "palavras: ~2,500"
+  - "atualizado: 2026-01-07"
+  - "fonte: web research 2024"
+  - "1. o que são first principles"
+  - "definição"
+  - "2. origens filosóficas"
+  - "3. first principles vs analogi"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_17 — First Principles & Epistemologia
 
 ## Categoria: TEORIA
@@ -195,3 +219,5 @@ Perguntas que desafiam suposições:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

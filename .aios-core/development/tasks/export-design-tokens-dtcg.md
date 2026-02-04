@@ -1,3 +1,27 @@
+---
+title: "Export Design Tokens to W3C DTCG"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "export-design-tokens-dtcg"
+  - "export design tokens to w3c dt"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Export Design Tokens to W3C DTCG
 
 > Task ID: brad-export-design-tokens-dtcg  
@@ -272,3 +296,5 @@ Produce W3C Design Tokens (DTCG v2025.10) exports from the canonical YAML tokens
 - Keep token versions semantically versioned (e.g., 1.1.0 for new tokens)
 - Coordinate with platform teams before breaking changes (e.g., renaming tokens)
 - Store validation reports alongside artifacts for audit/compliance
+
+#galaxy-runtime

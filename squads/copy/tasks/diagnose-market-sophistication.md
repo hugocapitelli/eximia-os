@@ -1,3 +1,27 @@
+---
+title: "Diagnose Market Sophistication - Schwartz Method"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "diagnose-market-sophistication"
+  - "diagnose market sophistication"
+  - "purpose"
+  - "when to use"
+  - "schwartz on sophistication"
+  - "the 5 stages of sophistication"
+  - "inputs"
+  - "workflow"
+  - "step 1: assess competitive lan"
+  - "step 2: diagnose each stage"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Diagnose Market Sophistication - Schwartz Method
 
 ## Purpose
@@ -420,3 +444,5 @@ MISTAKE 4: Ignoring Awareness × Sophistication
 - **Uses**: schwartz-diagnosis-checklist.md
 - **Informs**: All copy creation tasks
 - **Agent**: @eugene-schwartz (Tier 0 - Diagnosis)
+
+#galaxy-operational

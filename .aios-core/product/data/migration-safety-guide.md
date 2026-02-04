@@ -1,3 +1,27 @@
+---
+title: "Database Migration Safety Guide"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "migration-safety-guide"
+  - "database migration safety guid"
+  - "migration principles"
+  - "core rules"
+  - "safe operations"
+  - "adding columns (safe)"
+  - "adding indexes (safe with conc"
+  - "creating tables (safe)"
+  - "dangerous operations"
+  - "dropping columns (dangerous)"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Database Migration Safety Guide
 
 **Purpose:** Reference guide for safe database migrations in production
@@ -327,3 +351,5 @@ WITH CHECK (owner_id = auth.uid());
 
 **Reviewer:** ________ **Date:** ________
 **Safety Audit:** [ ] PASS [ ] NEEDS REVIEW
+
+#galaxy-runtime

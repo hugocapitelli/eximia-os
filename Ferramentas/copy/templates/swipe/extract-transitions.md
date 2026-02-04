@@ -1,3 +1,22 @@
+---
+title: "TRANSITION EXTRACTION PROMPT"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "extract-transitions"
+  - "transition extraction prompt"
+  - "transition types"
+  - "extraction rules"
+  - "output"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # TRANSITION EXTRACTION PROMPT
 
 You are extracting transitions and segues from proven copy.
@@ -35,3 +54,5 @@ You are extracting transitions and segues from proven copy.
 
 ## OUTPUT
 Extract ALL qualifying transitions. Output ONLY valid YAML array.
+
+#galaxy-tools

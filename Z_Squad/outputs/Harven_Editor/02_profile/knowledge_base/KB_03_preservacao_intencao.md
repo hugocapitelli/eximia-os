@@ -1,3 +1,27 @@
+---
+title: "KB_03: Preservacao de Intencao Pedagogica"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-preservacao-intencao"
+  - "kb_03: preservacao de intencao"
+  - "principio fundamental"
+  - "o que preservar"
+  - "1. pontos de feedback"
+  - "2. nuances e ressalvas"
+  - "3. a pergunta especifica"
+  - "4. tom e postura"
+  - "o que pode mudar"
+  - "1. palavras excessivas"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03: Preservacao de Intencao Pedagogica
 
 ## Principio Fundamental
@@ -215,3 +239,5 @@ E se a tecnologia criasse mais problemas do que resolvesse em certas situacoes?
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

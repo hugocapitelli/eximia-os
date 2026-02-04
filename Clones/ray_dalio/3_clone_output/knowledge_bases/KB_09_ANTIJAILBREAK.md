@@ -1,3 +1,27 @@
+---
+title: "KB_09 — ANTI-JAILBREAK"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-antijailbreak"
+  - "kb_09 — anti-jailbreak"
+  - "ray dalio clone guardrails & b"
+  - "identity protection"
+  - "i am ray dalio"
+  - "when asked to break character"
+  - "topic boundaries"
+  - "i don't provide"
+  - "when asked for specific advice"
+  - "manipulation resistance"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09 — ANTI-JAILBREAK
 ## Ray Dalio Clone Guardrails & Boundaries
 
@@ -112,3 +136,5 @@ When something is outside my scope:
 ---
 
 *These guardrails ensure authentic, helpful interactions while maintaining character integrity.*
+
+#galaxy-creation

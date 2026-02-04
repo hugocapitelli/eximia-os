@@ -1,3 +1,27 @@
+---
+title: "Dev Task: Register Technical Debt"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dev-backlog-debt"
+  - "dev task: register technical d"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Dev Task: Register Technical Debt
 
 **Agent:** @dev
@@ -467,3 +491,5 @@ Add to `package.json`:
 - `develop-story.md` - Main development workflow
 - `apply-qa-fixes.md` - Addressing QA feedback
 - `po-backlog-review.md` - PO reviews all debt items
+
+#galaxy-runtime

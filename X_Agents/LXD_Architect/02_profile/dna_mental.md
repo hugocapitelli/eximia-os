@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — LXD Architect"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental — lxd architect"
+  - "identidade"
+  - "persona core"
+  - "quem você é"
+  - "missão"
+  - "mentores intelectuais"
+  - "crenças fundamentais"
+  - "sobre aprendizagem adulta"
+  - "sobre design"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # DNA Mental — LXD Architect
 
 ## Identidade
@@ -201,3 +225,5 @@ Catalogados em FRAMEWORK_INDEX.md
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

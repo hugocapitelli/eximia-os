@@ -1,3 +1,27 @@
+---
+title: "Create Video Hook Task - Master Protocol"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-video-hook"
+  - "create video hook task - maste"
+  - "meta"
+  - "purpose"
+  - "when to use"
+  - "ideal use cases"
+  - "platform decision matrix"
+  - "inputs"
+  - "the 3-second threshold science"
+  - "why 3 seconds matters"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Video Hook Task - Master Protocol
 
 ## Meta
@@ -1260,3 +1284,5 @@ Antes de gravar, verifique se seu hook tem:
 *Hormozi Framework Enrichment - ENR-004*
 *Fontes: 01_FRAMEWORKS_OPERACIONAIS.md, 02_VALUE_EQUATION_ENGINE.md*
 *Data da Extração: 2026-01-23*
+
+#galaxy-operational

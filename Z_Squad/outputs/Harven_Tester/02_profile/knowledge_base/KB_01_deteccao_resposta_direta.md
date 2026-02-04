@@ -1,3 +1,27 @@
+---
+title: "KB_01: Deteccao de Respostas Diretas"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-deteccao-resposta-direta"
+  - "kb_01: deteccao de respostas d"
+  - "proposito"
+  - "o que e uma resposta direta?"
+  - "indicadores de resposta direta"
+  - "categoria 1: linguagem de afir"
+  - "categoria 2: explicacoes compl"
+  - "categoria 3: tom professoral"
+  - "indicadores de resposta socrat"
+  - "categoria 1: linguagem de ques"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01: Deteccao de Respostas Diretas
 
 ## Proposito
@@ -176,3 +200,5 @@ O que voce acha mais importante?
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Phase Gates — Z Squad Protocol"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "phase-gates"
+  - "phase gates — z squad protocol"
+  - "🎯 propósito"
+  - "1. o que são phase gates?"
+  - "2. gates por módulo"
+  - "z1 architect gate"
+  - "z2 profiler gate"
+  - "z3 engineer gate"
+  - "z4 auditor gate"
+  - "3. gate validation template"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Phase Gates — Z Squad Protocol
 
 ## 🎯 Propósito
@@ -150,3 +174,5 @@ gate_validation:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

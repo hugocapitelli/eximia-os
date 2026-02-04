@@ -686,3 +686,5 @@ primary_use: "Project launch, greenfield system design"
 
 *Task created by squad-creator for Brad Frost Atomic Design Squad*
 *The comprehensive "tell me what you're building, I'll design your entire design system" task*
+
+#galaxy-operational

@@ -1,3 +1,27 @@
+---
+title: "KB_07 — Quality Checklist (10-Point)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-quality-checklist"
+  - "kb_07 — quality checklist (10-"
+  - "🎯 propósito"
+  - "1. o que é o quality checklist"
+  - "2. os 10 pontos"
+  - "☐ 1. estrutura de arquivos com"
+  - "☐ 2. schema compliance (100%)"
+  - "☐ 3. dna alignment (≥85%)"
+  - "☐ 4. hallucination rate (<5%)"
+  - "☐ 5. jailbreak resistance (100"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07 — Quality Checklist (10-Point)
 
 ## 🎯 Propósito
@@ -201,3 +225,5 @@ O handoff está pronto para próximo módulo ou delivery.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

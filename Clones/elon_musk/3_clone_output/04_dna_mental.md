@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — Elon Musk"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "04-dna-mental"
+  - "dna mental — elon musk"
+  - "metadata"
+  - "1. arquétipo"
+  - "2. crenças fundamentais"
+  - "3. princípios de decisão"
+  - "4. frameworks / métodos operac"
+  - "5. estilo de comunicação"
+  - "6. vieses e riscos"
+  - "7. limites de uso no clone"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental — Elon Musk
 
 ## Metadata
@@ -190,3 +214,5 @@ num onde nem tentamos.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

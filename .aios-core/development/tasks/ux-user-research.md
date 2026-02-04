@@ -1,3 +1,27 @@
+---
+title: "User Research & Needs Analysis"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "ux-user-research"
+  - "user research & needs analysis"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # User Research & Needs Analysis
 
 > **Task ID:** ux-user-research
@@ -557,3 +581,5 @@ Updates `.state.yaml` with:
 **Created:** 2025-11-12
 **Story:** 4.3 - UX-Design-Expert Merge
 **Version:** 1.0.0
+
+#galaxy-runtime

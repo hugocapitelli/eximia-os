@@ -1,3 +1,26 @@
+---
+title: "copywriting"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copywriting"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "tier system"
+  - "commands"
+  - "recommendation logic"
+  - "copy chief v3.1 — quick refere"
+  - "standard workflow"
+  - "quick commands"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # copywriting
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -330,3 +353,5 @@ TOOL (not clone)
 *Copy Chief v3.1.0*
 *Elite Copywriting Squad Orchestrator*
 *19 Legendary Copywriters + Research-First Methodology*
+
+#galaxy-runtime

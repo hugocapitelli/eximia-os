@@ -1,3 +1,27 @@
+---
+title: "Offer Creation Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "offer-creation-methodology-research"
+  - "offer creation methodology res"
+  - "research overview"
+  - "part 1: alex hormozi - grand s"
+  - "the value equation (core found"
+  - "the grand slam offer 5-step fr"
+  - "part 2: dan kennedy - irresist"
+  - "kennedy's 4 key components of "
+  - "kennedy's shock and awe packag"
+  - "kennedy's price presentation f"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Offer Creation Methodology Research
 
 ## Research Overview
@@ -887,3 +911,5 @@ Try Free for 14 Days
 **Lines:** 700+
 **Frameworks Documented:** 15+
 **Ready for Task Creation:** Yes
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "Meta Reasoning Process — Z Squad Protocol"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "meta-reasoning-process"
+  - "meta reasoning process — z squ"
+  - "🎯 propósito"
+  - "1. o que é o meta reasoning?"
+  - "2. as 5 fases meta"
+  - "fase 1: pensamento (meta-cogni"
+  - "fase 2: consulta (frameworks)"
+  - "fase 3: reflexão (riscos)"
+  - "fase 4: plano (estratégia)"
+  - "fase 5: execução (output)"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Meta Reasoning Process — Z Squad Protocol
 
 ## 🎯 Propósito
@@ -155,3 +179,5 @@ Se qualquer gate falhar, parar e pedir mais informações.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

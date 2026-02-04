@@ -1,3 +1,27 @@
+---
+title: "C5 RUNTIME ENGINE — Motor de Simulação de Decisão"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "c5 runtime engine — motor de s"
+  - "identidade"
+  - "missão"
+  - "protocolo operacional"
+  - "input requirements"
+  - "step 1: emotional filtering"
+  - "para um clone com alto opennes"
+  - "step 2: heuristic application"
+  - "step 3: scenario simulation"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C5 RUNTIME ENGINE — Motor de Simulação de Decisão
 
 ## IDENTIDADE
@@ -430,3 +454,5 @@ Antes de retornar resposta:
 **Versão:** 1.0
 **Clone Factory Module:** C5
 **Tipo:** Runtime Agent
+
+#galaxy-creation

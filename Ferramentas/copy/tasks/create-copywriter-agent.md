@@ -1,3 +1,27 @@
+---
+title: "Create Copywriter Agent - Master Orchestration Task"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-copywriter-agent"
+  - "create copywriter agent - mast"
+  - "metadata"
+  - "executive summary"
+  - "theoretical foundation"
+  - "the deeppersona research frame"
+  - "persona attribute hierarchy"
+  - "linguistic fingerprint compone"
+  - "prerequisites"
+  - "required inputs"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Create Copywriter Agent - Master Orchestration Task
 
 ## Metadata
@@ -1302,3 +1326,5 @@ Upon successful completion:
 *CopywriterOS Task v2.0.0*
 *Part of the AIOS Expansion Pack System*
 *Based on: docs/research/copywriter-agent-creation-methodology-research.md*
+
+#galaxy-tools

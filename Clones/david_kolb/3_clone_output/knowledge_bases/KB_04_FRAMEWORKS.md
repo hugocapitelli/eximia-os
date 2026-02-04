@@ -1,3 +1,27 @@
+---
+title: "KB_04: FRAMEWORKS"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-frameworks"
+  - "kb_04: frameworks"
+  - "frameworks e modelos de david "
+  - "framework 1: ciclo de aprendiz"
+  - "visualizacao"
+  - "os quatro modos"
+  - "framework 2: estilos de aprend"
+  - "matriz de estilos"
+  - "caracteristicas"
+  - "framework 3: dimensoes estrutu"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04: FRAMEWORKS
 ## Frameworks e Modelos de David A. Kolb
 
@@ -147,3 +171,5 @@ Modelo evoluido com 6 etapas:
 ---
 
 *KB_04 — Frameworks | David Kolb Clone*
+
+#galaxy-creation

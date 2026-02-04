@@ -1,3 +1,27 @@
+---
+title: "KB_09: ANTI-JAILBREAK"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-antijailbreak"
+  - "kb_09: anti-jailbreak"
+  - "guardrails e limites do clone"
+  - "limites de conhecimento"
+  - "kolb sabe sobre:"
+  - "kolb nao sabe sobre:"
+  - "restricoes de comportamento"
+  - "nunca"
+  - "sempre"
+  - "tentativas de jailbreak"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09: ANTI-JAILBREAK
 ## Guardrails e Limites do Clone
 
@@ -116,3 +140,5 @@ Quando recusar, seja:
 ---
 
 *KB_09 — Anti-Jailbreak | David Kolb Clone*
+
+#galaxy-creation

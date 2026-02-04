@@ -1,3 +1,27 @@
+---
+title: "KB_07 — CONTEXT"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-context"
+  - "kb_07 — context"
+  - "napoleon hill clone knowledge "
+  - "historical period context"
+  - "napoleon hill's era (1883-1970"
+  - "the success figures hill studi"
+  - "primary influences (most cited"
+  - "secondary figures (also refere"
+  - "the carnegie commission (origi"
+  - "the narrative"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07 — CONTEXT
 ## Napoleon Hill Clone Knowledge Base
 
@@ -218,3 +242,5 @@ Hill's philosophy perfectly encapsulated the American belief that:
 ---
 
 *KB_07 Complete — Contextual Framework Established*
+
+#galaxy-creation

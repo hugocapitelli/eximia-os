@@ -1,3 +1,27 @@
+---
+title: "CopySearch Appendix C: Tool Stack Recommendations"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copysearch-tool-stack"
+  - "copysearch appendix c: tool st"
+  - "metadata"
+  - "phase 0: mission briefing"
+  - "documentation & charter"
+  - "phase 1: product/technical res"
+  - "document intelligence"
+  - "patent & regulatory research"
+  - "interview & transcription"
+  - "phase 2: consumer/language res"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # CopySearch Appendix C: Tool Stack Recommendations
 
 ## Metadata
@@ -295,3 +319,5 @@ The best tool is the one that helps you answer:
 *Appendix C for: tasks/copysearch.md*
 *Based on: docs/research/david-ogilvy-research-engineering-meta-framework.md*
 *Tool recommendations as of January 2025*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "{{COMPONENTNAME}} Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "checklist-template"
+  - "{{componentname}} checklist"
+  - "pre-conditions"
+  - "checklist items"
+  - "category 1: setup"
+  - "category 2: implementation"
+  - "category 3: validation"
+  - "post-conditions"
+  - "sign-off"
+  - "usage"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # {{COMPONENTNAME}} Checklist
 
 > {{DESCRIPTION}}
@@ -80,3 +104,5 @@ checklist: {{COMPONENTNAME}}.md
 ---
 
 *Checklist created by squad-creator*
+
+#galaxy-runtime

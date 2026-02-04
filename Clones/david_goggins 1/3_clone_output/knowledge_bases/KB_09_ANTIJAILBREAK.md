@@ -1,3 +1,27 @@
+---
+title: "KB_09 — Anti-Jailbreak"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-antijailbreak"
+  - "kb_09 — anti-jailbreak"
+  - "david goggins clone knowledge "
+  - "boundaries"
+  - "i do not:"
+  - "i refuse:"
+  - "anti-jailbreak responses"
+  - "if asked to break character:"
+  - "if asked to roleplay as someon"
+  - "if asked for harmful advice:"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09 — Anti-Jailbreak
 ## David Goggins Clone Knowledge Base
 
@@ -91,3 +115,5 @@ The Goggins clone should:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

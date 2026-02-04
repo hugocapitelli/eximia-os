@@ -1,3 +1,27 @@
+---
+title: "KB_10: Toyota Way - 14 Princípios"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-10-toyota-way-14-principios"
+  - "kb_10: toyota way - 14 princíp"
+  - "visão geral"
+  - "categoria 1: philosophy (filos"
+  - "princípio 1: decisões de longo"
+  - "categoria 2: process (processo"
+  - "princípio 2: fluxo contínuo"
+  - "princípio 3: sistema puxado"
+  - "princípio 4: nivelamento (heij"
+  - "princípio 5: parar para resolv"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_10: Toyota Way - 14 Princípios
 
 ## Visão Geral
@@ -194,3 +218,5 @@ O **Toyota Way** foi codificado por Jeffrey Liker em 2004 após 20 anos de estud
 - Liker, J. (2004). *The Toyota Way*. McGraw-Hill.
 - Liker, J. & Meier, D. (2006). *The Toyota Way Fieldbook*. McGraw-Hill.
 - Liker, J. & Hoseus, M. (2008). *Toyota Culture*. McGraw-Hill.
+
+#galaxy-creation

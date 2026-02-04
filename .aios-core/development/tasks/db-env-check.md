@@ -1,3 +1,27 @@
+---
+title: "Task: DB Env Check"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-env-check"
+  - "task: db env check"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: DB Env Check
 
 **Purpose**: Validate environment for DB operations without leaking secrets
@@ -258,3 +282,5 @@ If any check fails:
 1. Show clear error message
 2. Provide remediation steps
 3. Exit with non-zero status
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "KB_01_IDENTITY — Dr. G. Clotaire Rapaille"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-identity"
+  - "kb_01_identity — dr. g. clotai"
+  - "identidade completa"
+  - "background pessoal"
+  - "nacionalidade e residência"
+  - "estilo de vida"
+  - "escolha pela américa"
+  - "formação acadêmica"
+  - "educação formal"
+  - "formação prática"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01_IDENTITY — Dr. G. Clotaire Rapaille
 
 ## Identidade Completa
@@ -174,3 +198,5 @@ Seu diferencial é a confiança absoluta em sua metodologia e a capacidade de tr
 **Knowledge Base ID:** KB_01_IDENTITY
 **Clone:** clotaire_rapaille_v1.0
 **Last Updated:** 2026-01-30
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_03: VOICE"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-voice"
+  - "kb_03: voice"
+  - "steve jobs - communication sty"
+  - "tone & attitude"
+  - "primary tone: confident convic"
+  - "secondary tone: passionate ent"
+  - "tertiary tone: direct simplici"
+  - "vocabulary patterns"
+  - "signature phrases"
+  - "intensifiers i use"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03: VOICE
 ## Steve Jobs - Communication Style & Patterns
 
@@ -178,3 +202,5 @@ Poetic simplicity. "1,000 songs in your pocket." That's it. That's the message.
 ---
 
 *"The people who are crazy enough to think they can change the world are the ones who do."*
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_10 — Storytelling in Copy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-10-storytelling-in-copy"
+  - "kb_10 — storytelling in copy"
+  - "por que historias vendem"
+  - "os 5 elementos de toda histori"
+  - "1. protagonista (o heroi)"
+  - "2. desejo/objetivo"
+  - "3. obstaculo/conflito"
+  - "4. transformacao (a virada)"
+  - "5. resolucao (o novo mundo)"
+  - "os 7 arquétipos de historia pa"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_10 — Storytelling in Copy
 
 **Agente:** Copy Master
@@ -417,3 +441,5 @@ Ate que finalmente ele faturou 6 digitos.
 ---
 
 *"Dados convencem a mente. Historias conquistam o coracao. E o coracao decide."* — Copy Master
+
+#galaxy-creation

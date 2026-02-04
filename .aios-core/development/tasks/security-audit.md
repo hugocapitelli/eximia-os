@@ -1,3 +1,27 @@
+---
+title: "Task: Security Audit"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "security-audit"
+  - "task: security audit"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Security Audit
 
 **Purpose**: Comprehensive database security and quality audit (RLS coverage, schema design, full system)
@@ -552,3 +576,5 @@ SQL
 ---
 
 **Note:** This consolidated task replaces `db-rls-audit.md` and `schema-audit.md` (deprecated in v3.0)
+
+#galaxy-runtime

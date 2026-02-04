@@ -1,3 +1,27 @@
+---
+title: "Build Authority Arsenal - Complete Credibility Extraction Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "build-authority-arsenal"
+  - "build authority arsenal - comp"
+  - "metadata"
+  - "executive summary"
+  - "theoretical foundation"
+  - "the psychology of authority"
+  - "the bencivenga proof hierarchy"
+  - "prerequisites"
+  - "required inputs"
+  - "source material requirements"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Build Authority Arsenal - Complete Credibility Extraction Task
 
 ## Metadata
@@ -1283,3 +1307,5 @@ See `agents/david-ogilvy.md` for reference implementation:
 *CopywriterOS Task v2.0.0*
 *Part of the AIOS Expansion Pack System*
 *Based on: docs/research/authority-arsenal-methodology-research.md*
+
+#galaxy-operational

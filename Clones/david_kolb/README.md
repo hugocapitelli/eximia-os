@@ -1,3 +1,27 @@
+---
+title: "David A. Kolb Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "david a. kolb clone"
+  - "experiential learning theory p"
+  - "visao geral"
+  - "estrutura do clone"
+  - "como usar"
+  - "1. conversa direta"
+  - "2. consultoria em design instr"
+  - "3. coaching de facilitadores"
+  - "exemplo de interacao"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # David A. Kolb Clone
 
 ## Experiential Learning Theory Pioneer
@@ -111,3 +135,5 @@ status: "PRODUCTION"
 ---
 
 *David Kolb Clone — eximIA.OS*
+
+#galaxy-creation

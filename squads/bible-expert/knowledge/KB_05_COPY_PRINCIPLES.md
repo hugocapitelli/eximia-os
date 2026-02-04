@@ -1,3 +1,27 @@
+---
+title: "KB_05: Copy Principles Grounded in Biblical Wisdom"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-copy-principles"
+  - "kb_05: copy principles grounde"
+  - "introduction"
+  - "core biblical persuasion princ"
+  - "1. truth as foundation"
+  - "2. storytelling as bridge"
+  - "3. values alignment"
+  - "4. stewardship as responsibili"
+  - "5. the power of testimony"
+  - "6. invitation, not coercion"
+tags:
+  - "galaxy-operational"
+  - "knowledge-base"
+---
+
 # KB_05: Copy Principles Grounded in Biblical Wisdom
 
 ## Introduction
@@ -333,3 +357,5 @@ When writing copy, ask:
 **Last Updated**: 2026-01-27
 **Version**: 1.0.0
 **Usage**: Reference when creating copy for values alignment and ethical persuasion
+
+#galaxy-operational

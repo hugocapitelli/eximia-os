@@ -1,3 +1,27 @@
+---
+title: "The_Prototyper (ProtoOS)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "the_prototyper (protoos)"
+  - "overview"
+  - "core competencies"
+  - "quick start"
+  - "using the system prompt"
+  - "example interactions"
+  - "architecture"
+  - "the protoos logic loop"
+  - "circuit breakers"
+tags:
+  - "galaxy-specialist"
+  - "documentation"
+---
+
 # The_Prototyper (ProtoOS)
 
 > *"A good PRD doesn't describe a solution—it captures a problem so well that the solution becomes inevitable."*
@@ -216,3 +240,5 @@ The agent will pause and ask clarifying questions when it detects:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

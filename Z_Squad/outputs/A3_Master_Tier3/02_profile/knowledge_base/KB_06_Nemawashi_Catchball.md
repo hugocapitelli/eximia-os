@@ -1,3 +1,27 @@
+---
+title: "KB_06: Nemawashi e Catchball"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-nemawashi-catchball"
+  - "kb_06: nemawashi e catchball"
+  - "nemawashi (根回し)"
+  - "significado literal"
+  - "aplicação em negócios"
+  - "princípio toyota #13"
+  - "por que nemawashi é crítico no"
+  - "processo de nemawashi para a3"
+  - "passo 1: preparar rascunho"
+  - "passo 2: identificar stakehold"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06: Nemawashi e Catchball
 
 ## Nemawashi (根回し)
@@ -167,3 +191,5 @@ Use antes de qualquer apresentação formal:
 - [Lean Factories - Nemawashi Model](https://leanfactories.com/nemawashi-model-for-decision-making/)
 - [Coaching Leaders Japan - Nemawashi](http://coachingleaders.jp/en/glossary/nemawashi/)
 - [6Sigma.us - Guide to Hoshin Kanri](https://www.6sigma.us/process-improvement/essential-guide-to-hoshin-kanri/)
+
+#galaxy-creation

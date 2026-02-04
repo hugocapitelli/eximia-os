@@ -1,3 +1,27 @@
+---
+title: "Brad Frost Clone - Research Query 02"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-02-atomic-design"
+  - "brad frost clone - research qu"
+  - "atomic design methodology - co"
+  - "core philosophy"
+  - "the 5 stages (detailed)"
+  - "1. atoms"
+  - "2. molecules"
+  - "3. organisms"
+  - "4. templates"
+  - "5. pages"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Brad Frost Clone - Research Query 02
 
 **Query:** Brad Frost Atomic Design atoms molecules organisms templates pages  
@@ -162,3 +186,4 @@ Atomic Design serves as **architecture for design systems:**
 
 **Sources:** bradfrost.com, justinmind.com, logrocket.com, designsystems.com
 
+#galaxy-creation

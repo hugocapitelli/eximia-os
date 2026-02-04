@@ -1,3 +1,22 @@
+---
+title: "DBA Pre-Deploy Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dba-predeploy-checklist"
+  - "dba pre-deploy checklist"
+  - "instructions for data engineer"
+  - "checklist items"
+  - "final confirmation"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # DBA Pre-Deploy Checklist
 
 ## Instructions for Data Engineer Agent
@@ -95,3 +114,5 @@ After completing the checklist:
 Production database changes require confidence.]]
 
 - [ ] I, the Data Engineer Agent, confirm that all applicable items above have been addressed and deployment is safe to proceed.
+
+#galaxy-runtime

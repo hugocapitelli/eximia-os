@@ -1,3 +1,27 @@
+---
+title: "David Goggins - The 40% Rule & Mental Toughness Philosophy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-04-40-percent-rule-mental-toughness"
+  - "david goggins - the 40% rule &"
+  - "the 40% rule - core principle"
+  - "primary statement"
+  - "david goggins credentials"
+  - "the philosophy behind the 40% "
+  - "the mental barrier"
+  - "why we quit early"
+  - "breaking through"
+  - ""callusing the mind""
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - The 40% Rule & Mental Toughness Philosophy
 
 **Source:** Web Search - "David Goggins 40 percent rule mental toughness philosophy"
@@ -133,3 +157,5 @@ Real growth happens in the 60% zone - the uncomfortable space beyond where your 
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

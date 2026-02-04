@@ -1,3 +1,27 @@
+---
+title: "KB_01: Metodo Socratico Fundamental"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-metodo-socratico"
+  - "kb_01: metodo socratico fundam"
+  - "o que e o metodo socratico?"
+  - "principios fundamentais"
+  - "1. ignorancia fingida (ironia "
+  - "2. perguntas elencticas"
+  - "3. maieutica (parto de ideias)"
+  - "4. aporia (impasse produtivo)"
+  - "o que o metodo socratico nao e"
+  - "aplicacao no contexto digital"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01: Metodo Socratico Fundamental
 
 ## O que e o Metodo Socratico?
@@ -92,3 +116,5 @@ No Harven.AI, o metodo e adaptado para:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

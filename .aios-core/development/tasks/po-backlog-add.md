@@ -1,3 +1,27 @@
+---
+title: "PO Task: Add Backlog Item"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "po-backlog-add"
+  - "po task: add backlog item"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # PO Task: Add Backlog Item
 
 **Agent:** @po
@@ -368,3 +392,5 @@ Effort: 3 hours
 - `po-stories-index.md` - Regenerate story index
 - `po-backlog-review.md` - Review and prioritize backlog
 - `po-backlog-schedule.md` - Schedule backlog items
+
+#galaxy-runtime

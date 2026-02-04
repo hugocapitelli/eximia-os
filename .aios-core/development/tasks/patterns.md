@@ -1,3 +1,27 @@
+---
+title: "Learned Patterns Management"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "patterns"
+  - "learned patterns management"
+  - "purpose"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "implementation steps"
+  - "step 1: check help flag"
+  - "step 2: load learning module"
+  - "step 3: execute subcommand"
+  - "help text"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Learned Patterns Management
 
 ## Purpose
@@ -332,3 +356,5 @@ tags:
   - learning
   - management
 ```
+
+#galaxy-runtime

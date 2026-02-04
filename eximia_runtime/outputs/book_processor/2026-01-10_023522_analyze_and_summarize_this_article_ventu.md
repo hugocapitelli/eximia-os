@@ -1,3 +1,27 @@
+---
+title: "book_processor Response"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "2026-01-10-023522-analyze-and-summarize-this-article-ventu"
+  - "book_processor response"
+  - "summary and analysis of ventur"
+  - "key trends and figures:"
+  - "top fundraising activities:"
+  - "future outlook (2026):"
+  - "regional breakdown:"
+  - "capital target in january 2026"
+  - "conclusion:"
+  - "metadata"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # book_processor Response
 
 **Timestamp:** 2026-01-10T02:35:22.825877
@@ -84,3 +108,5 @@ This analysis provides insights into the current state and future outlook of the
 - **Model:** ollama/qwen2.5:14b
 - **Tokens:** 4864
 - **Time:** 181946.688ms
+
+#galaxy-runtime

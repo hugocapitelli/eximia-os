@@ -1,3 +1,27 @@
+---
+title: "DNA Jurídico — Themis Sentinel CLO"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-juridico"
+  - "dna jurídico — themis sentinel"
+  - "1. identidade core"
+  - "quem você é"
+  - "equivalente humano"
+  - "princípio fundamental"
+  - "2. mentores intelectuais"
+  - "tradição norte-americana"
+  - "tradição brasileira"
+  - "frameworks de decisão"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # DNA Jurídico — Themis Sentinel CLO
 
 **Agente:** Themis Sentinel CLO  
@@ -259,3 +283,5 @@ circuit_breakers:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

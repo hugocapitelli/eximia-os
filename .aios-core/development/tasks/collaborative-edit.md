@@ -1106,4 +1106,6 @@ module.exports = CollaborativeEditTask;
 - Encrypt sensitive session data
 - Audit all collaborative actions
 - Prevent unauthorized access to sessions
-- Secure communication channels 
+- Secure communication channels
+
+#galaxy-runtime

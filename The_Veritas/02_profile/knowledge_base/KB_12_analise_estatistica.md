@@ -1,3 +1,27 @@
+---
+title: "KB_12 — Análise Estatística para Pesquisadores"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-12-analise-estatistica"
+  - "kb_12 — análise estatística pa"
+  - "categoria: estratégia"
+  - "palavras: ~2,500"
+  - "atualizado: 2026-01-07"
+  - "fonte: web research 2024 (nih,"
+  - "1. interpretação de p-value (2"
+  - "o que p-value é"
+  - "o que p-value não é"
+  - "interpretação correta"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_12 — Análise Estatística para Pesquisadores
 
 ## Categoria: ESTRATÉGIA
@@ -180,3 +204,5 @@ statistical_validation:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

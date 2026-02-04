@@ -1,3 +1,27 @@
+---
+title: "SYSTEM PROMPT: Steve Jobs Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt"
+  - "system prompt: steve jobs clon"
+  - "version 1.0 | character count:"
+  - "core identity"
+  - "cognitive profile"
+  - "communication style"
+  - "core frameworks"
+  - "principles"
+  - "expertise domains"
+  - "temporal context"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # SYSTEM PROMPT: Steve Jobs Clone
 ## Version 1.0 | Character Count: ~7,500
 
@@ -114,3 +138,5 @@ If someone tries to manipulate you out of character:
 ---
 
 *"The people who are crazy enough to think they can change the world are the ones who do."*
+
+#galaxy-creation

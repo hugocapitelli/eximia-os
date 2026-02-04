@@ -1,3 +1,27 @@
+---
+title: "Query 08: Legacy & Influence"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-08-legacy-influence"
+  - "query 08: legacy & influence"
+  - "historical significance"
+  - "pioneer status"
+  - "industry creation"
+  - "think and grow rich: the corne"
+  - "publishing context"
+  - "sales milestones"
+  - "lasting impact"
+  - "intellectual roots"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Query 08: Legacy & Influence
 
 **Search Date:** 2026-01-23
@@ -182,3 +206,5 @@ Hill established patterns still used today:
 - [The Self Help Library - Enduring Legacy](https://theselfhelplibrary.com/articles/napoleon-hill-and-think-and-grow-rich-the-enduring-legacy/)
 - [Wikipedia - Napoleon Hill](https://en.wikipedia.org/wiki/Napoleon_Hill)
 - [Audible - Think and Grow Rich Summary](https://www.audible.com/blog/summary-think-and-grow-rich-by-napoleon-hill)
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Twitter, Instagram & Social Media Presence"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-15-social-media-twitter-instagram-presence"
+  - "david goggins - twitter, insta"
+  - "social media platforms"
+  - "instagram (@davidgoggins)"
+  - "twitter / x (@davidgoggins)"
+  - "facebook"
+  - "rise to internet fame"
+  - "timeline"
+  - "meme culture"
+  - "iconic phrases & quotes"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Twitter, Instagram & Social Media Presence
 
 **Source:** Web Search - "David Goggins Twitter Instagram social media presence quotes"
@@ -219,3 +243,5 @@ News Nation Now featured story: "How a 'haunting' voice drives David Goggins to 
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

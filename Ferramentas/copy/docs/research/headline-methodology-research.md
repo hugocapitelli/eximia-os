@@ -1,3 +1,27 @@
+---
+title: "Headline Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "headline-methodology-research"
+  - "headline methodology research"
+  - "metadata"
+  - "parte 1: fundamentos científic"
+  - "a importância do headline - po"
+  - "parte 2: schwartz - 38 técnica"
+  - "o sistema de intensificação"
+  - "categoria 1: técnicas de mediç"
+  - "categoria 2: técnicas de demon"
+  - "categoria 3: schwartz - headli"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Headline Methodology Research
 
 Pesquisa profunda sobre metodologias de headlines de alta conversão, compilando técnicas dos maiores copywriters da história.
@@ -1472,3 +1496,5 @@ headline_quality_checklist:
 *Sources: 5 Master Copywriters*
 *Total Techniques: 120+*
 *Analyzed Headlines: 50+*
+
+#galaxy-tools

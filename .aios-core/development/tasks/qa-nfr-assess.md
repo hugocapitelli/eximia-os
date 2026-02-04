@@ -1,3 +1,27 @@
+---
+title: "nfr-assess"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "qa-nfr-assess"
+  - "nfr-assess"
+  - "inputs"
+  - "purpose"
+  - "process"
+  - "0. fail-safe for missing input"
+  - "1. elicit scope"
+  - "2. check for thresholds"
+  - "3. quick assessment"
+  - "4. generate outputs"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 <!-- Powered by AIOS™ Core -->
 
 ---
@@ -555,4 +579,5 @@ performance_deep_dive:
 ```
 
 </details>
- 
+
+#galaxy-runtime

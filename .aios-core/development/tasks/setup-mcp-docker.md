@@ -1,3 +1,27 @@
+---
+title: "Setup Docker MCP Toolkit"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "setup-mcp-docker"
+  - "setup docker mcp toolkit"
+  - "purpose"
+  - "aios default mcps"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Setup Docker MCP Toolkit
 
 **Task ID:** setup-mcp-docker
@@ -625,3 +649,5 @@ changelog:
   1.0.0:
     - Initial version with stdio transport
 ```
+
+#galaxy-runtime

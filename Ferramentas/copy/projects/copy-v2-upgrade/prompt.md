@@ -1,3 +1,27 @@
+---
+title: "Copy Framework v2.0 Upgrade - Swarm Execution Context"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt"
+  - "copy framework v2.0 upgrade - "
+  - "project overview"
+  - "critical corrections (will cau"
+  - "research-first methodology"
+  - "tier structure"
+  - "agent golden standard"
+  - "minimum line requirements"
+  - "execution phases"
+  - "phase 1: parallel (49 stories)"
+tags:
+  - "galaxy-tools"
+  - "prompt"
+---
+
 # Copy Framework v2.0 Upgrade - Swarm Execution Context
 
 ## Project Overview
@@ -182,3 +206,5 @@ Before marking any story complete:
 - PRIMARY: `outputs/minds/dan_kennedy/sources/books/No B.S. Price Strategy.pdf`
 
 See `local-sources-map.yaml` for complete mapping.
+
+#galaxy-tools

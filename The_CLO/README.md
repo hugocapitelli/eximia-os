@@ -1,3 +1,27 @@
+---
+title: "Themis Sentinel CLO"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "themis sentinel clo"
+  - "📋 overview"
+  - "🎯 capabilities"
+  - "core competencies"
+  - "key features"
+  - "🚀 quick start"
+  - "prompt location"
+  - "example query"
+  - "expected response"
+tags:
+  - "galaxy-specialist"
+  - "documentation"
+---
+
 # Themis Sentinel CLO
 
 > *"Sou o Department of HOW, não o Department of NO."*
@@ -190,3 +214,7 @@ Created via Z_Squad methodology for eximIA.AI ecosystem.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+[[The_CEO/agente_core.md]]
+[[The_CFO/README.md]]
+#galaxy-specialist

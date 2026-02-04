@@ -1,3 +1,27 @@
+---
+title: "david-ogilvy"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "david-ogilvy"
+  - "complete agent definition foll"
+  - "=============================="
+  - "operational frameworks - hormo"
+  - "communication dna - hormozi st"
+  - "signature phrases - 42 total"
+  - "authority proof arsenal - horm"
+  - "objection algorithms - hormozi"
+  - "ogilvy's specific rules"
+  - "mmos integration note"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # david-ogilvy
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -1405,3 +1429,5 @@ capabilities:
 ## MMOS Integration Note
 
 Quando a integração MMOS estiver ativa, este agente será substituído pelo clone cognitivo completo de David Ogilvy (`minds.slug: david_ogilvy`).
+
+#galaxy-operational

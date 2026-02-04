@@ -1,3 +1,27 @@
+---
+title: "improve-self"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "improve-self"
+  - "purpose"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "step-by-step execution"
+  - "step 1: request validation"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # improve-self
 
 **Task ID:** `improve-self`  
@@ -820,4 +844,6 @@ module.exports = {
 - Code quality scores
 - Test coverage changes
 - User satisfaction
-- Rollback frequency 
+- Rollback frequency
+
+#galaxy-runtime

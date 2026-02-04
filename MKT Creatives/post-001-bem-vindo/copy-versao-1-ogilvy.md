@@ -1,3 +1,22 @@
+---
+title: "COPY VERSÃO 1: ESTILO OGILVY"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copy-versao-1-ogilvy"
+  - "copy versão 1: estilo ogilvy"
+  - "post principal"
+  - "manifesto (descrição do perfil"
+  - "uso recomendado"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # COPY VERSÃO 1: ESTILO OGILVY
 **Características**: Sofisticado, Branding, Elegante
 
@@ -61,3 +80,5 @@ Seja bem-vindo ao futuro que já começou.
 - **Plataforma**: LinkedIn, Instagram corporativo
 - **Público**: C-level, tomadores de decisão estratégica
 - **Tom**: Profissional, inspirador, premium
+
+#galaxy-tools

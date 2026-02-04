@@ -1,3 +1,27 @@
+---
+title: "KB_06 — Financial Modeling"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-financial-modeling"
+  - "kb_06 — financial modeling"
+  - "1. fundamentos de modelagem fi"
+  - "o que é um modelo financeiro"
+  - "tipos de modelos"
+  - "2. three-statement model"
+  - "estrutura (rosenbaum & pearl, "
+  - "linkages críticos"
+  - "drivers típicos"
+  - "3. dcf best practices"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_06 — Financial Modeling
 
 ## 1. Fundamentos de Modelagem Financeira
@@ -216,3 +240,5 @@ Tab Structure:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

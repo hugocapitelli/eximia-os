@@ -1,3 +1,27 @@
+---
+title: "KB_02: Compliance & Anticorrupção"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-compliance"
+  - "kb_02: compliance & anticorrup"
+  - "1. lei anticorrupção brasileir"
+  - "1.1 visão geral"
+  - "1.2 atos lesivos (art. 5º)"
+  - "1.3 sanções administrativas (a"
+  - "1.4 sanções judiciais (art. 19"
+  - "2. programa de integridade"
+  - "2.1 definição (decreto 11.129/"
+  - "2.2 elementos essenciais (cgu "
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_02: Compliance & Anticorrupção
 
 **Categoria:** ESTRATEGIA  
@@ -297,3 +321,5 @@ triggers:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

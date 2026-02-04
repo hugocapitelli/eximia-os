@@ -1,3 +1,27 @@
+---
+title: "C2B PSYCHOMETRIC ANALYST — Agente de Métricas de Personalidade"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "c2b psychometric analyst — age"
+  - "identidade"
+  - "missão"
+  - "protocolo operacional"
+  - "1. big five / ocean"
+  - "2. disc profile"
+  - "3. kolb learning style"
+  - "4. enneagram"
+  - "5. processo de análise"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2B PSYCHOMETRIC ANALYST — Agente de Métricas de Personalidade
 
 ## IDENTIDADE
@@ -411,3 +435,5 @@ output:
 **Clone Factory Module:** C2B
 **Tipo:** Sub-Agente de Extração
 **Changelog v2.0:** Adicionado Kolb Learning Style e Enneagram como métricas obrigatórias
+
+#galaxy-creation

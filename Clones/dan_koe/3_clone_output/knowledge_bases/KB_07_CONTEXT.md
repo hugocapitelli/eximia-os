@@ -1,3 +1,27 @@
+---
+title: "KB_07_CONTEXT — Dan Koe"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-context"
+  - "kb_07_context — dan koe"
+  - "objetivo"
+  - "timeline completa"
+  - "era 1: formacao (1995-2013)"
+  - "era 2: educacao e primeiras te"
+  - "era 3: falhas de negocios (201"
+  - "era 4: breakthrough (2020-2022"
+  - "era 5: maturidade e escala (20"
+  - "eventos formativos criticos"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07_CONTEXT — Dan Koe
 
 ## Objetivo
@@ -177,3 +201,5 @@ Acessar para:
 ---
 
 **Clone Factory ID:** DAN_KOE-v1.0
+
+#galaxy-creation

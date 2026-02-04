@@ -680,4 +680,6 @@ After review:
 
 - **No Action Required**: The sync happens transparently when using story-manager utilities. If sync fails, story file is still saved locally with a warning message.
 
-- **Manual Sync**: If needed, use: `npm run sync-story -- --story {epic}.{story}` 
+- **Manual Sync**: If needed, use: `npm run sync-story -- --story {epic}.{story}`
+
+#galaxy-runtime

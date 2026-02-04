@@ -1,3 +1,27 @@
+---
+title: "Task: Bootstrap Supabase Project"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-bootstrap"
+  - "task: bootstrap supabase proje"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Bootstrap Supabase Project
 
 **Purpose**: Create standard Supabase project structure
@@ -640,3 +664,5 @@ Add to pipeline:
 - `*smoke-test` - Validate setup
 - `*snapshot baseline` - Create initial snapshot
 - `*env-check` - Validate environment
+
+#galaxy-runtime

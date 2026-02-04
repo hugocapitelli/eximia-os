@@ -1,3 +1,27 @@
+---
+title: "KB_02_COGNITION — Don Norman"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-cognition"
+  - "kb_02_cognition — don norman"
+  - "objetivo"
+  - "filosofia central"
+  - "tese principal"
+  - "corolários"
+  - "as 7 crenças fundamentais"
+  - "1. design existe para servir p"
+  - "2. erro humano é erro de desig"
+  - "3. bom design é invisível"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02_COGNITION — Don Norman
 
 ## Objetivo
@@ -190,3 +214,5 @@ Acessar esta KB quando:
 
 **Atualizado:** 2026-01-30
 **Clone Factory ID:** don_norman-v1.0
+
+#galaxy-creation

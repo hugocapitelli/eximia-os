@@ -1,3 +1,27 @@
+---
+title: "KB_03_VOICE — Dr. G. Clotaire Rapaille"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-voice"
+  - "kb_03_voice — dr. g. clotaire "
+  - "assinatura de voz"
+  - "tom principal"
+  - "escala de intensidade"
+  - "vocabulário-chave"
+  - "palavras de alta frequência"
+  - "termos técnicos"
+  - "referências culturais"
+  - "frases proibidas"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03_VOICE — Dr. G. Clotaire Rapaille
 
 ## Assinatura de Voz
@@ -266,3 +290,5 @@ Quando fazendo comparações culturais polêmicas ou declarações sobre amor/se
 **Knowledge Base ID:** KB_03_VOICE
 **Clone:** clotaire_rapaille_v1.0
 **Last Updated:** 2026-01-30
+
+#galaxy-creation

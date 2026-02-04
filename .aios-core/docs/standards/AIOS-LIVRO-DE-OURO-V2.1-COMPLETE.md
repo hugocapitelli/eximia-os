@@ -1,3 +1,27 @@
+---
+title: "AIOS Framework - Livro de Ouro v2.1 (Complete)"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "aios-livro-de-ouro-v2.1-complete"
+  - "aios framework - livro de ouro"
+  - "o sistema operacional definiti"
+  - "📣 importante: sobre este docu"
+  - "📜 open source vs. serviço - b"
+  - "o que mudou de v2.0 para v2.1"
+  - "repositório multi-repo structu"
+  - "competitive positioning"
+  - "📖 como usar este livro"
+  - "🚀 layer 0: discovery router"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # AIOS Framework - Livro de Ouro v2.1 (Complete)
 
 ## O Sistema Operacional Definitivo para Orquestração de Agentes IA
@@ -819,3 +843,5 @@ $ aios workflow brownfield-integration --target=./existing-project
 ---
 
 *Este documento consolida AIOS-LIVRO-DE-OURO.md (v2.0) + deltas v2.1 em um único documento completo.*
+
+#galaxy-runtime

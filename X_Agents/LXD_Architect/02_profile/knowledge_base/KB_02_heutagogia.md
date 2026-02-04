@@ -1,3 +1,27 @@
+---
+title: "KB_02: Heutagogia — Aprendizagem Autodeterminada"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-heutagogia"
+  - "kb_02: heutagogia — aprendizag"
+  - "visão geral"
+  - "o continuum pah (pedagogia → a"
+  - "7 princípios da heutagogia"
+  - "1. agência e propriedade do ap"
+  - "2. desenvolvimento de capabili"
+  - "3. metacognição e double-loop "
+  - "4. aprendizagem não-linear"
+  - "5. aprender a aprender"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_02: Heutagogia — Aprendizagem Autodeterminada
 
 ## Visão Geral
@@ -308,3 +332,5 @@ NÍVEL 5: HEUTAGOGIA PLENA
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

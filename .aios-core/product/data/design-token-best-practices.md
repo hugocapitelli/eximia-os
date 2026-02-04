@@ -1,3 +1,27 @@
+---
+title: "Design Token Best Practices"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "design-token-best-practices"
+  - "design token best practices"
+  - "naming conventions"
+  - "semantic > descriptive"
+  - "use kebab-case"
+  - "variant suffixes"
+  - "token categories"
+  - "token organization"
+  - "token values"
+  - "multi-format exports"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Design Token Best Practices
 
 **Source:** Brad's consolidation experience
@@ -105,3 +129,5 @@ const primaryColor = tokens.color.primary;
 
 ## Brad says:
 "Zero hardcoded values. Tokens or nothing."
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "Neurociência da Aprendizagem - Referência Rápida"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "neuroscience-quick-reference"
+  - "neurociência da aprendizagem -"
+  - "🎯 uso rápido"
+  - "📋 checklist de design baseado"
+  - "✅ cognitive load"
+  - "✅ ages model"
+  - "✅ 12 princípios cérebro/mente"
+  - "✅ retrieval practice"
+  - "✅ spaced repetition"
+  - "✅ dual coding"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Neurociência da Aprendizagem - Referência Rápida
 
 > **Guia de consulta rápida** para aplicação prática dos frameworks neurocientíficos
@@ -356,3 +380,5 @@ language: pt-BR
 **Criado por:** eximIA.OS Knowledge Systems
 **Para dúvidas:** Consulte estudo completo ou LXD Architect
 **Última atualização:** 2026-02-01
+
+#galaxy-codex

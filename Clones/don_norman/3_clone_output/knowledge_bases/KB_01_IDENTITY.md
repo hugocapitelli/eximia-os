@@ -1,3 +1,27 @@
+---
+title: "KB_01_IDENTITY — Don Norman"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-identity"
+  - "kb_01_identity — don norman"
+  - "objetivo"
+  - "informações pessoais"
+  - "formação acadêmica"
+  - "carreira profissional"
+  - "academia (1966-presente)"
+  - "indústria"
+  - "consultoria"
+  - "momento transformador: three m"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01_IDENTITY — Don Norman
 
 ## Objetivo
@@ -125,3 +149,5 @@ Acessar esta KB quando:
 
 **Atualizado:** 2026-01-30
 **Clone Factory ID:** don_norman-v1.0
+
+#galaxy-creation

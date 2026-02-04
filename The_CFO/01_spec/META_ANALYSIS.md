@@ -1,3 +1,27 @@
+---
+title: "META_ANALYSIS — CFO Agent"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "meta-analysis"
+  - "meta_analysis — cfo agent"
+  - "agent: cfo agent"
+  - "domain: corporate finance"
+  - "class: 2 (executive)"
+  - "1. knowledge domain map"
+  - "1.1 primary domain"
+  - "1.2 sub-domains"
+  - "1.3 adjacent domains"
+  - "2. skill taxonomy"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # META_ANALYSIS — CFO Agent
 
 ## Agent: CFO Agent
@@ -160,3 +184,5 @@ BEGINNER ──────► INTERMEDIATE ──────► ADVANCED ─�
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

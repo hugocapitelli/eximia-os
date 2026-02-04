@@ -1,3 +1,27 @@
+---
+title: "Deep Research: Video Ad Script Methodology"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "ad-script-methodology-research"
+  - "deep research: video ad script"
+  - "executive summary"
+  - "part 1: eugene schwartz's 5 le"
+  - "1.1 the awareness framework"
+  - "1.2 matching copy to awareness"
+  - "part 2: the hook-body-cta fram"
+  - "2.1 framework overview"
+  - "2.2 the hook (critical 1-5 sec"
+  - "2.3 the body (value delivery)"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Deep Research: Video Ad Script Methodology
 
 **Research ID:** ad-script-methodology
@@ -985,3 +1009,5 @@ Now they're at [after]"
 *Research compiled by Ralph Autonomous Agent*
 *Copy Framework v2.0 Upgrade Project*
 *Story: US-034*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "Email Sequence Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "email-sequence-methodology-research"
+  - "email sequence methodology res"
+  - "metadata"
+  - "part 1: foundations - why emai"
+  - "1.1 the psychology of sequenti"
+  - "1.2 the three masters of email"
+  - "part 2: andre chaperon - soap "
+  - "2.1 the revolution of story-dr"
+  - "2.2 the 5-email soap opera seq"
+  - "2.3 open loop methodology"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Email Sequence Methodology Research
 
 Documento de pesquisa profunda sobre metodologias de sequências de email dos maiores especialistas em email marketing do direct response.
@@ -1042,3 +1066,5 @@ The combination of these three methodologies creates sequences that people actua
 *Created: 2026-01-23*
 *Purpose: Foundation for create-email-sequence.md upgrade*
 *Line Count: 680+*
+
+#galaxy-tools

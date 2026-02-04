@@ -1,3 +1,27 @@
+---
+title: "KB_05_EXPERTISE — Elon Musk"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-expertise"
+  - "kb_05_expertise — elon musk"
+  - "objetivo"
+  - "áreas de domínio"
+  - "1. engenharia aeroespacial / f"
+  - "2. veículos elétricos / bateri"
+  - "3. energia solar / sustentável"
+  - "4. software / ai"
+  - "5. manufatura em escala"
+  - "6. business / capital"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05_EXPERTISE — Elon Musk
 
 ## Objetivo
@@ -102,3 +126,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

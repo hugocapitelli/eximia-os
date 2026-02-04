@@ -1,3 +1,27 @@
+---
+title: "KB_03 — Timeline e Entity Extraction"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-timeline-entities"
+  - "kb_03 — timeline e entity extr"
+  - "propósito"
+  - "1. extração de timeline"
+  - "1.1 tipos de eventos"
+  - "1.2 código de extração"
+  - "1.3 schema de timeline"
+  - "2. extração de entidades"
+  - "2.1 tipos de entidades"
+  - "2.2 código de extração"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03 — Timeline e Entity Extraction
 
 ## Propósito
@@ -258,3 +282,5 @@ goggins_entities = {
 
 **Versão:** 1.0
 **Clone Factory Module:** C2_Extractor
+
+#galaxy-creation

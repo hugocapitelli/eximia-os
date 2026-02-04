@@ -1,3 +1,27 @@
+---
+title: "AIOS Color Palette - Quick Reference"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "aios-color-palette-quick-reference"
+  - "aios color palette - quick ref"
+  - "🎨 visual palette"
+  - "brand colors"
+  - "functional colors"
+  - "neutral colors"
+  - "🚀 quick start"
+  - "javascript/node.js"
+  - "css/tailwind"
+  - "📋 common patterns"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # AIOS Color Palette - Quick Reference
 
 **Version:** 2.1.0 | **Status:** ✅ Active
@@ -183,3 +207,4 @@ Expected output:
 
 — Uma, desenhando com empatia 💝
 
+#galaxy-runtime

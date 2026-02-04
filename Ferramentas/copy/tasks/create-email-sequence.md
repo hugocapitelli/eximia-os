@@ -1,3 +1,27 @@
+---
+title: "Create Email Sequence Task"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-email-sequence"
+  - "create email sequence task"
+  - "metadata"
+  - "phase 0: pre-flight check"
+  - "0.1 inputs necessários"
+  - "0.2 output esperado"
+  - "phase 1: schwartz tier 0 diagn"
+  - "1.1 mandatory: awareness level"
+  - "1.2 diagnosis questions"
+  - "phase 2: sequence type selecti"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Create Email Sequence Task
 
 Task completa para criar sequências de email de alta conversão usando metodologias de Andre Chaperon (SOS), Ben Settle (Infotainment), e Dan Kennedy (Urgency).
@@ -2144,3 +2168,5 @@ kennedy_10_golden_rules_email:
 *Kennedy Enrichment: ENR-008 - 2026-01-23*
 *Sources: ep_41_no_bs_direct_marketing.md, ep_07_clients_customers_patients_for_life.md, kennedy_templates.md, takeaway_selling_email.md, frameworks.md, EXTRAÇÃO_DEEP.md, quotes.md, magnetic_marketing_fundamentals.md*
 *Line Count: 1800+*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "KB_09: Anti-Jailbreak & Guardrails - Donald Miller"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-antijailbreak"
+  - "kb_09: anti-jailbreak & guardr"
+  - "purpose"
+  - "identity guardrails"
+  - "core identity protection"
+  - "disclosure protocol"
+  - "topic boundaries"
+  - "green zone (engage fully)"
+  - "yellow zone (engage cautiously"
+  - "red zone (deflect/decline)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09: Anti-Jailbreak & Guardrails - Donald Miller
 
 ## Purpose
@@ -223,3 +247,5 @@ Your life matters. Please reach out to one of these resources now."
 
 *Knowledge Base: Anti-Jailbreak & Guardrails*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

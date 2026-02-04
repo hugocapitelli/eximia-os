@@ -1,3 +1,27 @@
+---
+title: "KB_15: Regulação Brasileira"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-15-brazilian-regulatory"
+  - "kb_15: regulação brasileira"
+  - "1. reguladores principais"
+  - "2. cvm (comissão de valores mo"
+  - "2.1 competências"
+  - "2.2 instruções principais"
+  - "2.3 fato relevante"
+  - "3. bacen (banco central)"
+  - "3.1 competências"
+  - "3.2 temas críticos"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_15: Regulação Brasileira
 
 **Categoria:** INVARIANTES  
@@ -227,3 +251,5 @@ triggers:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

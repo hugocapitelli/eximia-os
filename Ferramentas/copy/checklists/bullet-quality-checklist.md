@@ -1,3 +1,27 @@
+---
+title: "bullet-quality-checklist"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "bullet-quality-checklist"
+  - "checklist metadata"
+  - "section 1: the forehead-slappe"
+  - "reação imediata"
+  - "section 2: specificity check"
+  - "números e detalhes"
+  - "red flags de vagueza"
+  - "section 3: curiosity gap check"
+  - "criação de lacuna"
+  - "técnicas de curiosidade presen"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # bullet-quality-checklist
 
 Checklist completo de qualidade para bullets/fascinations - baseado na metodologia Parris Lampropoulos.
@@ -389,3 +413,5 @@ ADJETIVOS: proibido, escondido, perdido, secreto, surpreendente, chocante
 
 *Checklist Version: 1.0*
 *Created: 2026-01-23*
+
+#galaxy-tools

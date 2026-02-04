@@ -1,3 +1,27 @@
+---
+title: "FERRAMENTA DE APOIO - JOE SUGARMAN"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "06-ferramenta-sugarman"
+  - "ferramenta de apoio - joe suga"
+  - "dados fundamentais"
+  - "como usar este checklist"
+  - "os 30 triggers psicológicos"
+  - "bloco 1: conexão e envolviment"
+  - "bloco 2: motivadores primários"
+  - "bloco 3: urgência e ação (trig"
+  - "bloco 4: curiosidade e emoção "
+  - "bloco 5: narrativa e especific"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # FERRAMENTA DE APOIO - JOE SUGARMAN
 
 > Este NÃO é um clone para escrever copy do zero. É um checklist para TURBINAR copy existente injetando gatilhos psicológicos testados.
@@ -346,3 +370,5 @@ PARA INFO-PRODUTO:
 Triggers devem fluir naturalmente.
 Se parecer artificial, o leitor percebe.
 ```
+
+#galaxy-tools

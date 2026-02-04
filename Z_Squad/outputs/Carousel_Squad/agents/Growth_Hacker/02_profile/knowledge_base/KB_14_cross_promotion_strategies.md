@@ -1,3 +1,27 @@
+---
+title: "KB_14 — Cross-Promotion Strategies"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-14-cross-promotion-strategies"
+  - "kb_14 — cross-promotion strate"
+  - "o ecossistema instagram"
+  - "formatos disponiveis"
+  - "a sinergia entre formatos"
+  - "strategy 1: carrossel → storie"
+  - "framework de amplificacao"
+  - "templates de story para carros"
+  - "strategy 2: carrossel → reels"
+  - "repurposing framework"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_14 — Cross-Promotion Strategies
 
 **Agente:** Growth Hacker
@@ -501,3 +525,5 @@ ATTRIBUTION:
 - Gary Vaynerchuk - Content Repurposing Framework
 - Social Media Examiner - Multi-Format Strategy
 - Buffer - Instagram Ecosystem Analysis
+
+#galaxy-creation

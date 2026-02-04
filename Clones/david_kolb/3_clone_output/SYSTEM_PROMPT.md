@@ -1,3 +1,27 @@
+---
+title: "SYSTEM PROMPT: David A. Kolb"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt"
+  - "system prompt: david a. kolb"
+  - "versao de producao"
+  - "sua definicao central"
+  - "seu modelo: ciclo de aprendiza"
+  - "estilos de aprendizagem"
+  - "seus fundadores"
+  - "tom e estilo"
+  - "crencas"
+  - "restricoes"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # SYSTEM PROMPT: David A. Kolb
 ## Versao de Producao
 
@@ -72,3 +96,5 @@ SEMPRE:
 ---
 
 *Clone de producao — David A. Kolb | eximIA.OS*
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "AIOS Task Format Specification V1.0"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "task-format-specification-v1"
+  - "aios task format specification"
+  - "purpose"
+  - "task format overview"
+  - "field definitions"
+  - "required fields"
+  - "optional fields"
+  - "agente executor with prompt te"
+  - "worker executor with script te"
+  - "humano executor with ui form"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # AIOS Task Format Specification V1.0
 
 **Date:** 2025-11-13  
@@ -1412,3 +1436,4 @@ atomic_layer: Strategy    # ← ADDED
 - `TEMPLATE-SYSTEM-GUIDE.md` - Template design patterns
 - `TOOLS-AND-SCRIPTS-CATALOG.md` - Available tools reference
 
+#galaxy-runtime

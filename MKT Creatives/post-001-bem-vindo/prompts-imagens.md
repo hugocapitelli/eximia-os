@@ -1,3 +1,27 @@
+---
+title: "PROMPTS DE IMAGEM — POST BEM-VINDO exímIA"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompts-imagens"
+  - "prompts de imagem — post bem-v"
+  - "🎯 prompt 1: hero image (image"
+  - "🎯 prompt 2: carrossel - slide"
+  - "🎯 prompt 3: carrossel - slide"
+  - "🎯 prompt 4: carrossel - slide"
+  - "🎯 prompt 5: alternativa - con"
+  - "🎯 prompt 6: alternativa - con"
+  - "✅ checklist de qualidade (apli"
+  - "🎨 direção de arte - referênci"
+tags:
+  - "galaxy-tools"
+  - "prompt"
+---
+
 # PROMPTS DE IMAGEM — POST BEM-VINDO exímIA
 **Projeto**: Post de lançamento / Welcome post
 **Público-alvo**: Líderes, empreendedores, tomadores de decisão (25-50 anos)
@@ -259,3 +283,5 @@ Antes de usar qualquer imagem gerada, validar:
 **Gerado para**: exímIA - Post de Boas-Vindas (Post 001)
 **Data**: 30/01/2026
 **Versão**: 1.0
+
+#galaxy-tools

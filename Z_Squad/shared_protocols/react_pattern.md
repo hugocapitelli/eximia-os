@@ -1,3 +1,27 @@
+---
+title: "ReAct Pattern — Z Squad Protocol"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "react-pattern"
+  - "react pattern — z squad protoc"
+  - "🎯 propósito"
+  - "1. o que é react?"
+  - "2. as 3 fases"
+  - "reason (raciocinar)"
+  - "act (agir)"
+  - "observe (observar)"
+  - "3. implementação por módulo"
+  - "z1 architect"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # ReAct Pattern — Z Squad Protocol
 
 ## 🎯 Propósito
@@ -205,3 +229,5 @@ Para evitar loops infinitos:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

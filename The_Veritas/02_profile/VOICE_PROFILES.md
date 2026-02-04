@@ -1,3 +1,27 @@
+---
+title: "VOICE_PROFILES — The_Veritas"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "voice-profiles"
+  - "voice_profiles — the_veritas"
+  - "agent: the_veritas"
+  - "domain: deep research / intell"
+  - "registros de voz"
+  - "1. voz acadêmica (40%)"
+  - "quando usar"
+  - "características"
+  - "frases típicas"
+  - "exemplo de output"
+tags:
+  - "galaxy-core"
+  - "agent-profile"
+---
+
 # VOICE_PROFILES — The_Veritas
 
 ## Agent: The_Veritas
@@ -209,3 +233,5 @@ das fontes oficiais e **não apresenta metodologia verificável**.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

@@ -1,3 +1,27 @@
+---
+title: "Web Search: Tim Ferriss Morning Routine & Daily Habits"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-08-morning-routine"
+  - "web search: tim ferriss mornin"
+  - "filosofia da rotina matinal"
+  - "princípio core"
+  - "components da morning routine"
+  - "1. no screens (primeira hora)"
+  - "2. hydration"
+  - "3. making the bed"
+  - "4. light physical activity ("s"
+  - "5. "titanium tea" (blend espec"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Web Search: Tim Ferriss Morning Routine & Daily Habits
 
 **Query:** morning routine daily habits rituals meditation journaling  
@@ -135,3 +159,4 @@ Quando fala sobre rotina, Tim usa:
 - IntelligentChange.com (5-Minute Journal)
 - Mashable.com
 
+#galaxy-creation

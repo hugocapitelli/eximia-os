@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Agent Tiers & Effort Estimation"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-agent-tiers"
+  - "kb_02 — agent tiers & effort e"
+  - "o sistema de tiers do eximia.o"
+  - "tier 1: tactical agents"
+  - "definição"
+  - "características"
+  - "effort estimate"
+  - "componentes"
+  - "exemplos eximia.os"
+  - "quando usar tier 1"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_02 — Agent Tiers & Effort Estimation
 
 ## O Sistema de Tiers do eximIA.OS
@@ -379,3 +403,5 @@ estimate_usado: 10h
 **Última Atualização:** 2026-01-24
 **Mantido por:** The Scheduler
 **Fonte:** Histórico real de criação de agentes eximIA.OS
+
+#galaxy-specialist

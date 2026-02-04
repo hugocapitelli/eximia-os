@@ -1,3 +1,27 @@
+---
+title: "KB_15 — Brasil Regulatory (CVM, B3, BACEN)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-15-brasil-regulatory"
+  - "kb_15 — brasil regulatory (cvm"
+  - "1. visão geral do mercado de c"
+  - "reguladores principais"
+  - "2. cvm — regulamentação 2024"
+  - "ofertas públicas"
+  - "opa — novas regras 2024 (cvm 2"
+  - "portabilidade de investimentos"
+  - "investimentos de não residente"
+  - "3. b3 — segmentos de listagem"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_15 — Brasil Regulatory (CVM, B3, BACEN)
 
 ## 1. Visão Geral do Mercado de Capitais Brasil
@@ -195,3 +219,5 @@ Objetivo: Facilitar acesso de empresas menores ao mercado.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

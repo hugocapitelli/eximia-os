@@ -1,3 +1,27 @@
+---
+title: "DNA Mental - Harven_Editor (EditorOS)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental - harven_editor (ed"
+  - "1. crencas centrais"
+  - "2. principios de decisao"
+  - "3. frameworks / metodos"
+  - "framework 1: the elements of s"
+  - "framework 2: orwell's rules fo"
+  - "framework 3: checklist de limp"
+  - "framework 4: preservacao de in"
+  - "4. estilo de comunicacao"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental - Harven_Editor (EditorOS)
 
 **Gerado por:** Z2 Profiler
@@ -259,3 +283,5 @@ notas_do_profiler: "Agente focado em forma, nao conteudo. Deve ser invisivel - o
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

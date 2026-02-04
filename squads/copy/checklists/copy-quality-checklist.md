@@ -1,3 +1,27 @@
+---
+title: "Copy Quality Checklist"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copy-quality-checklist"
+  - "copy quality checklist"
+  - "visão geral"
+  - "1. headline check ✍️"
+  - "clareza"
+  - "impacto"
+  - "técnica"
+  - "2. lead check 📖"
+  - "engajamento"
+  - "relevância"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Copy Quality Checklist
 
 ## Visão Geral
@@ -258,3 +282,5 @@ Conte os ✅ e calcule:
 
 *Checklist Version: 1.0*
 *CopywriterOS - Elite Copywriting Squad*
+
+#galaxy-operational

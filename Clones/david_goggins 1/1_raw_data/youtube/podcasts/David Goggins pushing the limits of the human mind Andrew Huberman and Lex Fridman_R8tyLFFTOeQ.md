@@ -1,3 +1,24 @@
+---
+title: "David Goggins pushing the limits of the human mind | Andrew Huberman and Lex Fridman"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "david goggins pushing the limits of the human mind andrew huberman and lex fridman-r8tylfftoeq"
+  - "david goggins pushing the limi"
+  - "transcrição"
+  - "metadados técnicos"
+  - "obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins pushing the limits of the human mind | Andrew Huberman and Lex Fridman
 
 **URL:** https://www.youtube.com/watch?v=R8tyLFFTOeQ
@@ -101,3 +122,5 @@ what's  interesting
 **Family:** [[Clones]]
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

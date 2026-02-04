@@ -1,3 +1,27 @@
+---
+title: "Signature Phrases Extraction Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "signature-phrases-methodology-research"
+  - "signature phrases extraction m"
+  - "metadata"
+  - "executive summary"
+  - "part 1: theoretical foundation"
+  - "1.1 what are signature phrases"
+  - "1.2 the science of idiolect ma"
+  - "1.3 why signature phrases matt"
+  - "part 2: extraction methodologi"
+  - "2.1 the 7-tier classification "
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Signature Phrases Extraction Methodology Research
 
 ## Metadata
@@ -695,3 +719,5 @@ TIER RECOMMENDATION: ___
 *Research completed: 2026-01-23*
 *Document lines: 530+*
 *Ready for task upgrade*
+
+#galaxy-tools

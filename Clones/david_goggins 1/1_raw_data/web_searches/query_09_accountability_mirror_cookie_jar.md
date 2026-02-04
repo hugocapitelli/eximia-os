@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Accountability Mirror & Cookie Jar Techniques"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-09-accountability-mirror-cookie-jar"
+  - "david goggins - accountability"
+  - "accountability mirror"
+  - "overview"
+  - "implementation"
+  - "philosophy"
+  - "purpose"
+  - "cookie jar technique"
+  - "the metaphor"
+  - "how to create your cookie jar"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Accountability Mirror & Cookie Jar Techniques
 
 **Source:** Web Search - "David Goggins accountability mirror cookie jar technique"
@@ -144,3 +168,5 @@ Both techniques are designed to:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

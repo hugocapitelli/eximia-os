@@ -1,3 +1,27 @@
+---
+title: "Podcast Analysis: Naval Ravikant Episode #97"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "episode-097-naval-ravikant-analysis"
+  - "podcast analysis: naval ravika"
+  - "episode overview"
+  - "main topics covered"
+  - "key themes & insights"
+  - "on honesty"
+  - "on habit formation"
+  - "on happiness"
+  - "on non-judgmental awareness"
+  - "on american dream"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Podcast Analysis: Naval Ravikant Episode #97
 
 **Episode:** #97 - "The Person I Call Most for Startup Advice"  
@@ -130,3 +154,4 @@ One of the MOST POPULAR episodes of The Tim Ferriss Show. Naval Ravikant discuss
 - Highly popular episode
 - Rich conversational data
 
+#galaxy-creation

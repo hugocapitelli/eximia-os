@@ -1,3 +1,27 @@
+---
+title: "C2B Psychometric Analysis: Peter Thiel"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2b-psychometric-analysis"
+  - "c2b psychometric analysis: pet"
+  - "big five personality profile"
+  - "ocean scores (estimated)"
+  - "big five detailed analysis"
+  - "openness to experience: 92/100"
+  - "conscientiousness: 88/100 (hig"
+  - "extraversion: 35/100 (low)"
+  - "agreeableness: 28/100 (low)"
+  - "neuroticism: 40/100 (low-moder"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2B Psychometric Analysis: Peter Thiel
 
 ## Big Five Personality Profile
@@ -251,3 +275,5 @@ This combination produces someone who:
 
 *C2B_PsychometricAnalyst | Phase 2 ETL*
 *Assessment Based On: Public interviews, written works, documented behavior*
+
+#galaxy-creation

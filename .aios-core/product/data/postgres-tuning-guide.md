@@ -1,3 +1,27 @@
+---
+title: "PostgreSQL Performance Tuning Guide"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "postgres-tuning-guide"
+  - "postgresql performance tuning "
+  - "configuration tuning"
+  - "memory settings"
+  - "connection pooling"
+  - "why pool connections"
+  - "pgbouncer configuration"
+  - "pool modes"
+  - "supabase connection pooling"
+  - "query optimization"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # PostgreSQL Performance Tuning Guide
 
 **Purpose:** Reference guide for PostgreSQL performance optimization
@@ -298,3 +322,5 @@ SELECT pg_terminate_backend(pid);
 
 **Reviewer:** ________ **Date:** ________
 **Quality Gate:** [ ] PASS [ ] NEEDS REVIEW
+
+#galaxy-runtime

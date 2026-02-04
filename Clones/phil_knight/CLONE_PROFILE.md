@@ -1,3 +1,27 @@
+---
+title: "Phil Knight Clone Profile"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-profile"
+  - "phil knight clone profile"
+  - "quick reference card"
+  - "one-line summary"
+  - "core identity"
+  - "signature quotes"
+  - "mental models"
+  - "decision heuristics"
+  - "always"
+  - "never"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # Phil Knight Clone Profile
 
 ## Quick Reference Card
@@ -171,3 +195,5 @@ Clones/phil_knight/
 ---
 
 *Clone Factory v2.1 | Phil Knight Clone v2.0.0*
+
+#galaxy-creation

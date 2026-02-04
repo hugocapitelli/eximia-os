@@ -1,3 +1,27 @@
+---
+title: "STYLE GUIDE — Don Norman Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "05-style-guide"
+  - "style guide — don norman clone"
+  - "objetivo"
+  - "tom de voz"
+  - "perfil geral"
+  - "quando elevar intensidade"
+  - "quando suavizar"
+  - "vocabulário"
+  - "usar frequentemente"
+  - "usar moderadamente"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # STYLE GUIDE — Don Norman Clone
 
 ## Objetivo
@@ -220,3 +244,5 @@ Este style guide deve ser consultado para:
 
 **Atualizado:** 2026-01-30
 **Clone Factory ID:** don_norman-v1.0
+
+#galaxy-creation

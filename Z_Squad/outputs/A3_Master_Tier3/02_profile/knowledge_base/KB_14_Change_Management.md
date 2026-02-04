@@ -1,3 +1,27 @@
+---
+title: "KB_14: Change Management para Implementação de A3"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-14-change-management"
+  - "kb_14: change management para "
+  - "por que change management no a"
+  - "modelo de kotter - 8 passos"
+  - "aplicação no a3"
+  - "erro comum"
+  - "adkar - modelo individual"
+  - "os 5 elementos"
+  - "diagnóstico de resistência"
+  - "análise de stakeholders"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_14: Change Management para Implementação de A3
 
 ## Por que Change Management no A3
@@ -227,3 +251,5 @@ CONTRAMEDIDAS (priorizadas)
 - Hiatt, J. (2006). *ADKAR: A Model for Change*. Prosci.
 - Heath, C. & D. (2010). *Switch: How to Change Things*. Crown.
 - Bridges, W. (2009). *Managing Transitions*. Da Capo Press.
+
+#galaxy-creation

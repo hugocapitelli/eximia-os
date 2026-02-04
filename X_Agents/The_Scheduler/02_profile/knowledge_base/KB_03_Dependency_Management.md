@@ -1,3 +1,27 @@
+---
+title: "KB_03 — Dependency Management"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-dependency-management"
+  - "kb_03 — dependency management"
+  - "o que são dependências de agen"
+  - "tipos de dependências"
+  - "1. hard dependency (bloqueante"
+  - "2. soft dependency (melhoria)"
+  - "3. circular dependency (anti-p"
+  - "padrões comuns de dependências"
+  - "padrão 1: foundation agent"
+  - "padrão 2: executor + orchestra"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_03 — Dependency Management
 
 ## O que são Dependências de Agentes?
@@ -488,3 +512,5 @@ Decision: BUILD NOW
 
 **Última Atualização:** 2026-01-24
 **Mantido por:** The Scheduler
+
+#galaxy-specialist

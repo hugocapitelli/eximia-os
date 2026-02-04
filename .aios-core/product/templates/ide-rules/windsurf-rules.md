@@ -1,3 +1,27 @@
+---
+title: "Synkra AIOS Development Rules for Windsurf"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "windsurf-rules"
+  - "synkra aios development rules "
+  - "aios agent integration"
+  - "development workflow"
+  - "story-driven development"
+  - "code standards"
+  - "testing requirements"
+  - "documentation"
+  - "aios-specific patterns"
+  - "working with workflows"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Synkra AIOS Development Rules for Windsurf
 
 ## AIOS Agent Integration
@@ -77,4 +101,6 @@ project/
 - Reference story IDs in commits
 
 ---
-*Synkra AIOS Configuration v1.0* 
+*Synkra AIOS Configuration v1.0*
+
+#galaxy-runtime

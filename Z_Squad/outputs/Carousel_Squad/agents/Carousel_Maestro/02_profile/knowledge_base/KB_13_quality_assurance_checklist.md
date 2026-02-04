@@ -1,3 +1,27 @@
+---
+title: "KB_13 — Quality Assurance Checklist"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-13-quality-assurance-checklist"
+  - "kb_13 — quality assurance chec"
+  - "o sistema de qa do carousel ma"
+  - "checklist master: pre-publish "
+  - "nível 1: conteúdo"
+  - "nível 2: copy"
+  - "nível 3: design"
+  - "nível 4: caption e hashtags"
+  - "checklist por tipo de carrosse"
+  - "qa específico: educational/how"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_13 — Quality Assurance Checklist
 
 **Agente:** Carousel Maestro
@@ -359,3 +383,5 @@ _______________________________________________
 - [Content QA Checklist - Content Marketing Institute](https://contentmarketinginstitute.com)
 - [The Checklist Manifesto - Atul Gawande](https://atulgawande.com)
 - ISO 9001: Quality Management Systems
+
+#galaxy-creation

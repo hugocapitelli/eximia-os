@@ -1,3 +1,27 @@
+---
+title: "Regression Test Suite V2.0"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "regression-suite-v2"
+  - "regression test suite v2.0"
+  - "overview"
+  - "test environment setup"
+  - "prerequisites"
+  - "test data setup"
+  - "task execution tests"
+  - "priority 1 - core development "
+  - "priority 2 - agent-specific ta"
+  - "priority 3 - utility tasks"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Regression Test Suite V2.0
 
 **Created:** 2025-01-17  
@@ -619,3 +643,4 @@ When updating this test suite:
 **Last Updated:** 2025-01-17  
 **Maintained By:** Dev Team
 
+#galaxy-runtime

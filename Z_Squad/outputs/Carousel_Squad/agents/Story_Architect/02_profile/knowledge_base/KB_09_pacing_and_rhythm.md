@@ -1,3 +1,27 @@
+---
+title: "KB_09 — Pacing and Rhythm"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-pacing-and-rhythm"
+  - "kb_09 — pacing and rhythm"
+  - "o que e pacing?"
+  - "os tres ritmos basicos"
+  - "ritmo rapido (staccato)"
+  - "ritmo medio (legato)"
+  - "ritmo lento (largo)"
+  - "mapa de pacing para 10 slides"
+  - "tecnicas de controle de ritmo"
+  - "1. comprimento de frase"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09 — Pacing and Rhythm
 
 **Agente:** Story Architect
@@ -308,3 +332,5 @@ Ajuste baseado em:
 - Sol Stein, Stein on Writing
 - K.M. Weiland, Structuring Your Novel
 - Film editing principles (Walter Murch)
+
+#galaxy-creation

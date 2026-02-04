@@ -1,3 +1,27 @@
+---
+title: "Z4 — THE AUDITOR"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "z4 — the auditor"
+  - "🎯 missão"
+  - "🛡️ filosofia"
+  - "🧠 arquitetura cognitiva"
+  - "fase 1: input collection (cole"
+  - "fase 2: test battery design (d"
+  - "fase 3: test execution (execuç"
+  - "fase 4: report generation (rel"
+  - "📦 output final"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Z4 — THE AUDITOR
 
 **Função:** Validador e Testador Adversarial
@@ -149,3 +173,5 @@ Se `REJECTED` ou `APPROVED WITH CONDITIONS`:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Create Close Script Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-close-script"
+  - "create close script task"
+  - "task metadata"
+  - "purpose"
+  - "when to use this task"
+  - "high-value use cases"
+  - "ideal scenarios"
+  - "foundational frameworks"
+  - "framework 1: the closer framew"
+  - "framework 2: the pain funnel ("
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Close Script Task
 
 ## Task Metadata
@@ -1431,3 +1455,5 @@ generated_output:
 *Last Updated: 2026-01-23*
 *Primary Frameworks: CLOSER (Hormozi), Pain Funnel (Sandler), SPIN (Rackham), NEPQ (Miner)*
 *Minimum Output: 600 lines*
+
+#galaxy-operational

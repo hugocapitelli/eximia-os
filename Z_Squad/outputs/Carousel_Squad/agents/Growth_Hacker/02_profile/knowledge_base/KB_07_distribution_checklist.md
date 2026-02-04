@@ -1,3 +1,27 @@
+---
+title: "KB_07 — Distribution Checklist"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-distribution-checklist"
+  - "kb_07 — distribution checklist"
+  - "filosofia de distribuicao"
+  - "pre-publicacao checklist"
+  - "72h antes: planejamento"
+  - "24h antes: preparacao"
+  - "2h antes: aquecimento"
+  - "30min antes: checagem final"
+  - "publicacao checklist"
+  - "momento t-0: publicando"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07 — Distribution Checklist
 
 **Agente:** Growth Hacker
@@ -395,3 +419,5 @@ FOLLOW-UP (24-48h)
 - Later.com - Post Scheduling Best Practices
 - Buffer - Social Media Distribution
 - Social Media Examiner - Cross-Platform Strategy
+
+#galaxy-creation

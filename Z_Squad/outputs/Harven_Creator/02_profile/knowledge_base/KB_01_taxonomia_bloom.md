@@ -1,3 +1,27 @@
+---
+title: "KB_01: Taxonomia de Bloom para Geracao de Perguntas"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-taxonomia-bloom"
+  - "kb_01: taxonomia de bloom para"
+  - "visao geral"
+  - "os 6 niveis (do mais baixo ao "
+  - "nivel 1: lembrar (evitar)"
+  - "nivel 2: compreender (usar com"
+  - "nivel 3: aplicar (preferir)"
+  - "nivel 4: analisar (preferir)"
+  - "nivel 5: avaliar (preferir)"
+  - "nivel 6: criar (usar)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01: Taxonomia de Bloom para Geracao de Perguntas
 
 ## Visao Geral
@@ -109,3 +133,5 @@ Antes de finalizar uma pergunta, verifique:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_04: Diagrama de Ishikawa 6M"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-diagrama-ishikawa-6m"
+  - "kb_04: diagrama de ishikawa 6m"
+  - "origem"
+  - "o que é"
+  - "os 6m da manufatura"
+  - "1. método (method)"
+  - "2. medida (measurement)"
+  - "3. mão de obra (manpower)"
+  - "4. máquina (machine)"
+  - "5. material (material)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04: Diagrama de Ishikawa 6M
 
 ## Origem
@@ -196,3 +220,5 @@ O Ishikawa e os 5 Porquês são frequentemente usados juntos:
 - [EdrawSoft - 6M Method](https://www.edrawsoft.com/6m-method.html)
 - [Wikipedia - Ishikawa Diagram](https://en.wikipedia.org/wiki/Ishikawa_diagram)
 - [Ease.io - Understanding the 6Ms](https://www.ease.io/blog/understanding-the-6ms-of-process-control/)
+
+#galaxy-creation

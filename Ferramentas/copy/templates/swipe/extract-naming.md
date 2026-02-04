@@ -1,3 +1,26 @@
+---
+title: "NAMING/BRANDING EXTRACTION PROMPT"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "extract-naming"
+  - "naming/branding extraction pro"
+  - "source material"
+  - "what makes a great brand name"
+  - "7 naming archetypes (brazilian"
+  - "extraction rules"
+  - "naming formulas to extract"
+  - "magic words (high conversion i"
+  - "output"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # NAMING/BRANDING EXTRACTION PROMPT
 
 You are extracting brand naming patterns and case studies for a swipe file library.
@@ -84,3 +107,5 @@ Geram urgência: "Últimas", "Hoje", "Agora", "Limitado"
 
 ## OUTPUT
 Extract ALL qualifying brand names with full analysis. Output ONLY valid YAML array.
+
+#galaxy-tools

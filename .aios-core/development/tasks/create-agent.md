@@ -319,4 +319,6 @@ The elicitation workflow is now handled by `aios-core/elicitation/agent-elicitat
    1. Run *update-manifest to add agent to team
    2. Test agent with /{agent-name} command
    3. Create any needed task dependencies
-``` 
+```
+
+#galaxy-runtime

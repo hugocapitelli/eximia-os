@@ -1,3 +1,27 @@
+---
+title: "claude-hopkins"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "claude-hopkins"
+  - "complete agent definition foll"
+  - "=============================="
+  - "metadata"
+  - "voice dna (from mmos linguisti"
+  - "operational frameworks (10)"
+  - "communication dna"
+  - "signature phrases (42)"
+  - "authority proof arsenal"
+  - "objection algorithms (5)"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # claude-hopkins
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -1852,3 +1876,5 @@ capabilities:
 ## MMOS Integration Note
 
 Quando a integração MMOS estiver ativa, este agente será substituído pelo clone cognitivo completo de Claude Hopkins (`minds.slug: claude_hopkins`).
+
+#galaxy-tools

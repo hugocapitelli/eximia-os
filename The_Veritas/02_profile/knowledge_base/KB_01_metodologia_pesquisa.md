@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Metodologia de Pesquisa Avançada"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-metodologia-pesquisa"
+  - "kb_01 — metodologia de pesquis"
+  - "categoria: teoria"
+  - "palavras: ~3,000"
+  - "atualizado: 2026-01-07"
+  - "1. fundamentos da pesquisa"
+  - "o que é pesquisa?"
+  - "tipos de pesquisa"
+  - "2. o ciclo de pesquisa"
+  - "modelo ooda adaptado para pesq"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_01 — Metodologia de Pesquisa Avançada
 
 ## Categoria: TEORIA
@@ -221,3 +245,5 @@ Survey representa 15% do universo, margem de erro 4%
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

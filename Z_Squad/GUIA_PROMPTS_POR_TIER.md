@@ -1,3 +1,27 @@
+---
+title: "Guia de Prompts para Criação de Agentes por Tier"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "guia-prompts-por-tier"
+  - "guia de prompts para criação d"
+  - "🎯 propósito"
+  - "📊 resumo dos tiers"
+  - "🟢 tier 1: tactical (básico)"
+  - "quando usar"
+  - "prompt de criação"
+  - "solicitação: agente tier 1 (ta"
+  - "agente desejado"
+  - "contexto"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # Guia de Prompts para Criação de Agentes por Tier
 
 ## 🎯 Propósito
@@ -453,3 +477,5 @@ Este guia está alinhado com:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

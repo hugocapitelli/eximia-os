@@ -1,3 +1,27 @@
+---
+title: "KB_16: Project Management Methods"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-16-proj-mgmt"
+  - "kb_16: project management meth"
+  - "🎯 when to apply"
+  - "📋 methodologies"
+  - "agile (default)"
+  - "waterfall"
+  - "kanban"
+  - "🔄 project structures"
+  - "pdca cycle"
+  - "sprint template"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_16: Project Management Methods
 
 > **Category**: STRATEGY  
@@ -77,3 +101,5 @@ For complex requests:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

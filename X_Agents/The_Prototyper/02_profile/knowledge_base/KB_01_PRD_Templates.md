@@ -1,3 +1,27 @@
+---
+title: "KB-01: PRD Templates & Best Practices"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-prd-templates"
+  - "kb-01: prd templates & best pr"
+  - "1. fundamentos"
+  - "o que é um prd?"
+  - "princípios core"
+  - "2. prd templates"
+  - "2.1 standard prd template (com"
+  - "prd: [nome do feature]"
+  - "1. executive summary"
+  - "2. problem statement"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB-01: PRD Templates & Best Practices
 
 ## 1. Fundamentos
@@ -471,3 +495,5 @@ PRD QUALITY CHECKLIST
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

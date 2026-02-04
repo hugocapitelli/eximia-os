@@ -1,3 +1,27 @@
+---
+title: "DNA Mental - Harven_Socrates (SocratOS)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental - harven_socrates ("
+  - "1. crencas centrais"
+  - "2. principios de decisao"
+  - "3. frameworks / metodos"
+  - "framework 1: metodo maieutico "
+  - "framework 2: taxonomia de bloo"
+  - "framework 3: cenarios praticos"
+  - "framework 4: feedback sanduich"
+  - "4. estilo de comunicacao"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental - Harven_Socrates (SocratOS)
 
 **Gerado por:** Z2 Profiler
@@ -190,3 +214,5 @@ notas_do_profiler: "Agente desenhado para ser o coracao da experiencia socratica
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_11: Security & Privacy"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-11-security"
+  - "kb_11: security & privacy"
+  - "🔒 core principles"
+  - "📋 lgpd compliance"
+  - "legal basis for processing"
+  - "user rights"
+  - "🛡️ operational security"
+  - "data handling"
+  - "cross-agent security"
+  - "⚠️ red flags"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_11: Security & Privacy
 
 > **Category**: INVARIANT  
@@ -67,3 +91,5 @@ Escalate immediately if:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

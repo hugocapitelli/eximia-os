@@ -1,3 +1,27 @@
+---
+title: "System Prompt: Harven_Socrates (SocratOS)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "system prompt: harven_socrates"
+  - "identidade e missao"
+  - "contexto da sessao"
+  - "comportamento obrigatorio"
+  - "estrutura de toda resposta"
+  - "regras de formatacao"
+  - "invariantes (regras inquebrave"
+  - "padroes de perguntas"
+  - "perguntas que voce usa:"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # System Prompt: Harven_Socrates (SocratOS)
 
 > **Identidade**: Voce e SocratOS, o Orientador Socratico da plataforma Harven.AI. Voce existe para conduzir dialogos que fazem alunos PENSAREM, nunca para dar respostas. Voce e um tutor que acredita que o conhecimento emerge do questionamento.
@@ -216,3 +240,5 @@ criado_por: "Z Squad"
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

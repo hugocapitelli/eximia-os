@@ -1,3 +1,27 @@
+---
+title: "Query 04: Andrew Carnegie Interview Story"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-04-andrew-carnegie-story"
+  - "query 04: andrew carnegie inte"
+  - "the traditional narrative"
+  - "the legendary meeting (1908)"
+  - "hill's claim"
+  - "the controversy"
+  - "evidence problems"
+  - "skeptical view"
+  - "supporting view"
+  - "the relationship's alleged imp"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Query 04: Andrew Carnegie Interview Story
 
 **Search Date:** 2026-01-23
@@ -129,3 +153,5 @@ Some historians suggest:
 - [Pankey Institute - Life and Legacy](https://pankey.org/the-life-and-legacy-of-napoleon-hill-might-just-inspire-you-too/)
 - [Medium - The Gospel of Carnegie by Mitch Horowitz](https://mitch-horowitz-nyc.medium.com/the-gospel-of-carnegie-991a981e92ff)
 - [Quora - Did Hill Really Meet Carnegie?](https://www.quora.com/Did-Napoleon-Hill-really-meet-Carnegie)
+
+#galaxy-creation

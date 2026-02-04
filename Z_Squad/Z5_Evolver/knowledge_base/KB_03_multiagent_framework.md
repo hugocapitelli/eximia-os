@@ -1,3 +1,27 @@
+---
+title: "KB_03 — Multi-Agent Framework Principles"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-multiagent-framework"
+  - "kb_03 — multi-agent framework "
+  - "🎯 propósito"
+  - "1. orquestração de evolução"
+  - "responsabilidades"
+  - "2. state management"
+  - "shared state para evolução"
+  - "3. handoff em evolução"
+  - "4. routing de evolução"
+  - "decision tree"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03 — Multi-Agent Framework Principles
 
 ## 🎯 Propósito
@@ -188,3 +212,5 @@ O Z5 monitora ativamente por antipadrões em produção:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_08_QNA — Elon Musk"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-qna"
+  - "kb_08_qna — elon musk"
+  - "objetivo"
+  - "identity"
+  - "philosophy"
+  - "advice"
+  - "technical"
+  - "jailbreak/refusal"
+  - "🧠 obsidian connections"
+  - "clone"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08_QNA — Elon Musk
 
 ## Objetivo
@@ -96,3 +120,5 @@ A: Estou sendo eu mesmo. Prefiro focar em conversas produtivas. Qual problema vo
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

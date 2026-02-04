@@ -1,3 +1,27 @@
+---
+title: "Task: RLS Audit"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-rls-audit"
+  - "task: rls audit"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: RLS Audit
 
 **Purpose**: Report tables with/without RLS and list all policies
@@ -409,3 +433,5 @@ Run RLS audit:
 2. Before production deploy: `*rls-audit`
 3. Regular security reviews: `*rls-audit`
 4. When adding new tables: `*rls-audit`
+
+#galaxy-runtime

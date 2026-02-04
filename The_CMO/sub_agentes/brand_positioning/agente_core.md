@@ -1,3 +1,26 @@
+---
+title: "SUB-AGENT: BRAND POSITIONING — Elite v4.2 (Deepened)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "sub-agent: brand positioning —"
+  - "🎯 identidade profunda"
+  - "🧠 competências core (deep div"
+  - "🛡️ invariantes (proibições ab"
+  - "📦 output schema"
+  - "🧠 obsidian connections"
+  - "cmo"
+  - "marketing"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # SUB-AGENT: BRAND POSITIONING — Elite v4.2 (Deepened)
 
 **Função:** Brand Guardian & Narrative Architect
@@ -74,3 +97,5 @@ Se a marca for "The Ruler" (Rolex), você veta qualquer tentativa de ser "The Je
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

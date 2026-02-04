@@ -1,3 +1,27 @@
+---
+title: "KB_04: Teoria Geral dos Contratos"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-contracts"
+  - "kb_04: teoria geral dos contra"
+  - "1. fundamentos"
+  - "1.1 conceito de contrato"
+  - "1.2 requisitos de validade (cc"
+  - "2. princípios contratuais"
+  - "2.1 princípios clássicos"
+  - "2.2 princípios modernos"
+  - "3. formação do contrato"
+  - "3.1 fases"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_04: Teoria Geral dos Contratos
 
 **Categoria:** TEORIA  
@@ -245,3 +269,5 @@ red_flags:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

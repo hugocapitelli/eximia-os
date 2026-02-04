@@ -1,3 +1,27 @@
+---
+title: "KB_01 — RICE Prioritization Framework"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-rice-prioritization"
+  - "kb_01 — rice prioritization fr"
+  - "o que é rice?"
+  - "os 4 componentes"
+  - "1. reach (alcance)"
+  - "2. impact (impacto)"
+  - "3. confidence (confiança)"
+  - "4. effort (esforço)"
+  - "calculando rice"
+  - "exemplo 1: the_negotiator"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_01 — RICE Prioritization Framework
 
 ## O que é RICE?
@@ -315,3 +339,5 @@ Bugs menores: compare com RICE equivalente
 
 **Última Atualização:** 2026-01-24
 **Mantido por:** The Scheduler
+
+#galaxy-specialist

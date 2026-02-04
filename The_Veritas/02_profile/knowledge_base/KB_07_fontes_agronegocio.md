@@ -1,3 +1,27 @@
+---
+title: "KB_07 — Fontes Oficiais Agronegócio"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-fontes-agronegocio"
+  - "kb_07 — fontes oficiais agrone"
+  - "categoria: estratégia"
+  - "palavras: ~2,500"
+  - "atualizado: 2026-01-07"
+  - "1. fontes tier 1 (governamenta"
+  - "global"
+  - "brasil"
+  - "outros países"
+  - "2. relatórios periódicos chave"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_07 — Fontes Oficiais Agronegócio
 
 ## Categoria: ESTRATÉGIA
@@ -245,3 +269,5 @@ PASSO 4: Conclusão
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

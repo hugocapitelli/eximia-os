@@ -1,3 +1,27 @@
+---
+title: "KB_04: Estrutura de Metadados para Perguntas Enriquecidas"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-metadados-perguntas"
+  - "kb_04: estrutura de metadados "
+  - "visao geral"
+  - "campos obrigatorios"
+  - "1. text (string)"
+  - "2. skill (enum)"
+  - "3. intention (string)"
+  - "4. expected_depth (string)"
+  - "5. common_shallow_answer (stri"
+  - "6. followup_prompts (array)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04: Estrutura de Metadados para Perguntas Enriquecidas
 
 ## Visao Geral
@@ -196,3 +220,5 @@ Para 3 perguntas, garantir:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

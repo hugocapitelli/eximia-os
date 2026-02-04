@@ -1,3 +1,27 @@
+---
+title: "Create Landing Page Task"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-landing-page"
+  - "create landing page task"
+  - "metadata"
+  - "fase 0: diagnóstico obrigatóri"
+  - "por que awareness level é mand"
+  - "os 5 níveis de consciência de "
+  - "checklist de diagnóstico"
+  - "fase 1: coleta de inputs"
+  - "inputs obrigatórios"
+  - "inputs opcionais"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Create Landing Page Task
 
 Task completo para criar landing pages de alta conversão usando metodologias científicas de CRO e copywriting.
@@ -1254,3 +1278,5 @@ pie_framework:
 *Line Count: 600+*
 *Primary Frameworks: MECLABS, Schwartz, Unbounce CCD, StoryBrand, Hopkins*
 *Page Types: Squeeze, Webinar, Waitlist, Demo, Sales*
+
+#galaxy-tools

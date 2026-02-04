@@ -1,3 +1,27 @@
+---
+title: "KB_08: Error Handling"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-error-handling"
+  - "kb_08: error handling"
+  - "🚨 error categories"
+  - "level 1: recoverable"
+  - "level 2: degraded"
+  - "level 3: critical"
+  - "🔄 recovery protocols"
+  - "veritas timeout"
+  - "specialist unavailable"
+  - "infinite loop detection"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_08: Error Handling
 
 > **Category**: PROTOCOL  
@@ -93,3 +117,5 @@ Use 5 Whys to find root cause.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

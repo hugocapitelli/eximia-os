@@ -1,3 +1,27 @@
+---
+title: "STRESS TEST RESULTS: CFO v3.0 vs X_Agente_CFO"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "stress-test-results"
+  - "stress test results: cfo v3.0 "
+  - "test configuration"
+  - "caso 1: m&a e alocação de capi"
+  - "cenário"
+  - "pergunta"
+  - "cfo v3.0 response (simulado)"
+  - "x_agente_cfo response (simulad"
+  - "caso 2: macroeconomia e tesour"
+  - "caso 3: planejamento e unit ec"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # STRESS TEST RESULTS: CFO v3.0 vs X_Agente_CFO
 
 ## Test Configuration
@@ -477,3 +501,5 @@ Se o objetivo é melhorar resultado, posso ajudar com:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

@@ -1,3 +1,27 @@
+---
+title: "Development Module"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "development module"
+  - "structure"
+  - "agents (11 files)"
+  - "activation"
+  - "agent teams (5 files)"
+  - "tasks (115+ files)"
+  - "categories"
+  - "example usage"
+  - "workflows (7 files)"
+tags:
+  - "galaxy-runtime"
+  - "documentation"
+---
+
 # Development Module
 
 The Development module contains all agent-related assets: agent definitions, team configurations, tasks, workflows, and supporting scripts.
@@ -140,3 +164,5 @@ Smoke tests:
 - DEV-07: Story Management
 - DEV-08: Decision Log
 - DEV-09: Agent Exit Hooks
+
+#galaxy-runtime

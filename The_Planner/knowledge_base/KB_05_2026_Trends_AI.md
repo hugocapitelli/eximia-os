@@ -1,3 +1,27 @@
+---
+title: "KB_05: Strategic Planning Trends 2026 & AI Integration"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-2026-trends-ai"
+  - "kb_05: strategic planning tren"
+  - "🌐 strategic planning landscap"
+  - "mega-trends impacting annual p"
+  - "🤖 ai integration em strategic"
+  - "use cases de ai no planejament"
+  - "🛠️ tools & stack recomendados"
+  - "ai-powered planning tools"
+  - "workflow automation"
+  - "📊 practical templates: ai-enh"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_05: Strategic Planning Trends 2026 & AI Integration
 
 ## 🌐 Strategic Planning Landscape 2026
@@ -314,3 +338,5 @@ Agenda sync de emergência
 - Harvard Business Review: Continuous Planning Models
 - Quantive: State of OKRs 2026 Report
 - Notion AI Labs: Knowledge Work Automation
+
+#galaxy-specialist

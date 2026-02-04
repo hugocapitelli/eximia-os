@@ -1,3 +1,27 @@
+---
+title: "Copywriter Quality Checklist"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copywriter-quality-checklist"
+  - "copywriter quality checklist"
+  - "purpose"
+  - "como usar"
+  - "scoring system"
+  - "seção genérica (todos copywrit"
+  - "fundamentos (5 pontos)"
+  - "copywriters específicos"
+  - "1. gary halbert (🎯 o príncipe"
+  - "2. david ogilvy (🎩 o pai da p"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Copywriter Quality Checklist
 
 ## Purpose
@@ -322,3 +346,5 @@ Requirement: 8 checkpoints baseados em Signature Elements.
 *Checklist Version: 1.0*
 *CopywriterOS - Elite Copywriting Squad*
 *Integra com: docs/distinctiveness-metrics.md*
+
+#galaxy-operational

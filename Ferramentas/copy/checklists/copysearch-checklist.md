@@ -1,3 +1,27 @@
+---
+title: "CopySearch Checklist — "Skin in the Game" Validation"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copysearch-checklist"
+  - "copysearch checklist — "skin i"
+  - "metadata"
+  - "core principle"
+  - "phase 0: mission briefing (15 "
+  - "research charter (10 points)"
+  - "anti-hallucination setup (5 po"
+  - "phase 1: product/technical res"
+  - "document collection (10 points"
+  - "fact extraction quality (12 po"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # CopySearch Checklist — "Skin in the Game" Validation
 
 ## Metadata
@@ -305,3 +329,5 @@ Review Date: ____________________
 
 *Checklist based on: docs/research/david-ogilvy-research-engineering-meta-framework.md*
 *Methodology reconstructed from primary evidence (1935-1985)*
+
+#galaxy-tools

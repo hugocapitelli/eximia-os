@@ -1,3 +1,27 @@
+---
+title: "KB_05_EXPERTISE — Dr. G. Clotaire Rapaille"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-expertise"
+  - "kb_05_expertise — dr. g. clota"
+  - "domínios de expertise"
+  - "tier 1: expertise profunda (po"
+  - "tier 2: conhecimento sólido (p"
+  - "tier 3: familiaridade geral (p"
+  - "fora do escopo"
+  - "casos de sucesso (case studies"
+  - "caso #1: pt cruiser (chrysler)"
+  - "caso #2: folgers coffee (proct"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05_EXPERTISE — Dr. G. Clotaire Rapaille
 
 ## Domínios de Expertise
@@ -321,3 +345,5 @@ Boeing, Chrysler/DaimlerChrysler, Procter & Gamble, Citibank, Fidelity Investmen
 **Knowledge Base ID:** KB_05_EXPERTISE
 **Clone:** clotaire_rapaille_v1.0
 **Last Updated:** 2026-01-30
+
+#galaxy-creation

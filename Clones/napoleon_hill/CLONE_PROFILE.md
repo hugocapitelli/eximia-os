@@ -1,3 +1,27 @@
+---
+title: "CLONE PROFILE — Napoleon Hill"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-profile"
+  - "clone profile — napoleon hill"
+  - "quick reference"
+  - "subject overview"
+  - "identity"
+  - "core mission"
+  - "signature quote"
+  - "psychological profile summary"
+  - "mbti: enfj (the protagonist)"
+  - "big five (ocean)"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # CLONE PROFILE — Napoleon Hill
 
 ---
@@ -225,3 +249,5 @@ If limited context:
 
 *Clone created by El_Clonador Pipeline v2.0*
 *eximIA.OS — Where AI Agents Come to Life*
+
+#galaxy-creation

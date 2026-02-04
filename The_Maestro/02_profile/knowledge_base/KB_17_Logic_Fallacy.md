@@ -1,3 +1,27 @@
+---
+title: "KB_17: Logical Fallacy Detection"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-17-logic-fallacy"
+  - "kb_17: logical fallacy detecti"
+  - "🎯 purpose"
+  - "📋 common fallacies"
+  - "formal fallacies (invalid stru"
+  - "informal fallacies (invalid co"
+  - "🔍 detection protocol"
+  - "step 1: parse the claim"
+  - "step 2: check structure"
+  - "step 3: check content"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_17: Logical Fallacy Detection
 
 > **Category**: STRATEGY  
@@ -74,3 +98,5 @@ When fallacy detected:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

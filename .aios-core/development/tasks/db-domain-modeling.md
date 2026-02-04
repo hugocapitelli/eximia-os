@@ -1,3 +1,27 @@
+---
+title: "Task: Domain Modeling Session"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-domain-modeling"
+  - "task: domain modeling session"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Domain Modeling Session
 
 **Purpose**: Interactive session to model business domain into database schema
@@ -691,3 +715,5 @@ $$ LANGUAGE plpgsql;
 - [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design)
 - [PostgreSQL Data Types](https://www.postgresql.org/docs/current/datatype.html)
 - [Supabase RLS Policies](https://supabase.com/docs/guides/auth/row-level-security)
+
+#galaxy-runtime

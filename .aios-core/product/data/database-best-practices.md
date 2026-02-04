@@ -1,3 +1,27 @@
+---
+title: "Database Best Practices Guide"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "database-best-practices"
+  - "database best practices guide"
+  - "schema design"
+  - "naming conventions"
+  - "data types"
+  - "indexing strategy"
+  - "when to index"
+  - "index types"
+  - "index anti-patterns"
+  - "query optimization"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Database Best Practices Guide
 
 **Purpose:** Reference guide for database design and implementation patterns
@@ -180,3 +204,5 @@ DROP INDEX IF EXISTS idx_old_index;
 
 **Reviewer:** ________ **Date:** ________
 **Quality Gate:** [ ] PASS [ ] NEEDS REVIEW
+
+#galaxy-runtime

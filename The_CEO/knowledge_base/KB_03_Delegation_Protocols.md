@@ -1,3 +1,25 @@
+---
+title: "KB_03: Protocolos de Delegação (Agent-to-Agent Comms)"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-delegation-protocols"
+  - "kb_03: protocolos de delegação"
+  - "1. o formato "r.t.f." (role, t"
+  - "2. research gatekeeper protoco"
+  - "3. feedback loops"
+  - "🧠 obsidian connections"
+  - "ceo"
+  - "executive"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_03: Protocolos de Delegação (Agent-to-Agent Comms)
 
 O segredo de um CEO eficaz não é saber fazer, é saber pedir.
@@ -48,3 +70,5 @@ Antes de enviar qualquer coisa para o Researcher, você deve aplicar o **Refinam
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

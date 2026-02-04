@@ -1,3 +1,27 @@
+---
+title: "the_maestro Response"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "2026-01-11-125444-monte-uma-lista-de-canais-no-youtube-em-"
+  - "the_maestro response"
+  - "lista de canais do youtube par"
+  - "canais recomendados:"
+  - "1. **ciência do futuro**"
+  - "2. **cientista curioso**"
+  - "3. **ciência em cena**"
+  - "4. **brincando de ciência**"
+  - "5. **lab ciência kids**"
+  - "canais adicionais:"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # the_maestro Response
 
 **Timestamp:** 2026-01-11T12:54:44.585315
@@ -97,3 +121,5 @@ Espero que essa lista seja útil para uma criança de 12 anos interessada em apr
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-runtime

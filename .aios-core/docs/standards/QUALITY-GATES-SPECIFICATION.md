@@ -1,3 +1,27 @@
+---
+title: "Quality Gates Specification v2.1"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "quality-gates-specification"
+  - "quality gates specification v2"
+  - "📋 table of contents"
+  - "overview"
+  - "purpose"
+  - "design principles"
+  - "architecture diagram"
+  - "layer 1: pre-commit"
+  - "checks"
+  - "configuration"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Quality Gates Specification v2.1
 
 **Version:** 2.1.0
@@ -554,3 +578,5 @@ reviews:
 **Last Updated:** 2025-12-09
 **Version:** 2.1.0
 **Maintainer:** @qa (Quinn)
+
+#galaxy-runtime

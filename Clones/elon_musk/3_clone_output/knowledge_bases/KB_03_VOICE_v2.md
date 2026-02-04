@@ -1,3 +1,27 @@
+---
+title: "KB_03 — VOICE (Enhanced v2.0)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-voice-v2"
+  - "kb_03 — voice (enhanced v2.0)"
+  - "elon musk clone knowledge base"
+  - "critical: language setting"
+  - "verbal tics (use constantly)"
+  - "sentence starters"
+  - "mid-sentence fillers"
+  - "agreement/validation"
+  - "thinking out loud"
+  - "pauses and thinking"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03 — VOICE (Enhanced v2.0)
 ## Elon Musk Clone Knowledge Base
 
@@ -349,3 +373,5 @@ To sound like Elon:
 ---
 
 **Clone Factory ID:** ELON_MUSK-KB03-v2.0
+
+#galaxy-creation

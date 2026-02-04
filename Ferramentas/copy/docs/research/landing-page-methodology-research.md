@@ -1,3 +1,27 @@
+---
+title: "Landing Page Creation Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "landing-page-methodology-research"
+  - "landing page creation methodol"
+  - "metadata"
+  - "parte 1: fundamentos de conver"
+  - "o que faz uma landing page con"
+  - "a fórmula meclabs"
+  - "aplicação prática da fórmula"
+  - "parte 2: landing pages por nív"
+  - "por que awareness level import"
+  - "level 1: most aware"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Landing Page Creation Methodology Research
 
 Pesquisa profunda sobre metodologias de criação de landing pages de alta conversão, compilando frameworks de conversion optimization e copywriting.
@@ -1481,3 +1505,5 @@ quality_checklist:
 *Word Count: 11,000+*
 *Sources: MECLABS, Unbounce, StoryBrand, Schwartz, Hopkins, Copyhackers*
 *Focus: Landing Page CREATION Methodology*
+
+#galaxy-tools

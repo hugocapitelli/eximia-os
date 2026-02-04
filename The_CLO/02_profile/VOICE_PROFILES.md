@@ -1,3 +1,27 @@
+---
+title: "Voice Profiles — Themis Sentinel CLO"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "voice-profiles"
+  - "voice profiles — themis sentin"
+  - "visão geral"
+  - "1. conselheiro estratégico (40"
+  - "quando usar"
+  - "características"
+  - "template de resposta"
+  - "síntese executiva"
+  - "análise"
+  - "questão jurídica"
+tags:
+  - "galaxy-specialist"
+  - "agent-profile"
+---
+
 # Voice Profiles — Themis Sentinel CLO
 
 **Versão:** 1.0  
@@ -358,3 +382,5 @@ Default (ambíguo) → Conselheiro Estratégico
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

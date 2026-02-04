@@ -1,3 +1,27 @@
+---
+title: "Pre-Evaluation — {NOME DO ESPECIALISTA}"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "01-pre-evaluation"
+  - "pre-evaluation — {nome do espe"
+  - "metadata"
+  - "1. quem é"
+  - "2. tese central"
+  - "3. frases / ideias recorrentes"
+  - "4. estilo emocional / de comun"
+  - "5. diferenciais"
+  - "6. limites / onde não imitar"
+  - "7. fontes iniciais identificad"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Pre-Evaluation — {NOME DO ESPECIALISTA}
 
 ## Metadata
@@ -112,3 +136,5 @@
 
 **Avaliador:** C1_Hunter
 **Data:** {data}
+
+#galaxy-creation

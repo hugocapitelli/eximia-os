@@ -1,3 +1,27 @@
+---
+title: "Níveis de Pensamento - Guia Rápido"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "thinking-levels-quick-guide"
+  - "níveis de pensamento - guia rá"
+  - "🎯 os 5 níveis em 30 segundos"
+  - "📐 as 5 dimensões (rapid overv"
+  - "1. lines (width) - o que você "
+  - "2. levels (depth) - como você "
+  - "3. altitude (height) - média d"
+  - "4. quadrants (4d) - onde você "
+  - "5. time (5d) - padrões evoluti"
+  - "🚦 identify your level (self-a"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Níveis de Pensamento - Guia Rápido
 
 > **Quick Reference** para aplicação imediata do framework de altitude cognitiva
@@ -357,3 +381,5 @@ Dashboard gamificado:
 **Data:** 2026-02-01
 **Parent:** Thinking_Levels_Framework_LX_Synthesis.md
 **Status:** Ready for immediate application
+
+#galaxy-codex

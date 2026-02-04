@@ -1,3 +1,27 @@
+---
+title: "Create Big Marketing Idea - Todd Brown Framework"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-big-idea"
+  - "create big marketing idea - to"
+  - "purpose"
+  - "when to use"
+  - "todd brown on big ideas"
+  - "inputs"
+  - "the big idea formula"
+  - "workflow"
+  - "step 1: preparation check"
+  - "step 2: big idea discovery"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Create Big Marketing Idea - Todd Brown Framework
 
 ## Purpose
@@ -696,3 +720,5 @@ Intellectually Interesting
 *Created: 2026-01-23*
 *Framework: Todd Brown Big Idea Architecture - 5 Criteria*
 *Agent: @todd-brown*
+
+#galaxy-tools

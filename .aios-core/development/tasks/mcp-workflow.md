@@ -1,3 +1,27 @@
+---
+title: "MCP Workflow Creation Task"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "workflow"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "mcp-workflow"
+  - "mcp workflow creation task"
+  - "task definition"
+  - "pre-conditions"
+  - "interactive elicitation"
+  - "step 1: workflow basics"
+  - "step 2: mcp selection"
+  - "step 3: input/output specifica"
+  - "step 4: workflow logic"
+  - "step 5: error handling"
+tags:
+  - "galaxy-runtime"
+  - "workflow"
+---
+
 # MCP Workflow Creation Task
 
 > Create Code Mode workflows that execute in Docker MCP sandbox for ~98.7% token savings.
@@ -435,3 +459,5 @@ updated_at: 2025-12-08
 agents:
   - dev
 ```
+
+#galaxy-runtime

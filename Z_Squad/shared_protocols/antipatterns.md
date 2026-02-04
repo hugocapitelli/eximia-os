@@ -1,3 +1,27 @@
+---
+title: "Antipadrões — Z Squad"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "antipatterns"
+  - "antipadrões — z squad"
+  - "🎯 propósito"
+  - "1. antipadrões de arquitetura"
+  - "1.1 the god agent (o herói)"
+  - "1.2 micro-management (agentes "
+  - "1.3 context overload (telefone"
+  - "1.4 infinite loop (ping-pong)"
+  - "2. antipadrões de comunicação"
+  - "2.1 silent handoff"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Antipadrões — Z Squad
 
 ## 🎯 Propósito
@@ -200,3 +224,5 @@ Antes de cada entrega, verificar:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

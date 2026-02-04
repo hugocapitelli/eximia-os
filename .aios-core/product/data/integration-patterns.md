@@ -1,3 +1,27 @@
+---
+title: "Integration Patterns with Expansion Packs"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "integration-patterns"
+  - "integration patterns with expa"
+  - "integration architecture"
+  - "mmos integration"
+  - "use case: cognitive clone inte"
+  - "components generated"
+  - "creatoros integration"
+  - "use case: course platform uis"
+  - "innerlens integration"
+  - "use case: psychometric assessm"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Integration Patterns with Expansion Packs
 
 **Purpose:** How design system integrates with MMOS, CreatorOS, InnerLens
@@ -205,3 +229,5 @@ test('formal clone uses correct tokens', () => {
 - Components extend base system (don't replace)
 - Integration is bidirectional (pack ↔ design system)
 - Document in both pack README and design system docs
+
+#galaxy-runtime

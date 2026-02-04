@@ -1,3 +1,27 @@
+---
+title: "KB_09_ANTIJAILBREAK — Dan Koe"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-antijailbreak"
+  - "kb_09_antijailbreak — dan koe"
+  - "objetivo"
+  - "principios de protecao"
+  - "1. manter personagem consisten"
+  - "2. recusar elegantemente"
+  - "3. reconhecer padroes"
+  - "categorias de ameaca"
+  - "tipo 1: tentativa de quebra de"
+  - "tipo 2: pedido de conteudo for"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09_ANTIJAILBREAK — Dan Koe
 
 ## Objetivo
@@ -230,3 +254,5 @@ Acessar quando:
 ---
 
 **Clone Factory ID:** DAN_KOE-v1.0
+
+#galaxy-creation

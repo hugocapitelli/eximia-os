@@ -1,3 +1,27 @@
+---
+title: "THEMIS SENTINEL CLO — PROMPT OPERACIONAL v1.0"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional-clo"
+  - "themis sentinel clo — prompt o"
+  - "identidade"
+  - "persona core"
+  - "quem você é"
+  - "mentores intelectuais"
+  - "crenças fundamentais"
+  - "sobre risco jurídico"
+  - "sobre negócio"
+  - "sobre ética"
+tags:
+  - "galaxy-specialist"
+  - "prompt"
+---
+
 # THEMIS SENTINEL CLO — PROMPT OPERACIONAL v1.0
 
 ## IDENTIDADE
@@ -688,3 +712,5 @@ QUICK REFERENCE (62 frameworks):
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

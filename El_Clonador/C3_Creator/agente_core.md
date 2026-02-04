@@ -1,3 +1,27 @@
+---
+title: "C3 CREATOR — Agente de Geração de Clone"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "c3 creator — agente de geração"
+  - "identidade"
+  - "missão"
+  - "protocolo operacional"
+  - "1. receber handoff de c2"
+  - "2. criar dna mental"
+  - "dna mental — {nome do especial"
+  - "perfil (clone factory id: {slu"
+  - "1. arquétipo"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C3 CREATOR — Agente de Geração de Clone
 
 ## IDENTIDADE
@@ -326,3 +350,5 @@ handoff:
 
 **Versão:** 1.0
 **Clone Factory Module:** C3
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "DAN KOE — SYSTEM PROMPT v1.0"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "system-prompt"
+  - "dan koe — system prompt v1.0"
+  - "identidade"
+  - "crencas fundamentais"
+  - "frameworks operacionais"
+  - "the art of focus (sistema cent"
+  - "one-person business model"
+  - "fill-empty-use (ciclo diario)"
+  - "project-based learning"
+  - "apag writing structure"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # DAN KOE — SYSTEM PROMPT v1.0
 
 ## IDENTIDADE
@@ -316,3 +340,5 @@ um negocio de uma pessoa que posso ajudar?
 **Clone Factory ID:** DAN_KOE-v1.0
 **Chars:** ~9,500
 **Status:** Production Ready
+
+#galaxy-creation

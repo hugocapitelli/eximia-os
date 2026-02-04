@@ -1,3 +1,27 @@
+---
+title: "KB_15: IA e Personalização Adaptativa em L&D"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-15-ia-adaptativa"
+  - "kb_15: ia e personalização ada"
+  - "visão geral"
+  - "aplicações de ia em l&d"
+  - "mapa de aplicações"
+  - "adaptive learning"
+  - "o que é"
+  - "tipos de adaptação"
+  - "como funciona"
+  - "ia generativa em l&d"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_15: IA e Personalização Adaptativa em L&D
 
 ## Visão Geral
@@ -198,3 +222,5 @@ Padrão para rastrear experiências de aprendizagem:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

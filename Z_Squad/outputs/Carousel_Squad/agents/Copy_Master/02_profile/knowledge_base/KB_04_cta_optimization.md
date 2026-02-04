@@ -1,3 +1,27 @@
+---
+title: "KB_04 — CTA Optimization"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-cta-optimization"
+  - "kb_04 — cta optimization"
+  - "a anatomia do cta perfeito"
+  - "os 5 elementos de um cta efica"
+  - "1. verbo de acao"
+  - "2. beneficio claro"
+  - "3. urgencia/escassez"
+  - "4. reducao de risco"
+  - "5. especificidade"
+  - "ctas por objetivo de negocio"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04 — CTA Optimization
 
 **Agente:** Copy Master
@@ -347,3 +371,5 @@ X CTA longo demais: 3 paragrafos de CTA
 ---
 
 *"Um CTA fraco e como um vendedor que faz toda a apresentacao e esquece de pedir a venda."* — Copy Master
+
+#galaxy-creation

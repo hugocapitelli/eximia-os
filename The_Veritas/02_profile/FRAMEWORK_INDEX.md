@@ -1,3 +1,27 @@
+---
+title: "FRAMEWORK_INDEX — The_Veritas (Class 3 Expert)"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "framework-index"
+  - "framework_index — the_veritas "
+  - "agent: the_veritas"
+  - "domain: deep research / intell"
+  - "class: 3 (expert)"
+  - "frameworks catalogados"
+  - "1. credibility assessment (8)"
+  - "2. intelligence analysis (12)"
+  - "3. critical thinking (10)"
+  - "4. search & query logic (8)"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # FRAMEWORK_INDEX — The_Veritas (Class 3 Expert)
 
 ## Agent: The_Veritas
@@ -168,3 +192,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

@@ -1,3 +1,27 @@
+---
+title: "Setup Design System Structure"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "setup-design-system"
+  - "setup design system structure"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Setup Design System Structure
 
 > Task ID: atlas-setup-design-system
@@ -460,3 +484,5 @@ User selects 1
 - Base styles include CSS reset and token variables
 - Setup can be re-run safely (asks before overwriting)
 - Next step after setup: *build {pattern} to generate components
+
+#galaxy-runtime

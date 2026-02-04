@@ -1,3 +1,27 @@
+---
+title: "KB_04 — Conflict Types"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-conflict-types"
+  - "kb_04 — conflict types"
+  - "conflito: o motor da historia"
+  - "os 7 tipos fundamentais de con"
+  - "1. pessoa vs. self (conflito i"
+  - "2. pessoa vs. pessoa (conflito"
+  - "3. pessoa vs. sociedade (confl"
+  - "4. pessoa vs. natureza (confli"
+  - "5. pessoa vs. tecnologia (conf"
+  - "6. pessoa vs. tempo (conflito "
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04 — Conflict Types
 
 **Agente:** Story Architect
@@ -294,3 +318,5 @@ Slide 10:  LICAO + CTA
 - Blake Snyder, Save the Cat
 - John Truby, The Anatomy of Story
 - Christopher Booker, The Seven Basic Plots
+
+#galaxy-creation

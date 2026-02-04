@@ -1,3 +1,27 @@
+---
+title: "EXÍMIA FINANCE — Competitive Analysis 2025-2026"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "competitive-analysis-2025-2026"
+  - "exímia finance — competitive a"
+  - "who's doing what in brazilian "
+  - "competitor landscape"
+  - "direct competitors (brazil)"
+  - "matrix: features by competitor"
+  - "global comparison (internation"
+  - "tier 1: wealthy management (gl"
+  - "tier 2: investment-first"
+  - "tier 3: subscription tracking "
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # EXÍMIA FINANCE — Competitive Analysis 2025-2026
 ## Who's Doing What in Brazilian Fintech
 
@@ -503,3 +527,4 @@ OVERALL SCORE        6.5/10   6.8/10   8.2/10  7.5/10 6.5/10  8.8/10
 **Last Updated:** 2026-01-23
 **Next Review:** Post-MVP launch (Month 3)
 
+#galaxy-codex

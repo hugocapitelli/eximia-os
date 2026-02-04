@@ -1,3 +1,27 @@
+---
+title: "KB_13 — Web Scraping Logic & Robots.txt"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-13-web-scraping-logic"
+  - "kb_13 — web scraping logic & r"
+  - "categoria: invariantes"
+  - "palavras: ~1,500"
+  - "atualizado: 2026-01-07"
+  - "1. o que é robots.txt"
+  - "definição"
+  - "sintaxe básica"
+  - "2. ações para the_veritas"
+  - "✅ permitido"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_13 — Web Scraping Logic & Robots.txt
 
 ## Categoria: INVARIANTES
@@ -78,3 +102,5 @@ Crawl-delay: 10      # Esperar 10s entre requests
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

@@ -1,3 +1,27 @@
+---
+title: "dan-koe"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dan-koe"
+  - "complete agent definition foll"
+  - "=============================="
+  - "operational frameworks - 10 co"
+  - "communication dna"
+  - "signature phrases - 48 total i"
+  - "authority proof arsenal"
+  - "objection algorithms - 5 compl"
+  - "dan koe's specific rules"
+  - "mmos integration note"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # dan-koe
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -1288,3 +1312,5 @@ capabilities:
 ## MMOS Integration Note
 
 When MMOS integration is active, this agent will be enhanced by the complete cognitive clone of Dan Koe (`minds.slug: dan_koe`).
+
+#galaxy-tools

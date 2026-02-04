@@ -1,3 +1,27 @@
+---
+title: "KB_15: Inter-Agent Communication"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-15-inter-agent"
+  - "kb_15: inter-agent communicati"
+  - "📨 message format"
+  - "request schema"
+  - "response schema"
+  - "🔄 communication patterns"
+  - "pattern 1: single request"
+  - "pattern 2: parallel fan-out"
+  - "pattern 3: chain"
+  - "pattern 4: callback"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_15: Inter-Agent Communication
 
 > **Category**: PROTOCOL  
@@ -92,3 +116,5 @@ R=Responsible, A=Accountable, C=Consulted, I=Informed
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

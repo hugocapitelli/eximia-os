@@ -1,3 +1,27 @@
+---
+title: "Session Update Pattern"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "session-update-pattern"
+  - "session update pattern"
+  - "overview"
+  - "architecture"
+  - "integration points"
+  - "1. command execution wrapper"
+  - "2. agent transition tracking"
+  - "3. session-aware greeting"
+  - "session state structure"
+  - "session types"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Session Update Pattern
 
 **Integration Guide for Story 6.1.4**
@@ -312,3 +336,4 @@ const greeting = await builder.buildGreeting(agentDef, { conversationHistory });
 
 **Last Updated:** 2025-01-18 (Story 6.1.4)
 
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "KB_15 — SaaS Metrics & Benchmarks Sources"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-15-saas-metrics"
+  - "kb_15 — saas metrics & benchma"
+  - "categoria: estratégia"
+  - "palavras: ~2,000"
+  - "atualizado: 2026-01-07"
+  - "fonte: web research 2024"
+  - "1. fontes oficiais de benchmar"
+  - "tier 1 (vcs / surveys de escal"
+  - "tier 2 (data aggregators)"
+  - "2. métricas chave e benchmarks"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_15 — SaaS Metrics & Benchmarks Sources
 
 ## Categoria: ESTRATÉGIA
@@ -147,3 +171,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

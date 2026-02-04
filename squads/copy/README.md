@@ -1,3 +1,27 @@
+---
+title: "Copy — Elite Copywriting Squad v3.1"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "copy — elite copywriting squad"
+  - "quick start"
+  - "tier system"
+  - "standard workflow"
+  - "commands"
+  - "copy chief commands"
+  - "creation commands"
+  - "automated workflows"
+  - "squad structure"
+tags:
+  - "galaxy-operational"
+  - "documentation"
+---
+
 # Copy — Elite Copywriting Squad v3.1
 
 **Command:** `/copywriting` (aliases: `/cw`, `/copychief`, `/elite-copy`)
@@ -232,3 +256,5 @@ The Maestro routes copywriting requests to this squad automatically based on key
 *Copy Squad v3.1.0*
 *Migrated to AIOS Squad Format: 2026-01-29*
 *Research-First Methodology + Tier System*
+
+#galaxy-operational

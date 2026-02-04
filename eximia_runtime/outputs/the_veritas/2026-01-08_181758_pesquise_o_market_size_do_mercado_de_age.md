@@ -1,3 +1,25 @@
+---
+title: "the_veritas Response"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "2026-01-08-181758-pesquise-o-market-size-do-mercado-de-age"
+  - "the_veritas response"
+  - "⚠️ dado não verificável"
+  - "buscas realizadas"
+  - "alternativas"
+  - "confidence"
+  - "metadata"
+  - "🧠 obsidian connections"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # the_veritas Response
 
 **Timestamp:** 2026-01-08T18:17:58.581970
@@ -50,3 +72,5 @@ Não foi possível localizar dados específicos sobre o market size do mercado d
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-runtime

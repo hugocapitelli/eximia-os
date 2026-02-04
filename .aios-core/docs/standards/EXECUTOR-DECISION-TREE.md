@@ -1,3 +1,27 @@
+---
+title: "AIOS Executor Decision Tree"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "executor-decision-tree"
+  - "aios executor decision tree"
+  - "purpose"
+  - "the four executor types"
+  - "1. agente (ai-powered executio"
+  - "2. worker (script-based execut"
+  - "3. humano (manual human execut"
+  - "4. clone (mind emulation with "
+  - "decision tree"
+  - "detailed decision criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # AIOS Executor Decision Tree
 
 **Date:** 2025-11-13  
@@ -695,3 +719,4 @@ Use this checklist to decide executor type for any task:
 - `CLONE-ARCHITECTURE-GUIDE.md` - How to implement Clones
 - `WORKFLOW-ORCHESTRATION-GUIDE.md` - Executor execution patterns
 
+#galaxy-runtime

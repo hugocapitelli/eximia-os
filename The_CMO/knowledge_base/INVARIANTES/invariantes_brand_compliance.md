@@ -1,3 +1,25 @@
+---
+title: "INVARIANTES: MARKETING & GROWTH GUARDRAILS"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "invariantes-brand-compliance"
+  - "invariantes: marketing & growt"
+  - "🛑 halt/critical (circuit brea"
+  - "⚠️ warnings (quality check)"
+  - "✅ brand guidelines (imutáveis)"
+  - "🧠 obsidian connections"
+  - "cmo"
+  - "marketing"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # INVARIANTES: MARKETING & GROWTH GUARDRAILS
 
 **Agente:** x_agente_cmo
@@ -39,3 +61,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

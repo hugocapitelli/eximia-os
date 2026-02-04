@@ -1,3 +1,27 @@
+---
+title: "KB_13 — Platform Updates Tracker"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-13-platform-updates-tracker"
+  - "kb_13 — platform updates track"
+  - "por que acompanhar updates"
+  - "o impacto de mudancas de plata"
+  - "o ciclo de updates"
+  - "fontes oficiais (tier 1)"
+  - "canais essenciais"
+  - "fontes de industria (tier 2)"
+  - "publicacoes especializadas"
+  - "influencers/experts confiaveis"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_13 — Platform Updates Tracker
 
 **Agente:** Growth Hacker
@@ -538,3 +562,5 @@ PRIORIDADE 3 (scan ocasional):
 - Social Media Examiner
 - Matt Navarra (Social Media Consultant)
 - TechCrunch Social Media Coverage
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_01 — DNA Mental Guide"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-dna-mental-guide"
+  - "kb_01 — dna mental guide"
+  - "🎯 propósito"
+  - "1. o que é dna mental?"
+  - "2. estrutura oficial (template"
+  - "dna mental – [nome do agente]"
+  - "1. crenças centrais"
+  - "2. princípios de decisão"
+  - "3. frameworks / métodos"
+  - "4. estilo de comunicação"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — DNA Mental Guide
 
 ## 🎯 Propósito
@@ -131,3 +155,5 @@ Combinar contribuições de múltiplos clones em uma persona coerente, resolvend
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

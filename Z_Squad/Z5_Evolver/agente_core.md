@@ -1,3 +1,27 @@
+---
+title: "Z5 — THE EVOLVER"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "z5 — the evolver"
+  - "🎯 missão"
+  - "🔄 filosofia"
+  - "🧠 arquitetura cognitiva"
+  - "domínio 1: monitoring (monitor"
+  - "domínio 2: drift detection (de"
+  - "domínio 3: evolution proposal "
+  - "domínio 4: lifecycle managemen"
+  - "📦 outputs"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Z5 — THE EVOLVER
 
 **Função:** Engenheiro de Confiabilidade e Melhoria Contínua
@@ -184,3 +208,5 @@ PATCH: Correção (fix de prompt, ajuste de guardrail)
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

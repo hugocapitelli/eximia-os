@@ -1,3 +1,27 @@
+---
+title: "Objection Algorithms Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "objection-algorithms-methodology-research"
+  - "objection algorithms methodolo"
+  - "research overview"
+  - "table of contents"
+  - "1. psychology of objections"
+  - "1.1 what objections really rep"
+  - "1.2 the objection iceberg mode"
+  - "1.3 cognitive dissonance in ob"
+  - "1.4 the role of self-image"
+  - "2. classic objection handling "
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Objection Algorithms Methodology Research
 
 ## Research Overview
@@ -871,3 +895,5 @@ This creates a cohesive agent that handles objections with the same authenticity
 
 *CopywriterOS Research Documentation*
 *Part of the Copy Framework v2.0 Upgrade Project*
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "Evaluate Offer Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "evaluate-offer"
+  - "evaluate offer task"
+  - "purpose"
+  - "when to use"
+  - "primary triggers"
+  - "secondary triggers"
+  - "inputs required"
+  - "theoretical foundation"
+  - "the value equation (alex hormo"
+  - "grand slam offer definition"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Evaluate Offer Task
 
 **Task ID:** evaluate-offer
@@ -1082,3 +1106,5 @@ This task is based on comprehensive research documented in:
 *Last Updated: 2026-01-23*
 *Primary Framework: Hormozi Value Equation + Kennedy Direct Response*
 *Minimum Output: Complete scorecard with prioritized fixes*
+
+#galaxy-operational

@@ -1,3 +1,27 @@
+---
+title: "KB_03 — Avaliação de Fontes (CRAAP/SIFT/RADAR)"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-avaliacao-fontes"
+  - "kb_03 — avaliação de fontes (c"
+  - "categoria: estratégia"
+  - "palavras: ~2,500"
+  - "atualizado: 2026-01-07"
+  - "1. por que avaliar fontes?"
+  - "o problema"
+  - "2. sift method (recomendado pa"
+  - "origem"
+  - "as 4 etapas"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_03 — Avaliação de Fontes (CRAAP/SIFT/RADAR)
 
 ## Categoria: ESTRATÉGIA
@@ -269,3 +293,5 @@ CONCLUSÃO: Fonte não verificável, Tier 4
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

@@ -1,3 +1,27 @@
+---
+title: "CFO Agent — Class 3 Expert"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "cfo agent — class 3 expert"
+  - "🎯 quick start"
+  - "specs"
+  - "📚 knowledge bases"
+  - "🎓 competências"
+  - "🔗 structure"
+  - "✅ athena compliance"
+  - "📋 frameworks catalogue (65 to"
+  - "valuation & analysis (15)"
+tags:
+  - "galaxy-specialist"
+  - "documentation"
+---
+
 # CFO Agent — Class 3 Expert
 
 ## 🎯 Quick Start
@@ -231,3 +255,7 @@ The_CFO/
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+[[The_CEO/agente_core.md]]
+[[The_CLO/README.md]]
+#galaxy-specialist

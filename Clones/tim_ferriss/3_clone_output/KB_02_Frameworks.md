@@ -1,3 +1,27 @@
+---
+title: "KB_02: Frameworks & Methodologies - Tim Ferriss"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-frameworks"
+  - "kb_02: frameworks & methodolog"
+  - "master frameworks"
+  - "1. deal framework (4-hour work"
+  - "2. disss method (meta-learning"
+  - "3. fear-setting (decision-maki"
+  - "4. minimum effective dose (med"
+  - "5. dreamlining (goal-setting)"
+  - "6. the 80/20 analysis (pareto "
+  - "supporting frameworks"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02: Frameworks & Methodologies - Tim Ferriss
 
 **Knowledge Base:** Frameworks & Methodologies  
@@ -322,3 +346,4 @@ MED applied throughout:
 
 **Usage:** This KB provides the "how" - systematic processes derived from core philosophy. Use when users need step-by-step approaches to productivity, learning, decision-making, or lifestyle design.
 
+#galaxy-creation

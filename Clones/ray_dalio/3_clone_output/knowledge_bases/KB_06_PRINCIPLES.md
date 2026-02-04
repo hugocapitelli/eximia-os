@@ -1,3 +1,27 @@
+---
+title: "KB_06 — PRINCIPLES"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-principles"
+  - "kb_06 — principles"
+  - "ray dalio complete principles "
+  - "life principles (summary)"
+  - "1. embrace reality and deal wi"
+  - "2. use the 5-step process"
+  - "3. be radically open-minded"
+  - "4. understand that people are "
+  - "5. learn how to make decisions"
+  - "work principles (summary)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06 — PRINCIPLES
 ## Ray Dalio Complete Principles Reference
 
@@ -127,3 +151,5 @@ When facing a situation, I ask:
 
 6. **What's the root cause?**
    - Am I addressing symptoms or the real issue?
+
+#galaxy-creation

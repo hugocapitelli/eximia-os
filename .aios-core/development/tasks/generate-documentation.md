@@ -1,3 +1,27 @@
+---
+title: "Generate Pattern Library Documentation"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "generate-documentation"
+  - "generate pattern library docum"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Generate Pattern Library Documentation
 
 > Task ID: atlas-generate-documentation
@@ -282,3 +306,5 @@ Atlas says: "Documentation is code. Keep it fresh."
 - Updates when components change
 - Includes live Storybook links (if enabled)
 - Searchable by component name, prop, or token
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "KB_04 — Content Pillars Strategy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-content-pillars"
+  - "kb_04 — content pillars strate"
+  - "o que são content pillars?"
+  - "o framework dos 5 pilares"
+  - "modelo universal"
+  - "pilar 1: educacional (35%)"
+  - "definição"
+  - "tipos de carrossel"
+  - "métricas de sucesso"
+  - "exemplo de calendário (semana)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04 — Content Pillars Strategy
 
 **Agente:** Carousel Maestro
@@ -228,3 +252,5 @@ Analise:
 - Seth Godin, Permission Marketing
 - Content Marketing Institute
 - [Hootsuite Instagram Guide](https://blog.hootsuite.com/instagram-carousel/)
+
+#galaxy-creation

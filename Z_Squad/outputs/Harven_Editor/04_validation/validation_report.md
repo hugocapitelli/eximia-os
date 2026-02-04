@@ -1,3 +1,27 @@
+---
+title: "Validation Report - Harven_Editor (EditorOS)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "validation-report"
+  - "validation report - harven_edi"
+  - "executive summary"
+  - "1. verificacao de completude"
+  - "artefatos obrigatorios"
+  - "2. verificacao de invariantes"
+  - "3. casos de teste"
+  - "caso 1: rotulos basicos"
+  - "caso 2: formatacao markdown"
+  - "caso 3: paragrafo unico"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Validation Report - Harven_Editor (EditorOS)
 
 **Gerado por:** Z4 Auditor
@@ -258,3 +282,5 @@ O agente Harven_Editor (EditorOS) v1.0.0 atende a todos os criterios de qualidad
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

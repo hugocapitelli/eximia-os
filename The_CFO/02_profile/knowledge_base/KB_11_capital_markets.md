@@ -1,3 +1,27 @@
+---
+title: "KB_11 — Capital Markets"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-11-capital-markets"
+  - "kb_11 — capital markets"
+  - "1. fundamentos de capital mark"
+  - "visão geral"
+  - "tipos de instrumentos"
+  - "2. debt issuance"
+  - "tipos de dívida corporativa"
+  - "processo de emissão (norton ro"
+  - "covenants típicos"
+  - "3. equity issuance"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_11 — Capital Markets
 
 ## 1. Fundamentos de Capital Markets
@@ -195,3 +219,5 @@ Segundo FD Capital (2024), o CFO é fundamental no desenvolvimento e execução 
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

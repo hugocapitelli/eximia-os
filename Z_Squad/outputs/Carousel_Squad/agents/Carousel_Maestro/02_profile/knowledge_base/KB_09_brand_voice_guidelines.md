@@ -1,3 +1,27 @@
+---
+title: "KB_09 — Brand Voice Guidelines"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-brand-voice-guidelines"
+  - "kb_09 — brand voice guidelines"
+  - "o que é brand voice?"
+  - "framework de definição de voz"
+  - "os 4 pilares da brand voice"
+  - "pilar 1: tom de voz"
+  - "espectros de tom"
+  - "matriz de tom por contexto"
+  - "exemplo de definição"
+  - "pilar 2: linguagem"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09 — Brand Voice Guidelines
 
 **Agente:** Carousel Maestro
@@ -356,3 +380,5 @@ CHECKLIST DE BRAND VOICE
 - [NN Group: The Four Dimensions of Tone of Voice](https://www.nngroup.com/articles/tone-of-voice-dimensions/)
 - [Voice and Tone — Mailchimp](https://styleguide.mailchimp.com/voice-and-tone/)
 - Jung, Carl. Arquétipos e o Inconsciente Coletivo (1959)
+
+#galaxy-creation

@@ -386,3 +386,5 @@ elicit: true
 ---
 
 *Task created by squad-creator for Brad Frost Atomic Design Squad*
+
+#galaxy-operational

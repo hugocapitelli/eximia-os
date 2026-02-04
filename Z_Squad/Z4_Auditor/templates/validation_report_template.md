@@ -1,3 +1,27 @@
+---
+title: "Validation Report — [NOME DO AGENTE]"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "validation-report-template"
+  - "validation report — [nome do a"
+  - "📊 resumo executivo"
+  - "✅ pontos fortes"
+  - "⚠️ pontos de atenção"
+  - "❌ falhas críticas"
+  - "📋 resultados por categoria"
+  - "schema validation"
+  - "hallucination tests"
+  - "consistency tests"
+tags:
+  - "galaxy-creation"
+  - "template"
+---
+
 # Validation Report — [NOME DO AGENTE]
 
 **Gerado por:** Z4 Auditor
@@ -129,3 +153,5 @@ dna_referencia: "[Path para dna_mental.md]"
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

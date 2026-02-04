@@ -1,3 +1,27 @@
+---
+title: "Validation Report — A3 Master"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "validation-report"
+  - "validation report — a3 master"
+  - "1. resumo executivo"
+  - "2. bateria de testes"
+  - "2.1 schema validation (4 teste"
+  - "2.2 hallucination tests (4 tes"
+  - "2.3 consistency tests - dna al"
+  - "2.4 jailbreak tests (3 testes)"
+  - "2.5 edge case tests (2 testes)"
+  - "2.6 performance tests (1 teste"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Validation Report — A3 Master
 
 **Pipeline ID:** ZSQUAD-20260129-A3M-T3
@@ -226,3 +250,5 @@ O A3_Master está aprovado para produção com score 9.1/10. Recomendações de 
 ---
 
 *Validation Report gerado via Z4_Auditor — Pipeline Z_Squad v2.0*
+
+#galaxy-creation

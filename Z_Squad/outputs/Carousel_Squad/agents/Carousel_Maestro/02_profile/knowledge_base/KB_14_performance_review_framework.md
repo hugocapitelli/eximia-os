@@ -1,3 +1,27 @@
+---
+title: "KB_14 — Performance Review Framework"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-14-performance-review-framework"
+  - "kb_14 — performance review fra"
+  - "por que revisar performance?"
+  - "framework impact de análise"
+  - "i - impressions & reach"
+  - "m - metrics (engagement)"
+  - "p - patterns"
+  - "a - audience response"
+  - "c - comparison (benchmarks)"
+  - "t - takeaways & actions"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_14 — Performance Review Framework
 
 **Agente:** Carousel Maestro
@@ -423,3 +447,5 @@ CARROSSEL PERFORMOU BEM?
 - [Content Performance Analysis - Content Marketing Institute](https://contentmarketinginstitute.com)
 - Kaushik, Avinash. *Web Analytics 2.0* (2009)
 - [Hootsuite Social Media Metrics Guide](https://blog.hootsuite.com)
+
+#galaxy-creation

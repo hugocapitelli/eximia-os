@@ -1,3 +1,27 @@
+---
+title: "AIOS Standards Documentation Index"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "standards-index"
+  - "aios standards documentation i"
+  - "📋 quick start guide"
+  - "for new contributors"
+  - "for existing users"
+  - "📚 standards by category"
+  - "core framework standards (curr"
+  - "agent standards"
+  - "visual & branding"
+  - "legacy documents (reference on"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # AIOS Standards Documentation Index
 
 **Version:** 2.1.0
@@ -208,3 +232,5 @@ grep -r "v2.0" .aios-core/docs/standards --include="*.md"
 **Last Updated:** 2025-12-09
 **Version:** 2.1.0
 **Maintainer:** @po (Pax)
+
+#galaxy-runtime

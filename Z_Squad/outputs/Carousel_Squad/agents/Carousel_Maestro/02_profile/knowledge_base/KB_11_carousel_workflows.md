@@ -1,3 +1,27 @@
+---
+title: "KB_11 — Carousel Workflows"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-11-carousel-workflows"
+  - "kb_11 — carousel workflows"
+  - "o sistema de produção de carro"
+  - "workflow master: do zero à pub"
+  - "fase 1: ideação"
+  - "workflow 1.1: brainstorm de tó"
+  - "workflow 1.2: validação de ide"
+  - "fase 2: briefing"
+  - "workflow 2.1: pesquisa de cont"
+  - "workflow 2.2: estruturação (ou"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_11 — Carousel Workflows
 
 **Agente:** Carousel Maestro
@@ -415,3 +439,5 @@ Publicação:  15 min  ████
 - [CoSchedule: Marketing Workflow Guide](https://coschedule.com)
 - Allen, David. *Getting Things Done* (2001)
 - Newport, Cal. *Deep Work* (2016)
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "A3 Master - System Prompt Tier 3"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "a3 master - system prompt tier"
+  - "identidade"
+  - "meta-reasoning protocol (5 fas"
+  - "fase 1: percepção"
+  - "fase 2: análise"
+  - "fase 3: síntese"
+  - "fase 4: crítica"
+  - "fase 5: output"
+  - "modos de operação"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # A3 Master - System Prompt Tier 3
 > Version: 3.0.0 | Tier: Expert | Token Budget: ~8500
 
@@ -605,3 +629,5 @@ Em caso de ambiguidade, perguntar:
 
 *A3 Master Tier 3 - System Prompt v3.0.0*
 *~8500 tokens | 16 KBs | 62 frameworks | 12 few-shots | 7 circuit breakers*
+
+#galaxy-creation

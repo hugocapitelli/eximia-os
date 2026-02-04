@@ -1,3 +1,27 @@
+---
+title: "eximIA.OS — Slash Commands Quick Guide"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "slash-commands-guide"
+  - "eximia.os — slash commands qui"
+  - "o que são slash commands?"
+  - "como funciona"
+  - "comandos principais"
+  - "📅 /schedule — the scheduler ("
+  - "adicionar agente ao backlog"
+  - "adicionar clone ao backlog"
+  - "listar backlog"
+  - "calcular rice scores e prioriz"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # eximIA.OS — Slash Commands Quick Guide
 
 **Version:** 1.0.0
@@ -523,3 +547,5 @@ Exemplo:
 **Created:** 2026-01-24
 **Version:** 1.0.0
 **Maintainer:** eximIA.OS Core Team
+
+#galaxy-operational

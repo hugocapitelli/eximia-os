@@ -1,3 +1,27 @@
+---
+title: "Query 01: Biography & Early Life"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-01-biography-early-life"
+  - "query 01: biography & early li"
+  - "birth & origins"
+  - "childhood (1883-1894)"
+  - "early hardships"
+  - ""wild child" period"
+  - "transformative influence: step"
+  - "the turning point"
+  - "the deal"
+  - "early writing career (1896-190"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # Query 01: Biography & Early Life
 
 **Search Date:** 2026-01-23
@@ -90,3 +114,5 @@
 - [EBSCO Research Starters](https://www.ebsco.com/research-starters/biography/napoleon-hill)
 - [Bay Area Mastermind - Biography](https://bayareamastermind.com/napoleon-hill/)
 - [The Famous People - Biography](https://www.thefamouspeople.com/profiles/napoleon-hill-2424.php)
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Z SQUAD — Elite Agent Factory"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "z squad — elite agent factory"
+  - "🎯 missão"
+  - "🏗️ fundamentos"
+  - "🧬 arquitetura (os 5 módulos)"
+  - "📁 estrutura de diretórios"
+  - "🔄 pipeline de criação"
+  - "📜 protocolos obrigatórios"
+  - "1. handoff protocol"
+  - "2. shared state"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # Z SQUAD — Elite Agent Factory
 
 **Versão:** 2.0 (Framework-Integrated)
@@ -196,3 +220,7 @@ Para criar um novo agente:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+[[El_Clonador/README.md]]
+[[agent_registry.yaml]]
+#galaxy-creation

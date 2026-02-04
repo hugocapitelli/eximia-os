@@ -1,3 +1,27 @@
+---
+title: "security-scan"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "security-scan"
+  - "purpose"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "step-by-step execution"
+  - "step 1: setup security tools"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # security-scan
 
 **Task ID:** `security-scan`  
@@ -788,3 +812,5 @@ function determineOverallGate(auditGate, eslintGate, secretsGate) {
 - **Optional Tools**: Semgrep is optional enhancement
 - **IDE Support**: Tools work with any IDE via Language Server Protocol
 - **CI/CD Ready**: All tools work in GitHub Actions / CI environments
+
+#galaxy-runtime

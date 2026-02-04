@@ -1,3 +1,27 @@
+---
+title: "META_ANALYSIS: ELC_Architect"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "meta-analysis"
+  - "meta_analysis: elc_architect"
+  - "especificacao tecnica"
+  - "competencias"
+  - "inputs esperados"
+  - "outputs gerados"
+  - "invariantes"
+  - "dependencias"
+  - "metricas de qualidade"
+  - "casos de teste"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # META_ANALYSIS: ELC_Architect
 
 ---
@@ -129,3 +153,5 @@
 
 *META_ANALYSIS — ELC_Architect*
 *eximIA.OS*
+
+#galaxy-specialist

@@ -1,3 +1,27 @@
+---
+title: "Task: Supabase Setup Guide"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-supabase-setup"
+  - "task: supabase setup guide"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Supabase Setup Guide
 
 **Purpose**: Interactive guide to set up Supabase project with best practices
@@ -710,3 +734,5 @@ GRANT ALL ON ALL TABLES IN SCHEMA public TO postgres;
 - [Supabase Local Development](https://supabase.com/docs/guides/cli/local-development)
 - [PostgreSQL Connection Strings](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING)
 - [DB Sage Documentation](docs/architecture/db-sage/README.md)
+
+#galaxy-runtime

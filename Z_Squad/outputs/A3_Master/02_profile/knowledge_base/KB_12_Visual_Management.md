@@ -1,3 +1,27 @@
+---
+title: "KB_12: Visual Management (Gestão Visual)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-12-visual-management"
+  - "kb_12: visual management (gest"
+  - "conceito fundamental"
+  - "princípio do 5 segundos"
+  - "níveis de gestão visual"
+  - "nível 1: compartilhar informaç"
+  - "nível 2: estabelecer padrões"
+  - "nível 3: construir padrões no "
+  - "nível 4: alertar anormalidades"
+  - "nível 5: prevenir erros (poka-"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_12: Visual Management (Gestão Visual)
 
 ## Conceito Fundamental
@@ -227,3 +251,5 @@ Sala física ou virtual onde:
 - Galsworth, Gwendolyn. "Visual Workplace/Visual Thinking" (2005)
 - [Lean Enterprise Institute - Visual Management](https://www.lean.org/lexicon-terms/visual-management/)
 - Toyota Motor Corporation - Visual Factory Standards
+
+#galaxy-creation

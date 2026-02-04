@@ -1,3 +1,27 @@
+---
+title: "create-daily-email"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-daily-email"
+  - "metadata"
+  - "overview"
+  - "philosophy"
+  - "phase 1: preparation"
+  - "step 1.1: understand your cont"
+  - "step 1.2: choose your story so"
+  - "step 1.3: find the connection"
+  - "phase 2: writing the email"
+  - "step 2.1: the hook (primeiras "
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # create-daily-email
 
 Task para criar emails diários no estilo Ben Settle - infotainment marketing.
@@ -612,3 +636,5 @@ email_output:
 *Task Version: 2.0*
 *Primary Agent: Ben Settle*
 *Lines: 600+*
+
+#galaxy-operational

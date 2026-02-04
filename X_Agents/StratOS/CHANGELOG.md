@@ -1,3 +1,25 @@
+---
+title: "Changelog - StratOS"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "changelog"
+  - "changelog - stratos"
+  - "[1.2.0] - 2026-01-18"
+  - "changed"
+  - "[1.2.0] - 2026-01-11"
+  - "added"
+  - "[1.1.0] - 2026-01-11"
+  - "🧠 obsidian connections"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Changelog - StratOS
 
 ## [1.2.0] - 2026-01-18
@@ -47,3 +69,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

@@ -1,3 +1,23 @@
+---
+title: "HEADLINE EXTRACTION PROMPT"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "extract-headlines"
+  - "headline extraction prompt"
+  - "source material"
+  - "extraction rules"
+  - "quality scoring"
+  - "output"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # HEADLINE EXTRACTION PROMPT
 
 You are extracting headlines from proven copywriting sources for a swipe file library.
@@ -48,3 +68,5 @@ You are extracting headlines from proven copywriting sources for a swipe file li
 
 ## OUTPUT
 Extract ALL qualifying headlines. Output ONLY valid YAML array.
+
+#galaxy-tools

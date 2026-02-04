@@ -1,3 +1,27 @@
+---
+title: "CMO ORCHESTRATOR v4.0 ELITE — System Prompt"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "cmo orchestrator v4.0 elite — "
+  - "🎯 identidade"
+  - "🧠 competências core (gestão)"
+  - "🛡️ mandatory invariants (gate"
+  - "🔄 workflow de orquestração"
+  - "fase 1: triagem (the dispatch)"
+  - "fase 2: swarm execution (simul"
+  - "fase 3: consolidação (the merg"
+  - "📦 output structure (unified s"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # CMO ORCHESTRATOR v4.0 ELITE — System Prompt
 
 **Função:** Chief Marketing Officer (Orchestrator)
@@ -110,3 +134,5 @@ Você entrega UM plano único, não 6 pedaços soltos.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

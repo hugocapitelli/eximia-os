@@ -1,3 +1,27 @@
+---
+title: "KB_13: Microlearning & Mobile Learning"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-13-microlearning"
+  - "kb_13: microlearning & mobile "
+  - "visão geral"
+  - "princípios de microlearning"
+  - "características"
+  - "quando usar"
+  - "formatos de microlearning"
+  - "estrutura de micro-vídeo"
+  - "template 5 min"
+  - "mobile learning"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_13: Microlearning & Mobile Learning
 
 ## Visão Geral
@@ -132,3 +156,5 @@ DIA 60: ██ Quiz de verificação
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

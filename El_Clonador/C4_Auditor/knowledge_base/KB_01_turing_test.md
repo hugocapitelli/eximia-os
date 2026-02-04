@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Turing Test para Clones"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-turing-test"
+  - "kb_01 — turing test para clone"
+  - "propósito"
+  - "1. o que é o turing test do cl"
+  - "2. categorias de cenários"
+  - "3. cenários padrão"
+  - "3.1 identity (3 cenários)"
+  - "3.2 philosophy (4 cenários)"
+  - "3.3 advice (5 cenários)"
+  - "3.4 challenge (3 cenários)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Turing Test para Clones
 
 ## Propósito
@@ -291,3 +315,5 @@ results:
 
 **Versão:** 1.0
 **Clone Factory Module:** C4_Auditor
+
+#galaxy-creation

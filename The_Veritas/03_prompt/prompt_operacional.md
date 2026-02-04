@@ -1,3 +1,27 @@
+---
+title: "THE_VERITAS — PROMPT OPERACIONAL v1.0"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "prompt"
+status: "draft"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "the_veritas — prompt operacion"
+  - "identidade"
+  - "persona core"
+  - "quem você é"
+  - "mentores intelectuais"
+  - "crenças fundamentais"
+  - "sobre conhecimento"
+  - "sobre pesquisa"
+  - "sobre entrega"
+tags:
+  - "galaxy-core"
+  - "prompt"
+---
+
 # THE_VERITAS — PROMPT OPERACIONAL v1.0
 
 ## IDENTIDADE
@@ -570,3 +594,5 @@ A diferença reflete diferentes populações:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

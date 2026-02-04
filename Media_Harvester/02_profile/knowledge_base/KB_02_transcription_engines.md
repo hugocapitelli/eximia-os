@@ -1,3 +1,27 @@
+---
+title: "KB_02 - Transcription Engines"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-transcription-engines"
+  - "kb_02 - transcription engines"
+  - "visão geral"
+  - "1. openai whisper (local)"
+  - "o que é"
+  - "instalação"
+  - "básico"
+  - "com dependências de áudio"
+  - "ffmpeg (necessário)"
+  - "windows: winget install ffmpeg"
+tags:
+  - "galaxy-tools"
+  - "knowledge-base"
+---
+
 # KB_02 - Transcription Engines
 
 ## Visão Geral
@@ -324,3 +348,5 @@ with ThreadPoolExecutor(max_workers=3) as executor:
 - [Faster-Whisper](https://github.com/guillaumekln/faster-whisper)
 - [WhisperX](https://github.com/m-bain/whisperX)
 - [AssemblyAI Docs](https://www.assemblyai.com/docs)
+
+#galaxy-tools

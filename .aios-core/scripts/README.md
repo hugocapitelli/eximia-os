@@ -1,3 +1,27 @@
+---
+title: "AIOS Scripts - Legacy Directory"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "aios scripts - legacy director"
+  - "current structure"
+  - "scripts in this directory"
+  - "active scripts"
+  - "migration scripts"
+  - "script path mapping"
+  - "configuration"
+  - "usage examples"
+  - "loading core scripts"
+tags:
+  - "galaxy-runtime"
+  - "documentation"
+---
+
 # AIOS Scripts - Legacy Directory
 
 > **Note**: This directory now contains only legacy/migration scripts and a few active utilities.
@@ -120,3 +144,5 @@ const sessionLoader = require('./.aios-core/scripts/session-context-loader');
 ---
 
 **Last updated:** 2025-12-18 - Story 6.16 Scripts Path Consolidation
+
+#galaxy-runtime

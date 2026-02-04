@@ -1,3 +1,27 @@
+---
+title: "KB_05: Problem-Based Learning - Implementation Guide"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-implementation-guide"
+  - "kb_05: problem-based learning "
+  - "key organizations & resources"
+  - "pblworks (buck institute for e"
+  - "educational resources"
+  - "multimedia resources"
+  - "ted-ed platform"
+  - "curated ted talk lists"
+  - "podcasts"
+  - "technology tools for pbl"
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
+
 # KB_05: Problem-Based Learning - Implementation Guide
 
 **Knowledge Base:** PBL Implementation
@@ -476,3 +500,5 @@ One thing this person could improve:
 **For:** exímIA.OS Learning Design Knowledge Repository
 **Version:** 1.0
 **Status:** Production Ready
+
+#galaxy-codex

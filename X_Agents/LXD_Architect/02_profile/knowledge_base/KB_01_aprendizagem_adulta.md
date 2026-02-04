@@ -1,3 +1,27 @@
+---
+title: "KB_01: Aprendizagem Adulta — Andragogia"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-aprendizagem-adulta"
+  - "kb_01: aprendizagem adulta — a"
+  - "visão geral"
+  - "os 6 princípios de andragogia "
+  - "1. necessidade de saber (need "
+  - "2. autoconceito (self-concept)"
+  - "3. papel da experiência (role "
+  - "4. prontidão para aprender (re"
+  - "5. orientação para aprendizage"
+  - "6. motivação (motivation to le"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_01: Aprendizagem Adulta — Andragogia
 
 ## Visão Geral
@@ -236,3 +260,5 @@ Professor decide tudo                Aprendiz decide tudo
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

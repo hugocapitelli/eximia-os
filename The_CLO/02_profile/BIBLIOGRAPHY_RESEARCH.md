@@ -1,3 +1,27 @@
+---
+title: "Bibliografia & Pesquisa — Themis Sentinel CLO"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "bibliography-research"
+  - "bibliografia & pesquisa — them"
+  - "1. legislação brasileira"
+  - "2. regulação e guidelines"
+  - "3. legislação internacional"
+  - "4. doutrina brasil"
+  - "5. doutrina internacional"
+  - "6. frameworks & standards"
+  - "7. fontes institucionais"
+  - "notas de pesquisa"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Bibliografia & Pesquisa — Themis Sentinel CLO
 
 **Total de Fontes:** 35  
@@ -127,3 +151,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

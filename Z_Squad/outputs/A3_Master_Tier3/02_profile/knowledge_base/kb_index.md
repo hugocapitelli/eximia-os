@@ -1,3 +1,27 @@
+---
+title: "Knowledge Base Index - A3 Master Tier 3"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-index"
+  - "knowledge base index - a3 mast"
+  - "overview"
+  - "foundation kbs (kb_01 - kb_08)"
+  - "advanced kbs (kb_09 - kb_16)"
+  - "kb usage by mode"
+  - "build mode"
+  - "evaluate mode"
+  - "teach mode"
+  - "kb dependencies"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # Knowledge Base Index - A3 Master Tier 3
 
 ## Overview
@@ -155,3 +179,5 @@ KB_15 (Case Studies)
 
 *KB Index v3.0 - A3 Master Tier 3*
 *16 KBs | ~24,000 tokens | Cobertura completa*
+
+#galaxy-creation

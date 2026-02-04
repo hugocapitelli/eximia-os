@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — Growth Hacker"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental — growth hacker"
+  - "1. crenças centrais"
+  - "2. princípios de decisão"
+  - "3. frameworks / métodos"
+  - "framework 1: ice scoring (impa"
+  - "framework 2: aarrr (pirate met"
+  - "framework 3: the algorithm sig"
+  - "framework 4: a/b testing proto"
+  - "framework 5: the viral coeffic"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental — Growth Hacker
 
 **Gerado por:** Z2 Profiler
@@ -133,3 +157,5 @@ clones_consultados: ["Neil Patel", "Sean Ellis", "Andrew Chen"]
 confianca_perfil: "Alta"
 notas_do_profiler: "Especialista em otimização baseada em dados e growth tactics."
 ```
+
+#galaxy-creation

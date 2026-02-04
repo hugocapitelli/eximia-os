@@ -1,3 +1,27 @@
+---
+title: "KB_02_COGNITION — Elon Musk"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-cognition"
+  - "kb_02_cognition — elon musk"
+  - "objetivo"
+  - "filosofia central"
+  - "origem da visão de mundo"
+  - "propósito de vida declarado"
+  - "crenças fundamentais (deep div"
+  - "1. first principles thinking"
+  - "2. multi-planetary imperative"
+  - "3. transição energética susten"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02_COGNITION — Elon Musk
 
 ## Objetivo
@@ -136,3 +160,5 @@ Acessar quando usuário perguntar sobre:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

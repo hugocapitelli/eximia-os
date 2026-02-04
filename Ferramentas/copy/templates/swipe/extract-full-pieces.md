@@ -1,3 +1,22 @@
+---
+title: "FULL PIECE EXTRACTION PROMPT"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "extract-full-pieces"
+  - "full piece extraction prompt"
+  - "piece types"
+  - "extraction rules"
+  - "output"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # FULL PIECE EXTRACTION PROMPT
 
 You are cataloging complete sales pieces for reference.
@@ -53,3 +72,5 @@ You are cataloging complete sales pieces for reference.
 
 ## OUTPUT
 Catalog ALL qualifying pieces. Output ONLY valid YAML array.
+
+#galaxy-tools

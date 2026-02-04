@@ -1,3 +1,27 @@
+---
+title: "KB_10 — Animation and Motion for Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-10-animation-motion"
+  - "kb_10 — animation and motion f"
+  - "fundamentos de motion design"
+  - "por que movimento importa"
+  - "quando usar motion"
+  - "tipos de animação para carross"
+  - "1. entrance animations (entrad"
+  - "2. emphasis animations (ênfase"
+  - "3. data/number animations"
+  - "easing (curvas de movimento)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_10 — Animation and Motion for Carousels
 
 **Agente:** Visual Designer
@@ -374,3 +398,5 @@ Easing do count: easeOutExpo
 - Apple Human Interface Guidelines - Motion
 - The Illusion of Life (Disney Animation Principles)
 - Issara Willenskomer, Motion Design Principles
+
+#galaxy-creation

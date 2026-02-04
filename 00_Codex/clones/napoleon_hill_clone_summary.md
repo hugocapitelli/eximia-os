@@ -1,3 +1,27 @@
+---
+title: "Napoleon Hill Clone — Codex Entry"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "napoleon-hill-clone-summary"
+  - "napoleon hill clone — codex en"
+  - "overview"
+  - "dados do clone"
+  - "perfil psicológico"
+  - "filosofia central"
+  - "meta-princípio"
+  - "os 13 princípios (think and gr"
+  - "estrutura de arquivos"
+  - "como usar"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Napoleon Hill Clone — Codex Entry
 
 ---
@@ -150,3 +174,5 @@ Clones/napoleon_hill/
 
 *Entrada criada automaticamente pelo El_Clonador Pipeline*
 *eximIA.OS — Where AI Agents Come to Life*
+
+#galaxy-codex

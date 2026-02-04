@@ -1,3 +1,27 @@
+---
+title: "KB_03 — Multi-Agent Framework Principles"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-multiagent-framework"
+  - "kb_03 — multi-agent framework "
+  - "🎯 propósito"
+  - "1. agentes com ferramentas"
+  - "identificação de necessidades"
+  - "implementação via mcp (prefere"
+  - "fallback (sem mcp)"
+  - "2. prompt budget (anti-god age"
+  - "token budget enforcement"
+  - "checklist anti-god agent"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03 — Multi-Agent Framework Principles
 
 ## 🎯 Propósito
@@ -163,3 +187,5 @@ feedback_from_z4:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

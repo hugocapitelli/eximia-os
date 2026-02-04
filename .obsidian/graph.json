@@ -1,13 +1,63 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
-  "showTags": false,
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
-  "collapse-display": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:galaxy-core",
+      "color": {
+        "a": 1,
+        "rgb": 9124491
+      }
+    },
+    {
+      "query": "tag:galaxy-specialist",
+      "color": {
+        "a": 1,
+        "rgb": 2263842
+      }
+    },
+    {
+      "query": "tag:galaxy-creation",
+      "color": {
+        "a": 1,
+        "rgb": 16747520
+      }
+    },
+    {
+      "query": "tag:galaxy-codex",
+      "color": {
+        "a": 1,
+        "rgb": 11119017
+      }
+    },
+    {
+      "query": "tag:galaxy-runtime",
+      "color": {
+        "a": 1,
+        "rgb": 2003199
+      }
+    },
+    {
+      "query": "tag:galaxy-operational",
+      "color": {
+        "a": 1,
+        "rgb": 16738740
+      }
+    },
+    {
+      "query": "tag:galaxy-tools",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    }
+  ],
+  "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
@@ -17,6 +67,6 @@
   "repelStrength": 8.02083333333333,
   "linkStrength": 0.552083333333333,
   "linkDistance": 170,
-  "scale": 0.0669974499528262,
+  "scale": 0.09370195710348213,
   "close": true
 }

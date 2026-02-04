@@ -1,3 +1,27 @@
+---
+title: "Neurociência da Aprendizagem - Visual Cheatsheet"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "neuroscience-visual-cheatsheet"
+  - "neurociência da aprendizagem -"
+  - "🧠 os 12 princípios cérebro/me"
+  - "⚖️ cognitive load theory (swel"
+  - "técnicas clt rápidas"
+  - "⚡ ages model (neuroleadership)"
+  - "ages checklist rápido"
+  - "🔄 spaced repetition (ebbingha"
+  - "curva do esquecimento"
+  - "cronograma ideal de revisões"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Neurociência da Aprendizagem - Visual Cheatsheet
 
 > **Infográfico textual** dos principais conceitos neurocientíficos para LXD
@@ -503,3 +527,5 @@ PONTUAÇÃO:
 **Formato:** Infográfico textual ASCII
 **Licença:** Uso interno eximIA Ventures
 **Criado por:** eximIA.OS Knowledge Systems
+
+#galaxy-codex

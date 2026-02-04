@@ -1,3 +1,27 @@
+---
+title: "KB_02: Integração PDCA e A3"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-integracao-pdca-a3"
+  - "kb_02: integração pdca e a3"
+  - "o ciclo pdca (deming)"
+  - "os quatro passos"
+  - "a3 como manifestação do pdca"
+  - "mapeamento a3 → pdca"
+  - "estrutura visual do a3"
+  - "benefícios da integração"
+  - "para a organização"
+  - "para as pessoas"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02: Integração PDCA e A3
 
 ## O Ciclo PDCA (Deming)
@@ -98,3 +122,5 @@ Para implementar efetivamente A3 Thinking com ciclos PDCA:
 - [OPEX Learning - PDCA and A3](https://opexlearning.com/resources/lean-six-sigma-plan-do-check-act-pdca-and-a3/)
 - [Wikipedia - PDCA](https://en.wikipedia.org/wiki/PDCA)
 - [Businessmap - PDCA Cycle](https://businessmap.io/lean-management/improvement/what-is-pdca-cycle)
+
+#galaxy-creation

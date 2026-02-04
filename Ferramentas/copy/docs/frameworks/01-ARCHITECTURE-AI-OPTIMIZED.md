@@ -1,3 +1,27 @@
+---
+title: "COPYWRITING CLONES FRAMEWORK v2.0 - ARCHITECTURE"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "01-architecture-ai-optimized"
+  - "copywriting clones framework v"
+  - "optimized for llm consumption."
+  - "version_control"
+  - "tier_architecture"
+  - "clone_registry"
+  - "execution_logic"
+  - "file_map"
+  - "historical_lineages"
+  - "validation_sources"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # COPYWRITING CLONES FRAMEWORK v2.0 - ARCHITECTURE
 # Optimized for LLM consumption. YAML structures for parsing.
 
@@ -307,3 +331,5 @@ secondary_sources:
 web_searches_conducted: 13
 validation_date: "2025-01"
 ```
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "Slide {number} de {total}"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "slide-template"
+  - "slide {number} de {total}"
+  - "headline"
+  - "texto de suporte"
+  - "notas de design (don norman)"
+  - "princípios aplicados"
+  - "design emocional"
+  - "especificações visuais"
+  - "cta (se aplicável)"
+  - "transição para próximo slide"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # Slide {number} de {total}
 
 ## Headline
@@ -43,3 +67,5 @@
 
 *Gerado por Narrative Post Engine v1.0*
 *Slide criado em: {timestamp}*
+
+#galaxy-runtime

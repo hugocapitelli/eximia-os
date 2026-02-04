@@ -1,3 +1,27 @@
+---
+title: "Hopkins Audit Checklist"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "hopkins-audit-checklist"
+  - "hopkins audit checklist"
+  - "purpose"
+  - "how to use"
+  - "section 1: headline validation"
+  - "section 2: lead/opening valida"
+  - "section 3: claims & reason why"
+  - "section 4: specificity validat"
+  - "section 5: service & value val"
+  - "section 6: proof & credibility"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Hopkins Audit Checklist
 
 ## Purpose
@@ -326,3 +350,5 @@ VERDICT:
 - **Use with**: audit-copy-hopkins.md (full audit task)
 - **Use with**: setup-split-test.md (after validation passes)
 - **Related agent**: @claude-hopkins (Tier 0 - Final Auditor)
+
+#galaxy-tools

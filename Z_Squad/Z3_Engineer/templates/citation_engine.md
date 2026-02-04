@@ -1,3 +1,27 @@
+---
+title: "Citation Engine — Z Squad Protocol"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "citation-engine"
+  - "citation engine — z squad prot"
+  - "🎯 propósito"
+  - "1. o problema"
+  - "❌ citações ruins (proibidas)"
+  - "✅ citações corretas (obrigatór"
+  - "2. formato obrigatório"
+  - "template"
+  - "exemplos"
+  - "3. regras por contexto"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Citation Engine — Z Squad Protocol
 
 ## 🎯 Propósito
@@ -137,3 +161,5 @@ fundamentais de persuasão.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

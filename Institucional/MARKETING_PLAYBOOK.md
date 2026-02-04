@@ -1,3 +1,27 @@
+---
+title: "ExímIA Ventures: Voz da Marca & Diretrizes de Marketing (Playbook V1)"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "marketing-playbook"
+  - "exímia ventures: voz da marca "
+  - "1. manifesto da voz"
+  - "o arquétipo: "o visionário pra"
+  - "2. pilares de comunicação"
+  - "⚡ human-centered (o "porquê")"
+  - "🤖 automation first (o "como")"
+  - "🏗️ build in public (o "proces"
+  - "3. tom de voz: o espectro "org"
+  - "4. o ecossistema de naming (co"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # ExímIA Ventures: Voz da Marca & Diretrizes de Marketing (Playbook V1)
 **"IA Agentica sob Medida para Decisões Mais Humanas"**
 
@@ -107,3 +131,5 @@ Antes de publicar qualquer peça de marketing, pergunte:
 
 **Resumo em uma frase:**
 *"Somos arquitetos de sistemas vivos que liberam o potencial humano através da automação inteligente."*
+
+#galaxy-tools

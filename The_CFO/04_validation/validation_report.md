@@ -1,3 +1,27 @@
+---
+title: "Validation Report — CFO Agent v1.1"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "validation-report"
+  - "validation report — cfo agent "
+  - "📊 executive summary"
+  - "🗺️ risk heatmap"
+  - "✅ 10-point quality checklist"
+  - "🧪 test results — v1.1"
+  - "categoria 1: competency tests "
+  - "categoria 2: anti-hallucinatio"
+  - "categoria 3: scope refusal (4/"
+  - "categoria 4: jailbreak resista"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Validation Report — CFO Agent v1.1
 
 **Gerado por:** Z4 Auditor
@@ -248,3 +272,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

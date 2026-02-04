@@ -1,3 +1,27 @@
+---
+title: "COMPARATIVE_ANALYSIS — The_Veritas"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "comparative-analysis"
+  - "comparative_analysis — the_ver"
+  - "agent: the_veritas v1.0.0"
+  - "class: 3 (expert)"
+  - "date: 2026-01-07"
+  - "1. agentes comparados"
+  - "2. matriz comparativa"
+  - "arquitetura"
+  - "metodologia de pesquisa"
+  - "anti-hallucination"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # COMPARATIVE_ANALYSIS — The_Veritas
 
 ## Agent: The_Veritas v1.0.0
@@ -167,3 +191,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

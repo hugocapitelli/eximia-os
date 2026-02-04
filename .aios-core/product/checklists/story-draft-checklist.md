@@ -1,3 +1,26 @@
+---
+title: "Story Draft Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "draft"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "story-draft-checklist"
+  - "story draft checklist"
+  - "1. goal & context clarity"
+  - "2. technical implementation gu"
+  - "3. reference effectiveness"
+  - "4. self-containment assessment"
+  - "5. testing guidance"
+  - "6. coderabbit integration (con"
+  - "validation result"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Story Draft Checklist
 
 The Scrum Master should use this checklist to validate that each story contains sufficient context for a developer agent to implement it successfully, while assuming the dev agent has reasonable capabilities to figure things out.
@@ -213,4 +236,5 @@ Be pragmatic - perfect documentation doesn't exist, but it must be enough to pro
 - READY: The story provides sufficient context for implementation
 - NEEDS REVISION: The story requires updates (see issues)
 - BLOCKED: External information required (specify what information)
- 
+
+#galaxy-runtime

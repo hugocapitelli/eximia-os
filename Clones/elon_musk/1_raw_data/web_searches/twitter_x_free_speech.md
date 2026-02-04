@@ -1,3 +1,27 @@
+---
+title: "Twitter/X Free Speech Research"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "twitter-x-free-speech"
+  - "twitter/x free speech research"
+  - "motivação para aquisição"
+  - "razão principal: free speech"
+  - "conceito de free speech absolu"
+  - "definição de musk"
+  - "digital town square"
+  - "crítica à moderação anterior"
+  - "visão de longo prazo: everythi"
+  - "posições relacionadas"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Twitter/X Free Speech Research
 
 **Source:** Web Research via The_Veritas
@@ -89,3 +113,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

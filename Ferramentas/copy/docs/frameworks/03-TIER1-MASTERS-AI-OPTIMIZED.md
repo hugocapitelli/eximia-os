@@ -1,3 +1,27 @@
+---
+title: "TIER 1 - DOCUMENTED MASTERS"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "03-tier1-masters-ai-optimized"
+  - "tier 1 - documented masters"
+  - "copywriters with $500m+ verifi"
+  - "use for: high-conversion copy "
+  - "tier_1_overview"
+  - "clone_04_gary_bencivenga"
+  - "bencivenga fascination system"
+  - "bencivenga objection breaking"
+  - "clone_05_gary_halbert"
+  - "halbert core concepts"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # TIER 1 - DOCUMENTED MASTERS
 # Copywriters with $500M+ verified sales. Practitioners with proven track record.
 # Use for: HIGH-CONVERSION copy execution
@@ -489,3 +513,5 @@ proven_combinations:
 
 note: "Always complete Tier 0 before selecting Tier 1 clones"
 ```
+
+#galaxy-tools

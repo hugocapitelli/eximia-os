@@ -1,3 +1,27 @@
+---
+title: "Anti-Hallucination Rules — Z Squad Invariant"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "anti-hallucination"
+  - "anti-hallucination rules — z s"
+  - "🎯 propósito"
+  - "1. o que é alucinação?"
+  - "2. regras obrigatórias (invari"
+  - "rule 1: declarar incerteza"
+  - "rule 2: usar qualificadores"
+  - "rule 3: recusar fora do escopo"
+  - "rule 4: não inventar fontes"
+  - "rule 5: transparência sobre li"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Anti-Hallucination Rules — Z Squad Invariant
 
 ## 🎯 Propósito
@@ -163,3 +187,5 @@ Z4 **deve** testar estas regras:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "create-magalog"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-magalog"
+  - "task metadata"
+  - "core philosophy"
+  - "phase 1: strategic foundation"
+  - "step 1.1: define the editorial"
+  - "editorial angle definition"
+  - "product: [name]"
+  - "target audience: [description]"
+  - "angle options:"
+  - "selected angle: [choice]"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # create-magalog
 
 A comprehensive task for creating magalog-format promotions - the magazine-catalog hybrid that revolutionized direct mail and continues to dominate long-form marketing.
@@ -766,3 +790,5 @@ Master this format and you'll have a tool that works across print, digital, and 
 *Created: 2026-01-23*
 *Based on: Jim Rutz methodology*
 *Lines: 650+*
+
+#galaxy-tools

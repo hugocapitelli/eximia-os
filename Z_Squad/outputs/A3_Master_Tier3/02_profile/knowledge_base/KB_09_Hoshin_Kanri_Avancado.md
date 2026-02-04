@@ -1,3 +1,27 @@
+---
+title: "KB_09: Hoshin Kanri Avancado"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-hoshin-kanri-avancado"
+  - "kb_09: hoshin kanri avancado"
+  - "origem e significado"
+  - "anatomia do hoshin kanri"
+  - "os 7 passos do hoshin"
+  - "true north (norte verdadeiro)"
+  - "x-matrix (matriz x)"
+  - "estrutura"
+  - "os 4 quadrantes"
+  - "correlações"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09: Hoshin Kanri Avancado
 
 ## Origem e Significado
@@ -199,3 +223,5 @@ O Hoshin Kanri incorpora os princípios Shingo:
 - Cowley, M. & Domb, E. (1997). *Beyond Strategic Vision*. Butterworth-Heinemann.
 - Akao, Y. (1991). *Hoshin Kanri: Policy Deployment*. Productivity Press.
 - [Lean Enterprise Institute - Hoshin Kanri](https://www.lean.org/lexicon-terms/hoshin-kanri/)
+
+#galaxy-creation

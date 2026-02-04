@@ -1,3 +1,27 @@
+---
+title: "C0 Validator — Pre-Pipeline Source Validation"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "c0 validator — pre-pipeline so"
+  - "propósito"
+  - "quando usar"
+  - "decisões possíveis"
+  - "como solicitar validação"
+  - "clone validation request"
+  - "target"
+  - "objetivo"
+  - "escopo"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # C0 Validator — Pre-Pipeline Source Validation
 
 O C0 Validator é o **guardião do pipeline** do Clone Factory. Ele avalia a viabilidade de um clone ANTES de iniciar o processo de clonagem.
@@ -57,3 +81,5 @@ C1 Hunter → C2 Extractor → C3 Creator → C4 Auditor
 ---
 
 Arquivo: `agente_core.md` (neste diretório)
+
+#galaxy-creation

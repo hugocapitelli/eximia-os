@@ -1,3 +1,27 @@
+---
+title: "KB_12 — Treasury Management"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-12-treasury"
+  - "kb_12 — treasury management"
+  - "1. fundamentos de treasury"
+  - "escopo do treasury (one money "
+  - "funções core"
+  - "2. cash management best practi"
+  - "cash flow forecasting (citi, 2"
+  - "cash pooling (trg internationa"
+  - "working capital optimization"
+  - "3. liquidity management"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_12 — Treasury Management
 
 ## 1. Fundamentos de Treasury
@@ -200,3 +224,5 @@ LIQUIDITY WATERFALL
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

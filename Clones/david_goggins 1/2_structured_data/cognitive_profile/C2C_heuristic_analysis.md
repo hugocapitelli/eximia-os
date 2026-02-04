@@ -1,3 +1,27 @@
+---
+title: "C2C HEURISTIC MINER — David Goggins Analysis Report"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2c-heuristic-analysis"
+  - "c2c heuristic miner — david go"
+  - "explicit rules (verbalized by "
+  - "h001: the 40% rule"
+  - "h002: calloused mind"
+  - "h003: embrace the suck"
+  - "h004: accountability mirror"
+  - "h005: cookie jar method"
+  - "h006: taking souls"
+  - "implicit rules (observed patte"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2C HEURISTIC MINER — David Goggins Analysis Report
 
 **Analyst:** C2C_HeuristicMiner
@@ -276,3 +300,5 @@ confidence: 0.90
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

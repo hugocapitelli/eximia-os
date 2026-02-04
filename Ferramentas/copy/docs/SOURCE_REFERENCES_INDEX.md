@@ -1,3 +1,27 @@
+---
+title: "Source References Index"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "source-references-index"
+  - "source references index"
+  - "copy framework v2.0 - source e"
+  - "sumário"
+  - "stories completadas"
+  - "citações por agent"
+  - "jon benson (`expansion-packs/c"
+  - "dan kennedy (`expansion-packs/"
+  - "citações por task"
+  - "vsl script (`expansion-packs/c"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Source References Index
 
 ## Copy Framework v2.0 - Source Enrichment Project
@@ -384,3 +408,5 @@ index_metadata:
 
 *Source References Index - Copy Framework v2.0*
 *Generated: 2026-01-23 | Story: ENR-012*
+
+#galaxy-tools

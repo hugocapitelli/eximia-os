@@ -1,3 +1,24 @@
+---
+title: "BULLET/FASCINATION EXTRACTION PROMPT"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "extract-bullets"
+  - "bullet/fascination extraction "
+  - "source material"
+  - "what makes a great bullet"
+  - "extraction rules"
+  - "bullet types"
+  - "output"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # BULLET/FASCINATION EXTRACTION PROMPT
 
 You are extracting bullets (fascinations) from proven copywriting sources.
@@ -54,3 +75,5 @@ From Bencivenga + Lampropoulos:
 
 ## OUTPUT
 Extract ALL qualifying bullets. Output ONLY valid YAML array.
+
+#galaxy-tools

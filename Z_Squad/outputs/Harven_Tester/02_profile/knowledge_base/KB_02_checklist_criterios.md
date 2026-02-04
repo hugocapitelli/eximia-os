@@ -1,3 +1,27 @@
+---
+title: "KB_02: Checklist de 6 Criterios"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-checklist-criterios"
+  - "kb_02: checklist de 6 criterio"
+  - "visao geral"
+  - "criterio 1: sem resposta diret"
+  - "verificacao"
+  - "resultado"
+  - "criterio 2: pergunta aberta ao"
+  - "tipos de perguntas"
+  - "criterio 3: feedback construti"
+  - "exemplos"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02: Checklist de 6 Criterios
 
 ## Visao Geral
@@ -231,3 +255,5 @@ Senao:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "VSL Script Task - Video Sales Letter"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "vsl-script"
+  - "vsl script task - video sales "
+  - "purpose"
+  - "tier 0: diagnostic questions"
+  - "inputs"
+  - "why vsls convert higher"
+  - "statistics and data"
+  - "jon benson's legacy"
+  - "vsl formats"
+  - "format 1: text-on-screen (bens"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # VSL Script Task - Video Sales Letter
 
 ## Purpose
@@ -1821,3 +1845,5 @@ story_id: "ENR-009"
 *Lines: 1700+*
 *Framework: Jon Benson 9-Step VSL + 3X Formula + Source Enrichment*
 *Enriched: 2026-01-23 | ENR-009*
+
+#galaxy-tools

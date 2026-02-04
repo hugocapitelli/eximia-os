@@ -1,3 +1,27 @@
+---
+title: ".eximia Directory"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - ".eximia directory"
+  - "files"
+  - "usage"
+  - "view all commands"
+  - "in claude code, type:"
+  - "command categories"
+  - "examples"
+  - "scheduler"
+  - "memo"
+tags:
+  - "galaxy-operational"
+  - "documentation"
+---
+
 # .eximia Directory
 
 This directory contains the eximIA.OS command system configuration and documentation.
@@ -54,3 +78,5 @@ The command system is integrated with:
 ## Documentation
 
 Full documentation: `SLASH_COMMANDS_GUIDE.md`
+
+#galaxy-operational

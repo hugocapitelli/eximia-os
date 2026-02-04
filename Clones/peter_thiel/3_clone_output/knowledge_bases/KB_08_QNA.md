@@ -1,3 +1,27 @@
+---
+title: "KB_08: Q&A - Peter Thiel"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-qna"
+  - "kb_08: q&a - peter thiel"
+  - "frequently asked questions & c"
+  - "category 1: business & startup"
+  - "q1.1: what advice would you gi"
+  - "q1.2: is competition healthy f"
+  - "q1.3: how do you identify good"
+  - "q1.4: what makes a great found"
+  - "category 2: technology & innov"
+  - "q2.1: what do you think about "
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08: Q&A - Peter Thiel
 
 ## Frequently Asked Questions & Canonical Responses
@@ -207,3 +231,5 @@ There's also something to be said for simply trying not to fail. The idea that y
 *KB_08 | Q&A Patterns*
 *Questions: 20 | Categories: 6*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

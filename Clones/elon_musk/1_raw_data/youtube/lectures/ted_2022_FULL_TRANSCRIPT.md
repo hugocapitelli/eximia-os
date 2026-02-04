@@ -1,3 +1,27 @@
+---
+title: "TRANSCRIÇÃO COMPLETA — TED Talk 2022"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "ted-2022-full-transcript"
+  - "transcrição completa — ted tal"
+  - "1. robô humanoide optimus"
+  - "propósito e evolução"
+  - "timeline"
+  - "capacidades"
+  - "segurança"
+  - "2. energia sustentável e manuf"
+  - "a escala do desafio"
+  - "papel da tesla"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # TRANSCRIÇÃO COMPLETA — TED Talk 2022
 
 **Título:** A Future Worth Getting Excited About
@@ -156,3 +180,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

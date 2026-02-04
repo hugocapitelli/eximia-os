@@ -1,3 +1,27 @@
+---
+title: "Task: Analyze Hot Query Paths"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-analyze-hotpaths"
+  - "task: analyze hot query paths"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Analyze Hot Query Paths
 
 **Purpose**: Run EXPLAIN ANALYZE on common/critical queries to identify performance issues
@@ -570,3 +594,5 @@ const { data, error } = await supabase
 - [Supabase Query Optimization](https://supabase.com/docs/guides/database/query-optimization)
 - [Supabase RLS Performance](https://supabase.com/docs/guides/troubleshooting/rls-performance-and-best-practices-Z5Jjwv)
 - [index_advisor Extension](https://supabase.com/docs/guides/database/extensions/index_advisor)
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "Query 02: Think and Grow Rich - 13 Principles"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-02-think-grow-rich-13-principles"
+  - "query 02: think and grow rich "
+  - "about the book"
+  - "the 13 principles of success"
+  - "1. desire"
+  - "2. faith"
+  - "3. autosuggestion"
+  - "4. specialized knowledge"
+  - "5. imagination"
+  - "6. organized planning"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Query 02: Think and Grow Rich - 13 Principles
 
 **Search Date:** 2026-01-23
@@ -113,3 +137,5 @@ The central thesis: **Thoughts are things.** Thinking in a certain way gives you
 - [Cooler Insights - 13 Principles](https://coolerinsights.com/2020/04/13-principles-think-grow-rich/)
 - [Shortform - Essential Principles](https://www.shortform.com/blog/principles-of-think-and-grow-rich/)
 - [Oberlo - Summary](https://www.oberlo.com/blog/think-and-grow-rich-by-napoleon-hill-summary)
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "TIER 2 - MODERN SYSTEMATIZERS"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "04-tier2-systematizers-ai-optimized"
+  - "tier 2 - modern systematizers"
+  - "copywriters who transformed ti"
+  - "use for: structuring process a"
+  - "tier_2_overview"
+  - "clone_10_dan_kennedy"
+  - "kennedy framework correction"
+  - "kennedy 3ms triangle"
+  - "kennedy deep avatar questions"
+  - "clone_11_todd_brown"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # TIER 2 - MODERN SYSTEMATIZERS
 # Copywriters who transformed Tier 0-1 principles into teachable, replicable frameworks.
 # Use for: STRUCTURING process and training teams
@@ -507,3 +531,5 @@ redundancies_to_avoid:
       kennedy_when: "Primary problem is avatar/high-ticket"
       todd_brown_when: "Primary problem is mechanism/differentiation"
 ```
+
+#galaxy-tools

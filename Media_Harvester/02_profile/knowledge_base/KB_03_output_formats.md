@@ -1,3 +1,27 @@
+---
+title: "KB_03 - Output Formats"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-output-formats"
+  - "kb_03 - output formats"
+  - "visão geral"
+  - "formato padrão: markdown"
+  - "estrutura completa"
+  - "{título do vídeo}"
+  - "transcrição"
+  - "metadados técnicos"
+  - "obsidian connections"
+  - "naming convention"
+tags:
+  - "galaxy-tools"
+  - "knowledge-base"
+---
+
 # KB_03 - Output Formats
 
 ## Visão Geral
@@ -352,3 +376,5 @@ def sanitize_filename(title):
 
     return sanitized
 ```
+
+#galaxy-tools

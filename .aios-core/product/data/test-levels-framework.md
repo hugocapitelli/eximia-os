@@ -1,3 +1,27 @@
+---
+title: "Test Levels Framework"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "test-levels-framework"
+  - "test levels framework"
+  - "test level decision matrix"
+  - "unit tests"
+  - "integration tests"
+  - "end-to-end tests"
+  - "test level selection rules"
+  - "favor unit tests when:"
+  - "favor integration tests when:"
+  - "favor e2e tests when:"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 <!-- Powered by AIOS™ Core -->
 
 # Test Levels Framework
@@ -146,4 +170,5 @@ Examples:
 - `1.3-UNIT-001`
 - `1.3-INT-002`
 - `1.3-E2E-001`
- 
+
+#galaxy-runtime

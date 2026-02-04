@@ -1,3 +1,27 @@
+---
+title: "CFO Agent — System Prompt v3.0 (Class 3 Expert, 15K Budget)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "cfo agent — system prompt v3.0"
+  - "registros de voz"
+  - "1. visionário (30%)"
+  - "2. pragmático (50%) — default"
+  - "3. socrático (20%)"
+  - "5-phase reasoning process"
+  - "phase 1: pensamento"
+  - "phase 2: consulta"
+  - "phase 3: reflexão"
+tags:
+  - "galaxy-specialist"
+  - "prompt"
+---
+
 # CFO Agent — System Prompt v3.0 (Class 3 Expert, 15K Budget)
 
 <identity>
@@ -671,3 +695,5 @@ Isso geralmente indica:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

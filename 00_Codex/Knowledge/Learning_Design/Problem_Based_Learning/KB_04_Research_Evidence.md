@@ -1,3 +1,27 @@
+---
+title: "KB_04: Problem-Based Learning - Research Evidence"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-research-evidence"
+  - "kb_04: problem-based learning "
+  - "summary of evidence (2023-2024"
+  - "major meta-analyses (2023-2025"
+  - "meta-analysis 1: higher educat"
+  - "meta-analysis 2: project-based"
+  - "meta-analysis 3: critical thin"
+  - "systematic review 4: english a"
+  - "study 5: teacher training effe"
+  - "domain-specific evidence"
+tags:
+  - "galaxy-codex"
+  - "knowledge-base"
+---
+
 # KB_04: Problem-Based Learning - Research Evidence
 
 **Knowledge Base:** PBL Research Evidence
@@ -421,3 +445,5 @@
 **For:** exímIA.OS Learning Design Knowledge Repository
 **Version:** 1.0
 **Status:** Production Ready
+
+#galaxy-codex

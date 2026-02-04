@@ -1,3 +1,27 @@
+---
+title: "Web Search: Tim Ferriss Social Media & Five Bullet Friday"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-07-social-media"
+  - "web search: tim ferriss social"
+  - "presença em social media"
+  - "filosofia geral"
+  - "twitter/x specific"
+  - "prática de "digital detox""
+  - "five bullet friday newsletter"
+  - "formato & estilo"
+  - "propósito e diferencial"
+  - "business model integration"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Web Search: Tim Ferriss Social Media & Five Bullet Friday
 
 **Query:** Twitter social media Five Bullet Friday newsletter style  
@@ -111,3 +135,4 @@ A abordagem minimalista em social media é extensão direta de:
 - IanBrodie.com
 - Medium.com
 
+#galaxy-creation

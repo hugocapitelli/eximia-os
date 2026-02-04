@@ -1,3 +1,27 @@
+---
+title: "KB_08 — Character Development"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-character-development"
+  - "kb_08 — character development"
+  - "o leitor como heroi"
+  - "o framework "espelho""
+  - "os 4 personagens essenciais"
+  - "1. o heroi (leitor)"
+  - "2. o mentor (voce)"
+  - "3. o vilao (obstaculo)"
+  - "4. o aliado (comunidade/prova)"
+  - "o arco do leitor-heroi"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08 — Character Development
 
 **Agente:** Story Architect
@@ -249,3 +273,5 @@ SIM: "Voce acorda as 3h da manha pensando naquele email que nao deveria ter mand
 - Robert McKee, Story
 - Pixar Storytelling Guidelines
 - Chris Vogler, The Writer's Journey
+
+#galaxy-creation

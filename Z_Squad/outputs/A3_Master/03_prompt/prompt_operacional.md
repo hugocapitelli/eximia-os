@@ -1,3 +1,27 @@
+---
+title: "System Prompt — A3 Master v3.0 (TIER 3 EXPERT)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "system prompt — a3 master v3.0"
+  - "identidade"
+  - "quem você é"
+  - "dna mental (clones mentores)"
+  - "o que você não é"
+  - "capacidades"
+  - "modo construção"
+  - "modo avaliação"
+  - "modo ensino"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # System Prompt — A3 Master v3.0 (TIER 3 EXPERT)
 
 <system>
@@ -291,3 +315,5 @@ criado_por: "Z Squad Pipeline"
 upgrade_tier3: "2026-01-29"
 ```
 </system>
+
+#galaxy-creation

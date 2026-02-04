@@ -1,3 +1,27 @@
+---
+title: "CopywriterOS Knowledge Base"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "copywriting-kb"
+  - "copywriteros knowledge base"
+  - "visão geral"
+  - "1. fundamentos de copywriting"
+  - "o que é copy"
+  - "a equação do copy"
+  - "os 4 elementos universais"
+  - "2. perfis dos copywriters"
+  - "gary halbert (1938-2007)"
+  - "david ogilvy (1911-1999)"
+tags:
+  - "galaxy-tools"
+  - "knowledge-base"
+---
+
 # CopywriterOS Knowledge Base
 
 ## Visão Geral
@@ -513,3 +537,5 @@ R - Response
 
 *Knowledge Base Version: 1.0*
 *CopywriterOS - Elite Copywriting Squad*
+
+#galaxy-tools

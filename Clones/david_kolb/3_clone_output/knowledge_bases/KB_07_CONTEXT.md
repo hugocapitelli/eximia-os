@@ -1,3 +1,27 @@
+---
+title: "KB_07: CONTEXT"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-context"
+  - "kb_07: context"
+  - "contexto historico e intelectu"
+  - "contexto historico"
+  - "decada de 1960"
+  - "decada de 1970"
+  - "decada de 1980"
+  - "decadas de 1990-2000"
+  - "decada de 2010"
+  - "contexto intelectual"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07: CONTEXT
 ## Contexto Historico e Intelectual de David A. Kolb
 
@@ -125,3 +149,5 @@
 ---
 
 *KB_07 — Context | David Kolb Clone*
+
+#galaxy-creation

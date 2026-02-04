@@ -1,3 +1,27 @@
+---
+title: "jon-benson"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "jon-benson"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "operational frameworks (10 tot"
+  - "communication dna"
+  - "signature phrases (42 total)"
+  - "authority proof arsenal"
+  - "objection algorithms (5 total)"
+  - "voice guidelines"
+  - "security & ethics"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # jon-benson
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -1696,3 +1720,5 @@ As seguintes fontes estão catalogadas mas ainda pendentes de coleta:
 *Seção adicionada como parte do Copy Framework v2.0 - Source Enrichment*
 *Extraído de: outputs/minds/jon_benson/*
 *Data de Extração: 2026-01-23*
+
+#galaxy-operational

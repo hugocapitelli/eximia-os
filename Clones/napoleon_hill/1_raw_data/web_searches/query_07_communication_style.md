@@ -1,3 +1,27 @@
+---
+title: "Query 07: Communication Style & Rhetoric"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-07-communication-style"
+  - "query 07: communication style "
+  - "writing style characteristics"
+  - "tone"
+  - "structural patterns"
+  - "vocabulary signature"
+  - "rhetorical techniques"
+  - "1. the promise-evidence-method"
+  - "2. authority by association"
+  - "3. emotional engagement"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Query 07: Communication Style & Rhetoric
 
 **Search Date:** 2026-01-23
@@ -195,3 +219,5 @@ From "Succeed and Grow Rich Through Persuasion":
 - [20 Minute Books - Golden Rules](https://www.20minutebooks.com/napoleon-hills-golden-rules)
 - [Internet Archive - Greatest Speeches](https://archive.org/details/napoleonhillsgre0000hill)
 - [Wikipedia - Napoleon Hill](https://en.wikipedia.org/wiki/Napoleon_Hill)
+
+#galaxy-creation

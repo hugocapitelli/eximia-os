@@ -1,3 +1,26 @@
+---
+title: "david-ogilvy"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "ogilvy"
+  - "david-ogilvy"
+  - "complete agent definition foll"
+  - "══════════════════════════════"
+  - "headline formulas"
+  - "commands"
+  - "david ogilvy — quick reference"
+  - "ogilvy's rules for headlines"
+  - "quick commands"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # david-ogilvy
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -180,3 +203,5 @@ dependencies:
 *David Ogilvy — Father of Advertising*
 *Tier 1 Master — Headlines & Branding*
 *Era: 1911-1999*
+
+#galaxy-runtime

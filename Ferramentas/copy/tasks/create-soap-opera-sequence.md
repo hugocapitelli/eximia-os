@@ -1,3 +1,27 @@
+---
+title: "create-soap-opera-sequence"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-soap-opera-sequence"
+  - "metadata"
+  - "overview"
+  - "philosophy"
+  - "phase 1: foundation"
+  - "step 1.1: define your sequence"
+  - "step 1.2: map your story arc"
+  - "step 1.3: choose your story ty"
+  - "step 1.4: plan your open loops"
+  - "phase 2: writing email 1 - set"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # create-soap-opera-sequence
 
 Task para criar Soap Opera Sequences no estilo Andre Chaperon - sequências de emails story-driven que convertem cold traffic em compradores.
@@ -789,3 +813,5 @@ soap_opera_sequence:
 *Task Version: 2.0*
 *Primary Agent: Andre Chaperon*
 *Lines: 600+*
+
+#galaxy-tools

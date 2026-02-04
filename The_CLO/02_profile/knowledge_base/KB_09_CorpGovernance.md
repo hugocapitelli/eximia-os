@@ -1,3 +1,27 @@
+---
+title: "KB_09: Governança Corporativa"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-corpgovernance"
+  - "kb_09: governança corporativa"
+  - "1. fundamentos"
+  - "1.1 conceito (ibgc)"
+  - "1.2 princípios ibgc"
+  - "2. estrutura de governança"
+  - "2.1 órgãos"
+  - "2.2 conselho de administração"
+  - "3. novo mercado b3"
+  - "3.1 requisitos principais"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_09: Governança Corporativa
 
 **Categoria:** TEORIA  
@@ -219,3 +243,5 @@ Proteção para decisões tomadas com:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

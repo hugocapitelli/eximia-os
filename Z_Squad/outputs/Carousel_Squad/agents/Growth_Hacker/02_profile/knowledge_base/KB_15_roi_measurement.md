@@ -1,3 +1,27 @@
+---
+title: "KB_15 — ROI Measurement"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-15-roi-measurement"
+  - "kb_15 — roi measurement"
+  - "o desafio do roi em instagram"
+  - "por que e dificil medir"
+  - "a solucao: framework de medica"
+  - "metricas de negocio vs metrica"
+  - "hierarquia de metricas"
+  - "framework de atribuicao"
+  - "modelos de atribuicao"
+  - "implementacao para instagram"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_15 — ROI Measurement
 
 **Agente:** Growth Hacker
@@ -495,3 +519,5 @@ META Q4: 120%
 - Sprout Social - Business Impact of Social
 - Sean Ellis - Growth Metrics Framework
 - Marketing Sherpa - Attribution Studies
+
+#galaxy-creation

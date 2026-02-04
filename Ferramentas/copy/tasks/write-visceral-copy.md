@@ -1,3 +1,27 @@
+---
+title: "write-visceral-copy"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "write-visceral-copy"
+  - "task metadata"
+  - "core philosophy"
+  - "the fundamental difference"
+  - "phase 1: emotion discovery & a"
+  - "step 1.1: identify the dominan"
+  - "dominant resident emotion anal"
+  - "target audience"
+  - "primary dre"
+  - "secondary dre"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # write-visceral-copy
 
 A comprehensive task for transforming logical, cerebral copy into visceral, emotionally-charged copy that readers FEEL in their gut - not just understand in their heads.
@@ -921,3 +945,5 @@ Master this task and you'll transform every piece of copy you touch from forgett
 *Created: 2026-01-23*
 *Based on: Clayton Makepeace methodology*
 *Lines: 650+*
+
+#galaxy-tools

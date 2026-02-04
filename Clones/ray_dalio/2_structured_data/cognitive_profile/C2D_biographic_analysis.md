@@ -1,3 +1,27 @@
+---
+title: "C2D — Biographic Analysis"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2d-biographic-analysis"
+  - "c2d — biographic analysis"
+  - "ray dalio formative events & c"
+  - "1. timeline of formative event"
+  - "childhood era (1949-1967)"
+  - "education era (1967-1975)"
+  - "early career era (1973-1982)"
+  - "the abyss (1982) — critical ev"
+  - "rebuilding era (1983-2000)"
+  - "dominance era (2000-2017)"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # C2D — Biographic Analysis
 ## Ray Dalio Formative Events & Contextual Calibration
 
@@ -250,3 +274,5 @@ Seeking Disagreement: LOW (20)     →    VERY HIGH (90)
 ---
 
 *Analysis conducted using Clone Factory C2D Protocol*
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Clone Factory — Quality Gates"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "quality-gates"
+  - "clone factory — quality gates"
+  - "propósito"
+  - "fase 1: research"
+  - "métricas obrigatórias"
+  - "cobertura temática (100% obrig"
+  - "formula de score"
+  - "fase 2: etl"
+  - "voice signature checklist"
+  - "fase 3: generation"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Clone Factory — Quality Gates
 
 ## Propósito
@@ -164,3 +188,5 @@ Clones aprovados são registrados em `registry.yaml`:
 ---
 
 **Última atualização:** 2026-01-08
+
+#galaxy-creation

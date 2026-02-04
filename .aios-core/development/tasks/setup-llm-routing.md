@@ -1,3 +1,27 @@
+---
+title: "setup-llm-routing"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "setup-llm-routing"
+  - "purpose"
+  - "quick install"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode **[default"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+  - "process"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # setup-llm-routing
 
 **Task ID:** setup-llm-routing
@@ -227,3 +251,5 @@ updated_at: 2025-12-14
 
 **Status:** Production Ready
 **Tested On:** Windows 11, macOS, Linux
+
+#galaxy-runtime

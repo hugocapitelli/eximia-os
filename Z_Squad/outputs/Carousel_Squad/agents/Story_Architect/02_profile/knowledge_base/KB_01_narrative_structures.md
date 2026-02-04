@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Narrative Structures for Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-narrative-structures"
+  - "kb_01 — narrative structures f"
+  - "os 7 arquétipos narrativos"
+  - "1. rags to riches (de pobre a "
+  - "2. the quest (a busca)"
+  - "3. voyage and return (viagem e"
+  - "4. comedy (comédia)"
+  - "5. tragedy (tragédia)"
+  - "6. rebirth (renascimento)"
+  - "7. overcoming the monster (sup"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Narrative Structures for Carousels
 
 **Agente:** Story Architect
@@ -148,3 +172,5 @@ Slide 10: CTA
 - Joseph Campbell, The Hero with a Thousand Faces
 - Christopher Booker, The Seven Basic Plots
 - Nancy Duarte, Resonate
+
+#galaxy-creation

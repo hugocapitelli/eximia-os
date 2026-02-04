@@ -1,3 +1,27 @@
+---
+title: "KB_12: Gagne's 9 Events of Instruction"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-12-gagne"
+  - "kb_12: gagne's 9 events of ins"
+  - "visão geral"
+  - "os 9 eventos"
+  - "detalhamento"
+  - "1. gain attention (captar aten"
+  - "2. inform objectives (informar"
+  - "3. stimulate recall (ativar co"
+  - "4. present content (apresentar"
+  - "5. provide guidance (orientar "
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_12: Gagne's 9 Events of Instruction
 
 ## Visão Geral
@@ -213,3 +237,5 @@ Os **9 Eventos de Instrução** de Robert Gagné (1965, atualizado em 1985) são
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

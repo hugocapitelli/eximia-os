@@ -1,3 +1,27 @@
+---
+title: "KB_06 — Instagram-Specific Specs for Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-instagram-specs"
+  - "kb_06 — instagram-specific spe"
+  - "dimensões oficiais instagram"
+  - "formatos de carrossel"
+  - "comparativo visual"
+  - "safe zones detalhadas"
+  - "anatomia de um slide instagram"
+  - "zonas por formato"
+  - "o que evitar nas danger zones"
+  - "ui overlays do instagram"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06 — Instagram-Specific Specs for Carousels
 
 **Agente:** Visual Designer
@@ -353,3 +377,5 @@ REGRA: Se você precisa apertar os olhos, está pequeno demais
 - Later.com - Instagram Size Guide
 - Hootsuite - Social Media Image Sizes
 - Buffer - Instagram Design Guide
+
+#galaxy-creation

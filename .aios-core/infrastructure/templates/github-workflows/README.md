@@ -1,3 +1,27 @@
+---
+title: "GitHub Workflows Templates"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "github workflows templates"
+  - "available templates"
+  - "ci.yml.template"
+  - "pr-automation.yml.template"
+  - "release.yml.template"
+  - "template variables"
+  - "usage"
+  - "copy template"
+  - "replace variables"
+tags:
+  - "galaxy-runtime"
+  - "documentation"
+---
+
 # GitHub Workflows Templates
 
 Templates for GitHub Actions workflows, used by the `*setup-github` task to configure DevOps infrastructure for user projects.
@@ -107,3 +131,5 @@ For Go projects, use `setup-go@v5`:
 - [Story 5.10 - GitHub DevOps Setup](../../../docs/stories/v2.1/sprint-5/story-5.10-github-devops-user-projects.md)
 - [setup-github task](../../development/tasks/setup-github.md)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "Create Unique Mechanism - Todd Brown E5 Method"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-unique-mechanism"
+  - "create unique mechanism - todd"
+  - "purpose"
+  - "when to use"
+  - "todd brown on unique mechanism"
+  - "the two mechanisms framework"
+  - "inputs"
+  - "workflow"
+  - "step 1: pre-work validation"
+  - "step 2: problem mechanism deve"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Create Unique Mechanism - Todd Brown E5 Method
 
 ## Purpose
@@ -659,3 +683,5 @@ MISTAKE 5: MECHANISM ISN'T DEFENSIBLE
 *Created: 2026-01-23*
 *Framework: Todd Brown E5 Method - Unique Mechanism Development*
 *Agent: @todd-brown*
+
+#galaxy-tools

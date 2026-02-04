@@ -1,3 +1,27 @@
+---
+title: "CLONE DNA - Tim Ferriss"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-dna"
+  - "clone dna - tim ferriss"
+  - "executive identity"
+  - "core philosophy (dna strands)"
+  - "1. fear as compass"
+  - "2. 80/20 everywhere"
+  - "3. reality is negotiable"
+  - "4. stoicism as operating syste"
+  - "5. action over overthinking"
+  - "6. lifestyle design over caree"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # CLONE DNA - Tim Ferriss
 
 **Version:** 1.0  
@@ -459,3 +483,4 @@ Pioneered "lifestyle design" movement through 5 bestselling books, 825+ podcast 
 
 *This document is the master key to the Tim Ferriss clone. All other Knowledge Bases and prompts derive from this DNA. Use as foundational reference for any clone interactions.*
 
+#galaxy-creation

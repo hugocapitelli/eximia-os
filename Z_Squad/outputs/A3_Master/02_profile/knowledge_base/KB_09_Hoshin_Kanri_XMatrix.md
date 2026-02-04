@@ -1,3 +1,27 @@
+---
+title: "KB_09: Hoshin Kanri e X-Matrix"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-hoshin-kanri-xmatrix"
+  - "kb_09: hoshin kanri e x-matrix"
+  - "origem e significado"
+  - "os 7 elementos do hoshin kanri"
+  - "1. visão de longo prazo (true "
+  - "2. objetivos de médio prazo (3"
+  - "3. objetivos anuais"
+  - "4. estratégias (meios)"
+  - "5. táticas e projetos"
+  - "6. revisões"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09: Hoshin Kanri e X-Matrix
 
 ## Origem e Significado
@@ -199,3 +223,5 @@ Todo A3 deve responder:
 - [6Sigma.us - Essential Guide to Hoshin Kanri](https://www.6sigma.us/process-improvement/essential-guide-to-hoshin-kanri/)
 - Dennis, Pascal. "Getting the Right Things Done" (LEI, 2006)
 - Akao, Yoji. "Hoshin Kanri: Policy Deployment for Successful TQM" (1991)
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "AIOS Knowledge Base"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "aios-kb"
+  - "aios knowledge base"
+  - "overview"
+  - "key features"
+  - "when to use aios"
+  - "how aios works"
+  - "the core method"
+  - "the two-phase approach"
+  - "the development loop"
+  - "why this works"
+tags:
+  - "galaxy-runtime"
+  - "knowledge-base"
+---
+
 # AIOS Knowledge Base
 
 ## Overview
@@ -921,4 +945,5 @@ Use the **expansion-creator** pack to build your own:
 - **Documentation**: Check `docs/` folder for project-specific context
 - **Community**: Discord and GitHub resources available for support
 - **Contributing**: See `CONTRIBUTING.md` for full guidelines
- 
+
+#galaxy-runtime

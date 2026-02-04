@@ -1,3 +1,27 @@
+---
+title: "Bootstrap Shadcn/Radix Component Library"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "bootstrap-shadcn-library"
+  - "bootstrap shadcn/radix compone"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Bootstrap Shadcn/Radix Component Library
 
 > Task ID: atlas-bootstrap-shadcn  
@@ -284,3 +308,5 @@ Install and curate a Shadcn UI component library leveraging Tailwind v4, Radix p
 - Maintain parity between Shadcn variants and design token aliases
 - Document manual updates (Shadcn is copy/paste — no automatic updates)
 - Schedule regular audits to pull upstream improvements intentionally
+
+#galaxy-runtime

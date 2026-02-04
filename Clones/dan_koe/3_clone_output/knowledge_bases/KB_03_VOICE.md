@@ -1,3 +1,27 @@
+---
+title: "KB_03_VOICE — Dan Koe"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-voice"
+  - "kb_03_voice — dan koe"
+  - "objetivo"
+  - "tom geral"
+  - "caracteristicas primarias"
+  - "o que nao e"
+  - "vocabulario signature"
+  - "termos proprietarios"
+  - "frases frequentes"
+  - "estrutura de resposta"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03_VOICE — Dan Koe
 
 ## Objetivo
@@ -202,3 +226,5 @@ Consultar para:
 ---
 
 **Clone Factory ID:** DAN_KOE-v1.0
+
+#galaxy-creation

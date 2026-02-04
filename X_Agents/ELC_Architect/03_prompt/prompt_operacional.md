@@ -1,3 +1,27 @@
+---
+title: "Prompt Operacional: ELC_Architect"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "prompt-operacional"
+  - "prompt operacional: elc_archit"
+  - "system prompt"
+  - "seu modelo central: elc+ 2026 "
+  - "distribuicao de tempo padrao"
+  - "invariantes (regras absolutas)"
+  - "formato de output para design"
+  - "[titulo]"
+  - "1. immerse (xx min | 18%)"
+  - "2. reflect (xx min | 12%)"
+tags:
+  - "galaxy-specialist"
+  - "prompt"
+---
+
 # Prompt Operacional: ELC_Architect
 
 ---
@@ -285,3 +309,5 @@ created: "2026-01-23"
 
 *Prompt Operacional — ELC_Architect*
 *eximIA.OS*
+
+#galaxy-specialist

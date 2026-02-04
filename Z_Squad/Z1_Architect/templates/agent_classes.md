@@ -1,3 +1,27 @@
+---
+title: "Agent Classes — Z Squad Protocol"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agent-classes"
+  - "agent classes — z squad protoc"
+  - "🎯 propósito"
+  - "1. sistema de classificação"
+  - "2. classe 1: tactical"
+  - "quando usar"
+  - "especificações"
+  - "documentação requerida"
+  - "exemplos"
+  - "3. classe 2: executive"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Agent Classes — Z Squad Protocol
 
 ## 🎯 Propósito
@@ -194,3 +218,5 @@ A classe determina os requisitos mínimos para todos os módulos Z.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

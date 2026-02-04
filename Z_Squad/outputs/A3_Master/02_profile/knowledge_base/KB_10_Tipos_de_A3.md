@@ -1,3 +1,27 @@
+---
+title: "KB_10: Tipos de A3 — Estratégico, Tático e Operacional"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-10-tipos-de-a3"
+  - "kb_10: tipos de a3 — estratégi"
+  - "visão geral dos três níveis"
+  - "a3 estratégico"
+  - "propósito"
+  - "características"
+  - "conteúdo típico"
+  - "exemplo de objetivo estratégic"
+  - "origina"
+  - "a3 tático"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_10: Tipos de A3 — Estratégico, Tático e Operacional
 
 ## Visão Geral dos Três Níveis
@@ -267,3 +291,5 @@ vinculacao:
 - Shook, John. "Managing to Learn" - LEI (2008)
 - Sobek II, Durward & Smalley, Art. "Understanding A3 Thinking" (2008)
 - Toyota Motor Corporation - A3 Standards Internal Documents
+
+#galaxy-creation

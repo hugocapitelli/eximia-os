@@ -1,3 +1,27 @@
+---
+title: "C2A JUNGUIAN ANALYSIS: Steve Jobs"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2a-junguian-analysis"
+  - "c2a junguian analysis: steve j"
+  - "mbti & cognitive function stac"
+  - "mbti type determination"
+  - "primary assessment: intj"
+  - "supporting evidence"
+  - "cognitive function stack"
+  - "dominant: ni (introverted intu"
+  - "auxiliary: te (extraverted thi"
+  - "tertiary: fi (introverted feel"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2A JUNGUIAN ANALYSIS: Steve Jobs
 ## MBTI & Cognitive Function Stack
 
@@ -200,3 +224,5 @@ Steve Jobs represents one of the most powerful expressions of the INTJ type in r
 
 *Analysis by: C2A_JunguianAnalyst*
 *Methodology: Cognitive function analysis + behavioral pattern matching*
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Develop Story Task"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dev-develop-story"
+  - "develop story task"
+  - "purpose"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Develop Story Task
 
 ## Purpose
@@ -844,3 +868,5 @@ Found 5 technical decisions needed.
 - **Decision Logs**: Persisted in `.ai/decision-log-{story-id}.md` for future reference and review
 - **Educational Value**: Interactive mode explanations help developers learn framework patterns
 - **Scope Drift Prevention**: Pre-flight mode eliminates mid-development ambiguity
+
+#galaxy-runtime

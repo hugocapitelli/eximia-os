@@ -1,3 +1,27 @@
+---
+title: "Deep Research: Abandoned Cart Email Recovery Methodology"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "abandoned-cart-methodology-research"
+  - "deep research: abandoned cart "
+  - "executive summary"
+  - "part 1: psychology of cart aba"
+  - "1.1 why people abandon carts"
+  - "1.2 robert cialdini's 6 princi"
+  - "1.3 loss aversion: the master "
+  - "1.4 paradox of choice"
+  - "part 2: dan kennedy's direct r"
+  - "2.1 the 3-letter sequence meth"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Deep Research: Abandoned Cart Email Recovery Methodology
 
 **Research ID:** abandoned-cart-methodology
@@ -718,3 +742,5 @@ Email 4 (7 days) → Final
 *Research compiled by Ralph Autonomous Agent*
 *Copy Framework v2.0 Upgrade Project*
 *Story: US-031*
+
+#galaxy-tools

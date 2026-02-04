@@ -1,3 +1,27 @@
+---
+title: "C2D BIOGRAPHIC ANALYST — Agente de Contexto Formativo e Core Identity"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "c2d biographic analyst — agent"
+  - "identidade"
+  - "fundamentação científica"
+  - "memória autobiográfica e ident"
+  - "teoria do imprinting"
+  - "missão"
+  - "protocolo operacional"
+  - "0. core identity extraction (n"
+  - "0.5 narrative arc (arco narrat"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2D BIOGRAPHIC ANALYST — Agente de Contexto Formativo e Core Identity
 
 ## IDENTIDADE
@@ -491,3 +515,5 @@ Este agente fornece **contexto** para os outros:
 **Clone Factory Module:** C2D
 **Tipo:** Sub-Agente de Extração Contextual e Core Identity
 **Changelog v2.0:** Adicionado Core Identity Extraction, Narrative Arc, e Cross-Validation
+
+#galaxy-creation

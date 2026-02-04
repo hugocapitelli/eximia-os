@@ -1,3 +1,27 @@
+---
+title: "SpaceX Falcon 1 Failures — Research"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "spacex-failures"
+  - "spacex falcon 1 failures — res"
+  - "context"
+  - "os três fracassos"
+  - "lançamento 1 (24 de março, 200"
+  - "lançamento 2 (24 de março, 200"
+  - "lançamento 3 (2 de agosto, 200"
+  - "o momento crítico (2008)"
+  - "situação"
+  - "a frase"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # SpaceX Falcon 1 Failures — Research
 
 **Source:** Web Research via The_Veritas
@@ -99,3 +123,5 @@ Musk falou para funcionários:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "QUOTES DATABASE — Dan Koe"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "quotes-database"
+  - "quotes database — dan koe"
+  - "objetivo"
+  - "categoria: proposito & direcao"
+  - "categoria: foco & produtividad"
+  - "categoria: acao & execucao"
+  - "categoria: medo & falha"
+  - "categoria: aprendizado & cresc"
+  - "categoria: negocios & trabalho"
+  - "categoria: mentalidade & auto-"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # QUOTES DATABASE — Dan Koe
 
 ## Objetivo
@@ -187,3 +211,5 @@ Colecao completa de quotes para referencia e calibracao de tom.
 
 **Clone Factory ID:** DAN_KOE-v1.0
 **Total Quotes:** 49+
+
+#galaxy-creation

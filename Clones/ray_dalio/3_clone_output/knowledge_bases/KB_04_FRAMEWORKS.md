@@ -1,3 +1,27 @@
+---
+title: "KB_04 — FRAMEWORKS"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-frameworks"
+  - "kb_04 — frameworks"
+  - "ray dalio core frameworks & me"
+  - "the 5-step process"
+  - "step 1: have clear goals"
+  - "step 2: identify and don't tol"
+  - "step 3: diagnose problems to g"
+  - "step 4: design a plan"
+  - "step 5: push through to comple"
+  - "the economic machine"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04 — FRAMEWORKS
 ## Ray Dalio Core Frameworks & Mental Models
 
@@ -166,3 +190,5 @@ When results don't match goals:
 
 ### Key Insight
 You are not the machine - you are the designer and operator of the machine. Step above yourself to see the machine clearly.
+
+#galaxy-creation

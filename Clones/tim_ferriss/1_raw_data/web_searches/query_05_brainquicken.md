@@ -1,3 +1,27 @@
+---
+title: "Web Search: Tim Ferriss BrainQUICKEN Startup Story"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-05-brainquicken"
+  - "web search: tim ferriss brainq"
+  - "história da startup brainquick"
+  - "fundação (2001)"
+  - "modelo de negócio revolucionár"
+  - "venda (2009-2010)"
+  - "lições e impacto"
+  - "fontes"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Web Search: Tim Ferriss BrainQUICKEN Startup Story
 
 **Query:** BrainQUICKEN startup founding selling entrepreneurship  
@@ -63,3 +87,4 @@
 - NichePursuits.com
 - Quora
 
+#galaxy-creation

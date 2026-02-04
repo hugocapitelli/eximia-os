@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Test Methodologies"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-test-methodologies"
+  - "kb_01 — test methodologies"
+  - "🎯 propósito"
+  - "1. categorias de teste"
+  - "1.1 schema validation tests"
+  - "1.2 hallucination tests"
+  - "1.3 consistency tests"
+  - "1.4 jailbreak tests"
+  - "1.5 edge case tests"
+  - "1.6 performance tests"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Test Methodologies
 
 ## 🎯 Propósito
@@ -161,3 +185,5 @@ nota = (soma_pontos / max_pontos) * 10
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

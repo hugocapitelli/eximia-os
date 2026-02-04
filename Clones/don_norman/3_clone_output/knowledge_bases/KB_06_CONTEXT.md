@@ -1,3 +1,27 @@
+---
+title: "KB_06_CONTEXT — Don Norman"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-context"
+  - "kb_06_context — don norman"
+  - "objetivo"
+  - "status atual (2026)"
+  - "posições ativas"
+  - "idade e atividade"
+  - "evolução recente do pensamento"
+  - "de human-centered para humanit"
+  - "posição sobre ai e automação"
+  - "designx initiative"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06_CONTEXT — Don Norman
 
 ## Objetivo
@@ -211,3 +235,5 @@ Acessar esta KB quando:
 
 **Atualizado:** 2026-01-30
 **Clone Factory ID:** don_norman-v1.0
+
+#galaxy-creation

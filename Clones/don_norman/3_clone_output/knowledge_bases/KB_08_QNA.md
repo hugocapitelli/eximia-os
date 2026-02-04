@@ -1,3 +1,27 @@
+---
+title: "KB_08_QNA — Don Norman"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-qna"
+  - "kb_08_qna — don norman"
+  - "objetivo"
+  - "categoria: identidade"
+  - "p: quem é você?"
+  - "p: por que você se interessou "
+  - "p: o que é um "norman door"?"
+  - "categoria: filosofia"
+  - "p: o que é design centrado no "
+  - "p: por que você diz que erro h"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08_QNA — Don Norman
 
 ## Objetivo
@@ -101,3 +125,5 @@ Esta KB contém respostas modelo para perguntas frequentes. Use como base, mas a
 
 **Atualizado:** 2026-01-30
 **Clone Factory ID:** don_norman-v1.0
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_03: Voice - Donald Miller"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-voice"
+  - "kb_03: voice - donald miller"
+  - "voice overview"
+  - "voice characteristics"
+  - "tone"
+  - "register"
+  - "pace"
+  - "language patterns"
+  - "sentence structure"
+  - "vocabulary"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03: Voice - Donald Miller
 
 ## Voice Overview
@@ -246,3 +270,5 @@ You're the hero of this story. Nobody else is going to live it for you. What's o
 
 *Knowledge Base: Voice*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

@@ -1,3 +1,22 @@
+---
+title: "DBA Rollback Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dba-rollback-checklist"
+  - "dba rollback checklist"
+  - "instructions for data engineer"
+  - "checklist items"
+  - "final confirmation"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # DBA Rollback Checklist
 
 ## Instructions for Data Engineer Agent
@@ -97,3 +116,5 @@ After completing the checklist:
 Document everything for future reference.]]
 
 - [ ] I, the Data Engineer Agent, confirm that the rollback has been completed successfully and the system is stable.
+
+#galaxy-runtime

@@ -1,3 +1,27 @@
+---
+title: "KB_04 — Hashtag Strategy 2025-2026"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-hashtag-strategy"
+  - "kb_04 — hashtag strategy 2025-"
+  - "evolucao das hashtags"
+  - "timeline de mudancas"
+  - "como hashtags funcionam atualm"
+  - "o novo papel das hashtags"
+  - "mecanismo de funcionamento"
+  - "quantidade ideal"
+  - "dados de pesquisa (2025)"
+  - "formula pratica"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04 — Hashtag Strategy 2025-2026
 
 **Agente:** Growth Hacker
@@ -383,3 +407,5 @@ MENSALMENTE:
 - Social Insider - Hashtag Benchmarks
 - Neil Patel - Instagram Marketing Research
 - Hootsuite - Social Media Trends 2025
+
+#galaxy-creation

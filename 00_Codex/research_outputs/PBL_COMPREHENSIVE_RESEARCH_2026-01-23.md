@@ -1,3 +1,27 @@
+---
+title: "Problem-Based Learning (PBL) - Comprehensive Research Report"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "pbl-comprehensive-research-2026-01-23"
+  - "problem-based learning (pbl) -"
+  - "executive summary"
+  - "key findings"
+  - "1. foundational authors & book"
+  - "2. core pbl frameworks & metho"
+  - "3. recent peer-reviewed resear"
+  - "4. multimedia resources"
+  - "5. implementation resources"
+  - "consolidated framework directo"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Problem-Based Learning (PBL) - Comprehensive Research Report
 
 **Research Agent:** The_Veritas
@@ -447,3 +471,5 @@ Columns used during group work:
 **Status:** Complete
 **Version:** 1.0
 **Export Format:** Markdown for Codex Integration
+
+#galaxy-codex

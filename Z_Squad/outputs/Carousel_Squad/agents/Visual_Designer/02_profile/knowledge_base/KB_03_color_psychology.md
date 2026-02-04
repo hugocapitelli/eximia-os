@@ -1,3 +1,27 @@
+---
+title: "KB_03 — Color Psychology for Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-color-psychology"
+  - "kb_03 — color psychology for c"
+  - "fundamentos da psicologia das "
+  - "por que cores importam"
+  - "o espectro emocional"
+  - "cores e suas associações"
+  - "vermelho (#e63946)"
+  - "azul (#1d3557, #457b9d)"
+  - "verde (#2d6a4f, #40916c)"
+  - "amarelo/dourado (#ffd60a, #ffc"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03 — Color Psychology for Carousels
 
 **Agente:** Visual Designer
@@ -322,3 +346,5 @@ Três cores equidistantes Um + dois ao lado do oposto
 - Faber Birren, "Color Psychology and Color Therapy"
 - Material Design Color System
 - Apple Human Interface Guidelines - Color
+
+#galaxy-creation

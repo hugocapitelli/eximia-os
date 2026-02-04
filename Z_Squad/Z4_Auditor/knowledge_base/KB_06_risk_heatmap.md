@@ -1,3 +1,27 @@
+---
+title: "KB_06 — Risk Heatmap"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-risk-heatmap"
+  - "kb_06 — risk heatmap"
+  - "🎯 propósito"
+  - "1. o que é o risk heatmap?"
+  - "2. classificação de riscos"
+  - "🔴 critical"
+  - "🟠 high"
+  - "🟡 medium"
+  - "🟢 low"
+  - "3. template de risk heatmap"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06 — Risk Heatmap
 
 ## 🎯 Propósito
@@ -179,3 +203,5 @@ No `validation_report.md`, incluir:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

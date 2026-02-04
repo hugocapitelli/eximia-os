@@ -1,3 +1,26 @@
+---
+title: "Mobile UX Patterns 2026: The "Invisible" Interface"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "mobile-ux-patterns-2026"
+  - "mobile ux patterns 2026: the ""
+  - "1. the core shift: "intent-dri"
+  - "2. ergonomics & the thumb zone"
+  - "3. "island" interactions & liv"
+  - "4. visual language: glassmorph"
+  - "5. agent instructions for prd "
+  - "codex"
+  - "knowledge"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Mobile UX Patterns 2026: The "Invisible" Interface
 
 **Source Authority:** Nielsen Norman Group, Apple HIG (Future), Material Design 4.
@@ -28,3 +51,5 @@ Don't lock status checks inside the app. Push them to the OS.
 1.  **Mobile-First Check:** For every feature in the PRD, ask: "Is the primary action reachable with one thumb?"
 2.  **Haptics Spec:** Define Haptic Feedback moments (e.g., "Success Haptic when payment completes").
 3.  **gesture_map:** Create a specific section in the Wireframe description mapping gestures (e.g., "Swipe Left to Archive").
+
+#galaxy-codex

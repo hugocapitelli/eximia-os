@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Carousel Types Taxonomy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-carousel-types-taxonomy"
+  - "kb_01 — carousel types taxonom"
+  - "os 10 tipos fundamentais de ca"
+  - "1. educational (how-to)"
+  - "2. storytelling (narrative)"
+  - "3. listicle (list-based)"
+  - "4. data/statistics"
+  - "5. quote carousel"
+  - "6. behind-the-scenes"
+  - "7. product showcase"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Carousel Types Taxonomy
 
 **Agente:** Carousel Maestro
@@ -278,3 +302,5 @@
 - [Instagram Carousel Strategy 2026](https://www.truefuturemedia.com/articles/instagram-carousel-strategy-2026)
 - [25+ Instagram Carousel Ideas](https://www.dochipo.com/instagram-carousel-ideas/)
 - Análise de @brandsdecoded__, @notjournal.ai
+
+#galaxy-creation

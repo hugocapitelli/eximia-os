@@ -1,3 +1,27 @@
+---
+title: "KB_15 — Trend Analysis"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-15-trend-analysis"
+  - "kb_15 — trend analysis"
+  - "por que acompanhar tendências?"
+  - "tipos de tendências a monitora"
+  - "1. tendências de plataforma"
+  - "2. tendências de conteúdo"
+  - "3. tendências de nicho"
+  - "4. tendências culturais"
+  - "framework radar de monitoramen"
+  - "r - research (pesquisa ativa)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_15 — Trend Analysis
 
 **Agente:** Carousel Maestro
@@ -473,3 +497,5 @@ VISUAL TRENDS
 - [The Information](https://theinformation.com) (social media coverage)
 - Newsletter: Social Media Today
 - Newsletter: The Publish Press
+
+#galaxy-creation

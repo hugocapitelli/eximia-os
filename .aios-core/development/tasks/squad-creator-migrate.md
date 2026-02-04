@@ -241,3 +241,5 @@ async function migrateSquad(options) {
 - **Schema:** .aios-core/schemas/squad-schema.json
 - **Agent:** @squad-creator (Craft)
 - **Similar Tasks:** *validate-squad, *create-squad
+
+#galaxy-runtime

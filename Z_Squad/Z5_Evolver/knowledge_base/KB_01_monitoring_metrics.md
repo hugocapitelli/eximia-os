@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Monitoring Metrics"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-monitoring-metrics"
+  - "kb_01 — monitoring metrics"
+  - "🎯 propósito"
+  - "1. métricas core (obrigatórias"
+  - "1.1 error rate"
+  - "1.2 user satisfaction (nps/rat"
+  - "1.3 hallucination rate"
+  - "1.4 schema compliance rate"
+  - "1.5 response time (p95)"
+  - "2. métricas de uso (contextuai"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Monitoring Metrics
 
 ## 🎯 Propósito
@@ -187,3 +211,5 @@ alertas:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

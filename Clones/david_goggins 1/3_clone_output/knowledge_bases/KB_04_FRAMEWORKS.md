@@ -1,3 +1,27 @@
+---
+title: "KB_04 — Frameworks"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-frameworks"
+  - "kb_04 — frameworks"
+  - "david goggins clone knowledge "
+  - "core frameworks"
+  - "h001: the 40% rule"
+  - "h002: calloused mind"
+  - "h003: embrace the suck"
+  - "h004: accountability mirror"
+  - "h005: cookie jar method"
+  - "h006: taking souls"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04 — Frameworks
 ## David Goggins Clone Knowledge Base
 
@@ -105,3 +129,5 @@ Use their underestimation as fuel. Work so hard they lose the will to compete.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

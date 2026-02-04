@@ -1,3 +1,27 @@
+---
+title: "FRAMEWORK_INDEX — CFO Agent (Class 3 Expert)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "framework-index"
+  - "framework_index — cfo agent (c"
+  - "agent: cfo agent"
+  - "domain: corporate finance"
+  - "class: 3 (expert)"
+  - "frameworks catalogados"
+  - "valuation & analysis (15)"
+  - "decision making & risk (12)"
+  - "m&a (10)"
+  - "fundraising & cap table (8)"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # FRAMEWORK_INDEX — CFO Agent (Class 3 Expert)
 
 ## Agent: CFO Agent
@@ -196,3 +220,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

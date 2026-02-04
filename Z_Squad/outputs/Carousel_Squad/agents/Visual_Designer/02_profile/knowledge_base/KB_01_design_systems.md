@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Design Systems for Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-design-systems"
+  - "kb_01 — design systems for car"
+  - "atomic design para carrosséis"
+  - "conceito"
+  - "dimensões e safe zones"
+  - "instagram (recomendado)"
+  - "linkedin (horizontal)"
+  - "multi-platform export"
+  - "sistema de grid"
+  - "grid 4x4 (recomendado)"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Design Systems for Carousels
 
 **Agente:** Visual Designer
@@ -210,3 +234,5 @@ Margem externa: 60px
 - Massimo Vignelli, The Vignelli Canon
 - Material Design Guidelines
 - Apple Human Interface Guidelines
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Native Ads Methodology Research"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "native-ads-methodology-research"
+  - "native ads methodology researc"
+  - "executive summary"
+  - "seção 1: fundamentos de native"
+  - "1.1 definição e conceito"
+  - "1.2 iab native advertising pla"
+  - "1.3 por que native ads funcion"
+  - "seção 2: plataformas de native"
+  - "2.1 taboola"
+  - "2.2 outbrain"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Native Ads Methodology Research
 
 ## Executive Summary
@@ -1433,3 +1457,5 @@ FOR ADVANCED:
 *Linhas: 1150+*
 *Última Atualização: 2026-01-23*
 *Copy Framework v2.0 - Research Phase*
+
+#galaxy-tools

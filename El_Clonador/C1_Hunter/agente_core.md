@@ -1,3 +1,27 @@
+---
+title: "C1 HUNTER — Agente de Pesquisa Profunda"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "c1 hunter — agente de pesquisa"
+  - "identidade"
+  - "missão"
+  - "protocolo operacional"
+  - "1. receber request"
+  - "2. ativar the_veritas"
+  - "2.1 codex check (internal db)"
+  - "3. coletar por categoria"
+  - "4. estruturar output"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C1 HUNTER — Agente de Pesquisa Profunda
 
 ## IDENTIDADE
@@ -337,3 +361,4 @@ def get_youtube_transcript(video_id):
 **Versão:** 1.1
 **Clone Factory Module:** C1
 
+#galaxy-creation

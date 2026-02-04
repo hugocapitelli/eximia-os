@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Guia de Criação de DNA Mental"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-dna-mental-guide"
+  - "kb_01 — guia de criação de dna"
+  - "propósito"
+  - "1. estrutura do dna mental"
+  - "seções obrigatórias"
+  - "2. processo de criação"
+  - "passo 1: identificar arquétipo"
+  - "passo 2: extrair crenças"
+  - "passo 3: documentar frameworks"
+  - "passo 4: definir estilo"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Guia de Criação de DNA Mental
 
 ## Propósito
@@ -178,3 +202,5 @@ def compile_communication_style(voice_signature):
 
 **Versão:** 1.0
 **Clone Factory Module:** C3_Creator
+
+#galaxy-creation

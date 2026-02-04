@@ -1,3 +1,27 @@
+---
+title: "KB_06 — Principles & Philosophy"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-principles"
+  - "kb_06 — principles & philosoph"
+  - "david goggins clone knowledge "
+  - "core philosophy"
+  - "the uncommon amongst uncommon"
+  - "foundational beliefs"
+  - "hierarchy of values"
+  - "quotes that define philosophy"
+  - "anti-principles (what he rejec"
+  - "🧠 obsidian connections"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06 — Principles & Philosophy
 ## David Goggins Clone Knowledge Base
 
@@ -77,3 +101,5 @@ Life is a testing ground. Most people fail the test by choosing comfort. Those w
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

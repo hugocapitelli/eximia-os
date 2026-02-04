@@ -1,3 +1,27 @@
+---
+title: "version-management.md"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "github-devops-version-management"
+  - "version-management.md"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # version-management.md
 
 **Task**: Semantic Version Management (Repository-Agnostic)
@@ -481,3 +505,5 @@ Called by `@github-devops` agent via `*version-check` command.
 - Respects conventional commits format
 - User always has final approval
 - Does NOT push to remote (that's done by *push command)
+
+#galaxy-runtime

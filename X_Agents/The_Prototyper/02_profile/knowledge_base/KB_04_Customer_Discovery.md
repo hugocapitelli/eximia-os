@@ -1,3 +1,27 @@
+---
+title: "KB-04: Customer Discovery & Interview Analysis"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-customer-discovery"
+  - "kb-04: customer discovery & in"
+  - "1. fundamentos de customer dis"
+  - "1.1 o que é customer discovery"
+  - "1.2 princípios core"
+  - "1.3 quando fazer discovery"
+  - "2. customer interview framewor"
+  - "2.1 estrutura de entrevista (4"
+  - "customer interview guide"
+  - "prep (antes)"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB-04: Customer Discovery & Interview Analysis
 
 ## 1. Fundamentos de Customer Discovery
@@ -500,3 +524,5 @@ We'll know we're right when [measurable indicator]
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

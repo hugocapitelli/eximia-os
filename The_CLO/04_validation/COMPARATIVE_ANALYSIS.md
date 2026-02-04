@@ -1,3 +1,27 @@
+---
+title: "Comparative Analysis — Themis Sentinel CLO"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "comparative-analysis"
+  - "comparative analysis — themis "
+  - "1. benchmark vs clo humano"
+  - "1.1 perfil de referência"
+  - "1.2 comparativo por competênci"
+  - "1.3 onde themis supera"
+  - "1.4 onde clo humano é superior"
+  - "2. benchmark vs legal ai tools"
+  - "2.1 comparison matrix"
+  - "2.2 diferenciais themis"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Comparative Analysis — Themis Sentinel CLO
 
 **Versão:** 1.0  
@@ -228,3 +252,5 @@ DEMANDA JURÍDICA
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

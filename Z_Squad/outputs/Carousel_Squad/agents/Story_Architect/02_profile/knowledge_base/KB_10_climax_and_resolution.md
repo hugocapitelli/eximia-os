@@ -1,3 +1,27 @@
+---
+title: "KB_10 — Climax and Resolution"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-10-climax-and-resolution"
+  - "kb_10 — climax and resolution"
+  - "o climax: definicao"
+  - "anatomia do climax perfeito"
+  - "os 5 elementos essenciais"
+  - "posicionamento do climax"
+  - "em carrossel de 10 slides"
+  - "por que slide 8?"
+  - "variacoes validas:"
+  - "tipos de climax"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_10 — Climax and Resolution
 
 **Agente:** Story Architect
@@ -385,3 +409,5 @@ O que voce esta sacrificando? Pensa nisso."
 - John Truby, The Anatomy of Story
 - Syd Field, Screenplay (Three-Act Structure)
 - Gustav Freytag, Die Technik des Dramas
+
+#galaxy-creation

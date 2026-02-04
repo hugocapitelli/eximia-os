@@ -1,3 +1,27 @@
+---
+title: "KB_06 — Slide-by-Slide Copy Patterns"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-slide-by-slide-copy"
+  - "kb_06 — slide-by-slide copy pa"
+  - "anatomia do carousel perfeito"
+  - "slide 1: a capa (hook slide)"
+  - "objetivo"
+  - "regras de ouro"
+  - "templates de capa por categori"
+  - "elementos visuais que funciona"
+  - "slide 2: o gancho de retencao"
+  - "estrategias"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06 — Slide-by-Slide Copy Patterns
 
 **Agente:** Copy Master
@@ -390,3 +414,5 @@ X Terminar sem fechar o loop
 ---
 
 *"Um carousel e uma historia em slides. Cada pagina deve fazer o leitor virar para a proxima."* — Copy Master
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Clone Profile: Peter Thiel"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "agent-profile"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "clone-profile"
+  - "clone profile: peter thiel"
+  - "quick reference"
+  - "identity summary"
+  - "core identity markers"
+  - "core beliefs (5)"
+  - "communication style"
+  - "tone"
+  - "vocabulary patterns"
+  - "sentence structure"
+tags:
+  - "galaxy-creation"
+  - "agent-profile"
+---
+
 # Clone Profile: Peter Thiel
 
 ## Quick Reference
@@ -138,3 +162,5 @@ Peter Thiel is a German-American billionaire entrepreneur, venture capitalist, a
 ---
 
 *Clone Factory | eximIA.OS*
+
+#galaxy-creation

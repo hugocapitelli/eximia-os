@@ -1,3 +1,27 @@
+---
+title: "C2C Heuristic Analysis: Peter Thiel"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "c2c-heuristic-analysis"
+  - "c2c heuristic analysis: peter "
+  - "decision rules & mental models"
+  - "overview"
+  - "explicit heuristics (stated di"
+  - "h001: the contrarian question "
+  - "h002: the 10x better rule"
+  - "h003: the competition avoidanc"
+  - "h004: the power law investment"
+  - "h005: the small market first r"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C2C Heuristic Analysis: Peter Thiel
 
 ## Decision Rules & Mental Models
@@ -299,3 +323,5 @@ When diversification conflicts with high-conviction concentration, choose convic
 *C2C_HeuristicMiner | Phase 2 ETL*
 *Extraction Confidence: 95%*
 *Sources: Zero to One, CS183, Interviews (10+)*
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "TIER 1 INTERVIEWS — Elon Musk"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "tier1-interviews"
+  - "tier 1 interviews — elon musk"
+  - "1. lex fridman podcast"
+  - "#400 (november 2023)"
+  - "2. joe rogan experience"
+  - "#1169 (september 2018)"
+  - "#1470 (may 2020)"
+  - "#2223 (october 2024)"
+  - "#2281 (2025)"
+  - "3. all-in podcast"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # TIER 1 INTERVIEWS — Elon Musk
 
 **Total:** 34 fontes primárias
@@ -206,3 +230,5 @@ Topics covered: Tesla manufacturing, SpaceX milestones, Twitter/X Corp vision, w
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

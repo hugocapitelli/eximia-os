@@ -1,3 +1,27 @@
+---
+title: "KB_01: Rotulos e Artefatos a Remover"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-rotulos-artefatos"
+  - "kb_01: rotulos e artefatos a r"
+  - "proposito"
+  - "categoria 1: rotulos entre col"
+  - "padroes a detectar"
+  - "regex para deteccao"
+  - "acao"
+  - "categoria 2: rotulos com forma"
+  - "categoria 3: estruturas numera"
+  - "categoria 4: headers e separad"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01: Rotulos e Artefatos a Remover
 
 ## Proposito
@@ -203,3 +227,5 @@ Mas voce considerou o outro lado dessa questao?
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

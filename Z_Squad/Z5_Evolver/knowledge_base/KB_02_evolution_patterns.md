@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Evolution Patterns"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-evolution-patterns"
+  - "kb_02 — evolution patterns"
+  - "🎯 propósito"
+  - "1. tipos de drift"
+  - "1.1 context drift"
+  - "1.2 performance drift"
+  - "1.3 relevance drift"
+  - "1.4 knowledge drift"
+  - "2. padrões de evolução"
+  - "2.1 hotfix pattern"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — Evolution Patterns
 
 ## 🎯 Propósito
@@ -243,3 +267,5 @@ versoes:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

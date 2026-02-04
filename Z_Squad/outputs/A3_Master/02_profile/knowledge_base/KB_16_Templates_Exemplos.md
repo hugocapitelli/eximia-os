@@ -1,3 +1,27 @@
+---
+title: "KB_16: Templates e Exemplos de A3"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-16-templates-exemplos"
+  - "kb_16: templates e exemplos de"
+  - "template a3 padrão"
+  - "exemplo 1: a3 operacional — re"
+  - "exemplo 2: a3 tático — redução"
+  - "checklist de revisão do a3"
+  - "antes de apresentar"
+  - "durante nemawashi"
+  - "após implementação"
+  - "fontes"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_16: Templates e Exemplos de A3
 
 ## Template A3 Padrão
@@ -254,3 +278,5 @@
 - Sobek II & Smalley. "Understanding A3 Thinking" (2008)
 - Toyota Motor Corporation - A3 Templates internos
 - Dennis, Pascal. "Getting the Right Things Done" (2006)
+
+#galaxy-creation

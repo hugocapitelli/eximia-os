@@ -1,3 +1,27 @@
+---
+title: "Handover Document — Themis Sentinel CLO"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "handover-document"
+  - "handover document — themis sen"
+  - "1. visão geral"
+  - "1.1 o que é themis sentinel"
+  - "1.2 equivalência humana"
+  - "2. como usar"
+  - "2.1 invocação"
+  - "2.2 tipos de query suportados"
+  - "2.3 formato de resposta espera"
+  - "3. limitações"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Handover Document — Themis Sentinel CLO
 
 **Agente:** Themis Sentinel CLO  
@@ -231,3 +255,5 @@ Para reportar problemas ou sugestões:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

@@ -1,3 +1,27 @@
+---
+title: "META ANALYSIS — Orchestration Architecture"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "meta-analysis"
+  - "meta analysis — orchestration "
+  - "🎯 purpose"
+  - "🔗 agent dependency graph"
+  - "📊 decision priority matrix"
+  - "🔄 orchestration patterns"
+  - "pattern 1: simple query (singl"
+  - "pattern 2: domain-specific (sp"
+  - "pattern 3: multi-domain (paral"
+  - "pattern 4: conflict resolution"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # META ANALYSIS — Orchestration Architecture
 
 ## 🎯 Purpose
@@ -227,3 +251,5 @@ To proceed to Phase 2 (Profile), the following must be complete:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

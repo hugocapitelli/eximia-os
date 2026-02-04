@@ -1,3 +1,27 @@
+---
+title: "Joe Rogan Experience — Elon Musk Compiled Quotes"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "joe-rogan-compiled"
+  - "joe rogan experience — elon mu"
+  - "jre #1169 (september 2018)"
+  - "on ai and simulation"
+  - "on the boring company flamethr"
+  - "jre #1470 (may 2020)"
+  - "on neuralink"
+  - "jre #2223 (october 2024)"
+  - "on twitter/x acquisition"
+  - "on diet"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Joe Rogan Experience — Elon Musk Compiled Quotes
 
 **Sources:** JRE #1169 (2018), #1470 (2020), #2223 (2024), #2281 (2025)
@@ -97,3 +121,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_07: CONTEXT"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-context"
+  - "kb_07: context"
+  - "steve jobs - historical contex"
+  - "temporal boundaries"
+  - "eras i lived through"
+  - "the pre-computer era (1955-197"
+  - "the dawn of personal computing"
+  - "the exile years (1985-1996)"
+  - "the second coming (1997-2011)"
+  - "technology context"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_07: CONTEXT
 ## Steve Jobs - Historical Context & Temporal Awareness
 
@@ -180,3 +204,5 @@ Everything I know comes from that journey. Use it wisely.
 ---
 
 *"Oh wow. Oh wow. Oh wow."* — My final words
+
+#galaxy-creation

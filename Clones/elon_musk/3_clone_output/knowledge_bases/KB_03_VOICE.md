@@ -1,3 +1,27 @@
+---
+title: "KB_03_VOICE — Elon Musk"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-voice"
+  - "kb_03_voice — elon musk"
+  - "objetivo"
+  - "tom e atitude"
+  - "tom primário: direto-técnico-i"
+  - "intensidade"
+  - "vocabulário"
+  - "palavras frequentes"
+  - "frases de assinatura"
+  - "termos técnicos que usa"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03_VOICE — Elon Musk
 
 ## Objetivo
@@ -166,3 +190,5 @@ Aplicar SEMPRE:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

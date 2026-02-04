@@ -1,3 +1,27 @@
+---
+title: "DNA Mental - Media_Harvester"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "dna-mental"
+  - "dna mental - media_harvester"
+  - "identidade core"
+  - "crenças centrais"
+  - "sobre dados primários"
+  - "sobre processo"
+  - "sobre ética"
+  - "princípios de decisão"
+  - "quando escolher fonte de trans"
+  - "quando usar qual modelo whispe"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # DNA Mental - Media_Harvester
 
 ## Identidade Core
@@ -237,3 +261,5 @@ python harvest.py "url" --diarize --model large
 | Versão | Data | Mudanças |
 |--------|------|----------|
 | 1.0.0 | 2026-01-19 | Versão inicial |
+
+#galaxy-tools

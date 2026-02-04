@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Copywriting Formulas for Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-copywriting-formulas"
+  - "kb_01 — copywriting formulas f"
+  - "as 12 fórmulas essenciais"
+  - "1. aida (attention-interest-de"
+  - "2. pas (problem-agitate-solve)"
+  - "3. bab (before-after-bridge)"
+  - "4. 4 u's (useful-urgent-unique"
+  - "5. fab (features-advantages-be"
+  - "6. the 1-2-3-4 formula"
+  - "7. star-chain-hook"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Copywriting Formulas for Carousels
 
 **Agente:** Copy Master
@@ -212,3 +236,5 @@ ONE CTA: Uma ação desejada
 - Eugene Schwartz, Breakthrough Advertising
 - Claude Hopkins, Scientific Advertising
 - Joe Sugarman, The Adweek Copywriting Handbook
+
+#galaxy-creation

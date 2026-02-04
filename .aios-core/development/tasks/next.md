@@ -1,3 +1,27 @@
+---
+title: "Next Command Suggestions"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "next"
+  - "next command suggestions"
+  - "purpose"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "implementation steps"
+  - "step 1: check help flag"
+  - "step 2: build context"
+  - "step 3: get suggestions"
+  - "step 4: format output"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Next Command Suggestions
 
 ## Purpose
@@ -292,3 +316,5 @@ tags:
   - navigation
   - context-aware
 ```
+
+#galaxy-runtime

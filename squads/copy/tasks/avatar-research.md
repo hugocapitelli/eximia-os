@@ -1,3 +1,27 @@
+---
+title: "Avatar Research - Pesquisa Profunda de Persona"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "avatar-research"
+  - "avatar research - pesquisa pro"
+  - "metadata"
+  - "objetivo"
+  - "pré-requisitos"
+  - "checklist de preparação"
+  - "antes de iniciar"
+  - "fontes de dados necessárias"
+  - "ferramentas"
+  - "contexto"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Avatar Research - Pesquisa Profunda de Persona
 
 ## Metadata
@@ -1429,3 +1453,5 @@ Ao completar todas as fases, você terá:
 **Metodologias Integradas: 5** (Collier, Empathy, JTBD, VoC, Psychographics)
 **Templates Incluídos: 15+**
 **Perguntas de Entrevista: 50+**
+
+#galaxy-operational

@@ -1,3 +1,27 @@
+---
+title: "KB_02 — Valuation Frameworks"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-valuation"
+  - "kb_02 — valuation frameworks"
+  - "1. dcf (discounted cash flow)"
+  - "fundamento"
+  - "fórmula"
+  - "componentes"
+  - "brasil context"
+  - "2. wacc (weighted average cost"
+  - "cost of equity (capm)"
+  - "brasil premiums (2024)"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_02 — Valuation Frameworks
 
 ## 1. DCF (Discounted Cash Flow)
@@ -146,3 +170,5 @@ Magic Number = Net New ARR / S&M Spend Last Quarter
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

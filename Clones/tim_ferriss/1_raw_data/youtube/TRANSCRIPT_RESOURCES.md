@@ -1,3 +1,27 @@
+---
+title: "Podcast Transcript Resources - The Tim Ferriss Show"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "transcript-resources"
+  - "podcast transcript resources -"
+  - "transcript availability"
+  - "official source"
+  - "copyright & usage"
+  - "top 10 most popular episodes"
+  - "highly recommended for deep an"
+  - "additional notable episodes"
+  - "philosophy & mindset:"
+  - "entrepreneurship:"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Podcast Transcript Resources - The Tim Ferriss Show
 
 **Discovery:** Tim.blog/podcast has 825+ full transcripts available  
@@ -202,3 +226,4 @@ With 825+ transcripts available + 3 deep episode analyses + 11 core questions do
 
 **Phase 1 (C1 Hunter) Gap Closed:** ✅ Complete!
 
+#galaxy-creation

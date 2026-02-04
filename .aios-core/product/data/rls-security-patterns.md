@@ -1,3 +1,27 @@
+---
+title: "Row Level Security (RLS) Patterns Guide"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "rls-security-patterns"
+  - "row level security (rls) patte"
+  - "rls fundamentals"
+  - "enabling rls"
+  - "policy structure"
+  - "common patterns"
+  - "pattern 1: user owns row"
+  - "pattern 2: organization/team b"
+  - "pattern 3: role-based access"
+  - "pattern 4: public read, authen"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Row Level Security (RLS) Patterns Guide
 
 **Purpose:** Reference guide for implementing secure RLS policies
@@ -331,3 +355,5 @@ RESET ROLE;
 
 **Reviewer:** ________ **Date:** ________
 **Security Audit:** [ ] PASS [ ] NEEDS REVIEW
+
+#galaxy-runtime

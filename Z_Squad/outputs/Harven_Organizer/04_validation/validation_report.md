@@ -1,3 +1,27 @@
+---
+title: "Validation Report - Harven_Organizer"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "validation-report"
+  - "validation report - harven_org"
+  - "1. resumo executivo"
+  - "2. validacao de estrutura"
+  - "2.1 arquivos obrigatorios"
+  - "2.2 knowledge base"
+  - "3. validacao de conteudo"
+  - "3.1 spec tecnica"
+  - "3.2 dna mental"
+  - "3.3 prompt operacional"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Validation Report - Harven_Organizer
 
 **Gerado por:** Z4 Auditor
@@ -272,3 +296,5 @@ APROVADO - Agente pronto para deploy no ambiente de producao.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "Extraction Log — {NOME DO ESPECIALISTA}"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "03-extraction-log"
+  - "extraction log — {nome do espe"
+  - "metadata"
+  - "1. resumo da extração"
+  - "2. processo de extração"
+  - "2.1 quotes"
+  - "2.2 voice signature"
+  - "2.3 timeline"
+  - "2.4 entities"
+  - "3. decisões tomadas"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Extraction Log — {NOME DO ESPECIALISTA}
 
 ## Metadata
@@ -120,3 +144,5 @@ Se score <80%:
 
 **Extractor:** C2_Extractor
 **Data:** {data}
+
+#galaxy-creation

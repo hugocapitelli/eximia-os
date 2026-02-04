@@ -1,3 +1,27 @@
+---
+title: "KB_02: Hoshin Kanri (Policy Deployment)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-hoshin-kanri"
+  - "kb_02: hoshin kanri (policy de"
+  - "📖 origem"
+  - "🎯 estrutura core"
+  - "os 7 níveis de hoshin kanri"
+  - "🔄 o processo catchball"
+  - "o que é catchball?"
+  - "protocolo de catchball"
+  - "📐 ferramentas visuais hoshin"
+  - "x-matrix (hoshin kanri matrix)"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_02: Hoshin Kanri (Policy Deployment)
 
 ## 📖 Origem
@@ -251,3 +275,5 @@ Ser a referência em [setor] no Brasil, reconhecida por [diferencial].
 - "Hoshin Kanri: The Strategic Approach to Continuous Improvement" (Yoji Akao)
 - Lean Enterprise Institute (2024)
 - Toyota Management System Handbook
+
+#galaxy-specialist

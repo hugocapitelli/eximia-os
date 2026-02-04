@@ -1,3 +1,27 @@
+---
+title: "Design Module: UI Benchmarks & Aesthetics (2026 Ready)"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "design-module-benchmarks"
+  - "design module: ui benchmarks &"
+  - "purpose"
+  - "1. core design philosophy: "pr"
+  - "2. benchmark styles (the "look"
+  - "a. the "glassmorphism 2.0" (re"
+  - "b. the "bento grid" (modular &"
+  - "c. "clean saas" (minimal crm)"
+  - "3. mobile-first patterns"
+  - "4. interaction primitives (mic"
+tags:
+  - "galaxy-codex"
+  - "document"
+---
+
 # Design Module: UI Benchmarks & Aesthetics (2026 Ready)
 
 ## Purpose
@@ -50,3 +74,5 @@ This module equips the Prototyping Agent with design literacy. Even without gene
 ## Agent Instruction for Wireframing
 When creating wireframes, explicit design direction is required:
 > "Wireframe a **Bento Grid Dashboard** for the Sales Overview. Use **Glassmorphism** for the floating 'Add New Deal' button. Ensure the layout is **Mobile-Responsive** (stacking text tiles)."
+
+#galaxy-codex

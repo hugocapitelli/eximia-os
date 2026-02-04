@@ -1,3 +1,27 @@
+---
+title: "Template Variable Syntax Guide"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "template-syntax"
+  - "template variable syntax guide"
+  - "overview"
+  - "basic variable substitution"
+  - "example:"
+  - "conditional blocks"
+  - "loops"
+  - "loop variables:"
+  - "example with objects:"
+  - "nested structures"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # Template Variable Syntax Guide
 
 ## Overview
@@ -265,3 +289,5 @@ Enable template debugging by setting `DEBUG_TEMPLATES=true` to see:
 - Variable resolution process
 - Conditional evaluation
 - Loop iteration details
+
+#galaxy-runtime

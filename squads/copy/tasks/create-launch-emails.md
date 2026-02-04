@@ -1,3 +1,27 @@
+---
+title: "Create Launch Emails Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-launch-emails"
+  - "create launch emails task"
+  - "purpose"
+  - "when to use"
+  - "theoretical foundation"
+  - "the product launch formula (je"
+  - "the four launch phases"
+  - "psychology of urgency & scarci"
+  - "inputs"
+  - "workflow"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Launch Emails Task
 
 ## Purpose
@@ -1371,3 +1395,5 @@ format: markdown
 *Methodology: Product Launch Formula (Jeff Walker) + Urgency Psychology + Email Conversion*
 *Based on: Jeff Walker PLF, Product Launch Strategy, Systeme.io, Viral Loops Research*
 *Lines: 1350+*
+
+#galaxy-operational

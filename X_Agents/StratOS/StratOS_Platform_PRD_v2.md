@@ -1,3 +1,27 @@
+---
+title: "Product Requirements Document (PRD)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "stratos-platform-prd-v2"
+  - "product requirements document "
+  - "stratos platform v2.0"
+  - "sumário executivo"
+  - "problema que resolve"
+  - "proposta de valor"
+  - "1. visão do produto"
+  - "1.1 product vision statement"
+  - "1.2 princípios de design"
+  - "1.3 métricas de sucesso do pro"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Product Requirements Document (PRD)
 # StratOS Platform v2.0
 
@@ -1739,3 +1763,5 @@ CREATE INDEX idx_kpi_values_kpi ON kpi_values(kpi_id, measured_at DESC);
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

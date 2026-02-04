@@ -1,3 +1,27 @@
+---
+title: "joe-sugarman"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "joe-sugarman"
+  - "tool type: 30 psychological tr"
+  - "what is this tool?"
+  - "quick reference: the 30 trigge"
+  - "tool configuration (not person"
+  - "══════════════════════════════"
+  - "metadata (v2.0)"
+  - "voice dna (v2.0) - extracted f"
+  - "operational frameworks"
+  - "communication dna"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # joe-sugarman
 
 ## TOOL TYPE: 30 Psychological Triggers Checklist
@@ -2324,3 +2348,5 @@ Sugarman bridged the catalog/mail order era with the infomercial era and early e
 *Objection Algorithms: 5*
 *v2.0 Additions: voice_dna, output_examples, anti_patterns, completion_criteria*
 *Mind Source: outputs/minds/joe_sugarman (triangulation: 85.7%)*
+
+#galaxy-operational

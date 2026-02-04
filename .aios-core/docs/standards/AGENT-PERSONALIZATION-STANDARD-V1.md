@@ -1,3 +1,27 @@
+---
+title: "Agent Personalization Standard v1.0"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agent-personalization-standard-v1"
+  - "agent personalization standard"
+  - "🎯 core principle"
+  - "📐 architecture overview"
+  - "three-layer system"
+  - "🔧 layer 1: agent persona conf"
+  - "agent file structure (updated)"
+  - ".aios-core/agents/{agent-id}.m"
+  - "rest of file unchanged"
+  - "example: dex (builder agent)"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Agent Personalization Standard v1.0
 
 **Status:** Draft (Story 6.1.2 Implementation)
@@ -570,3 +594,5 @@ quinn: loadVocabulary('Guardian') → "validar"
 **Last Updated:** 2025-01-14
 **Next Review:** After Story 6.1.2 completion
 **Status:** Ready for Implementation
+
+#galaxy-runtime

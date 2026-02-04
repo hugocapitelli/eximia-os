@@ -1,3 +1,27 @@
+---
+title: "[Component Name] — Atomic Design Component Documentation"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "atomic-design-component"
+  - "[component name] — atomic desi"
+  - "component overview"
+  - "description"
+  - "example use"
+  - "atomic composition"
+  - "components this contains (if a"
+  - "used by (if applicable)"
+  - "api / props"
+  - "examples"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # [Component Name] — Atomic Design Component Documentation
 
 > Based on Brad Frost's Atomic Design methodology
@@ -237,3 +261,5 @@ A: [Answer about customization]
 ---
 
 *Template created for Brad Frost Atomic Design Squad*
+
+#galaxy-operational

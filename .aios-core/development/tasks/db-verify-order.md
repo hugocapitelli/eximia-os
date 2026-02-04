@@ -1,3 +1,27 @@
+---
+title: "Task: Verify DDL Ordering"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "db-verify-order"
+  - "task: verify ddl ordering"
+  - "execution modes"
+  - "1. yolo mode - fast, autonomou"
+  - "2. interactive mode - balanced"
+  - "3. pre-flight planning - compr"
+  - "task definition (aios task for"
+  - "pre-conditions"
+  - "post-conditions"
+  - "acceptance criteria"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Task: Verify DDL Ordering
 
 **Purpose**: Lint DDL for safe execution order to avoid dependency errors
@@ -513,3 +537,5 @@ This is a heuristic check, not a full parser:
 ❌ **Misses**: Subtle type dependencies  
 
 For 100% validation, use: `*dry-run {path}`
+
+#galaxy-runtime

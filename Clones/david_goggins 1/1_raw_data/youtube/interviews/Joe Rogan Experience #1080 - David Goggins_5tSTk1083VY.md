@@ -1,3 +1,24 @@
+---
+title: "Joe Rogan Experience #1080 - David Goggins"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "joe rogan experience #1080 - david goggins-5tstk1083vy"
+  - "joe rogan experience #1080 - d"
+  - "transcrição"
+  - "metadados técnicos"
+  - "obsidian connections"
+  - "clone"
+  - "personality"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Joe Rogan Experience #1080 - David Goggins
 
 **URL:** https://www.youtube.com/watch?v=5tSTk1083VY
@@ -3025,3 +3046,5 @@ five  four  three  two  one
 **Family:** [[Clones]]
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

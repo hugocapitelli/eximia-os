@@ -1,3 +1,27 @@
+---
+title: "Story Template v2.0 Specification"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "template"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "story-template-v2-specification"
+  - "story template v2.0 specificat"
+  - "📋 table of contents"
+  - "overview"
+  - "purpose"
+  - "what's new in v2.0"
+  - "design principles"
+  - "template structure"
+  - "complete template"
+  - "story x.x: [title]"
+tags:
+  - "galaxy-runtime"
+  - "template"
+---
+
 # Story Template v2.0 Specification
 
 **Version:** 2.0.0
@@ -548,3 +572,5 @@ Use this checklist when creating or reviewing stories:
 **Last Updated:** 2025-12-09
 **Version:** 2.0.0
 **Maintainer:** @po (Pax)
+
+#galaxy-runtime

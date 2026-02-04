@@ -1,3 +1,27 @@
+---
+title: "KB-03: RICE Prioritization & Feature Prioritization Frameworks"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-rice-prioritization"
+  - "kb-03: rice prioritization & f"
+  - "1. rice framework"
+  - "1.1 visão geral"
+  - "1.2 fórmula"
+  - "1.3 componentes detalhados"
+  - "1.4 calculando rice score"
+  - "1.5 interpretando rice scores"
+  - "2. value vs effort matrix"
+  - "2.1 overview"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB-03: RICE Prioritization & Feature Prioritization Frameworks
 
 ## 1. RICE Framework
@@ -504,3 +528,5 @@ Framework customizável onde você define critérios e pesos relevantes para seu
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

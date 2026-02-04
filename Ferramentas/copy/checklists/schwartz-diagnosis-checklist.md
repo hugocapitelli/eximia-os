@@ -1,3 +1,27 @@
+---
+title: "Schwartz Diagnosis Checklist"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "schwartz-diagnosis-checklist"
+  - "schwartz diagnosis checklist"
+  - "purpose"
+  - "how to use"
+  - "part 1: awareness level diagno"
+  - "part 2: sophistication stage d"
+  - "part 3: combined matrix"
+  - "part 4: final diagnosis docume"
+  - "part 5: quick strategy guide"
+  - "quick reference: schwartz prin"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Schwartz Diagnosis Checklist
 
 ## Purpose
@@ -287,3 +311,5 @@ If all checked → Proceed to copy creation
 - **Use with**: diagnose-awareness-level.md, diagnose-market-sophistication.md
 - **Before**: Any copy creation task
 - **Agent**: @eugene-schwartz (Tier 0 - Diagnosis)
+
+#galaxy-tools

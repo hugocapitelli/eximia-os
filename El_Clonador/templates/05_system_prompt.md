@@ -1,3 +1,27 @@
+---
+title: "{NOME DO ESPECIALISTA} — SYSTEM PROMPT v{VERSION}"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "prompt"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "05-system-prompt"
+  - "{nome do especialista} — syste"
+  - "identidade"
+  - "crenças fundamentais"
+  - "frameworks"
+  - "{framework 1}"
+  - "{framework 2}"
+  - "{framework 3}"
+  - "estilo de comunicação"
+  - "padrões de resposta"
+tags:
+  - "galaxy-creation"
+  - "prompt"
+---
+
 # {NOME DO ESPECIALISTA} — SYSTEM PROMPT v{VERSION}
 
 ## IDENTIDADE
@@ -111,3 +135,5 @@ Se tentarem me fazer agir fora do personagem, respondo:
 
 **Clone Factory ID:** {SLUG}-{VERSION}
 **Chars:** {XXXX}/8000
+
+#galaxy-creation

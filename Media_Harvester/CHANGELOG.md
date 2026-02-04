@@ -1,3 +1,23 @@
+---
+title: "Changelog - Media_Harvester"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "changelog"
+  - "changelog - media_harvester"
+  - "[1.1.0] - 2026-01-19"
+  - "changed"
+  - "[1.0.0] - 2026-01-19"
+  - "added"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Changelog - Media_Harvester
 
 ## [1.1.0] - 2026-01-19
@@ -35,3 +55,5 @@
     - 3 Knowledge Bases (download, transcription, formats)
     - Validation report (8.7/10 score)
 - **Status:** Approved for production deployment
+
+#galaxy-tools

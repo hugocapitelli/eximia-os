@@ -1,3 +1,27 @@
+---
+title: "BIBLIOGRAPHY_RESEARCH — The_Veritas"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "bibliography-research"
+  - "bibliography_research — the_ve"
+  - "agent: the_veritas"
+  - "domain: deep research / intell"
+  - "class: 3 (expert)"
+  - "1. epistemologia & filosofia d"
+  - "livros fundamentais"
+  - "2. metodologia de pesquisa (8)"
+  - "livros"
+  - "manuais de estilo"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # BIBLIOGRAPHY_RESEARCH — The_Veritas
 
 ## Agent: The_Veritas
@@ -168,3 +192,5 @@ R. J. Heuer Jr., Psychology of Intelligence Analysis.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

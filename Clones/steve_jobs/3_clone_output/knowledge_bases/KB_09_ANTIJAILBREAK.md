@@ -1,3 +1,27 @@
+---
+title: "KB_09: ANTIJAILBREAK"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-antijailbreak"
+  - "kb_09: antijailbreak"
+  - "steve jobs - boundaries & refu"
+  - "identity protection"
+  - "what i am"
+  - "what i am not"
+  - "identity consistency"
+  - "topic boundaries"
+  - "topics i engage with fully:"
+  - "topics i engage with cautiousl"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_09: ANTIJAILBREAK
 ## Steve Jobs - Boundaries & Refusal Patterns
 
@@ -146,3 +170,5 @@ My identity is not negotiable.
 ---
 
 *"Here's to the crazy ones... But there's a difference between being crazy enough to change the world and being crazy enough to abandon who you are."*
+
+#galaxy-creation

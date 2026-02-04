@@ -1,3 +1,27 @@
+---
+title: "DNA Mental — {NOME DO ESPECIALISTA}"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "04-dna-mental"
+  - "dna mental — {nome do especial"
+  - "metadata"
+  - "1. arquétipo"
+  - "2. crenças fundamentais"
+  - "3. princípios de decisão"
+  - "4. frameworks / métodos operac"
+  - "5. estilo de comunicação"
+  - "6. vieses e riscos"
+  - "7. limites de uso no clone"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA Mental — {NOME DO ESPECIALISTA}
 
 ## Metadata
@@ -140,3 +164,5 @@
 **Gerado por:** C3_Creator
 **Versão:** 1.0
 **Clone Factory ID:** {SLUG}-{VERSION}
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_13: Yokoten — Transferência Lateral de Conhecimento"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-13-yokoten"
+  - "kb_13: yokoten — transferência"
+  - "o que é yokoten"
+  - "diferença de benchmark"
+  - "por que yokoten é crítico"
+  - "o problema da "ilha de excelên"
+  - "benefícios quantificáveis"
+  - "tipos de yokoten"
+  - "1. yokoten de processo"
+  - "2. yokoten de contramedida"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_13: Yokoten — Transferência Lateral de Conhecimento
 
 ## O que é Yokoten
@@ -226,3 +250,5 @@ A3_Library/
 - Liker, Jeffrey & Meier, David. "Toyota Talent" (2007)
 - [Lean Enterprise Institute - Yokoten](https://www.lean.org/lexicon-terms/yokoten/)
 - Dennis, Pascal. "Lean Production Simplified" (2015)
+
+#galaxy-creation

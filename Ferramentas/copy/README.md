@@ -1,3 +1,27 @@
+---
+title: "✍️ Copy - Elite Copywriting Squad v3.1"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "✍️ copy - elite copywriting sq"
+  - "o que há de novo na v3.1"
+  - "copy discovery pipeline v2.0"
+  - "tier system (v3.0)"
+  - "research-first methodology"
+  - "agentes arquivados"
+  - "sistema de tiers"
+  - "quando usar cada tier"
+  - "agentes ativos (9 + 1 tool)"
+tags:
+  - "galaxy-tools"
+  - "documentation"
+---
+
 # ✍️ Copy - Elite Copywriting Squad v3.1
 
 **Command:** `/copy`
@@ -682,3 +706,5 @@ O The Maestro roteia automaticamente para Copy Squad quando detecta:
 *Research-First Methodology*
 *Integrated with: eximIA.OS v1.0*
 *Last Updated: 2026-01-23*
+
+#galaxy-tools

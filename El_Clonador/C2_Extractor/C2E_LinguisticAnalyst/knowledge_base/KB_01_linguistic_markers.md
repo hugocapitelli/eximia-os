@@ -1,3 +1,27 @@
+---
+title: "KB_01 — Marcadores Linguísticos de Personalidade"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-linguistic-markers"
+  - "kb_01 — marcadores linguístico"
+  - "categoria: referência"
+  - "palavras: ~2,500"
+  - "atualizado: 2026-01-31"
+  - "1. fundamentos da análise ling"
+  - "hipótese lexical"
+  - "2. liwc (linguistic inquiry an"
+  - "o que é liwc?"
+  - "categorias principais"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_01 — Marcadores Linguísticos de Personalidade
 
 ## Categoria: REFERÊNCIA
@@ -230,3 +254,5 @@ A fonte de metáfora revela o **framework mental** da pessoa. Um clone deve usar
 **Última Atualização:** 2026-01-31
 **Versão:** 1.0
 **Módulo:** C2E_LinguisticAnalyst / KB_01
+
+#galaxy-creation

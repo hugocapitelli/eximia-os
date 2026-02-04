@@ -1,3 +1,27 @@
+---
+title: "TRANSCRIÇÃO COMPLETA — Lex Fridman Podcast #400"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "lex-fridman-400-full-transcript"
+  - "transcrição completa — lex fri"
+  - "1. war and human nature (00:01"
+  - "2. israel-hamas war (00:04:54)"
+  - "3. war in ukraine (00:15:08)"
+  - "4. xai & grok (00:33:57)"
+  - "5. aliens and fermi paradox (0"
+  - "6. ai regulation and control ("
+  - "7. x (twitter) & the algorithm"
+  - "8. tesla's autopilot & optimus"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # TRANSCRIÇÃO COMPLETA — Lex Fridman Podcast #400
 
 **Título:** War, AI, Aliens, Politics, Physics, Video Games, and Humanity
@@ -196,3 +220,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

@@ -1,3 +1,27 @@
+---
+title: "KB_11 — Persuasion Psychology"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-11-persuasion-psychology"
+  - "kb_11 — persuasion psychology"
+  - "a base cientifica da persuasao"
+  - "os 7 principios de cialdini ap"
+  - "principio 1: reciprocidade"
+  - "principio 2: compromisso e con"
+  - "principio 3: prova social"
+  - "principio 4: autoridade"
+  - "principio 5: afinidade (liking"
+  - "principio 6: escassez"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_11 — Persuasion Psychology
 
 **Agente:** Copy Master
@@ -384,3 +408,5 @@ X Pressionar alem do razoavel
 ---
 
 *"Entender psicologia nao e sobre manipular. E sobre comunicar de forma que o cerebro humano entende."* — Copy Master
+
+#galaxy-creation

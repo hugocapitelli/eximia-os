@@ -1,3 +1,27 @@
+---
+title: "Architect Solution Validation Checklist"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "architect-checklist"
+  - "architect solution validation "
+  - "1. requirements alignment"
+  - "1.1 functional requirements co"
+  - "1.2 non-functional requirement"
+  - "1.3 technical constraints adhe"
+  - "2. architecture fundamentals"
+  - "2.1 architecture clarity"
+  - "2.2 separation of concerns"
+  - "2.3 design patterns & best pra"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # Architect Solution Validation Checklist
 
 This checklist serves as a comprehensive framework for the Architect to validate the technical design and architecture before development execution. The Architect should systematically work through each item, ensuring the architecture is robust, scalable, secure, and aligned with the product requirements.
@@ -441,4 +465,5 @@ Now that you've completed the checklist, generate a comprehensive validation rep
    - Component design clarity
 
 After presenting the report, ask the user if they would like detailed analysis of any specific section, especially those with warnings or failures.]]
- 
+
+#galaxy-runtime

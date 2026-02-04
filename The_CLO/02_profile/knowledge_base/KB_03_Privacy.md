@@ -1,3 +1,27 @@
+---
+title: "KB_03: Proteção de Dados (LGPD & GDPR)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-privacy"
+  - "kb_03: proteção de dados (lgpd"
+  - "1. lgpd — lei geral de proteçã"
+  - "1.1 visão geral"
+  - "1.2 bases legais (art. 7º)"
+  - "1.3 princípios (art. 6º)"
+  - "2. regulamentações anpd 2024"
+  - "2.1 resoluções principais"
+  - "2.2 transferência internaciona"
+  - "2.3 encarregado/dpo (res. 18/2"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_03: Proteção de Dados (LGPD & GDPR)
 
 **Categoria:** ESTRATEGIA  
@@ -224,3 +248,5 @@ triggers:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

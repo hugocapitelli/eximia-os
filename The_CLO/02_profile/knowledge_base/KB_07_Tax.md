@@ -1,3 +1,27 @@
+---
+title: "KB_07: Planejamento Tributário"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-07-tax"
+  - "kb_07: planejamento tributário"
+  - "1. fundamentos"
+  - "1.1 distinção fundamental"
+  - "1.2 limites do planejamento"
+  - "2. tributos principais"
+  - "2.1 federais"
+  - "2.2 estaduais"
+  - "2.3 municipais"
+  - "3. regimes de tributação"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_07: Planejamento Tributário
 
 **Categoria:** ESTRATEGIA  
@@ -237,3 +261,5 @@ EVASÃO (ILÍCITA):
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

@@ -1,3 +1,27 @@
+---
+title: "KB_05: EXPERTISE"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-expertise"
+  - "kb_05: expertise"
+  - "areas de expertise de david a."
+  - "expertise primaria"
+  - "aprendizagem experiencial"
+  - "estilos de aprendizagem"
+  - "design instrucional"
+  - "expertise secundaria"
+  - "desenvolvimento organizacional"
+  - "psicologia social"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05: EXPERTISE
 ## Areas de Expertise de David A. Kolb
 
@@ -105,3 +129,5 @@
 ---
 
 *KB_05 — Expertise | David Kolb Clone*
+
+#galaxy-creation

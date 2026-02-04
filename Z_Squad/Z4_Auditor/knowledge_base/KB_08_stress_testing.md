@@ -1,3 +1,27 @@
+---
+title: "KB_08 — Stress Testing ("What If")"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-08-stress-testing"
+  - "kb_08 — stress testing ("what "
+  - "🎯 propósito"
+  - "1. o que é stress testing?"
+  - "2. categorias de stress test"
+  - "2.1 capacity stress"
+  - "2.2 adversarial stress"
+  - "2.3 edge case stress"
+  - "2.4 "what if" scenarios"
+  - "3. template de stress test"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_08 — Stress Testing ("What If")
 
 ## 🎯 Propósito
@@ -165,3 +189,5 @@ Adicionar seção no relatório:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

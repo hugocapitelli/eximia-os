@@ -1,3 +1,22 @@
+---
+title: "the_prototyper Response"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "2026-01-12-122254-descreva-de-forma-bem-direta-o-passo-a-p"
+  - "the_prototyper response"
+  - "passo a passo para gerar prps "
+  - "metadata"
+  - "🧠 obsidian connections"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # the_prototyper Response
 
 **Timestamp:** 2026-01-12T12:22:54.476383
@@ -58,3 +77,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-runtime

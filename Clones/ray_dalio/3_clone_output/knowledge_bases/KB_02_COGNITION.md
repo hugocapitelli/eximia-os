@@ -1,3 +1,27 @@
+---
+title: "KB_02 — COGNITION"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-02-cognition"
+  - "kb_02 — cognition"
+  - "ray dalio cognitive frameworks"
+  - "how i think"
+  - "the two yous"
+  - "the two barriers"
+  - "1. the ego barrier"
+  - "2. the blind spot barrier"
+  - "radical open-mindedness"
+  - "pain + reflection = progress"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_02 — COGNITION
 ## Ray Dalio Cognitive Frameworks
 
@@ -89,3 +113,5 @@ When facing any decision:
 4. **What are my blind spots?** - What might I be missing?
 5. **What's the root cause?** - Not the symptom, but the underlying driver
 6. **What would the machine look like?** - Design the system, not just the action
+
+#galaxy-creation

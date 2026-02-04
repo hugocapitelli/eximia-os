@@ -1,3 +1,27 @@
+---
+title: "simple-writing-audit"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "simple-writing-audit"
+  - "task metadata"
+  - "overview"
+  - "phase 1: initial assessment"
+  - "1.1 copy intake"
+  - "1.2 first impression test"
+  - "phase 2: the five audit passes"
+  - "pass 1: the word assassin"
+  - "word assassin audit"
+  - "palavras cortadas:"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # simple-writing-audit
 
 Task de auditoria de copy usando o Simple Writing System de John Carlton.
@@ -719,3 +743,5 @@ Leia toda a copy em voz alta. Marque onde:
 *Task Version: 1.0*
 *Created: 2026-01-23*
 *Based on: John Carlton's Simple Writing System*
+
+#galaxy-operational

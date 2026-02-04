@@ -1,3 +1,27 @@
+---
+title: "A3 Master Agent - TIER 3 (Expert)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "documentation"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "a3 master agent - tier 3 (expe"
+  - "visao geral"
+  - "diferenciais tier 3 vs tier 2"
+  - "capacidades premium"
+  - "1. construcao de a3 com profun"
+  - "2. avaliacao com rubrica esten"
+  - "3. coaching avancado"
+  - "4. integracao lean completa"
+  - "estrutura do agente"
+tags:
+  - "galaxy-creation"
+  - "documentation"
+---
+
 # A3 Master Agent - TIER 3 (Expert)
 
 **Versao:** 3.0.0
@@ -136,3 +160,5 @@ A3_Master_Tier3/
 ---
 
 *Criado via Z_Squad Pipeline v2.0 - Tier 3 Expert*
+
+#galaxy-creation

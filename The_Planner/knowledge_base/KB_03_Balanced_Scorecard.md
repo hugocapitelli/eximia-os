@@ -1,3 +1,27 @@
+---
+title: "KB_03: Balanced Scorecard (BSC)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-balanced-scorecard"
+  - "kb_03: balanced scorecard (bsc"
+  - "📖 origem"
+  - "🎯 estrutura core: as 4 perspe"
+  - "📊 detalhamento das 4 perspect"
+  - "1️⃣ perspectiva financeira"
+  - "2️⃣ perspectiva de clientes"
+  - "3️⃣ perspectiva de processos i"
+  - "4️⃣ perspectiva de aprendizado"
+  - "🔗 strategy map (conexão das 4"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_03: Balanced Scorecard (BSC)
 
 ## 📖 Origem
@@ -302,3 +326,5 @@ Tornar-se líder em [nicho] com crescimento rentável e cultura de excelência.
 - "The Strategy-Focused Organization" (Kaplan & Norton)
 - Harvard Business Review - Balanced Scorecard 2024 Update
 - BSC Institute Best Practices
+
+#galaxy-specialist

@@ -1,3 +1,27 @@
+---
+title: "KB_12 — Growth Experiments Log"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-12-growth-experiments-log"
+  - "kb_12 — growth experiments log"
+  - "filosofia de experimentacao"
+  - "o mindset de growth hacker"
+  - "principios fundamentais"
+  - "sistema de documentacao"
+  - "estrutura do log de experiment"
+  - "template de experimento"
+  - "experimento #[xxx]"
+  - "metadata"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_12 — Growth Experiments Log
 
 **Agente:** Growth Hacker
@@ -547,3 +571,5 @@ BASES:
 - Reforge - Experimentation Programs
 - Neil Patel - A/B Testing for Content
 - ConversionXL - Experimentation Research
+
+#galaxy-creation

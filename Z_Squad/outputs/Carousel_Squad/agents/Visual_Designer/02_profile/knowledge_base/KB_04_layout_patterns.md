@@ -1,3 +1,27 @@
+---
+title: "KB_04 — Layout Patterns for Carousels"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-04-layout-patterns"
+  - "kb_04 — layout patterns for ca"
+  - "fundamentos de layout"
+  - "por que layout importa"
+  - "princípios base"
+  - "grid systems"
+  - "the 4-column grid (standard)"
+  - "the rule of thirds"
+  - "golden ratio grid"
+  - "layout templates essenciais"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_04 — Layout Patterns for Carousels
 
 **Agente:** Visual Designer
@@ -394,3 +418,5 @@ Bottom 120px reserved for Instagram UI
 - Massimo Vignelli, "The Vignelli Canon"
 - Jan Tschichold, "The New Typography"
 - Material Design Layout Guidelines
+
+#galaxy-creation

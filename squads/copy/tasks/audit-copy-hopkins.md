@@ -1,3 +1,27 @@
+---
+title: "Audit Copy - Hopkins Scientific Method"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "audit-copy-hopkins"
+  - "audit copy - hopkins scientifi"
+  - "purpose"
+  - "when to use"
+  - "hopkins' core audit principles"
+  - "inputs"
+  - "workflow"
+  - "phase 1: salesmanship test"
+  - "phase 2: reason why audit"
+  - "phase 3: specificity audit"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Audit Copy - Hopkins Scientific Method
 
 ## Purpose
@@ -503,3 +527,5 @@ If any answer is NO, fix it first.
 - **Precedes**: Final publication or A/B test launch
 - **Related Tasks**: setup-split-test.md, create-headlines.md
 - **Related Checklist**: hopkins-audit-checklist.md
+
+#galaxy-operational

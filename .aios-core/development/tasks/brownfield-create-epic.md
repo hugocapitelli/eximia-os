@@ -483,4 +483,5 @@ The epic creation is successful when:
 - If the scope grows beyond 3 stories, consider the full brownfield PRD process
 - Always prioritize existing system integrity over new functionality
 - When in doubt about scope or complexity, escalate to full brownfield planning
- 
+
+#galaxy-runtime

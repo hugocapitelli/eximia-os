@@ -1,3 +1,27 @@
+---
+title: "BENCHMARK: AIOS vs eximIA.OS"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "benchmark-aios-vs-eximia-os"
+  - "benchmark: aios vs eximia.os"
+  - "executive summary"
+  - "1. arquitetura comparativa"
+  - "1.1 visao geral"
+  - "1.2 componentes core"
+  - "2. analise detalhada por modul"
+  - "2.1 scheduler"
+  - "2.2 memory management"
+  - "2.3 context management"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # BENCHMARK: AIOS vs eximIA.OS
 
 *Source: The_Veritas | Methodology: CoVe 4-step, Triangulation*
@@ -463,3 +487,5 @@ O resultado sera um sistema hibrido que combina a **robustez de infraestrutura**
 **Version:** 1.0.0
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

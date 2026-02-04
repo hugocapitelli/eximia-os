@@ -1,3 +1,27 @@
+---
+title: "META_ANALYSIS — The_Veritas"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "meta-analysis"
+  - "meta_analysis — the_veritas"
+  - "agent: the_veritas"
+  - "domain: deep research / intell"
+  - "class: 3 (expert)"
+  - "1. domain knowledge map"
+  - "primary domain: research & int"
+  - "sub-domains"
+  - "2. source tier system"
+  - "tier 1: highest authority (alw"
+tags:
+  - "galaxy-core"
+  - "document"
+---
+
 # META_ANALYSIS — The_Veritas
 
 ## Agent: The_Veritas
@@ -218,3 +242,5 @@ MASTER:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

@@ -1,3 +1,27 @@
+---
+title: "C4 AUDITOR — Agente de Validação e Turing Test"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "agente-core"
+  - "c4 auditor — agente de validaç"
+  - "identidade"
+  - "missão"
+  - "protocolo operacional"
+  - "1. receber handoff de c3"
+  - "2. executar turing test"
+  - "test_results/turing_results.ya"
+  - "3. verificar style compliance"
+  - "4. verificar ethics compliance"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # C4 AUDITOR — Agente de Validação e Turing Test
 
 ## IDENTIDADE
@@ -344,3 +368,5 @@ Ação: Retornar a C3 para correção de {itens específicos}.
 
 **Versão:** 1.0
 **Clone Factory Module:** C4
+
+#galaxy-creation

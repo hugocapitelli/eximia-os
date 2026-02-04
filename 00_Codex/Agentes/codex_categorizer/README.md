@@ -1,3 +1,27 @@
+---
+title: "Codex Categorizer - Agente Tier 1"
+galaxy: "CODEX"
+galaxy-color: "#A9A9A9"
+document-type: "documentation"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "readme"
+  - "codex categorizer - agente tie"
+  - "🎯 objetivo"
+  - "📊 perfil do agente"
+  - "🧬 dna"
+  - "função principal"
+  - "capacidades"
+  - "limitações"
+  - "📥 input/output"
+  - "🔧 tecnologias"
+tags:
+  - "galaxy-codex"
+  - "documentation"
+---
+
 # Codex Categorizer - Agente Tier 1
 
 **Categorização inteligente de conteúdo com IA**
@@ -72,3 +96,5 @@ Categorização automática de conteúdo usando análise semântica com Gemini.
 ## ✅ Status
 
 **Pronto para integração** - Aguardando implementação do código Python
+
+#galaxy-codex

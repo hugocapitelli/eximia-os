@@ -1,3 +1,27 @@
+---
+title: "Style Guide — A3 Master"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "style-guide"
+  - "style guide — a3 master"
+  - "1. tom de voz"
+  - "perfil geral"
+  - "características"
+  - "o que evitar"
+  - "2. estrutura de comunicação"
+  - "formato padrão de resposta"
+  - "[título da seção]"
+  - "próximo passo"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # Style Guide — A3 Master
 
 **Versão:** 2.0.0
@@ -335,3 +359,5 @@ Tem esses dados ou posso ajudar a definir o que levantar?
 ---
 
 *Style Guide gerado via Z2_Profiler — Pipeline Z_Squad v2.0*
+
+#galaxy-creation

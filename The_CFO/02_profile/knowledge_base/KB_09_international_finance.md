@@ -1,3 +1,27 @@
+---
+title: "KB_09 — International Finance"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-09-international-finance"
+  - "kb_09 — international finance"
+  - "1. fundamentos de finanças int"
+  - "conceitos core (eiteman, stone"
+  - "2. tipos de exposição cambial"
+  - "framework de exposição (eitema"
+  - "mensuração"
+  - "3. hedging strategies"
+  - "instrumentos de hedge"
+  - "hedge ratio"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_09 — International Finance
 
 ## 1. Fundamentos de Finanças Internacionais
@@ -208,3 +232,5 @@ Transações entre partes relacionadas devem refletir preços de mercado.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

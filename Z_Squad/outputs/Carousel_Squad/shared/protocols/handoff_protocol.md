@@ -1,3 +1,27 @@
+---
+title: "Handoff Protocol — Carousel Squad"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "protocol"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "handoff-protocol"
+  - "handoff protocol — carousel sq"
+  - "visão geral"
+  - "fluxo padrão de handoff"
+  - "estrutura do handoff"
+  - "handoffs específicos"
+  - "maestro → story architect"
+  - "story architect → visual desig"
+  - "visual designer → copy master"
+  - "copy master → growth hacker"
+tags:
+  - "galaxy-creation"
+  - "protocol"
+---
+
 # Handoff Protocol — Carousel Squad
 
 **Versão:** 1.0
@@ -239,3 +263,5 @@ Usar estrutura YAML completa acima.
 ---
 
 **Mantido por:** Carousel Squad | ExímIA.AI
+
+#galaxy-creation

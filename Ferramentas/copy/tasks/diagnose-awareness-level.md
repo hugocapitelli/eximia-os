@@ -1,3 +1,27 @@
+---
+title: "Diagnose Awareness Level - Schwartz Method"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "diagnose-awareness-level"
+  - "diagnose awareness level - sch"
+  - "purpose"
+  - "when to use"
+  - "schwartz on awareness"
+  - "the 5 levels of awareness"
+  - "inputs"
+  - "workflow"
+  - "step 1: gather diagnostic data"
+  - "step 2: diagnose each level"
+tags:
+  - "galaxy-tools"
+  - "document"
+---
+
 # Diagnose Awareness Level - Schwartz Method
 
 ## Purpose
@@ -388,3 +412,5 @@ MISTAKE 4: Ignoring Mixed Audiences
 - **Uses**: schwartz-diagnosis-checklist.md
 - **Informs**: All copy creation tasks
 - **Agent**: @eugene-schwartz (Tier 0 - Diagnosis)
+
+#galaxy-tools

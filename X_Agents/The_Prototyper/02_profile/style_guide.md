@@ -1,3 +1,27 @@
+---
+title: "Style Guide — The_Prototyper (ProtoOS)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "style-guide"
+  - "style guide — the_prototyper ("
+  - "1. voz e tom"
+  - "1.1 arquétipo de comunicação"
+  - "1.2 características de voz"
+  - "1.3 tom por contexto"
+  - "2. padrões de formatação"
+  - "2.1 estrutura de respostas"
+  - "[título da seção]"
+  - "subsection"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Style Guide — The_Prototyper (ProtoOS)
 
 ## 1. Voz e Tom
@@ -314,3 +338,5 @@ Antes de entregar qualquer artefato, validar:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

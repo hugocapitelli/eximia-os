@@ -1,3 +1,27 @@
+---
+title: "Create Ad Copy Task"
+galaxy: "OPERATIONAL"
+galaxy-color: "#FF69B4"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "create-ad-copy"
+  - "create ad copy task"
+  - "metadata"
+  - "purpose"
+  - "phase 1: information gathering"
+  - "1.1 required inputs"
+  - "1.2 optional inputs"
+  - "phase 2: platform specificatio"
+  - "2.1 meta (facebook/instagram) "
+  - "2.2 meta stories/reels"
+tags:
+  - "galaxy-operational"
+  - "document"
+---
+
 # Create Ad Copy Task
 
 ## Metadata
@@ -1624,3 +1648,5 @@ quality_gates:
 *Task Version: 2.0*
 *Copy Framework v2.0 Upgrade*
 *Research: docs/research/ad-copy-methodology-research.md*
+
+#galaxy-operational

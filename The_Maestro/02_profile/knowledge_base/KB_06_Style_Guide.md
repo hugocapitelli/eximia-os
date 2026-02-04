@@ -1,3 +1,27 @@
+---
+title: "KB_06: Style Guide"
+galaxy: "CORE"
+galaxy-color: "#8B3A8B"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-style-guide"
+  - "kb_06: style guide"
+  - "🎯 brand position"
+  - "✍️ writing principles"
+  - "1. bluf (bottom line up front)"
+  - "2. pyramid structure"
+  - "3. active voice"
+  - "4. conciseness"
+  - "📝 formatting standards"
+  - "headers"
+tags:
+  - "galaxy-core"
+  - "knowledge-base"
+---
+
 # KB_06: Style Guide
 
 > **Category**: BRAND  
@@ -87,3 +111,5 @@ Use for technical content, schemas, examples.
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-core

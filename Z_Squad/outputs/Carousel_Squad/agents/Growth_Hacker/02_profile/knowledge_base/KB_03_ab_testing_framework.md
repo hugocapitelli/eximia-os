@@ -1,3 +1,27 @@
+---
+title: "KB_03 — A/B Testing Framework"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-03-ab-testing-framework"
+  - "kb_03 — a/b testing framework"
+  - "principios cientificos de test"
+  - "o metodo growth hacking (sean "
+  - "framework ice para priorizacao"
+  - "exemplo pratico:"
+  - "anatomia de um teste valido"
+  - "requisitos para significancia "
+  - "duracao minima do teste"
+  - "variaveis testaveis em carross"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_03 — A/B Testing Framework
 
 **Agente:** Growth Hacker
@@ -317,3 +341,5 @@ Colunas recomendadas:
 - Optimizely - A/B Testing Statistical Guide
 - ConversionXL - Experimentation Research
 - Andrew Chen - Growth Engineering Principles
+
+#galaxy-creation

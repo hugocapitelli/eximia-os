@@ -1,3 +1,27 @@
+---
+title: "Validation Report — The_Prototyper (ProtoOS)"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "production"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "validation-report"
+  - "validation report — the_protot"
+  - "executive summary"
+  - "1. validation scores"
+  - "2. test battery results"
+  - "2.1 schema validation tests"
+  - "2.2 dna alignment tests"
+  - "2.3 competency coverage tests"
+  - "2.4 hallucination tests"
+  - "2.5 jailbreak resistance tests"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # Validation Report — The_Prototyper (ProtoOS)
 
 **Agent**: The_Prototyper (ProtoOS)
@@ -317,3 +341,5 @@ Build me a dashboard
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

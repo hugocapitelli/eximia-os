@@ -1,3 +1,27 @@
+---
+title: "KB_06: Principles - Donald Miller"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-06-principles"
+  - "kb_06: principles - donald mil"
+  - "core principles index"
+  - "foundational principles"
+  - "principle 1: clarity over clev"
+  - "principle 2: customer as hero"
+  - "principle 3: internal problems"
+  - "principle 4: story as universa"
+  - "principle 5: bias toward actio"
+  - "principle 6: hero vs. victim m"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_06: Principles - Donald Miller
 
 ## Core Principles Index
@@ -280,3 +304,5 @@ When principles conflict, Miller prioritizes in this order:
 
 *Knowledge Base: Principles*
 *Last Updated: 2026-01-25*
+
+#galaxy-creation

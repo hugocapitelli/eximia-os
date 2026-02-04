@@ -1,3 +1,27 @@
+---
+title: "David Goggins - Badwater 135 Ultramarathon (Death Valley)"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "query-16-badwater-135-ultramarathon-death-valley"
+  - "david goggins - badwater 135 u"
+  - "race overview"
+  - "goggins' badwater record"
+  - "year-by-year performance"
+  - "2006 - first attempt (incredib"
+  - "2007 - best performance"
+  - "2008 - did not finish"
+  - "2012 - did not finish"
+  - "2013 - final completion"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # David Goggins - Badwater 135 Ultramarathon (Death Valley)
 
 **Source:** Web Search - "David Goggins Badwater 135 ultramarathon Death Valley performance"
@@ -176,3 +200,5 @@
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-creation

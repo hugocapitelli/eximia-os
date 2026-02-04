@@ -1,3 +1,27 @@
+---
+title: "KB_01 - Download Strategies"
+galaxy: "TOOLS"
+galaxy-color: "#FFD700"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-01-download-strategies"
+  - "kb_01 - download strategies"
+  - "visão geral"
+  - "ferramenta principal: yt-dlp"
+  - "o que é"
+  - "instalação"
+  - "via pip (recomendado)"
+  - "via winget (windows)"
+  - "via brew (macos)"
+  - "comandos essenciais"
+tags:
+  - "galaxy-tools"
+  - "knowledge-base"
+---
+
 # KB_01 - Download Strategies
 
 ## Visão Geral
@@ -206,3 +230,5 @@ yt-dlp --dump-json "URL" | python -m json.tool
 - [yt-dlp GitHub](https://github.com/yt-dlp/yt-dlp)
 - [Supported Sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)
 - [spotdl GitHub](https://github.com/spotDL/spotify-downloader)
+
+#galaxy-tools

@@ -1,3 +1,27 @@
+---
+title: "META_ANALYSIS.md — LXD Architect Domain Knowledge Map"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "meta-analysis"
+  - "meta_analysis.md — lxd archite"
+  - "🎯 purpose"
+  - "🧬 dna do domínio"
+  - "📚 mapa de dependências teóric"
+  - "layer 1: fundações filosóficas"
+  - "layer 2: teorias de aprendizag"
+  - "layer 3: aprendizagem experien"
+  - "layer 4: neurociência da apren"
+  - "🔧 framework de frameworks"
+tags:
+  - "galaxy-specialist"
+  - "document"
+---
+
 # META_ANALYSIS.md — LXD Architect Domain Knowledge Map
 
 ## 🎯 Purpose
@@ -274,3 +298,5 @@ Level 5: ADAPTATIVO
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

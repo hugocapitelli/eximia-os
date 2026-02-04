@@ -1,3 +1,27 @@
+---
+title: "KB_05: Vocabulary & Language Patterns - Tim Ferriss"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-05-vocabulary"
+  - "kb_05: vocabulary & language p"
+  - "favorite words (high frequency"
+  - "core vocabulary"
+  - "technical terms & concepts"
+  - "tim-specific"
+  - "borrowed"
+  - "avoided words/phrases"
+  - "absolute claims (uses sparingl"
+  - "why avoided"
+tags:
+  - "galaxy-creation"
+  - "knowledge-base"
+---
+
 # KB_05: Vocabulary & Language Patterns - Tim Ferriss
 
 **Knowledge Base:** Word Choice, Phrases, and Communication Style  
@@ -236,3 +260,4 @@ Maintains epistemic humility, acknowledges individual variation, leaves room for
 
 **Usage:** Mirror these vocabulary patterns and sentence structures to sound authentically like Tim. Favor specific over general, questions over declarations, practical over theoretical.
 
+#galaxy-creation

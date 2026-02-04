@@ -1,3 +1,27 @@
+---
+title: "KB_10: Gestão de Crises"
+galaxy: "SPECIALIST"
+galaxy-color: "#228B22"
+document-type: "knowledge-base"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "kb-10-crisismanagement"
+  - "kb_10: gestão de crises"
+  - "1. tipos de crise corporativa"
+  - "2. war room"
+  - "2.1 composição"
+  - "2.2 protocolo de ativação"
+  - "3. data breach response"
+  - "3.1 protocolo lgpd"
+  - "3.2 não pagar resgate"
+  - "4. investigação interna"
+tags:
+  - "galaxy-specialist"
+  - "knowledge-base"
+---
+
 # KB_10: Gestão de Crises
 
 **Categoria:** ESTRATEGIA  
@@ -207,3 +231,5 @@ Fato que possa:
 
 
 <!-- ORACLE:OBSIDIAN_CONNECTIONS_END -->
+
+#galaxy-specialist

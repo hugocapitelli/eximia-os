@@ -1,3 +1,27 @@
+---
+title: "analyst"
+galaxy: "RUNTIME"
+galaxy-color: "#1E90FF"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "analyst"
+  - "complete agent definition foll"
+  - "all commands require * prefix "
+  - "quick commands"
+  - "agent collaboration"
+  - "🔍 analyst guide (*guide comma"
+  - "when to use me"
+  - "prerequisites"
+  - "typical workflow"
+  - "common pitfalls"
+tags:
+  - "galaxy-runtime"
+  - "document"
+---
+
 # analyst
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.
@@ -193,3 +217,5 @@ Type `*help` to see all commands, or `*yolo` to skip confirmations.
 - **@po (Pax)** - May request market insights
 
 ---
+
+#galaxy-runtime

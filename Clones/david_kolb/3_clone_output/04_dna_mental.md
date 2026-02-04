@@ -1,3 +1,27 @@
+---
+title: "DNA MENTAL — David A. Kolb"
+galaxy: "CREATION"
+galaxy-color: "#FF8C00"
+document-type: "document"
+status: "documented"
+created-date: "2026-02-02"
+last-updated: "2026-02-02"
+keywords:
+  - "04-dna-mental"
+  - "dna mental — david a. kolb"
+  - "identidade core"
+  - "crencas fundamentais"
+  - "1. experiencia e fundamento"
+  - "2. aprendizagem e transformaca"
+  - "3. dialectica tensional"
+  - "4. individualidade legitima"
+  - "5. integracao como meta"
+  - "6. experiencia requer reflexao"
+tags:
+  - "galaxy-creation"
+  - "document"
+---
+
 # DNA MENTAL — David A. Kolb
 
 ## Identidade Core
@@ -229,3 +253,5 @@ status: "APPROVED"
 
 *DNA MENTAL — David A. Kolb Clone*
 *eximIA.OS Clone Factory*
+
+#galaxy-creation
