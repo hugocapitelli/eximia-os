@@ -95,20 +95,11 @@ export interface BookSummary {
 }
 
 export type BookCategory =
-  | 'Negócios'
-  | 'Desenvolvimento Pessoal'
-  | 'Finanças'
-  | 'Liderança'
-  | 'Marketing'
-  | 'Vendas'
-  | 'Tecnologia'
-  | 'Produtividade'
-  | 'Empreendedorismo'
-  | 'Psicologia'
-  | 'Filosofia'
-  | 'Biografias'
-  | 'Ficção'
-  | 'Outros';
+  | 'produtividade'
+  | 'psicologia'
+  | 'liderança'
+  | 'desenvolvimento pessoal'
+  | 'hábitos';
 
 export interface BibliotecaStats {
   totalFavorites: number;
@@ -468,15 +459,11 @@ export const FONT_SIZES: FontSizeConfig[] = [
 ];
 
 export const BOOK_CATEGORIES: CategoryConfig[] = [
-  { name: 'CIENCIA', label: 'Ciência', color: '#3b82f6', bgColor: '#dbeafe' },
-  { name: 'FILOSOFIA', label: 'Filosofia', color: '#8b5cf6', bgColor: '#ede9fe' },
-  { name: 'PSICOLOGIA', label: 'Psicologia', color: '#ec4899', bgColor: '#fce7f3' },
-  { name: 'PRODUTIVIDADE', label: 'Produtividade', color: '#10b981', bgColor: '#d1fae5' },
-  { name: 'NEGOCIOS', label: 'Negócios', color: '#f59e0b', bgColor: '#fef3c7' },
-  { name: 'TECNOLOGIA', label: 'Tecnologia', color: '#06b6d4', bgColor: '#cffafe' },
-  { name: 'BIOGRAFIAS', label: 'Biografias', color: '#ef4444', bgColor: '#fee2e2' },
-  { name: 'HISTORIA', label: 'História', color: '#84cc16', bgColor: '#ecfccb' },
-  { name: 'FICCAO', label: 'Ficção', color: '#a855f7', bgColor: '#f3e8ff' },
+  { name: 'produtividade', label: 'Produtividade', color: '#10b981', bgColor: '#d1fae5' },
+  { name: 'psicologia', label: 'Psicologia', color: '#ec4899', bgColor: '#fce7f3' },
+  { name: 'liderança', label: 'Liderança', color: '#f59e0b', bgColor: '#fef3c7' },
+  { name: 'desenvolvimento pessoal', label: 'Desenvolvimento Pessoal', color: '#8b5cf6', bgColor: '#ede9fe' },
+  { name: 'hábitos', label: 'Hábitos', color: '#06b6d4', bgColor: '#cffafe' },
 ];
 
 export const NOTE_TYPE_CONFIG: Record<NoteType, { label: string; icon: string; color: string; bgColor: string }> = {

@@ -23,6 +23,26 @@ export async function isAdmin(): Promise<boolean> {
   return data || false;
 }
 
+// Normalize date to YYYY-MM-DD format for PostgreSQL DATE type
+function normalizePublishedDate(dateStr?: string): string | undefined {
+  if (!dateStr) return undefined;
+
+  // If already in YYYY-MM-DD format, return as-is
+  if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) return dateStr;
+
+  // If only year (YYYY), convert to YYYY-01-01
+  if (/^\d{4}$/.test(dateStr)) return `${dateStr}-01-01`;
+
+  // Try to parse and format
+  try {
+    const date = new Date(dateStr);
+    if (isNaN(date.getTime())) return undefined;
+    return date.toISOString().split('T')[0];
+  } catch {
+    return undefined;
+  }
+}
+
 // Add book to catalog (Admin only)
 export async function addBookToCatalog(
   input: AddBookToCatalogInput
@@ -50,10 +70,16 @@ export async function addBookToCatalog(
     }
   }
 
+  // Normalize published_date to valid PostgreSQL DATE format
+  const normalizedInput = {
+    ...input,
+    published_date: normalizePublishedDate(input.published_date),
+  };
+
   const { data, error } = await supabase
     .from('book_catalog')
     .insert({
-      ...input,
+      ...normalizedInput,
       added_by: user.id,
     })
     .select()
@@ -136,8 +162,12 @@ export async function getCatalogBooks(
 
   if (error) {
     console.error('Get catalog error:', error);
-    return { success: false, error: 'Falha ao carregar catálogo', code: 'QUERY_ERROR' };
+    console.error('Get catalog error details:', JSON.stringify(error, null, 2));
+    console.error('Query details:', { search, category, has_summary, language, limit, offset });
+    return { success: false, error: `Falha ao carregar catálogo: ${error.message}`, code: 'QUERY_ERROR' };
   }
+
+  console.log('getCatalogBooks result:', { dataLength: data?.length, count, search, category });
 
   const total = count || 0;
   const page = Math.floor(offset / limit) + 1;

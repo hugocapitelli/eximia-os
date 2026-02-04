@@ -39,12 +39,6 @@ const AuthorDetailPageWrapper = lazy(() => import('../pages/biblioteca/AuthorDet
 const ReadingPageWrapper = lazy(() => import('../pages/biblioteca/ReadingPageWrapper'));
 const ReadingPage = lazy(() => import('../pages/biblioteca/ReadingPage'));
 
-// New Biblioteca V2 Pages
-const ExplorePage = lazy(() => import('../pages/biblioteca/ExplorePage'));
-const FavoritesPage = lazy(() => import('../pages/biblioteca/FavoritesPage'));
-const BookDetailPageV2 = lazy(() => import('../pages/biblioteca/BookDetailPageV2'));
-const ReadingPageV2 = lazy(() => import('../pages/biblioteca/ReadingPageV2'));
-
 const DesignSystemLibraryPage = lazy(() => import('../pages/design-system/DesignSystemLibraryPage'));
 const DesignSystemViewerPage = lazy(() => import('../pages/design-system/DesignSystemViewerPage'));
 const MindDetailPage = lazy(() => import('../pages/synthetic-minds/MindDetailPage'));
@@ -159,7 +153,7 @@ export const routes: RouteObject[] = [
         path: '/biblioteca/book/:bookId/read',
         element: (
           <Suspense fallback={<PageLoader />}>
-            <ReadingPageV2 />
+            <ReadingPage />
           </Suspense>
         ),
       },
@@ -280,31 +274,6 @@ export const routes: RouteObject[] = [
         element: (
           <Suspense fallback={<PageLoader />}>
             <AuthorDetailPageWrapper />
-          </Suspense>
-        ),
-      },
-      // New Biblioteca V2 Routes
-      {
-        path: 'biblioteca/explore',
-        element: (
-          <Suspense fallback={<PageLoader />}>
-            <ExplorePage />
-          </Suspense>
-        ),
-      },
-      {
-        path: 'biblioteca/favorites',
-        element: (
-          <Suspense fallback={<PageLoader />}>
-            <FavoritesPage />
-          </Suspense>
-        ),
-      },
-      {
-        path: 'biblioteca/v2/book/:bookId',
-        element: (
-          <Suspense fallback={<PageLoader />}>
-            <BookDetailPageV2 />
           </Suspense>
         ),
       },

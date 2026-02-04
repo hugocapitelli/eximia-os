@@ -1,5 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { JOURNEY_BOOKS, CLONES } from '../../constants';
+import { BOOK_CATEGORIES, type CategoryConfig, type BookCatalogView } from '../../src/types/biblioteca';
+import { getCatalogBooks } from '../../src/services/biblioteca/catalog';
 import { BookCardVisual } from '../journey/BookCardVisual';
 import { Button } from '../atoms/Button';
 import {
@@ -41,8 +43,11 @@ const COLLECTIONS = [
   { id: '4', name: 'Filosofia Clássica', icon: '📜', bookCount: 12 },
 ];
 
-// Categories for filtering
-const CATEGORIES = ['TODOS', 'BIOGRAFIAS', 'CIÊNCIA', 'FILOSOFIA', 'PSICOLOGIA', 'PRODUTIVIDADE', 'NEGÓCIOS'];
+// Categories for filtering - using BOOK_CATEGORIES from types
+const CATEGORIES: (CategoryConfig | { name: string; label: string })[] = [
+  { name: 'todos', label: 'Todos' },
+  ...BOOK_CATEGORIES,
+];
 
 interface JourneyLibraryProps {
   onNavigateToBook?: (bookId: string) => void;
@@ -54,8 +59,27 @@ export const JourneyLibrary: React.FC<JourneyLibraryProps> = ({
   onNavigateToAuthor,
 }) => {
   const [mainTab, setMainTab] = useState<'explorar' | 'autores' | 'favoritos' | 'cursos' | 'comunidade'>('explorar');
-  const [selectedCategory, setSelectedCategory] = useState('TODOS');
+  const [selectedCategory, setSelectedCategory] = useState('todos');
   const [favorites, setFavorites] = useState<string[]>([]);
+  const [catalogBooks, setCatalogBooks] = useState<BookCatalogView[]>([]);
+  const [isLoadingBooks, setIsLoadingBooks] = useState(true);
+
+  // Load books from database
+  useEffect(() => {
+    const loadBooks = async () => {
+      setIsLoadingBooks(true);
+      const result = await getCatalogBooks({
+        limit: 100,
+        category: selectedCategory === 'todos' ? undefined : selectedCategory,
+      });
+      if (result.success && result.data) {
+        setCatalogBooks(result.data.data);
+      }
+      setIsLoadingBooks(false);
+    };
+
+    loadBooks();
+  }, [selectedCategory]);
 
   // Check if author has a corresponding Mind
   const authorHasMind = (authorName: string): boolean => {
@@ -82,18 +106,16 @@ export const JourneyLibrary: React.FC<JourneyLibraryProps> = ({
     { id: 'comunidade', label: 'Comunidade', icon: Users },
   ];
 
-  // Filter books by category
+  // Filter books - already filtered by category in useEffect
   const filteredBooks = useMemo(() => {
-    if (selectedCategory === 'TODOS') return JOURNEY_BOOKS;
-    return JOURNEY_BOOKS.filter((b) =>
-      b.category?.toUpperCase() === selectedCategory
-    );
-  }, [selectedCategory]);
+    return catalogBooks;
+  }, [catalogBooks]);
 
-  // Get new releases (first 2 books)
-  const newReleases = JOURNEY_BOOKS.slice(0, 2);
+  // Get new releases (first 2 books from catalog)
+  const newReleases = catalogBooks.slice(0, 2);
 
-  // Books by status for Favoritos tab
+  // Books by status for Favoritos tab (using favorites state)
+  // Since catalog data doesn't have status, we use the mock data for now
   const readingBooks = JOURNEY_BOOKS.filter((b) => b.status === 'reading');
   const toReadBooks = JOURNEY_BOOKS.filter((b) => b.status === 'to_read');
   const completedBooks = JOURNEY_BOOKS.filter((b) => b.status === 'completed');
@@ -150,7 +172,7 @@ export const JourneyLibrary: React.FC<JourneyLibraryProps> = ({
             {/* Hero Section */}
             <LibraryHero
               variant="explore"
-              bookCount={JOURNEY_BOOKS.length}
+              bookCount={catalogBooks.length}
               onCTA={() => {
                 // Scroll to catalog
                 document.getElementById('catalogo')?.scrollIntoView({ behavior: 'smooth' });
@@ -172,9 +194,13 @@ export const JourneyLibrary: React.FC<JourneyLibraryProps> = ({
                 {newReleases.map((book) => (
                   <BookCardHorizontal
                     key={book.id}
-                    book={book}
+                    book={{
+                      ...book,
+                      author: book.author_name || 'Autor desconhecido',
+                      coverUrl: book.cover_url || book.thumbnail_url,
+                    } as any}
                     onBookClick={() => onNavigateToBook?.(book.id)}
-                    onAuthorClick={() => onNavigateToAuthor?.(book.author)}
+                    onAuthorClick={() => onNavigateToAuthor?.(book.author_name || '')}
                   />
                 ))}
               </div>
@@ -233,12 +259,17 @@ export const JourneyLibrary: React.FC<JourneyLibraryProps> = ({
                 {filteredBooks.map((book) => (
                   <BookCardVisual
                     key={book.id}
-                    book={{ ...book, isFavorite: favorites.includes(book.id) }}
+                    book={{
+                      ...book,
+                      author: book.author_name || 'Autor desconhecido',
+                      coverUrl: book.cover_url || book.thumbnail_url,
+                      isFavorite: favorites.includes(book.id),
+                    } as any}
                     onClick={() => onNavigateToBook?.(book.id)}
                     onToggleFavorite={handleToggleFavorite}
                     onNavigateToAuthor={onNavigateToAuthor}
                     showAuthorButton={true}
-                    hasMind={authorHasMind(book.author)}
+                    hasMind={authorHasMind(book.author_name || '')}
                   />
                 ))}
 

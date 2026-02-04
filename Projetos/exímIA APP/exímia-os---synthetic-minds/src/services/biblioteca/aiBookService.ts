@@ -85,6 +85,7 @@ export async function enhanceBookData(
 
 /**
  * Get AI book suggestions based on a topic or theme
+ * Fallback: Returns empty array if OPENAI_API_KEY not configured
  */
 export async function getAIBookSuggestions(
   topic: string,
@@ -101,12 +102,14 @@ export async function getAIBookSuggestions(
 
     if (error) {
       console.error('AI suggestions error:', error);
+      console.warn('⚠️ OpenAI API not configured. Falling back to API search only.');
       return [];
     }
 
     return data.suggestions || [];
   } catch (error) {
     console.error('AI suggestions error:', error);
+    console.warn('⚠️ AI suggestions unavailable. Use API search or check OpenAI configuration.');
     return [];
   }
 }

@@ -32,12 +32,16 @@ export const ExplorePage: React.FC = () => {
         limit: 50,
       });
 
+      console.log('getCatalogBooks result:', result);
       if (result.success && result.data) {
+        console.log('Setting books:', result.data.data);
         setBooks(result.data.data);
       } else {
+        console.error('getCatalogBooks failed:', result);
         toast.error(result.error || 'Erro ao carregar livros');
       }
     } catch (error) {
+      console.error('getCatalogBooks exception:', error);
       toast.error('Erro ao carregar livros');
     } finally {
       setLoading(false);
@@ -107,8 +111,8 @@ export const ExplorePage: React.FC = () => {
               >
                 <option value="all">Todas Categorias</option>
                 {BOOK_CATEGORIES.map((cat) => (
-                  <option key={cat} value={cat}>
-                    {cat}
+                  <option key={cat.name} value={cat.name}>
+                    {cat.label}
                   </option>
                 ))}
               </select>

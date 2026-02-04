@@ -14,6 +14,41 @@ const OPEN_LIBRARY_API_BASE = 'https://openlibrary.org';
 const searchCache = new Map<string, { data: BookSearchResult[]; timestamp: number }>();
 const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 
+// Retry configuration for rate limiting
+const MAX_RETRIES = 3;
+const INITIAL_DELAY = 1000; // 1 second
+
+async function fetchWithRetry(
+  url: string,
+  maxRetries: number = MAX_RETRIES
+): Promise<Response> {
+  let lastError: Error | null = null;
+
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      const response = await fetch(url);
+
+      // If rate limited and not last attempt, wait and retry
+      if (response.status === 429 && attempt < maxRetries) {
+        const delay = INITIAL_DELAY * Math.pow(2, attempt); // Exponential backoff
+        console.warn(`Rate limited. Retrying in ${delay}ms...`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        continue;
+      }
+
+      return response;
+    } catch (error) {
+      lastError = error instanceof Error ? error : new Error(String(error));
+      if (attempt < maxRetries) {
+        const delay = INITIAL_DELAY * Math.pow(2, attempt);
+        await new Promise(resolve => setTimeout(resolve, delay));
+      }
+    }
+  }
+
+  throw lastError || new Error('Failed to fetch after max retries');
+}
+
 function mapGoogleBookToSearchResult(volume: GoogleBooksVolume): BookSearchResult {
   const { volumeInfo } = volume;
   const identifiers = volumeInfo.industryIdentifiers || [];
@@ -68,7 +103,7 @@ export async function searchGoogleBooks(
   });
 
   try {
-    const response = await fetch(`${GOOGLE_BOOKS_API_BASE}?${params}`);
+    const response = await fetchWithRetry(`${GOOGLE_BOOKS_API_BASE}?${params}`);
 
     if (!response.ok) {
       throw new Error(`Google Books API error: ${response.status}`);
@@ -90,7 +125,7 @@ export async function searchGoogleBooks(
 
 export async function getGoogleBookById(volumeId: string): Promise<BookSearchResult | null> {
   try {
-    const response = await fetch(`${GOOGLE_BOOKS_API_BASE}/${volumeId}`);
+    const response = await fetchWithRetry(`${GOOGLE_BOOKS_API_BASE}/${volumeId}`);
 
     if (!response.ok) {
       if (response.status === 404) return null;
@@ -116,7 +151,7 @@ export async function searchOpenLibrary(
       fields: 'key,title,author_name,first_publish_year,publisher,isbn,cover_i,number_of_pages_median,subject,language',
     });
 
-    const response = await fetch(`${OPEN_LIBRARY_API_BASE}/search.json?${params}`);
+    const response = await fetchWithRetry(`${OPEN_LIBRARY_API_BASE}/search.json?${params}`);
 
     if (!response.ok) {
       throw new Error(`Open Library API error: ${response.status}`);

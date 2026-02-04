@@ -1,7 +1,14 @@
 import React from 'react';
 
+interface CategoryOption {
+  name: string;
+  label?: string;
+  color?: string;
+  bgColor?: string;
+}
+
 interface CategoryChipsProps {
-  categories: string[];
+  categories: (string | CategoryOption)[];
   selected: string;
   onSelect: (category: string) => void;
 }
@@ -14,11 +21,14 @@ export const CategoryChips: React.FC<CategoryChipsProps> = ({
   return (
     <div className="flex items-center gap-3 overflow-x-auto pb-4 hide-scrollbar">
       {categories.map((category) => {
-        const isActive = selected === category;
+        const categoryName = typeof category === 'string' ? category : category.name;
+        const categoryLabel = typeof category === 'string' ? category : (category.label || category.name);
+        const isActive = selected === categoryName;
+
         return (
           <button
-            key={category}
-            onClick={() => onSelect(category)}
+            key={categoryName}
+            onClick={() => onSelect(categoryName)}
             className={`
               px-5 py-2.5 rounded-full text-[10px] font-bold tracking-widest
               transition-all whitespace-nowrap border
@@ -28,7 +38,7 @@ export const CategoryChips: React.FC<CategoryChipsProps> = ({
               }
             `}
           >
-            {category.toUpperCase()}
+            {categoryLabel.toUpperCase()}
           </button>
         );
       })}

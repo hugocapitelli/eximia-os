@@ -72,7 +72,7 @@ export const BookCardVisual: React.FC<BookCardVisualProps> = ({
       </button>
 
       {/* Book Cover Area */}
-      <div className="relative h-48 flex items-center justify-center overflow-hidden">
+      <div className="relative h-80 flex items-center justify-center overflow-hidden">
         {/* Background gradient based on category */}
         <div className={`absolute inset-0 ${colors.bg} opacity-20`} />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent" />
@@ -82,11 +82,11 @@ export const BookCardVisual: React.FC<BookCardVisualProps> = ({
           <img
             src={book.coverUrl}
             alt={`Capa de ${book.title}`}
-            className="relative z-10 h-36 w-auto rounded shadow-2xl object-cover"
+            className="relative z-10 h-72 w-auto rounded-lg shadow-2xl object-cover"
           />
         ) : (
-          <div className={`relative z-10 w-28 h-40 rounded-lg ${colors.bg} bg-opacity-30 border ${colors.border} flex flex-col items-center justify-center gap-2 shadow-2xl`}>
-            <BookOpen className={`w-8 h-8 ${colors.text}`} />
+          <div className={`relative z-10 w-32 h-48 rounded-lg ${colors.bg} bg-opacity-30 border ${colors.border} flex flex-col items-center justify-center gap-2 shadow-2xl`}>
+            <BookOpen className={`w-10 h-10 ${colors.text}`} />
             <span className="text-[8px] font-bold text-zinc-400 uppercase tracking-wider text-center px-2 line-clamp-2">
               {book.title}
             </span>

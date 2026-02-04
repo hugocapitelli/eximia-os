@@ -145,10 +145,13 @@ export const AdminLibraryBooks: React.FC<AdminLibraryBooksProps> = ({
         setIsSearching(true);
         try {
           const results = await hybridBookSearch(debouncedSearchQuery, { maxResults: 15 });
+          if (results.length === 0) {
+            toast.info('Nenhum livro encontrado. Tente outra busca ou adicione manualmente.');
+          }
           setSearchResults(results);
         } catch (error) {
           console.error('Search error:', error);
-          toast.error('Erro na busca');
+          toast.error('Erro na busca. Verifique sua conexão e tente novamente.');
         } finally {
           setIsSearching(false);
         }
@@ -157,11 +160,14 @@ export const AdminLibraryBooks: React.FC<AdminLibraryBooksProps> = ({
         setIsSearching(true);
         try {
           const suggestions = await getAIBookSuggestions(debouncedSearchQuery, 8);
+          if (suggestions.length === 0) {
+            toast.warning('Sugestões de IA indisponíveis. Use a busca por API.');
+          }
           setAiSuggestions(suggestions);
           setSearchResults([]);
         } catch (error) {
           console.error('AI suggestions error:', error);
-          toast.error('Erro ao obter sugestões da IA');
+          toast.warning('Sugestões de IA indisponíveis. Use a busca por API.');
         } finally {
           setIsSearching(false);
         }
