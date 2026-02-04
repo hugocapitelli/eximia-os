@@ -1,11 +1,11 @@
-import { supabase } from '@/lib/supabase/client';
+import { supabase } from '../../supabase/client';
 import {
   SaveReadingPreferencesInput,
   UserReadingPreferences,
   ActionResult,
   ReadingTheme,
   FontSize,
-} from '@/types/biblioteca';
+} from '../../../types/biblioteca';
 
 /**
  * Salva as preferências de leitura do usuário (upsert)

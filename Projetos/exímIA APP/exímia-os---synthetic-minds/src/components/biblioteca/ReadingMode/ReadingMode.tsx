@@ -1,11 +1,11 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import { SummaryWithChapters, UserReadingPreferences, SummaryReadingProgress, THEMES, FONT_SIZES } from '@/types/biblioteca';
-import { saveReadingProgress } from '@/lib/actions/summaries/progress';
+import { SummaryWithChapters, UserReadingPreferences, SummaryReadingProgress, THEMES, FONT_SIZES } from '../../../types/biblioteca';
+import { saveReadingProgress } from '../../../lib/actions/summaries/progress';
 import { ReadingHeader } from './ReadingHeader';
 import { ReadingContent } from './ReadingContent';
 import { ReadingFooter } from './ReadingFooter';
 import { TableOfContents } from './TableOfContents';
-import { useKeyboardNav } from '@/hooks/useKeyboardNav';
+import { useKeyboardNav } from '../../../hooks/useKeyboardNav';
 
 interface ReadingModeProps {
   summary: SummaryWithChapters;

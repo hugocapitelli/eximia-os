@@ -1,9 +1,9 @@
-import { supabase } from '@/lib/supabase/client';
+import { supabase } from '../../supabase/client';
 import {
   SaveSummaryProgressInput,
   SummaryReadingProgress,
   ActionResult,
-} from '@/types/biblioteca';
+} from '../../../types/biblioteca';
 
 /**
  * Salva o progresso de leitura do usuário (upsert)

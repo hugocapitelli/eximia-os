@@ -1,10 +1,10 @@
-import { supabase } from '@/lib/supabase/client';
+import { supabase } from '../../supabase/client';
 import {
   BookSummary,
   SummaryWithChapters,
   SummaryChapter,
   ActionResult,
-} from '@/types/biblioteca';
+} from '../../../types/biblioteca';
 
 /**
  * Busca um resumo pelo ID do catálogo

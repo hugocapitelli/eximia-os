@@ -1,5 +1,5 @@
-import { supabase } from '@/lib/supabase/client';
-import { BookSummary, ActionResult } from '@/types/biblioteca';
+import { supabase } from '../../../supabase/client';
+import { BookSummary, ActionResult } from '../../../../types/biblioteca';
 
 export async function createSummary(input: {
   catalog_id: string;

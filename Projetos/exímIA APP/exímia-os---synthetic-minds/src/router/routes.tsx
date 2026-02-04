@@ -37,6 +37,7 @@ const BibliotecaPage = lazy(() => import('../pages/biblioteca/BibliotecaPage'));
 const BookDetailPageWrapper = lazy(() => import('../pages/biblioteca/BookDetailPageWrapper'));
 const AuthorDetailPageWrapper = lazy(() => import('../pages/biblioteca/AuthorDetailPageWrapper'));
 const ReadingPageWrapper = lazy(() => import('../pages/biblioteca/ReadingPageWrapper'));
+const ReadingPage = lazy(() => import('../pages/biblioteca/ReadingPage'));
 
 // New Biblioteca V2 Pages
 const ExplorePage = lazy(() => import('../pages/biblioteca/ExplorePage'));
@@ -167,6 +168,14 @@ export const routes: RouteObject[] = [
         element: (
           <Suspense fallback={<PageLoader />}>
             <ReadingPageWrapper />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/biblioteca/summary/:summaryId/read',
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <ReadingPage />
           </Suspense>
         ),
       },

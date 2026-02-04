@@ -1,5 +1,5 @@
-import { supabase } from '@/lib/supabase/client';
-import { BookSummary, ActionResult } from '@/types/biblioteca';
+import { supabase } from '../../../supabase/client';
+import { BookSummary, ActionResult } from '../../../../types/biblioteca';
 
 export async function publishSummary(summaryId: string): Promise<ActionResult<BookSummary>> {
   try {
