@@ -33,7 +33,7 @@ export const ExplorePage: React.FC = () => {
       });
 
       if (result.success && result.data) {
-        setBooks(result.data);
+        setBooks(result.data.data);
       } else {
         toast.error(result.error || 'Erro ao carregar livros');
       }

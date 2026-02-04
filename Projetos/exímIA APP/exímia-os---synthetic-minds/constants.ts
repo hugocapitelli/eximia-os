@@ -658,14 +658,9 @@ export const JOURNEY_HABITS: Habit[] = [
   { id: '4', name: 'Revisão Semanal', streak: 15, completedToday: false, frequency: 'weekly' },
 ];
 
-export const JOURNEY_BOOKS: Book[] = [
-  { id: '1', title: 'Admirável Mundo Novo', author: 'Aldous Huxley', status: 'to_read', progress: 0, category: 'Ficção', isDraft: false, description: 'Um clássico distópico sobre o futuro da sociedade.' },
-  { id: '2', title: 'Os Anjos Bons Da Nossa Natureza', author: 'Steven Pinker', status: 'reading', progress: 15, currentPage: 120, totalPage: 800, category: 'Psicologia', isDraft: false, description: 'Por que a violência diminuiu.' },
-  { id: '3', title: 'Deep Work', author: 'Cal Newport', status: 'reading', progress: 45, totalPage: 304, currentPage: 136, category: 'Produtividade' },
-  { id: '4', title: 'Inspired', author: 'Marty Cagan', status: 'reading', progress: 12, totalPage: 368, currentPage: 44, category: 'Produto' },
-  { id: '5', title: 'Antifragile', author: 'Nassim Taleb', status: 'to_read', progress: 0, category: 'Filosofia' },
-  { id: '6', title: 'Atomic Habits', author: 'James Clear', status: 'completed', progress: 100, category: 'Produtividade' },
-];
+// JOURNEY_BOOKS removed - use book_catalog from Supabase instead
+// Books are now loaded dynamically from the database via getCatalogBooks()
+export const JOURNEY_BOOKS: Book[] = [];
 
 // ... (Academy Data unchanged)
 export const ACADEMY_COURSES: AcademyCourse[] = [
@@ -1566,114 +1561,11 @@ export const MOCK_RITUALS: Ritual[] = [
     }
 ];
 
-// --- Library Mock Data (Admin) ---
+// --- Mock Data Removed ---
+// AUTHORS_DATA and BOOKS_DATA removed - use Supabase tables instead
+// Authors are loaded from public.authors table
+// Books are loaded from public.book_catalog table
+// Book summaries and chapters are loaded from public.book_summaries and public.summary_chapters tables
 
-export const AUTHORS_DATA: Author[] = [
-    {
-        id: 'author-1',
-        name: 'Cal Newport',
-        bio: 'Professor de ciência da computação em Georgetown University e autor de best-sellers sobre produtividade e trabalho profundo.',
-        avatarUrl: '',
-        bookCount: 3,
-        mindId: undefined
-    },
-    {
-        id: 'author-2',
-        name: 'Gary Halbert',
-        bio: 'Lendário copywriter conhecido como "The Prince of Print", autor de The Boron Letters.',
-        avatarUrl: '',
-        bookCount: 2,
-        mindId: 'gary-halbert'
-    },
-    {
-        id: 'author-3',
-        name: 'David Goggins',
-        bio: 'Ex-SEAL da Marinha, ultramaratonista e autor de "Can\'t Hurt Me".',
-        avatarUrl: '',
-        bookCount: 2,
-        mindId: 'david-goggins'
-    },
-    {
-        id: 'author-4',
-        name: 'James Clear',
-        bio: 'Autor de Atomic Habits e especialista em formação de hábitos e melhoria contínua.',
-        avatarUrl: '',
-        bookCount: 1,
-        mindId: undefined
-    }
-];
-
-export const BOOKS_DATA: Book[] = [
-    {
-        id: 'book-1',
-        title: 'Deep Work',
-        author: 'Cal Newport',
-        authorId: 'author-1',
-        coverUrl: '',
-        status: 'published',
-        progress: 0,
-        category: 'Produtividade',
-        description: 'Regras para o sucesso focado em um mundo distraído.',
-        chapters: [
-            { id: 'ch1', title: 'Introdução' },
-            { id: 'ch2', title: 'A Ideia' },
-            { id: 'ch3', title: 'Regra #1: Work Deeply' },
-            { id: 'ch4', title: 'Regra #2: Embrace Boredom' }
-        ],
-        readingTime: '4h',
-        rating: 4.8,
-        totalReaders: 1250
-    },
-    {
-        id: 'book-2',
-        title: 'The Boron Letters',
-        author: 'Gary Halbert',
-        authorId: 'author-2',
-        coverUrl: '',
-        status: 'published',
-        progress: 0,
-        category: 'Copywriting',
-        description: 'Cartas de um pai para seu filho sobre copywriting e vida.',
-        chapters: [
-            { id: 'ch1', title: 'Carta 1' },
-            { id: 'ch2', title: 'Carta 2' },
-            { id: 'ch3', title: 'Carta 3' }
-        ],
-        readingTime: '2h30',
-        rating: 4.9,
-        totalReaders: 890
-    },
-    {
-        id: 'book-3',
-        title: 'Can\'t Hurt Me',
-        author: 'David Goggins',
-        authorId: 'author-3',
-        coverUrl: '',
-        status: 'published',
-        progress: 0,
-        category: 'Mentalidade',
-        description: 'Master Your Mind and Defy the Odds.',
-        chapters: [
-            { id: 'ch1', title: 'Introduction' },
-            { id: 'ch2', title: 'I Should Have Been a Statistic' }
-        ],
-        readingTime: '5h',
-        rating: 4.7,
-        totalReaders: 2100
-    },
-    {
-        id: 'book-4',
-        title: 'Atomic Habits',
-        author: 'James Clear',
-        authorId: 'author-4',
-        coverUrl: '',
-        status: 'draft',
-        progress: 0,
-        category: 'Hábitos',
-        description: 'Pequenas mudanças, resultados notáveis.',
-        chapters: [],
-        readingTime: '3h',
-        rating: 0,
-        totalReaders: 0
-    }
-];
+export const AUTHORS_DATA: Author[] = [];
+export const BOOKS_DATA: Book[] = [];

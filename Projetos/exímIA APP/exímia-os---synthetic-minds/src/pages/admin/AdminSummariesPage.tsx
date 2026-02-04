@@ -46,7 +46,7 @@ export const AdminSummariesPage: React.FC = () => {
       try {
         const result = await getCatalogBooks({ limit: 100 });
         if (result.success && result.data) {
-          setBooks(result.data);
+          setBooks(result.data.data);
         }
       } catch (error) {
         toast.error('Erro ao carregar livros');
