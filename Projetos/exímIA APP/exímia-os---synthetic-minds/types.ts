@@ -279,6 +279,8 @@ export interface Book {
   readingTime?: string;
   rating?: number;
   totalReaders?: number;
+  is_available?: boolean; // Story 7.9.0: Flag indicating if book file is uploaded and available for reading
+  isFavorite?: boolean; // Internal state for favorite status
 }
 
 export interface Author {

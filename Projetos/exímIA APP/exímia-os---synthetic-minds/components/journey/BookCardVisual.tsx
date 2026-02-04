@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Book } from '../../types';
 import { BookOpen, Star, User, MoreVertical, Heart, Brain } from 'lucide-react';
+import { TOKENS } from '../../src/design-tokens';
 
 interface BookCardVisualProps {
   book: Book;
@@ -11,15 +13,13 @@ interface BookCardVisualProps {
   hasMind?: boolean;
 }
 
-// Color mapping for book categories
-const CATEGORY_COLORS: Record<string, { bg: string; border: string; text: string }> = {
-  'Produtividade': { bg: 'bg-blue-600', border: 'border-blue-500', text: 'text-blue-400' },
-  'Psicologia': { bg: 'bg-purple-600', border: 'border-purple-500', text: 'text-purple-400' },
-  'Filosofia': { bg: 'bg-amber-600', border: 'border-amber-500', text: 'text-amber-400' },
-  'Ficcao': { bg: 'bg-emerald-600', border: 'border-emerald-500', text: 'text-emerald-400' },
-  'Produto': { bg: 'bg-cyan-600', border: 'border-cyan-500', text: 'text-cyan-400' },
-  'Business': { bg: 'bg-rose-600', border: 'border-rose-500', text: 'text-rose-400' },
-  'default': { bg: 'bg-zinc-600', border: 'border-zinc-500', text: 'text-zinc-400' },
+// Map categories to design tokens
+const getCategoryTokenColor = (categoryName: string) => {
+  const normalized = categoryName?.toLowerCase().trim() || '';
+  const category = TOKENS.categories.find(
+    (c) => c.name === normalized || c.label.toLowerCase() === normalized
+  );
+  return category || TOKENS.categories[0]; // Default to first category
 };
 
 export const BookCardVisual: React.FC<BookCardVisualProps> = ({
@@ -31,7 +31,8 @@ export const BookCardVisual: React.FC<BookCardVisualProps> = ({
   hasMind = false,
 }) => {
   const [isFavorite, setIsFavorite] = useState(book.isFavorite || false);
-  const colors = CATEGORY_COLORS[book.category || ''] || CATEGORY_COLORS.default;
+  const navigate = useNavigate();
+  const categoryToken = getCategoryTokenColor(book.category || '');
 
   const handleFavoriteClick = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -42,6 +43,22 @@ export const BookCardVisual: React.FC<BookCardVisualProps> = ({
   const handleAuthorClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     onNavigateToAuthor?.(book.author);
+  };
+
+  // Story 7.9.0: Handle read summary button click
+  const handleReadSummary = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (book.id) {
+      navigate(`/biblioteca/summary/${book.id}/read`);
+    }
+  };
+
+  // Story 7.9.0: Handle read book button click (only if available)
+  const handleReadBook = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (book.id) {
+      navigate(`/biblioteca/book/${book.id}/read`);
+    }
   };
 
   return (
@@ -71,22 +88,31 @@ export const BookCardVisual: React.FC<BookCardVisualProps> = ({
         <Star className={`w-4 h-4 ${isFavorite ? 'fill-current' : ''}`} />
       </button>
 
-      {/* Book Cover Area */}
-      <div className="relative h-80 flex items-center justify-center overflow-hidden">
+      {/* Book Cover Area - Enhanced height to h-80 */}
+      <div className="relative h-80 flex items-center justify-center overflow-hidden group/cover">
         {/* Background gradient based on category */}
-        <div className={`absolute inset-0 ${colors.bg} opacity-20`} />
+        <div
+          className="absolute inset-0 opacity-20 transition-opacity duration-300 group-hover/cover:opacity-30"
+          style={{ backgroundColor: categoryToken.bgColor }}
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent" />
 
-        {/* Cover image or placeholder */}
+        {/* Cover image or placeholder - Enhanced to h-72 */}
         {book.coverUrl ? (
           <img
             src={book.coverUrl}
             alt={`Capa de ${book.title}`}
-            className="relative z-10 h-72 w-auto rounded-lg shadow-2xl object-cover"
+            className="relative z-10 h-72 w-auto rounded-lg shadow-2xl object-cover transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
-          <div className={`relative z-10 w-32 h-48 rounded-lg ${colors.bg} bg-opacity-30 border ${colors.border} flex flex-col items-center justify-center gap-2 shadow-2xl`}>
-            <BookOpen className={`w-10 h-10 ${colors.text}`} />
+          <div
+            className="relative z-10 w-32 h-48 rounded-lg bg-opacity-30 border flex flex-col items-center justify-center gap-2 shadow-2xl transition-all duration-300 group-hover:scale-105"
+            style={{
+              backgroundColor: categoryToken.bgColor,
+              borderColor: categoryToken.color,
+            }}
+          >
+            <BookOpen className="w-10 h-10" style={{ color: categoryToken.color }} />
             <span className="text-[8px] font-bold text-zinc-400 uppercase tracking-wider text-center px-2 line-clamp-2">
               {book.title}
             </span>
@@ -95,21 +121,27 @@ export const BookCardVisual: React.FC<BookCardVisualProps> = ({
       </div>
 
       {/* Content */}
-      <div className="p-4">
-        {/* Category Badge */}
+      <div className="p-4 flex flex-col flex-grow">
+        {/* Category Badge - Using TOKENS.categories color */}
         <div className="mb-2">
-          <span className={`inline-block px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider ${colors.text} bg-white/5 border border-white/10`}>
+          <span
+            className="inline-block px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider bg-white/5 border transition-colors"
+            style={{
+              color: categoryToken.color,
+              borderColor: categoryToken.color,
+            }}
+          >
             {book.category || 'Sem categoria'}
           </span>
         </div>
 
         {/* Title */}
-        <h3 className="text-base font-bold text-white mb-1 line-clamp-2 font-serif group-hover:text-amber-50 transition-colors">
+        <h3 className="text-base font-bold text-white mb-2 line-clamp-2 font-serif group-hover:text-amber-50 transition-colors">
           {book.title}
         </h3>
 
         {/* Author with optional Mind button */}
-        <div className="flex items-center gap-2 mb-3">
+        <div className="flex items-center gap-2 mb-2">
           <p className="text-sm text-zinc-400">{book.author}</p>
           {showAuthorButton && hasMind && (
             <button
@@ -123,15 +155,34 @@ export const BookCardVisual: React.FC<BookCardVisualProps> = ({
           )}
         </div>
 
-        {/* Description if available */}
+        {/* Tags display - Below title, with truncate and ellipsis */}
+        {book.tags && book.tags.length > 0 && (
+          <div className="flex flex-wrap gap-1 mb-2">
+            {book.tags.slice(0, 3).map((tag, idx) => (
+              <span
+                key={idx}
+                className="px-2 py-0.5 rounded text-[8px] font-medium uppercase tracking-wider text-zinc-400 bg-white/5 border border-white/10 line-clamp-1 truncate"
+              >
+                {tag}
+              </span>
+            ))}
+            {book.tags.length > 3 && (
+              <span className="px-2 py-0.5 rounded text-[8px] font-medium text-zinc-500">
+                +{book.tags.length - 3}
+              </span>
+            )}
+          </div>
+        )}
+
+        {/* Description snippet - 3 lines max with line-clamp-3 */}
         {book.description && (
-          <p className="text-xs text-zinc-500 line-clamp-2 mb-3">
+          <p className="text-xs text-zinc-500 line-clamp-3 mb-3 flex-grow">
             {book.description}
           </p>
         )}
 
         {/* Status & Progress */}
-        <div className="pt-3 border-t border-[#1F1F22]">
+        <div className="pt-3 border-t border-[#1F1F22] mb-3 mt-auto">
           <div className="flex items-center justify-between mb-2">
             <span
               className={`text-[10px] font-bold uppercase tracking-wider ${
@@ -164,6 +215,50 @@ export const BookCardVisual: React.FC<BookCardVisualProps> = ({
               style={{ width: `${book.progress || 0}%` }}
             />
           </div>
+        </div>
+
+        {/* Story 7.9.0: Dual Read Buttons */}
+        <div className="space-y-2">
+          {/* Always show: [Ler Resumo] button */}
+          <button
+            onClick={handleReadSummary}
+            className="w-full px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-200 ease-out text-black hover:shadow-lg active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black"
+            style={{
+              backgroundColor: TOKENS.colors.eximia[400],
+              color: TOKENS.colors.tech.bg,
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = TOKENS.colors.eximia[500];
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = TOKENS.colors.eximia[400];
+            }}
+            aria-label="Ler resumo do livro"
+          >
+            Ler Resumo
+          </button>
+
+          {/* Conditionally show: [Ler Livro] button (if is_available === true) */}
+          {(book as any).is_available && (
+            <button
+              onClick={handleReadBook}
+              className="w-full px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-200 ease-out text-black hover:shadow-lg active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black group/tooltip"
+              style={{
+                backgroundColor: TOKENS.colors.eximia[400],
+                color: TOKENS.colors.tech.bg,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = TOKENS.colors.eximia[500];
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = TOKENS.colors.eximia[400];
+              }}
+              title="Livro disponível para leitura"
+              aria-label="Ler livro completo"
+            >
+              Ler Livro
+            </button>
+          )}
         </div>
       </div>
     </div>

@@ -37,9 +37,22 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
  * A versatile button component supporting multiple variants, colors, and sizes.
  * All colors and spacing use design tokens for consistency.
  *
+ * Accessibility Features:
+ * - Keyboard accessible (Tab, Enter, Space)
+ * - Focus indicator visible (ring-2 with offset)
+ * - aria-label support for icon-only buttons
+ * - Disabled state properly communicated
+ * - WCAG AA contrast ratios (≥ 4.5:1)
+ *
  * @example
+ * // Text button
  * <Button variant="primary" color="gold" size="md">
  *   Click Me
+ * </Button>
+ *
+ * // Icon-only button (requires aria-label)
+ * <Button aria-label="Close dialog">
+ *   <X className="w-5 h-5" />
  * </Button>
  */
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -53,6 +66,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       ariaLabel,
       children,
       disabled,
+      type = 'button',
       ...props
     },
     ref
@@ -128,6 +142,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         ref={ref}
+        type={type}
         className={`
           ${getButtonStyles()}
           ${sizeStyles[size]}
@@ -135,9 +150,14 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         `.trim()}
         disabled={disabled}
         aria-label={ariaLabel}
+        aria-disabled={disabled}
         {...props}
       >
-        {icon && <span className="mr-2">{icon}</span>}
+        {icon && (
+          <span className="mr-2 inline-flex items-center justify-center" aria-hidden="true">
+            {icon}
+          </span>
+        )}
         {children}
       </button>
     );

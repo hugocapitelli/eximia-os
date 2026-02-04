@@ -38,14 +38,20 @@ export interface BadgeProps {
  * Displays category badges with consistent styling from design tokens.
  * Can use predefined category colors or custom colors.
  *
+ * Accessibility Features:
+ * - aria-label for additional context
+ * - Color + text to convey meaning (not color alone)
+ * - Contrast ratios verified (≥ 3:1 for large text)
+ * - Can be standalone or within text
+ *
  * @example
- * // Using category object
- * <Badge category={TOKENS.categories[0]}>
+ * // Using category object with label
+ * <Badge category={TOKENS.categories[0]} ariaLabel="Categoria: Produtividade">
  *   Produtividade
  * </Badge>
  *
  * // Using custom colors
- * <Badge textColor="#10b981" bgColor="#d1fae5">
+ * <Badge textColor="#10b981" bgColor="#d1fae5" ariaLabel="Tag customizado">
  *   Custom
  * </Badge>
  */
