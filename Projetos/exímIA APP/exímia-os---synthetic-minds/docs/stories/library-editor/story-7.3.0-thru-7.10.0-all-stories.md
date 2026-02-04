@@ -51,23 +51,23 @@ As a **Library Admin**, I want to **upload book files and cover images to secure
 
 # Story 7.4.0: Automatic Description Fetching Service
 
-**Epic:** Library Editor Enhancement | **Status:** Ready for Dev | **Priority:** P1
+**Epic:** Library Editor Enhancement | **Status:** ✅ Complete | **Priority:** P1
 **Assignee:** @dev (Dex) | **Estimated:** 3 hours | **Phase:** 2 (Parallel)
 
 ## 📋 Story
 As a **Library Admin**, I want to **automatically fetch book descriptions from APIs**, So that **books have detailed, professional descriptions without manual typing**.
 
 ## 🎯 Acceptance Criteria
-- [ ] `getBookDescription(title: string, author: string)` → description text
+- [x] `getBookDescription(title: string, author: string)` → description text
   - Try Google Books API first
   - Fallback to OpenLibrary API
   - Return null if not found
 
-- [ ] Caching by ISBN/title to avoid repeated calls
-- [ ] Handle API rate limiting gracefully
-- [ ] Timeout after 5 seconds
-- [ ] Return null instead of error for missing books
-- [ ] Support manual override (user can edit after fetch)
+- [x] Caching by ISBN/title to avoid repeated calls
+- [x] Handle API rate limiting gracefully
+- [x] Timeout after 5 seconds
+- [x] Return null instead of error for missing books
+- [x] Support manual override (user can edit after fetch)
 
 ## 📝 Dev Notes
 - Use existing fetchWithRetry() pattern from googleBooks.ts
@@ -80,7 +80,15 @@ As a **Library Admin**, I want to **automatically fetch book descriptions from A
 
 ## File List
 **New:**
-- src/services/biblioteca/descriptionService.ts (or extend googleBooks.ts)
+- src/services/biblioteca/descriptionService.ts ✅
+  - `getBookDescription(title: string, author: string, isbn?: string): Promise<string | null>`
+  - `clearDescriptionCache(): void`
+  - `getDescriptionCacheStats(): { size: number; entries: Array<...> }`
+  - `cleanExpiredDescriptionCache(): number`
+  - `warmDescriptionCache(books: Array<...>): Promise<number>`
+
+**Modified:**
+- src/services/biblioteca/index.ts ✅ (added exports)
 
 ---
 

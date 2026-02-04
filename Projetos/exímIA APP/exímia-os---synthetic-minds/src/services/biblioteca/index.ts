@@ -99,3 +99,16 @@ export {
   getAuthorByName,
   getAuthorBooks,
 } from './authorService';
+
+// File Service (Story 7.3.0)
+export {
+  uploadBookFile,
+  deleteBookFile,
+  getBookFileUrl,
+  uploadCover,
+  validateStorageQuota,
+  type FileUploadResponse,
+  type CoverUploadResponse,
+  type SignedUrlResponse,
+  type UploadProgressEvent,
+} from './fileService';
