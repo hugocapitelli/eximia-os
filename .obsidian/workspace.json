@@ -4,27 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1f2cb24fd0eecf6a",
+        "id": "b04c9cfe40fb9a5f",
         "type": "tabs",
         "children": [
           {
-            "id": "6b2a319ab7a4c1b2",
+            "id": "98eb1dc8368bb95b",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {},
               "icon": "lucide-git-fork",
               "title": "Visualização em gráfico"
-            }
-          },
-          {
-            "id": "b3ddd68d98e0cb31",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nova aba"
             }
           }
         ]
@@ -186,26 +176,27 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "6b2a319ab7a4c1b2",
+  "active": "ec55138ab56d7b06",
   "lastOpenFiles": [
-    "Projetos/harven-jacad-sync.js",
-    "Projetos/test-jacad-diagnostico.js",
-    "Projetos/test-jacad-auth-methods.js",
+    "Projetos/exímIA APP/exímia-os---synthetic-minds/src/components/biblioteca/ReadingMode/TOCDrawer.tsx",
+    "Projetos/exímIA APP/exímia-os---synthetic-minds/src/components/biblioteca/ReadingMode/TOCSidebar.tsx",
+    "Projetos/exímIA APP/exímia-os---synthetic-minds/src/components/biblioteca/ReadingMode/TOCList.tsx",
+    "Projetos/exímIA APP/exímia-os---synthetic-minds/src/lib/actions/admin/summaries/index.ts",
+    "Projetos/exímIA APP/exímia-os---synthetic-minds/src/lib/actions/admin/summaries/publish.ts",
+    "Projetos/exímIA APP/exímia-os---synthetic-minds/src/lib/actions/admin/summaries/create.ts",
+    "Projetos/exímIA APP/exímia-os---synthetic-minds/src/lib/actions/admin/summaries",
+    "Projetos/exímIA APP/exímia-os---synthetic-minds/src/lib/actions/admin",
+    "Projetos/exímIA APP/exímia-os---synthetic-minds/src/hooks/useReadingProgress.ts",
+    "Projetos/exímIA APP/exímia-os---synthetic-minds/src/hooks/useReadingPreferences.ts",
+    "Projetos/exímIA APP/exímia-os---synthetic-minds/src/hooks/useMediaQuery.ts",
+    "Projetos/exímIA APP/exímia-os---synthetic-minds/src/lib/actions/README.md",
     "Projetos/RELATORIO_TESTE_JACAD_REAL.md",
-    "Projetos/test-jacad-produção.js",
-    "Projetos/RESUMO_FINAL_TESTES.txt",
     "Projetos/TESTE_JACAD_REAL_GUIA.md",
-    "Projetos/test-jacad-real.js",
-    "Projetos/RESUMO_TESTES_JACAD.txt",
     "Projetos/JACAD_API_TEST_REPORT.md",
-    "Projetos/test-jacad-api.js",
-    "Projetos/test_jacad_simple.py",
-    "Projetos/test_jacad_connection.py",
     "Projetos/BROWNFIELD_ANALYSIS_HARVEN_AI.md",
     "IMPLEMENTATION_COMPLETE.md",
     "FIX_GALAXY_COLORS.md",
     "Clones/david_goggins 1/1_raw_data/youtube/podcasts/David Goggins The New Full Uncut Interview You've Never Seen_nxyO1Pv8CbU.md",
-    "scripts/add-visible-tags.js",
     "00_Codex/Knowledge/Learning_Design/NEUROSCIENCE_INDEX.md",
     "00_Codex/Knowledge/Learning_Design/README.md",
     "Projetos/Diagnóstico empresarial/Pontos cegos e insights.md",
@@ -222,7 +213,6 @@
     "Projetos/Diagnóstico empresarial/PRD + Épicos.md",
     "Projetos/Diagnóstico empresarial/MARKET_VALIDATION_REPORT.md",
     "Projetos/Diagnóstico empresarial/PRD_AUTOMATOR_SALES_ENGINE.md",
-    "Projetos/Diagnóstico empresarial/PRD_AutomatorSalesEngine_v2.0.md",
-    "Projetos/Diagnóstico empresarial/Definição do problema.md"
+    "Projetos/Diagnóstico empresarial/PRD_AutomatorSalesEngine_v2.0.md"
   ]
 }

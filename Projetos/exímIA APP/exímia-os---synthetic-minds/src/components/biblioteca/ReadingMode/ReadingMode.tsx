@@ -1,23 +1,19 @@
-// ReadingMode Component - Main container for immersive reading
-// EXIMIA-202
-
-import { useState, useCallback } from 'react';
-import type {
-  SummaryWithChapters,
-  UserReadingPreferences,
-  SummaryReadingProgress,
-  ReadingModeProps,
-} from '../../../types/biblioteca';
-import { THEMES, FONT_SIZES } from '../../../types/biblioteca';
-import { useKeyboardNav } from '../../../hooks/biblioteca/useKeyboardNav';
-import { useReadingPreferences } from '../../../hooks/biblioteca/useReadingPreferences';
-import { useReadingProgress } from '../../../hooks/biblioteca/useReadingProgress';
+import { useState, useEffect, useCallback, useMemo } from 'react';
+import { SummaryWithChapters, UserReadingPreferences, SummaryReadingProgress, THEMES, FONT_SIZES } from '@/types/biblioteca';
+import { saveReadingProgress } from '@/lib/actions/summaries/progress';
 import { ReadingHeader } from './ReadingHeader';
 import { ReadingContent } from './ReadingContent';
 import { ReadingFooter } from './ReadingFooter';
 import { TableOfContents } from './TableOfContents';
-import { CompletionModal } from './CompletionModal';
-import { SavingIndicator } from './SavingIndicator';
+import { useKeyboardNav } from '@/hooks/useKeyboardNav';
+
+interface ReadingModeProps {
+  summary: SummaryWithChapters;
+  initialChapter?: number;
+  userPreferences?: UserReadingPreferences | null;
+  progress?: SummaryReadingProgress | null;
+  onBack: () => void;
+}
 
 export function ReadingMode({
   summary,
@@ -26,44 +22,40 @@ export function ReadingMode({
   progress,
   onBack,
 }: ReadingModeProps) {
+  const [currentChapter, setCurrentChapter] = useState(
+    progress?.current_chapter || initialChapter
+  );
+  const [theme, setTheme] = useState(userPreferences?.theme || 'dark');
+  const [fontSize, setFontSize] = useState(userPreferences?.font_size || 'medium');
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [showCompletion, setShowCompletion] = useState(false);
-
-  // Reading preferences
-  const { theme, fontSize, setTheme, setFontSize } = useReadingPreferences(userPreferences);
-
-  // Reading progress
-  const {
-    currentChapter,
-    setCurrentChapter,
-    completed,
-    isSaving,
-    syncStatus,
-  } = useReadingProgress({
-    summaryId: summary.id,
-    totalChapters: summary.chapters.length,
-    initialProgress: progress,
-    onComplete: () => setShowCompletion(true),
-  });
 
   const totalChapters = summary.chapters.length;
-  const chapter = summary.chapters.find(c => c.chapter_number === currentChapter);
+  const chapter = useMemo(
+    () => summary.chapters.find(c => c.chapter_number === currentChapter),
+    [summary.chapters, currentChapter]
+  );
 
-  // Navigation handlers
+  useEffect(() => {
+    const isLastChapter = currentChapter === totalChapters;
+    saveReadingProgress({
+      summary_id: summary.id,
+      current_chapter: currentChapter,
+      completed: isLastChapter && currentChapter > (progress?.current_chapter || 0),
+    }).catch(err => console.error('Failed to save progress:', err));
+  }, [currentChapter, summary.id, totalChapters, progress?.current_chapter]);
+
   const goToChapter = useCallback((num: number) => {
     if (num >= 1 && num <= totalChapters) {
       setCurrentChapter(num);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-  }, [totalChapters, setCurrentChapter]);
+  }, [totalChapters]);
 
   const goNext = useCallback(() => {
     if (currentChapter < totalChapters) {
       goToChapter(currentChapter + 1);
-    } else if (!showCompletion) {
-      setShowCompletion(true);
     }
-  }, [currentChapter, totalChapters, goToChapter, showCompletion]);
+  }, [currentChapter, totalChapters, goToChapter]);
 
   const goPrev = useCallback(() => {
     if (currentChapter > 1) {
@@ -71,22 +63,12 @@ export function ReadingMode({
     }
   }, [currentChapter, goToChapter]);
 
-  const handleBack = useCallback(() => {
-    if (onBack) {
-      onBack();
-    } else {
-      window.history.back();
-    }
-  }, [onBack]);
-
-  // Keyboard navigation
   useKeyboardNav({
     onPrev: goPrev,
     onNext: goNext,
-    onEscape: handleBack,
+    onEscape: onBack,
   });
 
-  // Theme config
   const themeConfig = THEMES.find(t => t.name === theme) || THEMES[2];
   const fontConfig = FONT_SIZES.find(f => f.name === fontSize) || FONT_SIZES[1];
 
@@ -105,7 +87,7 @@ export function ReadingMode({
         onThemeChange={setTheme}
         onFontSizeChange={setFontSize}
         onToggleSidebar={() => setSidebarOpen(!sidebarOpen)}
-        onBack={handleBack}
+        onBack={onBack}
       />
 
       <ReadingContent
@@ -126,28 +108,9 @@ export function ReadingMode({
       <TableOfContents
         chapters={summary.chapters}
         currentChapter={currentChapter}
-        onSelectChapter={(num) => {
-          goToChapter(num);
-          setSidebarOpen(false);
-        }}
+        onSelectChapter={goToChapter}
         isOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
-      />
-
-      <SavingIndicator
-        status={syncStatus}
-        isSaving={isSaving}
-      />
-
-      <CompletionModal
-        isOpen={showCompletion}
-        bookTitle={summary.catalog?.title || summary.title}
-        totalChapters={totalChapters}
-        onReread={() => {
-          goToChapter(1);
-          setShowCompletion(false);
-        }}
-        onClose={() => setShowCompletion(false)}
       />
     </div>
   );
