@@ -10,5 +10,5 @@ export { Badge, type BadgeProps, type BadgeSize } from './Badge';
 export { Card, type CardProps } from './Card';
 
 // Export design tokens for use in components
-export { TOKENS, COLORS, TYPOGRAPHY, SPACING, SHADOWS, GLOWS, BORDER_RADIUS, BOOK_CATEGORIES } from '../../src/design-tokens';
-export type { ColorKey, FontFamily, FontWeight, FontSize, SpacingSize, BorderRadiusSize, ShadowSize, CategoryColor } from '../../src/design-tokens';
+export { TOKENS, COLORS, TYPOGRAPHY, SPACING, SHADOWS, GLOWS, BORDER_RADIUS, BOOK_CATEGORIES } from '@/design-tokens';
+export type { ColorKey, FontFamily, FontWeight, FontSize, SpacingSize, BorderRadiusSize, ShadowSize, CategoryColor } from '@/design-tokens';

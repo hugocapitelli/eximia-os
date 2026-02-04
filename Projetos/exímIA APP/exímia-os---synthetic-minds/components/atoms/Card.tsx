@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { TOKENS } from '../../src/design-tokens';
+import { TOKENS } from '@/design-tokens';
 
 // ============================================================
 // CARD ATOM COMPONENT

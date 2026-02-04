@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { AlertCircle } from 'lucide-react';
-import { TOKENS } from '../../src/design-tokens';
+import { TOKENS } from '@/design-tokens';
 import Card from '../atoms/Card';
 import Button from '../atoms/Button';
 import BasicInfoSection from '../molecules/BasicInfoSection';
@@ -9,7 +9,7 @@ import ContentSection from '../molecules/ContentSection';
 import CoverSection from '../molecules/CoverSection';
 import FileSection from '../molecules/FileSection';
 import AuthorSection from '../molecules/AuthorSection';
-import type { BookCatalog, Author, BookFile, ActionResult } from '../../src/types/biblioteca';
+import type { BookCatalog, Author, BookFile, ActionResult } from '@/types/biblioteca';
 
 /**
  * BookEditPanel Organism Component

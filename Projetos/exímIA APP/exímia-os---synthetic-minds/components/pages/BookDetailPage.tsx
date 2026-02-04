@@ -1,7 +1,9 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Book } from '../../types';
 import { JOURNEY_BOOKS, ACADEMY_COURSES, CLONES } from '../../constants';
+import { getCatalogBooks } from '@/services/biblioteca/catalog';
+import type { BookCatalogView } from '@/types/biblioteca';
 import { Button } from '../atoms/Button';
 import {
   ArrowLeft,
@@ -42,9 +44,35 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
     { id: '2', content: 'Aplicar técnica de time-blocking no meu dia a dia.', page: 120, createdAt: 'Há 1 semana' },
   ]);
   const [newNote, setNewNote] = useState('');
+  const [book, setBook] = useState<BookCatalogView | null>(null);
+  const [loading, setLoading] = useState(true);
 
-  // Find the book
-  const book = JOURNEY_BOOKS.find(b => b.id === bookId);
+  // Fetch book from database
+  useEffect(() => {
+    const fetchBook = async () => {
+      try {
+        const result = await getCatalogBooks({ limit: 100 });
+        if (result.success && result.data) {
+          const foundBook = result.data.data.find(b => b.id === bookId);
+          setBook(foundBook || null);
+        }
+      } catch (error) {
+        console.error('Error fetching book:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBook();
+  }, [bookId]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-[#050505] text-zinc-200 flex items-center justify-center">
+        <p>Carregando...</p>
+      </div>
+    );
+  }
 
   if (!book) {
     return (
@@ -55,14 +83,16 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
   }
 
   // Find related courses by category
+  const bookCategory = book.categories?.[0] || 'geral';
   const relatedCourses = ACADEMY_COURSES.filter(course =>
-    course.category.toLowerCase() === book.category?.toLowerCase() ||
-    course.tags?.some(tag => tag.toLowerCase() === book.category?.toLowerCase())
+    course.category.toLowerCase() === bookCategory?.toLowerCase() ||
+    course.tags?.some(tag => tag.toLowerCase() === bookCategory?.toLowerCase())
   ).slice(0, 3);
 
   // Check if author has a Mind clone
+  const authorName = book.author_name || 'Desconhecido';
   const authorMind = CLONES.find(clone =>
-    clone.name.toLowerCase().includes(book.author.split(' ')[0].toLowerCase())
+    clone.name.toLowerCase().includes(authorName.split(' ')[0].toLowerCase())
   );
 
   // Mock TOC for resumos
@@ -147,19 +177,19 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
 
           {/* Book Info */}
           <div className="flex-1">
-            <p className="text-xs text-zinc-500 uppercase tracking-widest mb-2">{book.category}</p>
+            <p className="text-xs text-zinc-500 uppercase tracking-widest mb-2">{bookCategory}</p>
             <h1 className="text-4xl font-bold text-white mb-4">{book.title}</h1>
 
             {/* Author Card */}
             <div
               className="inline-flex items-center gap-4 p-4 bg-[#0A0A0A] border border-[#1F1F22] rounded-xl mb-6 cursor-pointer hover:border-zinc-700 transition-colors group"
-              onClick={() => onNavigateToAuthor && onNavigateToAuthor(book.author)}
+              onClick={() => onNavigateToAuthor && onNavigateToAuthor(authorName)}
             >
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-900/30 to-amber-600/10 border border-amber-500/30 flex items-center justify-center text-amber-400 font-bold">
-                {book.author.split(' ').map(n => n[0]).join('')}
+                {authorName.split(' ').map(n => n[0]).join('')}
               </div>
               <div>
-                <p className="text-white font-bold group-hover:text-amber-400 transition-colors">{book.author}</p>
+                <p className="text-white font-bold group-hover:text-amber-400 transition-colors">{authorName}</p>
                 <p className="text-xs text-zinc-500">Ver perfil do autor</p>
               </div>
               <ChevronRight className="w-4 h-4 text-zinc-600 group-hover:text-zinc-400 transition-colors" />
@@ -218,7 +248,7 @@ export const BookDetailPage: React.FC<BookDetailPageProps> = ({
                 Sinopse
               </h2>
               <p className="text-zinc-300 leading-relaxed font-serif text-lg">
-                {book.description || `"${book.title}" é uma obra essencial de ${book.author} que explora conceitos fundamentais em ${book.category}. Este livro oferece insights profundos e práticos que podem transformar sua perspectiva e abordagem sobre o tema.`}
+                {book.description || `"${book.title}" é uma obra essencial de ${authorName} que explora conceitos fundamentais em ${bookCategory}. Este livro oferece insights profundos e práticos que podem transformar sua perspectiva e abordagem sobre o tema.`}
               </p>
             </div>
 

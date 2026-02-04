@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
-import { TOKENS } from '../../src/design-tokens';
+import { TOKENS } from '@/design-tokens';
 import Badge from '../atoms/Badge';
-import type { BookCatalog, BookCategory } from '../../src/types/biblioteca';
+import type { BookCatalog, BookCategory } from '@/types/biblioteca';
 
 /**
  * CategorizationSection Molecule Component

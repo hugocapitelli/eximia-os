@@ -20,8 +20,8 @@ import toast from 'react-hot-toast';
 import { Button } from '../atoms/Button';
 import { Input } from '../atoms/Input';
 import { useFocusTrap, useKeyboardNavigation } from '../../src/hooks/useAccessibility';
-import { createAuthor } from '../../src/services/biblioteca';
-import type { Author } from '../../src/types/biblioteca';
+import { createAuthor } from '@/services/biblioteca';
+import type { Author } from '@/types/biblioteca';
 
 // ============================================================
 // TYPES

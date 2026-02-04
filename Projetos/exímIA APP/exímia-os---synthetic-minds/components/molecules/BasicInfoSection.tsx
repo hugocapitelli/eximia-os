@@ -1,7 +1,7 @@
 import React from 'react';
-import { TOKENS } from '../../src/design-tokens';
+import { TOKENS } from '@/design-tokens';
 import { Input } from '../atoms/Input';
-import type { BookCatalog, Author } from '../../src/types/biblioteca';
+import type { BookCatalog, Author } from '@/types/biblioteca';
 
 /**
  * BasicInfoSection Molecule Component

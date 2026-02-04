@@ -24,11 +24,11 @@ import { X, Plus, AlertCircle, CheckCircle } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { Button } from '../atoms/Button';
 import { Input } from '../atoms/Input';
-import { COLORS, TYPOGRAPHY, SPACING } from '../../src/design-tokens';
-import { BOOK_CATEGORIES } from '../../src/types/biblioteca';
-import { createAuthor, addBookToCatalog } from '../../src/services/biblioteca';
+import { COLORS, TYPOGRAPHY, SPACING } from '@/design-tokens';
+import { BOOK_CATEGORIES } from '@/types/biblioteca';
+import { createAuthor, addBookToCatalog } from '@/services/biblioteca';
 import { useFocusTrap, useKeyboardNavigation } from '../../src/hooks/useAccessibility';
-import type { BookCatalog, Author } from '../../src/types/biblioteca';
+import type { BookCatalog, Author } from '@/types/biblioteca';
 import { CreateAuthorInlineModal } from './CreateAuthorInlineModal';
 
 // ============================================================

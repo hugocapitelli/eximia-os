@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Book } from '../../types';
 import { BookOpen, Star, User, MoreVertical, Heart, Brain } from 'lucide-react';
-import { TOKENS } from '../../src/design-tokens';
+import { TOKENS } from '@/design-tokens';
 
 interface BookCardVisualProps {
   book: Book;

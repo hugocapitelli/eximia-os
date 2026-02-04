@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Upload, FileText, Trash2 } from 'lucide-react';
-import { TOKENS } from '../../src/design-tokens';
+import { TOKENS } from '@/design-tokens';
 import Button from '../atoms/Button';
-import type { BookCatalog, BookFile } from '../../src/types/biblioteca';
+import type { BookCatalog, BookFile } from '@/types/biblioteca';
 
 /**
  * FileSection Molecule Component

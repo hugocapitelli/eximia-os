@@ -1,8 +1,8 @@
 import React, { useState, useCallback, useRef } from 'react';
-import { TOKENS } from '../../src/design-tokens';
+import { TOKENS } from '@/design-tokens';
 import { Input } from '../atoms/Input';
 import Button from '../atoms/Button';
-import type { BookCatalog } from '../../src/types/biblioteca';
+import type { BookCatalog } from '@/types/biblioteca';
 
 /**
  * ContentSection Molecule Component

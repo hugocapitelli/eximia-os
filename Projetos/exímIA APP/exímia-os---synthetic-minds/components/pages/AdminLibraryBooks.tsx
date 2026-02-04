@@ -17,6 +17,7 @@ import {
   AlertCircle,
   Globe,
   Book,
+  Upload,
 } from 'lucide-react';
 import { AdminPanel, AdminHeader } from '../admin';
 import toast from 'react-hot-toast';
@@ -33,8 +34,10 @@ import {
   generateBookInfo,
   getAIBookSuggestions,
   aiInfoToSearchResult,
-} from '../../src/services/biblioteca';
-import type { BookSearchResult, BookCatalogView } from '../../src/types/biblioteca';
+} from '@/services/biblioteca';
+import type { BookSearchResult, BookCatalogView } from '@/types/biblioteca';
+import { BookEditPanel } from '../organisms/BookEditPanel';
+import { BulkImportPanel } from '../organisms/BulkImportPanel';
 
 // Debounce hook
 function useDebounce<T>(value: T, delay: number): T {
@@ -79,6 +82,9 @@ export const AdminLibraryBooks: React.FC<AdminLibraryBooksProps> = ({
   const [isSearching, setIsSearching] = useState(false);
   const [addingBook, setAddingBook] = useState<string | null>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
+
+  // Bulk import state
+  const [showBulkImport, setShowBulkImport] = useState(false);
 
   // AI state
   const [searchMode, setSearchMode] = useState<'api' | 'ai'>('api');
@@ -319,32 +325,46 @@ export const AdminLibraryBooks: React.FC<AdminLibraryBooksProps> = ({
           addNewLabel="Buscar Livro"
         />
 
-        {/* Filter Tabs */}
-        <div className="flex items-center gap-2 mb-6">
-          {([
-            { key: 'all', label: 'Todos' },
-            { key: 'with_summary', label: 'Com Resumo' },
-            { key: 'no_summary', label: 'Sem Resumo' },
-          ] as const).map((tab) => (
-            <button
-              key={tab.key}
-              onClick={() => setFilterStatus(tab.key)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                filterStatus === tab.key
-                  ? 'bg-amber-500/10 text-amber-500 border border-amber-500/20'
-                  : 'text-zinc-500 hover:text-white hover:bg-white/5'
-              }`}
-            >
-              {tab.label}
-              <span className="ml-2 px-1.5 py-0.5 bg-zinc-800 rounded text-[10px]">
-                {tab.key === 'all'
-                  ? books.length
-                  : tab.key === 'with_summary'
-                  ? books.filter(b => summariesMap[b.id]).length
-                  : books.filter(b => !summariesMap[b.id]).length}
-              </span>
-            </button>
-          ))}
+        {/* Top Actions */}
+        <div className="flex items-center gap-2 mb-6 justify-between">
+          <div>
+            {/* Filter Tabs */}
+            <div className="flex items-center gap-2">
+              {([
+                { key: 'all', label: 'Todos' },
+                { key: 'with_summary', label: 'Com Resumo' },
+                { key: 'no_summary', label: 'Sem Resumo' },
+              ] as const).map((tab) => (
+                <button
+                  key={tab.key}
+                  onClick={() => setFilterStatus(tab.key)}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    filterStatus === tab.key
+                      ? 'bg-amber-500/10 text-amber-500 border border-amber-500/20'
+                      : 'text-zinc-500 hover:text-white hover:bg-white/5'
+                  }`}
+                >
+                  {tab.label}
+                  <span className="ml-2 px-1.5 py-0.5 bg-zinc-800 rounded text-[10px]">
+                    {tab.key === 'all'
+                      ? books.length
+                      : tab.key === 'with_summary'
+                      ? books.filter(b => summariesMap[b.id]).length
+                      : books.filter(b => !summariesMap[b.id]).length}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Bulk Import Button */}
+          <button
+            onClick={() => setShowBulkImport(true)}
+            className="px-4 py-2 rounded-lg text-sm font-medium bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-colors flex items-center gap-2"
+          >
+            <Upload className="w-4 h-4" />
+            Importação em Lote
+          </button>
         </div>
 
         {/* Loading */}
@@ -457,13 +477,30 @@ export const AdminLibraryBooks: React.FC<AdminLibraryBooksProps> = ({
                             </button>
                           </>
                         ) : (
-                          <button
-                            onClick={() => handleCreateSummary(book)}
-                            className="px-3 py-1.5 rounded-lg text-xs font-medium bg-violet-500/10 text-violet-400 hover:bg-violet-500/20 transition-colors flex items-center gap-1"
-                          >
-                            <Plus className="w-3.5 h-3.5" />
-                            Criar Resumo
-                          </button>
+                          <>
+                            <button
+                              onClick={() => handleCreateSummary(book)}
+                              className="px-3 py-1.5 rounded-lg text-xs font-medium bg-violet-500/10 text-violet-400 hover:bg-violet-500/20 transition-colors flex items-center gap-1"
+                            >
+                              <Plus className="w-3.5 h-3.5" />
+                              Criar Resumo
+                            </button>
+                            <label className="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-colors flex items-center gap-1 cursor-pointer">
+                              <Upload className="w-3.5 h-3.5" />
+                              Upload
+                              <input
+                                type="file"
+                                accept=".pdf,.epub"
+                                onChange={(e) => {
+                                  const file = e.target.files?.[0];
+                                  if (file) {
+                                    toast.info(`Upload de ${file.name} iniciado...`);
+                                  }
+                                }}
+                                className="hidden"
+                              />
+                            </label>
+                          </>
                         )}
                         <button
                           onClick={() => setEditingBook(editingBook === book.id ? null : book.id)}
@@ -486,86 +523,45 @@ export const AdminLibraryBooks: React.FC<AdminLibraryBooksProps> = ({
                       </div>
                     </div>
 
-                    {/* Expanded Edit Form */}
+                    {/* Expanded Edit Form - Using BookEditPanel */}
                     {editingBook === book.id && (
                       <div className="mt-4 pt-4 border-t border-[#1F1F22]">
-                        <div className="grid grid-cols-2 gap-4">
-                          <div>
-                            <label className="block text-xs font-medium text-zinc-400 mb-1.5">
-                              Título
-                            </label>
-                            <input
-                              type="text"
-                              value={book.title}
-                              onChange={(e) => {
-                                setBooks(
-                                  books.map((b) =>
-                                    b.id === book.id ? { ...b, title: e.target.value } : b
-                                  )
-                                );
-                                setHasUnsavedChanges(true);
-                              }}
-                              className="w-full px-3 py-2 bg-[#050505] border border-[#1F1F22] rounded-lg text-white text-sm focus:outline-none focus:border-amber-500/50"
-                            />
-                          </div>
-                          <div>
-                            <label className="block text-xs font-medium text-zinc-400 mb-1.5">
-                              Autor
-                            </label>
-                            <input
-                              type="text"
-                              value={book.author_name || ''}
-                              onChange={(e) => {
-                                setBooks(
-                                  books.map((b) =>
-                                    b.id === book.id ? { ...b, author_name: e.target.value } : b
-                                  )
-                                );
-                                setHasUnsavedChanges(true);
-                              }}
-                              className="w-full px-3 py-2 bg-[#050505] border border-[#1F1F22] rounded-lg text-white text-sm focus:outline-none focus:border-amber-500/50"
-                            />
-                          </div>
-                        </div>
-                        <div className="mt-3">
-                          <label className="block text-xs font-medium text-zinc-400 mb-1.5">
-                            Descrição
-                          </label>
-                          <textarea
-                            value={book.description || ''}
-                            onChange={(e) => {
-                              setBooks(
-                                books.map((b) =>
-                                  b.id === book.id ? { ...b, description: e.target.value } : b
-                                )
-                              );
-                              setHasUnsavedChanges(true);
-                            }}
-                            rows={3}
-                            className="w-full px-3 py-2 bg-[#050505] border border-[#1F1F22] rounded-lg text-white text-sm focus:outline-none focus:border-amber-500/50 resize-none"
-                          />
-                        </div>
-                        <div className="mt-3 flex justify-end">
-                          <button
-                            onClick={async () => {
-                              const result = await updateCatalogBook(book.id, {
-                                title: book.title,
-                                author_name: book.author_name || undefined,
-                                description: book.description || undefined,
-                              });
-                              if (result.success) {
-                                toast.success('Livro atualizado');
-                                setHasUnsavedChanges(false);
-                                setEditingBook(null);
-                              } else {
-                                toast.error(result.error || 'Erro ao salvar');
+                        <BookEditPanel
+                          book={book}
+                          authors={[]}
+                          onSave={async (updatedBook) => {
+                            const result = await updateCatalogBook(book.id, {
+                              title: updatedBook.title,
+                              author_name: updatedBook.author_name || undefined,
+                              description: updatedBook.description || undefined,
+                              tags: updatedBook.tags || undefined,
+                              categories: updatedBook.categories || undefined,
+                            });
+                            if (result.success) {
+                              toast.success('Livro atualizado com sucesso!');
+                              setHasUnsavedChanges(false);
+                              setEditingBook(null);
+                              loadBooks();
+                            } else {
+                              toast.error(result.error || 'Erro ao salvar');
+                            }
+                          }}
+                          onCancel={() => setEditingBook(null)}
+                          onAutoFetchDescription={async (title: string, author: string) => {
+                            try {
+                              const description = await generateBookInfo(title, author);
+                              if (description) {
+                                toast.success('Descrição encontrada!');
+                                return description;
                               }
-                            }}
-                            className="px-4 py-2 bg-amber-500 text-black font-medium rounded-lg hover:bg-amber-400 transition-colors text-sm"
-                          >
-                            Salvar Alterações
-                          </button>
-                        </div>
+                              toast.info('Nenhuma descrição encontrada');
+                              return null;
+                            } catch (error) {
+                              toast.error('Erro ao buscar descrição');
+                              return null;
+                            }
+                          }}
+                        />
                       </div>
                     )}
                   </div>
@@ -575,6 +571,35 @@ export const AdminLibraryBooks: React.FC<AdminLibraryBooksProps> = ({
           </div>
         )}
       </div>
+
+      {/* Bulk Import Modal */}
+      {showBulkImport && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+          <div className="bg-[#0A0A0A] border border-[#1F1F22] rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden">
+            {/* Modal Header */}
+            <div className="p-4 border-b border-[#1F1F22] flex items-center justify-between">
+              <h2 className="text-lg font-bold text-white">Importação em Lote</h2>
+              <button
+                onClick={() => setShowBulkImport(false)}
+                className="p-2 text-zinc-500 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Panel Content */}
+            <div className="overflow-y-auto max-h-[calc(90vh-60px)]">
+              <BulkImportPanel
+                onImportComplete={() => {
+                  setShowBulkImport(false);
+                  toast.success('Importação concluída!');
+                  loadBooks();
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Search Modal */}
       {showSearchModal && (

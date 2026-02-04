@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { TOKENS, CategoryColor } from '../../src/design-tokens';
+import { TOKENS, CategoryColor } from '@/design-tokens';
 
 // ============================================================
 // BADGE ATOM COMPONENT

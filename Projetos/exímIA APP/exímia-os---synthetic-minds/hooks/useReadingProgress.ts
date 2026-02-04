@@ -1,121 +1,142 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
+import { SummaryReadingProgress } from '@/types/biblioteca';
+import { saveReadingProgress } from '@/lib/actions/summaries/progress';
 
-const STORAGE_PREFIX = 'eximia-reading-';
+const STORAGE_KEY_PREFIX = 'reading-progress-';
+const DEBOUNCE_MS = 2000;
 
-export interface ReadingProgress {
-  bookId: string;
-  currentChapterId: string;
-  scrollPosition: number;
-  progress: number; // 0-100
-  lastReadAt: string;
-}
-
-export interface ReadingSettings {
-  fontSize: 'small' | 'medium' | 'large';
-  theme: 'dark' | 'sepia' | 'light';
-  lineHeight: 'compact' | 'normal' | 'relaxed';
-  fontFamily: 'serif' | 'sans-serif' | 'monospace';
-}
-
-const DEFAULT_SETTINGS: ReadingSettings = {
-  fontSize: 'medium',
-  theme: 'dark',
-  lineHeight: 'normal',
-  fontFamily: 'serif',
-};
-
-export interface UseReadingProgressOptions {
-  bookId: string;
+interface UseReadingProgressProps {
+  summaryId: string;
   totalChapters: number;
+  initialProgress?: SummaryReadingProgress | null;
+  onComplete?: () => void;
 }
 
-export interface UseReadingProgressReturn {
-  progress: ReadingProgress | null;
-  settings: ReadingSettings;
-  updateProgress: (updates: Partial<ReadingProgress>) => void;
-  updateSettings: (updates: Partial<ReadingSettings>) => void;
-  saveScrollPosition: (position: number) => void;
-  getLastPosition: () => number;
-  calculateProgress: (currentChapterIndex: number, scrollPercent: number) => number;
+interface UseReadingProgressReturn {
+  currentChapter: number;
+  setCurrentChapter: (chapter: number) => void;
+  completed: boolean;
+  isSaving: boolean;
+  syncStatus: 'synced' | 'pending' | 'offline';
 }
 
-export const useReadingProgress = ({
-  bookId,
+export function useReadingProgress({
+  summaryId,
   totalChapters,
-}: UseReadingProgressOptions): UseReadingProgressReturn => {
-  const progressKey = `${STORAGE_PREFIX}progress-${bookId}`;
-  const settingsKey = `${STORAGE_PREFIX}settings`;
+  initialProgress,
+  onComplete,
+}: UseReadingProgressProps): UseReadingProgressReturn {
+  const [currentChapter, setCurrentChapterState] = useState(
+    initialProgress?.current_chapter || 1
+  );
+  const [completed, setCompleted] = useState(initialProgress?.completed || false);
+  const [isSaving, setIsSaving] = useState(false);
+  const [syncStatus, setSyncStatus] = useState<'synced' | 'pending' | 'offline'>('synced');
 
-  const [progress, setProgress] = useState<ReadingProgress | null>(() => {
-    if (typeof window !== 'undefined') {
-      const stored = localStorage.getItem(progressKey);
-      return stored ? JSON.parse(stored) : null;
-    }
-    return null;
-  });
+  const saveTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const storageKey = `${STORAGE_KEY_PREFIX}${summaryId}`;
 
-  const [settings, setSettings] = useState<ReadingSettings>(() => {
-    if (typeof window !== 'undefined') {
-      const stored = localStorage.getItem(settingsKey);
-      return stored ? { ...DEFAULT_SETTINGS, ...JSON.parse(stored) } : DEFAULT_SETTINGS;
-    }
-    return DEFAULT_SETTINGS;
-  });
-
-  // Save progress to localStorage
   useEffect(() => {
-    if (progress) {
-      localStorage.setItem(progressKey, JSON.stringify(progress));
+    if (!initialProgress && typeof window !== 'undefined') {
+      const stored = localStorage.getItem(storageKey);
+      if (stored) {
+        try {
+          const parsed = JSON.parse(stored);
+          setCurrentChapterState(parsed.currentChapter || 1);
+          setCompleted(parsed.completed || false);
+        } catch (e) {
+          //
+        }
+      }
     }
-  }, [progress, progressKey]);
+  }, [initialProgress, storageKey]);
 
-  // Save settings to localStorage
+  const saveProgress = useCallback(async (chapter: number, isComplete: boolean) => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(storageKey, JSON.stringify({
+        currentChapter: chapter,
+        completed: isComplete,
+        updatedAt: Date.now(),
+      }));
+    }
+    setSyncStatus('pending');
+
+    if (saveTimeoutRef.current) {
+      clearTimeout(saveTimeoutRef.current);
+    }
+
+    saveTimeoutRef.current = setTimeout(async () => {
+      setIsSaving(true);
+
+      try {
+        const result = await saveReadingProgress({
+          summary_id: summaryId,
+          current_chapter: chapter,
+          completed: isComplete,
+        });
+
+        if (result.success) {
+          setSyncStatus('synced');
+          if (typeof window !== 'undefined') {
+            localStorage.removeItem(storageKey);
+          }
+        } else {
+          setSyncStatus('offline');
+        }
+      } catch (error) {
+        setSyncStatus('offline');
+      } finally {
+        setIsSaving(false);
+      }
+    }, DEBOUNCE_MS);
+  }, [summaryId, storageKey]);
+
+  const setCurrentChapter = useCallback((chapter: number) => {
+    setCurrentChapterState(chapter);
+
+    const isComplete = chapter >= totalChapters && !completed;
+
+    if (isComplete) {
+      setCompleted(true);
+      onComplete?.();
+    }
+
+    saveProgress(chapter, isComplete || completed);
+  }, [totalChapters, completed, saveProgress, onComplete]);
+
   useEffect(() => {
-    localStorage.setItem(settingsKey, JSON.stringify(settings));
-  }, [settings, settingsKey]);
+    const handleOnline = async () => {
+      if (typeof window !== 'undefined') {
+        const stored = localStorage.getItem(storageKey);
+        if (stored) {
+          setSyncStatus('pending');
+          try {
+            const parsed = JSON.parse(stored);
+            const result = await saveReadingProgress({
+              summary_id: summaryId,
+              current_chapter: parsed.currentChapter,
+              completed: parsed.completed,
+            });
+            if (result.success) {
+              setSyncStatus('synced');
+              localStorage.removeItem(storageKey);
+            }
+          } catch (e) {
+            //
+          }
+        }
+      }
+    };
 
-  const updateProgress = useCallback((updates: Partial<ReadingProgress>) => {
-    setProgress((prev) => {
-      const newProgress: ReadingProgress = {
-        bookId,
-        currentChapterId: updates.currentChapterId || prev?.currentChapterId || '',
-        scrollPosition: updates.scrollPosition ?? prev?.scrollPosition ?? 0,
-        progress: updates.progress ?? prev?.progress ?? 0,
-        lastReadAt: new Date().toISOString(),
-      };
-      return newProgress;
-    });
-  }, [bookId]);
-
-  const updateSettings = useCallback((updates: Partial<ReadingSettings>) => {
-    setSettings((prev) => ({ ...prev, ...updates }));
-  }, []);
-
-  const saveScrollPosition = useCallback((position: number) => {
-    updateProgress({ scrollPosition: position });
-  }, [updateProgress]);
-
-  const getLastPosition = useCallback((): number => {
-    return progress?.scrollPosition ?? 0;
-  }, [progress]);
-
-  const calculateProgress = useCallback((currentChapterIndex: number, scrollPercent: number): number => {
-    if (totalChapters === 0) return 0;
-    const chapterWeight = 100 / totalChapters;
-    const baseProgress = currentChapterIndex * chapterWeight;
-    const chapterProgress = (scrollPercent / 100) * chapterWeight;
-    return Math.min(100, Math.round(baseProgress + chapterProgress));
-  }, [totalChapters]);
+    window.addEventListener('online', handleOnline);
+    return () => window.removeEventListener('online', handleOnline);
+  }, [summaryId, storageKey]);
 
   return {
-    progress,
-    settings,
-    updateProgress,
-    updateSettings,
-    saveScrollPosition,
-    getLastPosition,
-    calculateProgress,
+    currentChapter,
+    setCurrentChapter,
+    completed,
+    isSaving,
+    syncStatus,
   };
-};
-
-export default useReadingProgress;
+}

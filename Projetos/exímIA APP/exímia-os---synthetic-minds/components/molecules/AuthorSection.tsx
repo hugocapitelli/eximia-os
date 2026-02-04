@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Plus, Search } from 'lucide-react';
-import { TOKENS } from '../../src/design-tokens';
+import { TOKENS } from '@/design-tokens';
 import Button from '../atoms/Button';
-import type { BookCatalog, Author } from '../../src/types/biblioteca';
+import type { BookCatalog, Author } from '@/types/biblioteca';
 
 /**
  * AuthorSection Molecule Component

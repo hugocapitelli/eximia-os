@@ -1,7 +1,7 @@
 import React from 'react';
 import { Book } from '../../types';
 import { ChevronRight, Star } from 'lucide-react';
-import { TOKENS } from '../../src/design-tokens';
+import { TOKENS } from '@/design-tokens';
 
 interface BookCardHorizontalProps {
   book: Book;

@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { JOURNEY_BOOKS, CLONES } from '../../constants';
-import { BOOK_CATEGORIES, type CategoryConfig, type BookCatalogView } from '../../src/types/biblioteca';
-import { getCatalogBooks } from '../../src/services/biblioteca/catalog';
+import { BOOK_CATEGORIES, type CategoryConfig, type BookCatalogView } from '@/types/biblioteca';
+import { getCatalogBooks } from '@/services/biblioteca/catalog';
 import { BookCardVisual } from '../journey/BookCardVisual';
 import { Button } from '../atoms/Button';
 import {
