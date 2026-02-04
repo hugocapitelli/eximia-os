@@ -112,3 +112,19 @@ export {
   type SignedUrlResponse,
   type UploadProgressEvent,
 } from './fileService';
+
+// Import Service (Story 7.7.0)
+export {
+  parseJSON,
+  parseYAML,
+  extractPDFMetadata,
+  validateBooks,
+  importBooks,
+  handleFileUpload,
+  bulkImport,
+  type ImportBook,
+  type ValidationResult,
+  type ImportProgress,
+  type ImportReport,
+  type PDFMetadata,
+} from './importService';
