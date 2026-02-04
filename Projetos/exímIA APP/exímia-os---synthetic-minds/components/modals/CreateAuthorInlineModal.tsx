@@ -1,5 +1,16 @@
-// Create Author Inline Modal - Story 7.6.0
-// Inline author creation modal for use within ManualAddBookModal
+/**
+ * CreateAuthorInlineModal Component - Story 7.6.0
+ *
+ * Nested modal for creating authors within ManualAddBookModal
+ *
+ * Accessibility Features:
+ * - role="dialog" and aria-modal="true"
+ * - Focus trapped in nested modal
+ * - Escape key closes modal
+ * - Proper z-index stacking
+ * - All form fields have associated labels
+ * - Error messages use role="alert"
+ */
 
 'use client';
 
@@ -8,6 +19,7 @@ import { X, AlertCircle } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { Button } from '../atoms/Button';
 import { Input } from '../atoms/Input';
+import { useFocusTrap, useKeyboardNavigation } from '../../src/hooks/useAccessibility';
 import { createAuthor } from '../../src/services/biblioteca';
 import type { Author } from '../../src/types/biblioteca';
 
@@ -55,22 +67,11 @@ export const CreateAuthorInlineModal: React.FC<CreateAuthorInlineModalProps> = (
   // EFFECTS
   // ============================================================
 
-  // Close modal on ESC
-  useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) {
-        onClose();
-      }
-    };
+  // Focus trap inside nested modal
+  useFocusTrap(isOpen, modalRef);
 
-    if (isOpen) {
-      document.addEventListener('keydown', handleEscape);
-    }
-
-    return () => {
-      document.removeEventListener('keydown', handleEscape);
-    };
-  }, [isOpen, onClose]);
+  // Keyboard navigation (Escape to close)
+  useKeyboardNavigation(() => onClose(), undefined, modalRef);
 
   // Focus management for accessibility
   useEffect(() => {

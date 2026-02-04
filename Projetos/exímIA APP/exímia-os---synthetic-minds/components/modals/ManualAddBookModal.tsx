@@ -3,6 +3,22 @@
 
 'use client';
 
+/**
+ * ManualAddBookModal Component - Story 7.6.0
+ *
+ * A comprehensive modal for manually adding books to the library catalog.
+ *
+ * Accessibility Features:
+ * - role="dialog" and aria-modal="true"
+ * - Focus trapped inside modal (Tab/Shift+Tab cycle)
+ * - Escape key closes modal
+ * - All form fields have associated labels
+ * - Error messages announced via role="alert"
+ * - Logical tab order through all sections
+ * - Backdrop click closes modal
+ * - Focus returned to trigger button on close
+ */
+
 import React, { useState, useRef, useEffect } from 'react';
 import { X, Plus, AlertCircle, CheckCircle } from 'lucide-react';
 import toast from 'react-hot-toast';
@@ -11,6 +27,7 @@ import { Input } from '../atoms/Input';
 import { COLORS, TYPOGRAPHY, SPACING } from '../../src/design-tokens';
 import { BOOK_CATEGORIES } from '../../src/types/biblioteca';
 import { createAuthor, addBookToCatalog } from '../../src/services/biblioteca';
+import { useFocusTrap, useKeyboardNavigation } from '../../src/hooks/useAccessibility';
 import type { BookCatalog, Author } from '../../src/types/biblioteca';
 import { CreateAuthorInlineModal } from './CreateAuthorInlineModal';
 
@@ -84,24 +101,21 @@ export const ManualAddBookModal: React.FC<ManualAddBookModalProps> = ({
   // EFFECTS
   // ============================================================
 
-  // Close modal on ESC
-  useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) {
-        onClose();
-      }
-    };
+  // Focus trap inside modal
+  useFocusTrap(isOpen, modalRef);
 
+  // Keyboard navigation (Escape to close)
+  useKeyboardNavigation(() => onClose(), undefined, modalRef);
+
+  // Body scroll management
+  useEffect(() => {
     if (isOpen) {
-      document.addEventListener('keydown', handleEscape);
       document.body.style.overflow = 'hidden';
     }
-
     return () => {
-      document.removeEventListener('keydown', handleEscape);
       document.body.style.overflow = 'unset';
     };
-  }, [isOpen, onClose]);
+  }, [isOpen]);
 
   // Focus management for accessibility
   useEffect(() => {
@@ -473,8 +487,13 @@ export const ManualAddBookModal: React.FC<ManualAddBookModalProps> = ({
                 </div>
 
                 {errors.categories && (
-                  <div className="flex items-center gap-2 p-3 bg-rose-950/30 border border-rose-900/50 rounded-lg">
-                    <AlertCircle className="w-4 h-4 text-rose-500 flex-shrink-0" />
+                  <div
+                    role="alert"
+                    aria-live="assertive"
+                    aria-atomic="true"
+                    className="flex items-center gap-2 p-3 bg-rose-950/30 border border-rose-900/50 rounded-lg"
+                  >
+                    <AlertCircle className="w-4 h-4 text-rose-500 flex-shrink-0" aria-hidden="true" />
                     <span className="text-xs text-rose-500">{errors.categories}</span>
                   </div>
                 )}
@@ -486,10 +505,12 @@ export const ManualAddBookModal: React.FC<ManualAddBookModalProps> = ({
                       type="button"
                       onClick={() => handleCategoryToggle(category.name)}
                       disabled={isLoading}
-                      className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                      aria-pressed={formData.categories.includes(category.name)}
+                      aria-label={`${category.label}${formData.categories.includes(category.name) ? ' (selecionado)' : ''}`}
+                      className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black ${
                         formData.categories.includes(category.name)
                           ? `bg-[${category.color}] text-white border-2 border-[${category.color}]`
-                          : `bg-[#121214] border-2 border-[#1F1F22] text-zinc-300 hover:border-[#2F2F32]`
+                          : `bg-[#121214] border-2 border-[#1F1F22] text-zinc-300 hover:border-[#2F2F32] focus:ring-zinc-600`
                       }`}
                       style={
                         formData.categories.includes(category.name)
@@ -502,7 +523,7 @@ export const ManualAddBookModal: React.FC<ManualAddBookModalProps> = ({
                       }
                     >
                       {formData.categories.includes(category.name) && (
-                        <CheckCircle className="w-3 h-3 inline mr-1" />
+                        <CheckCircle className="w-3 h-3 inline mr-1" aria-hidden="true" />
                       )}
                       {category.label}
                     </button>

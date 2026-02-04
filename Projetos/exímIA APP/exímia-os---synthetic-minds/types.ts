@@ -275,6 +275,7 @@ export interface Book {
   category?: string;
   isDraft?: boolean;
   description?: string;
+  tags?: string[]; // Story 7.8.0: Tags for book categorization
   chapters?: { id: string; title: string }[];
   readingTime?: string;
   rating?: number;

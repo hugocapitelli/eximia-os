@@ -1,6 +1,7 @@
 import React from 'react';
 import { Book } from '../../types';
 import { ChevronRight, Star } from 'lucide-react';
+import { TOKENS } from '../../src/design-tokens';
 
 interface BookCardHorizontalProps {
   book: Book;
@@ -8,16 +9,13 @@ interface BookCardHorizontalProps {
   onAuthorClick?: (authorId: string) => void;
 }
 
-// Category color mapping
-const CATEGORY_COLORS: Record<string, { bg: string; text: string }> = {
-  'CIÊNCIA': { bg: 'bg-blue-500/10', text: 'text-blue-400' },
-  'FILOSOFIA': { bg: 'bg-violet-500/10', text: 'text-violet-400' },
-  'PSICOLOGIA': { bg: 'bg-emerald-500/10', text: 'text-emerald-400' },
-  'PRODUTIVIDADE': { bg: 'bg-amber-500/10', text: 'text-amber-400' },
-  'NEGÓCIOS': { bg: 'bg-orange-500/10', text: 'text-orange-400' },
-  'TECNOLOGIA': { bg: 'bg-cyan-500/10', text: 'text-cyan-400' },
-  'BIOGRAFIAS': { bg: 'bg-pink-500/10', text: 'text-pink-400' },
-  default: { bg: 'bg-zinc-800', text: 'text-zinc-400' },
+// Map categories to design tokens
+const getCategoryTokenColor = (categoryName: string) => {
+  const normalized = categoryName?.toLowerCase().trim() || '';
+  const category = TOKENS.categories.find(
+    (c) => c.name === normalized || c.label.toLowerCase() === normalized
+  );
+  return category || TOKENS.categories[0]; // Default to first category
 };
 
 export const BookCardHorizontal: React.FC<BookCardHorizontalProps> = ({
@@ -25,8 +23,7 @@ export const BookCardHorizontal: React.FC<BookCardHorizontalProps> = ({
   onBookClick,
   onAuthorClick,
 }) => {
-  const category = book.category?.toUpperCase() || 'GERAL';
-  const categoryStyle = CATEGORY_COLORS[category] || CATEGORY_COLORS.default;
+  const categoryToken = getCategoryTokenColor(book.category || '');
 
   return (
     <div
@@ -66,10 +63,19 @@ export const BookCardHorizontal: React.FC<BookCardHorizontalProps> = ({
 
       {/* Content */}
       <div className="flex-1 min-w-0 flex flex-col justify-between py-1">
-        {/* Category Badge */}
-        <div className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md w-fit ${categoryStyle.bg}`}>
-          <span className={`text-[9px] font-bold uppercase tracking-widest ${categoryStyle.text}`}>
-            {category}
+        {/* Category Badge - Using TOKENS.categories color */}
+        <div
+          className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md w-fit"
+          style={{
+            backgroundColor: `${categoryToken.bgColor}30`,
+            border: `1px solid ${categoryToken.color}`,
+          }}
+        >
+          <span
+            className="text-[9px] font-bold uppercase tracking-widest"
+            style={{ color: categoryToken.color }}
+          >
+            {book.category || 'Sem categoria'}
           </span>
         </div>
 
@@ -77,6 +83,25 @@ export const BookCardHorizontal: React.FC<BookCardHorizontalProps> = ({
         <h3 className="text-lg font-bold text-white mt-2 line-clamp-2 group-hover:text-amber-50 transition-colors">
           {book.title}
         </h3>
+
+        {/* Tags display */}
+        {book.tags && book.tags.length > 0 && (
+          <div className="flex flex-wrap gap-1 mt-1 mb-1">
+            {book.tags.slice(0, 2).map((tag, idx) => (
+              <span
+                key={idx}
+                className="px-1.5 py-0.5 rounded text-[7px] font-medium uppercase tracking-wider text-zinc-400 bg-white/5 border border-white/10 line-clamp-1 truncate"
+              >
+                {tag}
+              </span>
+            ))}
+            {book.tags.length > 2 && (
+              <span className="px-1.5 py-0.5 rounded text-[7px] font-medium text-zinc-500">
+                +{book.tags.length - 2}
+              </span>
+            )}
+          </div>
+        )}
 
         {/* Author */}
         <div className="flex items-center gap-2 mt-auto">
