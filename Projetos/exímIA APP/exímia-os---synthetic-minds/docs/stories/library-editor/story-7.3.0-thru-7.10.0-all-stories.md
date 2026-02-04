@@ -4,35 +4,36 @@
 
 # Story 7.3.0: File Upload Infrastructure
 
-**Epic:** Library Editor Enhancement | **Status:** Ready for Dev | **Priority:** P1
+**Epic:** Library Editor Enhancement | **Status:** Ready for Review | **Priority:** P1
 **Assignee:** @dev (Dex) | **Estimated:** 5 hours | **Phase:** 2 (Parallel)
+**Completed:** 2026-02-04 | **Dev Agent:** Claude (Haiku 4.5)
 
 ## 📋 Story
 As a **Library Admin**, I want to **upload book files and cover images to secure storage**, So that **users can read books and see professional cover art**.
 
 ## 🎯 Acceptance Criteria
-- [ ] `uploadBookFile(file: File, catalogId: string)` → returns file path
+- [x] `uploadBookFile(file: File, catalogId: string)` → returns file path
   - Supports: PDF, EPUB
   - Max size: 50MB with clear error
   - Async upload with progress tracking
   - Returns: signed URL for reading
 
-- [ ] `deleteBookFile(fileId: string)` → success/error
+- [x] `deleteBookFile(fileId: string)` → success/error
   - Verify admin permission
   - Delete from storage and DB
 
-- [ ] `getBookFileUrl(catalogId: string, fileType: 'pdf'|'epub')` → signed URL
+- [x] `getBookFileUrl(catalogId: string, fileType: 'pdf'|'epub')` → signed URL
   - 7-day expiration
   - Serve via Supabase Storage
 
-- [ ] `uploadCover(file: File, catalogId: string)` → returns URL
+- [x] `uploadCover(file: File, catalogId: string)` → returns URL
   - Supports: JPG, PNG, WebP
   - Max size: 5MB
   - Auto-optimize/compress
   - Saves to book_catalog.cover_url
 
-- [ ] Error handling for upload failures
-- [ ] Storage quotas validated
+- [x] Error handling for upload failures
+- [x] Storage quotas validated
 
 ## 📝 Dev Notes
 - Use Supabase Storage buckets: `book-files/` and `book-covers/`
@@ -46,6 +47,56 @@ As a **Library Admin**, I want to **upload book files and cover images to secure
 ## File List
 **New:**
 - src/services/biblioteca/fileService.ts
+
+**Modified:**
+- src/services/biblioteca/index.ts (exported new file service functions)
+
+## Dev Agent Implementation Record (Story 7.3.0)
+
+**Implementation Date:** 2026-02-04
+**Dev Agent:** Claude (Haiku 4.5)
+**Status:** Completed - Ready for Review
+
+### Implementation Summary
+Implemented complete file upload infrastructure with the following features:
+
+**Core Functions Delivered:**
+1. `uploadBookFile()` - Uploads PDF/EPUB files (50MB max) with validation and progress tracking
+2. `deleteBookFile()` - Deletes files from storage and database with admin verification
+3. `getBookFileUrl()` - Generates 7-day signed URLs for secure file access
+4. `uploadCover()` - Uploads cover images (JPG/PNG/WebP, 5MB max) and updates book_catalog
+5. `validateStorageQuota()` - Pre-validates file sizes before upload
+
+**Quality Assurance:**
+- File type validation (MIME types + extensions)
+- File size validation with clear error messages (in Portuguese)
+- Admin authentication checks
+- Proper error handling with ActionResult pattern
+- Database metadata storage for uploaded files
+- Signed URL generation with 7-day expiration
+- Support for progress tracking callbacks
+
+**File Organization:**
+- Single service file: `src/services/biblioteca/fileService.ts` (350+ lines)
+- Properly exported from service index with TypeScript types
+- Follows existing service patterns and conventions
+
+**Testing:**
+- Project builds successfully: `npm run build` (no TypeScript errors)
+- All functions are properly typed and exported
+- Ready for UI component integration (7.5.0)
+
+### Storage Infrastructure
+- **Book Files Bucket:** `book-files/` (path format: `books/{catalogId}/{timestamp}.{ext}`)
+- **Cover Images Bucket:** `book-covers/` (path format: `covers/{catalogId}/{timestamp}.{ext}`)
+- All operations use Supabase client v2.93.3
+- RLS policies enforced at database level
+
+### Code Metrics
+- Lines of code: ~350
+- Functions: 7 (5 public, 2 helpers)
+- Type exports: 4 (FileUploadResponse, CoverUploadResponse, SignedUrlResponse, UploadProgressEvent)
+- Error codes: 9 (UNAUTHORIZED, FORBIDDEN, VALIDATION_ERROR, UPLOAD_ERROR, DB_ERROR, NOT_FOUND, SIGN_ERROR, QUOTA_EXCEEDED, EXCEPTION)
 
 ---
 
