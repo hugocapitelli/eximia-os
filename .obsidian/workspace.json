@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "98eb1dc8368bb95b",
+            "id": "f34681290ec157bf",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,7 +176,7 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "ec55138ab56d7b06",
+  "active": "f34681290ec157bf",
   "lastOpenFiles": [
     "Projetos/exímIA APP/exímia-os---synthetic-minds/scripts/run-migration.ts",
     "Projetos/exímIA APP/exímia-os---synthetic-minds/scripts",
